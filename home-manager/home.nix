@@ -14,7 +14,7 @@
     # outputs.homeManagerModules.example
 
     # Or modules exported from other flakes (such as nix-colors):
-    # inputs.nix-colors.homeManagerModules.default
+    inputs.nix-colors.homeManagerModules.default
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
@@ -54,11 +54,14 @@
 
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
-  # home.packages = with pkgs; [ steam ];
+  home.packages = with pkgs; [ 
+    steam
+    opera
+  ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
-  #programs.git.enable = true;
+  programs.git.enable = true;
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
