@@ -1,113 +1,107 @@
-# This is your system's configuration file.
-# Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
+{ config, pkgs, ... }:
+
 {
-  inputs,
-  outputs,
-  lib,
-  config,
-  pkgs,
-  ...
-}: {
-  # You can import other NixOS modules here
   imports = [
-    # If you want to use modules your own flake exports (from modules/nixos):
-    # outputs.nixosModules.example
-
-    # Or modules from other flakes (such as nixos-hardware):
-    # inputs.hardware.nixosModules.common-cpu-amd
-    # inputs.hardware.nixosModules.common-ssd
-
-    # You can also split up your configuration and import pieces of it here:
-    # ./users.nix
-
-    # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
   ];
 
-  nixpkgs = {
-    # You can add overlays here
-    overlays = [
-      # Add overlays your own flake exports (from overlays and pkgs dir):
-      outputs.overlays.additions
-      outputs.overlays.modifications
-      outputs.overlays.unstable-packages
-
-      # You can also add overlays exported from other flakes:
-      # neovim-nightly-overlay.overlays.default
-
-      # Or define it inline, for example:
-      # (final: prev: {
-      #   hi = final.hello.overrideAttrs (oldAttrs: {
-      #     patches = [ ./change-hello-to-hi.patch ];
-      #   });
-      # })
-    ];
-    # Configure your nixpkgs instance
-    config = {
-      # Disable if you don't want unfree packages
-      allowUnfree = true;
+  # Bootloader
+  boot = {
+    loader = {
+      systemd-boot = {
+        enable = true;
+        consoleMode = "auto";
+      };
+      efi.canTouchEfiVariables = true;
+      timeout = 3;
     };
+    initrd.luks.devices."luks-408d55bf-2ccf-4a3a-8bf6-e18de61188ce".device = "/dev/disk/by-uuid/408d55bf-2ccf-4a3a-8bf6-e18de61188ce";
   };
 
-  # This will add each flake input as a registry
-  # To make nix3 commands consistent with your flake
-  nix.registry = (lib.mapAttrs (_: flake: {inherit flake;})) ((lib.filterAttrs (_: lib.isType "flake")) inputs);
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # This will additionally add your inputs to the system's legacy channels
-  # Making legacy nix commands consistent as well, awesome!
-  nix.nixPath = ["/etc/nix/path"];
-  environment.etc =
-    lib.mapAttrs'
-    (name: value: {
-      name = "nix/path/${name}";
-      value.source = value.flake;
-    })
-    config.nix.registry;
-
-  nix.settings = {
-    # Enable flakes and new 'nix' command
-    experimental-features = "nix-command flakes";
-    # Deduplicate and optimize nix store
-    auto-optimise-store = true;
+  # Networking
+  networking = {
+    hostName = "lappi";
+    networkmanager.enable = true;
   };
 
-  # FIXME: Add the rest of your current configuration
-
-  # TODO: Set your hostname
-  networking.hostName = "your-hostname";
-
-  # TODO: This is just an example, be sure to use whatever bootloader you prefer
-  boot.loader.systemd-boot.enable = true;
-
-  # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
-  users.users = {
-    # FIXME: Replace with your username
-    your-username = {
-      # TODO: You can set an initial password for your user.
-      # If you do, you can skip setting a root password by passing '--no-root-passwd' to nixos-install.
-      # Be sure to change it (using passwd) after rebooting!
-      initialPassword = "correcthorsebatterystaple";
-      isNormalUser = true;
-      openssh.authorizedKeys.keys = [
-        # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
-      ];
-      # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-      extraGroups = ["wheel"];
-    };
+  # Locale
+  time.timeZone = "Atlantic/Reykjavik";
+  i18n.defaultLocale = "en_GB.UTF-8";
+  i18n.extraLocaleSettings = {
+    LC_ADDRESS = "is_IS.UTF-8";
+    LC_IDENTIFICATION = "is_IS.UTF-8";
+    LC_MEASUREMENT = "is_IS.UTF-8";
+    LC_MONETARY = "is_IS.UTF-8";
+    LC_NAME = "is_IS.UTF-8";
+    LC_NUMERIC = "is_IS.UTF-8";
+    LC_PAPER = "is_IS.UTF-8";
+    LC_TELEPHONE = "is_IS.UTF-8";
+    LC_TIME = "is_IS.UTF-8";
   };
 
-  # This setups a SSH server. Very important if you're setting up a headless system.
-  # Feel free to remove if you don't need it.
-  services.openssh = {
+  console.keyMap = "is-latin1";
+
+  ### Budgie ###
+
+  # Enable the X11 windowing system
+  services.xserver.enable = true;
+
+  # Enable the Budgie Desktop environment
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.budgie.enable = true;
+
+  # Configure keymap in X11
+  services.xserver.xkb = {
+    layout = "is";
+    variant = "";
+    options = "caps:swapescape";
+  };
+
+  # Enable CUPS to print documents
+  services.printing.enable = true;
+
+  # Enable bluetooth
+  hardware.bluetooth.enable = true;
+
+  # Enable sound with pipewire
+  sound.enable = true;
+  hardware.pulseaudio.enable = false;
+  security.rtkit.enable = true;
+  services.pipewire = {
     enable = true;
-    settings = {
-      # Forbid root login through SSH.
-      PermitRootLogin = "no";
-      # Use keys only. Remove if you want to SSH using password (not recommended)
-      PasswordAuthentication = false;
-    };
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
   };
 
-  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  system.stateVersion = "23.05";
+  users.users.steinardth = {
+    isNormalUser = true;
+    description = "Steinar Darri";
+    extraGroups = [ "networkmanager" "wheel" ];
+    packages = with pkgs; [
+      opera
+    ];
+  };
+
+  services.displayManager.autoLogin = {
+    enable = true;
+    user = "steinardth";
+  };
+
+  nixpkgs.config.allowUnfree = true;
+
+  environment.systemPackages = with pkgs; [
+    git
+    unzip
+    just
+    curl
+    gparted
+    barrier
+  ];
+
+  system.stateVersion = "23.11";
+
 }

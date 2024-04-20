@@ -61,31 +61,26 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
-      # FIXME replace with your hostname
-      your-hostname = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+      lappi = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
         modules = [
-          # > Our main nixos configuration file <
           ./nixos/configuration.nix
         ];
       };
-      default = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
+    };
+    
+    # Standalone home-manager configuration entrypoint
+    # Available through 'home-manager --flake .#your-username@your-hostname'
+    homeConfigurations = {
+      "steinardth@lappi" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = {inherit inputs outputs;};
         modules = [
-          ./configuration.nix
-          inputs.home-manager.nixosModules.home-manager {
-            home-manager.extraSpecialArgs = {
-              inherit username; inherit inputs;
-              inherit host;
-              inherit (inputs.nix-colors.lib-contrib {inherit pkgs;}) gtkThemeFromScheme;
-            };
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "backup";
-            home-manager.users.steinardth = import ./home-manager/home.nix;
-          }
+          # > Our main home-manager configuration file <
+          ./home-manager/home.nix
         ];
       };
     };
+    
   };
 }
