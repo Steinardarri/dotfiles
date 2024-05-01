@@ -1,23 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./hardware-configuration.nix
-  ];
-
-  # Bootloader
-  boot = {
-    loader = {
-      systemd-boot = {
-        enable = true;
-        consoleMode = "auto";
-      };
-      efi.canTouchEfiVariables = true;
-      timeout = 3;
-    };
-    initrd.luks.devices."luks-408d55bf-2ccf-4a3a-8bf6-e18de61188ce".device = "/dev/disk/by-uuid/408d55bf-2ccf-4a3a-8bf6-e18de61188ce";
-  };
-
   nix.settings = {
     # Enable flakes and new 'nix' command
     experimental-features = "nix-command flakes";
@@ -40,9 +23,7 @@
     })
     config.nix.registry;
 
-  # Networking
   networking = {
-    hostName = "lappi";
     networkmanager.enable = true;
   };
 
@@ -78,33 +59,9 @@
     variant = "";
     options = "caps:swapescape";
   };
-  services.xserver.libinput = {
-    enable = true;
-    naturalScrolling = false;
-    middleEmulation = true;
-    tapping = true;
-  };
 
   # Enable CUPS to print documents
   services.printing.enable = true;
-
-  # Enable bluetooth
-  hardware.bluetooth.enable = true;
-
-  hardware = {
-    bluetooth.enable = true;
-
-    nvidia = {
-      prime.offload.enable = false;
-      modesetting.enable = true;
-    };
-
-    opengl = {
-      enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
-    };
-  };
 
   # Enable sound with pipewire
   sound.enable = true;
@@ -147,12 +104,7 @@
   nixpkgs = {
     # You can add overlays here
     overlays = [
-      # Add overlays your own flake exports (from overlays and pkgs dir):
-      outputs.overlays.additions
-      outputs.overlays.modifications
-      outputs.overlays.unstable-packages
-
-      # You can also add overlays exported from other flakes:
+      # If you want to use overlays exported from other flakes:
       # neovim-nightly-overlay.overlays.default
 
       # Or define it inline, for example:
@@ -169,14 +121,6 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    unzip
-    just
-    curl
-    gparted
-    barrier
-  ];
-
-  system.stateVersion = "23.11";
+  environment.systemPackages = (import ../programs/packages.nix) pkgs;
 
 }
