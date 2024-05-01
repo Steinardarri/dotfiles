@@ -30,4 +30,9 @@
   ffmpeg
   asciinema
   neofetch
+
+  # NixOS
+  nh
+  nix-output-monitor
+  nvd
 ]

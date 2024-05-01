@@ -43,6 +43,7 @@
 
     nvidia = {
       modesetting.enable = true;
+      package = config.boot.kernelPackages.nvidiaPackages.production;
     };
 
   # nvidia = {
@@ -65,6 +66,8 @@
       driSupport32Bit = true;
     };
   };
+
+  services.xserver.videoDrivers = ["nvidia"];
 
   system.stateVersion = "23.11";
 
