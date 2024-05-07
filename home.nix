@@ -380,11 +380,11 @@ in {
 
   sops = {
     age.keyFile = "${config.home.homeDirectory}/.config/sops/age/keys.txt";
-    sops.defaultSopsFile = .secrets/secrets.json;
+    sops.defaultSopsFile = ./secrets/secrets.json;
     sops.defaultSopsFormat = "json";
     sops.secrets.github_token = {
       format = "json";
-      sopsFile = .secrets/secrets.json;
+      sopsFile = ./secrets/secrets.json;
     };
   };
 }
