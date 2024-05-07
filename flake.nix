@@ -4,23 +4,26 @@
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
   inputs.nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+  inputs.nixos-wsl.url = "github:nix-community/NixOS-WSL";
+  inputs.nixos-wsl.inputs.nixpkgs.follows = "nixpkgs";
+
   inputs.home-manager.url = "github:nix-community/home-manager/release-23.11";
   inputs.home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
   inputs.nixvim.url = "github:nix-community/nixvim/nixos-23.11";
   inputs.nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
-  inputs.nur.url = "github:nix-community/NUR";
+  inputs.sops-nix.url = "github:Mic92/sops-nix";
+  inputs.sops-nix.inputs.nixpkgs.follows = "nixpkgs";
 
-  inputs.nixos-wsl.url = "github:nix-community/NixOS-WSL";
-  inputs.nixos-wsl.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.nur.url = "github:nix-community/NUR";
 
   inputs.nix-index-database.url = "github:Mic92/nix-index-database";
   inputs.nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
 
   outputs = inputs:
     with inputs; let
-      secrets = builtins.fromJSON (builtins.readFile "${self}/secrets.json");
+      secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
 
       nixpkgsWithOverlays = with inputs; rec {
         config = {
@@ -50,7 +53,7 @@
       };
 
       argDefaults = {
-        inherit secrets inputs self nixvim nix-index-database;
+        inherit secrets inputs self nixvim nix-index-database sops-nix;
         channels = {
           inherit nixpkgs nixpkgs-unstable;
         };
@@ -77,7 +80,7 @@
     in {
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
 
-      nixosConfigurations.default = mkNixosConfiguration {
+      nixosConfigurations.nixos = mkNixosConfiguration {
         hostname = "nixos";
         username = "nixos";
         modules = [

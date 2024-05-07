@@ -97,8 +97,10 @@ in {
     username = "${username}";
     homeDirectory = "/home/${username}";
 
-    sessionVariables.EDITOR = "nvim";
-    sessionVariables.SHELL = "/etc/profiles/per-user/${username}/bin/zsh";
+    sessionVariables = {
+      SHELL = "/etc/profiles/per-user/${username}/bin/zsh";
+      FLAKE = "/home/${username}/NixOS_config";
+    };
   };
 
   home.packages =
@@ -132,7 +134,6 @@ in {
       hostname.style = "bold green";
     };
 
-    # disable whatever you don't want
     fzf.enable = true;
     fzf.enableZshIntegration = true;
     lsd.enable = true;
@@ -155,42 +156,97 @@ in {
         side-by-side = true;
         navigate = true;
       };
+      userName = "Steinar Darri Þorgilsson";
       userEmail = "steinar@steinardth.xyz";
-      userName = "Steinar";
       extraConfig = {
-        url = {
-          "https://oauth2:${secrets.github_token}@github.com" = {
-            insteadOf = "https://github.com";
-          };
+        # url = { # Turn on when you know you have your secrets online
+        #   "https://oauth2:${secrets.github_token}@github.com" = {
+        #     insteadOf = "https://github.com";
+        #   };
+        # };
+        color = {
+          ui = "Auto";
+        };
+        core = {
+          # Don't paginate output by default
+          pager = "cat";
+          filemode = true;
+          bare = false;
+          logallrefupdates = true;
+          # Don't consider trailing space change as a cause for merge conflicts
+          whitespace = "-trailing-space";
         };
         push = {
-          default = "current";
+          default = "simple";
           autoSetupRemote = true;
         };
         merge = {
           conflictstyle = "diff3";
         };
         diff = {
+          # Show renames/moves as such
+          renames = true;
           colorMoved = "default";
+          # Use better, descriptive initials (c, i, w) instead of a/b.
+          mnemonicPrefix = true;
+        };
+        fetch = {
+          prune = true;
+        };
+        status = {
+          submoduleSummary = true;
+        };
+      };
+      aliases = {
+        # List available aliases
+        aliases = "!git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'";
+        # Display tree-like log, because default log is a pain…
+        lg = "log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'";
+        # Ammend last commit, either changes or just message
+        ammend = "commit --amend";
+        # Undo last commit but keep changed files in stage
+        uncommit = "reset --soft HEAD~1";
+        # See recent changes
+        last     = "log -1 HEAD";
+        diffLast = "diff HEAD^ HEAD";
+        diffDev  = "diff development..HEAD";
+        # Branch management
+        rebDev = "!git pull --all && git rebase --interactive development";
+        coDev  = "checkout development";
+        coFea  = "checkout feature";
+      };
+    };
+
+    helix = {
+      enable = true;
+      defaultEditor = true;
+
+      settings = {
+        theme = "nord";
+        editor = {
+          true-color = true;
+          shell = [ "zsh" "-c" ];
+          cursor-shape = {
+            insert = "bar";
+            normal = "block";
+            select = "underline";
+          };
         };
       };
     };
 
     nixvim = {
       enable = true;
-      defaultEditor = true;
+      defaultEditor = false;
 
       plugins.lightline.enable = true;
     };
 
-
-    # This is my .zshrc - you can fiddle with it if you want
     zsh = {
       enable = true;
       autocd = true;
       enableAutosuggestions = true;
       enableCompletion = true;
-      defaultKeymap = "";
       history.size = 10000;
       history.save = 10000;
       history.expireDuplicatesFirst = true;
@@ -222,6 +278,7 @@ in {
         gc = "nix-collect-garbage --delete-old";
         refresh = "source ${config.home.homeDirectory}/.zshrc";
         show_path = "echo $PATH | tr ':' '\n'";
+        hg = "history 0 | grep";
 
         # add more git aliases here if you want them
         gapa = "git add --patch";
@@ -245,6 +302,8 @@ in {
       '';
 
       initExtra = ''
+        neofetch
+
         bindkey '^p' history-search-backward
         bindkey '^n' history-search-forward
         bindkey '^e' end-of-line
@@ -324,6 +383,16 @@ in {
         # fixes duplication of commands when using tab-completion
         export LANG=C.UTF-8
       '';
+    };
+  };
+
+  sops = {
+    age.keyFile = "${config.home.homeDirectory}/.config/sops/age/keys.txt";
+    sops.defaultSopsFile = .secrets/secrets.json;
+    sops.defaultSopsFormat = "json";
+    sops.secrets.github_token = {
+      format = "json";
+      sopsFile = .secrets/secrets.json;
     };
   };
 }

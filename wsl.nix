@@ -7,6 +7,7 @@
   inputs,
   nix-index-database,
   nixvim,
+  sops-nix,
   ...
 }: {
 
@@ -55,6 +56,7 @@
       ./home.nix
       nixvim.homeManagerModules.nixvim
       nix-index-database.hmModules.nix-index
+      sops-nix.homeManagerModules.sops
     ];
   };
 
