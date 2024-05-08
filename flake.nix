@@ -10,9 +10,6 @@
   inputs.home-manager.url = "github:nix-community/home-manager/release-23.11";
   inputs.home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-  inputs.nixvim.url = "github:nix-community/nixvim/nixos-23.11";
-  inputs.nixvim.inputs.nixpkgs.follows = "nixpkgs";
-
   inputs.sops-nix.url = "github:Mic92/sops-nix";
   inputs.sops-nix.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -53,7 +50,7 @@
       };
 
       argDefaults = {
-        inherit secrets inputs self nixvim nix-index-database sops-nix;
+        inherit secrets inputs self nix-index-database sops-nix;
         channels = {
           inherit nixpkgs nixpkgs-unstable;
         };

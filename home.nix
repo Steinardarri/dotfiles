@@ -4,7 +4,7 @@
   pkgs,
   username,
   nix-index-database,
-  nixvim,
+  sops-nix,
   ...
 }: let
   unstable-packages = with pkgs.unstable; [
@@ -233,13 +233,6 @@ in {
           };
         };
       };
-    };
-
-    nixvim = {
-      enable = true;
-      defaultEditor = false;
-
-      plugins.lightline.enable = true;
     };
 
     zsh = {

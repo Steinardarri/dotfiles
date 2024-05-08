@@ -6,7 +6,6 @@
   pkgs,
   inputs,
   nix-index-database,
-  nixvim,
   sops-nix,
   ...
 }: {
@@ -54,7 +53,6 @@
   home-manager.users.${username} = {
     imports = [
       ./home.nix
-      nixvim.homeManagerModules.nixvim
       nix-index-database.hmModules.nix-index
       sops-nix.homeManagerModules.sops
     ];
