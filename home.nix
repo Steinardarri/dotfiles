@@ -374,9 +374,9 @@ in {
   sops = {
     # Remember to put your keys and secrets to these locations
     age.keyFile = "${config.home.homeDirectory}/.config/sops/age/keys.txt";
-    sops.defaultSopsFile = "${config.home.homeDirectory}/.secrets/secrets.json";
-    sops.defaultSopsFormat = "json";
-    sops.secrets.github_token = {
+    defaultSopsFile = "${config.home.homeDirectory}/.secrets/secrets.json";
+    defaultSopsFormat = "json";
+    secrets.github_token = {
       format = "json";
       sopsFile = "${config.home.homeDirectory}/.secrets/secrets.json";
     };
