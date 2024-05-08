@@ -380,5 +380,7 @@ in {
       format = "json";
       sopsFile = "${config.home.homeDirectory}/.secrets/secrets.json";
     };
+    # Set to false when initializing
+    validateSopsFiles = false;
   };
 }
