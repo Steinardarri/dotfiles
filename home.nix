@@ -168,8 +168,6 @@ in {
           ui = "Auto";
         };
         core = {
-          # Don't paginate output by default
-          pager = "cat";
           filemode = true;
           bare = false;
           logallrefupdates = true;
