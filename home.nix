@@ -371,6 +371,7 @@ in {
 
   sops = {
     # Remember to put your keys and secrets to these locations
+    enable = true;
     age.keyFile = "${config.home.homeDirectory}/.config/sops/age/keys.txt";
     defaultSopsFile = "${config.home.homeDirectory}/.secrets/secrets.json";
     defaultSopsFormat = "json";
