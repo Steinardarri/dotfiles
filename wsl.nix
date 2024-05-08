@@ -100,9 +100,9 @@
     settings = {
       trusted-users = [username];
       # use your access tokens from secrets.json here to be able to clone private repos on GitHub and GitLab
-      access-tokens = [
-        "github.com=${secrets.github_token}"
-      ];
+      # access-tokens = [
+      #   "github.com=${secrets.github_token}"
+      # ];
 
       accept-flake-config = true;
       auto-optimise-store = true;
