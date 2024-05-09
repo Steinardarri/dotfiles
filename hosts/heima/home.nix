@@ -37,6 +37,14 @@
     vim
     wget
     zip
+
+    # rust stuff
+    rustup
+    cargo-build
+    cargo-cache
+    cargo-expand
+    cargo-leptos
+    trunk
   ];
 
   stable-packages = with pkgs; [
@@ -51,16 +59,12 @@
     just
 
     # core languages
-    rustup
+    gcc
     go
     lua
     nodejs
     python3
     typescript
-
-    # rust stuff
-    cargo-cache
-    cargo-expand
 
     # local dev stuf
     mkcert
