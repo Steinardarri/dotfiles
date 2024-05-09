@@ -42,6 +42,10 @@
   stable-packages = with pkgs; [
     # customize these stable packages to your liking for the languages that you use
 
+    # gui
+    floorp
+    vscode
+
     # key tools
     gh # for bootstrapping
     just
@@ -99,7 +103,7 @@ in {
 
     sessionVariables = {
       SHELL = "/etc/profiles/per-user/${username}/bin/zsh";
-      FLAKE = "/home/${username}/NixOS_config";
+      FLAKE = "/home/${username}/NixOS_Config";
     };
   };
 
