@@ -85,7 +85,7 @@
           /hosts/wsl/config.nix
         ];
       };
-      nixosConfigurations.wsl = mkNixosConfiguration {
+      nixosConfigurations.heima = mkNixosConfiguration {
         hostname = "heima";
         username = "steinardth";
         modules = [
