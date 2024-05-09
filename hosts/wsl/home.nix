@@ -48,8 +48,6 @@
   ];
 
   stable-packages = with pkgs; [
-    # customize these stable packages to your liking for the languages that you use
-
     # key tools
     gh # for bootstrapping
     just
@@ -126,6 +124,15 @@ in {
     nix-index.enable = true;
     nix-index.enableZshIntegration = true;
     nix-index-database.comma.enable = true;
+
+    vscode = {
+      enable = true;
+      package = pkgs.vscodium;
+      extensions = with pkgs.vscode-extensions; [
+        jnoortheen.nix-ide
+        arcticicestudio.nord-visual-studio-code
+      ];
+    };
 
     starship.enable = true;
     starship.settings = {

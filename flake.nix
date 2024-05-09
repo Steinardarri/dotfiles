@@ -78,7 +78,7 @@
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
 
       nixosConfigurations = {
-        wsl.mkNixosConfiguration = {
+        wsl = nixpkgs.lib.nixosSystem {
           hostname = "wsl";
           username = "nixos";
           modules = [
@@ -86,7 +86,7 @@
             ./hosts/wsl/config.nix
           ];
         };
-        heima.mkNixosConfiguration = {
+        heima = nixpkgs.lib.nixosSystem {
           hostname = "heima";
           username = "steinardth";
           modules = [
