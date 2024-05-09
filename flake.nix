@@ -77,22 +77,21 @@
     in {
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
 
-      nixosConfigurations = {
-        wsl = nixpkgs.lib.nixosSystem {
-          hostname = "wsl";
-          username = "nixos";
-          modules = [
-            nixos-wsl.nixosModules.wsl
-            ./hosts/wsl/config.nix
-          ];
-        };
-        heima = nixpkgs.lib.nixosSystem {
-          hostname = "heima";
-          username = "steinardth";
-          modules = [
-            ./hosts/heima/config.nix
-          ];
-        };
+      nixosConfigurations.wsl = mkNixosConfiguration {
+        hostname = "wsl";
+        username = "nixos";
+        modules = [
+          nixos-wsl.nixosModules.wsl
+          /hosts/wsl/config.nix
+        ];
       };
+      nixosConfigurations.wsl = mkNixosConfiguration {
+        hostname = "heima";
+        username = "steinardth";
+        modules = [
+          ./hosts/heima/config.nix
+        ];
+      };
+
     };
 }
