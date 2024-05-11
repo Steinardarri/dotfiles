@@ -1,25 +1,27 @@
 {
   description = "NixOS configuration";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
-  inputs.nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-  inputs.nixos-wsl.url = "github:nix-community/NixOS-WSL";
-  inputs.nixos-wsl.inputs.nixpkgs.follows = "nixpkgs";
+    nixos-wsl.url = "github:nix-community/NixOS-WSL";
+    nixos-wsl.inputs.nixpkgs.follows = "nixpkgs";
 
-  inputs.home-manager.url = "github:nix-community/home-manager/release-23.11";
-  inputs.home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-  inputs.sops-nix.url = "github:Mic92/sops-nix";
-  inputs.sops-nix.inputs.nixpkgs.follows = "nixpkgs";
+    sops-nix.url = "github:Mic92/sops-nix";
+    sops-nix.inputs.nixpkgs.follows = "nixpkgs";
 
-  inputs.nur.url = "github:nix-community/NUR";
+    nur.url = "github:nix-community/NUR";
 
-  inputs.nix-index-database.url = "github:Mic92/nix-index-database";
-  inputs.nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+    nix-index-database.url = "github:Mic92/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+  };
 
-  outputs = inputs:
-    with inputs; let
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+    let
       secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
 
       nixpkgsWithOverlays = with inputs; rec {
@@ -77,21 +79,36 @@
     in {
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
 
-      nixosConfigurations.wsl = mkNixosConfiguration {
-        hostname = "wsl";
-        username = "nixos";
-        modules = [
-          nixos-wsl.nixosModules.wsl
-          ./hosts/wsl/config.nix
-        ];
+      nixosConfigurations = {
+        heima = nixpkgs.lib.nixosSystem {
+          hostname = "heima";
+          username = "steinardth";
+          modules = [
+            ./hosts/heima/configuration.nix
+          ];
+        };
+        lappi = nixpkgs.lib.nixosSystem {
+          hostname = "lappi";
+          username = "steinardth";
+          modules = [
+            ./hosts/lappi/configuration.nix
+          ];
+        };
+        vinna = nixpkgs.lib.nixosSystem {
+          hostname = "vinna";
+          username = "steinardth";
+          modules = [
+            ./hosts/vinna/configuration.nix
+          ];
+        };
+        wsl = nixpkgs.lib.nixosSystem {
+          hostname = "wsl";
+          username = "nixos";
+          modules = [
+            nixos-wsl.nixosModules.wsl
+            ./hosts/wsl/configuration.nix
+          ];
+        };
       };
-      nixosConfigurations.heima = mkNixosConfiguration {
-        hostname = "heima";
-        username = "steinardth";
-        modules = [
-          ./hosts/heima/config.nix
-        ];
-      };
-
     };
 }
