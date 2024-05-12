@@ -1,73 +1,59 @@
 {
-  description = "Steinardarri's NixOS Configuration Flake";
+  description = "ZaneyOS";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nixos-wsl = {
-      url = "github:nix-community/NixOS-WSL";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nur.url = "github:nix-community/NUR";
-
-    hyprland = {
-      url = "github:hyprwm/hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    home-manager.url = "github:nix-community/home-manager/master";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nix-colors.url = "github:misterio77/nix-colors";
+    hyprland.url = "github:hyprwm/Hyprland";
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
-
-    nix-index-database = {
-      url = "github:Mic92/nix-index-database";
+    nixvim = {
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    impermanence.url = "github:nix-community/impermanence";
   };
 
-  outputs = { self, nixpkgs, home-manager,... } @ inputs: 
+  outputs = inputs@{ nixpkgs, home-manager, impermanence, ... }:
   let
-    inherit (self) outputs;
-    inherit (nixpkgs) lib;
-    username = "steinardth";
-    hostname = "nixos";
-    specialArgs = { inherit inputs outputs username hostname nixpkgs; };
-  in
-  {
-    nixosConfigurations = {
+    system = "x86_64-linux";
+    host = "default";
+    inherit (import ./hosts/${host}/options.nix) username hostname;
 
-      lappi = nixpkgs.lib.nixosSystem {
-        inherit specialArgs;
-        hostname = "lappi";
-        modules = [
-          ./hosts
-          ./hosts/lappi/configuration.nix
-          inputs.home-manager.nixosModules {
-            home-manager.extraSpecialArgs = specialArgs;
-          }
-        ];
+    pkgs = import nixpkgs {
+      inherit system;
+      config = {
+	    allowUnfree = true;
       };
-
-      wsl = nixpkgs.lib.nixosSystem {
-        inherit specialArgs;
-        username = "nixos";
-        hostname = "wsl";
-        modules = [
-          ./hosts/wsl/configuration.nix
-          inputs.home-manager.nixosModules {
-            home-manager.extraSpecialArgs = specialArgs;
-          }
-        ];
-      };
-
     };
-
-    homeManagerModules.default = ./modules/homeManagerModules;
+  in {
+    nixosConfigurations = {
+      "${hostname}" = nixpkgs.lib.nixosSystem {
+	specialArgs = { 
+          inherit system; inherit inputs; 
+          inherit username; inherit hostname;
+          inherit host;
+        };
+	modules = [ 
+	  ./system.nix
+	  impermanence.nixosModules.impermanence
+          home-manager.nixosModules.home-manager {
+	    home-manager.extraSpecialArgs = {
+              inherit username; inherit inputs;
+              inherit host;
+              inherit (inputs.nix-colors.lib-contrib {inherit pkgs;}) gtkThemeFromScheme;
+            };
+	    home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup";
+	    home-manager.users.${username} = import ./users/default/home.nix;
+	  }
+	];
+      };
+    };
   };
 }
