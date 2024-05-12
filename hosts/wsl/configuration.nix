@@ -1,25 +1,14 @@
-{
-  # uncomment the next line if you want to reference your GitHub/GitLab access tokens and other secrets
-  secrets,
-  username,
-  hostname,
-  pkgs,
-  inputs,
-  nix-index-database,
-  sops-nix,
-  ...
-}: {
-
+{ username, hostname, pkgs, inputs, ... }: {
+  
   system.stateVersion = "23.11";
 
   imports = [
-    ./programs.nix
     ./services.nix
   ];
 
-  time.timeZone = "Atlantic/Reykjavik";
-
   networking.hostName = "${hostname}";
+
+  time.timeZone = "Atlantic/Reykjavik";
 
   systemd.tmpfiles.rules = [
     "d /home/${username}/.config 0755 ${username} users"
@@ -55,8 +44,6 @@
   home-manager.users.${username} = {
     imports = [
       ./home.nix
-      nix-index-database.hmModules.nix-index
-      sops-nix.homeManagerModules.sops
     ];
   };
 

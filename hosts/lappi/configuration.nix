@@ -1,31 +1,21 @@
-{ pkgs, lib, inputs, ... }: {
+{ config, pkgs, lib, username, ... }: {
   
   system.stateVersion = "23.11";
 
   imports = [
     ./hardware-configuration.nix
-    inputs.home-manager.nixosModules.default
   ];
 
   boot.initrd.luks.devices."luks-e0d82684-c0f9-4a91-9c15-7739b2c849b7".device = "/dev/disk/by-uuid/e0d82684-c0f9-4a91-9c15-7739b2c849b7";
 
-  networking.hostName = "lappi";
-
   systemd.tmpfiles.rules = [
-    "d /home/steinardth/.config 0755 steinardth users"
+    "d /home/${username}/.config 0755 ${username} users"
   ];
 
-  programs.zsh.enable = true;
-  environment.pathsToLink = ["/share/zsh"];
-  environment.shells = [pkgs.zsh];
+  # security.sudo.wheelNeedsPassword = false;
 
-  environment.enableAllTerminfo = true;
-
-  security.sudo.wheelNeedsPassword = false;
-
-  users.users.steinardth = {
+  users.users.${username} = {
     isNormalUser = true;
-    description = "Steinar Darri Þorgilsson";
     shell = pkgs.zsh;
     extraGroups = [
       "wheel"
@@ -41,12 +31,11 @@
 
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "steinardth";
+  services.xserver.displayManager.autoLogin.user = ${username};
 
-  home-manager.users.steinardth = {
+  home-manager.users.${username} = {
     imports = [
       ./home.nix
-      inputs.nix-index-database.hmModules.nix-index
     ];
   };
 
@@ -56,17 +45,13 @@
   #   autoPrune.enable = true;
   # };
 
-  nix = {
-    settings = {
-      trusted-users = [steinardth];
-      accept-flake-config = true;
-      auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes"];
-    };
+  ### Budgie ###
 
-    gc = {
-      automatic = true;
-      options = "--delete-older-than 7d";
-    };
-  };
+  # Enable the X11 windowing system
+  services.xserver.enable = true;
+
+  # Enable the Budgie Desktop environment
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.budgie.enable = true;
+
 }

@@ -1,6 +1,5 @@
 {
-
-  description = "Steinardarri NixOS Configuration Flake";
+  description = "Steinardarri's NixOS Configuration Flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -15,7 +14,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # nur.url = "github:nix-community/NUR";
+    nur.url = "github:nix-community/NUR";
+
+    hyprland = {
+      url = "github:hyprwm/hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
 
     nix-index-database = {
       url = "github:Mic92/nix-index-database";
@@ -23,26 +31,43 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager,... } @ inputs: 
+  let
+    inherit (self) outputs;
+    inherit (nixpkgs) lib;
+    username = "steinardth";
+    hostname = "nixos";
+    specialArgs = { inherit inputs outputs username hostname nixpkgs; };
+  in
+  {
     nixosConfigurations = {
 
       lappi = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
+        inherit specialArgs;
+        hostname = "lappi";
         modules = [
-          .hosts/lappi/configuration.nix
+          ./hosts
+          ./hosts/lappi/configuration.nix
+          inputs.home-manager.nixosModules {
+            home-manager.extraSpecialArgs = specialArgs;
+          }
         ];
       };
 
       wsl = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs;};
+        inherit specialArgs;
+        username = "nixos";
+        hostname = "wsl";
         modules = [
           ./hosts/wsl/configuration.nix
-          inputs.home-manager.nixosModules.default
+          inputs.home-manager.nixosModules {
+            home-manager.extraSpecialArgs = specialArgs;
+          }
         ];
       };
 
-
     };
-  };
 
+    homeManagerModules.default = ./modules/homeManagerModules;
+  };
 }
