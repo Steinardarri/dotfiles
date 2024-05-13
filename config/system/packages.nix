@@ -12,11 +12,11 @@
     pkg-config meson hugo gnumake ninja go nodejs symbola
     noto-fonts-color-emoji material-icons brightnessctl
     toybox virt-viewer swappy ripgrep appimage-run 
-    networkmanagerapplet yad playerctl nh
+    networkmanagerapplet yad playerctl nh wormhole-william
+    vscodium-fhs zig
   ];
 
   programs = {
-    steam.gamescopeSession.enable = true;
     dconf.enable = true;
     seahorse.enable=true;
     hyprland = {

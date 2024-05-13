@@ -6,6 +6,7 @@
     ./alacritty.nix
     ./bash.nix
     ./gtk-qt.nix
+    ./helix.nix
     ./hyprland.nix
     ./kdenlive.nix
     ./kitty.nix
@@ -14,12 +15,12 @@
     ./packages.nix
     ./rofi.nix
     ./starship.nix
-    ./waybar.nix
-    ./wlogout.nix
     ./swappy.nix
     ./swaylock.nix
     ./swaync.nix
+    ./waybar.nix
     ./wezterm.nix
+    ./wlogout.nix
     ./zeroad.nix
     ./zsh.nix
 

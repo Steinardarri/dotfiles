@@ -22,7 +22,7 @@ in {
   gitEmail = "johnsmith@gmail.com";
 
   # Base16 Theme
-  theme = "atelier-cave";
+  theme = "nord";
 
   # Hyprland Settings
   borderAnim = true; # Enable / Disable Hyprland Border Animation
@@ -33,20 +33,22 @@ in {
   bar-number = true; # Enable / Disable Workspace Numbers In Waybar
 
   # System Settings
-  clock24h = false;
-  theLocale = "en_US.UTF-8";
-  theKBDLayout = "us";
-  theSecondKBDLayout = "de";
+  clock24h = true;
+  theLocale = "en_GB.UTF-8";
+  theKBDLayout = "is";
+  theSecondKBDLayout = "";
+  theConsoleKeyMap = "is-latin1";
   theKBDVariant = "";
-  theLCVariables = "en_US.UTF-8";
-  theTimezone = "America/Chicago";
-  theShell = "bash"; # Possible options: bash, zsh
+  theLCVariables = "is_IS.UTF-8";
+  theTimezone = "Atlantic/Reykjavik";
+  theShell = "zsh"; # Possible options: bash, zsh
   theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
   sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
-  cpuType = "intel";
-  gpuType = "intel";
+  cpuType = "amd";
+  gpuType = "amd";
+  laptop = false;
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS! 
   intel-bus-id = "PCI:1:0:0";
@@ -62,16 +64,17 @@ in {
   localHWClock = false;
 
   # Enable Printer & Scanner Support
-  printer = true;
+  printer = false;
 
   # Program Options
-  browser = "firefox"; # Install & Set Default Browser
-  terminal = "kitty";  # Set Default System Terminal
+  browser = "floorp"; # Install & Set Default Browser
+  terminal = "alacritty";  # Set Default System Terminal
   distrobox = false;
   flatpak = false;
   kdenlive = false;
   blender = false;
   enableZeroAD = false;
+  steam = true;
 
   # Enable Support For
   # Logitech Devices
@@ -79,8 +82,8 @@ in {
 
   # Enable Terminals ( If You Disable All You Get Kitty )
   wezterm = false;
-  alacritty = false;
-  kitty = true;
+  alacritty = true;
+  kitty = false;
 
   # Enable Python & PyCharm
   python = false;

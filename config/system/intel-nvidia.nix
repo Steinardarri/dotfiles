@@ -44,9 +44,9 @@ lib.mkIf ("${gpuType}" == "intel-nvidia") {
     package = config.boot.kernelPackages.nvidiaPackages.stable;
     prime = {
       offload = {
-		enable = true;
-		enableOffloadCmd = true;
-	  };
+        enable = true;
+        enableOffloadCmd = true;
+      };
       # Make sure to use the correct Bus ID values for your system!
       intelBusId = "${intel-bus-id}";
       nvidiaBusId = "${nvidia-bus-id}";

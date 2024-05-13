@@ -35,7 +35,7 @@ in with lib; {
 
       input {
         kb_layout = ${theKBDLayout}, ${theSecondKBDLayout}
-	kb_options = grp:alt_shift_toggle
+        kb_options = grp:alt_shift_toggle
         kb_options=caps:super
         follow_mouse = 1
         touchpad {
@@ -127,15 +127,10 @@ in with lib; {
       bind = ${modifier}SHIFT,Return,exec,rofi-launcher
       bind = ${modifier}SHIFT,W,exec,web-search
       bind = ${modifier}SHIFT,N,exec,swaync-client -rs
-      ${if browser == "google-chrome" then ''
-	bind = ${modifier},W,exec,google-chrome-stable
-      '' else ''
-	bind = ${modifier},W,exec,${browser}
-      ''}
+      bind = ${modifier},W,exec,${browser}
       bind = ${modifier},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},D,exec,discord
-      bind = ${modifier},O,exec,obs
       bind = ${modifier},G,exec,gimp
       bind = ${modifier}SHIFT,G,exec,godot4
       bind = ${modifier},T,exec,thunar

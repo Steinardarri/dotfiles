@@ -20,8 +20,8 @@
     ./nvidia.nix
     ./packages.nix
     ./polkit.nix
-    ./python.nix
     ./printer.nix
+    ./python.nix
     ./services.nix
     ./steam.nix
     ./syncthing.nix

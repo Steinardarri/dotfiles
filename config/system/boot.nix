@@ -1,14 +1,31 @@
 { pkgs, config, ... }:
 
 {
-  # Bootloader
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernel.sysctl = { "vm.max_map_count" = 2147483642; };
-  boot.tmp.useTmpfs = false;
-  boot.tmp.tmpfsSize = "25%";
-
-  # This is for OBS Virtual Cam Support - v4l2loopback setup
-  boot.kernelModules = [ "v4l2loopback" ];
-  boot.extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
+  boot = {
+    loader = {
+      efi = {
+        efiSysMountPoint = "/boot";
+        canTouchEfiVariables = true;
+      };
+      grub = {
+        enable = true;
+        devices = [ "nodev" ];
+        efiInstallAsRemovable = true;
+        efiSupport = true;
+        useOSProber = true;
+      }
+      timeout = 3;
+    };
+  };
+  boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
+    pname = "distro-grub-themes";
+    version = "3.1";
+    src = pkgs.fetchFromGitHub {
+      owner = "AdisonCavani";
+      repo = "distro-grub-themes";
+      rev = "v3.1";
+      hash = "sha256-ZcoGbbOMDDwjLhsvs77C7G7vINQnprdfI37a9ccrmPs=";
+    };
+    installPhase = "cp -r customize/nixos $out";
+  };
 }
