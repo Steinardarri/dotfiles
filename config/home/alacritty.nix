@@ -23,10 +23,10 @@ in lib.mkIf (alacritty == true) {
       };
       live_config_reload = true;
       font = {
-				normal.family = "Hack NFM";
-				bold.family = "Hack NFM";
-				italic.family = "Hack NFM";
-				bold_italic.family = "Hack NFM";
+				normal.family = "Hack-NF-Ligatured";
+				bold.family = "Hack-NF-Ligatured";
+				italic.family = "Hack-NF-Ligatured";
+				bold_italic.family = "Hack-NF-Ligatured";
 				size = 16;
       };
       colors = {
