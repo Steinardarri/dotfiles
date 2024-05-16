@@ -30,7 +30,7 @@
     ...
   }: let
     system = "x86_64-linux";
-    host = "lappi";
+    host = "lappi"; # define which host you want to use here
     inherit (import ./hosts/${host}/options.nix) username hostname;
 
     pkgs = import nixpkgs {

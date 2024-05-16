@@ -16,6 +16,7 @@
     ./intel-gpu.nix
     ./intel-nvidia.nix
     ./kernel.nix
+    ./laptop.nix
     ./logitech.nix
     ./nfs.nix
     ./ntp.nix
