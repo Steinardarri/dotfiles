@@ -1,7 +1,6 @@
 # PLEASE READ THE WIKI FOR DETERMINING
-# WHAT TO PUT HERE AS OPTIONS. 
+# WHAT TO PUT HERE AS OPTIONS.
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
-
 let
   setUsername = "zaney";
   setHostname = "hyprnix";
@@ -40,6 +39,7 @@ in {
   theLocale = "en_US.UTF-8";
   theKBDLayout = "us";
   theSecondKBDLayout = "de";
+  theConsoleKeyMap = "us";
   theKBDVariant = "";
   theLCVariables = "en_US.UTF-8";
   theTimezone = "America/Chicago";
@@ -50,8 +50,9 @@ in {
   # Should Be Used As gpuType
   cpuType = "amd";
   gpuType = "amd";
+  laptop = false;
 
-  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS! 
+  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
   nvidia-bus-id = "PCI:0:2:0";
 
@@ -69,12 +70,13 @@ in {
 
   # Program Options
   browser = "firefox"; # Install & Set Default Browser
-  terminal = "kitty";  # Set Default System Terminal
+  terminal = "kitty"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
   kdenlive = true;
   blender = true;
   enableZeroAD = true;
+  steam = true;
 
   # Enable Support For
   # Logitech Devices
@@ -87,8 +89,7 @@ in {
 
   # Enable Python & PyCharm
   python = true;
-  
+
   # Enable SyncThing
   syncthing = false;
-
 }

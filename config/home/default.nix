@@ -1,6 +1,8 @@
-{ pkgs, config, ... }:
-
 {
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     # Enable &/ Configure Programs
     ./alacritty.nix
@@ -18,6 +20,7 @@
     ./swappy.nix
     ./swaylock.nix
     ./swaync.nix
+    ./vscodium.nix
     ./waybar.nix
     ./wezterm.nix
     ./wlogout.nix

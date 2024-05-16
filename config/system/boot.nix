@@ -1,19 +1,21 @@
-{ pkgs, config, ... }:
-
 {
+  pkgs,
+  config,
+  ...
+}: {
   boot = {
     loader = {
       efi = {
         efiSysMountPoint = "/boot";
-        canTouchEfiVariables = true;
+        canTouchEfiVariables = true; # XOR
       };
       grub = {
         enable = true;
-        devices = [ "nodev" ];
-        efiInstallAsRemovable = true;
+        devices = ["nodev"];
+        # efiInstallAsRemovable = true; # XOR
         efiSupport = true;
         useOSProber = true;
-      }
+      };
       timeout = 3;
     };
   };

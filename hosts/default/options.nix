@@ -1,7 +1,6 @@
 # PLEASE READ THE WIKI FOR DETERMINING
-# WHAT TO PUT HERE AS OPTIONS. 
+# WHAT TO PUT HERE AS OPTIONS.
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
-
 let
   setUsername = "defaultuser";
   setHostname = "nixos";
@@ -50,7 +49,7 @@ in {
   gpuType = "amd";
   laptop = false;
 
-  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS! 
+  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
   nvidia-bus-id = "PCI:0:2:0";
 
@@ -68,7 +67,7 @@ in {
 
   # Program Options
   browser = "floorp"; # Install & Set Default Browser
-  terminal = "alacritty";  # Set Default System Terminal
+  terminal = "alacritty"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
   kdenlive = false;
@@ -87,8 +86,7 @@ in {
 
   # Enable Python & PyCharm
   python = false;
-  
+
   # Enable SyncThing
   syncthing = false;
-
 }

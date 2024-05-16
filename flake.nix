@@ -23,10 +23,14 @@
     impermanence.url = "github:nix-community/impermanence";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, impermanence, ... }:
-  let
+  outputs = inputs @ {
+    nixpkgs,
+    home-manager,
+    impermanence,
+    ...
+  }: let
     system = "x86_64-linux";
-    host = "default";
+    host = "lappi";
     inherit (import ./hosts/${host}/options.nix) username hostname;
 
     pkgs = import nixpkgs {
@@ -38,17 +42,21 @@
   in {
     nixosConfigurations = {
       "${hostname}" = nixpkgs.lib.nixosSystem {
-        specialArgs = { 
-          inherit system; inherit inputs; 
-          inherit username; inherit hostname;
+        specialArgs = {
+          inherit system;
+          inherit inputs;
+          inherit username;
+          inherit hostname;
           inherit host;
         };
-        modules = [ 
+        modules = [
           ./system.nix
           impermanence.nixosModules.impermanence
-          home-manager.nixosModules.home-manager {
+          home-manager.nixosModules.home-manager
+          {
             home-manager.extraSpecialArgs = {
-              inherit username; inherit inputs;
+              inherit username;
+              inherit inputs;
               inherit host;
               inherit (inputs.nix-colors.lib-contrib {inherit pkgs;}) gtkThemeFromScheme;
             };

@@ -1,10 +1,23 @@
-{ config, pkgs, inputs, username,
-  host, gtkThemeFromScheme, ... }:
-let 
-  inherit (import ./../../hosts/${host}/options.nix)
-    gitUsername gitEmail theme browser 
-    wallpaperDir wallpaperGit flakeDir 
-    waybarStyle;
+{
+  config,
+  pkgs,
+  inputs,
+  username,
+  host,
+  gtkThemeFromScheme,
+  ...
+}: let
+  inherit
+    (import ./../../hosts/${host}/options.nix)
+    gitUsername
+    gitEmail
+    theme
+    browser
+    wallpaperDir
+    wallpaperGit
+    flakeDir
+    waybarStyle
+    ;
 in {
   # Home Manager Settings
   home.username = "${username}";
@@ -81,21 +94,21 @@ in {
       # Undo last commit but keep changed files in stage
       uncommit = "reset --soft HEAD~1";
       # See recent changes
-      last     = "log -1 HEAD";
+      last = "log -1 HEAD";
       diffLast = "diff HEAD^ HEAD";
-      diffDev  = "diff development..HEAD";
+      diffDev = "diff development..HEAD";
       # Branch management
       rebDev = "!git pull --all && git rebase --interactive development";
-      coDev  = "checkout development";
-      coFea  = "checkout feature";
+      coDev = "checkout development";
+      coFea = "checkout feature";
     };
   };
 
   # Create XDG Dirs
   xdg = {
     userDirs = {
-        enable = true;
-        createDirectories = true;
+      enable = true;
+      createDirectories = true;
     };
   };
 
