@@ -9,12 +9,12 @@ in {
   username = "${setUsername}";
   hostname = "${setHostname}";
   userHome = "/home/${setUsername}";
-  flakeDir = "/home/${setUsername}/zaneyos";
+  flakeDir = "/home/${setUsername}/.config/NixOS_Config";
   wallpaperGit = "https://gitlab.com/Zaney/my-wallpapers.git"; # Can be changed IF you know what your doing
   wallpaperDir = "/home/${setUsername}/Pictures/Wallpapers";
   screenshotDir = "/home/${setUsername}/Pictures/Screenshots";
-  flakePrev = "/home/${setUsername}/.zaneyos-previous";
-  flakeBackup = "/home/${setUsername}/.zaneyos-backup";
+  flakePrev = "/home/${setUsername}/.backup/NixOS_Config-previous";
+  flakeBackup = "/home/${setUsername}/.backup/NixOS_Config-backup";
 
   # Git Configuration ( For Pulling Software Repos )
   gitUsername = "Steinar Darri Þorgilsson";

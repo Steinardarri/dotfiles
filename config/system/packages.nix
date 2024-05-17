@@ -9,52 +9,120 @@
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-    wget
-    curl
-    git
-    cmatrix
-    lolcat
-    neofetch
-    htop
-    btop
+
+    # key tools
+    gh # for bootstrapping
+    just
+
+    # core languages
+    gcc
+    go
+    lua
+    nodejs
+    python3
+    typescript
+    zig
+    # rust stuff
+    cargo-build
+    cargo-cache
+    cargo-expand
+    cargo-leptos
+    rustup
+    trunk
+
+    # dev stuf
+    appimage-run
+    gnumake
+    httpie
     libvirt
-    polkit_gnome
-    lm_sensors
-    unzip
-    unrar
-    libnotify
-    eza
-    v4l-utils
-    ydotool
-    wl-clipboard
+    meson
+    mkcert
+    ninja
     socat
-    cowsay
+    virt-viewer
+
+    # treesitter
+    tree-sitter
+
+    # language servers
+    ccls # c / c++
+    gopls
+    nil # nix
+    nodePackages.pyright
+    nodePackages.typescript-language-server
+    nodePackages.yaml-language-server
+    pkgs.nodePackages.vscode-langservers-extracted # html, css, json, eslint
+    sumneko-lua-language-server
+
+    # formatters & linters
+    alejandra # nix
+    black # python
+    deadnix # nix
+    golangci-lint
+    nodePackages.prettier
+    ruff # python
+    shellcheck
+    shfmt
+    sqlfluff
+    statix # nix
+    tflint
+
+    # system utils
+    bat
+    bottom
+    brightnessctl
+    btop
+    coreutils
+    curl
+    du-dust
+    eza
+    fd
+    findutils
+    fx
+    git
+    git-crypt
+    helix
+    htop
+    jq
+    killall
+    libnotify
+    lm_sensors
     lsd
     lshw
-    pkg-config
-    meson
-    hugo
-    gnumake
-    ninja
-    go
-    nodejs
-    symbola
-    noto-fonts-color-emoji
-    material-icons
-    brightnessctl
-    toybox
-    virt-viewer
-    swappy
-    ripgrep
-    appimage-run
+    mosh
+    neofetch
     networkmanagerapplet
-    yad
-    playerctl
     nh
+    nix-output-monitor
+    nvd
+    parallel
+    pkg-config
+    polkit_gnome
+    procs
+    ripgrep
+    sd
+    tmux
+    toybox
+    tree
+    unrar
+    unzip
+    wget
+    wl-clipboard
     wormhole-william
-    zig
-    alejandra
-    nil
+    zip
+
+    # for fun
+    cmatrix
+    cowsay
+    lolcat
+
+    # ui & looks
+    material-icons
+    noto-fonts-color-emoji
+    playerctl
+    swappy
+    symbola
+    yad
   ];
 
   programs = {
