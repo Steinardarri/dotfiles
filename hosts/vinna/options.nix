@@ -67,7 +67,7 @@ in {
 
   # Program Options
   browser = "floorp"; # Install & Set Default Browser
-  terminal = "alacritty"; # Set Default System Terminal
+  terminal = "kitty"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
   kdenlive = false;
@@ -81,8 +81,8 @@ in {
 
   # Enable Terminals ( If You Disable All You Get Kitty )
   wezterm = false;
-  alacritty = true;
-  kitty = false;
+  alacritty = false;
+  kitty = true;
 
   # Enable Python & PyCharm
   python = true;

@@ -90,7 +90,6 @@
     lsd
     lshw
     mosh
-    neofetch
     networkmanagerapplet
     nh
     nix-output-monitor
@@ -118,6 +117,8 @@
 
     # ui & looks
     material-icons
+    neofetch
+    notcurses
     noto-fonts-color-emoji
     playerctl
     swappy

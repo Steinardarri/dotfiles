@@ -1,8 +1,7 @@
-{ config, lib, pkgs, host, inputs, ... }:
+{ config, lib, pkgs, host, ... }:
 
 let 
   inherit (import ../../hosts/${host}/options.nix) flakeDir theShell hostname username; 
-  nix-index = inputs.nix-index-database.hmModules.nix-index;
 in lib.mkIf (theShell == "zsh") {
   sessionVariables = {
     SHELL = "/etc/profiles/per-user/${username}/bin/zsh";
@@ -61,10 +60,10 @@ in lib.mkIf (theShell == "zsh") {
       gcm = "git checkout master";
       gcd = "git checkout develop";
 
-      ls="lsd";
-      ll="lsd -l";
-      la="lsd -a";
-      lal="lsd -al";
+      ls="ncls";
+      ll="ncls -l";
+      la="ncls -a";
+      lal="ncls -al";
     };
 
     envExtra = ''
@@ -86,7 +85,7 @@ in lib.mkIf (theShell == "zsh") {
     '';
 
     initExtra = ''
-      neofetch
+      ncneofetch
 
       bindkey '^[[3~' delete-char                     # Key Del
       bindkey '^[[5~' beginning-of-buffer-or-history  # Key Page Up

@@ -3,13 +3,12 @@
 let
   palette = config.colorScheme.palette;
   inherit (import ../../hosts/${host}/options.nix) alacritty wezterm kitty;
-in lib.mkIf (wezterm == false && alacritty == false
-	     || kitty == true) {
+in lib.mkIf (wezterm == false && alacritty == false || kitty == true) {
   # Configure Kitty
   programs.kitty = {
     enable = true;
     package = pkgs.kitty;
-    font.name = "JetBrainsMono Nerd Font";
+    font.name = "Hack-NF-Ligatured";
     font.size = 16;
     settings = {
       scrollback_lines = 2000;

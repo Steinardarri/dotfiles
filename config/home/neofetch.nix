@@ -3,11 +3,11 @@
 {
     home.file.".config/neofetch/config.conf".text = ''
         print_info() {
-            prin "$(color 6)  ZaneyOS $ZANEYOS_VERSION"
+            prin "$(color 6)  OS " distro
             info underline
             info "$(color 7)  VER" kernel
             info "$(color 2)  UP " uptime
-            info "$(color 4)  PKG" packages
+            info "$(color 4)  PKG" packages
             info "$(color 6)  DE " de
             info "$(color 5)  TER" term
             info "$(color 3)  CPU" cpu
@@ -16,7 +16,8 @@
             prin " "
             prin "$(color 1) $(color 2) $(color 3) $(color 4) $(color 5) $(color 6) $(color 7) $(color 8)"
         }
-        distro_shorthand="on"
+        aascii_distro="nixos_large"
+        distro_shorthand="off"
         memory_unit="gib"
         cpu_temp="C"
         separator=" $(color 4)>"

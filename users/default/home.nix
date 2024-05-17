@@ -32,6 +32,7 @@ in {
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
     inputs.hyprland.homeManagerModules.default
+    inputs.nix-index-database.hmModules.nix-index
     ./../../config/home
   ];
 

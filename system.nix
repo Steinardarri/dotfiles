@@ -1,6 +1,7 @@
 {
   inputs,
   config,
+  lib,
   pkgs,
   username,
   hostname,
@@ -20,6 +21,7 @@
     theConsoleKeyMap
     flakeDir
     theme
+    terminal
     ;
 in {
   imports = [
@@ -58,9 +60,12 @@ in {
 
   environment.variables = {
     FLAKE = "${flakeDir}";
-    ZANEYOS_VERSION = "1.0";
     POLKIT_BIN = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
     EDITOR = "hx";
+    lib.mkIf (terminal == "kitty") {
+      TERM = "xterm-kitty";
+    };
+    LANG = "${theLocale}";
   };
 
   # Optimization settings and garbage collection automation
