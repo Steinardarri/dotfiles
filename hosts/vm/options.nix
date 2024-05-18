@@ -2,8 +2,8 @@
 # WHAT TO PUT HERE AS OPTIONS.
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
 let
-  setUsername = "steinar";
-  setHostname = "vinna";
+  setUsername = "steinardth";
+  setHostname = "vm";
 in {
   # No Change Needed Below
   username = "${setUsername}";
@@ -18,7 +18,7 @@ in {
 
   # Git Configuration ( For Pulling Software Repos )
   gitUsername = "Steinar Darri Þorgilsson";
-  gitEmail = "steinar@brennisteinn.is";
+  gitEmail = "steinar@steinardth.xyz";
 
   # Base16 Theme
   theme = "nord";
@@ -45,10 +45,10 @@ in {
   sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
-  cpuType = "intel";
-  gpuType = "intel";
+  cpuType = "amd";
+  gpuType = "amd";
   laptop = false;
-  boot = "gpt"; # gpt or noefi
+  boot = "noefi"; # gpt or noefi
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
@@ -86,7 +86,7 @@ in {
   kitty = true;
 
   # Enable Python & PyCharm
-  python = true;
+  python = false;
 
   # Enable SyncThing
   syncthing = false;

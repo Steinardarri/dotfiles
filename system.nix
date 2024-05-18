@@ -62,9 +62,6 @@ in {
     FLAKE = "${flakeDir}";
     POLKIT_BIN = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
     EDITOR = "hx";
-    lib.mkIf (terminal == "kitty") {
-      TERM = "xterm-kitty";
-    };
     LANG = "${theLocale}";
   };
 
@@ -81,7 +78,7 @@ in {
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 7d";
+      options = "--delete-older-than 30d";
     };
   };
 

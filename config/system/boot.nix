@@ -2,32 +2,38 @@
   pkgs,
   config,
   ...
-}: {
-  boot = {
-    loader = {
-      efi = {
-        efiSysMountPoint = "/boot";
-        canTouchEfiVariables = true; # XOR
+}: let
+  inherit (import ../../hosts/${host}/options.nix) boot;
+in
+  lib.mkIf ("${boot}" == "gpt") {
+    boot = {
+      loader = {
+        efi = {
+          efiSysMountPoint = "/boot";
+          canTouchEfiVariables = true; # XOR
+        };
+        grub = {
+          enable = true;
+          devices = ["nodev"];
+          # efiInstallAsRemovable = true; # XOR
+          efiSupport = true;
+          useOSProber = true;
+          configurationLimit = 15;
+        };
+        timeout = 3;
       };
-      grub = {
-        enable = true;
-        devices = ["nodev"];
-        # efiInstallAsRemovable = true; # XOR
-        efiSupport = true;
-        useOSProber = true;
+    };
+  }
+  lib.mkIf ("${boot}" == "noefi") {
+    boot = {
+      loader = {
+        grub = {
+          enable = true;
+          devices = ["nodev"];
+          useOSProber = true;
+          configurationLimit = 15;
+        };
+        timeout = 3;
       };
-      timeout = 3;
     };
-  };
-  boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
-    pname = "distro-grub-themes";
-    version = "3.1";
-    src = pkgs.fetchFromGitHub {
-      owner = "AdisonCavani";
-      repo = "distro-grub-themes";
-      rev = "v3.1";
-      hash = "sha256-ZcoGbbOMDDwjLhsvs77C7G7vINQnprdfI37a9ccrmPs=";
-    };
-    installPhase = "cp -r customize/nixos $out";
-  };
-}
+  }

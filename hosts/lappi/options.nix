@@ -48,6 +48,7 @@ in {
   cpuType = "intel";
   gpuType = "intel-nvidia";
   laptop = true;
+  boot = "gpt"; # gpt or noefi
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
