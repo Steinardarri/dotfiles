@@ -7,7 +7,7 @@
     ./hardware-configuration.nix
   ];
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   boot = {
     loader = {
@@ -17,35 +17,22 @@
       };
       grub = {
         enable = true;
-        devices = ["nodev"];
+        devices = [ "nodev" ];
         # efiInstallAsRemovable = true; # XOR
         efiSupport = true;
         useOSProber = true;
+        configurationLimit = 10;
       };
       timeout = 3;
     };
   };
-  boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
-    pname = "distro-grub-themes";
-    version = "3.1";
-    src = pkgs.fetchFromGitHub {
-      owner = "AdisonCavani";
-      repo = "distro-grub-themes";
-      rev = "v3.1";
-      hash = "sha256-ZcoGbbOMDDwjLhsvs77C7G7vINQnprdfI37a9ccrmPs=";
-    };
-    installPhase = "cp -r customize/nixos $out";
-  };
 
   networking.hostName = "lappi";
 
-  # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
   time.timeZone = "Atlantic/Reykjavik";
 
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "is_IS.UTF-8";
@@ -60,23 +47,15 @@
   };
   console.keyMap = "is-latin1";
 
-  # Enable the X11 windowing system.
+  # Budgie
   services.xserver.enable = true;
-
-  # Enable the Budgie Desktop environment.
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.budgie.enable = true;
-
-  # Configure keymap in X11
   services.xserver = {
     layout = "is";
     xkbVariant = "";
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -87,19 +66,15 @@
     pulse.enable = true;
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.steinardth = {
     isNormalUser = true;
     description = "Steinar Darri Þorgilsson";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.channel = "unstable";
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
     git
     wget
@@ -115,12 +90,18 @@
     alejandra
   ];
 
+  gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
+
   environment.variables = {
     EDITOR = "hx";
   };
 
   fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["Hack"];})
+    (nerdfonts.override {fonts = [ "Hack" ];})
   ];
 
   # Laptop Specific
