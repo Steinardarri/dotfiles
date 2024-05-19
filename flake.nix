@@ -13,12 +13,13 @@
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
-      inputs.nixpkgs.follows = "home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";  
 
     nixvim = {
       url = "github:nix-community/nixvim";

@@ -59,6 +59,7 @@ in
               sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
               accel_profile = flat
             }
+            env = HYPRCURSOR_THEME, rose-pine-hyprcursor
             env = NIXOS_OZONE_WL, 1
             env = NIXPKGS_ALLOW_UNFREE, 1
             env = XDG_CURRENT_DESKTOP, Hyprland
