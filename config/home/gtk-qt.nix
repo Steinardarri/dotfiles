@@ -21,7 +21,7 @@
     in
       getFrom 
         "https://github.com/ful1e5/BreezeX_Cursor/releases/download/v2.0.0/BreezeX-Dark.tar.gz"
-        "sha256-9e4c5d02a2981568725d91a7d6b67440f0d327f92a3cc641bf103bfa0961853b"
+        "sha256-nkxdAqKYFWhyXZGn1rZ0QPDTJ/kqPMZBvxA7+glhhTs="
         "BreezeX-Dark";
 
   # Theme GTK

@@ -1,10 +1,8 @@
 {
-  config,
   pkgs,
   inputs,
   username,
   hostname,
-  gtkThemeFromScheme,
   ...
 }: let
   inherit
@@ -12,11 +10,6 @@
     gitUsername
     gitEmail
     theme
-    browser
-    wallpaperDir
-    wallpaperGit
-    flakeDir
-    waybarStyle
     ;
 in {
   # Home Manager Settings
