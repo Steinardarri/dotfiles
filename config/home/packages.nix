@@ -50,7 +50,7 @@ in {
     (import ./../scripts/themechange.nix {
       inherit pkgs;
       inherit flakeDir;
-      inherit host;
+      inherit hostname;
     })
     (import ./../scripts/theme-selector.nix {inherit pkgs;})
     (import ./../scripts/nvidia-offload.nix {inherit pkgs;})
@@ -59,7 +59,7 @@ in {
     (import ./../scripts/screenshootin.nix {inherit pkgs;})
     (import ./../scripts/list-hypr-bindings.nix {
       inherit pkgs;
-      inherit host;
+      inherit hostname;
     })
   ];
 
