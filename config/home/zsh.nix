@@ -184,9 +184,6 @@ in
       fzf.enable = true;
       fzf.enableZshIntegration = true;
 
-      lsd.enable = true;
-      lsd.enableAliases = true;
-
       zoxide.enable = true;
       zoxide.enableZshIntegration = true;
 
