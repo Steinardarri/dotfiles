@@ -3,12 +3,12 @@
   pkgs,
   inputs,
   username,
-  host,
+  hostname,
   gtkThemeFromScheme,
   ...
 }: let
   inherit
-    (import ./../../hosts/${host}/options.nix)
+    (import ./../../hosts/${hostname}/options.nix)
     gitUsername
     gitEmail
     theme

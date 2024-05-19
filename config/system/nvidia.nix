@@ -3,10 +3,10 @@
   config,
   lib,
   gpuType,
-  host,
+  hostname,
   ...
 }: let
-  inherit (import ../../hosts/${host}/options.nix) gpuType;
+  inherit (import ../../hosts/${hostname}/options.nix) gpuType;
 in
   lib.mkIf ("${gpuType}" == "nvidia") {
     environment.systemPackages = with pkgs; [

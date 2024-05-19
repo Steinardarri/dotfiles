@@ -26,7 +26,7 @@
     };
 
     impermanence.url = "github:nix-community/impermanence";
-    
+
     nur.url = "github:nix-community/NUR";
 
     nix-index-database = {
@@ -42,15 +42,15 @@
     ...
   }: let
     system = "x86_64-linux";
-    host = "vm"; # define which host you want to use here
-    inherit (import ./hosts/${host}/options.nix) username hostname;
-
     pkgs = import nixpkgs {
       inherit system;
       config = {
         allowUnfree = true;
       };
     };
+
+    # define which host you want to use here
+    inherit (import ./hosts/vm/options.nix) username hostname;
   in {
     nixosConfigurations = {
       "${hostname}" = nixpkgs.lib.nixosSystem {

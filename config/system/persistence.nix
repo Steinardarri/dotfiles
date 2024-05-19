@@ -1,9 +1,13 @@
-{ config, pkgs, lib, username, host, ... }:
-
-let 
-  inherit ( import ../../hosts/${host}/options.nix ) username;
-in
 {
+  config,
+  pkgs,
+  lib,
+  username,
+  hostname,
+  ...
+}: let
+  inherit (import ../../hosts/${hostname}/options.nix) username;
+in {
   environment.persistence."/nix/persist" = {
     hideMounts = true;
     directories = [

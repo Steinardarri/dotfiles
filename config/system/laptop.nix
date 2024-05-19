@@ -2,10 +2,10 @@
   pkgs,
   config,
   lib,
-  host,
+  hostname,
   ...
 }: let
-  inherit (import ../../hosts/${host}/options.nix) laptop;
+  inherit (import ../../hosts/${hostname}/options.nix) laptop;
 in
   lib.mkIf (laptop == true) {
     powerManagement.enable = true;

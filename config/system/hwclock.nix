@@ -1,6 +1,11 @@
-{ config, lib, host, ... }:
-
-let inherit (import ../../hosts/${host}/options.nix) localHWClock; in
-lib.mkIf (localHWClock == true) {
-  time.hardwareClockInLocalTime = true;
-}
+{
+  config,
+  lib,
+  hostname,
+  ...
+}: let
+  inherit (import ../../hosts/${hostname}/options.nix) localHWClock;
+in
+  lib.mkIf (localHWClock == true) {
+    time.hardwareClockInLocalTime = true;
+  }

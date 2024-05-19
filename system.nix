@@ -1,11 +1,10 @@
 {
   pkgs,
   hostname,
-  host,
   ...
 }: let
   inherit
-    (import ./hosts/${host}/options.nix)
+    (import ./hosts/${hostname}/options.nix)
     theLocale
     theTimezone
     theLCVariables
@@ -14,7 +13,7 @@
     ;
 in {
   imports = [
-    ./hosts/${host}/hardware.nix
+    ./hosts/${hostname}/hardware.nix
     ./config/system
     ./users/users.nix
   ];

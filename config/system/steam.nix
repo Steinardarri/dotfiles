@@ -2,10 +2,10 @@
   pkgs,
   config,
   lib,
-  host,
+  hostname,
   ...
 }: let
-  inherit (import ../../hosts/${host}/options.nix) steam;
+  inherit (import ../../hosts/${hostname}/options.nix) steam;
 in
   lib.mkIf (steam == true) {
     # Steam Configuration
