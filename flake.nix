@@ -26,7 +26,7 @@
     };
 
     impermanence.url = "github:nix-community/impermanence";
-
+    
     nur.url = "github:nix-community/NUR";
 
     nix-index-database = {
@@ -42,25 +42,8 @@
     ...
   }: let
     system = "x86_64-linux";
-
-    hosts = [
-      {
-        hostname = "lappi";
-        username = "steinardth";
-      }
-      {
-        hostname = "vinna";
-        username = "steinar";
-      }
-      {
-        hostname = "heima";
-        username = "steinardth";
-      }
-      {
-        hostname = "vm";
-        username = "steinardth";
-      }
-    ];
+    host = "vm"; # define which host you want to use here
+    inherit (import ./hosts/${host}/options.nix) username hostname;
 
     pkgs = import nixpkgs {
       inherit system;
@@ -68,42 +51,33 @@
         allowUnfree = true;
       };
     };
-
-    configBuilder = {
-      hostname,
-      username,
-    }: {
-      name = hostname;
-      value = {
-        nixpkgs.lib.nixosSystem = {
-          specialArgs = {
-            inherit system;
-            inherit inputs;
-            inherit username;
-            inherit hostname;
-          };
-          modules = [
-            ./system.nix
-            impermanence.nixosModules.impermanence
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.extraSpecialArgs = {
-                inherit username;
-                inherit inputs;
-                inherit (inputs.nix-colors.lib-contrib {inherit pkgs;}) gtkThemeFromScheme;
-              };
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.backupFileExtension = "backup";
-              home-manager.users.${username} = import ./users/default/home.nix;
-            }
-          ];
+  in {
+    nixosConfigurations = {
+      "${hostname}" = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit system;
+          inherit inputs;
+          inherit username;
+          inherit hostname;
         };
+        modules = [
+          ./system.nix
+          impermanence.nixosModules.impermanence
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.extraSpecialArgs = {
+              inherit username;
+              inherit inputs;
+              inherit hostname;
+              inherit (inputs.nix-colors.lib-contrib {inherit pkgs;}) gtkThemeFromScheme;
+            };
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup";
+            home-manager.users.${username} = import ./users/default/home.nix;
+          }
+        ];
       };
     };
-
-    configs = builtins.map configBuilder hosts;
-  in {
-    nixosConfigurations = configs;
   };
 }
