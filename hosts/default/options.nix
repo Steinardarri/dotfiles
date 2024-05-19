@@ -2,7 +2,7 @@
 # WHAT TO PUT HERE AS OPTIONS.
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
 let
-  setUsername = "defaultuser";
+  setUsername = "steinar";
   setHostname = "nixos";
 in {
   # No Change Needed Below
