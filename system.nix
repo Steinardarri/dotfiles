@@ -5,11 +5,14 @@
 }: let
   inherit
     (import ./hosts/${hostname}/options.nix)
+    username
     theLocale
     theTimezone
     theLCVariables
     theConsoleKeyMap
     flakeDir
+    theShell
+    terminal
     ;
 in {
   imports = [
@@ -51,6 +54,8 @@ in {
     POLKIT_BIN = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
     EDITOR = "hx";
     LANG = "${theLocale}";
+    SHELL = "/etc/profiles/per-user/${username}/bin/${theShell}";
+    TERM = "${terminal}";
   };
 
   # Optimization settings and garbage collection automation

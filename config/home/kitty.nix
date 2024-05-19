@@ -68,5 +68,4 @@ in
         tab_bar_background #${palette.base00}
       '';
     };
-    system.environment.variables.TERM = "xterm-kitty";
   }

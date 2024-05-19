@@ -5,12 +5,9 @@
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) flakeDir theShell username;
+  inherit (import ../../hosts/${hostname}/options.nix) theShell;
 in
   lib.mkIf (theShell == "zsh") {
-    sessionVariables = {
-      SHELL = "/etc/profiles/per-user/${username}/bin/zsh";
-    };
     programs = {
       zsh = {
         enable = true;
