@@ -7,7 +7,8 @@
     ./amd-gpu.nix
     ./appimages.nix
     ./autorun.nix
-    ./boot.nix
+    ./boot-gpt.nix
+    ./boot-noefi.nix
     ./displaymanager.nix
     ./distrobox.nix
     ./flatpak.nix
