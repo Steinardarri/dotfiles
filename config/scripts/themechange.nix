@@ -3,7 +3,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) flakeDir hostname;
+  inherit (import ../../hosts/${hostname}/options.nix) flakeDir;
 in
   pkgs.writeShellScriptBin "themechange" ''
     if [[ ! $@ ]];then

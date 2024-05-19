@@ -1,5 +1,5 @@
 {
-  description = "ZaneyOS";
+  description = "Steinardarri's NixOS Config, from ZaneyOS";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

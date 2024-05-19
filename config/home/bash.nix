@@ -9,7 +9,6 @@
     (import ../../hosts/${hostname}/options.nix)
     flakeDir
     flakePrev
-    hostname
     flakeBackup
     theShell
     ;
