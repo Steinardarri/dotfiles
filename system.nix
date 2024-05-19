@@ -1,9 +1,5 @@
 {
-  inputs,
-  config,
-  lib,
   pkgs,
-  username,
   hostname,
   host,
   ...
@@ -12,16 +8,9 @@
     (import ./hosts/${host}/options.nix)
     theLocale
     theTimezone
-    gitUsername
-    theShell
-    wallpaperDir
-    wallpaperGit
     theLCVariables
-    theKBDLayout
     theConsoleKeyMap
     flakeDir
-    theme
-    terminal
     ;
 in {
   imports = [
