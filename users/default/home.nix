@@ -36,11 +36,6 @@ in {
     ./../../config/home
   ];
 
-  # Define Settings For Xresources
-  xresources.properties = {
-    "Xcursor.size" = 24;
-  };
-
   # Install & Configure Git
   programs.git = {
     enable = true;
