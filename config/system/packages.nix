@@ -23,7 +23,6 @@
     typescript
     zig
     # rust stuff
-    cargo-build
     cargo-cache
     cargo-expand
     cargo-leptos

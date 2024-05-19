@@ -11,19 +11,21 @@
     theSecondKBDLayout
     ;
 in {
-  services.xserver = {
-    enable = true;
-    xkb = {
-      variant = "${theKBDVariant}";
-      layout = "${theKBDLayout}, ${theSecondKBDLayout}";
+  services = {
+    xserver = {
+      enable = true;
+      xkb = {
+        variant = "${theKBDVariant}";
+        layout = "${theKBDLayout}, ${theSecondKBDLayout}";
+      };
     };
-    libinput.enable = true;
     displayManager.sddm = {
       enable = true;
       autoNumlock = true;
       wayland.enable = true;
       theme = "tokyo-night-sddm";
     };
+    libinput.enable = true;
   };
 
   environment.systemPackages = let
