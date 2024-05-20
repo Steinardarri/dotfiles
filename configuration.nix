@@ -1,13 +1,9 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
   ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   boot = {
     loader = {
@@ -17,7 +13,7 @@
       };
       grub = {
         enable = true;
-        devices = [ "nodev" ];
+        devices = ["nodev"];
         # efiInstallAsRemovable = true; # XOR
         efiSupport = true;
         useOSProber = true;
@@ -27,7 +23,7 @@
     };
   };
 
-  networking.hostName = "lappi";
+  networking.hostName = "heima";
 
   networking.networkmanager.enable = true;
 
@@ -47,13 +43,13 @@
   };
   console.keyMap = "is-latin1";
 
-  # Budgie
+  # Plasma
   services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.budgie.enable = true;
-  services.xserver = {
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.xkb = {
     layout = "is";
-    xkbVariant = "";
+    variant = "";
   };
 
   sound.enable = true;
@@ -69,8 +65,11 @@
   users.users.steinardth = {
     isNormalUser = true;
     description = "Steinar Darri Þorgilsson";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
   };
+
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "steinardth";
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.channel = "unstable";
@@ -90,7 +89,7 @@
     alejandra
   ];
 
-  gc = {
+  nix.gc = {
     automatic = true;
     dates = "weekly";
     options = "--delete-older-than 30d";
@@ -98,30 +97,6 @@
 
   environment.variables = {
     EDITOR = "hx";
-  };
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = [ "Hack" ];})
-  ];
-
-  # Laptop Specific
-
-  powerManagement.enable = true;
-  powerManagement.powertop.enable = true;
-  services.thermald.enable = true;
-
-  services.auto-cpufreq = {
-    enable = true;
-    settings = {
-      battery = {
-        governor = "powersave";
-        turbo = "never";
-      };
-      charger = {
-        governor = "performance";
-        turbo = "auto";
-      };
-    };
   };
 
   system.stateVersion = "23.11";
