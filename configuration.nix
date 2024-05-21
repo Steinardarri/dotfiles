@@ -107,10 +107,10 @@
 
   environment.variables = {
     SSH_ASKPASS="${pkgs.libsForQt5.ksshaskpass.out}/bin/ksshaskpass";
-    SSH_ASKPASS_REQUIRE=prefer;
+    SSH_ASKPASS_REQUIRE="prefer";
     EDITOR = "hx";
   };
-  
+
   nix.gc = {
     automatic = true;
     dates = "weekly";
