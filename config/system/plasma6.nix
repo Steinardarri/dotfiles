@@ -62,6 +62,8 @@ in {
     wayland-utils
     xwayland
     xwaylandvideobridge
+    kdePackages.wayland
+    kdePackages.wayqt
 
     clinfo
     glib

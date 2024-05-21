@@ -1,9 +1,10 @@
 {...}: {
   imports = [
+    ./plasma5.nix
+    #./plasma6.nix
     ./amd-gpu.nix
     ./boot-gpt.nix
     ./boot-noefi.nix
-    ./displaymanager.nix
     ./distrobox.nix
     ./flatpak.nix
     ./hwclock.nix

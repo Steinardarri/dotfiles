@@ -114,7 +114,6 @@
     notcurses
     noto-fonts-color-emoji
     playerctl
-    swappy
     symbola
     yad
 
@@ -122,8 +121,6 @@
     kdePackages.breeze
     kdePackages.xdg-desktop-portal-kde
     kdePackages.qt6ct
-    kdePackages.wayland
-    kdePackages.wayqt
   ];
 
   programs = {
