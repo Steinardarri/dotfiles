@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
-
-{
+{...}: {
   programs.helix = {
     enable = true;
 
@@ -8,7 +6,7 @@
       theme = "nord";
       editor = {
         true-color = true;
-        shell = [ "zsh" "-c" ];
+        shell = ["zsh" "-c"];
         cursor-shape = {
           insert = "bar";
           normal = "block";

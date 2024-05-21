@@ -63,7 +63,6 @@ in {
   logitech = true;
 
   # Enable Terminals ( If You Disable All You Get Kitty )
-  wezterm = false;
   alacritty = true;
   kitty = true;
 

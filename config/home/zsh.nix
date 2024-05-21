@@ -72,12 +72,6 @@ in
           export PATH=$PATH:$HOME/.local/bin
         '';
 
-        profileExtra = ''
-          #if [ -z "$DISPLAY" ] && [ "$XDG_VNTR" = 1 ]; then
-          #  exec Hyprland
-          #fi
-        '';
-
         initExtraFirst = ''
           HISTFILE=~/.histfile
           setopt autocd nomatch

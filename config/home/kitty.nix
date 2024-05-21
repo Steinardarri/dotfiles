@@ -11,8 +11,8 @@ in
     programs.kitty = {
       enable = true;
       package = pkgs.kitty;
-      font.name = "Hack-NF-Ligatured";
-      font.size = 16;
+      font.name = "Hack NF FC Ligatured CCG";
+      font.size = 14;
       settings = {
         scrollback_lines = 2000;
         wheel_scroll_min_lines = 1;

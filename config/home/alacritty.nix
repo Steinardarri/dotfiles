@@ -25,11 +25,11 @@ in
         };
         live_config_reload = true;
         font = {
-          normal.family = "Hack-NF-Ligatured";
-          bold.family = "Hack-NF-Ligatured";
-          italic.family = "Hack-NF-Ligatured";
-          bold_italic.family = "Hack-NF-Ligatured";
-          size = 16;
+          normal.family = "Hack NF FC Ligatured CCG";
+          bold.family = "Hack NF FC Ligatured CCG";
+          italic.family = "Hack NF FC Ligatured CCG";
+          bold_italic.family = "Hack NF FC Ligatured CCG";
+          size = 14;
         };
         colors = {
           draw_bold_text_with_bright_colors = true;

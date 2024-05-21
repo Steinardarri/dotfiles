@@ -13,11 +13,6 @@ in
     programs.bash = {
       enable = true;
       enableCompletion = true;
-      profileExtra = ''
-        #if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-        #  exec Hyprland
-        #fi
-      '';
       initExtra = ''
         neofetch
         if [ -f $HOME/.bashrc-personal ]; then

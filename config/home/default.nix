@@ -3,10 +3,11 @@
     # Enable &/ Configure Programs
     ./alacritty.nix
     ./bash.nix
+    ./cursor.nix
     ./helix.nix
     ./kdenlive.nix
     ./kitty.nix
-    ./neofetch.nix
+    # ./neofetch.nix
     ./packages.nix
     ./starship.nix
     ./vscodium.nix

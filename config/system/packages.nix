@@ -109,7 +109,6 @@
     lolcat
 
     # ui & looks
-    hyprcursor
     material-icons
     neofetch
     notcurses

@@ -10,11 +10,19 @@
     gitUsername
     gitEmail
     ;
+  
 in {
   # Home Manager Settings
   home.username = "${username}";
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.11";
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    name = "BreezeX-Dark";
+    size = 24;
+  };
 
   # Import Program Configurations
   imports = [
@@ -86,11 +94,18 @@ in {
     };
   };
 
-  # Create XDG Dirs
   xdg = {
     userDirs = {
       enable = true;
       createDirectories = true;
+    };
+  };
+
+  gtk = {
+    enable = true;
+    theme = {
+      package = pkgs.gnome.gnome-themes-extra;
+      name = "Adwaita-dark";
     };
   };
 
