@@ -1,4 +1,7 @@
 {pkgs, ...}: {
+
+  # Vanilla NixOS with Plasma 5 Desktop Environment
+
   imports = [
     ./hardware-configuration.nix
   ];
@@ -87,16 +90,31 @@
 
     nil
     alejandra
+
+    # Plasma
+    libsForQt5.kate
+    libsForQt5.kgpg
+    pinentry
+    libsForQt5.ksshaskpass
+    libsForQt5.kcalc
+    libsForQt5.filelight
+    libsForQt5.ksystemlog
+    libsForQt5.spectacle
+  ];
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    oxygen
   ];
 
+  environment.variables = {
+    SSH_ASKPASS="${pkgs.libsForQt5.ksshaskpass.out}/bin/ksshaskpass";
+    SSH_ASKPASS_REQUIRE=prefer;
+    EDITOR = "hx";
+  };
+  
   nix.gc = {
     automatic = true;
     dates = "weekly";
     options = "--delete-older-than 30d";
-  };
-
-  environment.variables = {
-    EDITOR = "hx";
   };
 
   system.stateVersion = "23.11";
