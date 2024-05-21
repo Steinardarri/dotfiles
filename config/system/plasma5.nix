@@ -25,10 +25,9 @@ in {
     displayManager = {
       sddm = {
         enable = true;
-        autoNumlock = true;
+        autoLogin.enable = true;
+        autoLogin.user = "${username}";
       };
-      autoLogin.enable = true;
-      autoLogin.user = "${username}";
     };
 
     libinput = {
