@@ -1,8 +1,4 @@
-{
-  pkgs,
-  hostname,
-  ...
-}: let
+{hostname, ...}: let
   inherit
     (import ./hosts/${hostname}/options.nix)
     username
@@ -55,6 +51,8 @@ in {
     LANG = "${theLocale}";
     SHELL = "/etc/profiles/per-user/${username}/bin/${theShell}";
     TERM = "${terminal}";
+    GTK_USE_PORTAL = "1";
+    GPG_TTY = "$(tty)";
   };
 
   # Optimization settings and garbage collection automation

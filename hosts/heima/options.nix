@@ -10,7 +10,7 @@ in {
   hostname = "${setHostname}";
   architecture = "${setArchitecture}";
   userHome = "/home/${setUsername}";
-  flakeDir = "/home/${setUsername}/.config/NixOS_Config";
+  flakeDir = "/home/${setUsername}/NixOS_Config";
 
   # Git Configuration ( For Pulling Software Repos )
   gitUsername = "Steinar Darri Þorgilsson";

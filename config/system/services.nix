@@ -7,10 +7,12 @@
     extraPortals = with pkgs; [
       xdg-desktop-portal
       xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
     ];
     configPackages = with pkgs; [
       xdg-desktop-portal
       xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
     ];
   };
   services.pipewire = {

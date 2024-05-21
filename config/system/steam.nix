@@ -1,6 +1,7 @@
 {
   lib,
   hostname,
+  pkgs,
   ...
 }: let
   inherit (import ../../hosts/${hostname}/options.nix) steam;
@@ -14,4 +15,5 @@ in
       dedicatedServer.openFirewall = true;
     };
     hardware.steam-hardware.enable = true;
+    environment.systemPackages = with pkgs; [steam-run];
   }

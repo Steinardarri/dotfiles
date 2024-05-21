@@ -118,6 +118,13 @@
     swappy
     symbola
     yad
+
+    # kde
+    kdePackages.breeze
+    kdePackages.xdg-desktop-portal-kde
+    kdePackages.qt6ct
+    kdePackages.wayland
+    kdePackages.wayqt
   ];
 
   programs = {

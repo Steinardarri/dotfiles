@@ -20,7 +20,9 @@ in {
       };
     };
 
-    desktopManager.plasma6.enable = lib.mkDefault true;
+    desktopManager.plasma6 = {
+      enable = lib.mkDefault true;
+    };
 
     displayManager.sddm = {
       enable = true;
@@ -41,6 +43,9 @@ in {
       };
     };
   };
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    oxygen
+  ];
 
   programs = {
     wayfire = {
@@ -58,12 +63,23 @@ in {
     xwayland
     xwaylandvideobridge
 
+    clinfo
+    glib
+    glxinfo
+    gtk3
+    gtk4
+    kgpg
+    swt
+    vulkan-tools
+    wl-clipboard
+
     niri
     fuzzel
   ];
 
   environment.sessionVariables = {
     MOZ_ENABLE_WAYLAND = "1";
+    MOZ_USE_XINPUT2 = "1";
     NIXOS_OZONE_WL = "1"; # for VSCode Discord etc
   };
 }

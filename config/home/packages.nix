@@ -1,7 +1,5 @@
 {
   pkgs,
-  config,
-  username,
   hostname,
   ...
 }: let
@@ -13,10 +11,17 @@ in {
   # Install Packages For The User
   home.packages = with pkgs; [
     pkgs."${browser}"
+    firefox-wayland
     discord
     swww
     gimp
     font-awesome
     spotify
+    lapce
+    protonvpn-gui
+    kdePackages.kpat
+    kdePackages.picmi
+    kdePackages.ktorrent
+    kdePackages.kcalc
   ];
 }
