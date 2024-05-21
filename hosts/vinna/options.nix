@@ -10,26 +10,10 @@ in {
   hostname = "${setHostname}";
   userHome = "/home/${setUsername}";
   flakeDir = "/home/${setUsername}/.config/NixOS_Config";
-  wallpaperGit = "https://gitlab.com/Zaney/my-wallpapers.git"; # Can be changed IF you know what your doing
-  wallpaperDir = "/home/${setUsername}/Pictures/Wallpapers";
-  screenshotDir = "/home/${setUsername}/Pictures/Screenshots";
-  flakePrev = "/home/${setUsername}/.backup/NixOS_Config-previous";
-  flakeBackup = "/home/${setUsername}/.backup/NixOS_Config-backup";
 
   # Git Configuration ( For Pulling Software Repos )
   gitUsername = "Steinar Darri Þorgilsson";
   gitEmail = "steinar@brennisteinn.is";
-
-  # Base16 Theme
-  theme = "nord";
-
-  # Hyprland Settings
-  borderAnim = true; # Enable / Disable Hyprland Border Animation
-  extraMonitorSettings = "";
-
-  # Waybar Settings
-  waybarAnim = true; # Enable / Disable Waybar Animation CSS
-  bar-number = true; # Enable / Disable Workspace Numbers In Waybar
 
   # System Settings
   clock24h = true;
@@ -42,10 +26,9 @@ in {
   theTimezone = "Atlantic/Reykjavik";
   theShell = "zsh"; # Possible options: bash, zsh
   theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
-  sdl-videodriver = "x11"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
-  cpuType = "intel";
+  cpuType = "intel"; # amd, intel, vm
   gpuType = "intel";
   laptop = false;
   boot = "gpt"; # gpt or noefi
@@ -72,8 +55,6 @@ in {
   distrobox = false;
   flatpak = false;
   kdenlive = false;
-  blender = false;
-  enableZeroAD = false;
   steam = false;
 
   # Enable Support For

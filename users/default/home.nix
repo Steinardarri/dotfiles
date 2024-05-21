@@ -9,7 +9,6 @@
     (import ./../../hosts/${hostname}/options.nix)
     gitUsername
     gitEmail
-    theme
     ;
 in {
   # Home Manager Settings
@@ -17,14 +16,8 @@ in {
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.11";
 
-  # Set The Colorscheme
-  colorScheme = inputs.nix-colors.colorSchemes."${theme}";
-
   # Import Program Configurations
   imports = [
-    inputs.nix-colors.homeManagerModules.default
-    inputs.nixvim.homeManagerModules.nixvim
-    inputs.hyprland.homeManagerModules.default
     inputs.nix-index-database.hmModules.nix-index
     ./../../config/home
   ];

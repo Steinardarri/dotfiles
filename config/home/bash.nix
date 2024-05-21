@@ -1,15 +1,10 @@
 {
-  config,
   lib,
-  pkgs,
   hostname,
   ...
 }: let
   inherit
     (import ../../hosts/${hostname}/options.nix)
-    flakeDir
-    flakePrev
-    flakeBackup
     theShell
     ;
 in
@@ -29,11 +24,6 @@ in
           source $HOME/.bashrc-personal
         fi
       '';
-      sessionVariables = {
-        ZANEYOS = true;
-        FLAKEBACKUP = "${flakeBackup}";
-        FLAKEPREV = "${flakePrev}";
-      };
       shellAliases = {
         sv = "sudo nvim";
         flake-rebuild = "nh os switch --hostname ${hostname}";

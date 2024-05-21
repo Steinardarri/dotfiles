@@ -1,15 +1,9 @@
-{
-  pkgs,
-  config,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-
     # key tools
     gh # for bootstrapping
     just
@@ -128,12 +122,6 @@
 
   programs = {
     dconf.enable = true;
-    seahorse.enable = true;
-    hyprland = {
-      enable = true;
-      package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-      xwayland.enable = true;
-    };
     fuse.userAllowOther = true;
     mtr.enable = true;
     gnupg.agent = {

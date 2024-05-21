@@ -1,11 +1,9 @@
 {
-  pkgs,
-  config,
   lib,
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) syncthing username userHome;
+  inherit (import ../../hosts/${hostname}/options.nix) syncthing username;
 in
   lib.mkIf (syncthing == true) {
     services = {

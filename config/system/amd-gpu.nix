@@ -15,8 +15,19 @@ in
     services.xserver.videoDrivers = ["amdgpu"];
     # OpenGL
     hardware.opengl = {
-      ## amdvlk: an open-source Vulkan driver from AMD
-      extraPackages = [pkgs.amdvlk];
-      extraPackages32 = [pkgs.driversi686Linux.amdvlk];
+      extraPackages = with pkgs; [
+        rocmPackages.clr.icd
+        rocmPackages.clr
+        libva
+        libva-utils
+        #libvdpau-va-gl
+        #vaapiVdpau
+        vdpauinfo
+        amdvlk
+      ];
+      extraPackages32 = with pkgs; [
+        driversi686Linux.amdvlk
+      ];
     };
+    boot.initrd.kernelModules = ["amdgpu"];
   }

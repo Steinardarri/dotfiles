@@ -1,28 +1,11 @@
 {
-  description = "Steinardarri's NixOS Config, from ZaneyOS";
+  description = "Steinardarri's NixOS Config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nix-colors.url = "github:misterio77/nix-colors";
-
-    hyprland = {
-      url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
-    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";  
-
-    nixvim = {
-      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -42,21 +25,13 @@
     impermanence,
     ...
   }: let
-    system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      inherit system;
-      config = {
-        allowUnfree = true;
-      };
-    };
-
     # define which host you want to use here
-    inherit (import ./hosts/vm/options.nix) username hostname;
+    inherit (import ./hosts/heima/options.nix) username hostname architecture;
   in {
     nixosConfigurations = {
       "${hostname}" = nixpkgs.lib.nixosSystem {
+        system = architecture;
         specialArgs = {
-          inherit system;
           inherit inputs;
           inherit username;
           inherit hostname;
@@ -67,10 +42,9 @@
           home-manager.nixosModules.home-manager
           {
             home-manager.extraSpecialArgs = {
-              inherit username;
               inherit inputs;
+              inherit username;
               inherit hostname;
-              inherit (inputs.nix-colors.lib-contrib {inherit pkgs;}) gtkThemeFromScheme;
             };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;

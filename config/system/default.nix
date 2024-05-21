@@ -1,18 +1,13 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{...}: {
   imports = [
     ./amd-gpu.nix
-    ./appimages.nix
-    ./autorun.nix
     ./boot-gpt.nix
     ./boot-noefi.nix
     ./displaymanager.nix
     ./distrobox.nix
     ./flatpak.nix
     ./hwclock.nix
+    ./impermanence
     ./intel-amd.nix
     ./intel-gpu.nix
     ./intel-nvidia.nix
@@ -23,7 +18,6 @@
     ./ntp.nix
     ./nvidia.nix
     ./packages.nix
-    ./polkit.nix
     ./printer.nix
     ./python.nix
     ./services.nix

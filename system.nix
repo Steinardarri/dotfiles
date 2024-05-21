@@ -51,7 +51,6 @@ in {
 
   environment.variables = {
     FLAKE = "${flakeDir}";
-    POLKIT_BIN = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
     EDITOR = "hx";
     LANG = "${theLocale}";
     SHELL = "/etc/profiles/per-user/${username}/bin/${theShell}";
@@ -63,10 +62,6 @@ in {
     settings = {
       auto-optimise-store = true;
       experimental-features = ["nix-command" "flakes"];
-      substituters = ["https://hyprland.cachix.org"];
-      trusted-public-keys = [
-        "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
-      ];
     };
     gc = {
       automatic = true;

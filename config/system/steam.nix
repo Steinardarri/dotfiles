@@ -1,6 +1,4 @@
 {
-  pkgs,
-  config,
   lib,
   hostname,
   ...
@@ -15,4 +13,5 @@ in
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
     };
+    hardware.steam-hardware.enable = true;
   }

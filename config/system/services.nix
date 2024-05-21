@@ -1,17 +1,16 @@
-{ pkgs, config, lib, ... }:
-
-{
+{pkgs, ...}: {
   # List services that you want to enable:
   services.openssh.enable = true;
   services.fstrim.enable = true;
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal
+    extraPortals = with pkgs; [
+      xdg-desktop-portal
+      xdg-desktop-portal-wlr
     ];
-    configPackages = [ pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-hyprland
-      pkgs.xdg-desktop-portal
+    configPackages = with pkgs; [
+      xdg-desktop-portal
+      xdg-desktop-portal-wlr
     ];
   };
   services.pipewire = {
@@ -45,13 +44,7 @@
   programs.thunar.enable = true;
   services.gvfs.enable = true;
   services.tumbler.enable = true;
-  services.gnome.gnome-keyring.enable=true;
+  services.gnome.gnome-keyring.enable = true;
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-  services.blueman.enable = true;
-  security.pam.services.swaylock = {
-    text = ''
-      auth include login
-    '';
-  };
 }

@@ -1,6 +1,6 @@
 {
   pkgs,
-  config,
+  lib,
   hostname,
   ...
 }: let
@@ -15,25 +15,55 @@ in {
     xserver = {
       enable = true;
       xkb = {
-        variant = "${theKBDVariant}";
         layout = "${theKBDLayout}, ${theSecondKBDLayout}";
+        variant = "${theKBDVariant}";
       };
     };
+
+    desktopManager.plasma6.enable = lib.mkDefault true;
+
     displayManager.sddm = {
       enable = true;
       autoNumlock = true;
       wayland.enable = true;
-      theme = "tokyo-night-sddm";
+      settings.Wayland.SessionDir = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions";
     };
-    libinput.enable = true;
+
+    libinput = {
+      enable = true;
+      mouse = {
+        accelProfile = "flat";
+      };
+      touchpad = {
+        # accelProfile = "flat";
+        naturalScrolling = true;
+        disableWhileTyping = false;
+      };
+    };
   };
 
-  environment.systemPackages = let
-    sugar = pkgs.callPackage ../pkgs/sddm-sugar-dark.nix {};
-    tokyo-night = pkgs.libsForQt5.callPackage ../pkgs/sddm-tokyo-night.nix {};
-  in [
-    sugar.sddm-sugar-dark # Name: sugar-dark
-    tokyo-night # Name: tokyo-night-sddm
-    pkgs.libsForQt5.qt5.qtgraphicaleffects
+  programs = {
+    wayfire = {
+      enable = true;
+      plugins = with pkgs.wayfirePlugins; [
+        wcm
+        wf-shell
+        wayfire-plugins-extra
+      ];
+    };
+  };
+
+  environment.systemPackages = with pkgs; [
+    wayland-utils
+    xwayland
+    xwaylandvideobridge
+
+    niri
+    fuzzel
   ];
+
+  environment.sessionVariables = {
+    MOZ_ENABLE_WAYLAND = "1";
+    NIXOS_OZONE_WL = "1"; # for VSCode Discord etc
+  };
 }
