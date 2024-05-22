@@ -8,10 +8,10 @@
 in {
   users.users = {
     "${username}" = {
-      homeMode = "755";
       isNormalUser = true;
+      homeMode = "755";
       description = "${gitUsername}";
-      extraGroups = ["networkmanager" "wheel" "libvirtd"];
+      extraGroups = ["networkmanager" "wheel"];
       shell = pkgs.${theShell};
       ignoreShellProgramCheck = true;
     };

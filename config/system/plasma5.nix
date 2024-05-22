@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   hostname,
   ...
 }: let
@@ -19,35 +18,25 @@ in {
         layout = "${theKBDLayout}, ${theSecondKBDLayout}";
         variant = "${theKBDVariant}";
       };
-      desktopManager.plasma5.enable = lib.mkDefault true;
-    };
-
-    displayManager = {
-      sddm = {
-        enable = true;
+      desktopManager.plasma5.enable = true;
+      displayManager = {
+        sddm.enable = true;
         autoLogin.enable = true;
         autoLogin.user = "${username}";
       };
     };
-
-    libinput = {
-      enable = true;
-      mouse = {
-        accelProfile = "flat";
-      };
-      touchpad = {
-        # accelProfile = "flat";
-        naturalScrolling = true;
-        disableWhileTyping = true;
-      };
-    };
   };
+  environment.systemPackages = with pkgs; [
+    libsForQt5.kate
+    libsForQt5.kgpg
+    pinentry
+    libsForQt5.ksshaskpass
+    libsForQt5.kcalc
+    libsForQt5.filelight
+    libsForQt5.ksystemlog
+    libsForQt5.spectacle
+  ];
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
     oxygen
   ];
-  qt = {
-    enable = true;
-    platformTheme = "gnome";
-    style = "adwaita-dark";
-  };
 }

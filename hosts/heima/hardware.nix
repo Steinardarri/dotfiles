@@ -16,21 +16,20 @@
   boot.kernelModules = ["kvm-amd"];
   boot.extraModulePackages = [];
 
-  fileSystems."/" = {
-    device = "/dev/disk/by-uuid/87d8e1e1-6429-4a67-9e8b-7a976377cf9a";
-    fsType = "ext4";
-  };
-
-  boot.initrd.luks.devices."luks-1fdb55fe-c3f8-47c3-a865-d2d6a2ab455c".device = "/dev/disk/by-uuid/1fdb55fe-c3f8-47c3-a865-d2d6a2ab455c";
-  boot.initrd.luks.devices."luks-736a89e4-a8d5-4c59-9373-79b27f322caf".device = "/dev/disk/by-uuid/736a89e4-a8d5-4c59-9373-79b27f322caf";
-
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/D6B1-10B7";
+    device = "/dev/disk/by-uuid/4E0A-9495";
     fsType = "vfat";
   };
 
+  boot.initrd.luks.devices."luks-3ca7218a-2f4e-4c54-9951-4e4e98b74be7".device = "/dev/disk/by-uuid/3ca7218a-2f4e-4c54-9951-4e4e98b74be7";
+  fileSystems."/" = {
+    device = "/dev/disk/by-uuid/5b17be92-6e34-4376-a483-27eb1a0a233f";
+    fsType = "ext4";
+  };
+
+  boot.initrd.luks.devices."luks-d0dc3f4a-c434-49a0-b3f4-0f3d8bba0c1c".device = "/dev/disk/by-uuid/d0dc3f4a-c434-49a0-b3f4-0f3d8bba0c1c";
   swapDevices = [
-    {device = "/dev/disk/by-uuid/61f296a5-e3c3-4dd0-bac9-a6a1155d64e7";}
+    {device = "/dev/disk/by-uuid/5aee75fc-f3e5-4a40-8e0e-8e92eee7fc3c";}
   ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

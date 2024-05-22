@@ -8,7 +8,7 @@
     ./distrobox.nix
     ./flatpak.nix
     ./hwclock.nix
-    ./impermanence
+    #./impermanence
     ./intel-amd.nix
     ./intel-gpu.nix
     ./intel-nvidia.nix

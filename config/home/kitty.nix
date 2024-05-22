@@ -4,9 +4,9 @@
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) alacritty kitty;
+  inherit (import ../../hosts/${hostname}/options.nix) kitty;
 in
-  lib.mkIf (alacritty == false || kitty == true) {
+  lib.mkIf (kitty == true) {
     # Configure Kitty
     programs.kitty = {
       enable = true;

@@ -4,17 +4,11 @@
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-    # key tools
-    gh # for bootstrapping
-    just
 
     # core languages
     gcc
-    go
-    lua
     nodejs
     python3
-    typescript
     zig
     # rust stuff
     cargo-cache
@@ -27,43 +21,31 @@
     appimage-run
     gnumake
     httpie
-    libvirt
-    meson
-    mkcert
     ninja
-    socat
-    virt-viewer
 
     # treesitter
     tree-sitter
 
     # language servers
     ccls # c / c++
-    gopls
     nil # nix
     nodePackages.pyright
-    nodePackages.typescript-language-server
     nodePackages.yaml-language-server
     pkgs.nodePackages.vscode-langservers-extracted # html, css, json, eslint
-    sumneko-lua-language-server
 
     # formatters & linters
     alejandra # nix
     black # python
-    deadnix # nix
-    golangci-lint
     nodePackages.prettier
     ruff # python
     shellcheck
     shfmt
     sqlfluff
-    statix # nix
     tflint
 
     # system utils
     bat
     bottom
-    brightnessctl
     btop
     coreutils
     curl
@@ -73,23 +55,18 @@
     findutils
     fx
     git
-    git-crypt
     helix
     htop
     jq
-    killall
-    libnotify
     lm_sensors
     lsd
     lshw
     mosh
-    networkmanagerapplet
     nh
     nix-output-monitor
     nvd
     parallel
     pkg-config
-    polkit_gnome
     procs
     ripgrep
     sd
@@ -99,7 +76,6 @@
     unrar
     unzip
     wget
-    wl-clipboard
     wormhole-william
     zip
 
@@ -107,32 +83,16 @@
     cmatrix
     cowsay
     lolcat
+    notcurses
 
     # ui & looks
-    material-icons
-    neofetch
-    notcurses
-    noto-fonts-color-emoji
-    playerctl
+    fastfetch
     symbola
     yad
-
-    # kde
-    kdePackages.breeze
-    kdePackages.xdg-desktop-portal-kde
-    kdePackages.qt6ct
   ];
 
   programs = {
     dconf.enable = true;
-    fuse.userAllowOther = true;
     mtr.enable = true;
-    gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-    };
-    virt-manager.enable = true;
   };
-
-  virtualisation.libvirtd.enable = true;
 }

@@ -1,20 +1,6 @@
-{pkgs, ...}: {
+{...}: {
   # List services that you want to enable:
   services.openssh.enable = true;
-  services.fstrim.enable = true;
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal
-      xdg-desktop-portal-wlr
-      xdg-desktop-portal-gtk
-    ];
-    configPackages = with pkgs; [
-      xdg-desktop-portal
-      xdg-desktop-portal-wlr
-      xdg-desktop-portal-gtk
-    ];
-  };
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -43,7 +29,6 @@
   hardware.pulseaudio.enable = false;
   sound.enable = true;
   security.rtkit.enable = true;
-  services.gvfs.enable = true;
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 }

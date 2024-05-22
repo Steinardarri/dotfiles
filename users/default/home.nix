@@ -10,19 +10,12 @@
     gitUsername
     gitEmail
     ;
-  
 in {
   # Home Manager Settings
+  programs.home-manager.enable = true;
   home.username = "${username}";
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.11";
-
-  home.pointerCursor = {
-    gtk.enable = true;
-    x11.enable = true;
-    name = "BreezeX-Dark";
-    size = 24;
-  };
 
   # Import Program Configurations
   imports = [
@@ -93,28 +86,4 @@ in {
       coFea = "checkout feature";
     };
   };
-
-  xdg = {
-    userDirs = {
-      enable = true;
-      createDirectories = true;
-    };
-  };
-
-  gtk = {
-    enable = true;
-    theme = {
-      package = pkgs.gnome.gnome-themes-extra;
-      name = "Adwaita-dark";
-    };
-  };
-
-  dconf.settings = {
-    "org/virt-manager/virt-manager/connections" = {
-      autoconnect = ["qemu:///system"];
-      uris = ["qemu:///system"];
-    };
-  };
-
-  programs.home-manager.enable = true;
 }

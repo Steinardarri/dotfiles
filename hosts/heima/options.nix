@@ -52,19 +52,20 @@ in {
 
   # Program Options
   browser = "floorp"; # Install & Set Default Browser
-  terminal = "kitty"; # Set Default System Terminal
+  terminal = "konsole"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  kdenlive = false;
   steam = true;
+
+  personal = true;
 
   # Enable Support For
   # Logitech Devices
   logitech = true;
 
-  # Enable Terminals ( If You Disable All You Get Kitty )
-  alacritty = true;
-  kitty = true;
+  # Enable Terminals
+  alacritty = false;
+  kitty = false;
 
   # Enable Python & PyCharm
   python = true;

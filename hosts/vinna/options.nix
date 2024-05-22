@@ -54,8 +54,9 @@ in {
   terminal = "kitty"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  kdenlive = false;
   steam = false;
+
+  personal = false;
 
   # Enable Support For
   # Logitech Devices

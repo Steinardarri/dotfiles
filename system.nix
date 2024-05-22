@@ -1,4 +1,8 @@
-{hostname, ...}: let
+{
+  pkgs,
+  hostname,
+  ...
+}: let
   inherit
     (import ./hosts/${hostname}/options.nix)
     username
@@ -14,17 +18,15 @@ in {
   imports = [
     ./hosts/${hostname}/hardware.nix
     ./config/system
+    ./config/stylix
     ./users/users.nix
   ];
 
-  # Enable networking
-  networking.hostName = "${hostname}"; # Define your hostname
+  networking.hostName = "${hostname}";
   networking.networkmanager.enable = true;
 
-  # Set your time zone
   time.timeZone = "${theTimezone}";
 
-  # Select internationalisation properties
   i18n.defaultLocale = "${theLocale}";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "${theLCVariables}";
@@ -37,13 +39,7 @@ in {
     LC_TELEPHONE = "${theLCVariables}";
     LC_TIME = "${theLCVariables}";
   };
-
   console.keyMap = "${theConsoleKeyMap}";
-
-  # Define a user account.
-  users = {
-    mutableUsers = true;
-  };
 
   environment.variables = {
     FLAKE = "${flakeDir}";
@@ -51,6 +47,8 @@ in {
     LANG = "${theLocale}";
     SHELL = "/etc/profiles/per-user/${username}/bin/${theShell}";
     TERM = "${terminal}";
+    SSH_ASKPASS = "${pkgs.libsForQt5.ksshaskpass.out}/bin/ksshaskpass";
+    SSH_ASKPASS_REQUIRE = "prefer";
   };
 
   # Optimization settings and garbage collection automation

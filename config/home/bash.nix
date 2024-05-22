@@ -14,7 +14,7 @@ in
       enable = true;
       enableCompletion = true;
       initExtra = ''
-        neofetch
+        fastfetch
         if [ -f $HOME/.bashrc-personal ]; then
           source $HOME/.bashrc-personal
         fi
@@ -30,7 +30,6 @@ in
         la = "lsd -a";
         lal = "lsd -al";
         ".." = "cd ..";
-        neofetch = "neofetch --ascii ~/.config/ascii-neofetch";
       };
     };
   }

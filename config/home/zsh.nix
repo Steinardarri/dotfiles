@@ -81,7 +81,7 @@ in
         '';
 
         initExtra = ''
-          neofetch
+          fastfetch
 
           bindkey '^[[3~' delete-char                     # Key Del
           bindkey '^[[5~' beginning-of-buffer-or-history  # Key Page Up

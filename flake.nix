@@ -9,9 +9,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    impermanence.url = "github:nix-community/impermanence";
+    inputs.nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    nur.url = "github:nix-community/NUR";
+    #impermanence.url = "github:nix-community/impermanence";
+
+    stylix.url = "github:danth/stylix";
+
+    #nur.url = "github:nix-community/NUR";
 
     nix-index-database = {
       url = "github:Mic92/nix-index-database";
@@ -22,7 +26,9 @@
   outputs = inputs @ {
     nixpkgs,
     home-manager,
-    impermanence,
+    nixos-hardware,
+    #impermanence,
+    stylix,
     ...
   }: let
     # define which host you want to use here
@@ -38,8 +44,9 @@
         };
         modules = [
           ./system.nix
-          impermanence.nixosModules.impermanence
+          #impermanence.nixosModules.impermanence
           home-manager.nixosModules.home-manager
+          stylix.nixosModules.stylix
           {
             home-manager.extraSpecialArgs = {
               inherit inputs;
@@ -51,6 +58,18 @@
             home-manager.backupFileExtension = "backup";
             home-manager.users.${username} = import ./users/default/home.nix;
           }
+
+          # Hardware Definitions
+          # CPU
+          nixos-hardware.nixosModules.common-cpu-amd
+          nixos-hardware.nixosModules.common-cpu-amd-pstate
+          nixos-hardware.nixosModules.common-cpu-amd-zenpower
+          # GPU
+          nixos-hardware.nixosModules.common-gpu-amd
+          # Common
+          nixos-hardware.nixosModules.common-pc
+          nixos-hardware.nixosModules.common-pc-ssd
+          nixos-hardware.nixosModules.common-pc-hdd
         ];
       };
     };
