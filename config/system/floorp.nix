@@ -7,22 +7,21 @@
   inherit (import ../../hosts/${hostname}/options.nix) browser;
 in
   lib.mkIf (browser == "floorp") {
+    # Builds Floorp from source, with unfree stuff
     programs.firefox = {
       enable = true;
-      package =
-        pkgs.wrapFirefox
-        (pkgs.floorp-unwrapped.overrideAttrs (old: {
-          configureFlags =
-            (old.configureFlags or [])
-            ++ [
-              "--enable-private-components"
-            ];
-        }))
-        {};
-      preferences = {
-        "widget.use-xdg-desktop-portal.file-picker" = 1;
-        "widget.use-xdg-desktop-portal.mime-handler" = 1;
-        "media.hardwaremediakeys.enabled" = false;
+      package = pkgs.floorp;
+    };
+    environment.sessionVariables = {
+      MOZ_USE_XINPUT2 = "1";
+    };
+    xdg = {
+      portal = {
+        enable = true;
+        extraPortals = with pkgs; [
+          xdg-desktop-portal-wlr
+          xdg-desktop-portal-gtk
+        ];
       };
     };
   }

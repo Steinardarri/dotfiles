@@ -15,5 +15,9 @@ in
       dedicatedServer.openFirewall = true;
     };
     hardware.steam-hardware.enable = true;
-    environment.systemPackages = with pkgs; [steam-run];
+    environment.systemPackages = with pkgs; [
+      steam-run
+      winetricks
+      protontricks
+    ];
   }
