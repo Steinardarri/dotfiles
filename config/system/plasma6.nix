@@ -70,7 +70,6 @@ in {
     glxinfo
     gtk3
     gtk4
-    kgpg
     swt
     vulkan-tools
     wl-clipboard
