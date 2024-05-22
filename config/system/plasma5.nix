@@ -27,10 +27,16 @@ in {
     };
   };
   environment.systemPackages = with pkgs; [
-    libsForQt5.kate
+    libsForQt5.breeze-gtk
+    libsForQt5.kde-gtk-config
+    xdg-desktop-portal
+    libsForQt5.xdg-desktop-portal-kde
+
     libsForQt5.kgpg
     pinentry
     libsForQt5.ksshaskpass
+    
+    libsForQt5.kate
     libsForQt5.kcalc
     libsForQt5.filelight
     libsForQt5.ksystemlog
