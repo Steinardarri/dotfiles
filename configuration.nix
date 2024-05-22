@@ -1,5 +1,4 @@
 {pkgs, ...}: {
-
   # Vanilla NixOS with Plasma 5 Desktop Environment
 
   imports = [
@@ -48,7 +47,9 @@
 
   # Plasma
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "steinardth";
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.xkb = {
     layout = "is";
@@ -71,9 +72,6 @@
     extraGroups = ["networkmanager" "wheel"];
   };
 
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "steinardth";
-
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.channel = "unstable";
 
@@ -82,8 +80,13 @@
     wget
     curl
     helix
-    neofetch
+    fastfetch
     toybox
+
+    # Flake utils
+    nh
+    nix-output-monitor
+    nvd
 
     floorp
     vscodium-fhs
@@ -106,8 +109,8 @@
   ];
 
   environment.variables = {
-    SSH_ASKPASS="${pkgs.libsForQt5.ksshaskpass.out}/bin/ksshaskpass";
-    SSH_ASKPASS_REQUIRE="prefer";
+    SSH_ASKPASS = "${pkgs.libsForQt5.ksshaskpass.out}/bin/ksshaskpass";
+    SSH_ASKPASS_REQUIRE = "prefer";
     EDITOR = "hx";
   };
 
