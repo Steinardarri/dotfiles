@@ -1,11 +1,11 @@
 {
   pkgs,
-  lib,
   hostname,
   ...
 }: let
   inherit
     (import ../../hosts/${hostname}/options.nix)
+    username
     theKBDVariant
     theKBDLayout
     theSecondKBDLayout
@@ -20,15 +20,15 @@ in {
       };
     };
 
-    desktopManager.plasma6 = {
-      enable = lib.mkDefault true;
-    };
+    desktopManager.plasma6.enable = true;
 
     displayManager.sddm = {
       enable = true;
       autoNumlock = true;
       wayland.enable = true;
       settings.Wayland.SessionDir = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions";
+      autoLogin.enable = true;
+      autoLogin.user = "${username}";
     };
 
     libinput = {
@@ -47,35 +47,24 @@ in {
     oxygen
   ];
 
-  programs = {
-    wayfire = {
-      enable = true;
-      plugins = with pkgs.wayfirePlugins; [
-        wcm
-        wf-shell
-        wayfire-plugins-extra
-      ];
-    };
-  };
-
   environment.systemPackages = with pkgs; [
     wayland-utils
     xwayland
     xwaylandvideobridge
-    kdePackages.wayland
+    kdePackages.kwayland
     kdePackages.wayqt
-
-    clinfo
-    glib
-    glxinfo
-    gtk3
-    gtk4
-    swt
-    vulkan-tools
     wl-clipboard
 
-    niri
-    fuzzel
+    kdePackages.breeze-gtk
+    kdePackages.kde-gtk-config
+    xdg-desktop-portal
+    kdePackages.xdg-desktop-portal-kde
+
+    kdePackages.kate
+    kdePackages.kcalc
+    kdePackages.filelight
+    kdePackages.ksystemlog
+    kdePackages.spectacle
   ];
 
   environment.sessionVariables = {

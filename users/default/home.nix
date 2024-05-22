@@ -15,7 +15,6 @@ in {
   programs.home-manager.enable = true;
   home.username = "${username}";
   home.homeDirectory = "/home/${username}";
-  home.stateVersion = "23.11";
 
   # Import Program Configurations
   imports = [
@@ -86,4 +85,6 @@ in {
       coFea = "checkout feature";
     };
   };
+
+  home.stateVersion = "23.11";
 }

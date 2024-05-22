@@ -47,8 +47,6 @@ in {
     LANG = "${theLocale}";
     SHELL = "/etc/profiles/per-user/${username}/bin/${theShell}";
     TERM = "${terminal}";
-    SSH_ASKPASS = "${pkgs.libsForQt5.ksshaskpass.out}/bin/ksshaskpass";
-    SSH_ASKPASS_REQUIRE = "prefer";
   };
 
   # Optimization settings and garbage collection automation

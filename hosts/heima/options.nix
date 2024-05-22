@@ -26,7 +26,7 @@ in {
   theLCVariables = "is_IS.UTF-8";
   theTimezone = "Atlantic/Reykjavik";
   theShell = "zsh"; # Possible options: bash, zsh
-  theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
+  theKernel = "xanmod"; # Possible options: default, latest, lqx, xanmod, zen
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
   cpuType = "amd"; # amd, intel, vm
