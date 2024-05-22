@@ -3,6 +3,7 @@
     # Enable &/ Configure Programs
     ./alacritty.nix
     ./bash.nix
+    #./browser.nix
     ./helix.nix
     ./kitty.nix
     ./packages.nix

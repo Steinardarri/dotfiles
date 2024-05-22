@@ -7,6 +7,7 @@
     ./boot-noefi.nix
     ./distrobox.nix
     ./flatpak.nix
+    ./floorp.nix
     ./hwclock.nix
     #./impermanence
     ./intel-amd.nix

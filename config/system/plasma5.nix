@@ -32,10 +32,6 @@ in {
     xdg-desktop-portal
     libsForQt5.xdg-desktop-portal-kde
 
-    libsForQt5.kgpg
-    pinentry
-    libsForQt5.ksshaskpass
-    
     libsForQt5.kate
     libsForQt5.kcalc
     libsForQt5.filelight
@@ -44,5 +40,6 @@ in {
   ];
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
     oxygen
+    kwallet
   ];
 }
