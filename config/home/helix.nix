@@ -3,7 +3,6 @@
     enable = true;
 
     settings = {
-      theme = "nord";
       editor = {
         true-color = true;
         shell = ["zsh" "-c"];
