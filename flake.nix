@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    inputs.nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     #impermanence.url = "github:nix-community/impermanence";
 
