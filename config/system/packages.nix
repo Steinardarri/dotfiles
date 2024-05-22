@@ -8,7 +8,6 @@
     # core languages
     gcc
     nodejs
-    python3
     zig
     # rust stuff
     cargo-cache
@@ -35,9 +34,7 @@
 
     # formatters & linters
     alejandra # nix
-    black # python
     nodePackages.prettier
-    ruff # python
     shellcheck
     shfmt
     sqlfluff
@@ -71,7 +68,6 @@
     ripgrep
     sd
     tmux
-    toybox
     tree
     unrar
     unzip
