@@ -3,6 +3,7 @@
     # swww
     font-awesome
     spotify
+    spicetify-cli
     lapce
   ];
 }
