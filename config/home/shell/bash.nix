@@ -4,7 +4,7 @@
   ...
 }: let
   inherit
-    (import ../../hosts/${hostname}/options.nix)
+    (import ../../../hosts/${hostname}/options.nix)
     theShell
     ;
 in

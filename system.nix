@@ -1,11 +1,6 @@
-{
-  pkgs,
-  hostname,
-  ...
-}: let
+{hostname, username, ...}: let
   inherit
     (import ./hosts/${hostname}/options.nix)
-    username
     theLocale
     theTimezone
     theLCVariables

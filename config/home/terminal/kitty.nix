@@ -4,7 +4,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) kitty;
+  inherit (import ../../../hosts/${hostname}/options.nix) kitty;
 in
   lib.mkIf (kitty == true) {
     # Configure Kitty

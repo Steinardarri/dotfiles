@@ -35,7 +35,9 @@
     stylix,
     ...
   }: let
-    # define which host you want to use here
+    ############################################
+    ## Define which host you want to use here ##
+    ############################################
     inherit (import ./hosts/heima/options.nix) username hostname architecture;
   in {
     nixosConfigurations = {

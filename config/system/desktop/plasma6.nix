@@ -1,11 +1,11 @@
 {
   pkgs,
   hostname,
+  username,
   ...
 }: let
   inherit
-    (import ../../hosts/${hostname}/options.nix)
-    username
+    (import ../../../hosts/${hostname}/options.nix)
     theKBDVariant
     theKBDLayout
     theSecondKBDLayout

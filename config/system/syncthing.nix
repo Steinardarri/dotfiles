@@ -1,9 +1,10 @@
 {
   lib,
   hostname,
+  username,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) syncthing username;
+  inherit (import ../../hosts/${hostname}/options.nix) syncthing;
 in
   lib.mkIf (syncthing == true) {
     services = {

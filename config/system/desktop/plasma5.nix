@@ -1,11 +1,11 @@
 {
   pkgs,
   hostname,
+  username,
   ...
 }: let
   inherit
-    (import ../../hosts/${hostname}/options.nix)
-    username
+    (import ../../../hosts/${hostname}/options.nix)
     theKBDVariant
     theKBDLayout
     theSecondKBDLayout
@@ -37,6 +37,7 @@ in {
     libsForQt5.filelight
     libsForQt5.ksystemlog
     libsForQt5.spectacle
+    libsForQt5.partitionmanager
   ];
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
     oxygen

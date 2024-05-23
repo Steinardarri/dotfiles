@@ -1,11 +1,10 @@
 {
   pkgs,
-  config,
   lib,
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) gpuType;
+  inherit (import ../../../hosts/${hostname}/options.nix) gpuType;
 in
   lib.mkIf ("${gpuType}" == "intel") {
     nixpkgs.config.packageOverrides = pkgs: {

@@ -3,7 +3,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) alacritty;
+  inherit (import ../../../hosts/${hostname}/options.nix) alacritty;
 in
   lib.mkIf (alacritty == true) {
     programs.alacritty = {

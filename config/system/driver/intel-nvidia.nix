@@ -2,16 +2,29 @@
   pkgs,
   config,
   lib,
-  gpuType,
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) gpuType;
+  inherit (import ../../../hosts/${hostname}/options.nix) intel-bus-id nvidia-bus-id gpuType;
 in
-  lib.mkIf ("${gpuType}" == "nvidia") {
+  lib.mkIf ("${gpuType}" == "intel-nvidia") {
+    nixpkgs.config.packageOverrides = pkgs: {
+      vaapiIntel = pkgs.vaapiIntel.override {
+        enableHybridCodec = true;
+      };
+    };
     environment.systemPackages = with pkgs; [
       nvtop
     ];
+    # OpenGL
+    hardware.opengl = {
+      extraPackages = with pkgs; [
+        intel-media-driver
+        vaapiIntel
+        vaapiVdpau
+        libvdpau-va-gl
+      ];
+    };
     services.xserver.videoDrivers = ["nvidia"];
     hardware.nvidia = {
       # Modesetting is required.
@@ -34,5 +47,14 @@ in
       nvidiaSettings = true;
       # Optionally, you may need to select the appropriate driver version for your specific GPU.
       package = config.boot.kernelPackages.nvidiaPackages.stable;
+      prime = {
+        offload = {
+          enable = true;
+          enableOffloadCmd = true;
+        };
+        # Make sure to use the correct Bus ID values for your system!
+        intelBusId = "${intel-bus-id}";
+        nvidiaBusId = "${nvidia-bus-id}";
+      };
     };
   }

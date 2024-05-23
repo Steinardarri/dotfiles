@@ -1,25 +1,19 @@
 {...}: {
   imports = [
-    ./plasma5.nix
-    #./plasma6.nix
-    ./amd-gpu.nix
-    ./boot-gpt.nix
-    ./boot-noefi.nix
+    ./boot
+    ./desktop
+    ./driver
+    ./kernel
+    
     ./distrobox.nix
     ./flatpak.nix
     ./floorp.nix
     ./hwclock.nix
-    #./impermanence
-    ./intel-amd.nix
-    ./intel-gpu.nix
-    ./intel-nvidia.nix
-    ./kernel.nix
-    ./laptop.nix
     ./logitech.nix
     ./nfs.nix
     ./ntp.nix
-    ./nvidia.nix
     ./packages.nix
+    #./persistence.nix
     ./printer.nix
     ./python.nix
     ./services.nix

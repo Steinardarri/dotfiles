@@ -5,7 +5,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) theShell;
+  inherit (import ../../../hosts/${hostname}/options.nix) theShell;
 in
   lib.mkIf (theShell == "zsh") {
     programs = {
@@ -45,12 +45,11 @@ in
           gc = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
           refresh = "source ${config.home.homeDirectory}/.zshrc-personal";
           show_path = "echo $PATH | tr ':' '\n'";
-          hg = "history 0 | grep";
+          hg = "history 0 | grep -i";
           shx = "sudo hx";
           flake-rebuild = "nh os switch --hostname ${hostname}";
           flake-update = "nh os switch --hostname ${hostname} --update";
 
-          # add more git aliases here if you want them
           gapa = "git add --patch";
           grpa = "git reset --patch";
           gst = "git status";
@@ -59,13 +58,14 @@ in
           gph = "git push -u origin HEAD";
           gco = "git checkout";
           gcob = "git checkout -b";
-          gcm = "git checkout master";
-          gcd = "git checkout develop";
 
-          ls = "ncls";
-          ll = "ncls -l";
-          la = "ncls -a";
-          lal = "ncls -al";
+          ls = "lsd";
+          ll = "lsd -l";
+          la = "lsd -a";
+          lal = "lsd -al";
+
+          lsblks = "lsblk -o name,mountpoint,label,size,fstype,uuid";
+          neofetch = "fastfetch";
         };
 
         envExtra = ''

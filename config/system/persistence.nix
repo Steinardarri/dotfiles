@@ -1,13 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  username,
-  hostname,
-  ...
-}: let
-  inherit (import ../../hosts/${hostname}/options.nix) username;
-in {
+{username, ...}: {
   environment.persistence."/nix/persist" = {
     hideMounts = true;
     directories = [
@@ -22,20 +13,25 @@ in {
     ];
     users.${username} = {
       directories = [
+        "NixOS_Config"
+        "Desktop"
+        "Documents"
         "Downloads"
         "Music"
-        "Documents"
         "Pictures"
         "Videos"
-        "zaneyos"
+        ".cache"
+        ".config/discord"
+        ".continue"
+        ".floorp"
         ".local/share/sddm"
         ".mozilla"
-        ".cache"
         ".ssh"
-        ".config/discord"
         ".steam"
+        ".vscode-oss"
       ];
       files = [
+        ".zsh_history"
       ];
     };
   };

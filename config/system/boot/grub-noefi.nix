@@ -1,11 +1,9 @@
 {
-  pkgs,
-  config,
   hostname,
   lib,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) boot;
+  inherit (import ../../../hosts/${hostname}/options.nix) boot;
 in
   lib.mkIf ("${boot}" == "noefi") {
     boot = {

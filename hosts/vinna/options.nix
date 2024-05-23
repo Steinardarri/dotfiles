@@ -2,12 +2,13 @@
 # WHAT TO PUT HERE AS OPTIONS.
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
 let
-  setUsername = "steinar";
+  setUsername = "steinardth";
   setHostname = "vinna";
+  setArchitecture = "x86_64-linux";
 in {
-  # No Change Needed Below
   username = "${setUsername}";
   hostname = "${setHostname}";
+  architecture = "${setArchitecture}";
   userHome = "/home/${setUsername}";
   flakeDir = "/home/${setUsername}/NixOS_Config";
 
@@ -25,7 +26,7 @@ in {
   theLCVariables = "is_IS.UTF-8";
   theTimezone = "Atlantic/Reykjavik";
   theShell = "zsh"; # Possible options: bash, zsh
-  theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
+  theKernel = "xanmod"; # Possible options: default, latest, lqx, xanmod, zen
   # For Hybrid Systems intel-nvidia
   # Should Be Used As gpuType
   cpuType = "intel"; # amd, intel, vm
@@ -51,7 +52,7 @@ in {
 
   # Program Options
   browser = "floorp"; # Install & Set Default Browser
-  terminal = "kitty"; # Set Default System Terminal
+  terminal = "konsole"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
   steam = false;
@@ -62,9 +63,9 @@ in {
   # Logitech Devices
   logitech = false;
 
-  # Enable Terminals ( If You Disable All You Get Kitty )
+  # Enable Terminals
   alacritty = false;
-  kitty = true;
+  kitty = false;
 
   # Enable Python & PyCharm
   python = true;
