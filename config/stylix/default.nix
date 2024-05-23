@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     # Select Theme to use
-    ./dystopia
+    # ./dystopia
+    ./fjara
   ];
 }
