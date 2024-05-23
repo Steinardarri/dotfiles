@@ -2,7 +2,7 @@
 # https://github.com/danth/stylix
 {pkgs, ...}: {
   stylix = {
-    image = ./fjara.png;
+    image = ./eidsgrandi.png;
     polarity = "dark";
 
     targets = {
