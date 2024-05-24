@@ -2,14 +2,11 @@
   imports = [
     ./shell
     ./terminal
-    
-    #./browser.nix
+
+    #./browser.nix #Doesn't work with floorp
     ./helix.nix
     ./packages.nix
     ./personal.nix
     ./vscodium.nix
-
-    # Place Home Files Like Pictures
-    ./files.nix
   ];
 }

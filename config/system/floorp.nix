@@ -12,14 +12,12 @@ in
       enable = true;
       package = pkgs.floorp;
     };
-    environment.sessionVariables = {
-      MOZ_USE_XINPUT2 = "1";
-    };
     xdg = {
       portal = {
         enable = true;
         extraPortals = with pkgs; [
-          xdg-desktop-portal-wlr
+          xdg-desktop-portal
+          xdg-desktop-portal-kde
           xdg-desktop-portal-gtk
         ];
       };

@@ -11,11 +11,14 @@
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    # disko = {
-    #   url = "github:nix-community/disko";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-    # impermanence.url = "github:nix-community/impermanence";
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    #plasma-manager = "github:pjones/plasma-manager/plasma-5";
+
+    impermanence.url = "github:nix-community/impermanence";
 
     stylix.url = "github:danth/stylix";
 
@@ -31,14 +34,16 @@
     nixpkgs,
     home-manager,
     nixos-hardware,
-    #impermanence,
+    impermanence,
+    disko,
     stylix,
     ...
   }: let
     ############################################
     ## Define which host you want to use here ##
     ############################################
-    inherit (import ./hosts/heima/options.nix) username hostname architecture;
+    inherit (import ./hosts/heima/options.nix) username hostname architecture device hardware-list;
+    hardware-import = list: map (item: nixos-hardware.nixosModules.${item}) list;
   in {
     nixosConfigurations = {
       "${hostname}" = nixpkgs.lib.nixosSystem {
@@ -47,10 +52,12 @@
           inherit inputs;
           inherit username;
           inherit hostname;
+          inherit device;
         };
         modules = [
-          ./system.nix
-          #impermanence.nixosModules.impermanence
+          ./configuration.nix
+          impermanence.nixosModules.impermanence
+          disko.nixosModules.default
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix
           {
@@ -62,21 +69,9 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
-            home-manager.users.${username} = import ./users/default/home.nix;
+            home-manager.users.${username} = import ./users/home.nix;
           }
-
-          # Hardware Definitions
-          # CPU
-          nixos-hardware.nixosModules.common-cpu-amd
-          nixos-hardware.nixosModules.common-cpu-amd-pstate
-          nixos-hardware.nixosModules.common-cpu-amd-zenpower
-          # GPU
-          nixos-hardware.nixosModules.common-gpu-amd
-          # Common
-          nixos-hardware.nixosModules.common-pc
-          nixos-hardware.nixosModules.common-pc-ssd
-          nixos-hardware.nixosModules.common-pc-hdd
-        ];
+        ] ++ hardware-import hardware-list;
       };
     };
   };

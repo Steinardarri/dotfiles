@@ -31,7 +31,6 @@ in {
     libsForQt5.kde-gtk-config
     xdg-desktop-portal
     libsForQt5.xdg-desktop-portal-kde
-    gtk2
     gtk3
     gtk4
 

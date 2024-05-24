@@ -4,7 +4,6 @@
 
   # List System Programs
   environment.systemPackages = with pkgs; [
-
     # core languages
     gcc
     nodejs
@@ -85,6 +84,11 @@
     fastfetch
     symbola
     yad
+  ];
+
+  fonts.packages = with pkgs; [
+    dejavu_fonts
+    (nerdfonts.override {fonts = ["Hack" "FiraCode" "DroidSansMono"];})
   ];
 
   programs = {

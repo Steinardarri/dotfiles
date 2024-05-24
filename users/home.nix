@@ -6,7 +6,7 @@
   ...
 }: let
   inherit
-    (import ./../../hosts/${hostname}/options.nix)
+    (import ../hosts/${hostname}/options.nix)
     gitUsername
     gitEmail
     ;
@@ -19,7 +19,7 @@ in {
   # Import Program Configurations
   imports = [
     inputs.nix-index-database.hmModules.nix-index
-    ./../../config/home
+    ../config/home
   ];
 
   # Install & Configure Git

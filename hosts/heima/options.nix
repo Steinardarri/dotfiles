@@ -1,19 +1,20 @@
-# PLEASE READ THE WIKI FOR DETERMINING
-# WHAT TO PUT HERE AS OPTIONS.
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
 let
   setUsername = "steinardth";
   setHostname = "heima";
   setArchitecture = "x86_64-linux";
 in {
+  ## System ##
+
+  # Base definitions
   username = "${setUsername}";
   hostname = "${setHostname}";
   architecture = "${setArchitecture}";
   userHome = "/home/${setUsername}";
   flakeDir = "/home/${setUsername}/NixOS_Config";
 
-  # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "Steinar Darri Þorgilsson";
+  # Git Configuration
+  gitUsername = "SteinarDarri";
   gitEmail = "steinar@steinardth.xyz";
 
   # System Settings
@@ -25,18 +26,36 @@ in {
   theKBDVariant = "";
   theLCVariables = "is_IS.UTF-8";
   theTimezone = "Atlantic/Reykjavik";
-  theShell = "zsh"; # Possible options: bash, zsh
-  theKernel = "xanmod"; # Possible options: default, latest, lqx, xanmod, zen
-  # For Hybrid Systems intel-nvidia
-  # Should Be Used As gpuType
+  theShell = "zsh"; # bash, zsh
+  theKernel = "xanmod"; # default, latest, lqx, xanmod, zen
+
+  ## Hardware ##
+
+  # Designation of device to install NixOS on
+  device = "nvme0n1";
+
+  # For Hybrid Systems 'intel-nvidia' should Be Used As gpuType
   cpuType = "amd"; # amd, intel, vm
-  gpuType = "amd";
+  gpuType = "amd"; # amd, intel, nvidia, intel-nvidia
   laptop = false;
-  boot = "gpt"; # gpt or noefi
+  boot = "disko"; # disko, grub or noefi
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
   nvidia-bus-id = "PCI:0:2:0";
+
+  # Declare nixos-hardware modules to use here
+  hardware-list = [
+    "common-cpu-amd"
+    "common-cpu-amd-pstate"
+    "common-cpu-amd-zenpower"
+    "common-gpu-amd"
+    "common-pc"
+    "common-pc-ssd"
+    "common-pc-hdd"
+  ];
+
+  ## Programs
 
   # Enable / Setup NFS
   nfs = false;

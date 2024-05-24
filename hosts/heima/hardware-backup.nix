@@ -17,13 +17,13 @@
     device = "/dev/disk/by-uuid/4E0A-9495";
     fsType = "vfat";
   };
-  # Root on main disk
+  # Main Disk
   boot.initrd.luks.devices."luks-3ca7218a-2f4e-4c54-9951-4e4e98b74be7".device = "/dev/disk/by-uuid/3ca7218a-2f4e-4c54-9951-4e4e98b74be7";
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/5b17be92-6e34-4376-a483-27eb1a0a233f";
     fsType = "ext4";
   };
-  # Swap on main disk with hibernate
+  # Swap on Main, with hibernate
   boot.initrd.luks.devices."luks-d0dc3f4a-c434-49a0-b3f4-0f3d8bba0c1c".device = "/dev/disk/by-uuid/d0dc3f4a-c434-49a0-b3f4-0f3d8bba0c1c";
   swapDevices = [
     {device = "/dev/disk/by-uuid/5aee75fc-f3e5-4a40-8e0e-8e92eee7fc3c";}
