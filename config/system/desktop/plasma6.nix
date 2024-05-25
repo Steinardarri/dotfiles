@@ -1,48 +1,26 @@
-{
-  pkgs,
-  hostname,
-  username,
-  ...
-}: let
-  inherit
-    (import ../../../hosts/${hostname}/options.nix)
-    theKBDVariant
-    theKBDLayout
-    theSecondKBDLayout
-    ;
-in {
+{pkgs, ...}: {
   services = {
-    xserver = {
-      enable = true;
-      xkb = {
-        layout = "${theKBDLayout}, ${theSecondKBDLayout}";
-        variant = "${theKBDVariant}";
-      };
-    };
-
     desktopManager.plasma6.enable = true;
 
-    displayManager.sddm = {
-      enable = true;
-      autoNumlock = true;
-      wayland.enable = true;
-      settings.Wayland.SessionDir = "${pkgs.plasma5Packages.plasma-workspace}/share/wayland-sessions";
-      autoLogin.enable = true;
-      autoLogin.user = "${username}";
-    };
-
-    libinput = {
-      enable = true;
-      mouse = {
-        accelProfile = "flat";
-      };
-      touchpad = {
-        # accelProfile = "flat";
-        naturalScrolling = true;
-        disableWhileTyping = false;
+    displayManager = {
+      sddm = {
+        enable = true;
+        package = pkgs.kdePackages.sddm;
+        autoNumlock = true;
+        wayland = {
+          enable = true;
+          compositor = "kwin";
+        };
+        settings = {
+          Autologin = {
+            Session = "plasma.desktop";
+            User = "steinardth";
+          };
+        };
       };
     };
   };
+
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     oxygen
   ];
@@ -55,16 +33,11 @@ in {
     kdePackages.wayqt
     wl-clipboard
 
-    kdePackages.breeze-gtk
-    kdePackages.kde-gtk-config
-    xdg-desktop-portal
-    kdePackages.xdg-desktop-portal-kde
-
     kdePackages.kate
     kdePackages.kcalc
     kdePackages.filelight
     kdePackages.ksystemlog
-    kdePackages.spectacle
+    kdePackages.partitionmanager
   ];
 
   environment.sessionVariables = {

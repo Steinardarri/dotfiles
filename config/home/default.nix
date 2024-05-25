@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   imports = [
     ./shell
     ./terminal
@@ -12,5 +12,13 @@
     #./persistence.nix
     ./personal.nix
     ./vscodium.nix
+  ];
+
+  home.packages = with pkgs; [
+    # swww
+    font-awesome
+    spotify
+    spicetify-cli
+    lapce
   ];
 }
