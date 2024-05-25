@@ -18,7 +18,6 @@ in {
 
   # Import Program Configurations
   imports = [
-    inputs.nix-index-database.hmModules.nix-index
     ../config/home
   ];
 

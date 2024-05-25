@@ -1,10 +1,9 @@
 {
-  config,
   lib,
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) nfs nfsMountPoint nfsDevice;
+  inherit (import ../../../hosts/${hostname}/options.nix) nfs nfsMountPoint nfsDevice;
 in
   lib.mkIf (nfs == true) {
     fileSystems."${nfsMountPoint}" = {

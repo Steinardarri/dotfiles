@@ -1,16 +1,20 @@
 {
+  inputs,
+  architecture,
   pkgs,
-  username,
+  lib,
   ...
 }: {
-  programs.vscode = {
+  programs.vscode = let
+    vsExtensions = inputs.nix-vscode-extensions.extensions.${architecture}.vscode-marketplace;
+  in {
     enable = true;
     package = pkgs.vscodium;
     enableUpdateCheck = false;
     enableExtensionUpdateCheck = false;
     mutableExtensionsDir = false;
 
-    extensions = with pkgs.vscode-extensions; [
+    extensions = with vsExtensions; [
       alefragnani.bookmarks
       christian-kohler.path-intellisense
       continue.continue
@@ -25,10 +29,10 @@
     userSettings = {
       # General
       "editor.fontSize" = 16;
-      "editor.fontFamily" = "'Hack NF FC Ligatured CCG'; 'Hack'; 'monospace'; monospace";
+      "editor.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG'; 'Hack'; 'monospace'; monospace";
       "editor.fontLigatures" = true;
       "terminal.integrated.fontSize" = 14;
-      "terminal.integrated.fontFamily" = "'Hack NF FC Ligatured CCG'; 'FiraCode Nerd Font'; 'monospace'; monospace";
+      "terminal.integrated.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG'; 'FiraCode Nerd Font'; 'monospace'; monospace";
       "window.zoomLevel" = 1;
       "workbench.startupEditor" = "none";
       "explorer.compactFolders" = false;
@@ -163,6 +167,4 @@
       }
     ];
   };
-
-  environment.persistence."/persist".users.${username}.directories = [".config/VSCodium"];
 }

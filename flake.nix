@@ -16,13 +16,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    #plasma-manager = "github:pjones/plasma-manager/plasma-5";
+    plasma-manager.url = "github:pjones/plasma-manager/plasma-5";
 
     impermanence.url = "github:nix-community/impermanence";
 
     stylix.url = "github:danth/stylix";
 
-    #nur.url = "github:nix-community/NUR";
+    nur.url = "github:nix-community/NUR";
+
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
     nix-index-database = {
       url = "github:Mic92/nix-index-database";
@@ -53,25 +55,29 @@
           inherit username;
           inherit hostname;
           inherit device;
+          inherit architecture;
         };
-        modules = [
-          ./configuration.nix
-          impermanence.nixosModules.impermanence
-          disko.nixosModules.default
-          home-manager.nixosModules.home-manager
-          stylix.nixosModules.stylix
-          {
-            home-manager.extraSpecialArgs = {
-              inherit inputs;
-              inherit username;
-              inherit hostname;
-            };
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.backupFileExtension = "backup";
-            home-manager.users.${username} = import ./users/home.nix;
-          }
-        ] ++ hardware-import hardware-list;
+        modules =
+          [
+            ./configuration.nix
+            impermanence.nixosModules.impermanence
+            disko.nixosModules.default
+            home-manager.nixosModules.home-manager
+            stylix.nixosModules.stylix
+            {
+              home-manager.extraSpecialArgs = {
+                inherit inputs;
+                inherit username;
+                inherit hostname;
+                inherit architecture;
+              };
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "backup";
+              home-manager.users.${username} = import ./users/home.nix;
+            }
+          ]
+          ++ hardware-import hardware-list;
       };
     };
   };

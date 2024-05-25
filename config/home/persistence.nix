@@ -7,6 +7,7 @@
       "Downloads"
       "Music"
       "Pictures"
+      "Verkefni"
       "Videos"
       #".cache"
       ".config/discord"
@@ -18,6 +19,7 @@
       ".mozilla"
       ".ssh"
       ".steam"
+      #".config/VSCodium"
     ];
     files = [
       ".zsh_history"

@@ -31,6 +31,7 @@ in {
     libsForQt5.kde-gtk-config
     xdg-desktop-portal
     libsForQt5.xdg-desktop-portal-kde
+    xdg-desktop-portal-gtk
     gtk3
     gtk4
 
@@ -44,4 +45,14 @@ in {
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
     oxygen
   ];
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal
+        libsForQt5.xdg-desktop-portal-kde
+        xdg-desktop-portal-gtk
+      ];
+    };
+  };
 }

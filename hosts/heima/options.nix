@@ -38,7 +38,7 @@ in {
   cpuType = "amd"; # amd, intel, vm
   gpuType = "amd"; # amd, intel, nvidia, intel-nvidia
   laptop = false;
-  boot = "disko"; # disko, grub or noefi
+  boot = "grub"; # disko, grub or noefi
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";

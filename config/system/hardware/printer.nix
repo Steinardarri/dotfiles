@@ -5,7 +5,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) printer;
+  inherit (import ../../../hosts/${hostname}/options.nix) printer;
 in
   lib.mkIf (printer == true) {
     services = {
