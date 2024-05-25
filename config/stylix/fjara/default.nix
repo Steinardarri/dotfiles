@@ -2,7 +2,6 @@
 # https://github.com/danth/stylix
 {
   pkgs,
-  username,
   ...
 }: {
   stylix = {

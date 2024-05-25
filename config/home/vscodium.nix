@@ -1,38 +1,65 @@
 {
-  inputs,
-  architecture,
   pkgs,
   lib,
   ...
 }: {
-  programs.vscode = let
-    vsExtensions = inputs.nix-vscode-extensions.extensions.${architecture}.vscode-marketplace;
-  in {
+  programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
+
+    mutableExtensionsDir = false;
     enableUpdateCheck = false;
     enableExtensionUpdateCheck = false;
-    mutableExtensionsDir = false;
 
-    extensions = with vsExtensions; [
-      alefragnani.bookmarks
-      christian-kohler.path-intellisense
-      continue.continue
-      eamodio.gitlens
-      jnoortheen.nix-ide
-      kamadorueda.alejandra
-      mhutchie.git-graph
-      seatonjiang.gitmoji-vscode
-      vscode-icons-team.vscode-icons
-    ];
+    extensions = with pkgs.open-vsx;
+      [
+        # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/open-vsx-latest.json
+
+        # Editor
+        eamodio.gitlens
+        editorconfig.editorconfig
+        mhutchie.git-graph
+        usernamehw.errorlens
+
+        # Aesthetics
+        esbenp.prettier-vscode
+        gruntfuggly.todo-tree
+        jock.svg
+        naumovs.color-highlight
+        seatonjiang.gitmoji-vscode
+        vscode-icons-team.vscode-icons
+
+        # Toolset
+        christian-kohler.path-intellisense
+        formulahendry.code-runner
+        continue.continue
+        wix.vscode-import-cost
+        firefox-devtools.vscode-firefox-debug
+
+        # Language specific
+        jnoortheen.nix-ide
+        james-yu.latex-workshop
+        tamasfe.even-better-toml
+        yzhang.markdown-all-in-one
+        kamadorueda.alejandra
+
+        # Workflow
+        alefragnani.bookmarks
+        gruntfuggly.todo-tree
+      ]
+      ++ (with pkgs.vscode-marketplace; [
+        # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/vscode-marketplace-latest.json
+
+        amodio.toggle-excluded-files
+      ]);
 
     userSettings = {
       # General
       "editor.fontSize" = 16;
-      "editor.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG'; 'Hack'; 'monospace'; monospace";
+      "editor.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG', 'Hack', 'monospace', monospace";
       "editor.fontLigatures" = true;
       "terminal.integrated.fontSize" = 14;
-      "terminal.integrated.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG'; 'FiraCode Nerd Font'; 'monospace'; monospace";
+      "terminal.integrated.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG', 'FiraCode Nerd Font', 'monospace', monospace";
       "window.zoomLevel" = 1;
       "workbench.startupEditor" = "none";
       "explorer.compactFolders" = false;
@@ -47,6 +74,7 @@
       "editor.formatOnPaste" = true;
       "editor.wordWrap" = "bounded";
       "editor.wrappingIndent" = "deepIndent";
+      "editor.inlineSuggest.enabled" = true;
 
       # Whitespace
       "files.trimTrailingWhitespace" = true;
@@ -92,23 +120,32 @@
       "workbench.iconTheme" = "vscode-icons";
       "continue.enableTabAutocomplete" = true;
 
+      "errorLens.gutterIconsEnabled" = true;
+      "errorLens.messageMaxChars" = 0;
+
       # Nix
       "alejandra.program" = "alejandra";
       "nix.enableLanguageServer" = true;
+      "nix.serverPath" = "nil";
       "[nix]" = {
         "editor.defaultFormatter" = "kamadorueda.alejandra";
         "editor.formatOnPaste" = true;
         "editor.formatOnSave" = true;
         "editor.formatOnType" = false;
       };
-      # GitLens
+
       "gitlens.currentLine.enabled" = false;
       "gitlens.codeLens.enabled" = false;
       "gitlens.hovers.enabled" = false;
       "gitlens.showWelcomeOnInstall" = false;
       "gitlens.plusFeatures.enabled" = false;
 
-      # Gitmoji
+      "[json].editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "[javascript].editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "[typescriptreact].editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "[jsonc].editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "[markdown].editor.defaultFormatter" = "esbenp.prettier-vscode";
+
       "gitmoji.onlyUseCustomEmoji" = true;
       "gitmoji.addCustomEmoji" = [
         {

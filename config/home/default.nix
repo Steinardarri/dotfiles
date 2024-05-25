@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   imports = [
+    ./desktop
     ./shell
     ./terminal
 
@@ -8,16 +9,14 @@
     #./browser.nix #Doesn't work with floorp
     ./floorp.nix
     ./helix.nix
-    #./persistence.nix
     ./personal.nix
+    ./spicetify.nix
     ./vscodium.nix
   ];
 
   home.packages = with pkgs; [
     # swww
     font-awesome
-    spotify
-    spicetify-cli
     lapce
   ];
 }

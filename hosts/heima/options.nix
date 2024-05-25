@@ -2,14 +2,14 @@
 let
   setUsername = "steinardth";
   setHostname = "heima";
-  setArchitecture = "x86_64-linux";
+  setSystemArchitecture = "x86_64-linux";
 in {
   ## System ##
 
   # Base definitions
   username = "${setUsername}";
   hostname = "${setHostname}";
-  architecture = "${setArchitecture}";
+  system = "${setSystemArchitecture}";
   userHome = "/home/${setUsername}";
   flakeDir = "/home/${setUsername}/NixOS_Config";
 
@@ -20,9 +20,9 @@ in {
   # System Settings
   clock24h = true;
   theLocale = "en_GB.UTF-8";
+  theConsoleKeyMap = "is-latin1";
   theKBDLayout = "is";
   theSecondKBDLayout = "";
-  theConsoleKeyMap = "is-latin1";
   theKBDVariant = "";
   theLCVariables = "is_IS.UTF-8";
   theTimezone = "Atlantic/Reykjavik";
@@ -55,40 +55,37 @@ in {
     "common-pc-hdd"
   ];
 
+  # Enable Printer & Scanner Support
+  printer = false;
+
   ## Programs
 
-  # Enable / Setup NFS
+  # NFS
   nfs = false;
   nfsMountPoint = "/mnt/nas";
   nfsDevice = "nas:/volume1/nas";
 
-  # NTP & HWClock Settings
-  ntp = true;
+  # Clock Settings
+  ntp = true; # Network
   localHWClock = false;
-
-  # Enable Printer & Scanner Support
-  printer = false;
 
   # Program Options
   browser = "floorp"; # Install & Set Default Browser
   terminal = "konsole"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  steam = true;
 
-  personal = true;
+  gaming = true;
+  personal = false;
 
-  # Enable Support For
-  # Logitech Devices
   logitech = true;
 
-  # Enable Terminals
+  # Terminals
   alacritty = false;
   kitty = false;
 
-  # Enable Python & PyCharm
-  python = true;
-
-  # Enable SyncThing
   syncthing = false;
+
+  # Development
+  python = true;
 }

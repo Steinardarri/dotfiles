@@ -13,7 +13,11 @@ in
     home.packages = with pkgs; [
       discord
       krita
+
       protonvpn-gui
+      protonmail-bridge-gui
+      #protonmail-bridge
+
       kdePackages.kpat
       kdePackages.ktorrent
       kdePackages.kdenlive

@@ -22,4 +22,7 @@ in {
     };
     mutableUsers = false;
   };
+
+  # Whether you need to input password on sudo
+  security.sudo.wheelNeedsPassword = false;
 }

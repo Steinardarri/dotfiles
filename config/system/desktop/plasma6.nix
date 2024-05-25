@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  username,
+  ...
+}: {
   services = {
     desktopManager.plasma6.enable = true;
 
@@ -45,4 +49,12 @@
     MOZ_USE_XINPUT2 = "1";
     NIXOS_OZONE_WL = "1"; # for VSCode Discord etc
   };
+
+  # Fix Wayland cursor size for some apps
+  # home-manager.users.${username}.home = {
+  #   file."${config.xdg.dataHome}/icons/default/index.theme".text = ''
+  #     [Icon Theme]
+  #     Inherits=breeze_cursors
+  #   '';
+  # };
 }

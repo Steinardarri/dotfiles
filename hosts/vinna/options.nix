@@ -55,8 +55,8 @@ in {
   terminal = "konsole"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  steam = false;
-
+  
+  gaming = false;
   personal = false;
 
   # Enable Support For

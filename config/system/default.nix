@@ -8,8 +8,8 @@
 
     ./distrobox.nix
     ./flatpak.nix
+    ./gaming.nix
     ./python.nix
-    ./steam.nix
     ./syncthing.nix
   ];
 
@@ -100,10 +100,13 @@
     yad
   ];
 
-  fonts.packages = with pkgs; [
-    dejavu_fonts
-    (nerdfonts.override {fonts = ["Hack" "FiraCode"];})
-  ];
+  fonts = {
+    packages = with pkgs; [
+      dejavu_fonts
+      (nerdfonts.override {fonts = ["Hack" "FiraCode"];})
+    ];
+    fontDir.enable = true;
+  };
 
   programs = {
     dconf.enable = true;

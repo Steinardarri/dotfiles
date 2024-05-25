@@ -1,4 +1,8 @@
-{hostname, username, ...}: let
+{
+  hostname,
+  username,
+  ...
+}: let
   inherit
     (import ./hosts/${hostname}/options.nix)
     theLocale

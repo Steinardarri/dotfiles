@@ -4,20 +4,20 @@
   pkgs,
   ...
 }: let
-  inherit (import ../../hosts/${hostname}/options.nix) steam;
+  inherit (import ../../hosts/${hostname}/options.nix) gaming;
 in
-  lib.mkIf (steam == true) {
-    # Steam Configuration
+  lib.mkIf (gaming == true) {
+
     programs.steam = {
       enable = true;
       gamescopeSession.enable = true;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
     };
+    programs.gamescope.enable = true;
+    hardware.steam-hardware.enable = true;
 
     programs.gamemode.enable = true;
-
-    hardware.steam-hardware.enable = true;
 
     environment.systemPackages = with pkgs; [
       bottles
@@ -25,8 +25,9 @@ in
       lutris
       steam-run
       winetricks
+      wineWowPackages.stable
       protontricks
-      protonup
+      protonup-qt
     ];
 
     environment.sessionVariables = {
