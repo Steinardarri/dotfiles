@@ -2,6 +2,7 @@
 # https://github.com/danth/stylix
 {
   pkgs,
+  username,
   ...
 }: {
   stylix = {
@@ -14,8 +15,7 @@
     };
 
     opacity = {
-      popups = 0.9;
-      terminal = 0.9;
+      popups = 0.8;
     };
 
     cursor = {
@@ -47,5 +47,10 @@
         package = builtins.elemAt HackNF 0;
       };
     };
+  };
+
+  home-manager.users.${username}.stylix = {
+    # Too low contrast
+    targets.vscode.enable = false;
   };
 }
