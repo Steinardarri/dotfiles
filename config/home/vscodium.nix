@@ -118,6 +118,7 @@
       ## Extensions ##
 
       "workbench.iconTheme" = "vscode-icons";
+      "vsicons.dontShowNewVersionMessage" = true;
       "continue.enableTabAutocomplete" = true;
 
       "errorLens.gutterIconsEnabled" = true;
@@ -145,40 +146,6 @@
       "[typescriptreact].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[jsonc].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[markdown].editor.defaultFormatter" = "esbenp.prettier-vscode";
-
-      "gitmoji.onlyUseCustomEmoji" = true;
-      "gitmoji.addCustomEmoji" = [
-        {
-          "emoji" = "📦 NEW:";
-          "code" = ":package: NEW:";
-          "description" = "... Add new code/feature";
-        }
-        {
-          "emoji" = "👌 IMPROVE:";
-          "code" = ":ok_hand: IMPROVE:";
-          "description" = "... Improve existing code/feature";
-        }
-        {
-          "emoji" = "❌ REMOVE:";
-          "code" = ":x: REMOVE:";
-          "description" = "... Remove existing code/feature";
-        }
-        {
-          "emoji" = "🐛 FIX:";
-          "code" = ":bug: FIX:";
-          "description" = "... Fix a bug";
-        }
-        {
-          "emoji" = "📑 DOC:";
-          "code" = ":bookmark_tabs: DOC:";
-          "description" = "... Anything related to documentation";
-        }
-        {
-          "emoji" = "🤖 TEST:";
-          "code" = ":robot: TEST:";
-          "description" = "... Anything realted to tests";
-        }
-      ];
     };
 
     keybindings = [
