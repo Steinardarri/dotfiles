@@ -10,17 +10,12 @@ in
       loader = {
         efi = {
           efiSysMountPoint = "/boot";
-          canTouchEfiVariables = true; # XOR
+          canTouchEfiVariables = true;
         };
         grub = {
-          enable = true;
-          devices = ["nodev"];
-          # efiInstallAsRemovable = true; # XOR
           efiSupport = true;
           useOSProber = true;
-          configurationLimit = 15;
         };
-        timeout = 3;
       };
     };
   }

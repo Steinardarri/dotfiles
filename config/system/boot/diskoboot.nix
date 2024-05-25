@@ -9,12 +9,9 @@ in
     boot = {
       loader = {
         grub = {
-          enable = true;
           efiSupport = true;
           efiInstallAsRemovable = true;
-          configurationLimit = 15;
         };
-        timeout = 3;
       };
     };
   }
