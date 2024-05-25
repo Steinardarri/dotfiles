@@ -32,6 +32,7 @@
     libsForQt5.kcalc
     libsForQt5.filelight
     libsForQt5.ksystemlog
+    krita
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [

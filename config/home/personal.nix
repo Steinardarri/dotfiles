@@ -12,7 +12,6 @@ in
   lib.mkIf (personal == true) {
     home.packages = with pkgs; [
       discord
-      krita
 
       protonvpn-gui
       protonmail-bridge-gui
