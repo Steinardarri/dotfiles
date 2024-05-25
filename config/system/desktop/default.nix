@@ -20,17 +20,17 @@ in {
         variant = "${theKBDVariant}";
       };
     };
-  };
 
-  libinput = {
-    enable = true;
-    mouse = {
-      accelProfile = "flat";
-    };
-    touchpad = {
-      # accelProfile = "flat";
-      naturalScrolling = true;
-      disableWhileTyping = false;
+    libinput = {
+      enable = true;
+      mouse = {
+        accelProfile = "flat";
+      };
+      touchpad = {
+        # accelProfile = "flat";
+        naturalScrolling = true;
+        disableWhileTyping = false;
+      };
     };
   };
 }
