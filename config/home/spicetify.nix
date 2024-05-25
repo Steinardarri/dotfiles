@@ -3,7 +3,6 @@
 # https://github.com/the-argus/spicetify-nix/blob/master/CUSTOMAPPS.md
 {
   pkgs,
-  username,
   inputs,
   ...
 }: let
@@ -31,14 +30,7 @@ in {
     ];
 
     enabledCustomApps = with spicePkgs.apps; [
-      new-releases
-      lyrics-plus
-      reddit
-      {
-        name = "localFiles";
-        src = /home/${username}/Music;
-        appendName = false;
-      }
+      new-releases # seems to not work, shame
     ];
   };
 }
