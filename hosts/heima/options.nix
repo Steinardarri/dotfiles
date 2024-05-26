@@ -76,7 +76,7 @@ in {
   flatpak = false;
 
   gaming = true;
-  personal = false;
+  work = false;
 
   logitech = true;
 

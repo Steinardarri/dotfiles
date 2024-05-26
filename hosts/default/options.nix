@@ -1,14 +1,15 @@
-# PLEASE READ THE WIKI FOR DETERMINING
-# WHAT TO PUT HERE AS OPTIONS.
 # https://gitlab.com/Zaney/zaneyos/-/wikis/Setting-Options
 let
   setUsername = "steinardth";
   setHostname = "nixos";
-  setArchitecture = "x86_64-linux";
+  setSystemArchitecture = "x86_64-linux";
 in {
+  ## System ##
+
+  # Base definitions
   username = "${setUsername}";
   hostname = "${setHostname}";
-  architecture = "${setArchitecture}";
+  system = "${setSystemArchitecture}";
   userHome = "/home/${setUsername}";
   flakeDir = "/home/${setUsername}/NixOS_Config";
 
@@ -19,57 +20,72 @@ in {
   # System Settings
   clock24h = true;
   theLocale = "en_GB.UTF-8";
+  theConsoleKeyMap = "is-latin1";
   theKBDLayout = "is";
   theSecondKBDLayout = "";
-  theConsoleKeyMap = "is-latin1";
   theKBDVariant = "";
   theLCVariables = "is_IS.UTF-8";
   theTimezone = "Atlantic/Reykjavik";
-  theShell = "zsh"; # Possible options: bash, zsh
-  theKernel = "xanmod"; # Possible options: default, latest, lqx, xanmod, zen
-  # For Hybrid Systems intel-nvidia
-  # Should Be Used As gpuType
+  theShell = "zsh"; # bash, zsh
+  theKernel = "xanmod"; # default, latest, lqx, xanmod, zen
+
+  ## Hardware ##
+
+  # Designation of device to install NixOS on
+  device = "sda";
+
+  # For Hybrid Systems 'intel-nvidia' should Be Used As gpuType
   cpuType = "amd"; # amd, intel, vm
-  gpuType = "amd";
+  gpuType = "amd"; # amd, intel, nvidia, intel-nvidia
   laptop = false;
-  boot = "gpt"; # gpt or noefi
+  boot = "grub"; # disko, grub or noefi
 
   # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
   intel-bus-id = "PCI:1:0:0";
   nvidia-bus-id = "PCI:0:2:0";
 
-  # Enable / Setup NFS
+  # Declare nixos-hardware modules to use here
+  hardware-list = [
+    "common-cpu-amd"
+    "common-cpu-amd-pstate"
+    "common-cpu-amd-zenpower"
+    "common-gpu-amd"
+    "common-pc"
+    "common-pc-ssd"
+    "common-pc-hdd"
+  ];
+
+  # Enable Printer & Scanner Support
+  printer = false;
+
+  ## Programs
+
+  # NFS
   nfs = false;
   nfsMountPoint = "/mnt/nas";
   nfsDevice = "nas:/volume1/nas";
 
-  # NTP & HWClock Settings
-  ntp = true;
+  # Clock Settings
+  ntp = true; # Network
   localHWClock = false;
-
-  # Enable Printer & Scanner Support
-  printer = false;
 
   # Program Options
   browser = "floorp"; # Install & Set Default Browser
   terminal = "konsole"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  steam = false;
 
-  personal = false;
+  gaming = false;
+  work = false;
 
-  # Enable Support For
-  # Logitech Devices
   logitech = false;
 
-  # Enable Terminals
+  # Terminals
   alacritty = false;
   kitty = false;
 
-  # Enable Python & PyCharm
-  python = false;
-
-  # Enable SyncThing
   syncthing = false;
+
+  # Development
+  python = false;
 }

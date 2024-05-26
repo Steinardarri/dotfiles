@@ -6,10 +6,10 @@
 }: let
   inherit
     (import ../../hosts/${hostname}/options.nix)
-    personal
+    work
     ;
 in
-  lib.mkIf (personal == true) {
+  lib.mkIf (work == false) {
     home.packages = with pkgs; [
       discord
 
@@ -19,6 +19,5 @@ in
 
       kdePackages.kpat
       kdePackages.ktorrent
-      kdePackages.kdenlive
     ];
   }

@@ -57,7 +57,7 @@ in {
   flatpak = false;
   steam = true;
 
-  personal = true;
+  work = false;
 
   # Enable Support For
   # Logitech Devices

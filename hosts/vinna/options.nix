@@ -55,9 +55,9 @@ in {
   terminal = "konsole"; # Set Default System Terminal
   distrobox = false;
   flatpak = false;
-  
+
   gaming = false;
-  personal = false;
+  work = true;
 
   # Enable Support For
   # Logitech Devices

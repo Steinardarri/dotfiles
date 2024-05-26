@@ -26,13 +26,31 @@
     gtk3
     gtk4
 
-    libsForQt5.kaccounts-integration
-    libsForQt5.kaccounts-providers
+    # Development
     libsForQt5.kate
-    libsForQt5.kcalc
-    libsForQt5.filelight
-    libsForQt5.ksystemlog
+
+    # Graphics
     krita
+
+    # Internet
+    libsForQt5.kmail
+    libsForQt5.krdc
+    libsForQt5.krfb
+
+    # Multimedia
+    libsForQt5.arianna
+    libsForQt5.kdenlive
+
+    # Office
+    calligra
+
+    # System
+    libsForQt5.ksystemlog
+
+    # Utilities
+    libsForQt5.kaccounts-providers
+    libsForQt5.filelight
+    libsForQt5.kcalc
   ];
 
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
