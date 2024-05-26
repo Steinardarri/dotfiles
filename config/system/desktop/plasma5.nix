@@ -31,6 +31,8 @@
 
     # Graphics
     krita
+    libsForQt5.kdenlive
+    glaxnimate
 
     # Internet
     libsForQt5.kmail
@@ -39,7 +41,7 @@
 
     # Multimedia
     libsForQt5.arianna
-    libsForQt5.kdenlive
+    haruna
 
     # Office
     # Uses the depricated and unsafe qtwebkit-5 package
