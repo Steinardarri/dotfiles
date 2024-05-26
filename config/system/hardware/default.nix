@@ -8,4 +8,6 @@
     ./services.nix
     ./vm.nix
   ];
+
+  zramSwap.enable = true;
 }
