@@ -51,6 +51,7 @@
         # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/vscode-marketplace-latest.json
 
         amodio.toggle-excluded-files
+        gaplo917.gapstylevs
       ]);
 
     userSettings = {
@@ -109,7 +110,7 @@
       "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
       "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
       "editor.semanticTokenColorCustomizations.enabled" = true;
-      # Stylix handles the rest
+      "workbench.colorTheme" = lib.mkDefault "GapStyle VS";
 
       # Other
       "telemetry.telemetryLevel" = "off";
