@@ -42,7 +42,9 @@
     libsForQt5.kdenlive
 
     # Office
-    calligra
+    # Uses the depricated and unsafe qtwebkit-5 package
+    # which makes the build fail
+    # calligra
 
     # System
     libsForQt5.ksystemlog
