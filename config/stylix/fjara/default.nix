@@ -1,10 +1,6 @@
 # Configuration for Stylix
 # https://github.com/danth/stylix
-{
-  pkgs,
-  username,
-  ...
-}: {
+{pkgs, ...}: {
   stylix = {
     image = ./eidsgrandi.png;
     polarity = "dark";
@@ -47,10 +43,5 @@
         package = builtins.elemAt HackNF 0;
       };
     };
-  };
-
-  home-manager.users.${username}.stylix = {
-    # Too low contrast
-    targets.vscode.enable = false;
   };
 }
