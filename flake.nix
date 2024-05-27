@@ -70,6 +70,11 @@
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
         home-manager.backupFileExtension = "bak";
+        home-manager.extraSpecialArgs = {
+          inherit inputs;
+          inherit username;
+          inherit hostname;
+        };
       }
 
       {
@@ -102,12 +107,6 @@
             disko.nixosModules.default
 
             {
-              nix.registry.nixos.flake = inputs.self;
-              home-manager.extraSpecialArgs = {
-                inherit inputs;
-                inherit username;
-                inherit hostname;
-              };
               home-manager.users.${username} = import ./users/home.nix;
             }
 

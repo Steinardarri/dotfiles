@@ -7,7 +7,7 @@
     ./fjara
     # ./soxin
 
-    # kazuha.nix
+    # ./kazuha.nix
   ];
 
   stylix = {
