@@ -1,6 +1,5 @@
 {
   pkgs,
-  inputs,
   username,
   hostname,
   ...
@@ -19,9 +18,6 @@ in {
   # Import Program Configurations
   imports = [
     ../config/home
-
-    inputs.stylix.homeManagerModules.stylix
-    ../stylix/hmDefault.nix
   ];
 
   # Install & Configure Git
