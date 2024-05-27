@@ -53,6 +53,12 @@
     sqlfluff
     tflint
 
+    # media
+    imagemagick
+    yt-dlg
+    ffmpeg
+    inkscape
+
     # system utils
     bat
     bottom
