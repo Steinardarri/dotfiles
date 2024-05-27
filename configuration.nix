@@ -54,11 +54,11 @@ in {
       auto-optimise-store = true;
       experimental-features = ["nix-command" "flakes"];
     };
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 30d";
-    };
+  };
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 14d --keep 15";
   };
 
   system.stateVersion = "23.11";

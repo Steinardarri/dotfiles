@@ -78,7 +78,6 @@
     lsd
     lshw
     mosh
-    nh
     nix-output-monitor
     nvd
     parallel
