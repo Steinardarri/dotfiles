@@ -27,7 +27,8 @@
         jock.svg
         naumovs.color-highlight
         seatonjiang.gitmoji-vscode
-        vscode-icons-team.vscode-icons
+        pkief.material-icon-theme
+        pkief.material-product-icons
 
         # Toolset
         christian-kohler.path-intellisense
@@ -118,23 +119,23 @@
 
       ## Extensions ##
 
-      "workbench.iconTheme" = "vscode-icons";
-      "vsicons.dontShowNewVersionMessage" = true;
-      "continue.enableTabAutocomplete" = true;
+      "workbench.iconTheme" = "material-icon-theme";
+      "workbench.productIconTheme" = "material-product-icons";
+      "continue.enableTabAutocomplete" = false;
 
       "errorLens.gutterIconsEnabled" = true;
       "errorLens.messageMaxChars" = 0;
 
       # Nix
       "alejandra.program" = "alejandra";
+      "[nix].editor.defaultFormatter" = "kamadorueda.alejandra";
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "nil";
-      "[nix]" = {
-        "editor.defaultFormatter" = "kamadorueda.alejandra";
-        "editor.formatOnPaste" = true;
-        "editor.formatOnSave" = true;
-        "editor.formatOnType" = false;
-      };
+
+      #Python
+      "python.analysis.autoImportCompletions" = true;
+      "python.analysis.inlayHints.callArgumentNames" = "partial";
+      "python.analysis.inlayHints.functionReturnTypes" = true;
 
       "gitlens.currentLine.enabled" = false;
       "gitlens.codeLens.enabled" = false;
@@ -142,11 +143,15 @@
       "gitlens.showWelcomeOnInstall" = false;
       "gitlens.plusFeatures.enabled" = false;
 
+      # Prettier
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[json].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[javascript].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[typescriptreact].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[jsonc].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[markdown].editor.defaultFormatter" = "esbenp.prettier-vscode";
+
+      "git-graph.repository.commits.fetchAvatars" = true;
 
       "gitmoji.onlyUseCustomEmoji" = true;
       "gitmoji.addCustomEmoji" = [
