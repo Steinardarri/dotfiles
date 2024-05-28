@@ -14,7 +14,6 @@ in
         };
         grub = {
           efiSupport = true;
-          useOSProber = true;
         };
       };
     };
