@@ -115,7 +115,7 @@
       "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
       "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
       "editor.semanticTokenColorCustomizations.enabled" = true;
-      "workbench.colorTheme" = lib.mkDefault "GapStyle VS";
+      "workbench.colorTheme" = lib.mkForce "GapStyle VS";
 
       # Other
       "telemetry.telemetryLevel" = "off";
