@@ -180,6 +180,11 @@
           "description" = "... Fix a bug";
         }
         {
+          "emoji" = "🔧 MAINT:";
+          "code" = ":wrench: MAINT:";
+          "description" = "... Maintenance";
+        }
+        {
           "emoji" = "📑 DOC:";
           "code" = ":bookmark_tabs: DOC:";
           "description" = "... Anything related to documentation";
