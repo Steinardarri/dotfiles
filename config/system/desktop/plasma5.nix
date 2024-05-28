@@ -52,6 +52,7 @@
     libsForQt5.ksystemlog
 
     # Utilities
+    kwalletcli
     libsForQt5.kaccounts-providers
     libsForQt5.filelight
     libsForQt5.kcalc
@@ -64,6 +65,11 @@
   programs.kdeconnect.enable = true;
   programs.partition-manager.enable = true;
 
-  security.pam.services.ssdm.enableKwallet = true;
-  security.pam.services.ssdm.gnupg.enable = true;
+  security.pam.services.ssdm = {
+    kwallet = {
+      enable = true;
+      package = pkgs.libsForQt5.kwallet-pam;
+    };
+    gnupg.enable = true;
+  };
 }

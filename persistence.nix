@@ -34,7 +34,7 @@
       ".floorp"
       ".gnupg"
       #".local/share/sddm"
-      #".local/share/kwalletd"
+      ".local/share/kwalletd"
       ".mozilla"
       ".ssh"
       ".steam"

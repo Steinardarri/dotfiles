@@ -81,6 +81,7 @@
     nix-output-monitor
     nvd
     parallel
+    pinentry-all
     pkg-config
     procs
     ripgrep
@@ -116,5 +117,12 @@
   programs = {
     dconf.enable = true;
     mtr.enable = true;
+    gnupg = {
+      agent = {
+        enable = true;
+        pinentryPackage = pkgs.pinentry-qt;
+        enableSSHSupport = true;
+      };
+    };
   };
 }
