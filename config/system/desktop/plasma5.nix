@@ -6,7 +6,6 @@
       sddm = {
         enable = true;
         package = pkgs.libsForQt5.sddm;
-        autoNumlock = true;
         wayland = {
           enable = false;
           compositor = "kwin";
@@ -17,6 +16,8 @@
             User = "steinardth";
           };
         };
+        autoNumlock = true;
+        setupScript = '' ${pkgs.numlockx}/bin/numlockx on '';
       };
     };
   };
