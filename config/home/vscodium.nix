@@ -182,7 +182,7 @@
         {
           "emoji" = "🔧 MAINT:";
           "code" = ":wrench: MAINT:";
-          "description" = "... Maintenance";
+          "description" = "... Maintain dependencies and code";
         }
         {
           "emoji" = "📑 DOC:";

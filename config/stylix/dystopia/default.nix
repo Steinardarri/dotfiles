@@ -5,16 +5,11 @@
     #image = ./dystopia.png;
     image = ./vagabond.jpg;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/vice.yaml";
+    #base16Scheme = "${pkgs.base16-schemes}/share/themes/vice.yaml";
 
     targets = {
       grub.useImage = true;
       gnome.enable = true;
-    };
-
-    opacity = {
-      popups = 0.9;
-      terminal = 0.9;
     };
 
     cursor = {
@@ -22,7 +17,6 @@
       name = "Bibata-Modern-Classic";
       size = 24;
     };
-
 
     fonts = rec {
     sansSerif = {
