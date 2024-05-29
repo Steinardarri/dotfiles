@@ -19,7 +19,7 @@
     };
 
     fonts = rec {
-    sansSerif = {
+      sansSerif = {
         name = "TeX Gyre Heros";
         package = pkgs.gyre-fonts;
       };
@@ -31,11 +31,9 @@
         package = pkgs.noto-fonts-emoji;
       };
 
-      monospace = let
-        HackNF = with pkgs; [(nerdfonts.override {fonts = ["Hack" "FiraCode" "DroidSansMono"];})];
-      in {
-        name = "Hack NF FC Ligatured CCG";
-        package = builtins.elemAt HackNF 0;
+      monospace = {
+        name = "Hack Nerd Font";
+        package = pkgs.nerdfonts.override {fonts = ["Hack"];};
       };
     };
   };

@@ -58,10 +58,9 @@
     userSettings = {
       # General
       "editor.fontSize" = 16;
-      "editor.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG', 'Hack', 'monospace', monospace";
+      "editor.fontFamily" = lib.mkDefault "'Hack Nerd Font', 'monospace', monospace";
       "editor.fontLigatures" = true;
       "terminal.integrated.fontSize" = 14;
-      "terminal.integrated.fontFamily" = lib.mkDefault "'Hack NF FC Ligatured CCG', 'FiraCode Nerd Font', 'monospace', monospace";
       "window.zoomLevel" = 1;
       "workbench.startupEditor" = "none";
       "explorer.compactFolders" = false;
@@ -77,6 +76,7 @@
       "editor.wordWrap" = "bounded";
       "editor.wrappingIndent" = "deepIndent";
       "editor.inlineSuggest.enabled" = true;
+      "files.encoding" = "utf8";
 
       # Whitespace
       "files.trimTrailingWhitespace" = true;
@@ -126,6 +126,7 @@
       "workbench.iconTheme" = "material-icon-theme";
       "workbench.productIconTheme" = "material-product-icons";
       "continue.enableTabAutocomplete" = false;
+      "color-highlight.markerType" = "outline";
 
       "errorLens.gutterIconsEnabled" = true;
       "errorLens.messageMaxChars" = 0;
