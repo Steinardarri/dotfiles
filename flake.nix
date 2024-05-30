@@ -69,7 +69,7 @@
         nix.registry.nixos.flake = inputs.self;
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
-        home-manager.backupFileExtension = "backup";
+        home-manager.backupFileExtension = "hm-backup";
         home-manager.extraSpecialArgs = {
           inherit system;
           inherit inputs;
