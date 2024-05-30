@@ -1,6 +1,7 @@
 {
   hostname,
   username,
+  inputs,
   ...
 }: let
   inherit
@@ -46,6 +47,15 @@ in {
     LANG = "${theLocale}";
     SHELL = "/etc/profiles/per-user/${username}/bin/${theShell}";
     TERM = "${terminal}";
+  };
+
+  nixpkgs = {
+    overlays = [
+      inputs.nur.overlay
+    ];
+    config = {
+      allowUnfree = true;
+    };
   };
 
   # Optimization settings and garbage collection automation

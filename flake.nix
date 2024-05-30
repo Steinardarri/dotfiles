@@ -52,7 +52,6 @@
     impermanence,
     disko,
     stylix,
-    nur,
     ...
   }: let
     ############################################
@@ -65,7 +64,6 @@
     genericModules = [
       home-manager.nixosModules.home-manager
       stylix.nixosModules.stylix
-      nur.nixosModules.nur
 
       {
         nix.registry.nixos.flake = inputs.self;
@@ -73,6 +71,7 @@
         home-manager.useUserPackages = true;
         home-manager.backupFileExtension = "backup";
         home-manager.extraSpecialArgs = {
+          inherit system;
           inherit inputs;
           inherit username;
           inherit hostname;

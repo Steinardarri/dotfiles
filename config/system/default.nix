@@ -13,9 +13,6 @@
     ./syncthing.nix
   ];
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   # List System Programs
   environment.systemPackages = with pkgs; [
     # core languages
