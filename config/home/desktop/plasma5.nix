@@ -18,6 +18,8 @@ in {
   programs.plasma = {
     enable = true;
 
+    workspace.lookAndFeel = "org.kde.breezedark.desktop";
+
     panels = [
       # Windows-like panel at the bottom
       {
@@ -39,10 +41,6 @@ in {
 
       kwin = {
         "Expose" = "Meta+,";
-        "Switch Window Down" = "Meta+J";
-        "Switch Window Left" = "Meta+H";
-        "Switch Window Right" = "Meta+L";
-        "Switch Window Up" = "Meta+K";
       };
     };
 
@@ -82,6 +80,10 @@ in {
       "plasma-localerc"."Formats"."LC_PAPER" = "${theLCVariables}";
       "plasma-localerc"."Formats"."LC_TELEPHONE" = "${theLCVariables}";
       "plasma-localerc"."Formats"."LC_TIME" = "${theLCVariables}";
+
+      "kwinrc"."Compositing"."LatencyPolicy" = "low";
+      "kdeglobals"."KDE"."SingleClick" = "false";
+      "kdeglobals"."KDE"."AnimationDurationFactor" = 0;
     };
   };
 }
