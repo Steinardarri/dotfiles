@@ -27,7 +27,6 @@
     trunk
 
     # dev stuf
-    appimage-run
     gnumake
     httpie
     ninja
@@ -120,5 +119,15 @@
         enableSSHSupport = true;
       };
     };
+  };
+
+  # Regist appimage-run as the executor of appimages
+  boot.binfmt.registrations.appimage = {
+    wrapInterpreterInShell = false;
+    interpreter = "${pkgs.appimage-run}/bin/appimage-run";
+    recognitionType = "magic";
+    offset = 0;
+    mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
+    magicOrExtension = ''\x7fELF....AI\x02'';
   };
 }
