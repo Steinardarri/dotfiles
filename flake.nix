@@ -21,8 +21,8 @@
 
     # Desktop Environment
     plasma-manager = {
-      url = "github:pjones/plasma-manager/plasma-5";
-      #url = "github:pjones/plasma-manager";
+      #url = "github:pjones/plasma-manager/plasma-5";
+      url = "github:pjones/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };

@@ -34,11 +34,20 @@
       ".floorp"
       ".gnupg"
       #".local/share/sddm"
-      ".local/share/kwalletd"
       ".mozilla"
       ".ssh"
       ".steam"
       #".config/VSCodium"
+
+      # Plasma
+      ".local/share/kwalletd"
+      ".local/share/kdenlive"
+      ".local/share/konsole"
+      ".local/share/krita"
+      ".local/share/ktorrent"
+      ".local/share/kwrite"
+      #".local/share/arianna"
+
     ];
     files = [
       ".zsh_history"
