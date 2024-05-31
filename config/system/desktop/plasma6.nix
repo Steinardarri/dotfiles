@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  username,
+  ...
+}: {
   services = {
     desktopManager.plasma6 = {
       enable = true;
@@ -14,7 +18,7 @@
         settings = {
           Autologin = {
             Session = "plasma.desktop";
-            User = "steinardth";
+            User = "${username}";
           };
         };
         autoNumlock = true;

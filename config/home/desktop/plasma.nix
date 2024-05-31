@@ -22,7 +22,7 @@ in {
       # Nuke the Plasma Configs
       # https://github.com/pjones/plasma-manager/blob/trunk/modules/files.nix#L29
       # Persistence will do this also, of course, if the files aren't protected
-      overrideConfig = true;
+      overrideConfig = false;
 
       workspace = {
         # Theme, Wallpaper, Fonts & Cursor is managed by Stylix
