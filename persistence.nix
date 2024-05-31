@@ -24,6 +24,7 @@
       "Desktop"
       "Documents"
       "Downloads"
+      "Forrit"
       "Music"
       "Pictures"
       "Verkefni"

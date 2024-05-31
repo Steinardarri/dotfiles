@@ -65,10 +65,15 @@ in {
       experimental-features = ["nix-command" "flakes"];
     };
   };
-  programs.nh = {
-    enable = true;
-    clean.enable = true;
-    clean.extraArgs = "--keep-since 14d --keep 15";
+  programs = {
+    nh = {
+      enable = true;
+      clean = {
+        enable = true;
+        dates = "weekly";
+        extraArgs = "--keep-since 14d --keep 15";
+      };
+    };
   };
 
   system.stateVersion = "23.11";
