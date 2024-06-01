@@ -64,7 +64,6 @@
     coreutils
     curl
     du-dust
-    eglinfo
     eza
     fd
     findutils
@@ -77,7 +76,6 @@
     lm_sensors
     lsd
     lshw
-    lspci
     mosh
     nix-output-monitor
     nvd
