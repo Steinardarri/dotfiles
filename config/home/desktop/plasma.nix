@@ -173,4 +173,10 @@ in {
       };
     };
   };
+
+  # Custom Nix Splash
+  home.file.".local/share/plasma/look-and-feel" = {
+    source = ./nixsimpleblue;
+    recursive = true;
+  };
 }
