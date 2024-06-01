@@ -58,12 +58,21 @@
     userSettings = {
       # General
       "editor.fontSize" = 16;
-      "editor.fontFamily" = lib.mkDefault "'Hack Nerd Font', 'monospace', monospace";
+      "editor.fontFamily" = lib.mkForce "'Hack NF FC Ligatured CCG', 'monospace', monospace";
       "editor.fontLigatures" = true;
       "terminal.integrated.fontSize" = 14;
       "window.zoomLevel" = 1;
       "workbench.startupEditor" = "none";
       "explorer.compactFolders" = false;
+      "workbench.enableExperiments" = false;
+      "workbench.cloudChanges.autoResume" = "off";
+      "workbench.cloudChanges.continueOn" = "off";
+
+      # Styling
+      "workbench.colorTheme" = lib.mkForce "GapStyle VS";
+      "editor.semanticTokenColorCustomizations.enabled" = true;
+      "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
+      "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
 
       # Editor
       "editor.guides.bracketPairs" = "active";
@@ -91,9 +100,10 @@
       "terminal.integrated.enableImages" = true;
 
       # Git
-      "git.autofetch" = true;
+      "git.autofetch" = false;
       "git.enableSmartCommit" = true;
       "git.confirmSync" = false;
+
       #"git.enableCommitSigning" = true;
       #"git-graph.repository.sign.commits" = true;
       #"git-graph.repository.sign.tags" = true;
@@ -102,6 +112,7 @@
       "git-graph.repository.sign.commits" = false;
       "git-graph.repository.sign.tags" = false;
       "git-graph.repository.commits.showSignatureStatus" = false;
+      
       "git.allowForcePush" = true;
       "git.defaultBranchName" = "master";
       "git.defaultCloneDirectory" = "~/Verkefni";
@@ -111,12 +122,6 @@
       "git.pullBeforeCheckout" = true;
       "git.rebaseWhenSync" = true;
 
-      # Styling
-      "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
-      "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
-      "editor.semanticTokenColorCustomizations.enabled" = true;
-      "workbench.colorTheme" = lib.mkForce "GapStyle VS";
-
       # Other
       "telemetry.telemetryLevel" = "off";
       "update.showReleaseNotes" = false;
@@ -125,8 +130,10 @@
 
       "workbench.iconTheme" = "material-icon-theme";
       "workbench.productIconTheme" = "material-product-icons";
-      "continue.enableTabAutocomplete" = false;
       "color-highlight.markerType" = "outline";
+
+      "continue.enableTabAutocomplete" = false;
+      "continue.telemetryEnabled" = false;
 
       "errorLens.gutterIconsEnabled" = true;
       "errorLens.messageMaxChars" = 0;
@@ -137,16 +144,9 @@
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "nil";
 
-      #Python
       "python.analysis.autoImportCompletions" = true;
       "python.analysis.inlayHints.callArgumentNames" = "partial";
       "python.analysis.inlayHints.functionReturnTypes" = true;
-
-      "gitlens.currentLine.enabled" = false;
-      "gitlens.codeLens.enabled" = false;
-      "gitlens.hovers.enabled" = false;
-      "gitlens.showWelcomeOnInstall" = false;
-      "gitlens.plusFeatures.enabled" = false;
 
       # Prettier
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
@@ -155,6 +155,12 @@
       "[typescriptreact].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[jsonc].editor.defaultFormatter" = "esbenp.prettier-vscode";
       "[markdown].editor.defaultFormatter" = "esbenp.prettier-vscode";
+
+      "gitlens.currentLine.enabled" = false;
+      "gitlens.codeLens.enabled" = false;
+      "gitlens.hovers.enabled" = false;
+      "gitlens.showWelcomeOnInstall" = false;
+      "gitlens.plusFeatures.enabled" = false;
 
       "git-graph.repository.commits.fetchAvatars" = true;
 
