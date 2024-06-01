@@ -31,7 +31,7 @@ in {
 
       kwin.virtualDesktops = {
         animation = "slide";
-        number = 3;
+        number = 4;
       };
 
       panels = [

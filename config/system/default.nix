@@ -56,23 +56,28 @@
     inkscape
 
     # system utils
+    aha
     bat
     bottom
     btop
+    clinfo
     coreutils
     curl
     du-dust
+    eglinfo
     eza
     fd
     findutils
     fx
     git
+    glxinfo
     helix
     htop
     jq
     lm_sensors
     lsd
     lshw
+    lspci
     mosh
     nix-output-monitor
     nvd
