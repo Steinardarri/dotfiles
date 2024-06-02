@@ -117,14 +117,7 @@ in {
         "plasma-localerc"."Formats"."LC_TIME" = "${theLCVariables}";
 
         "kwinrc"."Compositing"."LatencyPolicy" = "low";
-        "kdeglobals"."KDE"."AnimationDurationFactor" = 0;
-
-        # Patch fix for cursor issues
-        # Stylix should handle this
-        # "icons"."default"."index.theme" = ''
-        #   [Icon Theme]
-        #   Inherits=breeze_cursors
-        # '';
+        "kdeglobals"."KDE"."AnimationDurationFactor" = 10;
 
         kscreenlockerrc = {
           Greeter.WallpaperPlugin = "org.kde.potd";
@@ -144,17 +137,16 @@ in {
           size = 14;
         };
         extraConfig = {
-          "[Appearance]" = {
-            dimmValue = 10;
-          };
-          "[Cursor Options]" = {
+          # "Appearance" = {
+          #   emojiFont = "";
+          # };
+          "Cursor Options" = {
             cursorShape = 1;
           };
-          "[General]" = {
-            dimWhenInactive = true;
+          "General" = {
             icon = "emblem-favorite";
           };
-          "[Interaction Options]" = {
+          "Interaction Options" = {
             autoCopySelectedText = true;
             middleClickPasteMode = 1;
             openLinksByDirectClickEnabled = true;
@@ -163,10 +155,10 @@ in {
             trimTrailingSpacesInSelectedText = true;
             underlineFilesEnabled = true;
           };
-          "[Scrolling]" = {
+          "Scrolling" = {
             historySize = 10000;
           };
-          "[Terminal Features]" = {
+          "Terminal Features" = {
             blinkingCursorEnabled = true;
           };
         };
