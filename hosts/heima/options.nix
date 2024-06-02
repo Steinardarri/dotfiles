@@ -3,6 +3,7 @@ let
   setUsername = "steinardth";
   setHostname = "heima";
   setSystemArchitecture = "x86_64-linux";
+  setSystemDevice = "/dev/nvme0n1";
 in {
   ## System ##
 
@@ -32,7 +33,7 @@ in {
   ## Hardware ##
 
   # Designation of device to install NixOS on
-  device = "nvme0n1";
+  device = "${setSystemDevice}";
 
   # For Hybrid Systems 'intel-nvidia' should Be Used As gpuType
   cpuType = "amd"; # amd, intel, vm

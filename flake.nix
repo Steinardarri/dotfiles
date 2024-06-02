@@ -101,11 +101,11 @@
           genericModules
           ++ [
             ./configuration.nix
-            #./disko.nix
-            #./persistence.nix
+            ./disko.nix
+            ./persistence.nix
 
-            impermanence.nixosModules.impermanence
             disko.nixosModules.default
+            #impermanence.nixosModules.impermanence
 
             {
               home-manager.users.${username} = import ./users/home.nix;

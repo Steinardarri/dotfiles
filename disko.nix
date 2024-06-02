@@ -10,7 +10,6 @@
             name = "boot";
             size = "1M";
             type = "EF02";
-            priority = 1; # Needs to be first partition
           };
           esp = {
             name = "ESP";
@@ -54,6 +53,12 @@
                 "/root" = {
                   mountpoint = "/";
                 };
+
+                "/persist" = {
+                  mountOptions = ["subvol=persist" "noatime"];
+                  mountpoint = "/persist";
+                };
+
                 "/nix" = {
                   mountOptions = ["subvol=nix" "noatime"];
                   mountpoint = "/nix";
