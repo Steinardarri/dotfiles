@@ -11,7 +11,29 @@ in
   lib.mkIf (browser == "floorp") {
     programs.firefox = {
       enable = true;
-      package = pkgs.floorp;
+      package = pkgs.firefox-wayland;
+
+      policies = {
+        DisableTelemetry = true;
+        DisableFirefoxStudies = true;
+        EnableTrackingProtection = {
+          Value = true;
+          Locked = true;
+          Cryptomining = true;
+          Fingerprinting = true;
+        };
+        DisablePocket = true;
+        DisableFirefoxAccounts = false;
+        DisableAccounts = false;
+        DisableFirefoxScreenshots = true;
+        OverrideFirstRunPage = "";
+        OverridePostUpdatePage = "";
+        DontCheckDefaultBrowser = true;
+        DisplayBookmarksToolbar = "always";
+        DisplayMenuBar = "always";
+        SearchBar = "unified";
+      };
+
       profiles.${username} = {
         search.engines = {
           "MyNixOS" = {
