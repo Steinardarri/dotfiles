@@ -73,6 +73,7 @@
       "editor.semanticTokenColorCustomizations.enabled" = true;
       "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
       "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
+      "window.titleBarStyle" = "custom";
 
       # Editor
       "editor.guides.bracketPairs" = "active";
@@ -112,7 +113,7 @@
       "git-graph.repository.sign.commits" = false;
       "git-graph.repository.sign.tags" = false;
       "git-graph.repository.commits.showSignatureStatus" = false;
-      
+
       "git.allowForcePush" = true;
       "git.defaultBranchName" = "master";
       "git.defaultCloneDirectory" = "~/Verkefni";
@@ -142,7 +143,7 @@
       "alejandra.program" = "alejandra";
       "[nix].editor.defaultFormatter" = "kamadorueda.alejandra";
       "nix.enableLanguageServer" = true;
-      "nix.serverPath" = "nil";
+      "nix.serverPath" = "nixd";
 
       "python.analysis.autoImportCompletions" = true;
       "python.analysis.inlayHints.callArgumentNames" = "partial";

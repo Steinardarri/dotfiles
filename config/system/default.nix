@@ -36,7 +36,7 @@
 
     # language servers
     ccls # c / c++
-    nil # nix
+    nixd # nix
     nodePackages.pyright
     nodePackages.yaml-language-server
     pkgs.nodePackages.vscode-langservers-extracted # html, css, json, eslint
