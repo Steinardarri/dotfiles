@@ -100,7 +100,17 @@ in {
 
         kwin = {
           "Expose" = "Meta+,";
+          "Walk Through Windows of Current Application" = "Alt+<";
+          "Walk Through Windows of Current Application (Reverse)" = "Alt+>";
+          "Window Maximize" = "Meta+Up";
+          "Window Minimize" = "Meta+Down";
+          "Window Quick Tile Bottom" = [];
+          "Window Quick Tile Top" = [];
+          "view_zoom_in" = [];
+          "view_zoom_out" = [];
         };
+
+        "kaccess"."Toggle Screen Reader On and Off" = [];
       };
 
       # Misc Custom Configs
@@ -116,8 +126,24 @@ in {
         "plasma-localerc"."Formats"."LC_TELEPHONE" = "${theLCVariables}";
         "plasma-localerc"."Formats"."LC_TIME" = "${theLCVariables}";
 
+        "kcminputrc"."Libinput/1133/16511/Logitech G502"."PointerAccelerationProfile" = 1;
+        "kcminputrc"."Libinput/1133/49293/Logitech G502 LIGHTSPEED Wireless Gaming Mouse"."PointerAccelerationProfile" = 1;
+
+        "kdeglobals"."General"."AllowKDEAppsToRememberWindowPositions" = true;
         "kwinrc"."Compositing"."LatencyPolicy" = "low";
-        "kdeglobals"."KDE"."AnimationDurationFactor" = 2;
+        "kdeglobals"."KDE"."AnimationDurationFactor" = 0.17677669529663687;
+        "kwinrc"."Effect-overview"."BorderActivate" = 9;
+        "kwinrc"."Effect-translucency"."ComboboxPopups" = 90;
+        "kwinrc"."Effect-translucency"."Dialogs" = 90;
+        "kwinrc"."Plugins"."blurEnabled" = true;
+        "kwinrc"."Plugins"."fadedesktopEnabled" = false;
+        "kwinrc"."Plugins"."sheetEnabled" = true;
+        "kwinrc"."Plugins"."slideEnabled" = true;
+        "kwinrc"."Plugins"."zoomEnabled" = false;
+        "kwinrc"."Tiling"."padding" = 4;
+        "kwinrc"."Xwayland"."Scale" = 1;
+
+        "kwalletrc"."Wallet"."First Use" = false;
 
         kscreenlockerrc = {
           Greeter.WallpaperPlugin = "org.kde.potd";
