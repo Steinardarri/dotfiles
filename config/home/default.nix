@@ -5,7 +5,6 @@
     ./terminal
 
     ./files.nix
-    #./persistence.nix
 
     #./browser.nix #Doesn't work with floorp
     ./floorp.nix

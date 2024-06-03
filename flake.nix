@@ -17,8 +17,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    impermanence.url = "github:nix-community/impermanence";
-
     # Desktop Environment
     plasma-manager = {
       #url = "github:pjones/plasma-manager/plasma-5";
@@ -49,7 +47,6 @@
     nixpkgs,
     home-manager,
     nixos-hardware,
-    impermanence,
     disko,
     stylix,
     ...
@@ -102,10 +99,8 @@
           ++ [
             ./configuration.nix
             ./disko.nix
-            ./persistence.nix
 
             disko.nixosModules.default
-            #impermanence.nixosModules.impermanence
 
             {
               home-manager.users.${username} = import ./users/home.nix;
