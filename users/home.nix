@@ -37,7 +37,7 @@ in {
         ui = "Auto";
       };
       core = {
-        filemode = true;
+        filemode = false;
         bare = false;
         logallrefupdates = true;
         # Don't consider trailing space change as a cause for merge conflicts
