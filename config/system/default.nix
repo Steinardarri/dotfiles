@@ -39,7 +39,7 @@
     nixd # nix
     nodePackages.pyright
     nodePackages.yaml-language-server
-    pkgs.nodePackages.vscode-langservers-extracted # html, css, json, eslint
+    nodePackages.vscode-langservers-extracted # html, css, json, eslint
 
     # formatters & linters
     alejandra # nix

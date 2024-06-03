@@ -117,7 +117,7 @@ in {
         "plasma-localerc"."Formats"."LC_TIME" = "${theLCVariables}";
 
         "kwinrc"."Compositing"."LatencyPolicy" = "low";
-        "kdeglobals"."KDE"."AnimationDurationFactor" = 10;
+        "kdeglobals"."KDE"."AnimationDurationFactor" = 2;
 
         kscreenlockerrc = {
           Greeter.WallpaperPlugin = "org.kde.potd";
