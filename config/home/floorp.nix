@@ -11,7 +11,7 @@ in
   lib.mkIf (browser == "floorp") {
     programs.firefox = {
       enable = true;
-      package = pkgs.firefox-wayland;
+      package = pkgs.floorp;
 
       policies = {
         DisableTelemetry = true;
@@ -39,7 +39,7 @@ in
           "MyNixOS" = {
             urls = [
               {
-                template = "https://search.nixos.org/packages";
+                template = "https://mynixos.com/search";
                 params = [
                   {
                     name = "q";
@@ -63,7 +63,7 @@ in
                 ];
               }
             ];
-            icon = "";
+            icon = "🤓";
             definedAliases = ["@nerdf"];
           };
         };
