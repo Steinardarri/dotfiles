@@ -1,7 +1,7 @@
 {username, ...}: {
   fileSystems."/run/media/${username}/SSD_M.2" = {
-    device = "/dev/disk/by-uuid/5E2C71942C7167C3";
-    fsType = "ntfs";
+    device = "/dev/disk/by-uuid/d519cc9c-0a4b-45ec-a9bb-6e91e9ed1e16";
+    fsType = "ext4";
     options = ["nofail"];
   };
   fileSystems."/run/media/${username}/SSD" = {
@@ -10,8 +10,8 @@
     options = ["nofail"];
   };
   fileSystems."/run/media/${username}/SSD_Auka" = {
-    device = "/dev/disk/by-uuid/6E1EB57E1EB53FBF";
-    fsType = "ntfs";
+    device = "/dev/disk/by-uuid/4c9b67c9-4aab-4b41-b738-dbc99f4479ac";
+    fsType = "ext4";
     options = ["nofail"];
   };
   fileSystems."/run/media/${username}/Flakkari" = {
