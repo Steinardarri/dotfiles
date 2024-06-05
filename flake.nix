@@ -54,7 +54,7 @@
     ############################################
     ## Define which host you want to use here ##
     ############################################
-    inherit (import ./hosts/heima/options.nix) username hostname system device hardware-list;
+    inherit (import ./hosts/heima/options.nix) username hostname system device swap hardware-list;
 
     hardware-import = list: map (item: nixos-hardware.nixosModules.${item}) list;
 
@@ -92,6 +92,7 @@
           inherit username;
           inherit hostname;
           inherit device;
+          inherit swap;
         };
 
         modules =
