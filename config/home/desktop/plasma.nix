@@ -154,41 +154,41 @@ in {
 
     konsole = {
       enable = true;
-      defaultProfile = "Minn";
+      # defaultProfile = "Minn";
 
-      profiles."Minn" = {
-        colorScheme = "DarkPastels";
-        font = {
-          name = "Hack Nerd Font";
-          size = 14;
-        };
-        extraConfig = {
-          # "Appearance" = {
-          #   emojiFont = "";
-          # };
-          "Cursor Options" = {
-            cursorShape = 1;
-          };
-          "General" = {
-            icon = "emblem-favorite";
-          };
-          "Interaction Options" = {
-            autoCopySelectedText = true;
-            middleClickPasteMode = 1;
-            openLinksByDirectClickEnabled = true;
-            textEditorCmd = 6;
-            trimLeadingSpacesInSelectedText = true;
-            trimTrailingSpacesInSelectedText = true;
-            underlineFilesEnabled = true;
-          };
-          "Scrolling" = {
-            historySize = 10000;
-          };
-          "Terminal Features" = {
-            blinkingCursorEnabled = true;
-          };
-        };
-      };
+      # profiles."Minn" = {
+      #   colorScheme = "DarkPastels";
+      #   font = {
+      #     name = "Hack Nerd Font";
+      #     size = 14;
+      #   };
+      #   extraConfig = {
+      #     # "Appearance" = {
+      #     #   emojiFont = "";
+      #     # };
+      #     "Cursor Options" = {
+      #       cursorShape = 1;
+      #     };
+      #     "General" = {
+      #       icon = "emblem-favorite";
+      #     };
+      #     "Interaction Options" = {
+      #       autoCopySelectedText = true;
+      #       middleClickPasteMode = 1;
+      #       openLinksByDirectClickEnabled = true;
+      #       textEditorCmd = 6;
+      #       trimLeadingSpacesInSelectedText = true;
+      #       trimTrailingSpacesInSelectedText = true;
+      #       underlineFilesEnabled = true;
+      #     };
+      #     "Scrolling" = {
+      #       historySize = 10000;
+      #     };
+      #     "Terminal Features" = {
+      #       blinkingCursorEnabled = true;
+      #     };
+      #   };
+      # };
     };
   };
 
