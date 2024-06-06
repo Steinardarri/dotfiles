@@ -20,8 +20,8 @@
 
     fonts = rec {
       sansSerif = {
-        name = "TeX Gyre Heros";
-        package = pkgs.gyre-fonts;
+        name = "Noto Sans";
+        package = pkgs.noto-fonts;
       };
 
       serif = sansSerif;

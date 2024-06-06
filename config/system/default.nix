@@ -30,8 +30,6 @@
     gnumake
     httpie
     ninja
-
-    # treesitter
     tree-sitter
 
     # language servers
@@ -70,6 +68,7 @@
     fx
     git
     glxinfo
+    gptfdisk
     helix
     htop
     jq
@@ -80,6 +79,7 @@
     nix-output-monitor
     nvd
     parallel
+    parted
     pinentry-all
     pkg-config
     procs

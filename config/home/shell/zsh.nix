@@ -64,7 +64,7 @@ in
           la = "lsd -a";
           lal = "lsd -al";
 
-          lsblks = "lsblk -o name,mountpoint,label,size,fstype,uuid";
+          lsblks = "lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid";
           neofetch = "fastfetch";
         };
 

@@ -27,6 +27,7 @@ in
       winetricks
       wineWowPackages.stable
       protontricks
+      cabextract
       protonup-qt
     ];
 
