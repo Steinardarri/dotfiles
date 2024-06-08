@@ -76,7 +76,7 @@ in {
   browser = "floorp"; # Install & Set Default Browser
   terminal = "konsole"; # Set Default System Terminal
   distrobox = false;
-  flatpak = false;
+  flatpak = true;
 
   gaming = true;
   work = false;

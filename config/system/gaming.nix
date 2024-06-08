@@ -13,6 +13,7 @@ in
       gamescopeSession.enable = true;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
+      protontricks.enable =  true;
     };
     programs.gamescope.enable = true;
     hardware.steam-hardware.enable = true;
@@ -26,7 +27,6 @@ in
       steam-run
       winetricks
       wineWowPackages.stable
-      protontricks
       cabextract
       protonup-qt
     ];
@@ -34,4 +34,6 @@ in
     environment.sessionVariables = {
       STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
     };
+
+    # Might need to sudo chmod 777 ~/.steam , for protontricks to work
   }
