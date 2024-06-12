@@ -29,29 +29,47 @@ in {
         clickItemTo = "select";
       };
 
-      kwin.virtualDesktops = {
-        animation = "slide";
-        number = 4;
+      kwin = {
+        effects.shakeCursor.enable = true;
+        titlebarButtons.right = ["help" "minimize" "maximize" "close"];
+        titlebarButtons.left = ["on-all-desktops" "keep-above-windows"];
+        virtualDesktops = {
+          animation = "slide";
+          number = 4;
+          rows = 2;
+        };
       };
 
       panels = [
-        # Windows-like panel at the bottom
+        # Windows-like panel at the bottom of main screen
         {
+          screen = 0;
           location = "bottom";
+          height = 38;
+          floating = true;
+          hiding = "dodgewindows";
           widgets = [
             {
               name = "org.kde.plasma.kickoff";
               config = {
-                General.icon = "nix-snowflake-white";
+                General.icon = "nix-snowflake";
               };
+            }
+            {
+              name = "org.kde.plasma.pager";
             }
             {
               name = "org.kde.plasma.icontasks";
               config = {
                 General.launchers = [
+                  "applications:systemsettings.desktop"
                   "applications:org.kde.dolphin.desktop"
                   "applications:org.kde.konsole.desktop"
+                  "applications:floorp.desktop"
+                  "applications:codium.desktop"
+                  "applications:steam.desktop"
                 ];
+                General.showOnlyCurrentScreen = "true";
               };
             }
             "org.kde.plasma.marginsseperator"
@@ -60,6 +78,61 @@ in {
               digitalClock = {
                 calendar.firstDayOfWeek = "monday";
                 time.format = "24h";
+                date.format = "isoDate";
+              };
+            }
+            "org.kde.plasma.showdesktop"
+          ];
+        }
+        {
+          screen = 1;
+          location = "right";
+          height = 38;
+          floating = true;
+          hiding = "dodgewindows";
+          widgets = [
+            {
+              name = "org.kde.plasma.icontasks";
+              config = {
+                General.launchers = [
+                  "applications:discord.desktop"
+                ];
+                General.showOnlyCurrentScreen = "true";
+              };
+            }
+            "org.kde.plasma.marginsseperator"
+            "org.kde.plasma.notifications"
+            "org.kde.plasma.systemtray"
+            {
+              digitalClock = {
+                calendar.firstDayOfWeek = "monday";
+                time.format = "24h";
+                date.enable = false;
+              };
+            }
+            "org.kde.plasma.showdesktop"
+          ];
+        }
+        {
+          screen = 2;
+          location = "left";
+          height = 38;
+          floating = true;
+          hiding = "dodgewindows";
+          widgets = [
+            {
+              name = "org.kde.plasma.icontasks";
+              config = {
+                General.showOnlyCurrentScreen = "true";
+              };
+            }
+            "org.kde.plasma.marginsseperator"
+            "org.kde.plasma.systemtray"
+            {
+              digitalClock = {
+                calendar.firstDayOfWeek = "monday";
+                time.format = "24h";
+                date.enable = false;
               };
             }
             "org.kde.plasma.showdesktop"
