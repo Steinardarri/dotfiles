@@ -13,7 +13,7 @@ in
       gamescopeSession.enable = true;
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
-      protontricks.enable =  true;
+      protontricks.enable = true;
     };
     programs.gamescope.enable = true;
     hardware.steam-hardware.enable = true;

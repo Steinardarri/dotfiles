@@ -17,7 +17,6 @@
 
         # Editor
         eamodio.gitlens
-        editorconfig.editorconfig
         mhutchie.git-graph
         usernamehw.errorlens
 

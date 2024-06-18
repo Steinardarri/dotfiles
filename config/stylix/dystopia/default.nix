@@ -2,8 +2,8 @@
 # https://github.com/danth/stylix
 {pkgs, ...}: {
   stylix = {
-    #image = ./dystopia.png;
-    image = ./vagabond.jpg;
+    image = ./dystopia.png;
+    #image = ./vagabond.jpg;
     polarity = "dark";
     #base16Scheme = "${pkgs.base16-schemes}/share/themes/vice.yaml";
 

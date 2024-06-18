@@ -22,7 +22,7 @@ in {
       # Nuke the Plasma Configs
       # https://github.com/pjones/plasma-manager/blob/trunk/modules/files.nix#L29
       # Persistence will do this also, of course, if the files aren't protected
-      overrideConfig = false;
+      # overrideConfig = true;
 
       workspace = {
         # Theme, Wallpaper, Fonts & Cursor is managed by Stylix
@@ -30,11 +30,13 @@ in {
       };
 
       kwin = {
-        effects.shakeCursor.enable = true;
+        effects = {
+          shakeCursor.enable = true;
+          desktopSwitching.animation = "slide";
+        };
         titlebarButtons.right = ["help" "minimize" "maximize" "close"];
         titlebarButtons.left = ["on-all-desktops" "keep-above-windows"];
         virtualDesktops = {
-          animation = "slide";
           number = 4;
           rows = 2;
         };
