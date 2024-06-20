@@ -2,6 +2,7 @@
   description = "Steinardarri's NixOS Config";
 
   inputs = {
+    
     # System
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 

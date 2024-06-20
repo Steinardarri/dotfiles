@@ -6,7 +6,7 @@
 
     ./files.nix
 
-    #./browser.nix #Doesn't work with floorp
+    #./browser.nix
     ./floorp.nix
     ./helix.nix
     ./personal.nix

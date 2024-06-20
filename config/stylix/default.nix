@@ -11,6 +11,7 @@
   ];
 
   stylix = {
+    enable = true;
     targets.plymouth = {
       logo = ./nix-snowflake-colours.png;
       logoAnimated = true;
