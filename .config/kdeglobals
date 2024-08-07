@@ -144,7 +144,7 @@ XftSubPixel=rgb
 fixed=Hack Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
-Theme=zafiro-dark
+Theme=Reversal-purple-dark
 
 [KDE]
 AnimationDurationFactor=0.25

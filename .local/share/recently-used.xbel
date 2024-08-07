@@ -1872,4 +1872,34 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="https://apps.kde.org/kreversi/" added="2024-08-07T01:02:11.783000Z" modified="2024-08-07T01:02:11.783000Z" visited="2024-08-07T01:02:11.783000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T01:02:11.783000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/TaylanTatli/Sevi" added="2024-08-07T01:02:58.816000Z" modified="2024-08-07T01:02:58.816000Z" visited="2024-08-07T01:02:58.816000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T01:02:58.816000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/yeyushengfan258/Reversal-icon-theme" added="2024-08-07T01:03:02.289000Z" modified="2024-08-07T01:03:02.289000Z" visited="2024-08-07T01:03:02.289000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T01:03:02.289000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
