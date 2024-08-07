@@ -1,0 +1,12 @@
+[EmbedSettings]
+embed-application/json=false
+embed-application/octet-stream=false
+embed-application/x-docbook+xml=false
+embed-application/x-shellscript=false
+embed-application/x-yaml=false
+embed-text/markdown=false
+embed-text/plain=false
+embed-text/x-cmake=false
+embed-text/x-patch=false
+embed-x-scheme-handler/geo=false
+embed-x-scheme-handler/mailto=false

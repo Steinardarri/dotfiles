@@ -1,0 +1,84 @@
+2024-07-17 17:37:17.131 [info] Name: Ruff
+2024-07-17 17:37:17.131 [info] Module: ruff
+2024-07-17 17:37:17.131 [info] Python extension loading
+2024-07-17 17:37:17.131 [info] Waiting for interpreter from python extension.
+2024-07-17 17:37:17.131 [info] Python extension loaded
+2024-07-17 17:37:17.131 [info] Server run command: /home/steinardth/Verkefni/hunspell-is/.venv/bin/python /home/steinardth/.vscode-oss/extensions/charliermarsh.ruff-2024.30.0-linux-x64/bundled/tool/server.py
+2024-07-17 17:37:17.131 [info] Server: Start requested.
+2024-07-17 17:37:17.617 [info] 2024-07-17 17:37:17,484 INFO Starting IO server
+
+2024-07-17 17:37:17.618 [info] Workspace settings: [
+    {
+        "nativeServer": false,
+        "cwd": "/home/steinardth/Verkefni/hunspell-is",
+        "workspace": "file:///home/steinardth/Verkefni/hunspell-is",
+        "path": [],
+        "ignoreStandardLibrary": true,
+        "interpreter": [
+            "/home/steinardth/Verkefni/hunspell-is/.venv/bin/python"
+        ],
+        "configuration": null,
+        "importStrategy": "fromEnvironment",
+        "codeAction": {
+            "fixViolation": {
+                "enable": true
+            },
+            "disableRuleComment": {
+                "enable": true
+            }
+        },
+        "lint": {
+            "enable": true,
+            "run": "onType",
+            "args": [],
+            "preview": null,
+            "select": null,
+            "extendSelect": null,
+            "ignore": null
+        },
+        "format": {
+            "args": [],
+            "preview": null
+        },
+        "enable": true,
+        "organizeImports": true,
+        "fixAll": true,
+        "showNotifications": "off",
+        "exclude": null,
+        "lineLength": null,
+        "configurationPreference": "editorFirst",
+        "showSyntaxErrors": true
+    }
+]
+2024-07-17 17:37:17.619 [info] Global settings: {
+    "nativeServer": false,
+    "cwd": "/home/steinardth",
+    "workspace": "/home/steinardth",
+    "path": [],
+    "ignoreStandardLibrary": true,
+    "interpreter": [],
+    "configuration": null,
+    "importStrategy": "fromEnvironment",
+    "codeAction": {
+        "fixViolation": {
+            "enable": true
+        },
+        "disableRuleComment": {
+            "enable": true
+        }
+    },
+    "lint": {
+        "enable": true,
+        "run": "onType",
+        "args": []
+    },
+    "format": {
+        "args": []
+    },
+    "enable": true,
+    "organizeImports": true,
+    "fixAll": true,
+    "showNotifications": "off",
+    "configurationPreference": "editorFirst",
+    "showSyntaxErrors": true
+}

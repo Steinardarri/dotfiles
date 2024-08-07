@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uidata version="1">
+  <data environment="menus">
+__CORE_CHAT_WINDOW = {
+[&quot;y&quot;]=720.000000,
+[&quot;x&quot;]=50.000000,
+[&quot;version&quot;]=3.000000,
+[&quot;announcements&quot;]={},
+[&quot;size&quot;]=&quot;normal&quot;,}
+
+__CORE_DEBUGLOG_LOG = {
+[&quot;version&quot;]=4.000000,
+[&quot;data&quot;]={
+[1.000000]={
+[&quot;gamestart&quot;]=1.000000,
+[&quot;timestamp&quot;]=1719436636.000000,
+[&quot;message&quot;]=&quot;Info: 'AMD Radeon RX 7900 XTX (RADV NAVI31)' AMD-driver v24.1.1 (Vulkan 1.3.278) check=1&quot;,},
+[2.000000]={
+[&quot;gamestart&quot;]=1.000000,
+[&quot;timestamp&quot;]=1719436636.000000,
+[&quot;message&quot;]=&quot;Info: 'llvmpipe (LLVM 17.0.6, 256 bits)' gfx-driver v0.0.1 (Vulkan 1.3.278) check=1&quot;,},
+[3.000000]={
+[&quot;gamestart&quot;]=2.000000,
+[&quot;timestamp&quot;]=1719443985.000000,
+[&quot;message&quot;]=&quot;Info: 'AMD Radeon RX 7900 XTX (RADV NAVI31)' AMD-driver v24.1.1 (Vulkan 1.3.278) check=1&quot;,},
+[4.000000]={
+[&quot;gamestart&quot;]=2.000000,
+[&quot;timestamp&quot;]=1719443985.000000,
+[&quot;message&quot;]=&quot;Info: 'llvmpipe (LLVM 17.0.6, 256 bits)' gfx-driver v0.0.1 (Vulkan 1.3.278) check=1&quot;,},
+[5.000000]={
+[&quot;gamestart&quot;]=3.000000,
+[&quot;timestamp&quot;]=1719444023.000000,
+[&quot;message&quot;]=&quot;Error: Invalid call to SetScript(). Given onUpdate-function already registered.&quot;,},
+[6.000000]={
+[&quot;gamestart&quot;]=3.000000,
+[&quot;timestamp&quot;]=1719444029.000000,
+[&quot;message&quot;]=&quot;Error: Widget system error. Given/Required column width 1507 exceeds the max table width of 1007. Skipping table.&quot;,},
+[7.000000]={
+[&quot;gamestart&quot;]=3.000000,
+[&quot;timestamp&quot;]=1719444029.000000,
+[&quot;message&quot;]=&quot;Error: Widget system error. Given/Required column width 753 exceeds the max table width of 251. Skipping table.&quot;,},},
+[&quot;lastClear&quot;]={
+[&quot;major&quot;]=7.000000,
+[&quot;minor&quot;]=0.000000,},}
+
+__CORE_DETAILMONITOR_MAPFILTER = {
+[&quot;layer_think&quot;]=true,
+[&quot;other_misc_ecliptic&quot;]=true,
+[&quot;other_misc_opacity&quot;]=false,
+[&quot;other_misc_missions&quot;]=true,
+[&quot;trade_relation_enemy&quot;]=true,
+[&quot;think_diplomacy_factioncolor&quot;]=false,
+[&quot;trade_playeroffer_buy&quot;]=0.000000,
+[&quot;other_misc_allyorderqueue&quot;]=true,
+[&quot;trade_playeroffer_sell&quot;]=0.000000,
+[&quot;other_misc_wrecks&quot;]=true,
+[&quot;think_alert&quot;]=1.000000,
+[&quot;other_misc_coveroverride&quot;]=false,
+[&quot;layer_mining&quot;]=true,
+[&quot;other_misc_rendersatelliteradarrange&quot;]=true,
+[&quot;layer_other&quot;]=true,
+[&quot;other_misc_selection_lines&quot;]=true,
+[&quot;think_diplomacy_highlightvisitor&quot;]=true,
+[&quot;trade_price_maxprice&quot;]=0.000000,
+[&quot;other_misc_gate_connections&quot;]=false,
+[&quot;other_misc_orderqueue&quot;]=true,
+[&quot;version&quot;]=20.000000,
+[&quot;layer_diplo&quot;]=false,
+[&quot;layer_build&quot;]=false,
+[&quot;layer_fight&quot;]=false,
+[&quot;layer_trade&quot;]=true,
+[&quot;trade_volume&quot;]=0.000000,
+[&quot;trade_offer_number&quot;]=3.000000,
+[&quot;other_misc_civilian&quot;]=true,
+[&quot;mining_resource_display&quot;]=true,}
+__CORE_DETAILMONITOR_USERQUESTION = {}
+__CORE_DETAILMONITOR_STATIONBUILD = {
+[&quot;discreteanglestep&quot;]=15.000000,
+[&quot;environment&quot;]=true,
+[&quot;version&quot;]=2.000000,
+[&quot;gizmo&quot;]=true,
+[&quot;moduleoverlap&quot;]=false,}
+__CORE_DETAILMONITOR_SHIPBUILD = {
+[&quot;showStatsPaintMod&quot;]=false,
+[&quot;version&quot;]=1.000000,
+[&quot;showStats&quot;]=true,}
+__CORE_DETAILMONITOR_MAPEDITOR = {
+[&quot;opacity&quot;]=98.000000,}
+
+__CORE_GAMEOPTIONS_RESTOREINFO = {}
+__CORE_GAMEOPTIONS_PRIVACYPOLICY = false
+__CORE_GAMEOPTIONS_VENTURECONFIG = {
+[&quot;allow_update&quot;]=false,
+[&quot;allow_validation&quot;]=false,
+[&quot;allow_update_once&quot;]=false,}
+</data>
+</uidata>

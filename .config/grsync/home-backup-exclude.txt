@@ -1,0 +1,9 @@
+.local/share/Trash
+.continue
+.ollama
+.rustup
+.cargo
+Downloads
+Forrit/git_verkefni
+*/*[cC][aA][cC][hH][eE]*/
+vmware

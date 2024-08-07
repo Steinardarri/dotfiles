@@ -1,0 +1,3 @@
+[default-profile]
+alsa_card.pci-0000_0b_00.1=off
+alsa_card.pci-0000_0d_00.4=off

@@ -1,0 +1,35 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=100000
+SAVEHIST=100000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/steinardth/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+setopt autocd nomatch
+unsetopt beep extendedglob notify
+
+export PATH=$PATH:$HOME/.local/bin
+
+bindkey '^[[3~' delete-char                    # Key Del
+bindkey '^[[5~' beginning-of-buffer-or-history # Key Page Up
+bindkey '^[[6~' end-of-buffer-or-history       # Key Page Down
+bindkey '^[[1;3D' backward-word                # Key Alt + Left
+bindkey '^[[1;3C' forward-word                 # Key Alt + Right
+bindkey '^[[H' beginning-of-line               # Key Home
+bindkey '^[[F' end-of-line                     # Key End
+
+if type nproc &>/dev/null; then
+  export MAKEFLAGS="$MAKEFLAGS -j$(($(nproc) - 1))"
+fi
+
+zstyle ':completion:*:*:*:*:*' menu select
+
+eval "$(starship init zsh)"
+
+catnap

@@ -1,0 +1,21 @@
+2024-07-17 17:37:16.606 [info] Telemetry level is off
+2024-07-17 17:37:16.606 [info] Experiments are disabled, only manually opted experiments are active.
+2024-07-17 17:37:16.606 [error] Reading directory to watch failed [Error: ENOENT: no such file or directory, scandir '/home/steinardth/Verkefni/hunspell-is/.pixi/envs'
+	at Object.readdirSync (node:fs:1513:3)
+	at t.readdirSync (node:electron/js2c/node_init:2:11289)
+	at /home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/out/client/extension.js:2:574598
+	at /home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/out/client/extension.js:2:574789
+	at Array.map (<anonymous>)
+	at d.initWatchers (/home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/out/client/extension.js:2:574507)
+	at async d.ensureWatchersReady (/home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/out/client/extension.js:2:536827)] {
+  errno: -2,
+  syscall: 'scandir',
+  code: 'ENOENT',
+  path: '/home/steinardth/Verkefni/hunspell-is/.pixi/envs'
+}
+2024-07-17 17:37:16.606 [error] Dir "/home/steinardth/Verkefni/hunspell-is/.pixi/envs" is not watchable (directory does not exist)
+2024-07-17 17:37:16.606 [info] Default formatter is set to charliermarsh.ruff for workspace /home/steinardth/Verkefni/hunspell-is
+2024-07-17 17:37:16.606 [info] Python interpreter path: ./.venv/bin/python
+2024-07-17 17:37:16.624 [info] > pyenv which python
+2024-07-17 17:37:16.624 [info] cwd: .
+2024-07-17 17:37:17.620 [info] Starting Jedi language server for hunspell-is.

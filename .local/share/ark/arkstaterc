@@ -1,0 +1,11 @@
+[CreateDialog]
+LastMimeType=application/x-7z-compressed
+
+[KFileDialog Settings]
+Recent Files[$e]=file:///run/media/steinardth/SSD_Kingston/floorp/installs.ini
+Recent URLs[$e]=file:///run/media/steinardth/SSD_Kingston/floorp/,file:$HOME/
+
+[MainWindow]
+3 screens: Height=600
+3 screens: Width=950
+State=AAAA/wAAAAD9AAAAAQAAAAEAAACkAAACKvwCAAAAAfsAAAAWAGEAcgBrAF8AcwBpAGQAZQBiAGEAcgEAAAAuAAACKgAAAG4A///+AAADEQAAAioAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=

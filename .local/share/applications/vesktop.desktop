@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Network;
+Comment[en_GB]=
+Comment=
+Exec=vesktop %U
+GenericName[en_GB]=Internet Messenger
+GenericName=Internet Messenger
+Icon=web-discord
+Keywords=discord;vencord;electron;chat;
+MimeType=
+Name[en_GB]=Vesktop
+Name=Vesktop
+Path=
+StartupNotify=true
+StartupWMClass=Vesktop
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

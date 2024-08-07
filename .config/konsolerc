@@ -1,0 +1,16 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Minn.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[TabBar]
+CloseTabOnMiddleMouseButton=true
+
+[UiSettings]
+ColorScheme=

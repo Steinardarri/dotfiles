@@ -1,0 +1,16 @@
+dicts*/
+huntest.aff
+huntest.dic
+iswiktionary-latest-pages-articles.xml
+iswiktionary-latest-pages-articles.xml.bz2
+iswiktionary-latest-pages-articles.xml.texts
+libreoffice-tmp/
+mozilla-tmp/
+wiktionary.aff
+wiktionary.dic
+wordlist.diff
+sed*
+diff-dic1
+*~
+randwordlist
+.venv

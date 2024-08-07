@@ -1,0 +1,4 @@
+[TimeZones]
+LocalZone=Atlantic/Reykjavik
+ZoneinfoDir=/usr/share/zoneinfo
+Zonetab=/usr/share/zoneinfo/zone.tab

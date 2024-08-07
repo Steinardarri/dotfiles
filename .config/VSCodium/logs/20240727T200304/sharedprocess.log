@@ -1,0 +1,10 @@
+2024-07-27 20:04:55.712 [info] Uninstalling extension from the profile: pylyzer.pylyzer@0.1.5 vscode-userdata:/home/steinardth/.vscode-oss/extensions/extensions.json
+2024-07-27 20:04:55.738 [info] Marked extension as uninstalled pylyzer.pylyzer-0.1.5-universal
+2024-07-27 20:04:55.813 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/extensions.json.vsctmp'
+    at u.create (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22080)
+    at d (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22210)
+    at R.toFileSystemProviderError (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:47900)
+    at R.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:38403)
+    at async s.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:19760)
+    at async z.onDidFilesChange (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:146943)
+2024-07-27 20:04:55.860 [info] Successfully uninstalled extension from the profile pylyzer.pylyzer@0.1.5 vscode-userdata:/home/steinardth/.vscode-oss/extensions/extensions.json

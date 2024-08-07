@@ -1,0 +1,9 @@
+pkgname = hunspell-is
+pkgdesc = Icelandic dictionaries for Hunspell
+pkgver = 20240703
+pkgrel = 1
+url = https://repository.clarin.is/repository/xmlui/handle/20.500.12537/9?locale-attribute=en
+arch = any
+license = CC0-1.0
+source = https://github.com/Steinardarri/hunspell-is/archive/refs/heads/master.zip
+sha256sums = 6f8c62461eb4c2cfe81628094c74ab6511918520047742f14e23dd440b99f45f

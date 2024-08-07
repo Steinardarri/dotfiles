@@ -1,0 +1,25 @@
+2024-07-22 22:50:12.234 [info] Extension host with pid 153751 started
+2024-07-22 22:50:12.234 [info] Skipping acquiring lock for /home/steinardth/.config/VSCodium/User/workspaceStorage/c241c9db64e61576530aaea245dadaed.
+2024-07-22 22:50:12.461 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-22 22:50:12.633 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-22 22:50:12.634 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2024-07-22 22:50:12.645 [info] ExtensionService#_doActivateExtension mhutchie.git-graph, startup: true, activationEvent: '*'
+2024-07-22 22:50:12.659 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2024-07-22 22:50:12.699 [info] ExtensionService#_doActivateExtension yzhang.markdown-all-in-one, startup: true, activationEvent: 'workspaceContains:README.md'
+2024-07-22 22:50:12.767 [error] Error: spawn /home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-07-22 22:50:12.779 [info] Extension host terminating: renderer closed the MessagePort
+2024-07-22 22:50:12.782 [error] Canceled: Canceled
+	at Object.c [as canceled] (/opt/vscodium-bin/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:10:1297)
+	at /opt/vscodium-bin/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:3083
+	at Array.forEach (<anonymous>)
+	at y.dispose (/opt/vscodium-bin/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:151:2987)
+	at m.terminate (/opt/vscodium-bin/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:160:10540)
+	at h.terminate (/opt/vscodium-bin/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:164:1908)
+	at i (/opt/vscodium-bin/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:177:12354)
+	at MessagePortMain.<anonymous> (/opt/vscodium-bin/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:177:8164)
+	at MessagePortMain.emit (node:events:514:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2285) setContext undefined
+2024-07-22 22:50:12.782 [info] Extension host with pid 153751 exiting with code 0

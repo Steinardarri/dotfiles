@@ -1,0 +1,20 @@
+*cache*
+*Cache*
+*CACHE*
+*storage*
+*Storage*
+*STORAGE*
+
+Trash/
+Steam/
+.zim/modules
+.floorp/**/extensions
+zed/
+baloo/
+bottles/
+Daedalic Entertainment GmbH/
+vulkan/
+ktorrent/
+icons/hicolor
+Proton Mail/
+places.sqlite

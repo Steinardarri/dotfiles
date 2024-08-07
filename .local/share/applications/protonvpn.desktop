@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Network;
+Comment[en_GB]=Proton VPN GUI client
+Comment=Proton VPN GUI client
+Exec=protonvpn-app
+GenericName[en_GB]=
+GenericName=
+Icon=proton-vpn-logo
+MimeType=
+Name[en_GB]=Proton VPN
+Name=Proton VPN
+Path=
+StartupNotify=true
+StartupWMClass=protonvpn-app
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

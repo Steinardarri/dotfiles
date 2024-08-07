@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=Network;
+Exec=vesktop %U
+GenericName=Internet Messenger
+Icon=vesktop
+Keywords=discord;vencord;electron;chat;
+Name=Vesktop
+StartupWMClass=Vesktop
+Terminal=false
+Type=Application

@@ -1,0 +1,24 @@
+[2024-08-03 15:31:31.335] [     38ms] [/] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-08-03 15:32:04.860] [     30ms] [/home/steinardth] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-08-03 15:32:41.540] [      6ms] [/home/steinardth] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-08-03 15:46:33.754] [    165ms] [/home/steinardth/.config/catnap] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+

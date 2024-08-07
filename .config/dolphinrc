@@ -1,0 +1,47 @@
+MenuBar=Disabled
+
+[ContentDisplay]
+UsePermissionsFormat=CombinedFormat
+UseShortRelativeDates=false
+
+[DetailsMode]
+PreviewSize=32
+
+[General]
+EditableUrl=true
+GlobalViewProps=false
+HideXTrashFile=true
+ShowFullPath=true
+ShowToolTips=true
+Version=202
+ViewPropsTimestamp=2024,7,27,13,28,41.727
+
+[IconsMode]
+PreviewSize=96
+
+[InformationPanel]
+dateFormat=ShortFormat
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[PlacesPanel]
+IconSize=32
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs
+
+[VersionControl]
+enabledPlugins=Git
+
+[ViewPropertiesDialog]
+3 screens: Height=584
+3 screens: Width=379

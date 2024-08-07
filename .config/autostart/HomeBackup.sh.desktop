@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[en_GB]=
+Comment=
+Exec=/home/steinardth/Forrit/Script/HomeBackup/HomeBackup.sh
+GenericName[en_GB]=
+GenericName=
+Icon=preferences-system-backup
+MimeType=
+Name[en_GB]=HomeBackup.sh
+Name=HomeBackup.sh
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-AutostartScript=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

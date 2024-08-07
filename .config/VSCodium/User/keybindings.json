@@ -1,0 +1,27 @@
+[
+  {
+    "command": "editor.action.blockComment",
+    "key": "ctrl+shift+numpad_divide",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.blockComment",
+    "key": "shift+alt+a",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "editor.action.commentLine",
+    "key": "ctrl+numpad_divide",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.commentLine",
+    "key": "ctrl+oem_2",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+f6",
+    "command": "workbench.action.reloadWindow",
+    "when": "-"
+  }
+]

@@ -1,0 +1,27 @@
+2024-07-29 20:06:26.178 [info] Deleted uninstalled extension from disk pylyzer.pylyzer /home/steinardth/.vscode-oss/extensions/pylyzer.pylyzer-0.1.5-universal
+2024-07-29 20:06:30.886 [info] Getting Manifest... continue.continue
+2024-07-29 20:06:30.889 [info] Getting Manifest... eamodio.gitlens
+2024-07-29 20:06:31.588 [info] Installing extension: continue.continue {"productVersion":{"version":"1.91.1","date":"2024-07-11T18:37:10.462Z"},"pinned":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/steinardth/.vscode-oss/extensions/extensions.json","path":"/home/steinardth/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2024-07-29 20:06:32.001 [info] Installing extension: eamodio.gitlens {"productVersion":{"version":"1.91.1","date":"2024-07-11T18:37:10.462Z"},"pinned":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/steinardth/.vscode-oss/extensions/extensions.json","path":"/home/steinardth/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2024-07-29 20:06:33.509 [info] Extracted extension to file:///home/steinardth/.vscode-oss/extensions/eamodio.gitlens-15.2.3-universal: eamodio.gitlens
+2024-07-29 20:06:33.525 [info] Renamed to /home/steinardth/.vscode-oss/extensions/eamodio.gitlens-15.2.3-universal
+2024-07-29 20:06:33.545 [info] Marked extension as uninstalled eamodio.gitlens-15.2.1-universal
+2024-07-29 20:06:33.561 [info] Extension installed successfully: eamodio.gitlens vscode-userdata:/home/steinardth/.vscode-oss/extensions/extensions.json
+2024-07-29 20:06:33.610 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/extensions.json.vsctmp'
+    at u.create (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22080)
+    at d (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22210)
+    at R.toFileSystemProviderError (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:47900)
+    at R.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:38403)
+    at async s.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:19760)
+    at async z.onDidFilesChange (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:146943)
+2024-07-29 20:06:38.139 [info] Extracted extension to file:///home/steinardth/.vscode-oss/extensions/continue.continue-0.8.44-linux-x64: continue.continue
+2024-07-29 20:06:38.141 [info] Renamed to /home/steinardth/.vscode-oss/extensions/continue.continue-0.8.44-linux-x64
+2024-07-29 20:06:38.159 [info] Marked extension as uninstalled continue.continue-0.8.43-linux-x64
+2024-07-29 20:06:38.164 [info] Extension installed successfully: continue.continue vscode-userdata:/home/steinardth/.vscode-oss/extensions/extensions.json
+2024-07-29 20:06:38.223 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/extensions.json.vsctmp'
+    at u.create (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22080)
+    at d (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22210)
+    at R.toFileSystemProviderError (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:47900)
+    at R.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:38403)
+    at async s.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:19760)
+    at async z.onDidFilesChange (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:146943)

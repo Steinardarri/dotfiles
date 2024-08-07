@@ -1,0 +1,13 @@
+👌 IMPROVE: Pakk uppbygging tilbúin
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Thu Jul 4 00:03:04 2024 +0000
+#
+# On branch master
+# Changes to be committed:
+#	modified:   .SRCINFO
+#	modified:   PKGBUILD
+#	new file:   hunspell-is_20240703.zip
+#

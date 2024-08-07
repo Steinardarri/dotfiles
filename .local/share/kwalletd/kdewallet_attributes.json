@@ -1,0 +1,24 @@
+{
+    "$fdo_created": "1722261924",
+    "$fdo_modified": "1722900330",
+    "Secret Service/Password for 'proton-sso-account-inzhs32to5xxeza' on 'Proton'": {
+        "$fdo_created": "1722876913",
+        "$fdo_mime_type": "text/plain",
+        "$fdo_modified": "1722876913",
+        "attributes": {
+            "application": "Python keyring library",
+            "service": "Proton",
+            "username": "proton-sso-account-inzhs32to5xxeza"
+        }
+    },
+    "Secret Service/Password for 'proton-sso-accounts' on 'Proton'": {
+        "$fdo_created": "1722304170",
+        "$fdo_mime_type": "text/plain",
+        "$fdo_modified": "1722304170",
+        "attributes": {
+            "application": "Python keyring library",
+            "service": "Proton",
+            "username": "proton-sso-accounts"
+        }
+    }
+}

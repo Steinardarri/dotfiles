@@ -1,0 +1,24 @@
+[[uefi-shell-git]]
+url = "https://git.cryptomilk.org/projects/cmocka.git"
+commit = "fa9b6449c54f4defbad7e27e35b0ce8d6547d8b4"
+
+[[uefi-shell-git]]
+url = "https://github.com/google/brotli"
+commit = "39bcecf4559f9b0e75c6248a75d9c0db6b123d88"
+
+[[uefi-shell-git]]
+url = "https://github.com/kkos/oniguruma"
+commit = "b6c8d55ac402fd89e448153bc4f827ae1ee65840"
+
+[[uefi-shell-git]]
+url = "https://github.com/openssl/openssl"
+commit = "ca1d2db291530a827555b40974ed81efb91c2d19"
+
+[[uefi-shell-git]]
+url = "https://github.com/tianocore/edk2.git"
+branch = "master"
+commit = "f203a6db92eedf03ac544ed270404cb29d3dea7f"
+
+[[uefi-shell-git]]
+url = "https://github.com/ucb-bar/berkeley-softfloat-3.git"
+commit = "b51ef8f3201669b2288104c28546fc72532a1ea4"

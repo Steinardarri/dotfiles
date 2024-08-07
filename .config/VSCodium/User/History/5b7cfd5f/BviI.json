@@ -1,0 +1,37 @@
+{
+  "models": [
+    {
+      "apiKey": "29adf1b2e19493f60bfe7e730fb02292e88f66cec3288ea02f47da7ea115c38f",
+      "title": "Llama3 Chat",
+      "model": "llama3-8b",
+      "contextLength": 4096,
+      "provider": "together"
+    },
+    {
+      "model": "AUTODETECT",
+      "title": "Ollama",
+      "completionOptions": {},
+      "apiBase": "http://localhost:11434",
+      "provider": "ollama"
+    }
+  ],
+  "customCommands": [
+    {
+      "name": "test",
+      "prompt": "{{{ input }}}\n\nWrite a comprehensive set of unit tests for the selected code. It should setup, run tests that check for correctness including important edge cases, and teardown. Ensure that the tests are complete and sophisticated. Give the tests just as chat output, don't edit any file.",
+      "description": "Write unit tests for highlighted code"
+    }
+  ],
+  "allowAnonymousTelemetry": true,
+  "embeddingsProvider": {
+    "provider": "free-trial"
+  },
+  "reranker": {
+    "name": "free-trial"
+  },
+  "tabAutocompleteModel": {
+    "title": "Tab Autocomplete",
+    "provider": "ollama",
+    "model": "codestral-latest"
+  }
+}

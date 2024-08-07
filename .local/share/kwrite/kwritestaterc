@@ -1,0 +1,10 @@
+[KFileDialog Settings]
+Recent Files[$e]=admin:/usr/local/bin/dracut-remove.sh
+Recent URLs[$e]=file:$HOME/,file:///,file:///etc/pacman.d/,file:$HOME/Forrit/Script/HomeBackup/,file:$HOME/.config/grsync/,file:$HOME/Documents/,file:///etc/,file:$HOME/.local/share/zed/logs/,file:///boot/,admin:/boot/EFI/refind/,admin:/usr/local/bin/
+
+[MainWindow]
+3 screens: Height=1412
+3 screens: Width=1278
+3 screens: Window-Maximized=true
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAACgAAAAU4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABoAGEAbQBiAHUAcgBnAGUAcgBCAGEAcgEAAAIZ/////wAAAAAAAAAA

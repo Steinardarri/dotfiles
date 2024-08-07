@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Network;Email;
+Comment[en_GB]=Proton official desktop application for Proton Mail and Proton Calendar
+Comment=Proton official desktop application for Proton Mail and Proton Calendar
+Exec=proton-mail %U
+GenericName[en_GB]=Proton Mail GUI Client
+GenericName=Proton Mail GUI Client
+Icon=proton-mail
+MimeType=
+Name[en_GB]=Proton Mail
+Name=Proton Mail
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

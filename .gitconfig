@@ -1,0 +1,69 @@
+
+[user]
+  name = Steinar Darri Þorgilsson
+  email = steinar@steinardth.xyz
+
+[color]
+  # Enable colors in color-supporting terminals
+  ui = auto
+
+[core]
+  # Don't paginate output by default
+  pager = delta
+  filemode = false
+  bare = false
+  logallrefupdates = true
+  # Don't consider trailing space change as a cause for merge conflicts
+  whitespace = -trailing-space
+
+[alias]
+  # List available aliases
+  aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+  # Display tree-like log, because default log is a pain…
+  lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+  # Ammend last commit, either changes or just message
+  ammend = commit --amend
+  # Undo last commit but keep changed files in stage
+  uncommit = reset --soft HEAD~1
+  # See recent changes
+  last     = log -1 HEAD
+  diffLast = diff HEAD^ HEAD
+  diffDev  = diff development..HEAD
+  # Branch management
+  rebDev = !git pull --all && git rebase --interactive development
+  coDev  = checkout development
+  coFea  = checkout feature
+
+[diff]
+  # Use better, descriptive initials (c, i, w) instead of a/b.
+  mnemonicPrefix = true
+  # Show renames/moves as such
+  renames = true
+  colorMoved = default
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  line-numbers = true
+  side-by-side = true
+
+[push]
+  # Only push current branch to remote branch of the same name, do not create if doesn't exist
+  default = simple
+  autoSetupRemote = true
+
+[merge]
+    conflictstyle = diff3
+
+[fetch]
+  # Remove remote branches that have had their remote source deleted
+  prune = true
+
+[status]
+  # Display submodule rev change summaries in status
+  submoduleSummary = true
+
+[init]
+  defaultBranch = master

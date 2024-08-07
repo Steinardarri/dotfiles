@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Google Earth VR
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/348250
+Icon=steam_icon_348250
+Terminal=false
+Type=Application
+Categories=Game;

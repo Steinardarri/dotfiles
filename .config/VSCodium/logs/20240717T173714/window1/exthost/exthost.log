@@ -1,0 +1,30 @@
+2024-07-17 17:37:15.946 [info] Extension host with pid 150458 started
+2024-07-17 17:37:15.946 [info] Skipping acquiring lock for /home/steinardth/.config/VSCodium/User/workspaceStorage/c241c9db64e61576530aaea245dadaed.
+2024-07-17 17:37:16.157 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-07-17 17:37:16.358 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-07-17 17:37:16.359 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2024-07-17 17:37:16.371 [info] ExtensionService#_doActivateExtension mhutchie.git-graph, startup: true, activationEvent: '*'
+2024-07-17 17:37:16.385 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2024-07-17 17:37:16.422 [info] ExtensionService#_doActivateExtension yzhang.markdown-all-in-one, startup: true, activationEvent: 'workspaceContains:README.md'
+2024-07-17 17:37:16.499 [error] Error: spawn /home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
+	at onErrorNT (node:internal/child_process:484:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-07-17 17:37:16.512 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+2024-07-17 17:37:16.518 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-07-17 17:37:16.535 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-07-17 17:37:16.589 [info] ExtensionService#_doActivateExtension charliermarsh.ruff, startup: true, activationEvent: 'workspaceContains:*.py,*.ipynb'
+2024-07-17 17:37:16.608 [info] Eager extensions activated
+2024-07-17 17:37:16.629 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.630 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.634 [info] ExtensionService#_doActivateExtension alefragnani.Bookmarks, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.637 [info] ExtensionService#_doActivateExtension Continue.continue, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.740 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.765 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.784 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.804 [info] ExtensionService#_doActivateExtension Gruntfuggly.todo-tree, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.814 [info] ExtensionService#_doActivateExtension naumovs.color-highlight, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.817 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.822 [info] ExtensionService#_doActivateExtension usernamehw.errorlens, startup: false, activationEvent: 'onStartupFinished'
+2024-07-17 17:37:16.835 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'api', root cause: ms-python.python
+2024-07-17 17:37:17.102 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'

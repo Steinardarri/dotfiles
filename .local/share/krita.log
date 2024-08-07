@@ -1,0 +1,260 @@
+================================================================================
+SESSION: 27 Jul 2024 18:59:51 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 61624
+-- -- -- -- -- -- -- --
+27 Jul 2024 18:59:51 +0000: Style: fusion. Available styles: Windows, Fusion
+27 Jul 2024 18:59:51 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+27 Jul 2024 18:59:58 +0000: Created image "Unnamed", 2480 * 3508 pixels, 300 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+27 Jul 2024 19:06:57 +0000: Autosaving: /home/steinardth/krita-61624-document_0-autosave.kra
+27 Jul 2024 19:06:57 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/krita-61624-document_0-autosave.kra. Real location: /home/steinardth/krita-61624-document_0-autosave.kra. Batchmode: 0. Configuration: none
+27 Jul 2024 19:06:58 +0000: Completed saving /home/steinardth/krita-61624-document_0-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 83099
+27 Jul 2024 19:07:17 +0000: SAFE ASSERT (krita): "!m_d->parent || !parent" in file /usr/src/debug/krita/krita-5.2.3/libs/image/kis_paint_device.cc, line 1200
+27 Jul 2024 19:13:58 +0000: Autosaving: /home/steinardth/krita-61624-document_0-autosave.kra
+27 Jul 2024 19:14:08 +0000: Autosaving: /home/steinardth/krita-61624-document_0-autosave.kra
+27 Jul 2024 19:14:18 +0000: Autosaving: /home/steinardth/krita-61624-document_0-autosave.kra
+27 Jul 2024 19:14:28 +0000: Autosaving: /home/steinardth/krita-61624-document_0-autosave.kra
+27 Jul 2024 19:14:29 +0000: Autosaving: /home/steinardth/krita-61624-document_0-autosave.kra
+27 Jul 2024 19:14:29 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/krita-61624-document_0-autosave.kra. Real location: /home/steinardth/krita-61624-document_0-autosave.kra. Batchmode: 0. Configuration: none
+27 Jul 2024 19:14:29 +0000: Completed saving /home/steinardth/krita-61624-document_0-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 75555
+27 Jul 2024 19:22:35 +0000: Saving Document  as /home/steinardth/Pictures/vanguard.png (mime: image/png). 181 * 160 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+27 Jul 2024 19:22:41 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Pictures/vanguard.png. Real location: /home/steinardth/Pictures/vanguard.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param type="internal" name="alpha">true</param>
+ <param type="internal" name="compression">3</param>
+ <param type="internal" name="downsample">false</param>
+ <param type="internal" name="forceSRGB">true</param>
+ <param type="internal" name="indexed">false</param>
+ <param type="internal" name="interlaced">false</param>
+ <param type="internal" name="saveAsHDR">false</param>
+ <param type="internal" name="saveSRGBProfile">false</param>
+ <param type="internal" name="storeAuthor">false</param>
+ <param type="internal" name="storeMetaData">false</param>
+ <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB r="1" space="sRGB-elle-V2-g10.icc" g="1" b="1"/>
+</color>
+]]></param>
+</params>
+
+27 Jul 2024 19:22:41 +0000: Completed saving /home/steinardth/Pictures/vanguard.png (mime: image/png). Result: OK. Warning: . Size: 5419
+27 Jul 2024 19:22:41 +0000: Removing autosave file: /home/steinardth/krita-61624-document_0-autosave.kra
+27 Jul 2024 19:22:41 +0000: Saving Completed
+27 Jul 2024 19:22:43 +0000: CLOSING SESSION
+================================================================================
+SESSION: 29 Jul 2024 19:44:57 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 38209
+-- -- -- -- -- -- -- --
+29 Jul 2024 19:44:57 +0000: Style: fusion. Available styles: Windows, Fusion
+29 Jul 2024 19:44:58 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+29 Jul 2024 19:45:06 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Pictures/vanguard.png. Real location: /home/steinardth/Pictures/vanguard.png. Batchmode: 0
+29 Jul 2024 19:45:06 +0000: Loaded image from image/png. Size: 181 * 160 pixels, 4.16665 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+29 Jul 2024 19:45:11 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Pictures/Vagabond-soldier-blue.png. Real location: /home/steinardth/Pictures/Vagabond-soldier-blue.png. Batchmode: 0
+29 Jul 2024 19:45:11 +0000: Loaded image from image/png. Size: 1478 * 1478 pixels, 0.99977 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+29 Jul 2024 19:46:45 +0000: Exporting Document: /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png as image/png. 1478 * 1478 pixels, 2 layers, 101 frames, 24 framerate. Export configuration: No configuration
+29 Jul 2024 19:46:46 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png. Real location: /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param type="internal" name="alpha">true</param>
+ <param type="internal" name="compression">3</param>
+ <param type="internal" name="downsample">false</param>
+ <param type="internal" name="forceSRGB">true</param>
+ <param type="internal" name="indexed">false</param>
+ <param type="internal" name="interlaced">false</param>
+ <param type="internal" name="saveAsHDR">false</param>
+ <param type="internal" name="saveSRGBProfile">false</param>
+ <param type="internal" name="storeAuthor">false</param>
+ <param type="internal" name="storeMetaData">false</param>
+ <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB b="1" r="1" g="1" space="sRGB-elle-V2-g10.icc"/>
+</color>
+]]></param>
+</params>
+
+29 Jul 2024 19:46:46 +0000: Completed saving /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png (mime: image/png). Result: OK. Warning: . Size: 392126
+29 Jul 2024 19:46:46 +0000: Saving Completed
+29 Jul 2024 19:48:43 +0000: Saving Document /home/steinardth/Pictures/Vagabond-soldier-blue.png as /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png (mime: image/png). 1478 * 1478 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+29 Jul 2024 19:48:43 +0000: Create a simple backup for /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png in the same location as the file.
+29 Jul 2024 19:48:44 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png. Real location: /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param type="internal" name="alpha">true</param>
+ <param type="internal" name="compression">3</param>
+ <param type="internal" name="downsample">false</param>
+ <param type="internal" name="forceSRGB">true</param>
+ <param type="internal" name="indexed">false</param>
+ <param type="internal" name="interlaced">false</param>
+ <param type="internal" name="saveAsHDR">false</param>
+ <param type="internal" name="saveSRGBProfile">false</param>
+ <param type="internal" name="storeAuthor">false</param>
+ <param type="internal" name="storeMetaData">false</param>
+ <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB b="1" r="1" g="1" space="sRGB-elle-V2-g10.icc"/>
+</color>
+]]></param>
+</params>
+
+29 Jul 2024 19:48:44 +0000: Completed saving /home/steinardth/Downloads/Vagabond-soldier-blue_raw.png (mime: image/png). Result: OK. Warning: . Size: 363872
+29 Jul 2024 19:48:44 +0000: Saving Completed
+30 Jul 2024 01:27:17 +0000: CLOSING SESSION
+================================================================================
+SESSION: 31 Jul 2024 15:38:03 +0000. Executing /usr/bin/krita /home/steinardth/Downloads/ableton-live-12-intro.jpg
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 106860
+-- -- -- -- -- -- -- --
+31 Jul 2024 15:38:03 +0000: Style: fusion. Available styles: Windows, Fusion
+31 Jul 2024 15:38:04 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+31 Jul 2024 15:38:05 +0000: Importing image/jpeg to application/x-krita. Location: /home/steinardth/Downloads/ableton-live-12-intro.jpg. Real location: /home/steinardth/Downloads/ableton-live-12-intro.jpg. Batchmode: 0
+31 Jul 2024 15:38:05 +0000: Loaded image from image/jpeg. Size: 318 * 159 pixels, 1 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+31 Jul 2024 15:49:31 +0000: Importing image/jpeg to application/x-krita. Location: /home/steinardth/Pictures/medieval-knight-in-armor-logo-simple-clean-modern-icon-of-a-warrior-with-shield-and-helmet-going-to-battle-military-soldier-idea-of-protection-security-business-mascot-sword-badge-vector-1836119253.jpg. Real location: /home/steinardth/Pictures/medieval-knight-in-armor-logo-simple-clean-modern-icon-of-a-warrior-with-shield-and-helmet-going-to-battle-military-soldier-idea-of-protection-security-business-mascot-sword-badge-vector-1836119253.jpg. Batchmode: 0
+31 Jul 2024 15:49:31 +0000: Loaded image from image/jpeg. Size: 1920 * 1920 pixels, 1 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+31 Jul 2024 15:49:39 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png. Real location: /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png. Batchmode: 0
+31 Jul 2024 15:49:39 +0000: Loaded image from image/png. Size: 1554 * 956 pixels, 1 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+31 Jul 2024 15:53:09 +0000: Saving Document /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png as /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png (mime: image/png). 1554 * 956 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+31 Jul 2024 15:53:09 +0000: Create a simple backup for /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png in the same location as the file.
+31 Jul 2024 15:53:10 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png. Real location: /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param name="alpha" type="internal">true</param>
+ <param name="compression" type="internal">3</param>
+ <param name="downsample" type="internal">false</param>
+ <param name="forceSRGB" type="internal">true</param>
+ <param name="indexed" type="internal">false</param>
+ <param name="interlaced" type="internal">false</param>
+ <param name="saveAsHDR" type="internal">false</param>
+ <param name="saveSRGBProfile" type="internal">false</param>
+ <param name="storeAuthor" type="internal">false</param>
+ <param name="storeMetaData" type="internal">false</param>
+ <param name="transparencyFillcolor" type="color"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB g="1" space="sRGB-elle-V2-g10.icc" r="1" b="1"/>
+</color>
+]]></param>
+</params>
+
+31 Jul 2024 15:53:10 +0000: Completed saving /home/steinardth/Downloads/Screenshot 2024-07-31 at 15-43-05 Transfer ownership of your license to someone else Ableton.png (mime: image/png). Result: OK. Warning: . Size: 114941
+31 Jul 2024 15:53:10 +0000: Saving Completed
+31 Jul 2024 15:53:12 +0000: CLOSING SESSION
+================================================================================
+SESSION: 01 Aug 2024 15:52:13 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 25033
+-- -- -- -- -- -- -- --
+01 Aug 2024 15:52:13 +0000: Style: fusion. Available styles: Windows, Fusion
+01 Aug 2024 15:52:13 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+01 Aug 2024 15:52:18 +0000: CLOSING SESSION
+================================================================================
+SESSION: 03 Aug 2024 22:28:01 +0000. Executing /usr/bin/krita /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 27622
+-- -- -- -- -- -- -- --
+03 Aug 2024 22:28:01 +0000: Style: fusion. Available styles: Windows, Fusion
+03 Aug 2024 22:28:02 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+03 Aug 2024 22:28:03 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png. Real location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png. Batchmode: 0
+03 Aug 2024 22:28:03 +0000: Loaded image from image/png. Size: 256 * 256 pixels, 2.50013 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+03 Aug 2024 22:28:51 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_debian.png. Real location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_debian.png. Batchmode: 0
+03 Aug 2024 22:28:51 +0000: Loaded image from image/png. Size: 256 * 256 pixels, 1.00012 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+03 Aug 2024 22:30:41 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Pictures/vanguard.png. Real location: /home/steinardth/Pictures/vanguard.png. Batchmode: 0
+03 Aug 2024 22:30:41 +0000: Loaded image from image/png. Size: 181 * 160 pixels, 4.16665 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+03 Aug 2024 22:30:57 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Pictures/vanguard.png. Real location: /home/steinardth/Pictures/vanguard.png. Batchmode: 0
+03 Aug 2024 22:30:57 +0000: Loaded image from image/png. Size: 181 * 160 pixels, 4.16665 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+03 Aug 2024 22:35:03 +0000: Autosaving: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png-autosave.kra
+03 Aug 2024 22:35:13 +0000: Autosaving: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png-autosave.kra
+03 Aug 2024 22:35:13 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png-autosave.kra. Real location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png-autosave.kra. Batchmode: 0. Configuration: none
+03 Aug 2024 22:35:13 +0000: Completed saving /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 82371
+03 Aug 2024 22:38:58 +0000: Saving Document /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png as /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_vagabond.png (mime: image/png). 256 * 256 pixels, 4 layers.  101 frames, 24 framerate. Export configuration: No configuration
+03 Aug 2024 22:39:05 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_vagabond.png. Real location: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_vagabond.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param name="alpha" type="internal">true</param>
+ <param name="compression" type="internal">3</param>
+ <param name="downsample" type="internal">false</param>
+ <param name="forceSRGB" type="internal">true</param>
+ <param name="indexed" type="internal">false</param>
+ <param name="interlaced" type="internal">false</param>
+ <param name="saveAsHDR" type="internal">false</param>
+ <param name="saveSRGBProfile" type="internal">false</param>
+ <param name="storeAuthor" type="internal">false</param>
+ <param name="storeMetaData" type="internal">false</param>
+ <param name="transparencyFillcolor" type="color"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB space="sRGB-elle-V2-g10.icc" r="1" b="1" g="1"/>
+</color>
+]]></param>
+</params>
+
+03 Aug 2024 22:39:05 +0000: Completed saving /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_vagabond.png (mime: image/png). Result: OK. Warning: . Size: 4475
+03 Aug 2024 22:39:05 +0000: Removing autosave file: /home/steinardth/Forrit/git_verkefni/refind-dreary/highres/icons/os_antergos.png-autosave.kra
+03 Aug 2024 22:39:05 +0000: Saving Completed
+03 Aug 2024 22:47:02 +0000: CLOSING SESSION
+================================================================================
+SESSION: 05 Aug 2024 14:52:42 +0000. Executing /usr/bin/krita /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.jpg
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 38769
+-- -- -- -- -- -- -- --
+05 Aug 2024 14:52:42 +0000: Style: fusion. Available styles: Windows, Fusion
+05 Aug 2024 14:52:43 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+05 Aug 2024 14:52:44 +0000: Importing image/jpeg to application/x-krita. Location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.jpg. Real location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.jpg. Batchmode: 0
+05 Aug 2024 14:52:44 +0000: Loaded image from image/jpeg. Size: 3840 * 2400 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+05 Aug 2024 14:52:52 +0000: Saving Document /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.jpg as /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.png (mime: image/png). 3840 * 2400 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+05 Aug 2024 14:52:54 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.png. Real location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param name="alpha" type="internal">true</param>
+ <param name="compression" type="internal">3</param>
+ <param name="downsample" type="internal">false</param>
+ <param name="forceSRGB" type="internal">true</param>
+ <param name="indexed" type="internal">false</param>
+ <param name="interlaced" type="internal">false</param>
+ <param name="saveAsHDR" type="internal">false</param>
+ <param name="saveSRGBProfile" type="internal">false</param>
+ <param name="storeAuthor" type="internal">false</param>
+ <param name="storeMetaData" type="internal">false</param>
+ <param name="transparencyFillcolor" type="color"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB space="sRGB-elle-V2-g10.icc" b="1" r="1" g="1"/>
+</color>
+]]></param>
+</params>
+
+05 Aug 2024 14:52:54 +0000: Completed saving /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/background.png (mime: image/png). Result: OK. Warning: . Size: 5415080
+05 Aug 2024 14:52:54 +0000: Saving Completed
+05 Aug 2024 14:52:55 +0000: CLOSING SESSION
+================================================================================
+SESSION: 05 Aug 2024 15:07:22 +0000. Executing /usr/bin/krita /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 40375
+-- -- -- -- -- -- -- --
+05 Aug 2024 15:07:22 +0000: Style: fusion. Available styles: Windows, Fusion
+05 Aug 2024 15:07:22 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+05 Aug 2024 15:07:23 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png. Real location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png. Batchmode: 0
+05 Aug 2024 15:07:23 +0000: Loaded image from image/png. Size: 256 * 256 pixels, 1.38888 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+05 Aug 2024 15:14:23 +0000: Autosaving: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra
+05 Aug 2024 15:14:23 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra. Real location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra. Batchmode: 0. Configuration: none
+05 Aug 2024 15:14:23 +0000: Completed saving /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 58439
+05 Aug 2024 15:21:38 +0000: Autosaving: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra
+05 Aug 2024 15:21:38 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra. Real location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra. Batchmode: 0. Configuration: none
+05 Aug 2024 15:21:38 +0000: Completed saving /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 84938
+05 Aug 2024 15:21:45 +0000: Saving Document /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png as /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png (mime: image/png). 256 * 256 pixels, 5 layers.  101 frames, 24 framerate. Export configuration: No configuration
+05 Aug 2024 15:21:45 +0000: Create a simple backup for /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png in the same location as the file.
+05 Aug 2024 15:21:46 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png. Real location: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param name="alpha" type="internal">true</param>
+ <param name="compression" type="internal">3</param>
+ <param name="downsample" type="internal">false</param>
+ <param name="forceSRGB" type="internal">true</param>
+ <param name="indexed" type="internal">false</param>
+ <param name="interlaced" type="internal">false</param>
+ <param name="saveAsHDR" type="internal">false</param>
+ <param name="saveSRGBProfile" type="internal">false</param>
+ <param name="storeAuthor" type="internal">false</param>
+ <param name="storeMetaData" type="internal">false</param>
+ <param name="transparencyFillcolor" type="color"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB r="1" g="1" b="1" space="sRGB-elle-V2-g10.icc"/>
+</color>
+]]></param>
+</params>
+
+05 Aug 2024 15:21:46 +0000: Completed saving /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png (mime: image/png). Result: OK. Warning: . Size: 3862
+05 Aug 2024 15:21:46 +0000: Removing autosave file: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra
+05 Aug 2024 15:21:46 +0000: Saving Completed
+05 Aug 2024 15:21:48 +0000: CLOSING SESSION

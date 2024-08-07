@@ -1,0 +1,6 @@
+[2024-07-30 22:00:11.244] [     31ms] [/home/steinardth/.config/catnap] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+

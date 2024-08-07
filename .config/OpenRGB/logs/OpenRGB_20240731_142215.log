@@ -1,0 +1,108 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240731_142215
+====================================================================================================
+
+0     |Info:    Found file: Minn Rainbow.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Minn Rainbow
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    |               Start device detection               |
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    Initializing HID interfaces: Success
+1010  |Info:    ------------------------------------------------------
+1010  |Info:    |             Detecting I2C interfaces               |
+1010  |Info:    ------------------------------------------------------
+1010  |Info:    Registering I2C interface: /dev/i2c-3 Device 1002:744C Subsystem: 1849:5304
+1010  |Info:    Registering I2C interface: /dev/i2c-10 Device 1022:790B Subsystem: 1043:87C0
+1010  |Info:    Registering I2C interface: /dev/i2c-1 Device 1002:744C Subsystem: 1849:5304
+1010  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1010  |Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+1010  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1011  |Info:    Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+1011  |Info:    Registering I2C interface: /dev/i2c-4 Device 1002:744C Subsystem: 1849:5304
+1011  |Info:    Registering I2C interface: /dev/i2c-11 Device 1022:790B Subsystem: 1043:87C0
+1011  |Info:    Registering I2C interface: /dev/i2c-2 Device 1002:744C Subsystem: 1849:5304
+1011  |Info:    Registering I2C interface: /dev/i2c-0 Device 1002:744C Subsystem: 1849:5304
+1011  |Info:    Registering I2C interface: /dev/i2c-9 Device 1022:790B Subsystem: 1043:87C0
+1011  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1011  |Info:    Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+1011  |Info:    Registering I2C interface: /dev/i2c-5 Device 1002:744C Subsystem: 1849:5304
+1011  |Info:    ------------------------------------------------------
+1011  |Info:    |               Detecting I2C devices                |
+1011  |Info:    ------------------------------------------------------
+1252  |Info:    [ENE DRAM] Registering RGB controller
+1406  |Info:    [ENE DRAM] Registering RGB controller
+1551  |Info:    [ENE DRAM] Registering RGB controller
+1699  |Info:    [ENE DRAM] Registering RGB controller
+2652  |Info:    ------------------------------------------------------
+2653  |Info:    |               Detecting I2C PCI devices            |
+2653  |Info:    ------------------------------------------------------
+2654  |Info:    ------------------------------------------------------
+2654  |Info:    |               Detecting HID devices                |
+2654  |Info:    ------------------------------------------------------
+3712  |Info:    [Corsair Strafe MK.2] Registering RGB controller
+7685  |Info:    [G502 LIGHTSPEED Wireless Gaming Mouse] Registering RGB controller
+7760  |Info:    [ASUS PRIME X570-P] Registering RGB controller
+7760  |Info:    ------------------------------------------------------
+7760  |Info:    |            Detecting libusb HID devices            |
+7760  |Info:    ------------------------------------------------------
+7871  |Info:    ------------------------------------------------------
+7871  |Info:    |              Detecting other devices               |
+7871  |Info:    ------------------------------------------------------
+7880  |Info:    ------------------------------------------------------
+7880  |Info:    |                Detection completed                 |
+7880  |Info:    ------------------------------------------------------
+183002|Info:    Found file: Orange.orp attempting to validate header
+183002|Info:    Valid v4 profile found for Orange
+183002|Info:    Found file: Minn Rainbow.orp attempting to validate header
+183002|Info:    Valid v4 profile found for Minn Rainbow
+349227|Info:    Found file: Orange.orp attempting to validate header
+349227|Info:    Valid v4 profile found for Orange
+349227|Info:    Found file: Minn Rainbow.orp attempting to validate header
+349227|Info:    Valid v4 profile found for Minn Rainbow
+381733|Info:    ------------------------------------------------------
+381733|Info:    |               Start device detection               |
+381733|Info:    ------------------------------------------------------
+381733|Info:    Initializing HID interfaces: Success
+381740|Info:    ------------------------------------------------------
+381740|Info:    |             Detecting I2C interfaces               |
+381740|Info:    ------------------------------------------------------
+381740|Info:    Registering I2C interface: /dev/i2c-3 Device 1002:744C Subsystem: 1849:5304
+381740|Info:    Registering I2C interface: /dev/i2c-10 Device 1022:790B Subsystem: 1043:87C0
+381740|Info:    Registering I2C interface: /dev/i2c-1 Device 1002:744C Subsystem: 1849:5304
+381740|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+381740|Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+381740|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+381740|Info:    Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+381740|Info:    Registering I2C interface: /dev/i2c-4 Device 1002:744C Subsystem: 1849:5304
+381740|Info:    Registering I2C interface: /dev/i2c-11 Device 1022:790B Subsystem: 1043:87C0
+381740|Info:    Registering I2C interface: /dev/i2c-2 Device 1002:744C Subsystem: 1849:5304
+381740|Info:    Registering I2C interface: /dev/i2c-0 Device 1002:744C Subsystem: 1849:5304
+381741|Info:    Registering I2C interface: /dev/i2c-9 Device 1022:790B Subsystem: 1043:87C0
+381741|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+381741|Info:    Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+381741|Info:    Registering I2C interface: /dev/i2c-5 Device 1002:744C Subsystem: 1849:5304
+381741|Info:    ------------------------------------------------------
+381741|Info:    |               Detecting I2C devices                |
+381741|Info:    ------------------------------------------------------
+381992|Info:    [ENE DRAM] Registering RGB controller
+382154|Info:    [ENE DRAM] Registering RGB controller
+382305|Info:    [ENE DRAM] Registering RGB controller
+382459|Info:    [ENE DRAM] Registering RGB controller
+383421|Info:    ------------------------------------------------------
+383421|Info:    |               Detecting I2C PCI devices            |
+383421|Info:    ------------------------------------------------------
+383422|Info:    ------------------------------------------------------
+383422|Info:    |               Detecting HID devices                |
+383422|Info:    ------------------------------------------------------
+384027|Info:    [G502 LIGHTSPEED Wireless Gaming Mouse] Registering RGB controller
+384107|Info:    [ASUS PRIME X570-P] Registering RGB controller
+384107|Info:    ------------------------------------------------------
+384107|Info:    |            Detecting libusb HID devices            |
+384107|Info:    ------------------------------------------------------
+384207|Info:    ------------------------------------------------------
+384207|Info:    |              Detecting other devices               |
+384207|Info:    ------------------------------------------------------
+384209|Info:    ------------------------------------------------------
+384209|Info:    |                Detection completed                 |
+384209|Info:    ------------------------------------------------------

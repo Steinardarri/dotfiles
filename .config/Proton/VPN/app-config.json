@@ -1,0 +1,6 @@
+{
+    "tray_pinned_servers": [
+        "IS"
+    ],
+    "connect_at_app_startup": "IS"
+}

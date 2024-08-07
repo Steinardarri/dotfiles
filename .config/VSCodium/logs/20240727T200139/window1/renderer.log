@@ -1,0 +1,29 @@
+2024-07-27 20:01:40.079 [error] Error: The editor could not be opened because the file was not found.
+    at N.handleSetInputError (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:2214:41583)
+    at async N.setInput (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:2214:40216)
+    at async s.doSetInput (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:2212:37234)
+    at async s.doOpenEditor (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:2212:34965)
+    at async s.openEditor (vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:2212:33701)
+    at async vscode-file://vscode-app/opt/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:2340:37405
+2024-07-27 20:01:40.131 [info] Started local extension host with pid 98512.
+2024-07-27 20:01:40.740 [error] Error: Error while decrypting the ciphertext provided to safeStorage.decryptString.
+    at R.decrypt (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:65:10696)
+    at Object.call (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:48:6359)
+    at S.onPromise (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:46:6080)
+    at S.onRawMessage (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:46:5407)
+    at b.value (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:46:4597)
+    at i._deliver (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:41:928)
+    at i._deliverQueue (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:41:1023)
+    at i.fire (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:41:1361)
+    at b.value (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:36:31042)
+    at i._deliver (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:41:928)
+    at i.fire (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:41:1252)
+    at b.value (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:36:31245)
+    at i._deliver (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:41:928)
+    at i.fire (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:41:1252)
+    at pe (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:36:33701)
+    at IpcMainImpl.a (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:48:24962)
+    at IpcMainImpl.emit (node:events:514:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:78003)
+    at WebContents.emit (node:events:514:28)
+2024-07-27 20:01:42.762 [info] [perf] Render performance baseline is 19ms

@@ -1,0 +1,62 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240805_214716
+====================================================================================================
+
+0     |Info:    Found file: Orange.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Orange
+0     |Info:    Found file: Minn Rainbow.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Minn Rainbow
+1007  |Info:    ------------------------------------------------------
+1007  |Info:    |               Start device detection               |
+1007  |Info:    ------------------------------------------------------
+1007  |Info:    Initializing HID interfaces: Success
+1012  |Info:    ------------------------------------------------------
+1012  |Info:    |             Detecting I2C interfaces               |
+1012  |Info:    ------------------------------------------------------
+1013  |Info:    Registering I2C interface: /dev/i2c-3 Device 1002:744C Subsystem: 1849:5304
+1013  |Info:    Registering I2C interface: /dev/i2c-10 Device 1022:790B Subsystem: 1043:87C0
+1013  |Info:    Registering I2C interface: /dev/i2c-1 Device 1002:744C Subsystem: 1849:5304
+1013  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1013  |Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+1013  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1013  |Info:    Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+1013  |Info:    Registering I2C interface: /dev/i2c-4 Device 1002:744C Subsystem: 1849:5304
+1013  |Info:    Registering I2C interface: /dev/i2c-11 Device 1022:790B Subsystem: 1043:87C0
+1013  |Info:    Registering I2C interface: /dev/i2c-2 Device 1002:744C Subsystem: 1849:5304
+1013  |Info:    Registering I2C interface: /dev/i2c-0 Device 1002:744C Subsystem: 1849:5304
+1013  |Info:    Registering I2C interface: /dev/i2c-9 Device 1022:790B Subsystem: 1043:87C0
+1013  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1013  |Info:    Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+1013  |Info:    Registering I2C interface: /dev/i2c-5 Device 1002:744C Subsystem: 1849:5304
+1013  |Info:    ------------------------------------------------------
+1013  |Info:    |               Detecting I2C devices                |
+1013  |Info:    ------------------------------------------------------
+1355  |Info:    [ENE DRAM] Registering RGB controller
+1506  |Info:    [ENE DRAM] Registering RGB controller
+1646  |Info:    [ENE DRAM] Registering RGB controller
+1787  |Info:    [ENE DRAM] Registering RGB controller
+2777  |Info:    ------------------------------------------------------
+2777  |Info:    |               Detecting I2C PCI devices            |
+2777  |Info:    ------------------------------------------------------
+2777  |Info:    ------------------------------------------------------
+2777  |Info:    |               Detecting HID devices                |
+2777  |Info:    ------------------------------------------------------
+3962  |Info:    [G502 LIGHTSPEED Wireless Gaming Mouse] Registering RGB controller
+4038  |Info:    [ASUS PRIME X570-P] Registering RGB controller
+4038  |Info:    ------------------------------------------------------
+4038  |Info:    |            Detecting libusb HID devices            |
+4038  |Info:    ------------------------------------------------------
+4151  |Info:    ------------------------------------------------------
+4151  |Info:    |              Detecting other devices               |
+4151  |Info:    ------------------------------------------------------
+4163  |Info:    ------------------------------------------------------
+4163  |Info:    |                Detection completed                 |
+4163  |Info:    ------------------------------------------------------
+4163  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-9, address 0x70
+4163  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-9, address 0x71
+4163  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-9, address 0x72
+4163  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-9, address 0x73
+4163  |Info:    Profile loading: Succeeded for G502 LIGHTSPEED Wireless Gaming Mouse @ HID: /dev/hidraw7 (Receiver) 
+Wireless Index: 255
+4163  |Info:    Profile loading: Succeeded for ASUS PRIME X570-P @ HID: /dev/hidraw0

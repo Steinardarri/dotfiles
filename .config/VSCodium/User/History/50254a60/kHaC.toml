@@ -1,0 +1,28 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[character]
+success_symbol = "[󱢿](bold purple)"
+error_symbol = "[󰯈](bold red)"
+
+[shell]
+fish_indicator = ""
+bash_indicator = "Bash"
+zsh_indicator = "Zsh"
+powershell_indicator = "PowerShell"
+unknown_indicator = "Unknown shell"
+format = "[ $indicator]($style) "
+style = "bold purple"
+disabled = false
+
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "as [$user]($style)"
+show_always = true
+disabled = false
+
+[hostname]

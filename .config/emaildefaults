@@ -1,0 +1,7 @@
+[Defaults]
+Profile=Default
+
+[PROFILE_Default]
+EmailClient[$e]=proton-mail.desktop
+ServerType=
+TerminalClient=false

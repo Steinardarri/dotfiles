@@ -1,0 +1,60 @@
+2024-07-17 17:37:16.825 [info] Log level: Info
+2024-07-17 17:37:16.825 [info] Validating found git in: "git"
+2024-07-17 17:37:16.825 [info] Using git "2.45.2" from "git"
+2024-07-17 17:37:16.825 [info] > git rev-parse --show-toplevel [16ms]
+2024-07-17 17:37:16.825 [info] > git rev-parse --git-dir --git-common-dir [11ms]
+2024-07-17 17:37:16.825 [info] Open repository: /home/steinardth/Verkefni/hunspell-is
+2024-07-17 17:37:17.072 [info] > git config --get commit.template [243ms]
+2024-07-17 17:37:17.118 [info] > git rev-parse --show-toplevel [25ms]
+2024-07-17 17:37:17.123 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2024-07-17 17:37:17.131 [info] > git rev-parse --show-toplevel [9ms]
+2024-07-17 17:37:17.148 [info] > git rev-parse --show-toplevel [10ms]
+2024-07-17 17:37:17.165 [info] > git status -z -uall [16ms]
+2024-07-17 17:37:17.165 [info] > git rev-parse --show-toplevel [13ms]
+2024-07-17 17:37:17.179 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-07-17 17:37:17.184 [info] > git config --local branch.master.vscode-merge-base [2ms]
+2024-07-17 17:37:17.184 [warning] git config failed: Failed to execute git
+2024-07-17 17:37:17.187 [info] > git config --get commit.template [8ms]
+2024-07-17 17:37:17.187 [info] > git rev-parse --git-dir --git-common-dir [12ms]
+2024-07-17 17:37:17.189 [info] Open repository: /home/steinardth/Verkefni/hunspell-is/AUR-package
+2024-07-17 17:37:17.204 [info] > git rev-parse --show-toplevel [5ms]
+2024-07-17 17:37:17.204 [info] > git config --get commit.template [8ms]
+2024-07-17 17:37:17.204 [info] > git reflog master --grep-reflog=branch: Created from *. [17ms]
+2024-07-17 17:37:17.212 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [5ms]
+2024-07-17 17:37:17.212 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-07-17 17:37:17.215 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2024-07-17 17:37:17.218 [info] No remotes found in the git config file.
+2024-07-17 17:37:17.219 [info] > git rev-parse --show-toplevel [7ms]
+2024-07-17 17:37:17.225 [info] > git show --textconv :Makefile [3ms]
+2024-07-17 17:37:17.226 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2024-07-17 17:37:17.229 [info] > git merge-base refs/heads/master refs/remotes/origin/master [14ms]
+2024-07-17 17:37:17.233 [info] > git status -z -uall [3ms]
+2024-07-17 17:37:17.237 [info] > git ls-files --stage -- /home/steinardth/Verkefni/hunspell-is/Makefile [12ms]
+2024-07-17 17:37:17.260 [info] > git status -z -uall [4ms]
+2024-07-17 17:37:17.260 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2024-07-17 17:37:17.263 [info] > git rev-list --count --left-right refs/heads/master...refs/remotes/origin/master [31ms]
+2024-07-17 17:37:17.298 [info] > git diff --name-status -z --diff-filter=ADMR 22290c68330a552f434b34f2ca27617a26a75a9a...refs/remotes/origin/master [32ms]
+2024-07-17 17:37:17.298 [info] > git config --local branch.master.vscode-merge-base [35ms]
+2024-07-17 17:37:17.298 [warning] git config failed: Failed to execute git
+2024-07-17 17:37:17.302 [info] > git config --get commit.template [42ms]
+2024-07-17 17:37:17.307 [info] > git cat-file -s b7ae0478618bcb81043f5e91a7c159ac36d14068 [67ms]
+2024-07-17 17:37:17.320 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2024-07-17 17:37:17.323 [info] > git reflog master --grep-reflog=branch: Created from *. [22ms]
+2024-07-17 17:37:17.330 [info] No remotes found in the git config file.
+2024-07-17 17:37:17.341 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [16ms]
+2024-07-17 17:37:17.341 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-07-17 17:37:17.341 [info] > git config --local branch.master.vscode-merge-base [18ms]
+2024-07-17 17:37:17.341 [warning] git config failed: Failed to execute git
+2024-07-17 17:37:17.351 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [21ms]
+2024-07-17 17:37:17.385 [info] > git status -z -uall [31ms]
+2024-07-17 17:37:17.392 [info] > git reflog master --grep-reflog=branch: Created from *. [48ms]
+2024-07-17 17:37:17.398 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-07-17 17:37:17.456 [info] > git config --local branch.master.vscode-merge-base [55ms]
+2024-07-17 17:37:17.456 [warning] git config failed: Failed to execute git
+2024-07-17 17:37:17.460 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [64ms]
+2024-07-17 17:37:17.460 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-07-17 17:37:17.462 [info] > git reflog master --grep-reflog=branch: Created from *. [3ms]
+2024-07-17 17:37:17.617 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [152ms]
+2024-07-17 17:37:17.617 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-07-17 17:37:17.716 [info] > git check-ignore -v -z --stdin [4ms]
+2024-07-17 17:37:17.717 [info] > git check-ignore -v -z --stdin [1ms]

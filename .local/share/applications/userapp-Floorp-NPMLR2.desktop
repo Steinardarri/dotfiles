@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[en_GB]=Custom definition for Floorp
+Comment=Custom definition for Floorp
+Encoding=UTF-8
+Exec=/opt/floorp/floorp %u
+GenericName[en_GB]=
+GenericName=
+Icon=floorp
+MimeType=
+Name[en_GB]=Floorp
+Name=Floorp
+NoDisplay=true
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

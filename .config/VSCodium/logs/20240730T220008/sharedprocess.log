@@ -1,0 +1,9 @@
+2024-07-30 22:00:09.756 [info] Deleted uninstalled extension from disk eamodio.gitlens /home/steinardth/.vscode-oss/extensions/eamodio.gitlens-15.2.1-universal
+2024-07-30 22:00:09.758 [info] Deleted uninstalled extension from disk continue.continue /home/steinardth/.vscode-oss/extensions/continue.continue-0.8.43-linux-x64
+2024-07-30 22:00:09.834 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/continue.continue-0.8.43-linux-x64.2400cf01.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/steinardth/.vscode-oss/extensions/continue.continue-0.8.43-linux-x64.2400cf01.vsctmp'
+    at u.create (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22080)
+    at d (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22210)
+    at R.toFileSystemProviderError (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:47900)
+    at R.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:38403)
+    at async s.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:19760)
+    at async z.onDidFilesChange (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:146943)

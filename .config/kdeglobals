@@ -1,0 +1,186 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=116,93,177
+BackgroundNormal=50,52,66
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=162,167,185
+ForegroundLink=209,199,242
+ForegroundNegative=211,75,98
+ForegroundNeutral=239,121,62
+ForegroundNormal=253,250,255
+ForegroundPositive=60,171,112
+ForegroundVisited=153,90,185
+
+[Colors:Complementary]
+BackgroundAlternate=39,85,120
+BackgroundNormal=43,45,57
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=162,167,185
+ForegroundLink=209,199,242
+ForegroundNegative=211,75,98
+ForegroundNeutral=239,121,62
+ForegroundNormal=253,250,255
+ForegroundPositive=60,171,112
+ForegroundVisited=153,90,185
+
+[Colors:Header]
+BackgroundAlternate=43,45,57
+BackgroundNormal=50,52,66
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=162,167,185
+ForegroundLink=209,199,242
+ForegroundNegative=211,75,98
+ForegroundNeutral=239,121,62
+ForegroundNormal=253,250,255
+ForegroundPositive=60,171,112
+ForegroundVisited=153,90,185
+
+[Colors:Header][Inactive]
+BackgroundAlternate=50,52,66
+BackgroundNormal=43,45,57
+DecorationFocus=79,171,235
+DecorationHover=79,171,235
+ForegroundActive=79,171,235
+ForegroundInactive=162,167,185
+ForegroundLink=56,151,243
+ForegroundNegative=211,75,98
+ForegroundNeutral=239,121,62
+ForegroundNormal=253,250,255
+ForegroundPositive=60,171,112
+ForegroundVisited=153,90,185
+
+[Colors:Selection]
+BackgroundAlternate=110,86,169
+BackgroundNormal=110,86,169
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=255,255,255
+ForegroundLink=118,54,221
+ForegroundNegative=171,60,82
+ForegroundNeutral=192,96,50
+ForegroundNormal=255,255,255
+ForegroundPositive=35,102,70
+ForegroundVisited=153,90,185
+
+[Colors:Tooltip]
+BackgroundAlternate=43,45,57
+BackgroundNormal=50,52,66
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=162,167,185
+ForegroundLink=209,199,242
+ForegroundNegative=211,75,98
+ForegroundNeutral=239,121,62
+ForegroundNormal=253,250,255
+ForegroundPositive=60,171,112
+ForegroundVisited=153,90,185
+
+[Colors:View]
+BackgroundAlternate=36,37,48
+BackgroundNormal=28,29,38
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=162,167,185
+ForegroundLink=209,199,242
+ForegroundNegative=211,75,98
+ForegroundNeutral=239,121,62
+ForegroundNormal=253,250,255
+ForegroundPositive=60,171,112
+ForegroundVisited=153,90,185
+
+[Colors:Window]
+BackgroundAlternate=50,52,66
+BackgroundNormal=43,45,57
+DecorationFocus=146,110,228
+DecorationHover=146,110,228
+ForegroundActive=146,110,228
+ForegroundInactive=162,167,185
+ForegroundLink=209,199,242
+ForegroundNegative=211,75,98
+ForegroundNeutral=239,121,62
+ForegroundNormal=253,250,255
+ForegroundPositive=60,171,112
+ForegroundVisited=153,90,185
+
+[DirSelect Dialog]
+DirSelectDialog Size=820,584
+History Items[$e]=file:///run/media/steinardth/SSD_Kingston/floorp,file:///run/media/steinardth/SSD_Kingston/.floorp,file:///run/media/steinardth/Hardur_Diskur/.torrent,file:///,file:///run/media/steinardth/SSD/SteamLibrary,file:///run/media/steinardth/SSD_Auka,file:///run/media/steinardth/SSD_M2,file:///run/media/steinardth/SSD_M2/SteamLibrary,file:$HOME/Downloads/.torrent,file:///run/media/steinardth/Hardur_Diskur/backup/steinardth
+
+[General]
+ColorSchemeHash=a2dd0a3b1d9519fc54380099b9c1617cfd7ce272
+UseSystemBell=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=Hack Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+
+[Icons]
+Theme=zafiro-dark
+
+[KDE]
+AnimationDurationFactor=0.25
+LookAndFeelPackage=com.endeavouros.breezedarkeos.desktop
+ShowDeleteCommand=true
+
+[KFileDialog Settings]
+Allow Expansion=true
+Automatically select filename extension=true
+Breadcrumb Navigation=false
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=false
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=true
+Sort reversed=false
+Speedbar Width=140
+View Style=DetailTree
+
+[PreviewSettings]
+MaximumRemoteSize=0
+
+[Sounds]
+Enable=false
+
+[WM]
+activeBackground=43,45,57
+activeBlend=252,252,252
+activeForeground=255,255,255
+inactiveBackground=43,45,57
+inactiveBlend=161,169,177
+inactiveForeground=170,170,175

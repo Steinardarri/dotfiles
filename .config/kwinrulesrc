@@ -1,0 +1,73 @@
+[08782b84-8a51-4fee-81d8-a6a02a147b82]
+Description=Application settings for cool-retro-term.cool-retro-term
+fullscreen=true
+fullscreenrule=3
+wmclass=cool-retro-term cool-retro-term.cool-retro-term
+wmclasscomplete=true
+wmclassmatch=1
+
+[3fb73a20-2cfe-4753-ae01-ce3b1597588c]
+Description=Application settings for vesktop
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+wmclass=vesktop
+wmclassmatch=1
+
+[8284bb96-b800-4dd8-b73c-909dd9da4af7]
+Description=Application settings for Proton Mail
+clientmachine=localhost
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+position=1920,0
+positionrule=3
+wmclass=proton mail Proton Mail
+wmclasscomplete=true
+wmclassmatch=1
+
+[8df611ab-4325-4799-88fd-ced3f0ad89ec]
+Description=Window settings for octopi
+size=1769,1142
+sizerule=3
+title=Octopi
+titlematch=1
+types=1
+wmclass=octopi
+wmclassmatch=1
+
+[General]
+count=7
+rules=f0316353-60b6-4f99-86d7-c2a8b788a505,8284bb96-b800-4dd8-b73c-909dd9da4af7,08782b84-8a51-4fee-81d8-a6a02a147b82,ee633996-fd57-47de-a466-49b87cc39f55,8df611ab-4325-4799-88fd-ced3f0ad89ec,b056a288-414c-4c1f-b3cc-086a120894e7,3fb73a20-2cfe-4753-ae01-ce3b1597588c
+
+[b056a288-414c-4c1f-b3cc-086a120894e7]
+Description=Application settings for Spotify
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+wmclass=spotify Spotify
+wmclasscomplete=true
+wmclassmatch=1
+
+[ee633996-fd57-47de-a466-49b87cc39f55]
+Description=Window settings for org.kde.kwalletd6
+above=true
+aboverule=3
+desktops=\\0
+desktopsrule=3
+position=2949,573
+positionrule=3
+title=KDE Wallet Service
+types=1
+wmclass=kwalletd6 org.kde.kwalletd6
+wmclasscomplete=true
+wmclassmatch=1
+
+[f0316353-60b6-4f99-86d7-c2a8b788a505]
+Description=Application settings for org.kde.polkit-kde-authentication-agent-1
+position=2897,556
+positionrule=3
+wmclass=\sorg.kde.polkit-kde-authentication-agent-1
+wmclasscomplete=true
+wmclassmatch=1

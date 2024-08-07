@@ -1,0 +1,11 @@
+[FileDialogSize]
+3 screens: Height=584
+3 screens: Width=820
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+StatusBar=Disabled
+ToolBarsMovable=Disabled

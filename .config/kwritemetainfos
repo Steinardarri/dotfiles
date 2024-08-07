@@ -1,0 +1,58 @@
+[admin:/boot/EFI/refind/themes/refind-dreary/theme.conf]
+Checksum=844fadb95706254c57a4ee4a03404d54ae1be429
+Mode=YAML
+Mode Set By User=true
+Time=2024,8,3,22,49,35.394
+URL=admin:/boot/EFI/refind/themes/refind-dreary/theme.conf
+
+[admin:/crypto_keyfile.bin]
+Checksum=79ec35c65502aefaebadb5b62e133009af2ef3a9
+Encoding=ISO-8859-15
+Time=2024,8,3,20,38,45.133
+URL=admin:/crypto_keyfile.bin
+
+[file:///boot/refind_linux.conf]
+Checksum=a12f83157b1efb6121be1da46948547afeca2fac
+Mode=TOML
+Mode Set By User=true
+Time=2024,8,3,17,22,40.159
+URL=file:///boot/refind_linux.conf
+
+[file:///etc/pacman.d/endeavouros-mirrorlist]
+Checksum=be3c734bf791ba31774655eea8a6db97c4541544
+Mode=fstab
+Mode Set By User=true
+Time=2024,7,27,22,46,27.049
+URL=file:///etc/pacman.d/endeavouros-mirrorlist
+
+[file:///etc/pacman.d/mirrorlist]
+Checksum=3a5e3d0886da1f28663caca11f7056c5ebfec47e
+Mode=fstab
+Mode Set By User=true
+Time=2024,7,27,22,46,27.049
+URL=file:///etc/pacman.d/mirrorlist
+
+[file:///home/steinardth/Downloads/user]
+Checksum=e19a4ad64f12bbfe515c01610162e9d07f35735f
+Encoding=ISO-8859-15
+Time=2024,7,29,3,29,42.241
+URL=file:///home/steinardth/Downloads/user
+
+[file:///home/steinardth/refind.conf]
+Checksum=3ee9e7c1eba98b6dbdfca96532ed732119369745
+Mode=YAML
+Mode Set By User=true
+Time=2024,8,3,3,7,54.824
+URL=file:///home/steinardth/refind.conf
+
+[file:///opt/android-sdk/platform-tools/NOTICE.txt]
+Checksum=05d0b42a73d8bfef1eaba3a08a4402362c0ba668
+Encoding=ISO-8859-15
+Time=2024,7,29,12,50,26.929
+URL=file:///opt/android-sdk/platform-tools/NOTICE.txt
+
+[file:///run/media/steinardth/Hardur_Diskur/Backup/crypto_keyfile.bin]
+Checksum=79ec35c65502aefaebadb5b62e133009af2ef3a9
+Encoding=ISO-8859-15
+Time=2024,8,3,20,49,58.174
+URL=file:///run/media/steinardth/Hardur_Diskur/Backup/crypto_keyfile.bin

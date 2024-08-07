@@ -1,0 +1,8 @@
+[Dolphin]
+SortFoldersFirst=false
+SortOrder=1
+SortRole=deletiontime
+Timestamp=2024,7,31,14,52,18.645
+Version=4
+ViewMode=1
+VisibleRoles=CustomizedDetails,Details_text,Details_deletiontime,Details_path

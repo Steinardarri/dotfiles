@@ -1,0 +1,28 @@
+# Maintainer: CryoSword <cryosword@protonmail.com>
+
+pkgname=hunspell-is
+pkgver=1.0
+pkgrel=1
+pkgdesc='Icelandic dictionaries and for Hunspell'
+arch=(any)
+url='https://repository.clarin.is/repository/xmlui/handle/20.500.12537/9?locale-attribute=en'
+license=CC0-1.0
+depends=(hunspell)
+source=(https://github.com/Steinardarri/hunspell-is
+sha256sums=('6f8c62461eb4c2cfe81628094c74ab6511918520047742f14e23dd440b99f45f')
+
+package() {
+  install -Dm644 -t "${pkgdir}"/usr/share/hunspell \
+    is_IS.dic \
+    is_IS.aff
+
+  install -Dm644 -t "${pkgdir}"/usr/share/myspell/dicts \
+    is_IS.dic \
+    is_IS.aff \
+    th_is_IS.dat \
+    th_is_IS.idx
+
+  install -Dm644 -t "${pkgdir}"/usr/share/mythes \
+    th_is_IS.dat \
+    th_is_IS.idx
+}

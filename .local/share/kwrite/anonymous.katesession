@@ -1,0 +1,37 @@
+[Document 0]
+URL=file:///home/steinardth/dotfiles/.floorp/installs.ini
+
+[MainWindow0]
+ToolBarsMovable=Disabled
+
+[MainWindow0 Settings]
+ToolBarsMovable=Disabled
+WindowState=10
+
+[Open Documents]
+Count=1
+
+[Open MainWindows]
+Count=1
+
+[Recent Files]
+File1[$e]=admin:/efi/EFI/refind/refind.conf
+File10[$e]=$HOME/dotfiles/.floorp/installs.ini
+File2[$e]=$HOME/.zhistory
+File3[$e]=$HOME/.zimrc
+File4[$e]=$HOME/.zshrc
+File5[$e]=$HOME/.drirc
+File6[$e]=$HOME/dotfiles/.stowrc
+File7[$e]=$HOME/.vscode-oss/argv.json
+File8[$e]=$HOME/dotfiles/.gitignore
+File9[$e]=$HOME/dotfiles/.floorp/profiles.ini
+Name1[$e]=refind.conf
+Name10[$e]=installs.ini
+Name2[$e]=.zhistory
+Name3[$e]=.zimrc
+Name4[$e]=.zshrc
+Name5[$e]=.drirc
+Name6[$e]=.stowrc
+Name7[$e]=argv.json
+Name8[$e]=.gitignore
+Name9[$e]=profiles.ini

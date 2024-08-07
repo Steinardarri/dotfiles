@@ -1,0 +1,8 @@
+{
+	"settings": {
+		"spellChecker": true,
+		"overrideError": false,
+		"releaseCategory": "Stable",
+		"rolloutProportion": 0.8534579634099022
+	}
+}

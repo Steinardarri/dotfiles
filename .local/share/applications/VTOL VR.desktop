@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=VTOL VR
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/667970
+Icon=steam_icon_667970
+Terminal=false
+Type=Application
+Categories=Game;

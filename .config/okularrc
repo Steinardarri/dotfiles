@@ -1,0 +1,13 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png
+Name1[$e]=selection_big.png

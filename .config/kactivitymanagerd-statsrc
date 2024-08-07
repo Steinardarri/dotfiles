@@ -1,0 +1,5 @@
+[Favorites-org.kde.plasma.kickoff.favorites.instance-5-d0ce5f89-392a-419a-ae53-5e1864bb8326]
+ordering=applications:codium.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:systemsettings.desktop,preferred://browser,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-5-global]
+ordering=applications:codium.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:systemsettings.desktop,preferred://browser,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop
