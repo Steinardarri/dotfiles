@@ -266,6 +266,7 @@ alias cat="bat "
 alias lf="yy "
 alias ls="eza --icons -F -H --group-directories-first --git -1 "
 alias ll="ls -alF "
+alias find="fd "
 alias catnap="catnap -d vagabond"
 # Scripts
 alias refresh="source ~/.zshrc"
