@@ -151,10 +151,10 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=\\\\n
-Search History=/boot,arch,function, ,CHARTS,COVERED,CacULE,linenum,init,You hear,öxunum,http://www.mediawiki.org/xml/export-0.10/,sifj
+Replace History=,\\\\n
+Search History=root=UUID=efa22b72-e264-4a0e-a658-a119241181b3 rd.luks.name=2be462ac-092b-4689-bf5d-92510806ea1c=cryptroot rd.luks.name=e043bd12-4d6f-4303-b95f-72b302a6cc2a=cryptswap,scan,/boot,arch,function, ,CHARTS,COVERED,CacULE,linenum,init,You hear,öxunum,http://www.mediawiki.org/xml/export-0.10/,sifj
 
 [MainWindow]
 3 screens: Height=1412
-3 screens: Width=1278
+3 screens: Width=1280
 3 screens: Window-Maximized=true

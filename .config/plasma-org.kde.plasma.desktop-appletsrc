@@ -20,6 +20,10 @@ wallpaperplugin=org.kde.image
 DialogHeight=809
 DialogWidth=1157
 
+[Containments][1][Wallpaper][a2n.blur][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=/home/steinardth/Pictures/Vagabond.jpg
 SlidePaths=/usr/share/wallpapers/
@@ -62,7 +66,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][10][Applets][15][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][10][Applets][15][Configuration][General]
 migrated=true
@@ -120,7 +124,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][10][Applets][26][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][10][Applets][26][Configuration][General]
 showPercentage=true
@@ -130,7 +134,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][10][Applets][27][Configuration]
-PreloadWeight=17
+PreloadWeight=9
 
 [Containments][10][Applets][34]
 immutability=1
@@ -177,7 +181,7 @@ extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.n
 hiddenItems=org.kde.plasma.clipboard,spotify-client,org.kde.plasma.mediacontroller
 knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.kscreen,org.kde.kdeconnect,org.kde.plasma.brightness,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement
 scaleIconsToFit=true
-shownItems=org.kde.plasma.weather,KTorrent,org.kde.plasma.battery
+shownItems=org.kde.plasma.weather,KTorrent
 
 [Containments][2]
 ItemGeometries-1920x1080=Applet-40:32,448,672,272,0;
@@ -202,6 +206,10 @@ use_24_hour_format=true
 DialogHeight=540
 DialogWidth=720
 
+[Containments][2][Wallpaper][a2n.blur][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
 [Containments][2][Wallpaper][org.kde.image][General]
 Image=/home/steinardth/Pictures/Vagabond.jpg
 SlidePaths=/usr/share/wallpapers/
@@ -216,6 +224,10 @@ lastScreen=2
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
+
+[Containments][3][Wallpaper][a2n.blur][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Image=/home/steinardth/Pictures/Vagabond.jpg
@@ -284,6 +296,11 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
+[Containments][4][Applets][22][Configuration]
+PreloadWeight=75
+popupHeight=450
+popupWidth=560
+
 [Containments][4][Applets][22][Configuration][Appearance]
 fontWeight=400
 
@@ -301,7 +318,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][43][Configuration]
 PreloadWeight=100
-popupHeight=510
+popupHeight=545
 popupWidth=647
 
 [Containments][4][Applets][43][Configuration][ConfigDialog]
@@ -318,16 +335,22 @@ systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hi
 [Containments][4][Applets][43][Configuration][Shortcuts]
 global=Alt+F1
 
-[Containments][4][Applets][6]
+[Containments][4][Applets][44]
 immutability=1
-plugin=org.kde.plasma.pager
+plugin=com.github.tilorenz.compact_pager
 
-[Containments][4][Applets][6][Configuration][ConfigDialog]
+[Containments][4][Applets][44][Configuration][Appearance]
+displayBorder=false
+fontFamily=Hack
+fontSize=1
+
+[Containments][4][Applets][44][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][4][Applets][6][Configuration][General]
+[Containments][4][Applets][44][Configuration][General]
 currentDesktopSelected=ShowDesktop
+forceLayout=Full
 showWindowIcons=true
 
 [Containments][4][Applets][7]
@@ -356,7 +379,7 @@ PreloadWeight=100
 SystrayContainmentId=10
 
 [Containments][4][General]
-AppletOrder=43;6;7;8;37;9;22;23
+AppletOrder=43;44;7;8;37;9;22;23
 
 [ScreenMapping]
 itemsOnDisabledScreens=

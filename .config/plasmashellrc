@@ -37,6 +37,9 @@ source=bbcukmet|weather|Reykjavik, Iceland, IS|3413829
 [General]
 Number of Actions=0
 
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
 [PlasmaViews][Panel 30]
 floating=1
 panelLengthMode=1

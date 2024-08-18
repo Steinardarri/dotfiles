@@ -4,13 +4,14 @@ showTitle=true
 title=GPU
 
 [Face-106609465554928][SensorColors]
+gpu/all/usage=110,86,169
 gpu/gpu0/usage=110,86,169
 gpu/gpu1/usage=109,85,169
 
 [Face-106609465554928][Sensors]
-highPrioritySensorIds=["gpu/gpu1/usage"]
+highPrioritySensorIds=["gpu/all/usage"]
 lowPrioritySensorIds=[]
-totalSensors=["gpu/gpu1/usedVram","gpu/gpu1/totalVram"]
+totalSensors=["gpu/all/usedVram","gpu/all/totalVram"]
 
 [Face-106609465554928][org.kde.ksysguard.piechart][General]
 showLegend=false

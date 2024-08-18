@@ -4,5 +4,9 @@
     "arRPC": false,
     "splashColor": "oklab(0.899401 -0.00192499 -0.00481987)",
     "splashBackground": "oklab(0.321088 -0.000220731 -0.00934622)",
-    "tray": false
+    "tray": false,
+    "spellCheckLanguages": [
+        "en-GB",
+        "en"
+    ]
 }

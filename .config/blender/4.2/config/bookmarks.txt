@@ -1,0 +1,5 @@
+[Bookmarks]
+[Recent]
+/home/steinardth/Verkefni/Blender/
+/usr/bin/
+/usr/share/fonts/TTF/

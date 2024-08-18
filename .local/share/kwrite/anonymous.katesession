@@ -1,5 +1,11 @@
 [Document 0]
-URL=file:///home/steinardth/dotfiles/.zshrc
+URL=admin:/efi/EFI/refind/refind.conf
+
+[Document 1]
+URL=admin:/efi/EFI/refind/themes/refind-vagabond/theme.conf
+
+[Document 2]
+URL=admin:/efi/EFI/refind/refind.conf-sample
 
 [MainWindow0]
 ToolBarsMovable=Disabled
@@ -9,29 +15,29 @@ ToolBarsMovable=Disabled
 WindowState=10
 
 [Open Documents]
-Count=1
+Count=3
 
 [Open MainWindows]
 Count=1
 
 [Recent Files]
-File1[$e]=$HOME/.zhistory
-File10[$e]=$HOME/dotfiles/.zshrc
-File2[$e]=$HOME/.zimrc
-File3[$e]=$HOME/.zshrc
-File4[$e]=$HOME/.drirc
-File5[$e]=$HOME/dotfiles/.stowrc
-File6[$e]=$HOME/.vscode-oss/argv.json
-File7[$e]=$HOME/dotfiles/.gitignore
-File8[$e]=$HOME/dotfiles/.floorp/profiles.ini
-File9[$e]=$HOME/dotfiles/.floorp/installs.ini
-Name1[$e]=.zhistory
-Name10[$e]=.zshrc
-Name2[$e]=.zimrc
-Name3[$e]=.zshrc
-Name4[$e]=.drirc
-Name5[$e]=.stowrc
-Name6[$e]=argv.json
-Name7[$e]=.gitignore
-Name8[$e]=profiles.ini
-Name9[$e]=installs.ini
+File1[$e]=$HOME/Forrit/git_verkefni/linux-tkg/src/linux-src-git
+File10[$e]=admin:/efi/EFI/refind/themes/refind-vagabond/theme.conf
+File2[$e]=$HOME/dotfiles/.stowrc
+File3[$e]=$HOME/KernelParams.txt
+File4[$e]=$HOME/Forrit/Script/HomeBackup/HomeBackup.sh
+File5[$e]=admin:/etc/cron.hourly/0anacron
+File6[$e]=admin:/etc/dracut.conf.d/myflags.conf
+File7[$e]=$HOME/Downloads/rEFInd-tools-0.14.2-2.fc41.noarch/usr/share/rEFInd/refind-install
+File8[$e]=admin:/efi/EFI/refind/refind.conf
+File9[$e]=admin:/efi/EFI/refind/refind.conf-sample
+Name1[$e]=linux-src-git
+Name10[$e]=theme.conf
+Name2[$e]=.stowrc
+Name3[$e]=KernelParams.txt
+Name4[$e]=HomeBackup.sh
+Name5[$e]=0anacron
+Name6[$e]=myflags.conf
+Name7[$e]=refind-install
+Name8[$e]=refind.conf
+Name9[$e]=refind.conf-sample

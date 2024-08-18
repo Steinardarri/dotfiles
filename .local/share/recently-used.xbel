@@ -152,12 +152,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="admin:/etc/fstab" added="2024-07-27T21:30:29.642000Z" modified="2024-07-27T21:30:29.642000Z" visited="2024-07-27T21:30:29.642000Z">
+  <bookmark href="admin:/etc/fstab" added="2024-07-27T21:30:29.642000Z" modified="2024-08-18T19:26:41.515000Z" visited="2024-08-18T19:26:41.515000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
-          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-07-27T21:30:29.642000Z" count="1"/>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-18T19:26:41.515000Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -770,13 +770,13 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/steinardth/Forrit/Script/HomeBackup/HomeBackup.sh" added="2024-07-30T17:30:49.247000Z" modified="2024-08-01T16:39:38.613000Z" visited="2024-08-01T16:39:38.613000Z">
+  <bookmark href="file:///home/steinardth/Forrit/Script/HomeBackup/HomeBackup.sh" added="2024-07-30T17:30:49.247000Z" modified="2024-08-10T17:32:17.838000Z" visited="2024-08-10T17:32:17.838000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-shellscript"/>
         <bookmark:applications>
           <bookmark:application name="systemsettings" exec="systemsettings %f" modified="2024-08-01T16:39:38.613000Z" count="2"/>
-          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-07-31T03:08:38.105000Z" count="2"/>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-10T17:32:17.838000Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -851,12 +851,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="admin:/etc/dracut.conf.d/myflags.conf" added="2024-07-30T19:33:32.965000Z" modified="2024-08-05T01:39:09.214000Z" visited="2024-08-05T01:39:09.214000Z">
+  <bookmark href="admin:/etc/dracut.conf.d/myflags.conf" added="2024-07-30T19:33:32.965000Z" modified="2024-08-18T22:35:29.537000Z" visited="2024-08-18T22:35:29.537000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
-          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-05T01:39:09.214000Z" count="3"/>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-18T22:35:29.537000Z" count="5"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1362,12 +1362,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///etc/fstab" added="2024-08-02T14:34:19.354000Z" modified="2024-08-02T14:34:19.354000Z" visited="2024-08-02T14:34:19.354000Z">
+  <bookmark href="file:///etc/fstab" added="2024-08-02T14:34:19.354000Z" modified="2024-08-09T15:26:46.114000Z" visited="2024-08-09T15:26:46.114000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
         <bookmark:applications>
-          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-02T14:34:19.354000Z" count="1"/>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-09T15:26:46.114000Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1382,12 +1382,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/steinardth/KernelParams.txt" added="2024-08-02T22:27:51.529000Z" modified="2024-08-02T22:27:51.529000Z" visited="2024-08-02T22:27:51.529000Z">
+  <bookmark href="file:///home/steinardth/KernelParams.txt" added="2024-08-02T22:27:51.529000Z" modified="2024-08-09T23:37:25.540000Z" visited="2024-08-09T23:37:25.540000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
         <bookmark:applications>
-          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-02T22:27:51.529000Z" count="1"/>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-09T23:37:25.540000Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1619,22 +1619,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="admin:/efi/EFI/refind/refind.conf" added="2024-08-05T01:29:00.675000Z" modified="2024-08-05T17:59:39.341000Z" visited="2024-08-05T17:59:39.341000Z">
+  <bookmark href="admin:/efi/EFI/refind/refind.conf" added="2024-08-05T01:29:00.675000Z" modified="2024-08-18T23:08:00.271000Z" visited="2024-08-18T23:08:00.271000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
-          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-05T17:59:39.341000Z" count="5"/>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-18T23:08:00.271000Z" count="13"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="admin:/etc/dracut.conf.d/eos-defaults.conf" added="2024-08-05T01:38:41.474000Z" modified="2024-08-05T01:55:54.745000Z" visited="2024-08-05T01:55:54.745000Z">
+  <bookmark href="admin:/etc/dracut.conf.d/eos-defaults.conf" added="2024-08-05T01:38:41.474000Z" modified="2024-08-07T19:56:46.136000Z" visited="2024-08-07T19:56:46.136000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
-          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-05T01:55:54.745000Z" count="2"/>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-07T19:56:46.136000Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1720,7 +1720,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="admin:/efi/EFI/refind/themes/refind-dreary/background.png" added="2024-08-05T13:40:28.094000Z" modified="2024-08-05T13:40:28.094000Z" visited="2024-08-05T13:40:28.094000Z">
+  <bookmark href="admin:/efi/EFI/refind/themes/refind-dreary/background.png" added="2024-08-05T13:40:28.094000Z" modified="2024-08-18T22:57:54.553000Z" visited="2024-08-18T22:57:54.553000Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
@@ -1728,7 +1728,7 @@
           <bookmark:group>Graphics</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-05T13:40:28.094000Z" count="1"/>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-18T22:57:54.553000Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1804,7 +1804,7 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="okularApplication_kimgio" exec="okular %u" modified="2024-08-05T15:07:17.917000Z" count="1"/>
-        <bookmark:application name="krita_png" exec="krita %f" modified="2024-08-05T15:07:21.926000Z" count="1"/>
+          <bookmark:application name="krita_png" exec="krita %f" modified="2024-08-05T15:07:21.926000Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -1898,6 +1898,790 @@
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
           <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T01:03:02.289000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/dotfiles/Forrit/transfuse/_20240807_0116_native.txt" added="2024-08-07T01:17:29.635000Z" modified="2024-08-07T01:17:29.635000Z" visited="2024-08-07T01:17:29.635000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-07T01:17:29.635000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/dotfiles/Forrit/transfuse/_20240807_0116_alien.txt" added="2024-08-07T01:17:39.557000Z" modified="2024-08-07T01:17:39.557000Z" visited="2024-08-07T01:17:39.557000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-07T01:17:39.557000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/grubfm-en_US.7z" added="2024-08-07T19:50:59.458835Z" modified="2024-08-07T19:50:59.458839Z" visited="2024-08-07T19:50:59.458835Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-7z-compressed"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-07T19:50:59.458837Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/clonezilla-live-3.1.3-16-amd64.zip" added="2024-08-07T20:09:02.188346Z" modified="2024-08-07T20:22:55.569000Z" visited="2024-08-07T20:22:55.569000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-07T20:09:02.188349Z" count="1"/>
+          <bookmark:application name="org.kde.ark" exec="ark %u" modified="2024-08-07T20:22:55.569000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/clonezilla-live-3.1.2-9-amd64.zip" added="2024-08-07T20:17:25.749000Z" modified="2024-08-07T20:17:25.749005Z" visited="2024-08-07T20:17:25.749000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-07T20:17:25.749002Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/Download%202024-08-07T20_20_14.zip" added="2024-08-07T20:20:17.459216Z" modified="2024-08-07T20:20:30.416000Z" visited="2024-08-07T20:20:30.416000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-07T20:20:17.459218Z" count="1"/>
+          <bookmark:application name="org.kde.ark" exec="ark %u" modified="2024-08-07T20:20:30.416000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/madmaxms/iconpack-obsidian" added="2024-08-07T20:36:13.076000Z" modified="2024-08-07T20:36:55.766000Z" visited="2024-08-07T20:36:55.766000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T20:36:55.766000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://community.kde.org/Frameworks" added="2024-08-07T20:36:15.824000Z" modified="2024-08-07T20:36:15.824000Z" visited="2024-08-07T20:36:15.824000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T20:36:15.824000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/linuxdeepin/deepin-icon-theme" added="2024-08-07T20:36:18.148000Z" modified="2024-08-07T20:36:18.148000Z" visited="2024-08-07T20:36:18.148000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T20:36:18.148000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme" added="2024-08-07T20:36:20.200000Z" modified="2024-08-07T20:36:20.200000Z" visited="2024-08-07T20:36:20.200000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T20:36:20.200000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/numixproject/numix-icon-theme" added="2024-08-07T20:38:39.786000Z" modified="2024-08-07T20:38:39.786000Z" visited="2024-08-07T20:38:39.786000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T20:38:39.786000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/moka-project/moka-icon-theme" added="2024-08-07T20:39:29.385000Z" modified="2024-08-07T20:39:29.385000Z" visited="2024-08-07T20:39:29.385000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T20:39:29.385000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/Nitrux/luv-icon-theme" added="2024-08-07T20:40:19.528000Z" modified="2024-08-07T20:40:19.528000Z" visited="2024-08-07T20:40:19.528000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T20:40:19.528000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/steinardth/Hardur_Diskur/Backup/extensions/my-ublock-backup_2024-05-20_00.10.22.txt" added="2024-08-07T21:37:36.778381Z" modified="2024-08-07T21:37:36.778387Z" visited="2024-08-07T21:37:36.778382Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-07T21:37:36.778384Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/steinardth/Hardur_Diskur/Backup/extensions/RES-2024-05-20-1716163963-5_24_6.resbackup" added="2024-08-07T21:37:51.712900Z" modified="2024-08-07T21:37:51.712915Z" visited="2024-08-07T21:37:51.712900Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-07T21:37:51.712912Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/steinardth/Hardur_Diskur/Backup/extensions/SponsorBlockConfig_2024-05-20_00.11.28.json" added="2024-08-07T21:38:33.599527Z" modified="2024-08-07T21:38:33.599533Z" visited="2024-08-07T21:38:33.599528Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/json"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-07T21:38:33.599530Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/steinardth/Hardur_Diskur/Backup/extensions/SponsorBlockOtherData_2024-05-20_00.11.30.json" added="2024-08-07T21:38:42.418000Z" modified="2024-08-07T21:38:42.418000Z" visited="2024-08-07T21:38:42.418000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/json"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-07T21:38:42.418000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://github.com/tianocore/edk2" added="2024-08-07T22:29:25.476000Z" modified="2024-08-07T22:29:25.476000Z" visited="2024-08-07T22:29:25.476000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-07T22:29:25.476000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/Armann%20Waterpolo%20Poster%20A1.pdf" added="2024-08-08T20:47:42.051756Z" modified="2024-08-08T20:47:42.051761Z" visited="2024-08-08T20:47:42.051756Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-08T20:47:42.051759Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/Armann%20Waterpolo%20Poster%20A1.png" added="2024-08-08T20:54:20.750000Z" modified="2024-08-08T20:55:26.041906Z" visited="2024-08-08T20:54:20.750000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="krita_png" exec="krita %f" modified="2024-08-08T20:54:20.750000Z" count="1"/>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-08T20:55:26.041904Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/industriasolid-maisfontes.7dba.zip" added="2024-08-09T13:02:24.454093Z" modified="2024-08-09T13:03:15.585000Z" visited="2024-08-09T13:03:15.585000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-09T13:02:24.454098Z" count="1"/>
+          <bookmark:application name="org.kde.ark" exec="ark %u" modified="2024-08-09T13:03:15.585000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/industriasolid.ttf" added="2024-08-09T13:03:23.173000Z" modified="2024-08-09T13:03:23.173000Z" visited="2024-08-09T13:03:23.173000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kfontinst" exec="kfontinst %u" modified="2024-08-09T13:03:23.173000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/Armann/Armann%20Waterpolo%20Poster%20A1.kra" added="2024-08-09T13:05:56.672000Z" modified="2024-08-11T16:43:49.224473Z" visited="2024-08-09T13:05:56.672000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-krita"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.krita" exec="krita %f" modified="2024-08-09T13:05:56.672000Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="'gimp-2.10 %u'" modified="2024-08-11T16:43:49.224472Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/Armann/Armann%20Waterpolo%20Poster%20A1.webp" added="2024-08-09T13:08:33.551000Z" modified="2024-08-11T21:10:04.064000Z" visited="2024-08-11T21:10:04.064000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/webp"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-11T21:10:04.064000Z" count="2"/>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-10T18:22:09.835338Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/efi/refind_linux.conf" added="2024-08-09T14:38:41.092000Z" modified="2024-08-10T00:05:34.061000Z" visited="2024-08-10T00:05:34.061000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-10T00:05:34.061000Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Forrit/git_verkefni/linux-tkg/README.md" added="2024-08-09T14:53:00.507000Z" modified="2024-08-09T14:53:00.507000Z" visited="2024-08-09T14:53:00.507000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-09T14:53:00.507000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Forrit/git_verkefni/linux-tkg/PKGBUILD" added="2024-08-09T14:58:14.805000Z" modified="2024-08-09T23:20:47.483000Z" visited="2024-08-09T23:20:47.483000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-09T23:20:47.483000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/efi/EFI/refind/icons/os_win.png" added="2024-08-09T15:06:10.661000Z" modified="2024-08-09T15:06:10.661000Z" visited="2024-08-09T15:06:10.661000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-09T15:06:10.661000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/efi/EFI/refind/icons/os_win8.png" added="2024-08-09T15:06:15.451000Z" modified="2024-08-09T15:06:15.451000Z" visited="2024-08-09T15:06:15.451000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-09T15:06:15.451000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/efi/EFI/refind/themes/refind-dreary/icons/os_win.png" added="2024-08-09T15:06:48.923000Z" modified="2024-08-09T15:06:48.923000Z" visited="2024-08-09T15:06:48.923000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-09T15:06:48.923000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/efi/EFI/refind/themes/refind-dreary/icons/os_win8.png" added="2024-08-09T15:06:53.232000Z" modified="2024-08-09T15:06:53.232000Z" visited="2024-08-09T15:06:53.232000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-09T15:06:53.232000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://twitter.com/selinawangtv/status/1822042879331905560" added="2024-08-09T23:01:59.472000Z" modified="2024-08-09T23:01:59.472000Z" visited="2024-08-09T23:01:59.472000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-09T23:01:59.472000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Forrit/git_verkefni/linux-tkg/customization.cfg" added="2024-08-09T23:25:04.050000Z" modified="2024-08-09T23:25:04.050000Z" visited="2024-08-09T23:25:04.050000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-09T23:25:04.050000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Forrit/git_verkefni/linux-tkg/src/customization.cfg" added="2024-08-09T23:26:45.371000Z" modified="2024-08-09T23:26:45.371000Z" visited="2024-08-09T23:26:45.371000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-09T23:26:45.371000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Forrit/git_verkefni/linux-tkg/src/linux-src-git" added="2024-08-09T23:27:38.268000Z" modified="2024-08-09T23:27:38.268000Z" visited="2024-08-09T23:27:38.268000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-09T23:27:38.268000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/clonezilla-live-3.1.3-16-amd64.iso" added="2024-08-09T23:47:43.016991Z" modified="2024-08-09T23:47:43.016997Z" visited="2024-08-09T23:47:43.016992Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-09T23:47:43.016994Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/EndeavourOS_Endeavour-2024.06.25.iso" added="2024-08-09T23:48:52.375286Z" modified="2024-08-09T23:48:52.375292Z" visited="2024-08-09T23:48:52.375288Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-09T23:48:52.375290Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/nixos-plasma6-24.05.3690.21cc704b5e91-x86_64-linux.iso" added="2024-08-09T23:50:13.121511Z" modified="2024-08-09T23:50:13.121519Z" visited="2024-08-09T23:50:13.121513Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-09T23:50:13.121516Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/steinardth/Ventoy/nixos-plasma6-24.05.984.0b8e7a1ae5a9-x86_64-linux.iso" added="2024-08-09T23:58:31.963000Z" modified="2024-08-09T23:58:31.963000Z" visited="2024-08-09T23:58:31.963000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.ark" exec="ark %u" modified="2024-08-09T23:58:31.963000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://store.kde.org/p/1269768" added="2024-08-10T01:42:30.778000Z" modified="2024-08-10T01:42:30.778000Z" visited="2024-08-10T01:42:30.778000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-10T01:42:30.778000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://store.kde.org/p/2134907" added="2024-08-10T01:56:05.252000Z" modified="2024-08-10T01:56:05.252000Z" visited="2024-08-10T01:56:05.252000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-10T01:56:05.252000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/393817712_334322345813649_2876272270800882951_n.jpg" added="2024-08-10T17:50:18.533115Z" modified="2024-08-10T17:50:18.533119Z" visited="2024-08-10T17:50:18.533116Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-10T17:50:18.533117Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/Screenshot_20240810_181312_Instagram.jpg" added="2024-08-10T18:15:13.581472Z" modified="2024-08-10T18:15:13.581481Z" visited="2024-08-10T18:15:13.581474Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-10T18:15:13.581477Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://gitlab.com/sane-project/frontend/xsane" added="2024-08-11T10:31:03.244000Z" modified="2024-08-11T10:31:03.244000Z" visited="2024-08-11T10:31:03.244000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-11T10:31:03.244000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///var/lib/flatpak/runtime/org.gimp.GIMP.Plugin.Lensfun/x86_64/2-40/9b987b010bbd45812f6517f4d29c211952edf0975343c02bfd2c024b688fde3f/files/plug-ins" added="2024-08-11T11:58:08.991000Z" modified="2024-08-11T11:58:08.991000Z" visited="2024-08-11T11:58:08.991000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="" exec="dolphin %f" modified="2024-08-11T11:58:08.991000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/Armann/Armann%20Waterpolo%20Poster%20A1.ora" added="2024-08-11T16:47:47.333392Z" modified="2024-08-11T16:47:47.333394Z" visited="2024-08-11T16:47:47.333392Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/openraster"/>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="'gimp-2.10 %u'" modified="2024-08-11T16:47:47.333393Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://archlinux.org/packages/extra/x86_64/libheif/" added="2024-08-11T16:54:37.191000Z" modified="2024-08-11T16:54:37.191000Z" visited="2024-08-11T16:54:37.191000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-11T16:54:37.191000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://twitter.com/ZelenskyyUa/status/1822710266674684154" added="2024-08-11T19:40:58.490000Z" modified="2024-08-11T19:40:58.490000Z" visited="2024-08-11T19:40:58.490000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-11T19:40:58.490000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/zfs_x64.efi" added="2024-08-11T20:16:11.139291Z" modified="2024-08-11T20:16:11.139300Z" visited="2024-08-11T20:16:11.139292Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.microsoft.portable-executable"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-11T20:16:11.139296Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads" added="2024-08-11T20:16:17.199000Z" modified="2024-08-11T20:16:17.199000Z" visited="2024-08-11T20:16:17.199000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="" exec="dolphin %f" modified="2024-08-11T20:16:17.199000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/btrfs_x64.efi" added="2024-08-11T20:16:53.553984Z" modified="2024-08-11T20:16:53.553994Z" visited="2024-08-11T20:16:53.553985Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.microsoft.portable-executable"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-11T20:16:53.553987Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/hrmpf-x86_64-6.5.12_1-20231124.iso" added="2024-08-11T20:19:34.645564Z" modified="2024-08-11T20:19:34.645569Z" visited="2024-08-11T20:19:34.645565Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-11T20:19:34.645567Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/393817712_334322345813649_2876272270800882951_n(1).jpg" added="2024-08-12T00:25:22.861074Z" modified="2024-08-12T00:25:22.861077Z" visited="2024-08-12T00:25:22.861075Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-12T00:25:22.861075Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/Armann/Armann_sticker.webp" added="2024-08-12T01:01:58.897196Z" modified="2024-08-12T01:01:58.897201Z" visited="2024-08-12T01:01:58.897197Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/webp"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-12T01:01:58.897199Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://www.youtube.com/watch?v=2ET1D0LQ-qA" added="2024-08-12T16:44:56.440000Z" modified="2024-08-12T16:44:56.440000Z" visited="2024-08-12T16:44:56.440000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="userapp-Floorp-NPMLR2" exec="/opt/floorp/floorp %u" modified="2024-08-12T16:44:56.440000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/2024-08-12--20_00_21.tar.gz" added="2024-08-12T20:00:27.392916Z" modified="2024-08-12T20:01:09.247386Z" visited="2024-08-12T20:00:27.392917Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-12T20:01:09.247384Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/Screenshot%202024-08-12%20at%2020-05-14%20MiWi-Fi%20Router.png" added="2024-08-12T20:05:19.024077Z" modified="2024-08-12T20:05:19.024080Z" visited="2024-08-12T20:05:19.024078Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-12T20:05:19.024078Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/Screenshot%202024-08-12%20at%2020-05-28%20MiWi-Fi%20Router.png" added="2024-08-12T20:05:31.170334Z" modified="2024-08-12T20:05:31.170337Z" visited="2024-08-12T20:05:31.170335Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-12T20:05:31.170336Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/void-live-x86_64-20240314-base.iso" added="2024-08-13T20:02:29.153032Z" modified="2024-08-13T20:02:29.153037Z" visited="2024-08-13T20:02:29.153033Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-13T20:02:29.153034Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/artix-plasma-runit-20230814-x86_64.iso" added="2024-08-13T20:29:07.958171Z" modified="2024-08-13T20:29:07.958178Z" visited="2024-08-13T20:29:07.958172Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-13T20:29:07.958175Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/void-live-kde-unofficial-x86_64-6.6.45_1-20240817.iso" added="2024-08-17T14:05:00.700339Z" modified="2024-08-17T14:05:00.700346Z" visited="2024-08-17T14:05:00.700341Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.efi.iso"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-17T14:05:00.700343Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/Armann/Armann_sticker_cropped.xcf" added="2024-08-18T22:24:00.001000Z" modified="2024-08-18T22:27:58.218191Z" visited="2024-08-18T22:24:00.001000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/x-xcf"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.gimp.GIMP" exec="/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=gimp-2.10 --file-forwarding org.gimp.GIMP @@u %u @@" modified="2024-08-18T22:24:00.001000Z" count="1"/>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-18T22:27:58.218190Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/Armann/Armann_sticker_cropped.pdf" added="2024-08-18T22:25:22.911000Z" modified="2024-08-18T22:25:22.911000Z" visited="2024-08-18T22:25:22.911000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="okularApplication_pdf" exec="okular %u" modified="2024-08-18T22:25:22.911000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/Armann/Armann_sticker_cropped.png" added="2024-08-18T22:26:44.639232Z" modified="2024-08-18T22:27:58.218172Z" visited="2024-08-18T22:26:44.639232Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-18T22:27:58.218170Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/etc/cron.hourly/0anacron" added="2024-08-18T22:35:05.523000Z" modified="2024-08-18T22:35:05.523000Z" visited="2024-08-18T22:35:05.523000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-18T22:35:05.523000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Pictures/retro-game-outrun-5ga631rwtprdoama.webp" added="2024-08-18T22:42:51.371000Z" modified="2024-08-18T22:58:25.452000Z" visited="2024-08-18T22:58:25.452000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/webp"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="systemsettings" exec="systemsettings %f" modified="2024-08-18T22:42:51.371000Z" count="1"/>
+          <bookmark:application name="org.gimp.GIMP" exec="/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=gimp-2.10 --file-forwarding org.gimp.GIMP @@u %u @@" modified="2024-08-18T22:58:25.452000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/efi/EFI/refind/themes/refind-vagabond/theme.conf" added="2024-08-18T23:03:23.471000Z" modified="2024-08-18T23:03:23.471000Z" visited="2024-08-18T23:03:23.471000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-18T23:03:23.471000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="admin:/efi/EFI/refind/refind.conf-sample" added="2024-08-18T23:04:27.797000Z" modified="2024-08-18T23:04:27.797000Z" visited="2024-08-18T23:04:27.797000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-18T23:04:27.797000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/rEFInd-tools-0.14.2-2.fc41.noarch.rpm" added="2024-08-18T23:06:00.119897Z" modified="2024-08-18T23:06:00.119901Z" visited="2024-08-18T23:06:00.119898Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-rpm"/>
+        <bookmark:applications>
+          <bookmark:application name="Floorp" exec="'floorp %u'" modified="2024-08-18T23:06:00.119900Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/rEFInd-tools-0.14.2-2.fc41.noarch/usr/share/rEFInd/refind-install" added="2024-08-18T23:06:55.742000Z" modified="2024-08-18T23:06:55.742000Z" visited="2024-08-18T23:06:55.742000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kwrite" exec="kwrite %u" modified="2024-08-18T23:06:55.742000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/fonts/liberation-mono-regular-12.png" added="2024-08-18T23:09:19.865000Z" modified="2024-08-18T23:09:19.865000Z" visited="2024-08-18T23:09:19.865000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-18T23:09:19.865000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/fonts/liberation-mono-regular-14.png" added="2024-08-18T23:09:23.980000Z" modified="2024-08-18T23:09:23.980000Z" visited="2024-08-18T23:09:23.980000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-18T23:09:23.980000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/fonts/nimbus-mono-28.png" added="2024-08-18T23:09:45.584000Z" modified="2024-08-18T23:09:51.741000Z" visited="2024-08-18T23:09:51.741000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-18T23:09:51.741000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/steinardth/Downloads/fonts/liberation-mono-regular-28.png" added="2024-08-18T23:09:49.424000Z" modified="2024-08-18T23:09:49.424000Z" visited="2024-08-18T23:09:49.424000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.gwenview" exec="gwenview %u" modified="2024-08-18T23:09:49.424000Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

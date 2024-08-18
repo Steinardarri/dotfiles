@@ -1,5 +1,10 @@
 [Common]
 OutlineIntensity=OutlineOff
+ShadowColor=30,24,47
+ShadowSize=ShadowMedium
+
+[Style]
+MenuOpacity=0
 
 [Windeco]
 DrawBackgroundGradient=true

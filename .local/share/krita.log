@@ -258,3 +258,422 @@ Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID:
 05 Aug 2024 15:21:46 +0000: Removing autosave file: /home/steinardth/Forrit/git_verkefni/refind-vagabond/highres/selection_big.png-autosave.kra
 05 Aug 2024 15:21:46 +0000: Saving Completed
 05 Aug 2024 15:21:48 +0000: CLOSING SESSION
+================================================================================
+SESSION: 08 Aug 2024 20:48:56 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 10999
+-- -- -- -- -- -- -- --
+08 Aug 2024 20:48:56 +0000: Style: fusion. Available styles: Windows, Fusion
+08 Aug 2024 20:48:57 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+08 Aug 2024 20:49:10 +0000: Importing application/pdf to application/x-krita. Location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf. Real location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf. Batchmode: 0
+08 Aug 2024 20:49:18 +0000: Loaded image from application/pdf. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+08 Aug 2024 20:54:05 +0000: Exporting Document: /home/steinardth/Downloads/Armann Waterpolo Poster A1.png as image/png. 7016 * 9934 pixels, 3 layers, 101 frames, 24 framerate. Export configuration: No configuration
+08 Aug 2024 20:54:07 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.png. Real location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param type="internal" name="alpha">true</param>
+ <param type="internal" name="compression">3</param>
+ <param type="internal" name="downsample">false</param>
+ <param type="internal" name="forceSRGB">true</param>
+ <param type="internal" name="indexed">false</param>
+ <param type="internal" name="interlaced">false</param>
+ <param type="internal" name="saveAsHDR">false</param>
+ <param type="internal" name="saveSRGBProfile">false</param>
+ <param type="internal" name="storeAuthor">false</param>
+ <param type="internal" name="storeMetaData">false</param>
+ <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB g="1" r="1" space="sRGB-elle-V2-g10.icc" b="1"/>
+</color>
+]]></param>
+</params>
+
+08 Aug 2024 20:54:10 +0000: Completed saving /home/steinardth/Downloads/Armann Waterpolo Poster A1.png (mime: image/png). Result: OK. Warning: . Size: 1302188
+08 Aug 2024 20:54:10 +0000: Saving Completed
+
+KRITA DID NOT CLOSE CORRECTLY
+================================================================================
+SESSION: 08 Aug 2024 20:54:21 +0000. Executing /usr/bin/krita /home/steinardth/Downloads/Armann Waterpolo Poster A1.png
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 12187
+-- -- -- -- -- -- -- --
+08 Aug 2024 20:54:21 +0000: Style: fusion. Available styles: Windows, Fusion
++0000: CLOSING SESSION
+08 Aug 2024 20:54:21 +0000: Importing image/png to application/x-krita. Location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.png. Real location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.png. Batchmode: 0
+08 Aug 2024 20:54:21 +0000: Loaded image from image/png. Size: 7016 * 9934 pixels, 4.16665 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+08 Aug 2024 20:55:08 +0000: Saving Document /home/steinardth/Downloads/Armann Waterpolo Poster A1.png as /home/steinardth/Downloads/Armann Waterpolo Poster A1.png (mime: image/png). 2088 * 2625 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+08 Aug 2024 20:55:08 +0000: Create a simple backup for /home/steinardth/Downloads/Armann Waterpolo Poster A1.png in the same location as the file.
+08 Aug 2024 20:55:09 +0000: Converting from application/x-krita to image/png. Location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.png. Real location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.png. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param type="internal" name="alpha">true</param>
+ <param type="internal" name="compression">3</param>
+ <param type="internal" name="downsample">false</param>
+ <param type="internal" name="forceSRGB">true</param>
+ <param type="internal" name="indexed">false</param>
+ <param type="internal" name="interlaced">false</param>
+ <param type="internal" name="saveAsHDR">false</param>
+ <param type="internal" name="saveSRGBProfile">false</param>
+ <param type="internal" name="storeAuthor">false</param>
+ <param type="internal" name="storeMetaData">false</param>
+ <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>
+<color>
+ <RGB g="1" r="1" space="sRGB-elle-V2-g10.icc" b="1"/>
+</color>
+]]></param>
+</params>
+
+08 Aug 2024 20:55:09 +0000: Completed saving /home/steinardth/Downloads/Armann Waterpolo Poster A1.png (mime: image/png). Result: OK. Warning: . Size: 172229
+08 Aug 2024 20:55:09 +0000: Saving Completed
+08 Aug 2024 20:56:10 +0000: Autosaving: /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf-autosave.kra
+08 Aug 2024 20:56:10 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf-autosave.kra. Real location: /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf-autosave.kra. Batchmode: 0. Configuration: none
+08 Aug 2024 20:56:11 +0000: Completed saving /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 22295208
+09 Aug 2024 13:04:25 +0000: Saving Document /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 13:04:25 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 13:04:29 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 31129824
+09 Aug 2024 13:04:29 +0000: Removing autosave file: /home/steinardth/Downloads/Armann Waterpolo Poster A1.pdf-autosave.kra
+09 Aug 2024 13:04:29 +0000: Saving Completed
+09 Aug 2024 13:04:31 +0000: CLOSING SESSION
+================================================================================
+SESSION: 09 Aug 2024 13:05:57 +0000. Executing /usr/bin/krita /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 20613
+-- -- -- -- -- -- -- --
+09 Aug 2024 13:05:57 +0000: Style: fusion. Available styles: Windows, Fusion
+09 Aug 2024 13:05:57 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+09 Aug 2024 13:05:58 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0
+09 Aug 2024 13:05:58 +0000: Loaded image from application/x-krita. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+09 Aug 2024 13:06:15 +0000: Exporting Document: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp as image/webp. 7016 * 9934 pixels, 2 layers, 101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 13:06:40 +0000: Converting from application/x-krita to image/webp. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param name="alpha_compression" type="internal">1</param>
+ <param name="alpha_filtering" type="internal">1</param>
+ <param name="alpha_quality" type="internal">100</param>
+ <param name="autofilter" type="internal">false</param>
+ <param name="dithering" type="internal">true</param>
+ <param name="emulate_jpeg_size" type="internal">false</param>
+ <param name="exact" type="internal">false</param>
+ <param name="exif" type="internal">true</param>
+ <param name="filter_sharpness" type="internal">0</param>
+ <param name="filter_strength" type="internal">60</param>
+ <param name="filter_type" type="internal">1</param>
+ <param name="filters" type="string"><![CDATA[]]></param>
+ <param name="haveAnimation" type="internal">false</param>
+ <param name="lossless" type="internal">false</param>
+ <param name="low_memory" type="internal">false</param>
+ <param name="method" type="internal">6</param>
+ <param name="near_lossless" type="internal">100</param>
+ <param name="partition_limit" type="internal">0</param>
+ <param name="partitions" type="internal">0</param>
+ <param name="pass" type="internal">1</param>
+ <param name="preprocessing" type="internal">0</param>
+ <param name="preset" type="internal">0</param>
+ <param name="qmax" type="internal">100</param>
+ <param name="qmin" type="internal">0</param>
+ <param name="quality" type="internal">75</param>
+ <param name="segments" type="internal">4</param>
+ <param name="show_compressed" type="internal">false</param>
+ <param name="sns_strength" type="internal">50</param>
+ <param name="storeMetaData" type="internal">false</param>
+ <param name="target_PSNR" type="internal">0</param>
+ <param name="target_size" type="internal">0</param>
+ <param name="thread_level" type="internal">false</param>
+ <param name="use_sharp_yuv" type="internal">false</param>
+ <param name="xmp" type="internal">true</param>
+</params>
+
+09 Aug 2024 13:06:50 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp (mime: image/webp). Result: OK. Warning: . Size: 2957504
+09 Aug 2024 13:06:50 +0000: Saving Completed
+09 Aug 2024 13:07:13 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp (mime: image/webp). 7016 * 9934 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 13:07:13 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp in the same location as the file.
+09 Aug 2024 13:07:35 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp (mime: image/webp). Result: The action was cancelled by the user.. Warning: . Size: 2957504
+09 Aug 2024 13:07:41 +0000: Exporting Document: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp as image/webp. 7016 * 9934 pixels, 2 layers, 101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 13:07:41 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp in the same location as the file.
+09 Aug 2024 13:07:53 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp (mime: image/webp). Result: The action was cancelled by the user.. Warning: . Size: 2957504
+09 Aug 2024 13:07:58 +0000: Exporting Document: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp as image/webp. 7016 * 9934 pixels, 2 layers, 101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 13:07:58 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp in the same location as the file.
+09 Aug 2024 13:08:27 +0000: Converting from application/x-krita to image/webp. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param name="alpha_compression" type="internal">1</param>
+ <param name="alpha_filtering" type="internal">1</param>
+ <param name="alpha_quality" type="internal">100</param>
+ <param name="autofilter" type="internal">false</param>
+ <param name="dithering" type="internal">true</param>
+ <param name="emulate_jpeg_size" type="internal">false</param>
+ <param name="exact" type="internal">false</param>
+ <param name="exif" type="internal">true</param>
+ <param name="filter_sharpness" type="internal">0</param>
+ <param name="filter_strength" type="internal">60</param>
+ <param name="filter_type" type="internal">1</param>
+ <param name="filters" type="string"><![CDATA[]]></param>
+ <param name="haveAnimation" type="internal">false</param>
+ <param name="lossless" type="internal">false</param>
+ <param name="low_memory" type="internal">false</param>
+ <param name="method" type="internal">6</param>
+ <param name="near_lossless" type="internal">100</param>
+ <param name="partition_limit" type="internal">0</param>
+ <param name="partitions" type="internal">0</param>
+ <param name="pass" type="internal">1</param>
+ <param name="preprocessing" type="internal">0</param>
+ <param name="preset" type="internal">0</param>
+ <param name="qmax" type="internal">100</param>
+ <param name="qmin" type="internal">0</param>
+ <param name="quality" type="internal">75</param>
+ <param name="segments" type="internal">4</param>
+ <param name="show_compressed" type="internal">false</param>
+ <param name="sns_strength" type="internal">50</param>
+ <param name="storeMetaData" type="internal">false</param>
+ <param name="target_PSNR" type="internal">0</param>
+ <param name="target_size" type="internal">0</param>
+ <param name="thread_level" type="internal">false</param>
+ <param name="use_sharp_yuv" type="internal">false</param>
+ <param name="xmp" type="internal">true</param>
+</params>
+
+09 Aug 2024 13:08:28 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp (mime: image/webp). Result: OK. Warning: . Size: 140110
+09 Aug 2024 13:08:28 +0000: Saving Completed
+09 Aug 2024 13:12:58 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 13:12:58 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 13:13:00 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 42937908
+09 Aug 2024 13:19:53 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 4 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 13:19:53 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+09 Aug 2024 13:19:53 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 13:19:57 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 52399881
+09 Aug 2024 13:19:57 +0000: Saving Completed
+09 Aug 2024 13:20:18 +0000: CLOSING SESSION
+================================================================================
+SESSION: 09 Aug 2024 18:14:57 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 23774
+-- -- -- -- -- -- -- --
+09 Aug 2024 18:14:57 +0000: Style: fusion. Available styles: Windows, Fusion
+09 Aug 2024 18:14:57 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+09 Aug 2024 18:15:40 +0000: Importing image/jpeg to application/x-krita. Location: /home/steinardth/Pictures/Vagabond.jpg. Real location: /home/steinardth/Pictures/Vagabond.jpg. Batchmode: 0
+09 Aug 2024 18:15:40 +0000: Loaded image from image/jpeg. Size: 5120 * 2880 pixels, 1 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+09 Aug 2024 18:15:53 +0000: Removing autosave file: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 18:15:53 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0
+09 Aug 2024 18:15:54 +0000: Loaded image from application/x-krita. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 4
+09 Aug 2024 18:22:40 +0000: Autosaving: /home/steinardth/Pictures/Vagabond.jpg-autosave.kra
+09 Aug 2024 18:22:40 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Vagabond.jpg-autosave.kra. Real location: /home/steinardth/Pictures/Vagabond.jpg-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 18:22:40 +0000: Completed saving /home/steinardth/Pictures/Vagabond.jpg-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 41593502
+09 Aug 2024 18:22:47 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 18:22:47 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 18:22:48 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 42946676
+09 Aug 2024 18:29:54 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 18:29:54 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 18:29:55 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 43002027
+09 Aug 2024 18:45:53 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 18:45:53 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 18:45:54 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 42980264
+09 Aug 2024 18:51:46 +0000: Removing autosave file: /home/steinardth/Pictures/Vagabond.jpg-autosave.kra
+09 Aug 2024 18:51:48 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 5 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 18:51:48 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+09 Aug 2024 18:51:49 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 18:51:53 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 52600561
+09 Aug 2024 18:51:53 +0000: Removing autosave file: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 18:51:53 +0000: Saving Completed
+09 Aug 2024 18:56:56 +0000: Created image "Unnamed", 3508 * 4960 pixels, 600 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+09 Aug 2024 19:03:56 +0000: Autosaving: /home/steinardth/krita-23774-document_6-autosave.kra
+09 Aug 2024 19:03:56 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/krita-23774-document_6-autosave.kra. Real location: /home/steinardth/krita-23774-document_6-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 19:03:56 +0000: Completed saving /home/steinardth/krita-23774-document_6-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 3122243
+09 Aug 2024 19:05:30 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 19:05:30 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 19:05:31 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 43127279
+09 Aug 2024 19:11:22 +0000: Autosaving: /home/steinardth/krita-23774-document_6-autosave.kra
+09 Aug 2024 19:11:22 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/krita-23774-document_6-autosave.kra. Real location: /home/steinardth/krita-23774-document_6-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 19:11:22 +0000: Completed saving /home/steinardth/krita-23774-document_6-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 2889906
+09 Aug 2024 22:36:05 +0000: Saving Document  as /home/steinardth/Pictures/Armann/Armann_sticker.kra (mime: application/x-krita). 3508 * 4960 pixels, 2 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 22:36:05 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 22:36:06 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann_sticker.kra (mime: application/x-krita). Result: OK. Warning: . Size: 4867397
+09 Aug 2024 22:36:06 +0000: Removing autosave file: /home/steinardth/krita-23774-document_6-autosave.kra
+09 Aug 2024 22:36:06 +0000: Saving Completed
+09 Aug 2024 22:43:11 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 22:43:11 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 22:43:13 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 43066100
+09 Aug 2024 23:08:07 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 5 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 23:08:07 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+09 Aug 2024 23:08:07 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 23:08:11 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 5 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 23:08:11 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+09 Aug 2024 23:08:11 +0000: Failed to initiate saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in background.
+09 Aug 2024 23:08:12 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 52560287
+09 Aug 2024 23:08:12 +0000: Removing autosave file: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+09 Aug 2024 23:08:12 +0000: Saving Completed
+09 Aug 2024 23:08:16 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 5 layers.  101 frames, 24 framerate. Export configuration: No configuration
+09 Aug 2024 23:08:16 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+09 Aug 2024 23:08:17 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+09 Aug 2024 23:08:21 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 52560287
+09 Aug 2024 23:08:21 +0000: Saving Completed
+09 Aug 2024 23:08:25 +0000: CLOSING SESSION
+================================================================================
+SESSION: 10 Aug 2024 17:52:39 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 77701
+-- -- -- -- -- -- -- --
+10 Aug 2024 17:52:39 +0000: Style: fusion. Available styles: Windows, Fusion
+10 Aug 2024 17:52:39 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+10 Aug 2024 17:53:02 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0
+10 Aug 2024 17:53:04 +0000: Loaded image from application/x-krita. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 5
+10 Aug 2024 17:53:28 +0000: Importing image/jpeg to application/x-krita. Location: /home/steinardth/Downloads/393817712_334322345813649_2876272270800882951_n.jpg. Real location: /home/steinardth/Downloads/393817712_334322345813649_2876272270800882951_n.jpg. Batchmode: 0
+10 Aug 2024 17:53:28 +0000: Loaded image from image/jpeg. Size: 1110 * 1110 pixels, 1 dpi. Color model: 8-bit integer/channel RGB/Alpha (uRGB). Layers: 2
+10 Aug 2024 17:59:14 +0000: SAFE ASSERT (krita): "m_isInsideTextSubtree || e.tagName() == "text"" in file /usr/src/debug/krita/krita-5.2.3/libs/flake/svg/SvgParser.cpp, line 1738
+
+KRITA DID NOT CLOSE CORRECTLY
+================================================================================
+SESSION: 10 Aug 2024 17:59:23 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 78750
+-- -- -- -- -- -- -- --
+10 Aug 2024 17:59:23 +0000: Style: fusion. Available styles: Windows, Fusion
+10 Aug 2024 17:59:23 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+10 Aug 2024 17:59:33 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0
+10 Aug 2024 17:59:34 +0000: Loaded image from application/x-krita. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 5
+10 Aug 2024 18:02:21 +0000: Importing image/jpeg to application/x-krita. Location: /home/steinardth/Downloads/393817712_334322345813649_2876272270800882951_n.jpg. Real location: /home/steinardth/Downloads/393817712_334322345813649_2876272270800882951_n.jpg. Batchmode: 0
+10 Aug 2024 18:02:21 +0000: Loaded image from image/jpeg. Size: 1110 * 1110 pixels, 1 dpi. Color model: 8-bit integer/channel RGB/Alpha (uRGB). Layers: 2
+10 Aug 2024 18:02:37 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 7 layers.  101 frames, 24 framerate. Export configuration: No configuration
+10 Aug 2024 18:02:37 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+10 Aug 2024 18:02:37 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+10 Aug 2024 18:02:42 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 52853627
+10 Aug 2024 18:02:42 +0000: Saving Completed
+10 Aug 2024 18:06:35 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+10 Aug 2024 18:06:35 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+10 Aug 2024 18:06:37 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 49847206
+10 Aug 2024 18:13:37 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+10 Aug 2024 18:13:37 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+10 Aug 2024 18:13:39 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 48562415
+10 Aug 2024 18:15:20 +0000: Importing image/jpeg to application/x-krita. Location: /home/steinardth/Downloads/Screenshot_20240810_181312_Instagram.jpg. Real location: /home/steinardth/Downloads/Screenshot_20240810_181312_Instagram.jpg. Batchmode: 0
+10 Aug 2024 18:15:20 +0000: Loaded image from image/jpeg. Size: 1080 * 2400 pixels, 1 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB). Layers: 2
+10 Aug 2024 18:20:48 +0000: Exporting Document: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp as image/webp. 7016 * 9934 pixels, 6 layers, 101 frames, 24 framerate. Export configuration: No configuration
+10 Aug 2024 18:20:48 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp in the same location as the file.
+10 Aug 2024 18:20:51 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp (mime: image/webp). Result: The action was cancelled by the user.. Warning: . Size: 140110
+10 Aug 2024 18:21:01 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+10 Aug 2024 18:21:01 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+10 Aug 2024 18:21:03 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 49665814
+10 Aug 2024 18:21:03 +0000: Saving Completed
+10 Aug 2024 18:21:05 +0000: Exporting Document: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp as image/webp. 7016 * 9934 pixels, 6 layers, 101 frames, 24 framerate. Export configuration: No configuration
+10 Aug 2024 18:21:05 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp in the same location as the file.
+10 Aug 2024 18:21:38 +0000: Converting from application/x-krita to image/webp. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp. Batchmode: 0. Configuration: <!DOCTYPE params>
+<params>
+ <param type="internal" name="alpha_compression">1</param>
+ <param type="internal" name="alpha_filtering">1</param>
+ <param type="internal" name="alpha_quality">100</param>
+ <param type="internal" name="autofilter">false</param>
+ <param type="internal" name="dithering">true</param>
+ <param type="internal" name="emulate_jpeg_size">false</param>
+ <param type="internal" name="exact">false</param>
+ <param type="internal" name="exif">true</param>
+ <param type="internal" name="filter_sharpness">0</param>
+ <param type="internal" name="filter_strength">60</param>
+ <param type="internal" name="filter_type">1</param>
+ <param type="string" name="filters"><![CDATA[]]></param>
+ <param type="internal" name="haveAnimation">true</param>
+ <param type="internal" name="lossless">false</param>
+ <param type="internal" name="low_memory">false</param>
+ <param type="internal" name="method">6</param>
+ <param type="internal" name="near_lossless">100</param>
+ <param type="internal" name="partition_limit">0</param>
+ <param type="internal" name="partitions">0</param>
+ <param type="internal" name="pass">1</param>
+ <param type="internal" name="preprocessing">0</param>
+ <param type="internal" name="preset">0</param>
+ <param type="internal" name="qmax">100</param>
+ <param type="internal" name="qmin">0</param>
+ <param type="internal" name="quality">75</param>
+ <param type="internal" name="segments">4</param>
+ <param type="internal" name="show_compressed">false</param>
+ <param type="internal" name="sns_strength">50</param>
+ <param type="internal" name="storeMetaData">false</param>
+ <param type="internal" name="target_PSNR">0</param>
+ <param type="internal" name="target_size">0</param>
+ <param type="internal" name="thread_level">false</param>
+ <param type="internal" name="use_sharp_yuv">false</param>
+ <param type="internal" name="xmp">true</param>
+</params>
+
+10 Aug 2024 18:21:39 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.webp (mime: image/webp). Result: OK. Warning: . Size: 143288
+11 Aug 2024 10:06:53 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 6 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 10:06:53 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+11 Aug 2024 10:06:53 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:06:57 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 60257020
+11 Aug 2024 10:06:57 +0000: Removing autosave file: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+11 Aug 2024 10:06:57 +0000: Saving Completed
+11 Aug 2024 10:07:14 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Batchmode: 0
+11 Aug 2024 10:07:14 +0000: Loaded image from application/x-krita. Size: 3508 * 4960 pixels, 8.33333 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 2
+11 Aug 2024 10:07:22 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0
+11 Aug 2024 10:07:23 +0000: Loaded image from application/x-krita. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 6
+11 Aug 2024 10:13:21 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann_sticker.kra as /home/steinardth/Pictures/Armann/Armann_sticker.kra (mime: application/x-krita). 3508 * 4960 pixels, 3 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 10:13:21 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann_sticker.kra in the same location as the file.
+11 Aug 2024 10:13:21 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:13:22 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann_sticker.kra (mime: application/x-krita). Result: OK. Warning: . Size: 14493072
+11 Aug 2024 10:13:22 +0000: Saving Completed
+11 Aug 2024 10:14:14 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 10:14:22 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+11 Aug 2024 10:14:22 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:14:24 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 10:14:24 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 56118823
+11 Aug 2024 10:14:34 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 10:14:44 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 10:15:53 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 10:15:53 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:15:53 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 18302376
+11 Aug 2024 10:22:53 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 10:22:53 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:22:54 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 14087232
+11 Aug 2024 10:23:12 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+11 Aug 2024 10:23:12 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:23:14 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 49669748
+11 Aug 2024 10:31:14 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+11 Aug 2024 10:31:14 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:31:16 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 53708407
+11 Aug 2024 10:31:25 +0000: Autosaving: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 10:31:25 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 10:31:26 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra (mime: application/x-krita). Result: OK. Warning: . Size: 14417695
+11 Aug 2024 12:01:59 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann_sticker.kra as /home/steinardth/Pictures/Armann/Armann_sticker.kra (mime: application/x-krita). 3508 * 4960 pixels, 7 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 12:01:59 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann_sticker.kra in the same location as the file.
+11 Aug 2024 12:01:59 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 12:02:00 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann_sticker.kra (mime: application/x-krita). Result: OK. Warning: . Size: 18127482
+11 Aug 2024 12:02:00 +0000: Removing autosave file: /home/steinardth/Pictures/Armann/Armann_sticker.kra-autosave.kra
+11 Aug 2024 12:02:00 +0000: Saving Completed
+11 Aug 2024 12:02:04 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 6 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 12:02:04 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+11 Aug 2024 12:02:04 +0000: Converting from application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0. Configuration: none
+11 Aug 2024 12:02:09 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). Result: OK. Warning: . Size: 64298275
+11 Aug 2024 12:02:09 +0000: Removing autosave file: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra-autosave.kra
+11 Aug 2024 12:02:09 +0000: Saving Completed
+11 Aug 2024 12:02:16 +0000: CLOSING SESSION
+================================================================================
+SESSION: 11 Aug 2024 16:44:46 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 154195
+-- -- -- -- -- -- -- --
+11 Aug 2024 16:44:46 +0000: Style: fusion. Available styles: Windows, Fusion
+11 Aug 2024 16:44:46 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+11 Aug 2024 16:44:54 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0
+11 Aug 2024 16:44:56 +0000: Loaded image from application/x-krita. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 6
+11 Aug 2024 16:45:43 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.psd (mime: image/vnd.adobe.photoshop). 7016 * 9934 pixels, 6 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 16:45:46 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.psd (mime: image/vnd.adobe.photoshop). Result: The action was cancelled by the user.. Warning: . Size: 0
+11 Aug 2024 16:46:38 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora (mime: image/openraster). 7016 * 9934 pixels, 6 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 16:46:50 +0000: Converting from application/x-krita to image/openraster. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora. Batchmode: 0. Configuration: none
+11 Aug 2024 16:46:53 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra (mime: application/x-krita). 7016 * 9934 pixels, 6 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 16:46:53 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in the same location as the file.
+11 Aug 2024 16:46:53 +0000: Failed to initiate saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra in background.
+11 Aug 2024 16:47:00 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora (mime: image/openraster). Result: OK. Warning: . Size: 30261937
+11 Aug 2024 16:47:00 +0000: Saving Completed
+11 Aug 2024 16:47:04 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora as /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora (mime: image/openraster). 7016 * 9934 pixels, 6 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 16:47:04 +0000: Create a simple backup for /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora in the same location as the file.
+11 Aug 2024 16:47:06 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.ora (mime: image/openraster). Result: The action was cancelled by the user.. Warning: . Size: 30261937
+11 Aug 2024 16:47:14 +0000: CLOSING SESSION
+================================================================================
+SESSION: 11 Aug 2024 17:00:35 +0000. Executing /usr/bin/krita
+
+Krita Version: 5.2.3, Qt version compiled: 5.15.14, loaded: 5.15.14. Process ID: 159564
+-- -- -- -- -- -- -- --
+11 Aug 2024 17:00:35 +0000: Style: fusion. Available styles: Windows, Fusion
+11 Aug 2024 17:00:36 +0000: Database is up to date. Version: 0.0.17, created by Krita 5.2.3, at fös. jún. 28 23:01:05 2024
+11 Aug 2024 17:00:46 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Real location: /home/steinardth/Pictures/Armann/Armann Waterpolo Poster A1.kra. Batchmode: 0
+11 Aug 2024 17:00:48 +0000: Loaded image from application/x-krita. Size: 7016 * 9934 pixels, 4.16667 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 6
+11 Aug 2024 17:01:55 +0000: Importing application/x-krita to application/x-krita. Location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.kra. Batchmode: 0
+11 Aug 2024 17:01:56 +0000: Loaded image from application/x-krita. Size: 3508 * 4960 pixels, 8.33333 dpi. Color model: 8-bit integer/channel RGB/Alpha (sRGB-elle-V2-srgbtrc.icc). Layers: 7
+11 Aug 2024 17:02:10 +0000: Saving Document /home/steinardth/Pictures/Armann/Armann_sticker.kra as /home/steinardth/Pictures/Armann/Armann_sticker.ora (mime: image/openraster). 3508 * 4960 pixels, 7 layers.  101 frames, 24 framerate. Export configuration: No configuration
+11 Aug 2024 17:02:10 +0000: Converting from application/x-krita to image/openraster. Location: /home/steinardth/Pictures/Armann/Armann_sticker.ora. Real location: /home/steinardth/Pictures/Armann/Armann_sticker.ora. Batchmode: 0. Configuration: none
+11 Aug 2024 17:02:12 +0000: Completed saving /home/steinardth/Pictures/Armann/Armann_sticker.ora (mime: image/openraster). Result: OK. Warning: . Size: 11411104
+11 Aug 2024 17:02:12 +0000: Saving Completed
+11 Aug 2024 17:02:25 +0000: CLOSING SESSION

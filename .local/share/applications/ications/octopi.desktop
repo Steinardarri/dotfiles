@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=System;Tools;
+Comment[en_GB]=Add or remove software installed on the system
+Comment=Add or remove software installed on the system
+Exec=/usr/bin/octopi
+GenericName[en_GB]=Add/Remove Software
+GenericName=Add/Remove Software
+Icon=mandrivaupdate
+MimeType=
+Name[en_GB]=Octopi
+Name=Octopi
+Path=
+SingleMainWindow=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.5
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

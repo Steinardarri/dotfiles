@@ -1,0 +1,9 @@
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/vanguard.png
+Recent URLs[$e]=file:$HOME/Pictures/
+
+[KickerRunnerManager]
+LaunchCounts=2 exec:///usr/bin/steam-runtime,1 exec:///usr/bin/filelight,2 exec:///usr/bin/haruna,4 exec:///usr/bin/codium --enable-features=UseOzonePlatform\\,WaylandWindowDecorations --ozone-platform=wayland,8 exec:///usr/bin/piper,4 exec:///usr/bin/openrgb,1 exec:///usr/bin/plasma-systemmonitor,1 exec:///usr/lib/qt6/bin/qdbusviewer,1 exec:///usr/bin/fslint-gui,3 exec:///usr/bin/vesktop,6 exec:///usr/bin/grsync -i,1 exec:///usr/bin/kcalc,1 exec:///usr/bin/btrfs-assistant-launcher,1 exec:///usr/bin/btop,4 exec:///usr/bin/steam-native,1 exec:///usr/bin/zeditor,2 exec:///usr/bin/cool-retro-term,4 exec:///usr/bin/timeshift-launcher,12 exec:///usr/bin/ktorrent,1 exec:///usr/bin/7z,2 exec:///usr/bin/systemsettings,2 exec:///usr/bin/proton-mail,7 exec:///usr/bin/partitionmanager,4 exec:///usr/bin/protonvpn-app,2 exec:///usr/bin/spotify --uri=,7 exec:///usr/bin/octopi,2 exec:///usr/bin/net.davidotek.pupgui2,1 exec:///usr/bin/qalculate-qt,1 exec:///usr/bin/plasma-discover,2 exec:///usr/lib/zed/zed-editor,1 exec:///usr/bin/vmware,2 exec:///usr/bin/blender,3 exec:///usr/bin/gimp-2.10,6 exec:///usr/bin/krita,1 exec:///usr/bin/eos-welcome --once,11 exec:///usr/bin/kwrite,8 exec:///usr/bin/grub-customizer,2 exec:///usr/bin/ark,1 exec:///usr/bin/eos-apps-info,1 exec:///usr/bin/kcolorchooser,1 exec:///usr/bin/bottles,2 exec:///usr/bin/floorp --class=floorp,2 exec:///usr/bin/octopi-notifier,4 exec:///usr/bin/flatpak run --branch=stable --arch=x86_64 --command=gimp-2.10 --file-forwarding org.gimp.GIMP @@u @@
+
+[KickerRunnerManager][History]
+d0ce5f89-392a-419a-ae53-5e1864bb8326=gim,part,btop,gimp,kri,disc,disco,dis,g,krit,blen,blend,k,shortc,har,proto,ark,ar,7z,ha,btr,ktor,kto,vpn,ste,kwr,acc,open,hardware,kwallet,kw,vsc,parti,kwrite,zed,kwri,grub,par,stea,kde,ti,gru,vi,gpu,pass,ope,virt,virtu,vmwa,qdb

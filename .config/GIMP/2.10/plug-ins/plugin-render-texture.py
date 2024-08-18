@@ -1,0 +1,1 @@
+/var/lib/flatpak/runtime/org.gimp.GIMP.Plugin.Resynthesizer/x86_64/2-40/a601dad75c8c610fe076d1c3ef39dcedad004b46b99ebd82359bbfd4daea4991/files/plug-ins/plugin-render-texture.py

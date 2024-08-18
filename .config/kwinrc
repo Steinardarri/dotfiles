@@ -15,7 +15,9 @@ TabletMode=off
 [NightColor]
 Active=true
 EveningBeginFixed=2200
-Mode=Times
+LatitudeFixed=63.902671152563585
+LongitudeFixed=-21.573956749688648
+Mode=Location
 MorningBeginFixed=0800
 NightTemperature=3400
 

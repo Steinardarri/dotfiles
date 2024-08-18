@@ -6,26 +6,26 @@ MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=/run/media/steinardth/SteinarFlak/Backup/_Annad/Home/Pictures/Screenshots/Screenshot 2023-07-29 223227.png
-File10[$e]=$HOME/Forrit/git_verkefni/refind-vagabond/highres/screenshot.jpg
-File2[$e]=$HOME/Pictures/Vagabond-soldier-blue.png
-File3[$e]=/run/media/steinardth/SSD/Mitt/Fooocus/outputs/2024-07-24/2024-07-24_13-34-41_5468.png
-File4[$e]=$HOME/Forrit/git_verkefni/refind-dreary/clover/icons/os_centos.icns
-File5[$e]=$HOME/Downloads/retro-game-outrun-5ga631rwtprdoama.webp
-File6[$e]=admin:/efi/EFI/refind/themes/refind-dreary/background.png
-File7[$e]=admin:/efi/EFI/refind/themes/refind-dreary/screenshot.jpg
-File8[$e]=admin:/efi/EFI/refind/themes/refind-dreary/selection_big.png
-File9[$e]=$HOME/Forrit/git_verkefni/refind-vagabond/highres/icons/os_fedora.png
-Name1[$e]=Screenshot 2023-07-29 223227.png
-Name10[$e]=screenshot.jpg
-Name2[$e]=Vagabond-soldier-blue.png
-Name3[$e]=2024-07-24_13-34-41_5468.png
-Name4[$e]=os_centos.icns
-Name5[$e]=retro-game-outrun-5ga631rwtprdoama.webp
-Name6[$e]=background.png
-Name7[$e]=screenshot.jpg
-Name8[$e]=selection_big.png
-Name9[$e]=os_fedora.png
+File1[$e]=admin:/efi/EFI/refind/themes/refind-dreary/icons/os_win.png
+File10[$e]=$HOME/Downloads/fonts/ubuntu-mono-28.png
+File2[$e]=admin:/efi/EFI/refind/themes/refind-dreary/icons/os_win8.png
+File3[$e]=$HOME/Pictures/Armann/Armann Waterpolo Poster A1.webp
+File4[$e]=admin:/efi/EFI/refind/themes/refind-dreary/background.png
+File5[$e]=$HOME/Downloads/fonts/liberation-mono-regular-12.png
+File6[$e]=$HOME/Downloads/fonts/liberation-mono-regular-14.png
+File7[$e]=$HOME/Downloads/fonts/liberation-mono-regular-24.png
+File8[$e]=$HOME/Downloads/fonts/nimbus-mono-28.png
+File9[$e]=$HOME/Downloads/fonts/liberation-mono-regular-28.png
+Name1[$e]=os_win.png
+Name10[$e]=ubuntu-mono-28.png
+Name2[$e]=os_win8.png
+Name3[$e]=Armann Waterpolo Poster A1.webp
+Name4[$e]=background.png
+Name5[$e]=liberation-mono-regular-12.png
+Name6[$e]=liberation-mono-regular-14.png
+Name7[$e]=liberation-mono-regular-24.png
+Name8[$e]=nimbus-mono-28.png
+Name9[$e]=liberation-mono-regular-28.png
 
 [SideBar]
 InformationSplitterSizes=211,244

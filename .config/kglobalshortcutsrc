@@ -241,6 +241,7 @@ activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 25=none,none,Activate Brightness and Colour Widget
 activate widget 43=none,none,Activate Application Launcher Widget
+activate widget 44=none,none,Activate Compact Pager Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -262,7 +263,7 @@ toggle do not disturb=none,,Toggle do not disturb
 _launch=Meta+O
 
 [services][org.kde.kwrite.desktop]
-_launch=Meta+K
+_launch=Meta+N
 
 [services][proton-mail.desktop]
 _launch=Meta+M

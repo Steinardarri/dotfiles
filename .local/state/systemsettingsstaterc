@@ -1,0 +1,11 @@
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/retro-game-outrun-5ga631rwtprdoama.webp
+Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/Pictures/Avatar/,file:$HOME/Forrit/Script/,file:$HOME/Forrit/Script/HomeBackup/,file:$HOME/,file:$HOME/Documents/
+
+[MainWindow]
+3 screens: Height=946
+3 screens: Width=1790
+
+[Open-with settings]
+CompletionMode=1
+History=kwr,octop,vpn,mail,spo,ves

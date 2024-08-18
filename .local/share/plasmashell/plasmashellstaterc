@@ -1,9 +1,0 @@
-[KFileDialog Settings]
-Recent Files[$e]=file:$HOME/Pictures/vanguard.png
-Recent URLs[$e]=file:$HOME/Pictures/
-
-[KickerRunnerManager]
-LaunchCounts=2 exec:///usr/bin/haruna,3 exec:///usr/bin/vesktop,2 exec:///usr/bin/cool-retro-term,1 exec:///usr/bin/vmware,1 exec:///usr/bin/zeditor,2 exec:///usr/bin/proton-mail,1 exec:///usr/lib/qt6/bin/qdbusviewer,1 exec:///usr/bin/fslint-gui,2 exec:///usr/bin/octopi-notifier,1 exec:///usr/bin/qalculate-qt,1 exec:///usr/bin/plasma-systemmonitor,3 exec:///usr/bin/krita,2 exec:///usr/bin/spotify --uri=,6 exec:///usr/bin/grsync -i,1 exec:///usr/bin/eos-apps-info,11 exec:///usr/bin/kwrite,2 exec:///usr/bin/floorp --class=floorp,1 exec:///usr/bin/eos-welcome --once,8 exec:///usr/bin/piper,1 exec:///usr/bin/kcalc,2 exec:///usr/bin/ark,4 exec:///usr/bin/steam-native,4 exec:///usr/bin/openrgb,2 exec:///usr/bin/steam-runtime,1 exec:///usr/bin/bottles,4 exec:///usr/bin/timeshift-launcher,2 exec:///usr/bin/net.davidotek.pupgui2,6 exec:///usr/bin/partitionmanager,8 exec:///usr/bin/grub-customizer,1 exec:///usr/bin/7z,4 exec:///usr/bin/protonvpn-app,1 exec:///usr/bin/filelight,7 exec:///usr/bin/octopi,1 exec:///usr/bin/btrfs-assistant-launcher,1 exec:///usr/bin/kcolorchooser,4 exec:///usr/bin/codium --enable-features=UseOzonePlatform\\,WaylandWindowDecorations --ozone-platform=wayland,2 exec:///usr/lib/zed/zed-editor,12 exec:///usr/bin/ktorrent,2 exec:///usr/bin/systemsettings
-
-[KickerRunnerManager][History]
-d0ce5f89-392a-419a-ae53-5e1864bb8326=ark,ar,7z,ha,btr,ktor,kto,vpn,ste,kwr,part,acc,open,hardware,kwallet,kw,vsc,parti,kwrite,zed,kwri,grub,par,stea,kde,ti,gru,vi,gpu,k,pass,ope,virt,virtu,vmwa,qdb,qa,oct,krit,piper,pip,o,vm,disco,default,ende,bott,time,har,mai

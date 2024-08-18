@@ -183,6 +183,16 @@
  <separator>
   <info>
    <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdc2</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>4ad45e78d45e666b</uuid>
+    <IsHidden>false</IsHidden>
+   </metadata>
+  </info>
+ </separator>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
     <UDI>/org/freedesktop/UDisks2/block_devices/nvme0n1p2</UDI>
     <isSystemItem>true</isSystemItem>
     <uuid>2be462ac-092b-4689-bf5d-92510806ea1c</uuid>
@@ -233,7 +243,7 @@
   <title>Verkefni</title>
   <info>
    <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
+    <bookmark:icon name="folder-development"/>
    </metadata>
    <metadata owner="http://www.kde.org">
     <ID>1722436927/0</ID>
@@ -255,10 +265,9 @@
  <separator>
   <info>
    <metadata owner="http://www.kde.org">
-    <UDI>/org/freedesktop/UDisks2/block_devices/sdc2</UDI>
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdf1</UDI>
     <isSystemItem>true</isSystemItem>
-    <uuid>4ad45e78d45e666b</uuid>
-    <IsHidden>true</IsHidden>
+    <uuid>4e21-0000</uuid>
    </metadata>
   </info>
  </separator>

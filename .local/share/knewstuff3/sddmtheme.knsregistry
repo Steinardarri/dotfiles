@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="101">
+  <name>Sugar Candy for SDDM</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>marianarlt</author>
+  <homepage>https://store.kde.org/p/1312658</homepage>
+  <licence></licence>
+  <version>1.6</version>
+  <rating>90</rating>
+  <downloads>304814</downloads>
+  <installedfile>/tmp/sugar-candy.tar.gz</installedfile>
+  <id>1312658</id>
+  <releasedate>2020-02-01</releasedate>
+  <summary>So extremely sweet your pancreas will have difficulties digesting its awesomeness.  &lt;br />
+&lt;br />
+Sweeten the login experience for your users, your family and yourself. Sugar Candy works on almost all major distributions—see below—and focuses on a straight forward user experience and superb functionality while still offering vast customization possibilities.  &lt;br />
+&lt;br />
+Sugar Candy is based on the Sugar series which was &lt;strong>written completely from scratch&lt;/strong> making it clean and simple not only by looks but by design too.  &lt;br />
+All controls use the &lt;a href="http://doc.qt.io/qt-5/qtquickcontrols2-index.html" target="_blank" rel="nofollow">latest Qt Quick Controls 2&lt;/a> for &lt;a href="https://blog.qt.io/blog/2015/03/31/qt-quick-controls-for-embedded/" target="_blank" rel="nofollow">increased performance&lt;/a> on low end or even embedded systems and beautiful color transitions.  &lt;br />
+&lt;br />
+To learn how to control sugar levels read the section below about customization. Your secret sauce is located at ./sddm/themes/sugar-candy/theme.conf!&lt;br />
+There are &lt;strong>46 customizable variables&lt;/strong> in total! This candy will be yours and only yours.&lt;br />
+&lt;br />
+&lt;h2>&lt;strong>Installation&lt;/strong>&lt;/h2>&lt;br />
+&lt;strong>From within KDE Plasma&lt;/strong>&lt;br />
+&lt;br />
+If you are on &lt;a href="https://www.kde.org/plasma-desktop" target="_blank" rel="nofollow">KDE Plasma&lt;/a>—by default &lt;a href="https://manjaro.org/" target="_blank" rel="nofollow">Manjaro&lt;/a>, &lt;a href="https://www.opensuse.org/" target="_blank" rel="nofollow">OpenSuse&lt;/a>, &lt;a href="https://neon.kde.org/" target="_blank" rel="nofollow">Neon&lt;/a>, &lt;a href="https://kubuntu.org/" target="_blank" rel="nofollow">Kubuntu&lt;/a>, &lt;a href="https://kaosx.us/" target="_blank" rel="nofollow">KaOS&lt;/a> or &lt;a href="https://www.chakralinux.org/" target="_blank" rel="nofollow">Chakra&lt;/a> for example—you are lucky and can simply go to your system settings and under "Startup and Shutdown" followed by "Login Screen (SDDM)" click "Get New Theme". From there search for "Sugar Candy" and install.&lt;br />
+&lt;br />
+If for some reason you cannot find the category named "Login Screen (SDDM)" in your system settings then you are missing the module &lt;code>&lt;span style="color: #000000">
+sddm‑kcm&lt;/span>
+&lt;/code>. Install this little helper with your package manager first. You will be grateful you did.&lt;br />
+&lt;br />
+&lt;strong>From other desktop environments&lt;/strong>&lt;br />
+&lt;br />
+Download the tar archive from the Files(1) tab above and extract the contents to the theme directory of SDDM &lt;em>(change the path for the downloaded file if necessary)&lt;/em>:&lt;br />
+&lt;code>&lt;span style="color: #000000">
+$&amp;nbsp;sudo&amp;nbsp;mkdir&amp;nbsp;‑p&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+/usr/share/sddm/themes&lt;/span>
+&lt;/code>&lt;br />
+&lt;code>&lt;span style="color: #000000">
+$&amp;nbsp;sudo&amp;nbsp;tar&amp;nbsp;‑xzvf&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+~/Downloads/sugar‑candy.tar.gz&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+‑C&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+/usr/share/sddm/themes&lt;/span>
+&lt;/code>&lt;br />
+This will extract all the files to a folder called "sugar-candy" inside of the themes directory of SDDM.&lt;br />
+&lt;br />
+After that you will have to point SDDM to the new theme by editing its config file, preferrably at &lt;code>&lt;span style="color: #000000">
+/etc/sddm.conf&lt;/span>
+&lt;/code> &lt;em>(create if necessary)&lt;/em>. You can take the default config file of SDDM as a reference: &lt;code>&lt;span style="color: #000000">
+/etc/sddm.conf/usr/lib/sddm/sddm.conf.d/sddm.conf&lt;/span>
+&lt;/code>&lt;br />
+&lt;br />
+In the &lt;code>&lt;span style="color: #000000">
+[theme]&lt;/span>
+&lt;/code> section simply add the themes name to this line: &lt;code>&lt;span style="color: #000000">
+Current=sugar-candy&lt;/span>
+&lt;/code>. If you don't care for SDDM options and you had to create the file from blank just add these two lines and save it. Also see the &lt;a href="https://wiki.archlinux.org/index.php/SDDM" target="_blank" rel="nofollow">Arch wiki on SDDM&lt;/a>.&lt;br />
+&lt;br />
+&lt;strong>Dependencies&lt;/strong>&lt;br />
+&lt;br />
+&lt;a href="https://github.com/sddm/sddm" target="_blank" rel="nofollow">SDDM  &amp;gt;= 0.18&lt;/a> &amp;amp; &lt;a href="https://doc.qt.io/archives/qt-5.11/index.html" target="_blank" rel="nofollow">Qt5 &amp;gt;= 5.11&lt;/a>&lt;br />
+&lt;br />
+Including: &lt;a href="https://doc.qt.io/archives/qt-5.11/qtquickcontrols2-index.html" target="_blank" rel="nofollow">Qt Quick Controls 2&lt;/a>, &lt;a href="https://doc.qt.io/archives/qt-5.11/qtgraphicaleffects-index.html" target="_blank" rel="nofollow">Qt Graphical Effects&lt;/a>, &lt;a href="https://doc.qt.io/archives/qt-5.11/qtsvg-index.html" target="_blank" rel="nofollow">Qt SVG&lt;/a>, &lt;a href="https://doc.qt.io/archives/qt-5.11/qtquicklayouts-index.html" target="_blank" rel="nofollow">Qt Quick Layouts&lt;/a> each &lt;strong>&amp;gt;= 5.11&lt;/strong>&lt;br />
+&lt;br />
+&lt;em>If the theme doesn't work by default make sure these are installed with their required version or higher—see below for distro specific package names! SDDM might need an enabled system service/daemon to work. This is often done automatically during installation. Take note that a lot of standard release distros like Debian, Mint, MX, Elementary, Deepin or Ubuntu LTS are still on earlier versions. If in doubt ask in your distros forums.&lt;/em>&lt;br />
+&lt;br />
+&lt;strong>Debian based&lt;/strong> distros using the &lt;strong>APT&lt;/strong> package manager:&lt;br />
+&lt;em>(Ubuntu/Kubuntu/Kali/Neon/antiX etc.)&lt;/em>&lt;br />
+&lt;code>&lt;span style="color: #000000">
+sudo&amp;nbsp;apt&amp;nbsp;install&amp;nbsp;‑‑no‑install‑recommends&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+sddm&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qml‑module‑qtquick‑layouts&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qml‑module‑qtgraphicaleffects&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qml‑module‑qtquick‑controls2&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+libqt5svg5&lt;/span>
+&lt;/code>&lt;br />
+&lt;br />
+&lt;strong>Arch based&lt;/strong> distros using the &lt;strong>pacman&lt;/strong> package manger:&lt;br />
+&lt;em>(Obarun/Artix/Manjaro/KaOS/Chakra etc.)&lt;/em>&lt;br />
+&lt;code>&lt;span style="color: #000000">
+sudo&amp;nbsp;pacman&amp;nbsp;-S&amp;nbsp;--needed&amp;nbsp;sddm&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qt5‑graphicaleffects&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qt5‑quickcontrols2&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qt5‑svg&lt;/span>
+&lt;/code>&lt;br />
+&lt;br />
+&lt;strong>openSUSE&lt;/strong> using the &lt;strong>zypper&lt;/strong> package manager:&lt;br />
+&lt;code>&lt;span style="color: #000000">
+sudo&amp;nbsp;zypper&amp;nbsp;install&amp;nbsp;sddm&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+libqt5‑qtgraphicaleffects&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+libqt5‑qtquickcontrols2&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+libQt5Svg5&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+libQt5Svg5&lt;/span>
+&lt;/code>&lt;br />
+&lt;br />
+&lt;strong>Red Hat&lt;/strong> based distros using the &lt;strong>dnf&lt;/strong> package manager:&lt;br />
+&lt;em>(Fedora/Mageia/RHEL/CentOS)&lt;/em>&lt;br />
+&lt;code>&lt;span style="color: #000000">
+sudo&amp;nbsp;dnf&amp;nbsp;install&amp;nbsp;sddm&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qt5‑qtgraphicaleffects&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qt5‑qtquickcontrols2&lt;/span>
+&lt;/code> &lt;code>&lt;span style="color: #000000">
+qt5‑qtsvg&lt;/span>
+&lt;/code>&lt;br />
+&lt;br />
+&lt;h2>&lt;strong>Configuration&lt;/strong>&lt;/h2>&lt;br />
+&lt;br />
+The sugar series is &lt;strong>extremely customizable&lt;/strong> by editing its included &lt;code>&lt;span style="color: #000000">
+theme.conf&lt;/span>
+&lt;/code> file or even better by overwriting default values in &lt;code>&lt;span style="color: #000000">
+theme.conf.user&lt;/span>
+&lt;/code>. You can change the colors and images used, the time and date formats, the appearance of the whole interface and even how it works.&lt;br />
+&lt;br />
+The exact path to the theme.conf file differs ever so slightly from distro to distro. Most common ones are /usr/lib/sddm/themes and /usr/share/sddm/themes. Please refer to your distros manual. &lt;strong>Overwrite default values in theme.conf.user&lt;/strong> instead of theme.conf &lt;strong>to prevent changes from being overwritten&lt;/strong> when I push an update.&lt;br />
+&lt;br />
+&lt;strong>Pro tip&lt;/strong>: It's super annoying to log out and back in every time you want to see a change made to the theme.conf file. To preview your changes from your running desktop environment session issue:  &lt;br />
+&lt;code>&lt;span style="color: #000000">
+sddm‑greeter&amp;nbsp;‑‑test‑mode&amp;nbsp;‑‑theme&amp;nbsp;/usr/share/sddm/themes/sugar‑candy&lt;/span>
+&lt;/code>&lt;br />
+&lt;br />
+And as if that wouldn't still be enough you can translate every single button and label because SDDM is still lacking behind with localization and clearly &lt;a href="https://github.com/sddm/sddm/wiki/Localization" target="_blank" rel="nofollow">needs your help&lt;/a>!&lt;br />
+&lt;br />
+&lt;strong>Background="Backgrounds/Mountain.jpg"&lt;/strong>  &lt;br />
+&lt;em>Path relative to the theme root directory. Most standard image file formats are allowed including support for transparency. (e.g. background.jpeg/illustration.GIF/Foto.png/undraw.svgz)&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>DimBackgroundImage="0.0"&lt;/strong>  &lt;br />
+&lt;em>Double between 0 and 1 used for the alpha channel of a darkening overlay. Use to darken your background image on the fly.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>ScaleImageCropped="true"&lt;/strong>  &lt;br />
+&lt;em>Whether the image should be cropped when scaled proportionally. Setting this to false will fit the whole image instead, possibly leaving white space. This can be exploited beautifully with illustrations (try it with "undraw.svg" included in the theme).&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>ScreenWidth="1440"&lt;/strong>  &lt;br />
+&lt;strong>ScreenHeight="900"&lt;/strong>  &lt;br />
+&lt;em>Adjust to your resolution to help SDDM speed up on calculations.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>FullBlur="false"&lt;/strong>  &lt;br />
+&lt;strong>PartialBlur="false"&lt;/strong>  &lt;br />
+&lt;em>Enable or disable the blur effect; if HaveFormBackground is set to true then PartialBlur will trigger the BackgroundColor of the form element to be partially transparent and blend with the blur.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>BlurRadius="100"&lt;/strong>  &lt;br />
+&lt;em>Set the strength of the blur effect. Anything above 100 is pretty strong and might slow down the rendering time. 0 is like setting false for any blur.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>HaveFormBackground="false"&lt;/strong>  &lt;br />
+&lt;em>Have a full opacity background color behind the form that takes slightly more than 1/3 of screen estate;  if PartialBlur is set to true then HaveFormBackground will trigger the BackgroundColor of the form element to be partially transparent and blend with the blur.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>FormPosition="center"&lt;/strong>  &lt;br />
+&lt;em>Position of the form which takes roughly 1/3 of screen estate. Can be left, center or right.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>BackgroundImageHAlignment="center"&lt;/strong>  &lt;br />
+&lt;em>Horizontal position of the background picture relative to its visible area. Applies when ScaleImageCropped is set to false or when HaveFormBackground is set to true and FormPosition is either left or right. Can be left, center or right; defaults to center if none is passed.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>BackgroundImageVAlignment="center"&lt;/strong>  &lt;br />
+&lt;em>As before but for the vertical position of the background picture relative to its visible area.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>MainColor="white"&lt;/strong>  &lt;br />
+&lt;em>Used for all elements when not focused/hovered etc. Usually the best effect is achieved by having this be either white or a very dark grey like [project]444[/project] (not black for smoother antialias). Colors can be HEX or Qt names (e.g. red/salmon/blanchedalmond). See &lt;a href="https://doc.qt.io/qt-5/qml-color.html" target="_blank" rel="nofollow">https://doc.qt.io/qt-5/qml-color.html&lt;/a>&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>AccentColor="#fb884f"&lt;/strong>  &lt;br />
+&lt;em>Used for elements in focus/hover/pressed. Should be contrasting to the background and the MainColor to achieve the best effect.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>BackgroundColor="#444"&lt;/strong>  &lt;br />
+&lt;em>Used for the user and session selection background as well as for ScreenPadding and FormBackground when either is true. If PartialBlur and FormBackground are both enabled this color will blend with the blur effect.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>OverrideLoginButtonTextColor=""&lt;/strong>  &lt;br />
+&lt;em>The text of the login button may become difficult to read depending on your color choices. Use this option to set it independently for legibility.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>InterfaceShadowSize="6"&lt;/strong>  &lt;br />
+&lt;em>Integer used as multiplier. Size of the shadow behind the user and session selection background. Decrease or increase if it looks bad on your background. Initial render can be slow for values above 5-7.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>InterfaceShadowOpacity="0.6"&lt;/strong>  &lt;br />
+&lt;em>Double between 0 and 1. Alpha channel of the shadow behind the user and session selection background. Decrease or increase if it looks bad on your background.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>RoundCorners="20"&lt;/strong>  &lt;br />
+&lt;em>Integer in pixels. Radius of the input fields and the login button. Empty for square. Can cause bad antialiasing of the fields.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>ScreenPadding="0"&lt;/strong>  &lt;br />
+&lt;em>Integer in pixels. Increase or delete this to have a padding of color BackgroundColor all around your screen. This makes your login greeter appear as if it was a canvas. Cool!&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>Font="Noto Sans"&lt;/strong>  &lt;br />
+&lt;em>If you want to choose a custom font it will have to be available to the X root user. See https://wiki.archlinux.org/index.php/fonts#Manual_installation&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>FontSize=""&lt;/strong>  &lt;br />
+&lt;em>Only set a fixed value if fonts are way too small for your resolution. Preferrably kept empty.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>ForceRightToLeft="false"&lt;/strong>  &lt;br />
+&lt;em>Revert the layout either because you would like the login to be on the right hand side or SDDM won't respect your language locale for some reason. This will reverse the current position of FormPosition if it is either left or right and in addition position some smaller elements on the right hand side of the form itself (also when FormPosition is set to center).&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>ForceLastUser="true"&lt;/strong>  &lt;br />
+&lt;em>Have the last successfully logged in user appear automatically in the username field.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>ForcePasswordFocus="true"&lt;/strong>  &lt;br />
+&lt;em>Give automatic focus to the password field. Together with ForceLastUser this makes for the fastest login experience.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>ForceHideCompletePassword="false"&lt;/strong>  &lt;br />
+&lt;em>If you don't like to see any character at all not even while being entered set this to true.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>AllowEmptyPassword="false"&lt;/strong>&lt;br />
+&lt;em>Enable login for users without a password. This is discouraged. Makes the login button always enabled.&lt;/em>&lt;br />
+&lt;br />
+&lt;strong>AllowBadUsernames="false"&lt;/strong>&lt;br />
+&lt;em>Do not change this! Uppercase letters are generally not allowed in usernames. This option is only for systems that differ from this standard! Also shows username as is instead of capitalized.&lt;/em>&lt;br />
+&lt;br />
+&lt;strong>Locale=""&lt;/strong>  &lt;br />
+&lt;em>The time and date locale should usually be set in your system settings. Only hard set this if something is not working by default or you want a seperate locale setting in your login screen.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>HourFormat="HH:mm"&lt;/strong>  &lt;br />
+&lt;em>Defaults to Locale.ShortFormat - Accepts "long" or a custom string like "hh:mm A". See http://doc.qt.io/qt-5/qml-qtqml-date.html&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>DateFormat="dddd, d of MMMM"&lt;/strong>  &lt;br />
+&lt;em>Defaults to Locale.LongFormat - Accepts "short" or a custom string like "dddd, d 'of' MMMM". See http://doc.qt.io/qt-5/qml-qtqml-date.html&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>HeaderText="Welcome!"&lt;/strong>  &lt;br />
+&lt;em>Header can be empty to not display any greeting at all. Keep it short.&lt;/em>  &lt;br />
+&lt;br />
+&lt;em>SDDM may lack proper translation for every element. Sugar defaults to SDDM translations. Please help translate SDDM as much as possible for your language: https://github.com/sddm/sddm/wiki/Localization. These are in order as they appear on screen.&lt;/em>  &lt;br />
+&lt;br />
+&lt;strong>TranslatePlaceholderUsername=""&lt;/strong>  &lt;br />
+&lt;strong>TranslatePlaceholderPassword=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateShowPassword=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateLogin=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateLoginFailedWarning=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateCapslockWarning=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateSession=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateSuspend=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateHibernate=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateReboot=""&lt;/strong>  &lt;br />
+&lt;strong>TranslateShutdown=""&lt;/strong>  &lt;br />
+&lt;em>These don't necessarily need to translate anything. You can enter whatever you want here.&lt;/em>  &lt;br />
+&lt;br />
+&lt;h2>&lt;strong>Legal Notice&lt;/strong>&lt;/h2>&lt;br />
+&lt;br />
+Copyright (C) 2018 Marian Arlt.  &lt;br />
+&lt;br />
+Sugar Candy is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.  &lt;br />
+&lt;br />
+Sugar Candy is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.  &lt;br />
+&lt;br />
+You should have received a copy of the GNU General Public License along with Sugar Candy. If not, see &lt;a href="https://www.gnu.org/licenses/" target="_blank" rel="nofollow">https://www.gnu.org/licenses/&lt;/a>.&lt;br />
+&lt;br />
+&lt;strong>Other awesome projects&lt;/strong>&lt;br />
+&lt;br />
+&lt;ul>&lt;li> &lt;a href="https://www.opendesktop.org/p/1214121" target="_blank" rel="nofollow">Chili—the hottest login theme for KDE Plasma&lt;/a>&lt;/li>&lt;li> &lt;a href="https://www.opendesktop.org/p/1240784" target="_blank" rel="nofollow">Chili stand-alone fork for SDDM only&lt;/a>&lt;/li>&lt;li> &lt;a href="https://www.opendesktop.org/p/1199822" target="_blank" rel="nofollow">Flat OSX like aurorae window decorations for your Linux desktop&lt;/a> and &lt;a href="https://www.opendesktop.org/p/1246756" target="_blank" rel="nofollow">its high contrast version&lt;/a>&lt;/li>&lt;li> &lt;a href="https://www.opendesktop.org/p/1228310" target="_blank" rel="nofollow">Finely crafted folder icons for Linux&lt;/a>&lt;/li>&lt;li> &lt;a href="https://www.opendesktop.org/p/1245902" target="_blank" rel="nofollow">Inline clock widget for KDE Plasma&lt;/a>&lt;/li>&lt;/ul>&lt;br />
+&lt;br />
+&lt;strong>Motivate a developer&lt;/strong>&lt;br />
+&lt;br />
+In the past years I have spent quite some hours on open source projects. If you are the type of person who digs attention to detail, know how much work is involved in it and/or simply likes to support makers with a coffee or a beer I would greatly appreciate your donation on my &lt;a href="https://www.paypal.me/marianarlt" target="_blank" rel="nofollow">PayPayl&lt;/a> account.  &lt;br />
+Alternatively downloading my themes directly from opendesktop or with the kde sddm system settings module will at least help me a little to be able to attend your issues and requests.  &lt;br />
+Please consider helping developers you think are worth a penny or two, literally.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/44/96/51/1312658/089f113ce5ee3c4a56389e40ad7752982f86.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/44/96/51/1312658/089f113ce5ee3c4a56389e40ad7752982f86.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1ODA1ODg4MzQiLCJvIjoiMSIsInMiOiI1YmZlNjA1YzUyMmEyMmUwZWYxMjJmM2I5M2FhYzU5NGRhMjFiYzI2YmYwZDZjZGNmYjk4MWI4MTlmODdiYjhiM2Y3MTg4YjAzNTkwYmQ3NDQ4NDRiMmZhOWNmMjRkYjM2NzIyODIxMjg0YmY2YjgwODNiYWM3OTUzZGM1N2NiMyIsInQiOjE3MjQwMjQ1MjYsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni4yMi45OC45NSJ9.6kwEm3PlYv5c1u4t8N4qgh08xvmLPDffv8H8zlnyaAw/sugar-candy.tar.gz</payload>
+  <tags>gplv3,linux,theme,sddm,unix,original-product,awesome</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

@@ -1,7 +1,7 @@
 [default-routes]
-alsa_card.pci-0000_0b_00.1:output:hdmi-output-0={"mute":false, "channelMap":["FL", "FR"], "latencyOffsetNsec":0, "channelVolumes":[0.063997, 0.063997], "iec958Codecs":[]}
+alsa_card.pci-0000_0b_00.1:output:hdmi-output-0={"channelVolumes":[0.063997, 0.063997], "mute":false, "iec958Codecs":[], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
 alsa_card.pci-0000_0b_00.1:profile:output:hdmi-stereo=["hdmi-output-0"]
-alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:input:analog-input-mic={"mute":false, "channelMap":["MONO"], "latencyOffsetNsec":0, "channelVolumes":[1.000000]}
+alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:input:analog-input-mic={"latencyOffsetNsec":0, "mute":false, "channelMap":["MONO"], "channelVolumes":[0.180072]}
 alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:profile:input:mono-fallback=["analog-input-mic"]
-alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:output:analog-output={"mute":false, "channelMap":["FL", "FR"], "latencyOffsetNsec":0, "channelVolumes":[1.000000, 1.000000]}
+alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:output:analog-output={"latencyOffsetNsec":0, "mute":false, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000]}
 alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:profile:output:analog-stereo+input:analog-stereo=["analog-output"]

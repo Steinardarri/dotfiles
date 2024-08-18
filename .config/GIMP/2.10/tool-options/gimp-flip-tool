@@ -1,0 +1,6 @@
+# GIMP gimp-flip-tool options
+
+(type selection)
+(flip-type vertical)
+
+# end of gimp-flip-tool options

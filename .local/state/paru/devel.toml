@@ -1,10 +1,6 @@
-[[reversal-icon-theme-git]]
-url = "https://github.com/yeyushengfan258/Reversal-icon-theme.git"
-commit = "bdae2ea365731b25a869fc2c8c6a1fb849eaf5b2"
-
-[[sevi-icon-theme-full]]
-url = "https://github.com/TaylanTatli/Sevi.git"
-commit = "7dfef5fcc65e117d5633ed04e80448f8786519f8"
+[[luv-icon-theme-git]]
+url = "https://github.com/Nitrux/luv-icon-theme.git"
+commit = "91b4e9e356b3782dae6db0d6a8023947311da5e4"
 
 [[uefi-shell-git]]
 url = "https://git.cryptomilk.org/projects/cmocka.git"

@@ -1,4 +1,4 @@
-// Vencord 5160f90
+// Vencord eaca14b
 // Standalone: true
 // Platform: Universal
 // Updater Disabled: false
