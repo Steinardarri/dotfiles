@@ -6,5 +6,6 @@ Recent URLs[$e]=file:///,file:///etc/pacman.d/,file:$HOME/Forrit/Script/HomeBack
 3 screens: Height=1412
 3 screens: Width=1280
 3 screens: Window-Maximized=true
+4 screens: Window-Maximized=true
 RestorePositionForNextInstance=false
 State=AAAA/wAAAAD9AAAAAAAACgAAAAU4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABoAGEAbQBiAHUAcgBnAGUAcgBCAGEAcgEAAAIZ/////wAAAAAAAAAA

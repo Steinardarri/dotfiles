@@ -89,6 +89,7 @@ Line Height Multiplier=1
 Show Indentation Lines=true
 Show Whole Bracket Expression=false
 Text Font=Hack Nerd Font,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+Text Font Features=
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -160,3 +161,4 @@ Search History=root=UUID=efa22b72-e264-4a0e-a658-a119241181b3 rd.luks.name=2be46
 3 screens: Height=1412
 3 screens: Width=1280
 3 screens: Window-Maximized=true
+4 screens: Window-Maximized=true

@@ -10,10 +10,13 @@
 *Telemetry*
 *UserFeedback*
 
-logs/
-Logs/
-Trash/
-trash/
+*logs*/
+*log*/
+*Logs*/
+*Trash*/
+*trash*/
+*tmp*/
+
 Steam/
 .zim/modules
 .floorp/**/extensions
