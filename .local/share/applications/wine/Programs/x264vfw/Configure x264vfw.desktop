@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Configure x264vfw
+Exec=env WINEPREFIX="/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/compatdata/429530/pfx" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\x264vfw\\\\Configure\\ x264vfw.lnk
+Type=Application
+StartupNotify=true
+Path=/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/compatdata/429530/pfx/dosdevices/c:/windows/syswow64
+Icon=40FE_x264vfw.0
+StartupWMClass=rundll32.exe

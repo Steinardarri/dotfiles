@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Timberborn
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1062090
+Icon=steam_icon_1062090
+Terminal=false
+Type=Application
+Categories=Game;

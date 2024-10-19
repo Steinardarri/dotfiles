@@ -1,0 +1,10 @@
+2024/09/29-16:32:50.958 3b4e6 Creating DB /home/steinardth/.config/Postman/Partitions/f30f378c-2a92-4ec9-9cd2-e74beb95b416/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2024/09/29-16:32:50.960 3b4e6 Reusing MANIFEST /home/steinardth/.config/Postman/Partitions/f30f378c-2a92-4ec9-9cd2-e74beb95b416/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2024/09/29-16:32:50.962 3b4e4 Level-0 table #5: started
+2024/09/29-16:32:50.963 3b4e4 Level-0 table #5: 494 bytes OK
+2024/09/29-16:32:50.964 3b4e4 Delete type=0 #3
+2024/09/29-16:32:50.964 3b4e4 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/09/29-16:32:50.981 3b4e4 Level-0 table #7: started
+2024/09/29-16:32:50.982 3b4e4 Level-0 table #7: 478 bytes OK
+2024/09/29-16:32:50.984 3b4e4 Delete type=0 #4
+2024/09/29-16:32:50.984 3b4e4 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

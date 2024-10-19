@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Arma 3
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/107410
+Icon=steam_icon_107410
+Terminal=false
+Type=Application
+Categories=Game;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Swarm Grinder
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1375900
+Icon=steam_icon_1375900
+Terminal=false
+Type=Application
+Categories=Game;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Soulash 2
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2399160
+Icon=steam_icon_2399160
+Terminal=false
+Type=Application
+Categories=Game;

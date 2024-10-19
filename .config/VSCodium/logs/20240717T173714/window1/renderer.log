@@ -1,6 +1,0 @@
-2024-07-17 17:37:15.504 [info] Started local extension host with pid 150458.
-2024-07-17 17:37:16.512 [error] spawn /home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/python-env-tools/bin/pet ENOENT: Error: spawn /home/steinardth/.vscode-oss/extensions/ms-python.python-2024.10.0-universal/python-env-tools/bin/pet ENOENT
-	at ChildProcess._handle.onexit (node:internal/child_process:286:19)
-	at onErrorNT (node:internal/child_process:484:16)
-	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-2024-07-17 17:37:42.131 [info] [perf] Render performance baseline is 20ms

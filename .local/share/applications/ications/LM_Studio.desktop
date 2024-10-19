@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=AI;LLM;
+Comment[en_GB]=Download, load and query LLM models
+Comment=Download, load and query LLM models
+Exec=/home/steinardth/Forrit/LM_Studio.AppImage
+GenericName[en_GB]=LLM Local Runner
+GenericName=LLM Local Runner
+Icon=/usr/share/icons/lm_studio.png
+Keywords=llm;ai;text generation;artificial intelligence;large language model
+MimeType=
+Name[en_GB]=LM Studio
+Name=LM Studio
+Path=
+PrefersNonDefaultGPU=true
+StartupNotify=true
+StartupWMClass=Blender
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-RunOnDiscreteGpu=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

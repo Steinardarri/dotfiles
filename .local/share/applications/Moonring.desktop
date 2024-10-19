@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Moonring
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2373630
+Icon=steam_icon_2373630
+Terminal=false
+Type=Application
+Categories=Game;

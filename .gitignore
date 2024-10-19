@@ -4,8 +4,16 @@
 *storage*
 *Storage*
 *STORAGE*
+*log*
+*Log*
+*telemetry*
+*Telemetry*
+*UserFeedback*
 
+logs/
+Logs/
 Trash/
+trash/
 Steam/
 .zim/modules
 .floorp/**/extensions
@@ -15,6 +23,14 @@ bottles/
 Daedalic Entertainment GmbH/
 vulkan/
 ktorrent/
-icons/hicolor
+icons/
 Proton Mail/
 places.sqlite
+lutris/
+Element/
+OpenRGB/
+watch-later/
+tool-options/
+unity3d/
+okular/docdata
+History/

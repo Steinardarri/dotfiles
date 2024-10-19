@@ -1,6 +1,8 @@
 [FileDialogSize]
 3 screens: Height=720
 3 screens: Width=1280
+4 screens: Height=720
+4 screens: Width=1280
 
 [General]
 Allow Tab Scrolling=true

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-cp $1 diff-dic1
-sed -i 's/[0-9]//g' diff-dic1
-sed 's/[0-9]//g' $2 | diff diff-dic1 -

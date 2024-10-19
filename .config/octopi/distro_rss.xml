@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>EndeavourOS</title>
+	<atom:link href="https://endeavouros.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://endeavouros.com/</link>
+	<description>A terminal-centric distro with a vibrant and friendly community at its core</description>
+	<lastBuildDate>Wed, 16 Oct 2024 07:16:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.2</generator>
+
+<image>
+	<url>https://i0.wp.com/endeavouros.com/wp-content/uploads/2020/10/endeavour-logo-sans-logotype_plein.png?fit=32%2C32&#038;ssl=1</url>
+	<title>EndeavourOS</title>
+	<link>https://endeavouros.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">163599352</site>	<item>
+		<title>Our refresh release, Endeavour Neo, is available</title>
+		<link>https://endeavouros.com/news/our-refresh-release-endeavour-neo-is-available/</link>
+					<comments>https://endeavouros.com/news/our-refresh-release-endeavour-neo-is-available/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Thu, 26 Sep 2024 07:08:32 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=15256</guid>
+
+					<description><![CDATA[<p>It was three months ago that our fifth-anniversary release, Endeavour, was released and with the upstream changes, we released this<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/our-refresh-release-endeavour-neo-is-available/">Our refresh release, Endeavour Neo, is available</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/our-refresh-release-endeavour-neo-is-available/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">15256</post-id>	</item>
+		<item>
+		<title>Our fifth anniversary, the return of ARM and the Endeavour release with Plasma 6.1 is here</title>
+		<link>https://endeavouros.com/news/our-fifth-anniversary-the-return-of-arm-and-the-endeavour-release-with-plasma-6-1-is-here/</link>
+					<comments>https://endeavouros.com/news/our-fifth-anniversary-the-return-of-arm-and-the-endeavour-release-with-plasma-6-1-is-here/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Sun, 30 Jun 2024 15:18:33 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=15084</guid>
+
+					<description><![CDATA[<p>It has been five years since four former Antergos moderators took the plunge into creating a distro without any knowledge<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/our-fifth-anniversary-the-return-of-arm-and-the-endeavour-release-with-plasma-6-1-is-here/">Our fifth anniversary, the return of ARM and the Endeavour release with Plasma 6.1 is here</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/our-fifth-anniversary-the-return-of-arm-and-the-endeavour-release-with-plasma-6-1-is-here/feed/</wfw:commentRss>
+			<slash:comments>23</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">15084</post-id>	</item>
+		<item>
+		<title>Plasma 6 with Wayland or X11 option and qt 6 ported Calamares, meet Gemini</title>
+		<link>https://endeavouros.com/news/plasma-6-with-wayland-or-x11-option-and-qt-6-ported-calamares-meet-gemini/</link>
+					<comments>https://endeavouros.com/news/plasma-6-with-wayland-or-x11-option-and-qt-6-ported-calamares-meet-gemini/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Tue, 23 Apr 2024 16:45:42 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=14947</guid>
+
+					<description><![CDATA[<p>Image by Smokey With the arrival of Plasma 6 and qt6, it was high time to celebrate them with a<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/plasma-6-with-wayland-or-x11-option-and-qt-6-ported-calamares-meet-gemini/">Plasma 6 with Wayland or X11 option and qt 6 ported Calamares, meet Gemini</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/plasma-6-with-wayland-or-x11-option-and-qt-6-ported-calamares-meet-gemini/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">14947</post-id>	</item>
+		<item>
+		<title>Goodbye EndeavourOS ARM</title>
+		<link>https://endeavouros.com/news/goodbye-endeavouros-arm/</link>
+					<comments>https://endeavouros.com/news/goodbye-endeavouros-arm/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2024 12:01:14 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=14935</guid>
+
+					<description><![CDATA[<p>When we started in 2019, we had a close community helping and cheering us on to get EndeavourOS up and<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/goodbye-endeavouros-arm/">Goodbye EndeavourOS ARM</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/goodbye-endeavouros-arm/feed/</wfw:commentRss>
+			<slash:comments>26</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">14935</post-id>	</item>
+		<item>
+		<title>Galileo Neo with Kernel 6.7.1, Plasma offline and Calamares fixes</title>
+		<link>https://endeavouros.com/news/galileo-neo-with-kernel-6-7-1-plasma-offline-and-calamares-fixes/</link>
+					<comments>https://endeavouros.com/news/galileo-neo-with-kernel-6-7-1-plasma-offline-and-calamares-fixes/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Sat, 27 Jan 2024 11:56:15 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=14759</guid>
+
+					<description><![CDATA[<p>A new kernel arrived, so it was time to refresh our Galileo ISO with Galileo Neo version 2024-01-25. Like previous<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/galileo-neo-with-kernel-6-7-1-plasma-offline-and-calamares-fixes/">Galileo Neo with Kernel 6.7.1, Plasma offline and Calamares fixes</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/galileo-neo-with-kernel-6-7-1-plasma-offline-and-calamares-fixes/feed/</wfw:commentRss>
+			<slash:comments>19</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">14759</post-id>	</item>
+		<item>
+		<title>We sincerely take our hats off to you Endeavournauts, Happy Holidays!</title>
+		<link>https://endeavouros.com/news/we-sincerely-take-our-hats-off-to-you-endeavournauts-happy-holidays/</link>
+					<comments>https://endeavouros.com/news/we-sincerely-take-our-hats-off-to-you-endeavournauts-happy-holidays/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Tue, 19 Dec 2023 21:39:52 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=13980</guid>
+
+					<description><![CDATA[<p>The other night, I watched a movie by the title The Man Who Invented Christmas and it got me thinking.<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/we-sincerely-take-our-hats-off-to-you-endeavournauts-happy-holidays/">We sincerely take our hats off to you Endeavournauts, Happy Holidays!</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/we-sincerely-take-our-hats-off-to-you-endeavournauts-happy-holidays/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">13980</post-id>	</item>
+		<item>
+		<title>Slimmer options but lean and in a new live environment, Galileo has arrived</title>
+		<link>https://endeavouros.com/news/slimmer-options-but-lean-and-in-a-new-live-environment-galileo-has-arrived/</link>
+					<comments>https://endeavouros.com/news/slimmer-options-but-lean-and-in-a-new-live-environment-galileo-has-arrived/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Mon, 20 Nov 2023 18:16:52 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=13604</guid>
+
+					<description><![CDATA[<p>It has taken a while to develop this release but we are still here and despite life throwing in extra<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/slimmer-options-but-lean-and-in-a-new-live-environment-galileo-has-arrived/">Slimmer options but lean and in a new live environment, Galileo has arrived</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/slimmer-options-but-lean-and-in-a-new-live-environment-galileo-has-arrived/feed/</wfw:commentRss>
+			<slash:comments>33</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">13604</post-id>	</item>
+		<item>
+		<title>Our Galileo release is delayed but here are the main changes you can expect</title>
+		<link>https://endeavouros.com/news/our-galileo-release-is-delayed-but-here-are-the-main-changes-you-can-expect/</link>
+					<comments>https://endeavouros.com/news/our-galileo-release-is-delayed-but-here-are-the-main-changes-you-can-expect/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Tue, 10 Oct 2023 09:36:06 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=12131</guid>
+
+					<description><![CDATA[<p>Our latest refresh ISO, Cassini Nova R3, released in September was supposed to be the last one under the Cassini<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/our-galileo-release-is-delayed-but-here-are-the-main-changes-you-can-expect/">Our Galileo release is delayed but here are the main changes you can expect</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/our-galileo-release-is-delayed-but-here-are-the-main-changes-you-can-expect/feed/</wfw:commentRss>
+			<slash:comments>16</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">12131</post-id>	</item>
+		<item>
+		<title>Cassini Nova R2 refresh ISO and a small insight on our development</title>
+		<link>https://endeavouros.com/news/cassini-nova-r2-refresh-iso-and-a-small-insight-on-our-development/</link>
+					<comments>https://endeavouros.com/news/cassini-nova-r2-refresh-iso-and-a-small-insight-on-our-development/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Mon, 05 Jun 2023 12:40:42 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=11163</guid>
+
+					<description><![CDATA[<p>It&#8217;s been a while since we have been in touch with you, so I thought it was time to give<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/cassini-nova-r2-refresh-iso-and-a-small-insight-on-our-development/">Cassini Nova R2 refresh ISO and a small insight on our development</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/cassini-nova-r2-refresh-iso-and-a-small-insight-on-our-development/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">11163</post-id>	</item>
+		<item>
+		<title>Cassini Nova with some necessary bugfixes is available</title>
+		<link>https://endeavouros.com/news/cassini-nova-with-some-necessary-bugfixes-is-available/</link>
+					<comments>https://endeavouros.com/news/cassini-nova-with-some-necessary-bugfixes-is-available/#comments</comments>
+		
+		<dc:creator><![CDATA[Bryanpwo]]></dc:creator>
+		<pubDate>Wed, 08 Mar 2023 14:54:08 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">https://endeavouros.com/?p=10527</guid>
+
+					<description><![CDATA[<p>After less than a month, after Cassini Neo was released, we present you with Cassini Nova which ships with minor<span class="more-dots">...</span></p>
+<p>The post <a href="https://endeavouros.com/news/cassini-nova-with-some-necessary-bugfixes-is-available/">Cassini Nova with some necessary bugfixes is available</a> appeared first on <a href="https://endeavouros.com">EndeavourOS</a>.</p>
+]]></description>
+		
+					<wfw:commentRss>https://endeavouros.com/news/cassini-nova-with-some-necessary-bugfixes-is-available/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">10527</post-id>	</item>
+	</channel>
+</rss>

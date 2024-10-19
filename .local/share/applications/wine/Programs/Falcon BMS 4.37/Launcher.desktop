@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Launcher
+Exec=env WINEPREFIX="/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/compatdata/429530/pfx" wine C:\\\\users\\\\steinardth\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Falcon\\ BMS\\ 4.37\\\\Launcher.lnk
+Type=Application
+StartupNotify=true
+Path=/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/compatdata/429530/pfx/dosdevices/c:/Falcon_BMS_4.37/Launcher
+Icon=D2C0_FalconBMS_Alternative_Launcher.0
+StartupWMClass=falconbms_alternative_launcher.exe

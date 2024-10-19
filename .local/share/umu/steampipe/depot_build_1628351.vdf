@@ -1,0 +1,51 @@
+"DepotBuildConfig"
+{
+	"DepotID" "1628351"
+	"FileMapping"
+	{
+		"LocalPath" "../README.md"
+		"DepotPath" "."
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../VERSIONS.txt"
+		"DepotPath" "."
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../_v2-entry-point"
+		"DepotPath" "."
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../mtree.txt.gz"
+		"DepotPath" "."
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../pressure-vessel/*"
+		"DepotPath" "pressure-vessel/"
+		"recursive" "1"
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../run"
+		"DepotPath" "."
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../run-in-sniper"
+		"DepotPath" "."
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../sniper_platform_0.20241008.104210/*"
+		"DepotPath" "sniper_platform_0.20241008.104210/"
+		"recursive" "1"
+	}
+	"FileMapping"
+	{
+		"LocalPath" "../toolmanifest.vdf"
+		"DepotPath" "."
+	}
+}

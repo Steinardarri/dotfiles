@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Uninstall x264vfw
+Exec=env WINEPREFIX="/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/compatdata/429530/pfx" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\x264vfw\\\\Uninstall\\ x264vfw.lnk
+Type=Application
+StartupNotify=true
+Path=/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/compatdata/429530/pfx/dosdevices/c:/Program Files (x86)/x264vfw
+Icon=E41C_x264vfw-uninstall.0
+StartupWMClass=x264vfw-uninstall.exe

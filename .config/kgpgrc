@@ -1,0 +1,14 @@
+[Editor]
+ToolBarsMovable=Disabled
+
+[GPG Settings]
+gpg_config_path[$e]=$HOME/.gnupg/gpg.conf
+
+[General Options]
+First run=false
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[User Interface]
+AutoStart=true

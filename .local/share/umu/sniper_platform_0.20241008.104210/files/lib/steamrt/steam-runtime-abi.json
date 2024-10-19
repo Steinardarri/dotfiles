@@ -1,0 +1,1970 @@
+{
+ "  GENERATED FILE, DO NOT EDIT": true,
+ "architectures": {
+  "i386-linux-gnu": {
+   "dpkg_name": "i386",
+   "subset": true
+  },
+  "x86_64-linux-gnu": {
+   "dpkg_name": "amd64"
+  }
+ },
+ "extra_debs": {
+  "libs": [
+   "dconf-gsettings-backend",
+   "libasound2-plugins",
+   "libcapsule-tools-relocatable",
+   "libdecor-0-plugin-1-cairo",
+   "libgl1-mesa-dri",
+   "libnss-myhostname",
+   "libsteam-runtime-tools-0-helpers",
+   "pipewire"
+  ]
+ },
+ "private_libraries": [
+  {
+   "libinproctrace.so": {
+    "deb": "gdbserver"
+   }
+  },
+  {
+   "libVkLayer_*.so": {
+    "deb": "libvulkan1"
+   }
+  },
+  {
+   "libpulsecommon-*.so": {
+    "deb": "libpulse0"
+   }
+  },
+  {
+   "libnss_*.so.2": {
+    "deb": "libc6"
+   }
+  }
+ ],
+ "shared_libraries": [
+  {
+   "libglut.so.3": {
+    "deb": "freeglut3",
+    "multiarch": true
+   }
+  },
+  {
+   "libacl.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libasound.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libasyncns.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libatk-1.0.so.0": {
+    "deb": "libatk1.0-0",
+    "multiarch": true
+   }
+  },
+  {
+   "libatomic.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libattr.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libblas.so.3": {
+    "deb": "libopenblas0-pthread",
+    "multiarch": true
+   }
+  },
+  {
+   "libbz2.so.1.0": {
+    "aliases": [
+     "libbz2.so.1"
+    ],
+    "deb": "libbz2-1.0",
+    "multiarch": true
+   }
+  },
+  {
+   "libcairo.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libcap.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libCg.so": {
+    "multiarch": true
+   }
+  },
+  {
+   "libCgGL.so": {
+    "hidden_dependencies": [
+     "libGL.so.1"
+    ],
+    "multiarch": true
+   }
+  },
+  {
+   "libc.so.6": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libBrokenLocale.so.1": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libanl.so.1": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libdl.so.2": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libm.so.6": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libnsl.so.1": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libpthread.so.0": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libresolv.so.2": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "librt.so.1": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libthread_db.so.1": {
+    "check_loadable": false,
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true
+   }
+  },
+  {
+   "libutil.so.1": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libc6",
+    "from_host_system": true,
+    "generate_dependency": false,
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!GCC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!*@GLIBC_PRIVATE",
+     "!malloc_get_state@*",
+     "!malloc_set_state@*",
+     "*@GLIBC_*",
+     "!*@GCC_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libcrypt.so.1": {
+    "compare_by": [
+     "versions",
+     "symbols",
+     "name"
+    ],
+    "deb": "libcrypt1",
+    "multiarch": true,
+    "public_symbol_versions": [
+     "XCRYPT_*",
+     "!GLIBC_PRIVATE",
+     "GLIBC_*",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libcups.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libcurl.so.4": {
+    "multiarch": true,
+    "public_symbol_versions": [
+     "CURL_OPENSSL_4",
+     "!HIDDEN",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!curl_jmpenv",
+     "curl_*",
+     "!Curl_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libcurl-gnutls.so.4": {
+    "aliases": [
+     "libcurl-gnutls.so.3"
+    ],
+    "deb": "libcurl3-gnutls",
+    "multiarch": true,
+    "public_symbol_versions": [
+     "CURL_GNUTLS_3",
+     "!HIDDEN",
+     "!",
+     "!*"
+    ],
+    "public_symbols": [
+     "!curl_jmpenv",
+     "curl_*",
+     "!Curl_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libdbus-1.so.3": {
+    "multiarch": true,
+    "public_symbol_versions": [
+     "!LIBDBUS_PRIVATE_*",
+     "LIBDBUS_1_3",
+     "!",
+     "*"
+    ],
+    "public_symbols": [
+     "!_dbus_*",
+     "!dbus_internal_*",
+     "dbus_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libdrm.so.2": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "!drmAllocCpy",
+     "!drmModeReplaceFB",
+     "!drmSetDebugMsgFunction",
+     "drm*",
+     "!",
+     "*"
+    ]
+   }
+  },
+  {
+   "libdrm_amdgpu.so.1": {
+    "compare_by": [
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "amdgpu_*",
+     "!",
+     "*"
+    ]
+   }
+  },
+  {
+   "libdrm_intel.so.1": {
+    "compare_by": [
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "!drm_mm*",
+     "drm_intel_*",
+     "!",
+     "*"
+    ]
+   }
+  },
+  {
+   "libdrm_nouveau.so.2": {
+    "compare_by": [
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "!abi16_*",
+     "!nouveau_debug",
+     "!nouveau_object_find",
+     "nouveau_*",
+     "!",
+     "*"
+    ]
+   }
+  },
+  {
+   "libdrm_radeon.so.1": {
+    "compare_by": [
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "!bof_*",
+     "radeon_*",
+     "!",
+     "*"
+    ]
+   }
+  },
+  {
+   "libdxvk_dxgi.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libdxvk_d3d8.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libdxvk_d3d9.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libdxvk_d3d10core.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libdxvk_d3d11.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libedit.so.2": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "!__ct*",
+     "!c_*",
+     "!ce_*",
+     "!ch_*",
+     "!ct_*",
+     "!cv_*",
+     "!ed_*",
+     "!el_editmode",
+     "!el_match",
+     "!el_read*",
+     "!em_*",
+     "!fgetln",
+     "!fn_complete2",
+     "!func__get",
+     "!help__get",
+     "!hist_*",
+     "!keymacro_*",
+     "!libedit_*",
+     "!map_*",
+     "!nvis",
+     "!parse_*",
+     "!prompt_*",
+     "!re_*",
+     "!read_finish",
+     "!read_init",
+     "!read_prepare",
+     "!reallocarr",
+     "!rl_did_startup_hook",
+     "!rl_prompt_saved",
+     "!search_*",
+     "!sig_*",
+     "!snvis",
+     "!str*",
+     "!svis",
+     "!terminal_*",
+     "!tty_*",
+     "!unvis",
+     "!vi_*",
+     "!vis",
+     "!wcsdup",
+     "_el_fn_complete",
+     "_el_fn_sh_complete",
+     "_rl_*",
+     "add_history",
+     "append_history",
+     "clear_history",
+     "completion_matches",
+     "current_history",
+     "el_*",
+     "emacs_*",
+     "filename_completion_function",
+     "fn_*",
+     "free_history_entry",
+     "get_history_event",
+     "history",
+     "history_*",
+     "max_input_history",
+     "next_history",
+     "previous_history",
+     "read_history",
+     "readline",
+     "readline_echoing_p",
+     "remove_history",
+     "replace_history_entry",
+     "rl_*",
+     "stifle_history",
+     "tilde_expand",
+     "tok_*",
+     "unstifle_history",
+     "username_completion_function",
+     "using_history",
+     "where_history",
+     "write_history",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libelf.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libexif.so.12": {
+    "multiarch": true
+   }
+  },
+  {
+   "libexpat.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libexpatw.so.1": {
+    "deb": "libexpat1",
+    "multiarch": true
+   }
+  },
+  {
+   "libexslt.so.0": {
+    "deb": "libxslt1.1",
+    "multiarch": true
+   }
+  },
+  {
+   "libffi.so.7": {
+    "multiarch": true
+   }
+  },
+  {
+   "libFLAC.so.8": {
+    "multiarch": true
+   }
+  },
+  {
+   "libfl.so.2": {
+    "check_loadable": false,
+    "multiarch": true
+   }
+  },
+  {
+   "libfltk.so.1.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libfltk_forms.so.1.1": {
+    "deb": "libfltk1.1",
+    "multiarch": true
+   }
+  },
+  {
+   "libfltk_gl.so.1.1": {
+    "deb": "libfltk1.1",
+    "multiarch": true
+   }
+  },
+  {
+   "libfltk_images.so.1.1": {
+    "deb": "libfltk1.1",
+    "multiarch": true
+   }
+  },
+  {
+   "libfontconfig.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libfreetype.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgcc_s.so.1": {
+    "compare_by": [
+     "versions",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbol_versions": [
+     "*"
+    ],
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libgcrypt.so.20": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgdk_pixbuf-2.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libGL.so.1": {
+    "from_host_system": true,
+    "multiarch": true
+   }
+  },
+  {
+   "libGLEW.so.2.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgio-2.0.so.0": {
+    "deb": "libglib2.0-0",
+    "multiarch": true
+   }
+  },
+  {
+   "libglib-2.0.so.0": {
+    "deb": "libglib2.0-0",
+    "multiarch": true,
+    "public_symbols": [
+     "!glib__private__",
+     "!glib_gettext",
+     "!g_set_user_dirs",
+     "!__glib_*",
+     "g_*",
+     "glib_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libgmodule-2.0.so.0": {
+    "deb": "libglib2.0-0",
+    "multiarch": true,
+    "public_symbols": [
+     "g_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libgobject-2.0.so.0": {
+    "deb": "libglib2.0-0",
+    "multiarch": true,
+    "public_symbols": [
+     "g_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libgthread-2.0.so.0": {
+    "deb": "libglib2.0-0",
+    "multiarch": true,
+    "public_symbols": [
+     "g_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libGLU.so.1": {
+    "deb": "libglu1-mesa",
+    "multiarch": true
+   }
+  },
+  {
+   "libgmp.so.10": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgnutls.so.30": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgomp.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgpg-error.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgdk-3.so.0": {
+    "deb": "libgtk-3-0",
+    "multiarch": true
+   }
+  },
+  {
+   "libgtk-3.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libgudev-1.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libibus-1.0.so.5": {
+    "multiarch": true
+   }
+  },
+  {
+   "libICE.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libidn2.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libitm.so.1": {
+    "hidden_dependencies": [
+     "libstdc++.so.6"
+    ],
+    "multiarch": true
+   }
+  },
+  {
+   "libjack.so.0": {
+    "deb": "libjack-jackd2-0",
+    "multiarch": true
+   }
+  },
+  {
+   "libjacknet.so.0": {
+    "deb": "libjack-jackd2-0",
+    "multiarch": true
+   }
+  },
+  {
+   "libjpeg.so.62": {
+    "deb": "libjpeg62-turbo",
+    "multiarch": true
+   }
+  },
+  {
+   "libjson-glib-1.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "liblapack.so.3": {
+    "deb": "libopenblas0-pthread",
+    "multiarch": true
+   }
+  },
+  {
+   "liblcms2.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libmpg123.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libncurses.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libform.so.6": {
+    "deb": "libncurses6",
+    "multiarch": true
+   }
+  },
+  {
+   "libpanel.so.6": {
+    "deb": "libncurses6",
+    "multiarch": true
+   }
+  },
+  {
+   "libmenu.so.6": {
+    "deb": "libncurses6",
+    "multiarch": true
+   }
+  },
+  {
+   "libncursesw.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libformw.so.6": {
+    "deb": "libncursesw6",
+    "multiarch": true
+   }
+  },
+  {
+   "libpanelw.so.6": {
+    "deb": "libncursesw6",
+    "multiarch": true
+   }
+  },
+  {
+   "libmenuw.so.6": {
+    "deb": "libncursesw6",
+    "multiarch": true
+   }
+  },
+  {
+   "libnotify.so.4": {
+    "multiarch": true
+   }
+  },
+  {
+   "libnspr4.so": {
+    "multiarch": true
+   }
+  },
+  {
+   "libnss3.so": {
+    "multiarch": true
+   }
+  },
+  {
+   "libnssutil3.so": {
+    "deb": "libnss3",
+    "multiarch": true
+   }
+  },
+  {
+   "libOSMesa.so.8": {
+    "aliases": [
+     "libOSMesa.so.6"
+    ],
+    "deb": "libosmesa6",
+    "multiarch": true
+   }
+  },
+  {
+   "libogg.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libopenal.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libopenblas.so.0": {
+    "deb": "libopenblas0-pthread",
+    "multiarch": true
+   }
+  },
+  {
+   "libopus.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libopusfile.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libopusurl.so.0": {
+    "deb": "libopusfile0",
+    "multiarch": true
+   }
+  },
+  {
+   "libp11-kit.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpango-1.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpangocairo-1.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpangoft2-1.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpangoxft-1.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpci.so.3": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpcre.so.3": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpcreposix.so.3": {
+    "deb": "libpcre3",
+    "multiarch": true
+   }
+  },
+  {
+   "libpipewire-0.3.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpixman-1.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libplc4.so": {
+    "deb": "libnspr4",
+    "multiarch": true
+   }
+  },
+  {
+   "libplds4.so": {
+    "deb": "libnspr4",
+    "multiarch": true
+   }
+  },
+  {
+   "libpng16.so.16": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpulse.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libpulse-simple.so.0": {
+    "deb": "libpulse0",
+    "multiarch": true
+   }
+  },
+  {
+   "libQt5Core.so.5": {
+    "deb": "libqt5core5a"
+   }
+  },
+  "libQt5Gui.so.5",
+  "libQt5Network.so.5",
+  "libQt5OpenGL.so.5",
+  "libQt5PrintSupport.so.5",
+  "libQt5Svg.so.5",
+  "libQt5Widgets.so.5",
+  "libQt5X11Extras.so.5",
+  {
+   "libquadmath.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libsamplerate.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libSDL2-2.0.so.0": {
+    "multiarch": true,
+    "public_symbols": [
+     "SDL_*",
+     "!org_kde_kwin_*",
+     "!qt_*",
+     "!wl_*",
+     "!xdg_*",
+     "!zwp_*",
+     "!zxdg_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libSDL2_image-2.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libSDL2_mixer-2.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libSDL2_net-2.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libSDL2_ttf-2.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libselinux.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libSM.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libsmime3.so": {
+    "deb": "libnss3",
+    "multiarch": true
+   }
+  },
+  {
+   "libsndfile.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libsoup-2.4.so.1": {
+    "deb": "libsoup2.4-1",
+    "multiarch": true
+   }
+  },
+  {
+   "libspeex.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libspeexdsp.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libsqlite3.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libcrypto.so.1.1": {
+    "deb": "libssl1.1",
+    "multiarch": true
+   }
+  },
+  {
+   "libssl.so.1.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libssl3.so": {
+    "deb": "libnss3",
+    "multiarch": true
+   }
+  },
+  {
+   "libstdc++.so.6": {
+    "compare_by": [
+     "versions"
+    ],
+    "multiarch": true
+   }
+  },
+  {
+   "libsteam-runtime-tools-0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libtasn1.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libtbb.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libtbbmalloc.so.2": {
+    "deb": "libtbb2",
+    "multiarch": true
+   }
+  },
+  {
+   "libtbbmalloc_proxy.so.2": {
+    "deb": "libtbb2",
+    "multiarch": true
+   }
+  },
+  {
+   "libtheora.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libtheoradec.so.1": {
+    "deb": "libtheora0",
+    "multiarch": true
+   }
+  },
+  {
+   "libtheoraenc.so.1": {
+    "deb": "libtheora0",
+    "hidden_dependencies": [
+     "libtheoradec.so.1"
+    ],
+    "multiarch": true
+   }
+  },
+  {
+   "libtiff.so.5": {
+    "multiarch": true
+   }
+  },
+  {
+   "libtinfo.so.6": {
+    "compare_by": [
+     "versions"
+    ],
+    "multiarch": true
+   }
+  },
+  {
+   "libtic.so.6": {
+    "deb": "libtinfo6",
+    "multiarch": true
+   }
+  },
+  {
+   "libudev.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libusb-1.0.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libuuid.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libv4l2.so.0": {
+    "deb": "libv4l-0",
+    "multiarch": true
+   }
+  },
+  {
+   "libva-drm.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libva-glx.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libva-x11.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libva-wayland.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libva.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvdpau.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvkd3d-shader.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvkd3d-utils.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvkd3d.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvorbis.so.0": {
+    "deb": "libvorbis0a",
+    "multiarch": true
+   }
+  },
+  {
+   "libvorbisenc.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvorbisfile.so.3": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvpx.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libvulkan.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libwaffle-1.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libwayland-client.so.0": {
+    "compare_by": [
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "!wl_map_for_each",
+     "!wl_map_init",
+     "!wl_map_insert_at",
+     "!wl_map_insert_new",
+     "!wl_map_lookup",
+     "!wl_map_lookup_flags",
+     "!wl_map_release",
+     "!wl_map_remove",
+     "!wl_map_reserve_new",
+     "wl_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libwebp.so.6": {
+    "compare_by": [
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "VP8*",
+     "WebP*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libwrap.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libX11.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libX11-xcb.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXau.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXaw.so.7": {
+    "aliases": [
+     "libXaw7.so.7"
+    ],
+    "multiarch": true
+   }
+  },
+  {
+   "libxcb-composite.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_composite_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-damage.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_damage_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-dpms.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_dpms_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-dri2.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_dri2_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-dri3.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-glx.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-present.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-randr.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-record.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_record_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-render.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-res.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_res_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-screensaver.so.0": {
+    "multiarch": true
+   }
+  },
+  {
+   "libxcb-shape.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-shm.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_shm_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-sync.so.1": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-xf86dri.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_xf86dri_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-xfixes.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxcb-xinerama.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_xinerama_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-xinput.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_input_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-xkb.so.1": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "!xcb_xkb_get_map_map_alignment_pad",
+     "!xcb_xkb_get_map_map_alignment_pad_2",
+     "!xcb_xkb_get_map_map_alignment_pad_2_end",
+     "!xcb_xkb_get_map_map_alignment_pad_2_length",
+     "!xcb_xkb_get_map_map_alignment_pad_3",
+     "!xcb_xkb_get_map_map_alignment_pad_3_end",
+     "!xcb_xkb_get_map_map_alignment_pad_3_length",
+     "!xcb_xkb_get_map_map_alignment_pad_4",
+     "!xcb_xkb_get_map_map_alignment_pad_4_end",
+     "!xcb_xkb_get_map_map_alignment_pad_4_length",
+     "!xcb_xkb_get_map_map_alignment_pad_end",
+     "!xcb_xkb_get_map_map_alignment_pad_length",
+     "!xcb_xkb_get_names_value_list_alignment_pad",
+     "!xcb_xkb_get_names_value_list_alignment_pad_end",
+     "!xcb_xkb_get_names_value_list_alignment_pad_length",
+     "xcb_xkb_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-xtest.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_test_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-xv.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_xv_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb-xvmc.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "xcb_xvmc_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxcb.so.1": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "*"
+    ]
+   }
+  },
+  {
+   "libxkbcommon.so.0": {
+    "compare_by": [
+     "versions",
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbol_versions": [
+     "V_*",
+     "!",
+     "*"
+    ],
+    "public_symbols": [
+     "xkb_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libxkbcommon-x11.so.0": {
+    "compare_by": [
+     "versions",
+     "name",
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbol_versions": [
+     "V_*",
+     "!",
+     "*"
+    ],
+    "public_symbols": [
+     "xkb_x11_*",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libXNVCtrl.so.0": {
+    "compare_by": [
+     "symbols"
+    ],
+    "multiarch": true,
+    "public_symbols": [
+     "XNVCTRL*",
+     "XNVCtrl*",
+     "!pNV_ID",
+     "!NV_ID",
+     "!",
+     "!*"
+    ]
+   }
+  },
+  {
+   "libXcomposite.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXcursor.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXdamage.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXdmcp.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXext.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXfixes.so.3": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXft.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXi.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXinerama.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libxml2.so.2": {
+    "deb": "libxml2",
+    "multiarch": true
+   }
+  },
+  {
+   "libXmu.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXpm.so.4": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXpresent.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXrandr.so.2": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXrender.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libxslt.so.1": {
+    "deb": "libxslt1.1",
+    "multiarch": true
+   }
+  },
+  {
+   "libXss.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXt.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXtst.so.6": {
+    "multiarch": true
+   }
+  },
+  {
+   "libXxf86vm.so.1": {
+    "multiarch": true
+   }
+  },
+  {
+   "libz.so.1": {
+    "deb": "zlib1g",
+    "multiarch": true
+   }
+  }
+ ]
+}

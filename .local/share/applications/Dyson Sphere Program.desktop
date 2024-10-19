@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Dyson Sphere Program
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1366540
+Icon=steam_icon_1366540
+Terminal=false
+Type=Application
+Categories=Game;
