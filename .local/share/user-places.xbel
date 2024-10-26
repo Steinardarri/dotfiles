@@ -138,7 +138,7 @@
  <separator>
   <info>
    <metadata owner="http://www.kde.org">
-    <UDI>/org/freedesktop/UDisks2/block_devices/dm_2d1</UDI>
+    <UDI>/org/freedesktop/UDisks2/block_devices/dm_2d0</UDI>
     <isSystemItem>true</isSystemItem>
     <uuid>efa22b72-e264-4a0e-a658-a119241181b3</uuid>
    </metadata>
@@ -212,7 +212,7 @@
  <separator>
   <info>
    <metadata owner="http://www.kde.org">
-    <UDI>/org/freedesktop/UDisks2/block_devices/sde1</UDI>
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdf1</UDI>
     <isSystemItem>true</isSystemItem>
     <uuid>67e6-34b5</uuid>
    </metadata>
@@ -268,6 +268,62 @@
     <UDI>/org/freedesktop/UDisks2/block_devices/sdf1</UDI>
     <isSystemItem>true</isSystemItem>
     <uuid>4e21-0000</uuid>
+   </metadata>
+  </info>
+ </separator>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdd1</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>5c98468a-b97b-42e3-a699-9e7829d36bf8</uuid>
+   </metadata>
+  </info>
+ </separator>
+ <bookmark href="file:///usr/lib/modules">
+  <title>modules</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1729390372/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdf1</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>2d56-fa04</uuid>
+   </metadata>
+  </info>
+ </separator>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdf2</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>223c-f3f8</uuid>
+   </metadata>
+  </info>
+ </separator>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdc2</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>c01e827a1e82696c</uuid>
+   </metadata>
+  </info>
+ </separator>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/sdc2</UDI>
+    <isSystemItem>true</isSystemItem>
+    <uuid>ce042158042144b5</uuid>
    </metadata>
   </info>
  </separator>

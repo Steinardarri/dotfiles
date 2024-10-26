@@ -4,7 +4,7 @@
             {
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
-                "colorProfileSource": "sRGB",
+                "colorProfileSource": "EDID",
                 "connectorName": "DP-1",
                 "edidHash": "d8afb3fa5cdb98feeec4d2d342b1467e",
                 "edidIdentifier": "SAM 28794 810178353 4 2022 0",
@@ -27,10 +27,8 @@
             {
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
-                "colorProfileSource": "sRGB",
+                "colorProfileSource": "EDID",
                 "connectorName": "DP-2",
-                "edidHash": "7cbac1fedc17f662c35c916d6b840a41",
-                "edidIdentifier": "LEN 26110 0 47 2019 0",
                 "highDynamicRange": false,
                 "iccProfilePath": "",
                 "mode": {
@@ -50,7 +48,7 @@
             {
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
-                "colorProfileSource": "sRGB",
+                "colorProfileSource": "EDID",
                 "connectorName": "DP-3",
                 "edidHash": "a9f6bd2efca311e8b2786905dd2c9db4",
                 "edidIdentifier": "BNQ 30885 21573 42 2011 0",
@@ -83,6 +81,52 @@
                     "width": 1024
                 },
                 "overscan": 0,
+                "rgbRange": "Automatic",
+                "scale": 1,
+                "sdrBrightness": 200,
+                "sdrGamutWideness": 0,
+                "transform": "Normal",
+                "vrrPolicy": "Automatic",
+                "wideColorGamut": false
+            },
+            {
+                "autoRotation": "InTabletMode",
+                "brightness": 1,
+                "colorProfileSource": "EDID",
+                "connectorName": "DP-2",
+                "edidHash": "7cbac1fedc17f662c35c916d6b840a41",
+                "edidIdentifier": "LEN 26110 0 47 2019 0",
+                "highDynamicRange": false,
+                "iccProfilePath": "",
+                "mode": {
+                    "height": 1080,
+                    "refreshRate": 143999,
+                    "width": 1920
+                },
+                "overscan": 0,
+                "rgbRange": "Automatic",
+                "scale": 1,
+                "sdrBrightness": 200,
+                "sdrGamutWideness": 0,
+                "transform": "Normal",
+                "vrrPolicy": "Automatic",
+                "wideColorGamut": false
+            },
+            {
+                "autoRotation": "InTabletMode",
+                "brightness": 1,
+                "colorProfileSource": "EDID",
+                "connectorName": "HDMI-A-1",
+                "edidHash": "682cbd52ee5f24b7dca78690791890f7",
+                "edidIdentifier": "GSM 1 16843009 2 2009 0",
+                "highDynamicRange": false,
+                "iccProfilePath": "",
+                "mode": {
+                    "height": 1080,
+                    "refreshRate": 60000,
+                    "width": 1920
+                },
+                "overscan": 2,
                 "rgbRange": "Automatic",
                 "scale": 1,
                 "sdrBrightness": 200,
@@ -162,6 +206,212 @@
                             "y": 0
                         },
                         "priority": 0
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 2,
+                        "position": {
+                            "x": 2560,
+                            "y": 0
+                        },
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 1,
+                        "position": {
+                            "x": 2560,
+                            "y": 0
+                        },
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 2,
+                        "position": {
+                            "x": 0,
+                            "y": 360
+                        },
+                        "priority": 2
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 1920,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 4,
+                        "position": {
+                            "x": 4480,
+                            "y": 360
+                        },
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 2,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 4,
+                        "position": {
+                            "x": 1920,
+                            "y": 0
+                        },
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 3840,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 4,
+                        "position": {
+                            "x": 6400,
+                            "y": 360
+                        },
+                        "priority": 1
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 2,
+                        "position": {
+                            "x": 1920,
+                            "y": 360
+                        },
+                        "priority": 2
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 5,
+                        "position": {
+                            "x": 0,
+                            "y": 360
+                        },
+                        "priority": 3
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 4,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 2,
+                        "position": {
+                            "x": 1920,
+                            "y": 0
+                        },
+                        "priority": 1
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 5,
+                        "position": {
+                            "x": 3840,
+                            "y": 0
+                        },
+                        "priority": 2
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 2,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 0
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 5,
+                        "position": {
+                            "x": 1920,
+                            "y": 0
+                        },
+                        "priority": 1
+                    },
+                    {
+                        "enabled": true,
+                        "outputIndex": 0,
+                        "position": {
+                            "x": 3840,
+                            "y": 0
+                        },
+                        "priority": 2
                     }
                 ]
             }

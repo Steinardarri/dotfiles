@@ -19,7 +19,7 @@ LatitudeFixed=63.902671152563585
 LongitudeFixed=-21.573956749688648
 Mode=Location
 MorningBeginFixed=0800
-NightTemperature=3400
+NightTemperature=3200
 
 [Plugins]
 kwin4_effect_glitchEnabled=true
@@ -34,6 +34,9 @@ ShowDesktopMode=1
 padding=4
 
 [Tiling][27903b1e-3db1-50f7-9e43-aaccb354d67a]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][af860c52-7a29-5937-8116-433ad3f3e4f8]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][d02c035d-eef0-5c68-aa2f-2e83d0ba08b1]

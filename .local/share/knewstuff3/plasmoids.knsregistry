@@ -1,54 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE khotnewstuff3>
 <hotnewstuffregistry>
- <stuff category="708">
-  <name>KDE Modern Clock</name>
-  <providerid>api.kde-look.org</providerid>
-  <author>prayagjain</author>
-  <homepage>https://store.kde.org/p/2135653</homepage>
-  <licence></licence>
-  <version>v1.0.0</version>
-  <rating>61</rating>
-  <downloads>18837</downloads>
-  <installedfile>/home/steinardth/.local/share/plasma/plasmoids/com.github.prayag2.modernclock/</installedfile>
-  <id>2135653</id>
-  <releasedate>2024-03-07</releasedate>
-  <summary>A simple yet modern looking clock for KDE Plasma!&lt;br />
-Please note that this clock does not work on panels.&lt;br />
----&lt;br />
-Thanks to @Kuchenmampfer on GitHub for the Plasma 6 port!</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/60/43/39/2135653/logo.jpg</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/43/39/2135653/logo.jpg</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDk4MDQ3OTQiLCJvIjoiMSIsInMiOiI1Y2Q3ZjhlMDg3YmVkNDk5NDRlZDhjZjY1ZTY2ZTIxYzUzMTJiODBjOTIxZTAwOTFkM2JkZDUwNzgzYWU5NzlhMTYwYjJiNjhhZmNhOTYxZTA5MGFhMWU3MzMwYjQ2YzgyZjA4MWE4ZWZjZGFjYmNiMjY0YzI0ZDE0ODhkYzdmNSIsInQiOjE3MjI1MzE4NDAsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni4yMi45Ny4xNDIifQ.VRbOj9CdvnjNuXxFdWqEpls0VLOjgdBDwUBOjeL-hCk/modernclock-1.0.0.tar.gz</payload>
-  <tags>kde,gplv3,modern,mond,linux,extension,day,clock,unix,stylish,plasma,original-product</tags>
-  <status>installed</status>
- </stuff>
- <stuff category="706">
-  <name>Compact Pager</name>
-  <providerid>api.kde-look.org</providerid>
-  <author>tilorenz</author>
-  <homepage>https://store.kde.org/p/2112443</homepage>
-  <licence></licence>
-  <version>3.4</version>
-  <rating>69</rating>
-  <downloads>2123</downloads>
-  <installedfile>/tmp/oUzgkg-package.plasmoid</installedfile>
-  <id>2112443</id>
-  <releasedate>2024-06-30</releasedate>
-  <summary>A compact pager for the KDE Plasma desktop, for those who don't like how much space the normal plasma pager takes.&lt;br />
-&lt;br />
-Features:&lt;br />
-- Show desktop names or numbers&lt;br />
-- It can always use full or compact layout, or adapt to its size&lt;br />
-- On click, it can show the desktop or the...</summary>
-  <changelog></changelog>
-  <preview>https://images.pling.com/cache/100x100-0/img/00/00/61/06/27/2112443/logo.jpg</preview>
-  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/61/06/27/2112443/logo.jpg</previewBig>
-  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTU5NTQ4MjciLCJvIjoiMSIsInMiOiJjNzljMTk4NzYyOGI5MmNkZjhlZTc0N2Y0NzMxZDQ2OGIwYTA0N2FmNDVkNTMwNjVlZDE1ZmM0YjJhOTI3OTE0YTc2NmJiMmEwNjU5YmEzOWZiNjIwMWM0NWE2NjliZGY5M2Q3MGE4NGU2N2NmMTAzMDVmYzcyOWY1ZGRiODQ5OCIsInQiOjE3MjQwMjUwNjUsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni4yMi45OC45NSJ9.x0HJSRvEiroEFemNzFkUz0N72vRRLmfiR72WuOehZBM/package.plasmoid</payload>
-  <tags>original-product,pager,plasma,unix,small,linux,gplv2-later,kde,desktop,compact,extension</tags>
-  <status>installed</status>
- </stuff>
  <stuff category="706">
   <name>Netspeed Widget</name>
   <providerid>api.kde-look.org</providerid>
@@ -74,6 +26,29 @@ Required dependencies:&lt;br />
   <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/03/18/67/2136505/logo.png</previewBig>
   <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MTAxMDM3NDAiLCJvIjoiMSIsInMiOiJiNTI3OGQ2OGE2ODUzNDNlZjJiODA0ZWQyYWQ0NGM3Mjc4Nzg0MmRkOTEwNTA5YmU5ZTBjNWNkYWYxMWExOTc2Yzc0NjdhODAyYWNkMWY4M2FiYzViZWRjY2JmYmNlYWEyMTk5YzU5OTE2ZGQ5MWZkMWY3ZWQ2ZDUwZmIzN2RlNSIsInQiOjE3MjIzMDk5MTksInN0ZnAiOm51bGwsInN0aXAiOiIxODUuMTU5LjE1OC4xMTEifQ.cpFWrIThwEgsZYk1jxAwvosN795lsx6geflx1bcjva4/netspeed-widget-3.1.plasmoid</payload>
   <tags>extension,network,original-product,plasma,unix,linux,kde,monitor,gplv2-later</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="708">
+  <name>KDE Modern Clock</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>prayagjain</author>
+  <homepage>https://store.kde.org/p/2135653</homepage>
+  <licence></licence>
+  <version>v1.0.0</version>
+  <rating>61</rating>
+  <downloads>18837</downloads>
+  <installedfile>/home/steinardth/.local/share/plasma/plasmoids/com.github.prayag2.modernclock/</installedfile>
+  <id>2135653</id>
+  <releasedate>2024-03-07</releasedate>
+  <summary>A simple yet modern looking clock for KDE Plasma!&lt;br />
+Please note that this clock does not work on panels.&lt;br />
+---&lt;br />
+Thanks to @Kuchenmampfer on GitHub for the Plasma 6 port!</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/60/43/39/2135653/logo.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/60/43/39/2135653/logo.jpg</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDk4MDQ3OTQiLCJvIjoiMSIsInMiOiI1Y2Q3ZjhlMDg3YmVkNDk5NDRlZDhjZjY1ZTY2ZTIxYzUzMTJiODBjOTIxZTAwOTFkM2JkZDUwNzgzYWU5NzlhMTYwYjJiNjhhZmNhOTYxZTA5MGFhMWU3MzMwYjQ2YzgyZjA4MWE4ZWZjZGFjYmNiMjY0YzI0ZDE0ODhkYzdmNSIsInQiOjE3MjI1MzE4NDAsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni4yMi45Ny4xNDIifQ.VRbOj9CdvnjNuXxFdWqEpls0VLOjgdBDwUBOjeL-hCk/modernclock-1.0.0.tar.gz</payload>
+  <tags>kde,gplv3,modern,mond,linux,extension,day,clock,unix,stylish,plasma,original-product</tags>
   <status>installed</status>
  </stuff>
 </hotnewstuffregistry>

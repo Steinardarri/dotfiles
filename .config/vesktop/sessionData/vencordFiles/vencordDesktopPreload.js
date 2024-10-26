@@ -1,4 +1,4 @@
-// Vencord eaca14b
+// Vencord e620431
 // Standalone: true
 // Platform: Universal
 // Updater Disabled: false

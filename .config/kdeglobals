@@ -133,8 +133,8 @@ ForegroundPositive=60,171,112
 ForegroundVisited=153,90,185
 
 [DirSelect Dialog]
-DirSelectDialog Size=820,584
-History Items[$e]=file:///run/media/steinardth/SSD_Kingston/floorp,file:///run/media/steinardth/SSD_Kingston/.floorp,file:///run/media/steinardth/Hardur_Diskur/.torrent,file:///,file:///run/media/steinardth/SSD/SteamLibrary,file:///run/media/steinardth/SSD_Auka,file:///run/media/steinardth/SSD_M2,file:///run/media/steinardth/SSD_M2/SteamLibrary,file:$HOME/Downloads/.torrent,file:///run/media/steinardth/Hardur_Diskur/backup/steinardth
+DirSelectDialog Size=960,540
+History Items[$e]=file:$HOME/dotfiles/Forrit/Script,file:$HOME/dotfiles/Forrit/Script,file:///run/media/steinardth/SSD_Kingston/floorp,file:///run/media/steinardth/SSD_Kingston/.floorp,file:///run/media/steinardth/Hardur_Diskur/.torrent,file:///,file:///run/media/steinardth/SSD/SteamLibrary,file:///run/media/steinardth/SSD_Auka,file:///run/media/steinardth/SSD_M2,file:///run/media/steinardth/SSD_M2/SteamLibrary,file:$HOME/Downloads/.torrent,file:///run/media/steinardth/Hardur_Diskur/backup/steinardth
 
 [General]
 ColorSchemeHash=a2dd0a3b1d9519fc54380099b9c1617cfd7ce272
@@ -154,7 +154,7 @@ ShowDeleteCommand=true
 [KFileDialog Settings]
 Allow Expansion=true
 Automatically select filename extension=true
-Breadcrumb Navigation=false
+Breadcrumb Navigation=true
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5

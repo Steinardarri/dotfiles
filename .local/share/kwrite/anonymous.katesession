@@ -1,5 +1,5 @@
 [Document 0]
-URL=file:///home/steinardth/dotfiles/.gitignore
+URL=file:///home/steinardth/dotfiles/.stowrc
 
 [MainWindow0]
 ToolBarsMovable=Disabled
@@ -15,23 +15,23 @@ Count=1
 Count=1
 
 [Recent Files]
-File1[$e]=$HOME/dotfiles/.stowrc
-File10[$e]=$HOME/dotfiles/.gitignore
-File2[$e]=$HOME/KernelParams.txt
-File3[$e]=$HOME/Forrit/Script/HomeBackup/HomeBackup.sh
-File4[$e]=admin:/etc/cron.hourly/0anacron
-File5[$e]=admin:/etc/dracut.conf.d/myflags.conf
-File6[$e]=$HOME/Downloads/rEFInd-tools-0.14.2-2.fc41.noarch/usr/share/rEFInd/refind-install
-File7[$e]=admin:/efi/EFI/refind/refind.conf
-File8[$e]=admin:/efi/EFI/refind/refind.conf-sample
-File9[$e]=admin:/efi/EFI/refind/themes/refind-vagabond/theme.conf
-Name1[$e]=.stowrc
-Name10[$e]=.gitignore
-Name2[$e]=KernelParams.txt
-Name3[$e]=HomeBackup.sh
-Name4[$e]=0anacron
-Name5[$e]=myflags.conf
-Name6[$e]=refind-install
-Name7[$e]=refind.conf
-Name8[$e]=refind.conf-sample
-Name9[$e]=theme.conf
+File1[$e]=$HOME/Forrit/Freejoy/99-hid-FreeJoy.rules
+File10[$e]=$HOME/dotfiles/.stowrc
+File2[$e]=$HOME/Forrit/git_verkefni/kde-shader-wallpaper/README.md
+File3[$e]=$HOME/.local/share/plasma/wallpapers/kde-shader-wallpaper-3.0.1-plasma6/metadata.json
+File4[$e]=$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Abstract_Patterns6.frag.qsb
+File5[$e]=$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/config.qml
+File6[$e]=$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/main.qml
+File7[$e]=$HOME/dotfiles/.local/share/applications/LM_Studio.desktop
+File8[$e]=$HOME/Forrit/transfuse/transfuse-full-backup.sh
+File9[$e]=$HOME/Forrit/transfuse/transfuse.sh
+Name1[$e]=99-hid-FreeJoy.rules
+Name10[$e]=.stowrc
+Name2[$e]=README.md
+Name3[$e]=metadata.json
+Name4[$e]=Abstract_Patterns6.frag.qsb
+Name5[$e]=config.qml
+Name6[$e]=main.qml
+Name7[$e]=LM_Studio.desktop
+Name8[$e]=transfuse-full-backup.sh
+Name9[$e]=transfuse.sh

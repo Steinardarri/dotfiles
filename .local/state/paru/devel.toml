@@ -1,28 +1,35 @@
-[[luv-icon-theme-git]]
-url = "https://github.com/Nitrux/luv-icon-theme.git"
-commit = "91b4e9e356b3782dae6db0d6a8023947311da5e4"
+[[gamescope-plus]]
+url = "https://github.com/Joshua-Ashton/reshade.git"
+commit = "4245743a8c41abbe3dc73980c1810fe449359bf1"
 
-[[uefi-shell-git]]
-url = "https://git.cryptomilk.org/projects/cmocka.git"
-commit = "fa9b6449c54f4defbad7e27e35b0ce8d6547d8b4"
+[[gamescope-plus]]
+url = "https://github.com/Joshua-Ashton/wlroots.git"
+commit = "2edf468aeb7d4703aa211cea3b58f04cbc73298c"
 
-[[uefi-shell-git]]
-url = "https://github.com/google/brotli"
-commit = "39bcecf4559f9b0e75c6248a75d9c0db6b123d88"
+[[gamescope-plus]]
+url = "https://github.com/KhronosGroup/SPIRV-Headers.git"
+commit = "22c4d1b1e9d1c7d9aa5086c93e6491f21080019b"
 
-[[uefi-shell-git]]
-url = "https://github.com/kkos/oniguruma"
-commit = "b6c8d55ac402fd89e448153bc4f827ae1ee65840"
+[[gamescope-plus]]
+url = "https://github.com/ValveSoftware/openvr.git"
+commit = "ae46a8dd0172580648c8922658a100439115d3eb"
 
-[[uefi-shell-git]]
-url = "https://github.com/openssl/openssl"
-commit = "ca1d2db291530a827555b40974ed81efb91c2d19"
+[[gamescope-plus]]
+url = "https://gitlab.freedesktop.org/emersion/libdisplay-info.git"
+commit = "211fa636a3c49da81bcedc115457a003f28f9a58"
 
-[[uefi-shell-git]]
-url = "https://github.com/tianocore/edk2.git"
-branch = "master"
-commit = "f203a6db92eedf03ac544ed270404cb29d3dea7f"
+[[gamescope-plus]]
+url = "https://gitlab.freedesktop.org/emersion/libliftoff.git"
+commit = "07fbf143325ac1afcd4af9f9e286c1389a015418"
 
-[[uefi-shell-git]]
-url = "https://github.com/ucb-bar/berkeley-softfloat-3.git"
-commit = "b51ef8f3201669b2288104c28546fc72532a1ea4"
+[[monocoque-git]]
+url = "https://github.com/spacefreak18/monocoque"
+commit = "12509e9709871afcb3ae264823b4a7d3c3b71bf7"
+
+[[protopedal-git]]
+url = "https://gitlab.com/openirseny/protopedal"
+commit = "8d0b68f54025f4fc3e39da71f657d8adfc6f4476"
+
+[[universal-pidff-dkms-git]]
+url = "https://github.com/JacKeTUs/universal-pidff"
+commit = "330e7db32f7b09c2929799d2001779f85c25dd1c"

@@ -355,9 +355,6 @@
         "PreviewMessage": {
             "enabled": true
         },
-        "PronounDB": {
-            "enabled": false
-        },
         "QuickMention": {
             "enabled": false
         },
@@ -391,9 +388,6 @@
         "RoleColorEverywhere": {
             "enabled": false
         },
-        "SearchReply": {
-            "enabled": false
-        },
         "SecretRingToneEnabler": {
             "enabled": false
         },
@@ -414,9 +408,6 @@
         },
         "ShowAllMessageButtons": {
             "enabled": false
-        },
-        "ShowAllRoles": {
-            "enabled": true
         },
         "ShowConnections": {
             "enabled": false
@@ -549,6 +540,15 @@
         },
         "YoutubeAdblock": {
             "enabled": true
+        },
+        "AlwaysExpandRoles": {
+            "enabled": true
+        },
+        "FullSearchContext": {
+            "enabled": false
+        },
+        "UserMessagesPronouns": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -561,6 +561,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1722548970377
+        "settingsSyncVersion": 1729717781609
     }
 }

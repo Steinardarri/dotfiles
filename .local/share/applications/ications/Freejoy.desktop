@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Multimedia;
+Comment[en_GB]=Configure FreeJoy devices
+Comment=Configure FreeJoy devices
+Exec=/home/steinardth/Forrit/Freejoy/FreeJoyQt-x86_64.AppImage
+GenericName[en_GB]=FreeJoy Qt Configurator
+GenericName=FreeJoy Qt Configurator
+Icon=/home/steinardth/Forrit/Freejoy/fj.png
+Keywords=llm;ai;text generation;artificial intelligence;large language model
+MimeType=
+Name[en_GB]=FreeJoy
+Name=FreeJoy
+Path=
+PrefersNonDefaultGPU=true
+StartupNotify=true
+StartupWMClass=Blender
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-RunOnDiscreteGpu=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

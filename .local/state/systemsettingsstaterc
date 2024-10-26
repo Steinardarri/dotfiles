@@ -1,10 +1,13 @@
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/Pictures/retro-game-outrun-5ga631rwtprdoama.webp
-Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/Pictures/Avatar/,file:$HOME/Forrit/Script/,file:$HOME/Forrit/Script/HomeBackup/,file:$HOME/,file:$HOME/Documents/
+Recent Files[$e]=file:$HOME/Forrit/Script/RGB.sh
+Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/Pictures/Avatar/,file:$HOME/Forrit/Script/,file:$HOME/Forrit/Script/HomeBackup/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Forrit/
 
 [MainWindow]
-3 screens: Height=946
-3 screens: Width=1790
+3 screens: Height=850
+3 screens: Width=1612
+4 screens: Height=850
+4 screens: Width=1612
+State=AAAA/wAAAAD9AAAAAAAABkwAAANSAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [Open-with settings]
 CompletionMode=1

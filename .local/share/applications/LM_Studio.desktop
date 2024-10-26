@@ -2,6 +2,7 @@
 Categories=Multimedia;
 Comment[en_GB]=Download, load and query LLM models
 Comment=Download, load and query LLM models
+Encoding=UTF-8
 Exec=/home/steinardth/Forrit/LM_Studio.AppImage
 GenericName[en_GB]=LLM Local Runner
 GenericName=LLM Local Runner
@@ -12,7 +13,6 @@ Name=LM Studio
 Path=
 PrefersNonDefaultGPU=true
 StartupNotify=true
-StartupWMClass=Blender
 Terminal=false
 TerminalOptions=
 Type=Application

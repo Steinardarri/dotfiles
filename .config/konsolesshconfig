@@ -1,2 +1,12 @@
 [Global plugin config]
 manageProfile=false
+
+[SSH Config][hindber]
+hostname=192.168.31.43
+identifier=hindber
+importedFromSshConfig=true
+port=
+profileName=
+sshkey=
+useSshConfig=true
+username=steinardth

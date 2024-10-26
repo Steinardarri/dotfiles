@@ -1,10 +1,12 @@
 [AC][Display]
 DisplayBrightness=100
 TurnOffDisplayIdleTimeoutSec=1800
+TurnOffDisplayIdleTimeoutWhenLockedSec=120
 UseProfileSpecificDisplayBrightness=true
 
 [AC][SuspendAndShutdown]
 AutoSuspendIdleTimeoutSec=10800
+PowerButtonAction=1
 
 [BatteryManagement]
 PeripheralBatteryLowLevel=15

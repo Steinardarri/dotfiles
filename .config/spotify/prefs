@@ -1,10 +1,8 @@
-autologin.canonical_username="steinardarri"
-autologin.blob="guDvLxdk03niWszy22MI5UaO5kLCFG8FHfKQdIudkE8kIYejEA7iQSiVo3/F2DWOjnndGn1HwA6wJGh4YyFbsvlrRZjowGjQOLtcFJxqWVsraunVnVxKPObPQj57gJreTk8Ny4VmDMoz2FEqiAlWYngcRYIUCIsr0WUPQAuz0B1/vXssqTDbZnrRDdt/IMG+09cHXIuhQTjm3f6QZZ8ChtDIzvG5ByJhpdsEohPXPZEY3CPS+pHC3xdYvEG69zQ6Xb23mE1PIVUA7yLrUh5JZ0xDWru8RQhc4rnZ75dS6Ag="
 autologin.saved_credentials="{\"steinardarri\":[\"steinardarri\",\"guDvLxdk03niWszy22MI5UaO5kLCFG8FHfKQdIudkE8kIYejEA7iQSiVo3/F2DWOjnndGn1HwA6wJGh4YyFbsvlrRZjowGjQOLtcFJxqWVsraunVnVxKPObPQj57gJreTk8Ny4VmDMoz2FEqiAlWYngcRYIUCIsr0WUPQAuz0B1/vXssqTDbZnrRDdt/IMG+09cHXIuhQTjm3f6QZZ8ChtDIzvG5ByJhpdsEohPXPZEY3CPS+pHC3xdYvEG69zQ6Xb23mE1PIVUA7yLrUh5JZ0xDWru8RQhc4rnZ75dS6Ag=\"]}"
+autologin.blob="guDvLxdk03niWszy22MI5UaO5kLCFG8FHfKQdIudkE8kIYejEA7iQSiVo3/F2DWOjnndGn1HwA6wJGh4YyFbsvlrRZjowGjQOLtcFJxqWVsraunVnVxKPObPQj57gJreTk8Ny4VmDMoz2FEqiAlWYngcRYIUCIsr0WUPQAuz0B1/vXssqTDbZnrRDdt/IMG+09cHXIuhQTjm3f6QZZ8ChtDIzvG5ByJhpdsEohPXPZEY3CPS+pHC3xdYvEG69zQ6Xb23mE1PIVUA7yLrUh5JZ0xDWru8RQhc4rnZ75dS6Ag="
 es.send-on-startup=true
-core.clock_delta=0
+core.clock_delta=-1
 autologin.username="steinardarri"
-app.enable-chrome-runtime=true
 app.window.state=2
 app.window.position.saved=true
 app.window.position.height=1052
@@ -13,4 +11,5 @@ app.window.position.y=388
 storage.last-location="/home/steinardth/.cache/spotify/Storage"
 app.window.state.saved=true
 app.window.position.width=1920
-app.last-launched-version="1.2.42.290.g242057a2"
+autologin.canonical_username="steinardarri"
+app.last-launched-version="1.2.48.405.gf2c48e6f"

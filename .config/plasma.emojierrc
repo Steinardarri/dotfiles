@@ -1,7 +1,9 @@
 [Emojier]
-recent=😒,😅,😴,🥰,👍,😄,😎
-recentDescriptions=unamused face,grinning face with sweat,sleeping face,smiling face with hearts,thumbs up,grinning face with smiling eyes,smiling face with sunglasses
+recent=😁,😞,😒,😅,😴,🥰,👍,😄,😎
+recentDescriptions=beaming face with smiling eyes,disappointed face,unamused face,grinning face with sweat,sleeping face,smiling face with hearts,thumbs up,grinning face with smiling eyes,smiling face with sunglasses
 
 [Window]
 3 screens: Height=519
 3 screens: Width=649
+4 screens: Height=519
+4 screens: Width=649

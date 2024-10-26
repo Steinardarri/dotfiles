@@ -1,7 +1,23 @@
 [default-routes]
-alsa_card.pci-0000_0b_00.1:output:hdmi-output-0={"channelVolumes":[0.063997, 0.063997], "mute":false, "iec958Codecs":[], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
+alsa_card.pci-0000_0b_00.1:output:hdmi-output-0={"mute":false, "channelVolumes":[0.063997, 0.063997], "iec958Codecs":[], "channelMap":["FL", "FR"], "latencyOffsetNsec":0}
+alsa_card.pci-0000_0b_00.1:output:hdmi-output-3={"mute":false, "channelVolumes":[1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000], "iec958Codecs":[], "channelMap":["FL", "FR", "RL", "RR", "FC", "LFE"], "latencyOffsetNsec":0}
+alsa_card.pci-0000_0b_00.1:profile:off=["hdmi-output-0"]
 alsa_card.pci-0000_0b_00.1:profile:output:hdmi-stereo=["hdmi-output-0"]
-alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:input:analog-input-mic={"latencyOffsetNsec":0, "mute":false, "channelMap":["MONO"], "channelVolumes":[0.180072]}
+alsa_card.pci-0000_0b_00.1:profile:output:hdmi-stereo-extra3=["hdmi-output-3"]
+alsa_card.pci-0000_0b_00.1:profile:output:hdmi-surround-extra3=["hdmi-output-3"]
+alsa_card.pci-0000_0b_00.1:profile:pro-audio=["hdmi-output-0"]
+alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:input:analog-input-mic={"mute":false, "channelVolumes":[0.247013], "channelMap":["MONO"], "latencyOffsetNsec":0}
 alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:profile:input:mono-fallback=["analog-input-mic"]
-alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:output:analog-output={"latencyOffsetNsec":0, "mute":false, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000]}
+alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:profile:pro-audio=["analog-input-mic"]
+alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:output:analog-output={"mute":false, "channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"], "latencyOffsetNsec":0}
 alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:profile:output:analog-stereo+input:analog-stereo=["analog-output"]
+bluez_card.60_AB_D2_3F_7B_3B:input:headphone-input={"mute":false, "channelMap":["MONO"], "channelVolumes":[1.000000]}
+bluez_card.60_AB_D2_3F_7B_3B:output:headphone-hf-output={"mute":false, "channelVolumes":[0.064000], "channelMap":["MONO"]}
+bluez_card.60_AB_D2_3F_7B_3B:output:headphone-output={"channelMap":["FL", "FR"], "mute":false, "channelVolumes":[0.431919, 0.431919], "latencyOffsetNsec":0}
+bluez_card.60_AB_D2_3F_7B_3B:profile:a2dp-sink=["headphone-output"]
+bluez_card.60_AB_D2_3F_7B_3B:profile:headset-head-unit=["headphone-hf-output"]
+bluez_card.60_AB_D2_3F_7B_3B:profile:headset-head-unit-cvsd=["headphone-hf-output"]
+bluez_card.CE_6D_98_AE_4D_BA:output:headset-hf-output={"mute":false, "channelMap":["MONO"], "channelVolumes":[1.000000]}
+bluez_card.CE_6D_98_AE_4D_BA:output:headset-output={"channelMap":["FL", "FR"], "mute":false, "latencyOffsetNsec":0, "channelVolumes":[0.571791, 0.571791]}
+bluez_card.CE_6D_98_AE_4D_BA:profile:a2dp-sink=["headset-output"]
+bluez_card.CE_6D_98_AE_4D_BA:profile:headset-head-unit=["headset-hf-output"]

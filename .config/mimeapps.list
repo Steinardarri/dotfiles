@@ -20,6 +20,7 @@ x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
 x-scheme-handler/http=userapp-Floorp-NPMLR2.desktop;
 x-scheme-handler/https=userapp-Floorp-NPMLR2.desktop;
 x-scheme-handler/mailto=proton-mail.desktop;
+x-scheme-handler/lmstudio=LM Studio.desktop
 
 [Default Applications]
 application/json=org.kde.kwrite.desktop;
@@ -44,3 +45,4 @@ x-scheme-handler/http=userapp-Floorp-NPMLR2.desktop
 x-scheme-handler/https=userapp-Floorp-NPMLR2.desktop
 x-scheme-handler/mailto=proton-mail.desktop;
 application/x-ms-dos-executable;application/x-wine-extension-msp;application/x-msi;application/x-msdos-program=PortProton.desktop
+x-scheme-handler/lmstudio=LM Studio.desktop

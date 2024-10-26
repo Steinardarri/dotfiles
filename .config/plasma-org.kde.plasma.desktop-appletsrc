@@ -1,32 +1,31 @@
 [ActionPlugins][0]
+MiddleButton;NoModifier=org.kde.applauncher
 RightButton;NoModifier=org.kde.contextmenu
+
+[ActionPlugins][0][MiddleButton;NoModifier]
+showAppsByName=true
+
+[ActionPlugins][0][RightButton;NoModifier]
+_add panel=false
+_context=true
+_display_settings=true
+_lock_screen=false
+_logout=false
+_open_terminal=false
+_run_command=false
+_sep1=true
+_sep2=true
+_sep3=true
+_wallpaper=true
+add widgets=false
+configure=true
+configure shortcuts=false
+desktop edit mode=true
+manage activities=true
+remove=true
 
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
-
-[Containments][1]
-ItemGeometries-1024x768=
-ItemGeometries-2560x1440=
-ItemGeometriesHorizontal=
-activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][ConfigDialog]
-DialogHeight=809
-DialogWidth=1157
-
-[Containments][1][Wallpaper][a2n.blur][General]
-Image=/home/steinardth/Pictures/Vagabond.jpg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/steinardth/Pictures/Vagabond.jpg
-SlidePaths=/usr/share/wallpapers/
 
 [Containments][10]
 activityId=
@@ -44,7 +43,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][10][Applets][11][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][10][Applets][12]
 immutability=1
@@ -61,14 +60,18 @@ plugin=org.kde.kscreen
 immutability=1
 plugin=org.kde.kdeconnect
 
+[Containments][10][Applets][14][Configuration]
+PreloadWeight=55
+
 [Containments][10][Applets][15]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][10][Applets][15][Configuration]
-PreloadWeight=60
+PreloadWeight=100
 
 [Containments][10][Applets][15][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][10][Applets][16]
@@ -103,7 +106,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][10][Applets][24][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][10][Applets][24][Configuration][General]
 currentDetailsTab=details
@@ -134,7 +137,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][10][Applets][27][Configuration]
-PreloadWeight=9
+PreloadWeight=0
 
 [Containments][10][Applets][34]
 immutability=1
@@ -172,66 +175,23 @@ visibilityUnit=2007
 [Containments][10][Applets][35][Configuration][WeatherStation]
 source=bbcukmet|weather|Reykjavik, Iceland, IS|3413829
 
+[Containments][10][Applets][46]
+immutability=1
+plugin=org.kde.plasma.bluetooth
+
+[Containments][10][Applets][46][Configuration]
+PreloadWeight=70
+
 [Containments][10][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][10][General]
 extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.kscreen,org.kde.kdeconnect,org.kde.plasma.brightness,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.diskquota,org.kde.plasma.weather,org.kde.plasma.mediacontroller
-hiddenItems=org.kde.plasma.clipboard,spotify-client,org.kde.plasma.mediacontroller
+hiddenItems=org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,spotify-client
 knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.kscreen,org.kde.kdeconnect,org.kde.plasma.brightness,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement
 scaleIconsToFit=true
 shownItems=org.kde.plasma.weather,KTorrent
-
-[Containments][2]
-ItemGeometries-1920x1080=Applet-40:32,448,672,272,0;
-ItemGeometriesHorizontal=Applet-40:32,448,672,272,0;
-activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][2][Applets][40]
-immutability=1
-plugin=com.github.prayag2.modernclock
-
-[Containments][2][Applets][40][Configuration][Appearance]
-date_format=yyyy / MM / dd
-use_24_hour_format=true
-
-[Containments][2][Applets][40][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][2][Wallpaper][a2n.blur][General]
-Image=/home/steinardth/Pictures/Vagabond.jpg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][2][Wallpaper][org.kde.image][General]
-Image=/home/steinardth/Pictures/Vagabond.jpg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][3]
-ItemGeometries-1920x1080=
-ItemGeometriesHorizontal=
-activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
-formfactor=0
-immutability=1
-lastScreen=2
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][3][Wallpaper][a2n.blur][General]
-Image=/home/steinardth/Pictures/Vagabond.jpg
-SlidePaths=/usr/share/wallpapers/
-
-[Containments][3][Wallpaper][org.kde.image][General]
-Image=/home/steinardth/Pictures/Vagabond.jpg
-SlidePaths=/usr/share/wallpapers/
 
 [Containments][30]
 activityId=
@@ -335,20 +295,20 @@ systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hi
 [Containments][4][Applets][43][Configuration][Shortcuts]
 global=Alt+F1
 
-[Containments][4][Applets][44]
+[Containments][4][Applets][47]
 immutability=1
-plugin=com.github.tilorenz.compact_pager
+plugin=org.kde.plasma.pager
 
-[Containments][4][Applets][44][Configuration][Appearance]
+[Containments][4][Applets][47][Configuration][Appearance]
 displayBorder=false
 fontFamily=Hack
 fontSize=1
 
-[Containments][4][Applets][44][Configuration][ConfigDialog]
+[Containments][4][Applets][47][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][4][Applets][44][Configuration][General]
+[Containments][4][Applets][47][Configuration][General]
 currentDesktopSelected=ShowDesktop
 forceLayout=Full
 showWindowIcons=true
@@ -379,7 +339,150 @@ PreloadWeight=100
 SystrayContainmentId=10
 
 [Containments][4][General]
-AppletOrder=43;44;7;8;37;9;22;23
+AppletOrder=43;47;7;8;37;9;22;23
+
+[Containments][48]
+ItemGeometries-1920x1080=Applet-40:0,0,672,272,0;
+ItemGeometriesHorizontal=Applet-40:0,0,672,272,0;
+activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=online.knowmad.shaderwallpaper
+
+[Containments][48][Applets][40]
+immutability=1
+plugin=com.github.prayag2.modernclock
+
+[Containments][48][Applets][40][Configuration][Appearance]
+date_format=yyyy / MM / dd
+use_24_hour_format=true
+
+[Containments][48][Applets][40][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][48][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][48][Wallpaper][a2n.blur][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][48][Wallpaper][online.knowmad.shaderwallpaper][General]
+iChannel0=file:///home/steinardth/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Resources/Shadertoy_Gray_Noise_Medium.png
+iChannel1_flag=false
+iChannel2_flag=false
+infoPlasma6Preview_dismissed=true
+infoiChannelSettings_dismissed=true
+mouseSpeedBias=-2.76
+selectedShaderIndex=66
+selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Laserworld.frag.qsb
+shaderSpeed=0.22
+warningResources_dismissed=true
+
+[Containments][48][Wallpaper][org.kde.image][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][49]
+activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=online.knowmad.shaderwallpaper
+
+[Containments][49][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][49][Wallpaper][a2n.blur][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][49][Wallpaper][online.knowmad.shaderwallpaper][General]
+iChannel2_flag=false
+infoPlasma6Preview_dismissed=true
+infoiChannelSettings_dismissed=true
+selectedShaderIndex=47
+selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Grid_Landscape.frag.qsb
+shaderSpeed=0.22
+warningResources_dismissed=true
+
+[Containments][49][Wallpaper][org.kde.image][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][50]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
+formfactor=0
+immutability=1
+lastScreen=2
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=online.knowmad.shaderwallpaper
+
+[Containments][50][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][50][Wallpaper][a2n.blur][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][50][Wallpaper][online.knowmad.shaderwallpaper][General]
+iChannel0_flag=false
+iChannel1_flag=false
+iChannel2_flag=false
+infoPlasma6Preview_dismissed=true
+infoiChannelSettings_dismissed=true
+selectedShaderIndex=47
+selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Grid_Landscape.frag.qsb
+shaderSpeed=0.22
+warningResources_dismissed=true
+
+[Containments][50][Wallpaper][org.kde.color][General]
+Color=171,131,208
+
+[Containments][50][Wallpaper][org.kde.image][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
+
+[Containments][51]
+activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
+formfactor=0
+immutability=1
+lastScreen=3
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=online.knowmad.shaderwallpaper
+
+[Containments][51][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][51][Wallpaper][online.knowmad.shaderwallpaper][General]
+iChannel0_flag=false
+iChannel1_flag=false
+iChannel2_flag=false
+infoPlasma6Preview_dismissed=true
+infoiChannelSettings_dismissed=true
+mouseSpeedBias=3.88
+selectedShaderIndex=2
+selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Abstract_Liquid.frag.qsb
+shaderSpeed=0.05
+warningResources_dismissed=true
+
+[Containments][51][Wallpaper][org.kde.image][General]
+Image=/home/steinardth/Pictures/Vagabond.jpg
+SlidePaths=/usr/share/wallpapers/
 
 [ScreenMapping]
 itemsOnDisabledScreens=
