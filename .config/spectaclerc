@@ -1,4 +1,9 @@
+[GuiConfig]
+captureMode=0
+
 [ImageSave]
+lastImageSaveAsLocation=file:///home/steinardth/Downloads/Screenshot_20241109_174416.png
+lastImageSaveLocation=file:///home/steinardth/Downloads/Screenshot_20241109_174416.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]

@@ -1,15 +1,15 @@
 [default-routes]
-alsa_card.pci-0000_0b_00.1:output:hdmi-output-0={"mute":false, "channelVolumes":[0.063997, 0.063997], "iec958Codecs":[], "channelMap":["FL", "FR"], "latencyOffsetNsec":0}
-alsa_card.pci-0000_0b_00.1:output:hdmi-output-3={"mute":false, "channelVolumes":[1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000], "iec958Codecs":[], "channelMap":["FL", "FR", "RL", "RR", "FC", "LFE"], "latencyOffsetNsec":0}
+alsa_card.pci-0000_0b_00.1:output:hdmi-output-0={"channelVolumes":[0.063997, 0.063997], "mute":false, "iec958Codecs":[], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
+alsa_card.pci-0000_0b_00.1:output:hdmi-output-3={"channelVolumes":[1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000], "mute":false, "iec958Codecs":[], "channelMap":["FL", "FR", "RL", "RR", "FC", "LFE"], "latencyOffsetNsec":0}
 alsa_card.pci-0000_0b_00.1:profile:off=["hdmi-output-0"]
 alsa_card.pci-0000_0b_00.1:profile:output:hdmi-stereo=["hdmi-output-0"]
 alsa_card.pci-0000_0b_00.1:profile:output:hdmi-stereo-extra3=["hdmi-output-3"]
 alsa_card.pci-0000_0b_00.1:profile:output:hdmi-surround-extra3=["hdmi-output-3"]
 alsa_card.pci-0000_0b_00.1:profile:pro-audio=["hdmi-output-0"]
-alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:input:analog-input-mic={"mute":false, "channelVolumes":[0.247013], "channelMap":["MONO"], "latencyOffsetNsec":0}
+alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:input:analog-input-mic={"channelVolumes":[0.228946], "mute":false, "channelMap":["MONO"], "latencyOffsetNsec":0}
 alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:profile:input:mono-fallback=["analog-input-mic"]
 alsa_card.usb-Antlion_Audio_Antlion_USB_Microphone-00:profile:pro-audio=["analog-input-mic"]
-alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:output:analog-output={"mute":false, "channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"], "latencyOffsetNsec":0}
+alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:output:analog-output={"channelVolumes":[1.000000, 1.000000], "mute":false, "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
 alsa_card.usb-Yamaha_Corporation_AG06_AG03-00:profile:output:analog-stereo+input:analog-stereo=["analog-output"]
 bluez_card.60_AB_D2_3F_7B_3B:input:headphone-input={"mute":false, "channelMap":["MONO"], "channelVolumes":[1.000000]}
 bluez_card.60_AB_D2_3F_7B_3B:output:headphone-hf-output={"mute":false, "channelVolumes":[0.064000], "channelMap":["MONO"]}

@@ -10,7 +10,7 @@
 (monitor-xresolution 93)
 (monitor-yresolution 93)
 (user-manual-online yes)
-(selection-grow-radius 200)
+(selection-grow-radius 8)
 (fill-options
     (style solid)
     (antialias yes)

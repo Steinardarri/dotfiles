@@ -1,6 +1,6 @@
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Laserworld.frag
-Recent URLs[$e]=file:$HOME/.config/grsync/,file:$HOME/Documents/,file:///etc/,file:$HOME/.local/share/zed/logs/,admin:/boot/EFI/refind/,admin:/usr/local/bin/,file:$HOME/,file:$HOME/dotfiles/,file:$HOME/Downloads/,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/,file:$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/
+Recent Files[$e]=file:///etc/environment
+Recent URLs[$e]=file:///etc/,file:$HOME/.local/share/zed/logs/,admin:/boot/EFI/refind/,admin:/usr/local/bin/,file:$HOME/,file:$HOME/dotfiles/,file:$HOME/Downloads/,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/,file:$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/,file:///
 
 [MainWindow]
 3 screens: Height=1117
@@ -8,5 +8,5 @@ Recent URLs[$e]=file:$HOME/.config/grsync/,file:$HOME/Documents/,file:///etc/,fi
 3 screens: Window-Maximized=true
 4 screens: Height=648
 4 screens: Width=1152
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAACgAAAAU4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABoAGEAbQBiAHUAcgBnAGUAcgBCAGEAcgEAAAIZ/////wAAAAAAAAAA
+4 screens: Window-Maximized=true
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABoAGEAbQBiAHUAcgBnAGUAcgBCAGEAcgEAAAIZ/////wAAAAAAAAAA

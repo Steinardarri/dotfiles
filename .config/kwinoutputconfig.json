@@ -2,6 +2,7 @@
     {
         "data": [
             {
+                "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
                 "colorProfileSource": "EDID",
@@ -46,6 +47,7 @@
                 "wideColorGamut": false
             },
             {
+                "allowSdrSoftwareBrightness": true,
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
                 "colorProfileSource": "EDID",
@@ -90,6 +92,7 @@
                 "wideColorGamut": false
             },
             {
+                "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
                 "colorProfileSource": "EDID",
@@ -113,6 +116,7 @@
                 "wideColorGamut": false
             },
             {
+                "allowSdrSoftwareBrightness": true,
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
                 "colorProfileSource": "EDID",
@@ -271,7 +275,7 @@
                         "enabled": true,
                         "outputIndex": 0,
                         "position": {
-                            "x": 1920,
+                            "x": 3840,
                             "y": 0
                         },
                         "priority": 0
@@ -280,7 +284,7 @@
                         "enabled": true,
                         "outputIndex": 4,
                         "position": {
-                            "x": 4480,
+                            "x": 1920,
                             "y": 360
                         },
                         "priority": 1
@@ -317,7 +321,7 @@
                         "enabled": true,
                         "outputIndex": 0,
                         "position": {
-                            "x": 3840,
+                            "x": 5760,
                             "y": 0
                         },
                         "priority": 0
@@ -326,7 +330,7 @@
                         "enabled": true,
                         "outputIndex": 4,
                         "position": {
-                            "x": 6400,
+                            "x": 3840,
                             "y": 360
                         },
                         "priority": 1
@@ -390,19 +394,19 @@
                         "enabled": true,
                         "outputIndex": 2,
                         "position": {
-                            "x": 0,
-                            "y": 0
+                            "x": 1920,
+                            "y": 360
                         },
-                        "priority": 0
+                        "priority": 1
                     },
                     {
                         "enabled": true,
                         "outputIndex": 5,
                         "position": {
-                            "x": 1920,
-                            "y": 0
+                            "x": 0,
+                            "y": 360
                         },
-                        "priority": 1
+                        "priority": 2
                     },
                     {
                         "enabled": true,
@@ -411,7 +415,7 @@
                             "x": 3840,
                             "y": 0
                         },
-                        "priority": 2
+                        "priority": 0
                     }
                 ]
             }

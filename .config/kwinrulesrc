@@ -38,8 +38,8 @@ wmclass=octopi
 wmclassmatch=1
 
 [General]
-count=7
-rules=f0316353-60b6-4f99-86d7-c2a8b788a505,8284bb96-b800-4dd8-b73c-909dd9da4af7,08782b84-8a51-4fee-81d8-a6a02a147b82,ee633996-fd57-47de-a466-49b87cc39f55,8df611ab-4325-4799-88fd-ced3f0ad89ec,b056a288-414c-4c1f-b3cc-086a120894e7,3fb73a20-2cfe-4753-ae01-ce3b1597588c
+count=6
+rules=8284bb96-b800-4dd8-b73c-909dd9da4af7,08782b84-8a51-4fee-81d8-a6a02a147b82,ee633996-fd57-47de-a466-49b87cc39f55,8df611ab-4325-4799-88fd-ced3f0ad89ec,b056a288-414c-4c1f-b3cc-086a120894e7,3fb73a20-2cfe-4753-ae01-ce3b1597588c
 
 [b056a288-414c-4c1f-b3cc-086a120894e7]
 Description=Application settings for Spotify
@@ -65,9 +65,4 @@ wmclasscomplete=true
 wmclassmatch=1
 
 [f0316353-60b6-4f99-86d7-c2a8b788a505]
-Description=Application settings for org.kde.polkit-kde-authentication-agent-1
-position=2897,556
-positionrule=3
-wmclass=\sorg.kde.polkit-kde-authentication-agent-1
-wmclasscomplete=true
-wmclassmatch=1
+screenrule=3

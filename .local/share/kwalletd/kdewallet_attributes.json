@@ -1,10 +1,10 @@
 {
     "$fdo_created": "1722261924",
-    "$fdo_modified": "1722900330",
+    "$fdo_modified": "1731160614",
     "Secret Service/Password for 'proton-sso-account-inzhs32to5xxeza' on 'Proton'": {
-        "$fdo_created": "1722876913",
+        "$fdo_created": "1731002866",
         "$fdo_mime_type": "text/plain",
-        "$fdo_modified": "1722876913",
+        "$fdo_modified": "1731002866",
         "attributes": {
             "application": "Python keyring library",
             "service": "Proton",
@@ -12,13 +12,33 @@
         }
     },
     "Secret Service/Password for 'proton-sso-accounts' on 'Proton'": {
-        "$fdo_created": "1722304170",
+        "$fdo_created": "1731002832",
         "$fdo_mime_type": "text/plain",
-        "$fdo_modified": "1722304170",
+        "$fdo_modified": "1731002832",
         "attributes": {
             "application": "Python keyring library",
             "service": "Proton",
             "username": "proton-sso-accounts"
+        }
+    },
+    "element.io/seshat|@56619037527:matrix.org|guest_device": {
+        "$fdo_created": "1730677918",
+        "$fdo_mime_type": "text/plain",
+        "$fdo_modified": "1730677918",
+        "attributes": {
+            "account": "seshat|@56619037527:matrix.org|guest_device",
+            "service": "element.io",
+            "xdg:schema": "org.freedesktop.Secret.Generic"
+        }
+    },
+    "element.io/seshat|@stonesd:matrix.org|HGLEBLJZQC": {
+        "$fdo_created": "1730677983",
+        "$fdo_mime_type": "text/plain",
+        "$fdo_modified": "1730677983",
+        "attributes": {
+            "account": "seshat|@stonesd:matrix.org|HGLEBLJZQC",
+            "service": "element.io",
+            "xdg:schema": "org.freedesktop.Secret.Generic"
         }
     }
 }

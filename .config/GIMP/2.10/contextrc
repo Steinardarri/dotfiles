@@ -1,15 +1,16 @@
 # GIMP user context
 
-(tool "gimp-free-select-tool")
+(tool "gimp-text-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 0.062745101749897003 0.12941177189350128 0.63921570777893066))
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0.92549020051956177 0.11764705926179886 0.14117647707462311))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")
 (gradient "FG to BG (RGB)")
 (palette "Colour History")
-(font "Sans-serif")
+(font "IndustriaSolid")
 (tool-preset "Core Pointer")
 
 # end of user context

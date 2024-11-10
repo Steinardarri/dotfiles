@@ -2,7 +2,7 @@
 Type=Application
 Name=Wine Installer
 MimeType=application/x-wine-extension-msp;
-Exec=env WINEPREFIX="/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/compatdata/429530/pfx" wine start /ProgIDOpen Msi.Patch %f
+Exec=env WINEPREFIX="/run/media/steinardth/SSD_M2/SteamLibrary/steamapps/compatdata/805550/pfx" wine start /ProgIDOpen Msi.Patch %f
 NoDisplay=true
 StartupNotify=true
 Icon=D23E_msiexec.0

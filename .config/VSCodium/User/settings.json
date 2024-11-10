@@ -1,19 +1,19 @@
 {
   "[awk]": {
-    "editor.semanticHighlighting.enabled": true,
-    "editor.defaultFormatter": "beaglefoot.awk-ide-vscode"
+    "editor.defaultFormatter": "beaglefoot.awk-ide-vscode",
+    "editor.semanticHighlighting.enabled": true
   },
-  "[javascript].editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[json].editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[jsonc].editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[markdown].editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[nix].editor.defaultFormatter": "kamadorueda.alejandra",
-  "[typescriptreact].editor.defaultFormatter": "esbenp.prettier-vscode",
-  "alejandra.program": "alejandra",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "color-highlight.markerType": "outline",
   "continue.enableTabAutocomplete": false,
   "continue.telemetryEnabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Hack Nerd Font', 'Hack', monospace",
@@ -22,16 +22,35 @@
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlineSuggest.enabled": true,
+  "editor.minimap.showSlider": "always",
   "editor.quickSuggestions.strings": "on",
   "editor.semanticTokenColorCustomizations.enabled": true,
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 160,
   "editor.wrappingIndent": "deepIndent",
+  "errorLens.codeLensEnabled": true,
+  "errorLens.gutterIconSet": "emoji",
   "errorLens.gutterIconsEnabled": true,
   "errorLens.messageMaxChars": 0,
+  "evenBetterToml.formatter.alignComments": true,
+  "evenBetterToml.formatter.alignEntries": true,
+  "evenBetterToml.formatter.allowedBlankLines": 2,
+  "evenBetterToml.formatter.arrayAutoCollapse": true,
+  "evenBetterToml.formatter.arrayAutoExpand": true,
+  "evenBetterToml.formatter.arrayTrailingComma": true,
+  "evenBetterToml.formatter.columnWidth": 80,
+  "evenBetterToml.formatter.compactArrays": false,
+  "evenBetterToml.formatter.indentEntries": true,
+  "evenBetterToml.formatter.indentString": "  ",
+  "evenBetterToml.formatter.reorderArrays": true,
+  "evenBetterToml.formatter.trailingNewline": true,
   "explorer.compactFolders": false,
   "extensions.autoCheckUpdates": false,
+  "files.associations": {
+    "PKGBUILD": "aur-pkgbuild"
+  },
   "files.autoSave": "afterDelay",
   "files.encoding": "utf8",
   "files.insertFinalNewline": true,
@@ -50,6 +69,7 @@
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.openAfterClone": "alwaysNewWindow",
+  "git.openRepositoryInParentFolders": "never",
   "git.pruneOnFetch": true,
   "git.pullBeforeCheckout": true,
   "git.rebaseWhenSync": true,
@@ -98,14 +118,27 @@
   "gitmoji.onlyUseCustomEmoji": true,
   "nix.enableLanguageServer": false,
   "nix.serverPath": "nixd",
+  "ruff.nativeServer": "on",
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.enableImages": true,
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.persistentSessionScrollback": 5000,
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "/usr/bin/zsh",
+      "icon": "zap"
+    }
+  },
+  "terminal.integrated.scrollback": 50000,
+  "terminal.integrated.smoothScrolling": true,
   "update.mode": "none",
   "update.showReleaseNotes": false,
+  "window.customTitleBarVisibility": "auto",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
   "workbench.cloudChanges.autoResume": "off",
@@ -113,39 +146,7 @@
   "workbench.colorCustomizations.editorInlayHint.typeBackground": "#2F3542",
   "workbench.colorTheme": "GapStyle VS",
   "workbench.enableExperiments": false,
-  "workbench.productIconTheme": "material-product-icons",
-  "workbench.startupEditor": "none",
-  "window.customTitleBarVisibility": "auto",
   "workbench.iconTheme": "material-icon-theme",
-  "errorLens.codeLensEnabled": true,
-  "errorLens.gutterIconSet": "emoji",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.copyOnSelection": true,
-  "evenBetterToml.formatter.allowedBlankLines": 2,
-  "evenBetterToml.formatter.alignComments": true,
-  "evenBetterToml.formatter.alignEntries": true,
-  "evenBetterToml.formatter.arrayAutoCollapse": true,
-  "evenBetterToml.formatter.arrayAutoExpand": true,
-  "evenBetterToml.formatter.arrayTrailingComma": true,
-  "evenBetterToml.formatter.columnWidth": 80,
-  "evenBetterToml.formatter.compactArrays": false,
-  "evenBetterToml.formatter.indentEntries": true,
-  "evenBetterToml.formatter.indentString": "  ",
-  "evenBetterToml.formatter.trailingNewline": true,
-  "evenBetterToml.formatter.reorderArrays": true,
-  "editor.wordWrapColumn": 160,
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "terminal.integrated.persistentSessionScrollback": 5000,
-  "terminal.integrated.scrollback": 50000,
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
-  "ruff.nativeServer": "on",
-  "files.associations": {
-    "PKGBUILD": "aur-pkgbuild"
-  },
-  "diffEditor.maxComputationTime": 0,
-  "editor.minimap.showSlider": "always"
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.startupEditor": "none"
 }

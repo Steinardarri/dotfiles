@@ -8,7 +8,7 @@ commit = "2edf468aeb7d4703aa211cea3b58f04cbc73298c"
 
 [[gamescope-plus]]
 url = "https://github.com/KhronosGroup/SPIRV-Headers.git"
-commit = "22c4d1b1e9d1c7d9aa5086c93e6491f21080019b"
+commit = "996c728cf7dcfb29845cfa15222822318f047810"
 
 [[gamescope-plus]]
 url = "https://github.com/ValveSoftware/openvr.git"
@@ -32,4 +32,4 @@ commit = "8d0b68f54025f4fc3e39da71f657d8adfc6f4476"
 
 [[universal-pidff-dkms-git]]
 url = "https://github.com/JacKeTUs/universal-pidff"
-commit = "330e7db32f7b09c2929799d2001779f85c25dd1c"
+commit = "d95b73e042b0cbd7053adca0324240fd0210c7da"

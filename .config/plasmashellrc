@@ -6,7 +6,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Applets][35][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Applets][35][Configuration][Appearance]
 showPressureInTooltip=true
@@ -33,16 +33,15 @@ source=bbcukmet|weather|Reykjavik, Iceland, IS|3413829
 [FileDialogSize]
 3 screens: Height=540
 3 screens: Width=960
+4 screens: Height=540
+4 screens: Width=960
 
 [General]
 Number of Actions=0
 
-[PlasmaTransientsConfig]
-PreloadWeight=18
-
 [PlasmaViews][Panel 30]
 floating=1
-panelLengthMode=1
+panelLengthMode=0
 panelVisibility=2
 
 [PlasmaViews][Panel 30][Defaults]

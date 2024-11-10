@@ -1,5 +1,5 @@
 [Document 0]
-URL=file:///home/steinardth/dotfiles/.stowrc
+URL=file:///home/steinardth/dotfiles/.zshenv
 
 [MainWindow0]
 ToolBarsMovable=Disabled
@@ -15,23 +15,23 @@ Count=1
 Count=1
 
 [Recent Files]
-File1[$e]=$HOME/Forrit/Freejoy/99-hid-FreeJoy.rules
-File10[$e]=$HOME/dotfiles/.stowrc
-File2[$e]=$HOME/Forrit/git_verkefni/kde-shader-wallpaper/README.md
-File3[$e]=$HOME/.local/share/plasma/wallpapers/kde-shader-wallpaper-3.0.1-plasma6/metadata.json
-File4[$e]=$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Abstract_Patterns6.frag.qsb
-File5[$e]=$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/config.qml
-File6[$e]=$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/main.qml
-File7[$e]=$HOME/dotfiles/.local/share/applications/LM_Studio.desktop
-File8[$e]=$HOME/Forrit/transfuse/transfuse-full-backup.sh
-File9[$e]=$HOME/Forrit/transfuse/transfuse.sh
-Name1[$e]=99-hid-FreeJoy.rules
-Name10[$e]=.stowrc
-Name2[$e]=README.md
-Name3[$e]=metadata.json
-Name4[$e]=Abstract_Patterns6.frag.qsb
-Name5[$e]=config.qml
-Name6[$e]=main.qml
-Name7[$e]=LM_Studio.desktop
-Name8[$e]=transfuse-full-backup.sh
-Name9[$e]=transfuse.sh
+File1[$e]=/usr/share/applications/alvr.desktop
+File10[$e]=/etc/environment
+File2[$e]=$HOME/.steam/registry.vdf
+File3[$e]=$HOME/.steam/steam/steamapps/libraryfolders.vdf
+File4[$e]=$HOME/dotfiles/.local/share/applications/wine-Programs-CrewChiefV4.desktop
+File5[$e]=$HOME/Downloads/icon_scale.sh
+File6[$e]=$HOME/.rustup/settings.toml
+File7[$e]=/etc/profile
+File8[$e]=$HOME/dotfiles/.zshenv
+File9[$e]=$HOME/.zshrc
+Name1[$e]=alvr.desktop
+Name10[$e]=environment
+Name2[$e]=registry.vdf
+Name3[$e]=libraryfolders.vdf
+Name4[$e]=wine-Programs-CrewChiefV4.desktop
+Name5[$e]=icon_scale.sh
+Name6[$e]=settings.toml
+Name7[$e]=profile
+Name8[$e]=.zshenv
+Name9[$e]=.zshrc

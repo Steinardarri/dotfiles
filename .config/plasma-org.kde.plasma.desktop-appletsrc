@@ -31,7 +31,7 @@ RightButton;NoModifier=org.kde.contextmenu
 activityId=
 formfactor=2
 immutability=1
-lastScreen=0
+lastScreen=1
 location=4
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
@@ -61,7 +61,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][10][Applets][14][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][10][Applets][15]
 immutability=1
@@ -155,7 +155,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][10][Applets][35][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][10][Applets][35][Configuration][Appearance]
 showPressureInTooltip=true
@@ -195,10 +195,10 @@ shownItems=org.kde.plasma.weather,KTorrent
 
 [Containments][30]
 activityId=
-formfactor=3
+formfactor=2
 immutability=1
-lastScreen=1
-location=6
+lastScreen=0
+location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -212,7 +212,7 @@ DialogWidth=720
 
 [Containments][30][Applets][31][Configuration][General]
 indicateAudioStreams=false
-launchers=applications:vesktop.desktop,preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser
+launchers=preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser,applications:vesktop.desktop
 showOnlyCurrentScreen=true
 
 [Containments][30][General]
@@ -247,7 +247,7 @@ AppletOrder=33
 activityId=
 formfactor=2
 immutability=1
-lastScreen=0
+lastScreen=1
 location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
@@ -257,7 +257,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][22][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 popupHeight=450
 popupWidth=560
 
@@ -343,14 +343,15 @@ AppletOrder=43;47;7;8;37;9;22;23
 
 [Containments][48]
 ItemGeometries-1920x1080=Applet-40:0,0,672,272,0;
+ItemGeometries-2560x1440=Applet-40:0,0,672,272,0;
 ItemGeometriesHorizontal=Applet-40:0,0,672,272,0;
 activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
 formfactor=0
 immutability=1
-lastScreen=1
+lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
-wallpaperplugin=online.knowmad.shaderwallpaper
+wallpaperplugin=org.kde.image
 
 [Containments][48][Applets][40]
 immutability=1
@@ -373,14 +374,11 @@ Image=/home/steinardth/Pictures/Vagabond.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][48][Wallpaper][online.knowmad.shaderwallpaper][General]
-iChannel0=file:///home/steinardth/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Resources/Shadertoy_Gray_Noise_Medium.png
-iChannel1_flag=false
 iChannel2_flag=false
 infoPlasma6Preview_dismissed=true
 infoiChannelSettings_dismissed=true
-mouseSpeedBias=-2.76
-selectedShaderIndex=66
-selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Laserworld.frag.qsb
+selectedShaderIndex=77
+selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Grid_Landscape.frag.qsb
 shaderSpeed=0.22
 warningResources_dismissed=true
 
@@ -389,13 +387,16 @@ Image=/home/steinardth/Pictures/Vagabond.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][49]
+ItemGeometries-1920x1080=
+ItemGeometries-2560x1440=
+ItemGeometriesHorizontal=
 activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
 formfactor=0
 immutability=1
-lastScreen=0
+lastScreen=1
 location=0
 plugin=org.kde.desktopcontainment
-wallpaperplugin=online.knowmad.shaderwallpaper
+wallpaperplugin=org.kde.image
 
 [Containments][49][ConfigDialog]
 DialogHeight=540
@@ -409,7 +410,7 @@ SlidePaths=/usr/share/wallpapers/
 iChannel2_flag=false
 infoPlasma6Preview_dismissed=true
 infoiChannelSettings_dismissed=true
-selectedShaderIndex=47
+selectedShaderIndex=77
 selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Grid_Landscape.frag.qsb
 shaderSpeed=0.22
 warningResources_dismissed=true
@@ -418,8 +419,12 @@ warningResources_dismissed=true
 Image=/home/steinardth/Pictures/Vagabond.jpg
 SlidePaths=/usr/share/wallpapers/
 
+[Containments][49][Wallpaper][org.kde.potd][General]
+Provider=simonstalenhag
+
 [Containments][50]
 ItemGeometries-1920x1080=
+ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
 activityId=d0ce5f89-392a-419a-ae53-5e1864bb8326
 formfactor=0
@@ -427,7 +432,7 @@ immutability=1
 lastScreen=2
 location=0
 plugin=org.kde.desktopcontainment
-wallpaperplugin=online.knowmad.shaderwallpaper
+wallpaperplugin=org.kde.image
 
 [Containments][50][ConfigDialog]
 DialogHeight=540
@@ -438,12 +443,10 @@ Image=/home/steinardth/Pictures/Vagabond.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][50][Wallpaper][online.knowmad.shaderwallpaper][General]
-iChannel0_flag=false
-iChannel1_flag=false
 iChannel2_flag=false
 infoPlasma6Preview_dismissed=true
 infoiChannelSettings_dismissed=true
-selectedShaderIndex=47
+selectedShaderIndex=77
 selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Grid_Landscape.frag.qsb
 shaderSpeed=0.22
 warningResources_dismissed=true
@@ -462,22 +465,19 @@ immutability=1
 lastScreen=3
 location=0
 plugin=org.kde.desktopcontainment
-wallpaperplugin=online.knowmad.shaderwallpaper
+wallpaperplugin=org.kde.image
 
 [Containments][51][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][51][Wallpaper][online.knowmad.shaderwallpaper][General]
-iChannel0_flag=false
-iChannel1_flag=false
 iChannel2_flag=false
 infoPlasma6Preview_dismissed=true
 infoiChannelSettings_dismissed=true
-mouseSpeedBias=3.88
-selectedShaderIndex=2
-selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Abstract_Liquid.frag.qsb
-shaderSpeed=0.05
+selectedShaderIndex=77
+selectedShaderPath=file:///home/steinardth/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/Grid_Landscape.frag.qsb
+shaderSpeed=0.22
 warningResources_dismissed=true
 
 [Containments][51][Wallpaper][org.kde.image][General]

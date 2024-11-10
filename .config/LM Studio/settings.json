@@ -24,6 +24,9 @@
     "backendDownloadChannel": "stable",
     "appUpdateChannel": "stable"
   },
+  "ui": {
+    "missionControlFullscreen": false
+  },
   "toggledConfigDropdowns": [],
   "userInterfaceComplexityLevel": 1,
   "appFirstLoad": false,
@@ -33,7 +36,9 @@
     "customThresholdBytes": 4294967296
   },
   "dismissedModals": [],
-  "pre030ChatsMigrated": 2,
+  "pre030ChatsMigrated": 3,
   "appPostUpdateNotificationPending": false,
-  "promptWhenCommittingUnsavedChangesWithNewFields": false
+  "promptWhenCommittingUnsavedChangesWithNewFields": false,
+  "enableLocalService": false,
+  "cliInstalled": false
 }

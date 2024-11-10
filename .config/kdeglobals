@@ -133,8 +133,8 @@ ForegroundPositive=60,171,112
 ForegroundVisited=153,90,185
 
 [DirSelect Dialog]
-DirSelectDialog Size=960,540
-History Items[$e]=file:$HOME/dotfiles/Forrit/Script,file:$HOME/dotfiles/Forrit/Script,file:///run/media/steinardth/SSD_Kingston/floorp,file:///run/media/steinardth/SSD_Kingston/.floorp,file:///run/media/steinardth/Hardur_Diskur/.torrent,file:///,file:///run/media/steinardth/SSD/SteamLibrary,file:///run/media/steinardth/SSD_Auka,file:///run/media/steinardth/SSD_M2,file:///run/media/steinardth/SSD_M2/SteamLibrary,file:$HOME/Downloads/.torrent,file:///run/media/steinardth/Hardur_Diskur/backup/steinardth
+DirSelectDialog Size=1066,584
+History Items[$e]=file:$HOME/Verkefni/rust-blog-and-stuff,file:///run/media/steinardth/SSD_M2/SteamLibrary/steamapps/compatdata/805550/pfx/drive_c/Program Files (x86)/Britton IT Ltd/CrewChiefV4,file:$HOME/Forrit/git_verkefni/kde-shader-wallpaper,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6,file:$HOME/dotfiles/Forrit/Script,file:$HOME/dotfiles/Forrit/Script,file:///run/media/steinardth/SSD_Kingston/floorp,file:///run/media/steinardth/SSD_Kingston/.floorp,file:///run/media/steinardth/Hardur_Diskur/.torrent,file:///,file:///run/media/steinardth/SSD/SteamLibrary,file:///run/media/steinardth/SSD_Auka,file:///run/media/steinardth/SSD_M2,file:///run/media/steinardth/SSD_M2/SteamLibrary,file:$HOME/Downloads/.torrent,file:///run/media/steinardth/Hardur_Diskur/backup/steinardth
 
 [General]
 ColorSchemeHash=a2dd0a3b1d9519fc54380099b9c1617cfd7ce272
@@ -155,7 +155,7 @@ ShowDeleteCommand=true
 Allow Expansion=true
 Automatically select filename extension=true
 Breadcrumb Navigation=true
-Decoration position=2
+Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Show Bookmarks=false
@@ -169,10 +169,11 @@ Sort directories first=true
 Sort hidden files last=true
 Sort reversed=false
 Speedbar Width=140
-View Style=Simple
+View Style=DetailTree
 
 [PreviewSettings]
-MaximumRemoteSize=0
+EnableRemoteFolderThumbnail=true
+MaximumRemoteSize=5242880
 
 [Sounds]
 Enable=false

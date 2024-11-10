@@ -1,5 +1,7 @@
 [Show]
 compressfileitemaction=true
+decrypt-view=true
+encrypt=true
 extractfileitemaction=true
 forgetfileitemaction=true
 installFont=true
@@ -7,8 +9,9 @@ kactivitymanagerd_fileitem_linking_plugin=true
 kdeconnectfileitemaction=true
 kio-admin=true
 kompare=true
-makefileactions=true
+makefileactions=false
 mountisoaction=true
+movetonewfolderitemaction=false
 runInKonsole=true
 sharefileitemaction=true
 slideshowfileitemaction=true

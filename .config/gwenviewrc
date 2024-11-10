@@ -6,26 +6,26 @@ MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=admin:/efi/EFI/refind/themes/refind-dreary/icons/os_win.png
-File10[$e]=$HOME/Downloads/fonts/ubuntu-mono-28.png
-File2[$e]=admin:/efi/EFI/refind/themes/refind-dreary/icons/os_win8.png
-File3[$e]=$HOME/Pictures/Armann/Armann Waterpolo Poster A1.webp
-File4[$e]=admin:/efi/EFI/refind/themes/refind-dreary/background.png
-File5[$e]=$HOME/Downloads/fonts/liberation-mono-regular-12.png
-File6[$e]=$HOME/Downloads/fonts/liberation-mono-regular-14.png
-File7[$e]=$HOME/Downloads/fonts/liberation-mono-regular-24.png
-File8[$e]=$HOME/Downloads/fonts/nimbus-mono-28.png
-File9[$e]=$HOME/Downloads/fonts/liberation-mono-regular-28.png
-Name1[$e]=os_win.png
-Name10[$e]=ubuntu-mono-28.png
-Name2[$e]=os_win8.png
-Name3[$e]=Armann Waterpolo Poster A1.webp
-Name4[$e]=background.png
-Name5[$e]=liberation-mono-regular-12.png
-Name6[$e]=liberation-mono-regular-14.png
-Name7[$e]=liberation-mono-regular-24.png
-Name8[$e]=nimbus-mono-28.png
-Name9[$e]=liberation-mono-regular-28.png
+File1[$e]=$HOME/Downloads/Untitled3_pincel_app.jpg
+File10[$e]=/usr/share/icons/hicolor/128x128/apps/goverlay.png
+File2[$e]=$HOME/Forrit/git_verkefni/ComfyUI/output/ComfyUI_00002_.png
+File3[$e]=$HOME/Pictures/Armann/tournament/Mot_Poster.png
+File4[$e]=/run/media/steinardth/SteinarFlak/Backup/_Annad/Home/Downloads/- Annað/Sim Racing/Race Pace Chart (min 60L 5 lap avg).png
+File5[$e]=$HOME/Downloads/Screenshot_20241109_174416.png
+File6[$e]=/run/media/steinardth/SteinarFlak/Backup/_Annad/Home/Documents/BFBC2/Screenshots/ScreenshotWin32-0001.tga
+File7[$e]=$HOME/Downloads/floorp.png
+File8[$e]=/usr/share/icons/hicolor/32x32/apps/floorp.png
+File9[$e]=/usr/share/icons/hicolor/128x128/apps/floorp.png
+Name1[$e]=Untitled3_pincel_app.jpg
+Name10[$e]=goverlay.png
+Name2[$e]=ComfyUI_00002_.png
+Name3[$e]=Mot_Poster.png
+Name4[$e]=Race Pace Chart (min 60L 5 lap avg).png
+Name5[$e]=Screenshot_20241109_174416.png
+Name6[$e]=ScreenshotWin32-0001.tga
+Name7[$e]=floorp.png
+Name8[$e]=floorp.png
+Name9[$e]=floorp.png
 
 [SideBar]
 InformationSplitterSizes=211,244

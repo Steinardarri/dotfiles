@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[en_GB]=ACCResults.exe
+Comment=ACCResults.exe
+Exec=protontricks-launch --appid 805550 ACCResults.exe
+GenericName[en_GB]=
+GenericName=
+Icon=classic-racers
+MimeType=
+Name[en_GB]=ACC Results Companion
+Name=ACC Results Companion
+Path=/run/media/steinardth/SSD_M2/SteamLibrary/steamapps/compatdata/805550/pfx/dosdevices/c:/Program Files/BoHo/ACC Results Companion/
+StartupNotify=true
+StartupWMClass=accresults.exe
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

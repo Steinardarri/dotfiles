@@ -276,6 +276,8 @@ alias lsblks="lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid"
 alias weather="curl -s 'wttr.in/Reykjavik?MQ' | rg -v 'Follow'"
 alias rgb="openrgb -p Orange"
 
+### Launch
+
 catnap
 
 eval "$(starship init zsh)"

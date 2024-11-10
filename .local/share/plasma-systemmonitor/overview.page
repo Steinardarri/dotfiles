@@ -23,6 +23,10 @@ memory/physical/used=110,86,169
 network/enp5s0/ipv4address=110,86,169
 network/enp5s0/ipv6address=145,169,86
 
+[Face-94410254040128][org.kde.ksysguard.applicationstable][General]
+columnDisplay={"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","netInbound":"text","netOutbound":"text","usage":"lineScaled","vmPSS":"text"}
+sortedColumns=appName,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate,ioReadSyscalls,ioReadSyscallsRate,egid,pid,uid,username,fsuid,suid,ioCharactersRead,totalUserUsage,fsgid,userTime,parentPid,startTime,ioniceLevel,vmURSS,euid,tracerpid,ioCharactersWritten,sysTime,niceLevel,status,tty,sysUsage,iconName,gid,command,vmRSS,canUserLogin,ioPriorityClass,vmShared,scheduler,name,ioCharactersActuallyRead,login,totalTime,menuId,userUsage,ioWriteSyscalls,vmSize,ioCharactersWrittenRate,ioCharactersReadRate,sgid,totalSysUsage,totalUsage,numThreads,appName
+
 [Face-94410261307168][SensorColors]
 disk/all/used=110,86,169
 

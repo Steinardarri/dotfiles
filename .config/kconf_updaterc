@@ -1,50 +1,50 @@
 updateInfoAdded=true
 
 [gtkconfig.upd]
-ctime=1729705923
+ctime=1730852361
 done=gtk_theme,dont_use_gtk_css_for_window_decorations,remove_deprecated_gtk4_option
-mtime=1729680407
+mtime=1730832360
 
 [kcalcrc.upd]
-ctime=1729011921
+ctime=1731099047
 done=remove_deprecated_gtk4_option
-mtime=1728522418
+mtime=1730822450
 
 [kwin.upd]
-ctime=1729705923
+ctime=1730852361
 done=remove_deprecated_gtk4_option,kwin-6.0-reset-active-mouse-screen,kwin-6.0-delete-desktop-switching-shortcuts,kwin-6.0-remove-breeze-tabbox-default,kwin-6.1-remove-gridview-expose-shortcuts
-mtime=1729678870
+mtime=1730830975
 
 [migrate-calendar-to-plugin-id.upd]
-ctime=1729705924
+ctime=1730852362
 done=kwin-6.1-remove-gridview-expose-shortcuts,migrate-calendar-plugins
-mtime=1729679568
+mtime=1730831576
 
 [plasma6.0-remove-dpi-settings.upd]
-ctime=1729705924
+ctime=1730852362
 done=migrate-calendar-plugins,plasma6.0-remove-dpi-settings
-mtime=1729679568
+mtime=1730831576
 
 [plasma6.0-remove-old-shortcuts.upd]
-ctime=1729705924
+ctime=1730852362
 done=plasma6.0-remove-dpi-settings,plasma6.0-remove-old-shortcuts
-mtime=1729679568
+mtime=1730831576
 
 [plasmashell-6.0-keep-custom-position-of-panels.upd]
-ctime=1729705924
+ctime=1730852362
 done=plasma6.0-remove-old-shortcuts,plasmashell-6.0-keep-custom-position-of-panels
-mtime=1729679568
+mtime=1730831576
 
 [plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels.upd]
-ctime=1729705924
+ctime=1730852362
 done=plasmashell-6.0-keep-custom-position-of-panels,plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels
-mtime=1729679568
+mtime=1730831576
 
 [smb4ksettings.upd]
 ctime=1726167302
 mtime=1708631300
 
 [spectacle.upd]
-ctime=1729011938
+ctime=1731099077
 done=plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels,24.02.0-video_format,24.02.0-keep_old_save_location,24.02.0-rename_settings,24.02.0-keep_old_filename_templates,24.05.2-change_placeholder_format
-mtime=1728517734
+mtime=1730817279

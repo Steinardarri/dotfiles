@@ -1,10 +1,7 @@
 [Desktops]
 Id_1=84800ca4-51f8-455b-a0ce-0cf7ca07c009
-Id_2=7a0f68e1-4094-4970-b459-7f07bedcdde4
-Id_3=865fd779-b59d-4830-a363-6d49d2d406e6
-Id_4=3af5851d-fc2b-4867-8ca6-f60584a83771
-Number=4
-Rows=2
+Number=1
+Rows=1
 
 [Effect-shakecursor]
 Magnification=2
