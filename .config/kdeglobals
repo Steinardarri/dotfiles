@@ -1,3 +1,6 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry
+
 [ColorEffects:Disabled]
 ChangeSelectionColor=
 Color=56,56,56
@@ -134,7 +137,7 @@ ForegroundVisited=153,90,185
 
 [DirSelect Dialog]
 DirSelectDialog Size=1066,584
-History Items[$e]=file:$HOME/Verkefni/rust-blog-and-stuff,file:///run/media/steinardth/SSD_M2/SteamLibrary/steamapps/compatdata/805550/pfx/drive_c/Program Files (x86)/Britton IT Ltd/CrewChiefV4,file:$HOME/Forrit/git_verkefni/kde-shader-wallpaper,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6,file:$HOME/dotfiles/Forrit/Script,file:$HOME/dotfiles/Forrit/Script,file:///run/media/steinardth/SSD_Kingston/floorp,file:///run/media/steinardth/SSD_Kingston/.floorp,file:///run/media/steinardth/Hardur_Diskur/.torrent,file:///,file:///run/media/steinardth/SSD/SteamLibrary,file:///run/media/steinardth/SSD_Auka,file:///run/media/steinardth/SSD_M2,file:///run/media/steinardth/SSD_M2/SteamLibrary,file:$HOME/Downloads/.torrent,file:///run/media/steinardth/Hardur_Diskur/backup/steinardth
+History Items[$e]=file:$HOME/Downloads,file:///run/media/steinardth/SSD/LLM_Models,file:///run/media/steinardth/SSD_M2,file:///run/media/steinardth/SSD_Kingston,file:///run/media/steinardth/Hardur_Diskur/Recording,file:///run/media/steinardth/Hardur_Diskur/.torrent,file:$HOME/.var/app/net.pcsx2.PCSX2/config/PCSX2/PS2 iso,file:$HOME/.var/app/net.pcsx2.PCSX2/config/PCSX2/PS2 iso,file:$HOME/Games/PCSX2/cache,file:$HOME/Games/PCSX2/ISO,file:$HOME/Games/PCSX2/bios,file:$HOME/Games/PCSX2/sstates,file:$HOME/Games/PCSX2/snaps,file:$HOME/Games/PCSX2/covers,file:$HOME/Games/PCSX2/cheats,file:$HOME/Games/PCSX2/cache,file:$HOME/Games/PCSX2/memcards,file:$HOME/Games/PCSX2/bios,file:$HOME/Games/PCSX2/ISO,file:$HOME/Games/PCSX2/memcards,file:///run/media/steinardth/SteinarFlak/Backup/Home/Downloads/- Annað/PS2 iso,file:$HOME/Games/PCSX2,file:$HOME/Games/PCSX2/ISO,file:$HOME/Games/PCSX2/BIOS,file:$HOME/Games,file:///run/media/steinardth/SteinarFlak/Backup/_Annad,file:///run/media/steinardth/SteinarFlak/Backup/2023_05,file:///run/media/steinardth/SteinarFlak,file:$HOME/Forrit/git_verkefni/monocoque,file:///run/media/steinardth/Hardur_Diskur,file:$HOME/Downloads/.torrent,file:$HOME/Verkefni/rust-blog-and-stuff,file:///run/media/steinardth/SSD_M2/SteamLibrary/steamapps/compatdata/805550/pfx/drive_c/Program Files (x86)/Britton IT Ltd/CrewChiefV4,file:$HOME/Forrit/git_verkefni/kde-shader-wallpaper,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6,file:$HOME/dotfiles/Forrit/Script,file:$HOME/dotfiles/Forrit/Script,file:///run/media/steinardth/SSD_Kingston/floorp,file:///run/media/steinardth/SSD_Kingston/.floorp,file:///,file:///run/media/steinardth/SSD/SteamLibrary,file:///run/media/steinardth/SSD_Auka,file:///run/media/steinardth/SSD_M2/SteamLibrary,file:$HOME/Downloads/.torrent,file:///run/media/steinardth/Hardur_Diskur/backup/steinardth
 
 [General]
 ColorSchemeHash=a2dd0a3b1d9519fc54380099b9c1617cfd7ce272
@@ -154,7 +157,7 @@ ShowDeleteCommand=true
 [KFileDialog Settings]
 Allow Expansion=true
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -168,7 +171,7 @@ Sort by=Name
 Sort directories first=true
 Sort hidden files last=true
 Sort reversed=false
-Speedbar Width=140
+Speedbar Width=157
 View Style=DetailTree
 
 [PreviewSettings]

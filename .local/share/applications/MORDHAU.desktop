@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=MORDHAU
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/629760
-Icon=steam_icon_629760
-Terminal=false
-Type=Application
-Categories=Game;

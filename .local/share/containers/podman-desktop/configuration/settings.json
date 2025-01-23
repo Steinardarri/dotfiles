@@ -1,4 +1,10 @@
 {
   "welcome.version": "initial",
-  "telemetry.check": true
+  "telemetry.check": true,
+  "window.bounds": {
+    "x": 4256,
+    "y": 307,
+    "width": 1490,
+    "height": 930
+  }
 }

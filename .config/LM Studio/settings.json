@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "downloadsFolder": "/run/media/steinardth/SSD_Kingston/LLM_Models",
+  "downloadsFolder": "/run/media/steinardth/SSD/LLM_Models",
   "sidebar": {
     "showButtonNames": false
   },
@@ -14,15 +14,17 @@
     "useKeychordToRegenerate": true,
     "unloadPreviousModelOnSelect": true,
     "highlightChatMessageOnHover": true,
-    "doubleClickMessageToEdit": true
+    "doubleClickMessageToEdit": true,
+    "aiNamingMode": "auto"
   },
   "developer": {
     "showExperimentalFeatures": false,
     "experimentalLoadPresets": false,
     "showDebugInfoBlocksInChat": false,
     "showModelDownloadOptionData": false,
-    "backendDownloadChannel": "stable",
-    "appUpdateChannel": "stable"
+    "backendDownloadChannel": "beta",
+    "appUpdateChannel": "stable",
+    "allowDevelopmentPlugins": true
   },
   "ui": {
     "missionControlFullscreen": false
@@ -35,7 +37,9 @@
     "mode": "high",
     "customThresholdBytes": 4294967296
   },
-  "dismissedModals": [],
+  "dismissedModals": [
+    "Tool Use Onboarding"
+  ],
   "pre030ChatsMigrated": 3,
   "appPostUpdateNotificationPending": false,
   "promptWhenCommittingUnsavedChangesWithNewFields": false,

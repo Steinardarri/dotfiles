@@ -90,9 +90,16 @@ plugin=org.kde.plasma.keyboardlayout
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
 
+[Containments][10][Applets][19][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][10][Applets][20]
 immutability=1
 plugin=org.kde.plasma.manage-inputmethod
+
+[Containments][10][Applets][20][Configuration]
+PreloadWeight=60
 
 [Containments][10][Applets][21]
 immutability=1
@@ -127,7 +134,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][10][Applets][26][Configuration]
-PreloadWeight=0
+PreloadWeight=8
 
 [Containments][10][Applets][26][Configuration][General]
 showPercentage=true
@@ -155,7 +162,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][10][Applets][35][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][10][Applets][35][Configuration][Appearance]
 showPressureInTooltip=true
@@ -180,7 +187,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][10][Applets][46][Configuration]
-PreloadWeight=70
+PreloadWeight=66
 
 [Containments][10][ConfigDialog]
 DialogHeight=540
@@ -191,7 +198,7 @@ extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.n
 hiddenItems=org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,spotify-client
 knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.kscreen,org.kde.kdeconnect,org.kde.plasma.brightness,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement
 scaleIconsToFit=true
-shownItems=org.kde.plasma.weather,KTorrent
+shownItems=org.kde.plasma.weather,KTorrent,org.kde.plasma.battery
 
 [Containments][30]
 activityId=
@@ -212,11 +219,35 @@ DialogWidth=720
 
 [Containments][30][Applets][31][Configuration][General]
 indicateAudioStreams=false
-launchers=preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser,applications:vesktop.desktop
+launchers=preferred://filemanager,applications:org.kde.konsole.desktop,applications:floorp.desktop
 showOnlyCurrentScreen=true
 
+[Containments][30][Applets][52]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][30][Applets][53]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][30][Applets][53][Configuration]
+PreloadWeight=100
+popupHeight=510
+popupWidth=647
+
+[Containments][30][Applets][53][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][30][Applets][53][Configuration][General]
+favoritesPortedToKAstats=true
+icon=/home/steinardth/Pictures/vanguard.png
+primaryActions=3
+showActionButtonCaptions=false
+systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
+
 [Containments][30][General]
-AppletOrder=31
+AppletOrder=53;52;31
 
 [Containments][32]
 activityId=
@@ -237,7 +268,7 @@ DialogWidth=830
 
 [Containments][32][Applets][33][Configuration][General]
 indicateAudioStreams=false
-launchers=applications:spotify.desktop,applications:org.kde.plasma-systemmonitor.desktop,preferred://filemanager,applications:floorp.desktop
+launchers=applications:spotify.desktop,applications:org.kde.plasma-systemmonitor.desktop,preferred://filemanager,applications:floorp.desktop,applications:vesktop.desktop,applications:LM_Studio.desktop
 showOnlyCurrentScreen=true
 
 [Containments][32][General]
@@ -257,12 +288,16 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][22][Configuration]
-PreloadWeight=80
+PreloadWeight=100
 popupHeight=450
 popupWidth=560
 
 [Containments][4][Applets][22][Configuration][Appearance]
 fontWeight=400
+
+[Containments][4][Applets][22][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][4][Applets][23]
 immutability=1
@@ -282,8 +317,8 @@ popupHeight=545
 popupWidth=647
 
 [Containments][4][Applets][43][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=613
+DialogWidth=894
 
 [Containments][4][Applets][43][Configuration][General]
 favoritesPortedToKAstats=true

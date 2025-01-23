@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginStats>
+  <Plugin type="VST3" id="56535456697461766974616C00000000" lru="1736959869" use-count="1"/>
+  <Plugin type="LV2" id="https://community.ardour.org/node/7596" lru="1736826936" use-count="1"/>
+  <Plugin type="LV2" id="http://calf.sourceforge.net/plugins/Wavetable" lru="1736827339" use-count="1"/>
+  <Plugin type="LV2" id="http://calf.sourceforge.net/plugins/Monosynth" lru="1736827043" use-count="1"/>
+</PluginStats>

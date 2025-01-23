@@ -275,6 +275,7 @@ alias hg="history 0 | rg -i"
 alias lsblks="lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid"
 alias weather="curl -s 'wttr.in/Reykjavik?MQ' | rg -v 'Follow'"
 alias rgb="openrgb -p Orange"
+alias acc="~/Forrit/Script/ACC.sh"
 
 ### Launch
 

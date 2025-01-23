@@ -45,6 +45,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][f90f6651-80ad-54a2-a540-c0a1b0562603]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Wayland]
+VirtualKeyboardEnabled=true
+
 [Xwayland]
 Scale=1
 XwaylandEavesdrops=None

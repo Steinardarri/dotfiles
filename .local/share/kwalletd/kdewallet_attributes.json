@@ -1,10 +1,10 @@
 {
     "$fdo_created": "1722261924",
-    "$fdo_modified": "1731160614",
+    "$fdo_modified": "1735765554",
     "Secret Service/Password for 'proton-sso-account-inzhs32to5xxeza' on 'Proton'": {
-        "$fdo_created": "1731002866",
+        "$fdo_created": "1735765554",
         "$fdo_mime_type": "text/plain",
-        "$fdo_modified": "1731002866",
+        "$fdo_modified": "1735765554",
         "attributes": {
             "application": "Python keyring library",
             "service": "Proton",
@@ -19,6 +19,15 @@
             "application": "Python keyring library",
             "service": "Proton",
             "username": "proton-sso-accounts"
+        }
+    },
+    "Secret Service/zed-github-account": {
+        "$fdo_created": "1734957571",
+        "$fdo_mime_type": "text/plain",
+        "$fdo_modified": "1734957571",
+        "attributes": {
+            "url": "https://zed.dev",
+            "username": "281712"
         }
     },
     "element.io/seshat|@56619037527:matrix.org|guest_device": {

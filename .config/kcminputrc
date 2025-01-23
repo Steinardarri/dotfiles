@@ -3,7 +3,14 @@ NumLock=0
 RepeatDelay=200
 RepeatRate=35
 
+[Libinput][1030][10260][2.4G Composite Devic Consumer Control]
+Enabled=true
+
+[Libinput][1030][10260][2.4G Composite Devic Mouse]
+Enabled=true
+
 [Libinput][1133][16511][Logitech G502]
+PointerAcceleration=0.000
 PointerAccelerationProfile=1
 ScrollFactor=0.75
 
@@ -11,10 +18,15 @@ ScrollFactor=0.75
 PointerAccelerationProfile=1
 ScrollFactor=0.75
 
+[Libinput][25098][1031][XING WEI 2.4G USB USB Composite Device Mouse]
+PointerAccelerationProfile=1
+
 [Libinput][6940][6984][Corsair CORSAIR STRAFE RGB MK.2 Mechanical Gaming Keyboard]
+Enabled=true
 ScrollFactor=0.75
 
 [Libinput][6940][6984][Corsair CORSAIR STRAFE RGB MK.2 Mechanical Gaming Keyboard Mouse]
+Enabled=false
 PointerAccelerationProfile=1
 ScrollFactor=0.75
 

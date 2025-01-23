@@ -1,8 +1,9 @@
 [AC][Display]
+DimDisplayIdleTimeoutSec=-1
+DimDisplayWhenIdle=false
 DisplayBrightness=100
 TurnOffDisplayIdleTimeoutSec=1800
 TurnOffDisplayIdleTimeoutWhenLockedSec=120
-UseProfileSpecificDisplayBrightness=true
 
 [AC][SuspendAndShutdown]
 AutoSuspendIdleTimeoutSec=10800
@@ -10,3 +11,6 @@ PowerButtonAction=1
 
 [BatteryManagement]
 PeripheralBatteryLowLevel=15
+
+[Inhibitions]
+BlockedInhibitions=ktorrent:KTorrent is running one or more torrents,Steam:Client interface

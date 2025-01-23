@@ -6,26 +6,26 @@ MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/Untitled3_pincel_app.jpg
-File10[$e]=/usr/share/icons/hicolor/128x128/apps/goverlay.png
-File2[$e]=$HOME/Forrit/git_verkefni/ComfyUI/output/ComfyUI_00002_.png
-File3[$e]=$HOME/Pictures/Armann/tournament/Mot_Poster.png
-File4[$e]=/run/media/steinardth/SteinarFlak/Backup/_Annad/Home/Downloads/- Annað/Sim Racing/Race Pace Chart (min 60L 5 lap avg).png
-File5[$e]=$HOME/Downloads/Screenshot_20241109_174416.png
-File6[$e]=/run/media/steinardth/SteinarFlak/Backup/_Annad/Home/Documents/BFBC2/Screenshots/ScreenshotWin32-0001.tga
-File7[$e]=$HOME/Downloads/floorp.png
-File8[$e]=/usr/share/icons/hicolor/32x32/apps/floorp.png
-File9[$e]=/usr/share/icons/hicolor/128x128/apps/floorp.png
-Name1[$e]=Untitled3_pincel_app.jpg
-Name10[$e]=goverlay.png
-Name2[$e]=ComfyUI_00002_.png
-Name3[$e]=Mot_Poster.png
-Name4[$e]=Race Pace Chart (min 60L 5 lap avg).png
-Name5[$e]=Screenshot_20241109_174416.png
-Name6[$e]=ScreenshotWin32-0001.tga
-Name7[$e]=floorp.png
-Name8[$e]=floorp.png
-Name9[$e]=floorp.png
+File1[$e]=/run/media/steinardth/SteinarFlak/Backup/_Annad/Home/Downloads/- Annað/Sim Racing/Race Pace Chart (min 60L 5 lap avg).png
+File10[$e]=$HOME/Downloads/Screenshot 2025-01-12 at 23-19-04 Hologram Microcosm Make anything sound cinematic - YouTube.png
+File2[$e]=$HOME/Downloads/Screenshot_20241109_174416.png
+File3[$e]=/run/media/steinardth/SteinarFlak/Backup/_Annad/Home/Documents/BFBC2/Screenshots/ScreenshotWin32-0001.tga
+File4[$e]=$HOME/Downloads/floorp.png
+File5[$e]=/usr/share/icons/hicolor/32x32/apps/floorp.png
+File6[$e]=/usr/share/icons/hicolor/128x128/apps/floorp.png
+File7[$e]=/usr/share/icons/hicolor/128x128/apps/goverlay.png
+File8[$e]=$HOME/Downloads/vtjjlv7a5oasmh95mxs77l.jpg
+File9[$e]=/run/media/steinardth/Hardur_Diskur/Recording/clips/clip_379430_20250118_063611/thumbnail.jpg
+Name1[$e]=Race Pace Chart (min 60L 5 lap avg).png
+Name10[$e]=Screenshot 2025-01-12 at 23-19-04 Hologram Microcosm Make anything sound cinematic - YouTube.png
+Name2[$e]=Screenshot_20241109_174416.png
+Name3[$e]=ScreenshotWin32-0001.tga
+Name4[$e]=floorp.png
+Name5[$e]=floorp.png
+Name6[$e]=floorp.png
+Name7[$e]=goverlay.png
+Name8[$e]=vtjjlv7a5oasmh95mxs77l.jpg
+Name9[$e]=thumbnail.jpg
 
 [SideBar]
 InformationSplitterSizes=211,244

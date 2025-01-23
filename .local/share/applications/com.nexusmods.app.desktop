@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Nexus Mods App
+GenericName=Mod Manager
+Comment=Mod Manager for your games
+Categories=Game
+Terminal=false
+Icon=com.nexusmods.app
+Exec=/opt/nexusmods-app/NexusMods.App %u
+TryExec=/opt/nexusmods-app/NexusMods.App
+X-AppImage-Integrate=true
+X-AppImage-Name=NexusMods.App
+X-AppImage-Arch=x86_64
+MimeType=x-scheme-handler/nxm;x-scheme-handler/nxm

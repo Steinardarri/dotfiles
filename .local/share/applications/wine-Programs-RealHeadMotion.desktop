@@ -1,0 +1,15 @@
+[Desktop Entry]
+Comment=Race engineer for RaceRoom, PCars/2, rFactor/2, Le Mans Ultimate, Assetto Corsa, Assetto Corsa Competizione, Automobilista/2 and iRacing
+Exec=protontricks-launch --appid 805550 RealHeadMotionAssettoCorsaCompetizione.exe
+GenericName=
+Icon=car
+MimeType=
+Name=RealHeadMotionACC
+Path=/run/media/steinardth/SSD_M2/SteamLibrary/steamapps/common/Assetto Corsa Competizione/RHM/
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+StartupWMClass=RealHeadMotionAssettoCorsaCompetizione.exe

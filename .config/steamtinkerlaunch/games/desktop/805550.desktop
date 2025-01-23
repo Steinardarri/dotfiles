@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Assetto Corsa Competizione
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/805550
+Icon=/home/steinardth/.config/steamtinkerlaunch/games/header/805550.jpg
+Terminal=false
+Type=Application
+Categories=Game;

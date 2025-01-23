@@ -1,11 +1,17 @@
 [Favorites-org.kde.plasma.kickoff.favorites.instance-43-d0ce5f89-392a-419a-ae53-5e1864bb8326]
-ordering=applications:org.kde.dolphin.desktop,applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:systemsettings.desktop,preferred://browser,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop,applications:org.kde.discover.desktop,applications:codium-wayland.desktop,applications:Freejoy.desktop,applications:LM_Studio.desktop
+ordering=applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop,applications:org.kde.discover.desktop,applications:codium-wayland.desktop,applications:LM_Studio.desktop,applications:Freejoy.desktop,applications:cockos-reaper.desktop,applications:ardour8.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-43-global]
-ordering=applications:org.kde.dolphin.desktop,applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:systemsettings.desktop,preferred://browser,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop,applications:org.kde.discover.desktop,applications:codium-wayland.desktop,applications:Freejoy.desktop,applications:LM_Studio.desktop
+ordering=applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop,applications:org.kde.discover.desktop,applications:codium-wayland.desktop,applications:LM_Studio.desktop,applications:Freejoy.desktop,applications:cockos-reaper.desktop,applications:ardour8.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-5-d0ce5f89-392a-419a-ae53-5e1864bb8326]
 ordering=applications:codium.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:systemsettings.desktop,preferred://browser,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-5-global]
 ordering=applications:codium.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:systemsettings.desktop,preferred://browser,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-53-d0ce5f89-392a-419a-ae53-5e1864bb8326]
+ordering=applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop,applications:org.kde.discover.desktop,applications:codium-wayland.desktop,applications:LM_Studio.desktop,applications:Freejoy.desktop,applications:cockos-reaper.desktop,applications:ardour8.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-53-global]
+ordering=applications:org.kde.krita.desktop,applications:spotify.desktop,applications:steam.desktop,applications:octopi.desktop,applications:io.github.Qalculate.qalculate-qt.desktop,applications:org.kde.discover.desktop,applications:codium-wayland.desktop,applications:LM_Studio.desktop,applications:Freejoy.desktop,applications:cockos-reaper.desktop,applications:ardour8.desktop

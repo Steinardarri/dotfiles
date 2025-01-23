@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Steam Tinker Launch (Settings)
+Comment=steamtinkerlaunch Settings menu
+Categories=Game;
+Exec=steamtinkerlaunch settings
+Icon=steamtinkerlaunch
+Terminal=false
+Type=Application

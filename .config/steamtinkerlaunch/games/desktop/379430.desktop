@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=KingdomComeDeliverance
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/379430
+Icon=/home/steinardth/.config/steamtinkerlaunch/games/header/379430.jpg
+Terminal=false
+Type=Application
+Categories=Game;

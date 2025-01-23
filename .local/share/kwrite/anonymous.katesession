@@ -1,5 +1,5 @@
 [Document 0]
-URL=file:///home/steinardth/dotfiles/.zshenv
+URL=file:///home/steinardth/.config/frogminer/linux-tkg.cfg
 
 [MainWindow0]
 ToolBarsMovable=Disabled
@@ -15,23 +15,23 @@ Count=1
 Count=1
 
 [Recent Files]
-File1[$e]=/usr/share/applications/alvr.desktop
-File10[$e]=/etc/environment
-File2[$e]=$HOME/.steam/registry.vdf
-File3[$e]=$HOME/.steam/steam/steamapps/libraryfolders.vdf
-File4[$e]=$HOME/dotfiles/.local/share/applications/wine-Programs-CrewChiefV4.desktop
-File5[$e]=$HOME/Downloads/icon_scale.sh
-File6[$e]=$HOME/.rustup/settings.toml
-File7[$e]=/etc/profile
-File8[$e]=$HOME/dotfiles/.zshenv
-File9[$e]=$HOME/.zshrc
-Name1[$e]=alvr.desktop
-Name10[$e]=environment
-Name2[$e]=registry.vdf
-Name3[$e]=libraryfolders.vdf
-Name4[$e]=wine-Programs-CrewChiefV4.desktop
-Name5[$e]=icon_scale.sh
-Name6[$e]=settings.toml
-Name7[$e]=profile
-Name8[$e]=.zshenv
-Name9[$e]=.zshrc
+File1[$e]=$HOME/.config/MangoHud/custom.conf
+File10[$e]=$HOME/.config/frogminer/linux-tkg.cfg
+File2[$e]=/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/common/KingdomComeDeliverance/Data/pak.cfg
+File3[$e]=/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/common/KingdomComeDeliverance/system.cfg
+File4[$e]=/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/common/KingdomComeDeliverance/user.cfg.bak
+File5[$e]=/run/media/steinardth/SSD_Kingston/SteamLibrary/steamapps/common/KingdomComeDeliverance/user.cfg
+File6[$e]=$HOME/.config/frogminer/wine-tkg.cfg
+File7[$e]=/etc/security/limits.conf
+File8[$e]=$HOME/Forrit/git_verkefni/openAV/openAV-Fabla2/docs/Doxyfile
+File9[$e]=$HOME/Forrit/git_verkefni/openAV/openAV-Fabla2/build/cmake_install.cmake
+Name1[$e]=custom.conf
+Name10[$e]=linux-tkg.cfg
+Name2[$e]=pak.cfg
+Name3[$e]=system.cfg
+Name4[$e]=user.cfg.bak
+Name5[$e]=user.cfg
+Name6[$e]=wine-tkg.cfg
+Name7[$e]=limits.conf
+Name8[$e]=Doxyfile
+Name9[$e]=cmake_install.cmake

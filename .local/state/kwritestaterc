@@ -1,12 +1,10 @@
 [KFileDialog Settings]
-Recent Files[$e]=file:///etc/environment
-Recent URLs[$e]=file:///etc/,file:$HOME/.local/share/zed/logs/,admin:/boot/EFI/refind/,admin:/usr/local/bin/,file:$HOME/,file:$HOME/dotfiles/,file:$HOME/Downloads/,file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/,file:$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/,file:///
+Recent Files[$e]=file:///run/media/steinardth/SSD_M2/SteamLibrary/steamapps/compatdata/393380/pfx/drive_c/users/steamuser/AppData/Local/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+Recent URLs[$e]=file:$HOME/dotfiles/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/,file:$HOME/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/contents/ui/Shaders6/,file:///,file:$HOME/Forrit/Script/,file:$HOME/Documents/,file:///run/media/steinardth/Hardur_Diskur/.torrent/Star.Wars.The.Bad.Batch.TV.Film.Cuts.COMPLETE.SERIES.x265.HDR.2160p-NumeralJ/,file:///etc/pacman.d/hooks/,file:///usr/local/bin/,file:///etc/,file:///run/media/steinardth/SSD_M2/SteamLibrary/steamapps/compatdata/393380/pfx/drive_c/users/steamuser/AppData/Local/SquadGame/Saved/Config/WindowsNoEditor/,file:$HOME/
 
 [MainWindow]
-3 screens: Height=1117
+3 screens: Height=1052
 3 screens: Width=1280
 3 screens: Window-Maximized=true
-4 screens: Height=648
-4 screens: Width=1152
 4 screens: Window-Maximized=true
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAPQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABoAGEAbQBiAHUAcgBnAGUAcgBCAGEAcgEAAAIZ/////wAAAAAAAAAA

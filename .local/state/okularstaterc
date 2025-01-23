@@ -1,6 +1,7 @@
 [MainWindow]
 3 screens: Height=700
 3 screens: Width=1152
+3 screens: Window-Maximized=true
 4 screens: Height=700
 4 screens: Width=1152
 4 screens: Window-Maximized=true

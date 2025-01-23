@@ -6,7 +6,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Applets][35][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Applets][35][Configuration][Appearance]
 showPressureInTooltip=true
@@ -45,7 +45,7 @@ panelLengthMode=0
 panelVisibility=2
 
 [PlasmaViews][Panel 30][Defaults]
-thickness=36
+thickness=44
 
 [PlasmaViews][Panel 32]
 floating=1

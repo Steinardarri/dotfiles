@@ -7,10 +7,9 @@
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "mkhl.shfmt"
   },
   "color-highlight.markerType": "outline",
-  "continue.enableTabAutocomplete": false,
   "continue.telemetryEnabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
@@ -148,5 +147,6 @@
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "continue.enableTabAutocomplete": false
 }

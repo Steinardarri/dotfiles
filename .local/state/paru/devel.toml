@@ -1,3 +1,7 @@
+[[evtest-qt-git]]
+url = "https://github.com/Grumbel/evtest-qt.git"
+commit = "6fb1b845ea3b9963bced1847f76c45d85a47beec"
+
 [[gamescope-plus]]
 url = "https://github.com/Joshua-Ashton/reshade.git"
 commit = "4245743a8c41abbe3dc73980c1810fe449359bf1"
@@ -8,7 +12,7 @@ commit = "2edf468aeb7d4703aa211cea3b58f04cbc73298c"
 
 [[gamescope-plus]]
 url = "https://github.com/KhronosGroup/SPIRV-Headers.git"
-commit = "996c728cf7dcfb29845cfa15222822318f047810"
+commit = "2b2e05e088841c63c0b6fd4c9fb380d8688738d3"
 
 [[gamescope-plus]]
 url = "https://github.com/ValveSoftware/openvr.git"
@@ -20,16 +24,16 @@ commit = "211fa636a3c49da81bcedc115457a003f28f9a58"
 
 [[gamescope-plus]]
 url = "https://gitlab.freedesktop.org/emersion/libliftoff.git"
-commit = "07fbf143325ac1afcd4af9f9e286c1389a015418"
-
-[[monocoque-git]]
-url = "https://github.com/spacefreak18/monocoque"
-commit = "12509e9709871afcb3ae264823b4a7d3c3b71bf7"
+commit = "98ef9e52d4e4d160c53eef07ed93d0d8df7539a2"
 
 [[protopedal-git]]
 url = "https://gitlab.com/openirseny/protopedal"
-commit = "8d0b68f54025f4fc3e39da71f657d8adfc6f4476"
+commit = "85b0848a969a800fc22506cbd284f6eefeb247d9"
+
+[[tinycmmc-git]]
+url = "https://github.com/grumbel/tinycmmc"
+commit = "9a51e13802d930feb7261ba8876940659b258cb7"
 
 [[universal-pidff-dkms-git]]
 url = "https://github.com/JacKeTUs/universal-pidff"
-commit = "d95b73e042b0cbd7053adca0324240fd0210c7da"
+commit = "23ec6488eddaa9f5b370b53b0198ba7b656ffa3d"

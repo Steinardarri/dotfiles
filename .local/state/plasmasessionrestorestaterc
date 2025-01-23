@@ -2,4 +2,13 @@
 appId=vesktop.desktop
 
 [1]
-appId=io.element.Element.desktop
+appId=spotify.desktop
+
+[2]
+appId=org.kde.dolphin.desktop
+
+[3]
+appId=org.kde.dolphin.desktop
+
+[4]
+appId=org.kde.dolphin.desktop

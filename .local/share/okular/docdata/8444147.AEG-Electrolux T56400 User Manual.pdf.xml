@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE documentInfo>
-<documentInfo url="/home/steinardth/Downloads/AEG-Electrolux T56400 User Manual.pdf">
+<documentInfo url="/home/steinardth/Documents/Manuals/AEG-Electrolux T56400 User Manual.pdf">
  <generalInfo>
   <history>
-   <oldPage viewport="0;C2:0.5:1.00229:1"/>
-   <oldPage viewport="1;C2:0.5:0.999238:1"/>
-   <oldPage viewport="2;C2:0.5:0.987805:1"/>
-   <oldPage viewport="3;C2:0.5:1.00152:1"/>
-   <oldPage viewport="4;C2:0.5:0.990091:1"/>
-   <oldPage viewport="5;C2:0.5:1.00381:1"/>
-   <oldPage viewport="6;C2:0.5:1.00076:1"/>
-   <oldPage viewport="7;C2:0.5:0.997713:1"/>
-   <oldPage viewport="8;C2:0.5:0.994665:1"/>
-   <current viewport="9;C2:0.5:0.396341:1"/>
+   <oldPage viewport="10;C2:0.5:0.00198216:1"/>
+   <oldPage viewport="9;C2:0.5:0.998274:1"/>
+   <oldPage viewport="10;C2:0.5:-0.0023015:1"/>
+   <oldPage viewport="9;C2:0.5:-0.00172612:1"/>
+   <oldPage viewport="8;C2:0.5:0.999425:1"/>
+   <oldPage viewport="9;C2:0.5:0.998849:1"/>
+   <oldPage viewport="10;C2:0.5:-0.00172612:1"/>
+   <oldPage viewport="9;C2:0.5:1:1"/>
+   <oldPage viewport="10;C2:0.5:-0.00115075:1"/>
+   <oldPage viewport="9;C2:0.5:-0.00172612:1"/>
+   <current viewport="8;C2:0.5:0.283659:1"/>
   </history>
   <views>
    <view name="PageView">
-    <zoom mode="1" value="1.7247"/>
+    <zoom mode="0" value="4.98371"/>
     <continuous mode="1"/>
     <viewMode mode="0"/>
     <trimMargins value="0"/>

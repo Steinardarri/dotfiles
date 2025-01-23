@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PROPERTIES>
+  <VALUE name="MidiNoteSelectPad" val="0"/>
+  <VALUE name="ClearPadResetOutput" val="0"/>
+  <VALUE name="PlayPadOnClick" val="1"/>
+  <VALUE name="DefaultSize" val="100"/>
+  <VALUE name="UserDir0" val="/home/steinardth/Desktop"/>
+  <VALUE name="UserDir1" val=""/>
+  <VALUE name="UserDir2" val=""/>
+  <VALUE name="UserDir3" val=""/>
+  <VALUE name="UserDir4" val=""/>
+  <VALUE name="UserDir5" val=""/>
+  <VALUE name="UserDir6" val=""/>
+  <VALUE name="UserDir7" val=""/>
+  <VALUE name="UserDir8" val=""/>
+  <VALUE name="UserDir9" val=""/>
+  <VALUE name="AutoplayVolume" val="0.699999988079071"/>
+  <VALUE name="BrowserAutoplay" val="1"/>
+  <VALUE name="BrowserAutoload" val="0"/>
+  <VALUE name="KitSaveAsSamples" val="0"/>
+  <VALUE name="KitSaveAsTriggerMap" val="0"/>
+  <VALUE name="KitSaveAsCoverArt" val="0"/>
+</PROPERTIES>

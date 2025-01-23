@@ -1,3 +1,4 @@
 [default-nodes]
 default.configured.audio.sink=alsa_output.usb-Yamaha_Corporation_AG06_AG03-00.analog-stereo
+default.configured.audio.sink.0=alsa_output.pci-0000_0b_00.1.hdmi-surround-extra3
 default.configured.audio.source=alsa_input.usb-Antlion_Audio_Antlion_USB_Microphone-00.mono-fallback

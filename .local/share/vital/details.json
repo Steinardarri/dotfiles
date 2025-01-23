@@ -1,0 +1,10 @@
+{
+  ":am": { "N": "0" },
+  ":au": { "S": "Factory" },
+  ":n": { "S": "FactoryContent" },
+  ":s": { "S": "vitalcontent/FactoryContent.vitalbank" },
+  ":p": { "BOOL": false },
+  ":w": { "BOOL": false },
+  ":l": { "BOOL": false },
+  ":sa": { "BOOL": false }
+}

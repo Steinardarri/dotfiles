@@ -1,0 +1,64 @@
+[ExtHistoryComboEXTENSION_CUSTOM_TEMPLATE]
+CompletionList=
+HistoryList=
+
+[ExtHistoryComboEXTENSION_TEMPLATE]
+CompletionList=$:1
+HistoryList=$
+
+[ExtHistoryComboFILENAME_CUSTOM_TEMPLATE]
+CompletionList=
+HistoryList=
+
+[ExtHistoryComboFILENAME_TEMPLATE]
+CompletionList=$:1
+HistoryList=$
+
+[ExtHistoryComboPREVIX_CUSTOM_TEMPLATE]
+CompletionList=
+HistoryList=
+
+[ExtHistoryComboSUFFIX_CUSTOM_TEMPLATE]
+CompletionList=
+HistoryList=
+
+[GUISettings]
+Advanced=true
+Column0=457
+Column1=891
+ExtensionSplitDot=0
+ExtensionSplitMode=1
+FileListSorting=1
+FileListSortingCustomMode=0
+FileListSortingCustomToken=
+ImagePreview2=true
+ImagePreviewName2=true
+StartIndex=1
+Stepping=1
+firststart4=false
+
+[KFileDialog Settings]
+Recent Files[$e]=file:///mnt/PlexMedia/Star Wars/TV Shows/Star Wars: The Clone Wars/Season 2,file:///mnt/PlexMedia/Star Wars/TV Shows/Star Wars: The Clone Wars/Season 3,file:///mnt/PlexMedia/Star Wars/TV Shows/Star Wars: The Clone Wars/Season 4,file:///mnt/PlexMedia/Star Wars/TV Shows/Star Wars: The Clone Wars/Season 5,file:///mnt/PlexMedia/Star Wars/TV Shows/Star Wars: The Clone Wars/Season 1,file:///mnt/PlexMedia/Star Wars/TV Shows/Star Wars: The Clone Wars
+Recent URLs[$e]=file:///mnt/PlexMedia/Star Wars/TV Shows/Star Wars: The Clone Wars/,file:$HOME/Documents/,file:///mnt/PlexMedia/Star Wars/TV Shows/,file:$HOME/
+detailViewIconSize=16
+
+[KRenameWindowSettings]
+3 screens: Height=827
+3 screens: Width=1472
+RestorePositionForNextInstance=false
+
+[PluginSettings]
+JavaScriptDefinitions=
+JavaScriptVariableNames=
+JavaScriptVariableTypes=
+JavaScriptVariableValues=
+
+[TokenHelpDialog]
+Column0=100
+Column1=75
+Column2=325
+Geometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x133\x00\x00\x01B\x00\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x133\x00\x00\x01B\x00\x00\x00\x01\x00\x00\x00\x00\n\x00\x00\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x133\x00\x00\x01B
+LastSelectedCategory=
+Preview=false
+RecentTokens=
+Splitter=516,516

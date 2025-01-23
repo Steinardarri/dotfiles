@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <oor:items xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<item oor:path="/org.openoffice.Office.Calc/Compatibility/KeyBindings"><prop oor:name="BaseGroup" oor:op="fuse"><value>0</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Compatibility"><prop oor:name="Links" oor:op="fuse"><value>false</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Content/Update"><prop oor:name="Link" oor:op="fuse"><value>2</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Input"><prop oor:name="AutoInput" oor:op="fuse"><value>true</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Input"><prop oor:name="DetectiveAuto" oor:op="fuse"><value>true</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Input"><prop oor:name="LastFunctions" oor:op="fuse"><value>224 226 222 223 6</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Layout/Other/MeasureUnit"><prop oor:name="Metric" oor:op="fuse"><value>2</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Layout/Other"><prop oor:name="StatusbarFunction" oor:op="fuse"><value>1</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Layout/Other"><prop oor:name="StatusbarMultiFunction" oor:op="fuse"><value>514</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Layout/Zoom"><prop oor:name="Synchronize" oor:op="fuse"><value>true</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Layout/Zoom"><prop oor:name="Type" oor:op="fuse"><value>0</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Layout/Zoom"><prop oor:name="Value" oor:op="fuse"><value>100</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Misc/DefaultObjectSize"><prop oor:name="Height" oor:op="fuse"><value>5000</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Misc/DefaultObjectSize"><prop oor:name="Width" oor:op="fuse"><value>8000</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Misc/SharedDocument"><prop oor:name="ShowWarning" oor:op="fuse"><value>true</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Revision/Color"><prop oor:name="Change" oor:op="fuse"><value>-1</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Revision/Color"><prop oor:name="Deletion" oor:op="fuse"><value>-1</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Revision/Color"><prop oor:name="Insertion" oor:op="fuse"><value>-1</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/Revision/Color"><prop oor:name="MovedEntry" oor:op="fuse"><value>-1</value></prop></item>
+<item oor:path="/org.openoffice.Office.Calc/SortList"><prop oor:name="List" oor:op="fuse"><value><it>Mon,Tue,Wed,Thu,Fri,Sat,Sun</it><it>Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday</it><it>Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec</it><it>January,February,March,April,May,June,July,August,September,October,November,December</it></value></prop></item>
 <item oor:path="/org.openoffice.Office.Common/Font/SourceViewFont"><prop oor:name="FontName" oor:op="fuse"><value>Hack</value></prop></item>
 <item oor:path="/org.openoffice.Office.Common/Font/Substitution"><prop oor:name="Replacement" oor:op="fuse"><value>false</value></prop></item>
 <item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="FirstRun" oor:op="fuse"><value>false</value></prop></item>
@@ -41,7 +61,6 @@
 <item oor:path="/org.openoffice.Office.Linguistic/ServiceManager/ThesaurusList"><prop oor:name="is-IS" oor:op="fuse" oor:type="oor:string-list"><value><it>org.openoffice.lingu.new.Thesaurus</it></value></prop></item>
 <item oor:path="/org.openoffice.Office.Logging/Settings"><node oor:name="unopkg" oor:op="replace"><prop oor:name="LogLevel" oor:op="fuse"><value>2147483647</value></prop><prop oor:name="DefaultHandler" oor:op="fuse"><value>com.sun.star.logging.FileHandler</value></prop><node oor:name="HandlerSettings"><prop oor:name="FileURL" oor:op="fuse"><value>$(userurl)/$(loggername).log</value></prop></node><prop oor:name="DefaultFormatter" oor:op="fuse"><value>com.sun.star.logging.PlainTextFormatter</value></prop><node oor:name="FormatterSettings"></node></node></item>
 <item oor:path="/org.openoffice.Office.Recovery/RecoveryInfo"><prop oor:name="SessionData" oor:op="fuse"><value>false</value></prop></item>
-<item oor:path="/org.openoffice.Office.Recovery/RecoveryList"><node oor:name="recovery_item_1" oor:op="remove"/></item>
 <item oor:path="/org.openoffice.Office.UI.CalcWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/formatobjectbar']"><prop oor:name="ContextActive" oor:op="fuse"><value>true</value></prop></item>
 <item oor:path="/org.openoffice.Office.UI.CalcWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/formatobjectbar']"><prop oor:name="ContextSensitive" oor:op="fuse"><value>true</value></prop></item>
 <item oor:path="/org.openoffice.Office.UI.CalcWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/formatobjectbar']"><prop oor:name="DockPos" oor:op="fuse"><value>0,2</value></prop></item>
@@ -114,7 +133,8 @@
 <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/textobjectbar']"><prop oor:name="Style" oor:op="fuse"><value>0</value></prop></item>
 <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/textobjectbar']/UIName"><value xml:lang="en-US">Formatting</value></item>
 <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/textobjectbar']"><prop oor:name="Visible" oor:op="fuse"><value>true</value></prop></item>
-<item oor:path="/org.openoffice.Office.Views/TabDialogs"><node oor:name="cui/ui/customizedialog/CustomizeDialog" oor:op="replace"><prop oor:name="PageID" oor:op="fuse"><value>notebookbar</value></prop><node oor:name="UserData"></node><prop oor:name="WindowState" oor:op="fuse"><value xsi:nil="true"/></prop></node></item>
+<item oor:path="/org.openoffice.Office.Views/TabDialogs"><node oor:name="cui/ui/customizedialog/CustomizeDialog" oor:op="replace"><prop oor:name="PageID" oor:op="fuse"><value>contextmenus</value></prop><node oor:name="UserData"></node><prop oor:name="WindowState" oor:op="fuse"><value xsi:nil="true"/></prop></node></item>
+<item oor:path="/org.openoffice.Office.Views/TabDialogs"><node oor:name="modules/scalc/ui/validationdialog/ValidationDialog" oor:op="replace"><prop oor:name="PageID" oor:op="fuse"><value>criteria</value></prop><node oor:name="UserData"></node><prop oor:name="WindowState" oor:op="fuse"><value xsi:nil="true"/></prop></node></item>
 <item oor:path="/org.openoffice.Office.Views/TabDialogs"><node oor:name="sfx/ui/documentpropertiesdialog/DocumentPropertiesDialog" oor:op="replace"><prop oor:name="PageID" oor:op="fuse"><value>general</value></prop><node oor:name="UserData"></node><prop oor:name="WindowState" oor:op="fuse"><value xsi:nil="true"/></prop></node></item>
 <item oor:path="/org.openoffice.Office.Views/Windows"><node oor:name="SplitWindow0" oor:op="replace"><prop oor:name="Visible" oor:op="fuse"><value xsi:nil="true"/></prop><node oor:name="UserData"><prop oor:name="UserItem" oor:op="fuse" oor:type="xs:string"><value>V1,2,0</value></prop></node><prop oor:name="WindowState" oor:op="fuse"><value xsi:nil="true"/></prop></node></item>
 <item oor:path="/org.openoffice.Office.Views/Windows"><node oor:name="SplitWindow1" oor:op="replace"><prop oor:name="Visible" oor:op="fuse"><value xsi:nil="true"/></prop><node oor:name="UserData"><prop oor:name="UserItem" oor:op="fuse" oor:type="xs:string"><value>V1,2,0</value></prop></node><prop oor:name="WindowState" oor:op="fuse"><value xsi:nil="true"/></prop></node></item>
@@ -132,12 +152,12 @@
 <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.frame.StartModule']"><prop oor:name="ooSetupFactoryWindowAttributes" oor:op="fuse"><value>1920,0,2445,1340;1;,,,;</value></prop></item>
 <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']"><prop oor:name="ooSetupFactoryWindowAttributes" oor:op="fuse"><value>,,,;5;,,,;</value></prop></item>
 <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']"><prop oor:name="ooSetupFactoryWindowAttributes" oor:op="fuse"><value>,,,;5;,,,;</value></prop></item>
-<item oor:path="/org.openoffice.Setup/Office"><prop oor:name="LastCompatibilityCheckID" oor:op="fuse"><value>420(Build:2)</value></prop></item>
+<item oor:path="/org.openoffice.Setup/Office"><prop oor:name="LastCompatibilityCheckID" oor:op="fuse"><value>480(Build:2)</value></prop></item>
 <item oor:path="/org.openoffice.Setup/Office"><prop oor:name="OfficeRestartInProgress" oor:op="fuse"><value>false</value></prop></item>
 <item oor:path="/org.openoffice.Setup/Office"><prop oor:name="ooSetupInstCompleted" oor:op="fuse"><value>true</value></prop></item>
 <item oor:path="/org.openoffice.Setup/Product"><prop oor:name="LastTimeDonateShown" oor:op="fuse"><value>1722222840</value></prop></item>
 <item oor:path="/org.openoffice.Setup/Product"><prop oor:name="LastTimeGetInvolvedShown" oor:op="fuse"><value>1722222840</value></prop></item>
-<item oor:path="/org.openoffice.Setup/Product"><prop oor:name="ooSetupLastVersion" oor:op="fuse"><value>24.2</value></prop></item>
+<item oor:path="/org.openoffice.Setup/Product"><prop oor:name="ooSetupLastVersion" oor:op="fuse"><value>24.8</value></prop></item>
 <item oor:path="/org.openoffice.UserProfile/Data"><prop oor:name="c" oor:op="fuse"><value></value></prop></item>
 <item oor:path="/org.openoffice.UserProfile/Data"><prop oor:name="encryptionkey" oor:op="fuse"><value></value></prop></item>
 <item oor:path="/org.openoffice.UserProfile/Data"><prop oor:name="encrypttoself" oor:op="fuse"><value>true</value></prop></item>

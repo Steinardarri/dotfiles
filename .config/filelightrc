@@ -1,3 +1,11 @@
 [FileDialogSize]
 3 screens: Height=584
 3 screens: Width=820
+
+[filelight_part]
+contrast=75
+scanAcrossMounts=false
+scanRemoteMounts=false
+scheme=0
+showSmallFiles=false
+skipList[$e]=/dev,/proc,/sys,/root

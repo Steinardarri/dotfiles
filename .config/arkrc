@@ -1,3 +1,8 @@
+[ExtractDialog]
+3 screens: Height=540
+3 screens: Width=1256
+DirHistory[$e]=$HOME/Downloads/
+
 [FileDialogSize]
 3 screens: Height=584
 3 screens: Width=820
@@ -9,3 +14,4 @@ ShowSidebar=true
 [MainWindow]
 StatusBar=Disabled
 ToolBarsMovable=Disabled
+splitterSizes=1056,164

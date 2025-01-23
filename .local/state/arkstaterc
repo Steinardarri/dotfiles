@@ -2,12 +2,16 @@
 LastMimeType=application/x-7z-compressed
 
 [KFileDialog Settings]
-Recent Files[$e]=file:///run/media/steinardth/SSD_Kingston/floorp/installs.ini
-Recent URLs[$e]=file:///run/media/steinardth/SSD_Kingston/floorp/,file:$HOME/
+Recent Files[$e]=file:$HOME
+Recent URLs[$e]=file:$HOME/,file:$HOME/Downloads/
 
 [MainWindow]
 3 screens: Height=600
-3 screens: Width=950
+3 screens: Width=1139
 4 screens: Height=600
-4 screens: Width=950
-State=AAAA/wAAAAD9AAAAAQAAAAEAAACkAAACKvwCAAAAAfsAAAAWAGEAcgBrAF8AcwBpAGQAZQBiAGEAcgEAAAAuAAACKgAAAG4A///+AAADEQAAAioAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+4 screens: Width=1139
+State=AAAA/wAAAAD9AAAAAQAAAAEAAACkAAACKvwCAAAAAfsAAAAWAGEAcgBrAF8AcwBpAGQAZQBiAGEAcgEAAAAuAAACKgAAAG4A///+AAADzgAAAioAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+
+[Open-with settings]
+History=org.kde.kwrite
+LastChoice=org.kde.kwrite
