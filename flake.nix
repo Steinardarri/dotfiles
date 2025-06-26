@@ -2,7 +2,6 @@
   description = "Steinardarri's NixOS Config";
 
   inputs = {
-    
     # System
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
@@ -18,15 +17,30 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    flake-utils.url = "github:numtide/flake-utils";
+
     # Desktop Environment
     plasma-manager = {
-      #url = "github:pjones/plasma-manager/plasma-5";
       url = "github:pjones/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
 
     stylix.url = "github:danth/stylix";
+
+    hyprland.url = "github:hyprwm/Hyprland";
+    ags = {
+      url = "github:aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    astal = {
+      url = "github:aylur/astal";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Misc Modules
     nur.url = "github:nix-community/NUR";
@@ -42,27 +56,29 @@
     };
 
     spicetify-nix.url = "github:the-argus/spicetify-nix";
+
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
   };
 
   outputs = inputs @ {
     nixpkgs,
     home-manager,
     nixos-hardware,
-    disko,
+    # disko,
     stylix,
     ...
   }: let
     ############################################
     ## Define which host you want to use here ##
     ############################################
-    inherit (import ./hosts/heima/options.nix) username hostname system device swap hardware-list;
+    inherit (import ./hosts/heima/options.nix) username hostname system device hardware-list;
 
     hardware-import = list: map (item: nixos-hardware.nixosModules.${item}) list;
 
     genericModules = [
       home-manager.nixosModules.home-manager
-      stylix.nixosModules.stylix
-
       {
         nix.registry.nixos.flake = inputs.self;
         home-manager.useGlobalPkgs = true;
@@ -75,6 +91,8 @@
           inherit hostname;
         };
       }
+
+      stylix.nixosModules.stylix
 
       {
         # This fixes things that don't use Flakes, but do want to use NixPkgs.
@@ -93,19 +111,18 @@
           inherit username;
           inherit hostname;
           inherit device;
-          inherit swap;
         };
 
         modules =
           genericModules
           ++ [
             ./configuration.nix
-            ./disko.nix
 
-            disko.nixosModules.default
+            # ./disko.nix
+            # disko.nixosModules.default
 
             {
-              home-manager.users.${username} = import ./users/home.nix;
+              home-manager.users.${username} = import ./users/${username}/home.nix;
             }
 
             {

@@ -12,14 +12,13 @@
     theConsoleKeyMap
     flakeDir
     theShell
-    terminal
     ;
 in {
   imports = [
+    # Base
     ./hosts/${hostname}/hardware.nix
     ./config/system
-    ./config/stylix
-    ./users/users.nix
+    ./users/${username}
   ];
 
   networking.hostName = "${hostname}";
@@ -43,10 +42,8 @@ in {
 
   environment.variables = {
     FLAKE = "${flakeDir}";
-    EDITOR = "hx";
     LANG = "${theLocale}";
     SHELL = "/etc/profiles/per-user/${username}/bin/${theShell}";
-    TERM = "${terminal}";
   };
 
   nixpkgs = {
@@ -76,5 +73,5 @@ in {
     };
   };
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "25.05";
 }
