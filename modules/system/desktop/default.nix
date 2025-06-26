@@ -7,14 +7,6 @@
     ;
 in {
   services = {
-    xserver = {
-      enable = true;
-      xkb = {
-        layout = "${theKBDLayout}, ${theSecondKBDLayout}";
-        variant = "${theKBDVariant}";
-      };
-    };
-
     libinput = {
       enable = true;
       mouse = {

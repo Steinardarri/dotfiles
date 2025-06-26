@@ -25,11 +25,11 @@ in {
   security.sudo.wheelNeedsPassword = false;
 
   imports = [
-    ../../modules/stylix
+    ../../modules/system/desktop/hyprland
+    # ../../modules/stylix
     ../../modules/system/flatpak.nix
     ../../modules/system/gaming.nix
     ../../modules/system/python.nix
-    # ../../modules/system/desktop/.nix
   ];
 
   programs = {
