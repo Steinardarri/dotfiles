@@ -48,7 +48,6 @@ in {
     "common-gpu-amd"
     "common-pc"
     "common-pc-ssd"
-    "common-pc-hdd"
   ];
 
   logitech = true;
