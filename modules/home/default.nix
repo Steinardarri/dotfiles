@@ -5,10 +5,10 @@
   ];
 
   home.packages = with pkgs; [
-    lapce
     gimp3-with-plugins
     element-desktop
-    
+    logseq
+
     kdePackages.krita
     kdePackages.qalculate
   ];

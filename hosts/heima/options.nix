@@ -23,7 +23,7 @@ in {
   theKBDVariant = "";
   theLCVariables = "is_IS.UTF-8";
   theTimezone = "Atlantic/Reykjavik";
-  theShell = "zsh"; # bash, zsh
+  theShell = "fish"; # fish, zsh, bash
   theKernel = "xanmod"; # default, latest, lqx, xanmod, zen
 
   ## Hardware ##

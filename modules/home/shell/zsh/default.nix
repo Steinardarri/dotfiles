@@ -9,7 +9,7 @@
 in
   lib.mkIf (theShell == "zsh") {
     imports = [
-      ./starship.nix
+      ../starship.nix
     ];
 
     programs = {

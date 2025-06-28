@@ -17,7 +17,7 @@ in {
   imports = [
     # Base
     ./hosts/${hostname}/hardware.nix
-    ./config/system
+    ./modules/system
     ./users/${username}
   ];
 

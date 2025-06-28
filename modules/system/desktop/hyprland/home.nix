@@ -1,5 +1,5 @@
 {
-  config,
+  hostname,
   pkgs,
   inputs,
   lib,
@@ -13,7 +13,18 @@
 
   # Import animations configuration
   animations = import ./animations.nix;
+
+  inherit
+    (import ../../../hosts/${hostname}/options.nix)
+    theKBDLayout
+    ;
 in {
+  imports = [
+    ./quickshell
+    ./ags
+    ./dunst
+  ];
+
   # Hyprland-related packages
   home.packages = with pkgs; [
     wofi # application launcher
@@ -29,7 +40,7 @@ in {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
 
-    xwayland.enable = true;
+    xwayland.enable = false;
     # xwayland.forceZeroScaling = true;
 
     # Import environment variables for systemd services
@@ -38,10 +49,8 @@ in {
     settings = {
       # Monitor configuration
       monitor = [
-        # Samsung Odyssey G5 (top)
-        "eDP-1, 1920x1200@144, 0x0, 1.0"
-        "DP-1, 2560x1440@164, 1920x0, 1.0"
-        # Laptop display (bottom)
+        "DP-1, 1920x1080@144, 0x0, 1.0"
+        "DP-2, 2560x1440@144, 1920x0, 1.0"
       ];
 
       # Variables
@@ -111,7 +120,7 @@ in {
       };
 
       input = {
-        kb_layout = "us";
+        kb_layout = "${theKBDLayout}";
         follow_mouse = 1;
         touchpad = {
           natural_scroll = true;
@@ -124,43 +133,43 @@ in {
         workspace_swipe_fingers = 3;
       };
 
-#      xwayland = {
-#        force_zero_scaling = true;
-#      };
+      #      xwayland = {
+      #        force_zero_scaling = true;
+      #      };
 
       cursor = {
         inactive_timeout = 5;
       };
 
       windowrulev2 = [
-#        "opacity 0.0 override,class:^(xwaylandvideobridge)$"
-#        "noanim,class:^(xwaylandvideobridge)$"
-#        "noinitialfocus,class:^(xwaylandvideobridge)$"
-#        "maxsize 1 1,class:^(xwaylandvideobridge)$"
-#        "noblur,class:^(xwaylandvideobridge)$"
+        #        "opacity 0.0 override,class:^(xwaylandvideobridge)$"
+        #        "noanim,class:^(xwaylandvideobridge)$"
+        #        "noinitialfocus,class:^(xwaylandvideobridge)$"
+        #        "maxsize 1 1,class:^(xwaylandvideobridge)$"
+        #        "noblur,class:^(xwaylandvideobridge)$"
 
         # Qalculate-gtk
         "float,class:(qalculate-gtk)"
         "workspace special:calculator,class:(qalculate-gtk)"
 
-        # Kitty
-        "float,noblur,class:(kitty-bg)"
-        # "noblur,float,noinitialfocus,pin,fullscreen,class:(kitty-bg)"
-        # "float,title:(fly_is_kitty)"
-        # "size 600 400,title:(fly_is_kitty)"
-        # "workspace special:terminal, title:(fly_is_kitty)"
+        # # Kitty
+        # "float,noblur,class:(kitty-bg)"
+        # # "noblur,float,noinitialfocus,pin,fullscreen,class:(kitty-bg)"
+        # # "float,title:(fly_is_kitty)"
+        # # "size 600 400,title:(fly_is_kitty)"
+        # # "workspace special:terminal, title:(fly_is_kitty)"
 
-        # Discord
-        "float,class:(discord)"
-        "size 1200 700,class:(discord)"
-        "move 26.5% 25%,class:(discord)"
-        "workspace special:discord, class:(discord)"
+        # # Discord
+        # "float,class:(discord)"
+        # "size 1200 700,class:(discord)"
+        # "move 26.5% 25%,class:(discord)"
+        # "workspace special:discord, class:(discord)"
 
-        # Telegram
-        "float,class:(org.telegram.desktop)"
-        "size 800 400,class:(org.telegram.desktop)"
-        "center,class:(org.telegram.desktop)"
-        "workspace special:telegram, class:(org.telegram.desktop)"
+        # # Telegram
+        # "float,class:(org.telegram.desktop)"
+        # "size 800 400,class:(org.telegram.desktop)"
+        # "center,class:(org.telegram.desktop)"
+        # "workspace special:telegram, class:(org.telegram.desktop)"
 
         # Zen browser
         "opacity 0.85 0.85,class:(zen)"
@@ -171,26 +180,16 @@ in {
         "center,class:(vesktop)"
         "workspace special:vesktop, class:(vesktop)"
 
-        # Slack
-        "float,class:(Slack)"
-        "size 1500 900,class:(Slack)"
-        "center,class:(Slack)"
-        "workspace special:slack, class:(Slack)"
+        # # Slack
+        # "float,class:(Slack)"
+        # "size 1500 900,class:(Slack)"
+        # "center,class:(Slack)"
+        # "workspace special:slack, class:(Slack)"
       ];
 
       workspace = [
-        # Laptop display workspaces
-        "1, monitor:eDP-1"
-        "2, monitor:eDP-1"
-        "3, monitor:eDP-1"
-        "4, monitor:eDP-1"
-        "5, monitor:eDP-1"
-        # Samsung Odyssey G5 workspaces
-        "6, monitor:DP-1"
-        "7, monitor:DP-1"
-        "8, monitor:DP-1"
-        "9, monitor:DP-1"
-        "10, monitor:DP-1"
+        "1, monitor:DP-1"
+        "2, monitor:DP-2"
       ];
 
       # Autostart applications

@@ -25,6 +25,7 @@ in {
   security.sudo.wheelNeedsPassword = false;
 
   imports = [
+    # System Modules and others
     ../../modules/system/desktop/hyprland
     # ../../modules/stylix
     ../../modules/system/flatpak.nix

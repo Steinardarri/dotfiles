@@ -1,6 +1,8 @@
-{ config, pkgs, inputs, lib, ... }:
-
 {
+  pkgs,
+  inputs,
+  ...
+}: {
   # System-level Hyprland configuration
   programs.hyprland = {
     enable = true;
@@ -11,6 +13,6 @@
   # XDG portal configuration for Hyprland
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
-} 
+}

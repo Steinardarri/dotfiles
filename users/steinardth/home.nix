@@ -16,11 +16,18 @@ in {
   home.homeDirectory = "/home/${username}";
 
   imports = [
+    # Home Modules
     ../../modules/home
 
     # Tui
     ../../modules/home/tui/terminal/ghostty.nix
-    ../../modules/home/tui/editor/nano
+    ../../modules/home/tui/editor/nano.nix
+
+    # Gui
+    ../../modules/home/gui/browsers/zen-browser
+    ../../modules/home/gui/dev/vscodium.nix
+    ../../modules/home/gui/media/spicetify.nix
+    ../../modules/home/gui/internet/vesktop
   ];
 
   home.packages = with pkgs; [
@@ -29,6 +36,7 @@ in {
     #protonmail-bridge
 
     kdePackages.ktorrent
+    kdePackages.haruna
   ];
 
   # Install & Configure Git
