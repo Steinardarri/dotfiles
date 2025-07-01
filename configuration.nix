@@ -1,7 +1,6 @@
 {
   hostname,
   username,
-  inputs,
   ...
 }: let
   inherit
@@ -47,9 +46,6 @@ in {
   };
 
   nixpkgs = {
-    overlays = [
-      inputs.nur.overlay
-    ];
     config = {
       allowUnfree = true;
     };

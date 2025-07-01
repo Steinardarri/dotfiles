@@ -43,7 +43,10 @@
     };
 
     # Misc Modules
-    nur.url = "github:nix-community/NUR";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nix-vscode-extensions = {
       url = "github:nix-community/nix-vscode-extensions";
@@ -54,8 +57,6 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    spicetify-nix.url = "github:the-argus/spicetify-nix";
 
     ghostty = {
       url = "github:ghostty-org/ghostty";
@@ -68,6 +69,7 @@
     nixos-hardware,
     # disko,
     stylix,
+    nur,
     ...
   }: let
     ############################################
@@ -92,7 +94,7 @@
         };
       }
 
-      stylix.nixosModules.stylix
+      # stylix.nixosModules.stylix
 
       {
         # This fixes things that don't use Flakes, but do want to use NixPkgs.
@@ -116,14 +118,18 @@
         modules =
           genericModules
           ++ [
-            ./configuration.nix
+            (nixpkgs + "/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix")
 
             # ./disko.nix
             # disko.nixosModules.default
 
+            ./configuration.nix
+
             {
               home-manager.users.${username} = import ./users/${username}/home.nix;
             }
+
+            nur.modules.nixos.default
 
             {
               nixpkgs.overlays = [

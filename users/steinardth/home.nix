@@ -21,14 +21,14 @@ in {
 
     # Tui
     ../../modules/home/tui/terminal/ghostty.nix
-    ../../modules/home/tui/editor/nano.nix
 
     # Gui
     ../../modules/home/gui/browsers/zen-browser
     ../../modules/home/gui/dev/vscodium.nix
-    ../../modules/home/gui/media/spicetify.nix
     ../../modules/home/gui/internet/vesktop
   ];
+
+  programs.quickshell.enable = true;
 
   home.packages = with pkgs; [
     protonvpn-gui

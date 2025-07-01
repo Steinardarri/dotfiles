@@ -5,5 +5,6 @@
     ./bash.nix
     ./zsh
     ./fish
+    ./starship.nix
   ];
 }

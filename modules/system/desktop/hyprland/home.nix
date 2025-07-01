@@ -142,6 +142,9 @@ in {
       };
 
       windowrulev2 = [
+        # Quickshell cyberpunk rules
+        "noanim,class:^(quickshell)$"
+
         #        "opacity 0.0 override,class:^(xwaylandvideobridge)$"
         #        "noanim,class:^(xwaylandvideobridge)$"
         #        "noinitialfocus,class:^(xwaylandvideobridge)$"
@@ -195,7 +198,7 @@ in {
       # Autostart applications
       exec-once = [
         # "cd ${config.home.homeDirectory}/.dotfiles/modules/wm/ags/config && ags run --gtk4 ./app.ts" # Start AGS bar
-        # "swww-daemon" # Wallpaper daemon
+        "swww-daemon" # Wallpaper daemon for dynamic theming
       ];
     };
   };

@@ -1,146 +1,191 @@
+{ config, lib, pkgs, inputs, ... }:
+
+with lib;
+let
+  cfg = config.programs.quickshell;
+  
+  # Wrapper script for quickshell with our configuration
+  quickshellWrapped = pkgs.writeShellScriptBin "quickshell" ''
+    # Set up environment
+    export QT_QPA_PLATFORM=wayland
+    export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+    export QML_IMPORT_PATH="${cfg.package}/lib/qt-6/qml:$QML_IMPORT_PATH"
+    export QT_PLUGIN_PATH="${cfg.package}/lib/qt-6/plugins:$QT_PLUGIN_PATH"
+    
+    # Configuration directory
+    CONFIG_DIR="$HOME/.config/quickshell"
+    
+    # Handle reload command
+    if [[ "$1" == "--reload" ]]; then
+      echo "Reloading Quickshell..."
+      ${pkgs.procps}/bin/pkill -USR2 quickshell || true
+      exit 0
+    fi
+    
+    # Launch quickshell
+    exec ${cfg.package}/bin/quickshell "$@"
+  '';
+  
+  # Development launcher with hot reload
+  quickshellDev = pkgs.writeShellScriptBin "quickshell-dev" ''
+    # Set up environment
+    export QT_QPA_PLATFORM=wayland
+    export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+    export QML_IMPORT_PATH="${cfg.package}/lib/qt-6/qml:$QML_IMPORT_PATH"
+    export QT_PLUGIN_PATH="${cfg.package}/lib/qt-6/plugins:$QT_PLUGIN_PATH"
+    export QML_DISABLE_DISK_CACHE=1
+    export QSG_INFO=1
+    
+    # Enable hot reload
+    export QUICKSHELL_HOT_RELOAD=1
+    
+    CONFIG_DIR="$HOME/.config/quickshell/cyberpunk"
+    
+    echo "Starting Quickshell in development mode..."
+    echo "Hot reload enabled - save files to reload"
+    echo "Press Ctrl+C to exit"
+    
+    # Watch for changes and reload
+    ${pkgs.watchexec}/bin/watchexec \
+      --watch "$CONFIG_DIR" \
+      --exts qml,js,json \
+      --on-busy-update restart \
+      -- ${cfg.package}/bin/quickshell -c cyberpunk "$@"
+  '';
+  
+  # Theme extraction script with cyberpunk enhancements
+  extractTheme = let
+    pythonWithPackages = pkgs.python3.withPackages (ps: with ps; [
+      pillow
+      materialyoucolor
+    ]);
+  in pkgs.writeScriptBin "quickshell-extract-theme" ''
+    #!${pythonWithPackages}/bin/python3
+    import sys
+    import json
+    import colorsys
+    from PIL import Image
+    from materialyoucolor.quantize import QuantizeCelebi
+    from materialyoucolor.score.score import Score
+    from materialyoucolor.hct import Hct
+    from materialyoucolor.dynamiccolor.material_dynamic_colors import MaterialDynamicColors
+    from materialyoucolor.scheme.scheme_tonal_spot import SchemeTonalSpot
+    
+    def rgb_to_hex(r, g, b):
+        return f"#{r:02x}{g:02x}{b:02x}"
+    
+    def hex_to_rgb(hex_color):
+        hex_color = hex_color.lstrip('#')
+        return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+    
+    def enhance_for_cyberpunk(color_hex):
+        """Enhance a color for cyberpunk aesthetic"""
+        r, g, b = hex_to_rgb(color_hex)
+        
+        # Convert to HSV
+        h, s, v = colorsys.rgb_to_hsv(r/255.0, g/255.0, b/255.0)
+        
+        # Enhance saturation and value for neon effect
+        s = min(1.0, s * 1.5)  # Increase saturation significantly
+        v = min(1.0, v * 1.3)  # Increase brightness
+        
+        # Convert back to RGB
+        r, g, b = colorsys.hsv_to_rgb(h, s, v)
+        return rgb_to_hex(int(r * 255), int(g * 255), int(b * 255))
+    
+    def extract_colors(image_path):
+        try:
+            img = Image.open(image_path).convert('RGB')
+            img = img.resize((128, 128))  # Resize for faster processing
+            
+            # Convert to pixel array
+            pixels = []
+            for y in range(img.height):
+                for x in range(img.width):
+                    r, g, b = img.getpixel((x, y))
+                    pixels.append((r << 16) | (g << 8) | b)
+            
+            # Quantize colors
+            result = QuantizeCelebi(pixels, 128)
+            ranked = Score.score(result)
+            
+            if ranked and len(ranked) > 0:
+                # Get top colors
+                source_color = Hct.from_int(ranked[0])
+                
+                # Generate Material You scheme (dark mode)
+                scheme = SchemeTonalSpot(source_color, True, 0.0)
+                
+                # Extract base colors
+                primary_int = scheme.primary
+                secondary_int = scheme.secondary
+                tertiary_int = scheme.tertiary
+                
+                # Convert to hex
+                primary = rgb_to_hex((primary_int >> 16) & 0xFF, (primary_int >> 8) & 0xFF, primary_int & 0xFF)
+                secondary = rgb_to_hex((secondary_int >> 16) & 0xFF, (secondary_int >> 8) & 0xFF, secondary_int & 0xFF)
+                tertiary = rgb_to_hex((tertiary_int >> 16) & 0xFF, (tertiary_int >> 8) & 0xFF, tertiary_int & 0xFF)
+                
+                # Create theme
+                theme = {
+                    "primary": primary,
+                    "secondary": secondary,
+                    "tertiary": tertiary,
+                    "background": "#0a0a0a",
+                    "surface": "#1a1a1a",
+                    "neonPrimary": enhance_for_cyberpunk(primary),
+                    "neonSecondary": enhance_for_cyberpunk(secondary),
+                    "neonTertiary": enhance_for_cyberpunk(tertiary),
+                    "glowColor": primary + "66"
+                }
+                
+                print(json.dumps(theme, indent=2))
+            else:
+                raise Exception("No colors found in image")
+                
+        except Exception as e:
+            # Print error to stderr for debugging
+            print(f"Error extracting colors: {e}", file=sys.stderr)
+            # Fallback theme - output to stdout
+            print(json.dumps({
+                "primary": "#5eead4",
+                "secondary": "#38bdf8",
+                "tertiary": "#d8709a",
+                "background": "#0a0a0a",
+                "surface": "#1a1a1a",
+                "neonPrimary": "#00ffcc",
+                "neonSecondary": "#00aaff",
+                "neonTertiary": "#ff00ff",
+                "glowColor": "#5eead466"
+            }, indent=2))
+    
+    if __name__ == "__main__":
+        if len(sys.argv) < 2:
+            print("Usage: quickshell-extract-theme <image_path>", file=sys.stderr)
+            sys.exit(1)
+        
+        extract_colors(sys.argv[1])
+  '';
+in
 {
-  pkgs,
-  inputs,
-  lib,
-  ...
-}: let
-  # Caelestia scripts derivation with Python shebang fixes
-  caelestia-scripts = pkgs.stdenv.mkDerivation {
-    pname = "caelestia-scripts";
-    version = "unstable-2024-01-07";
-
-    src = pkgs.fetchFromGitHub {
-      owner = "caelestia-dots";
-      repo = "scripts";
-      rev = "main";
-      sha256 = "196z5hgd8d3vpa4bkxizgxnc3fj4aakais3i6a30ankanya4df5j";
-    };
-
-    nativeBuildInputs = with pkgs; [
-      makeWrapper
-    ];
-
-    buildInputs = with pkgs; [
-      fish
-      (python3.withPackages (ps:
-        with ps; [
-          materialyoucolor
-          pillow
-        ]))
-    ];
-
-    patchPhase = ''
-      # Fix hardcoded paths to use XDG directories
-      # For Fish files - use $HOME which Fish understands
-      find . -name "*.fish" -type f | while read -r file; do
-        # Replace specific patterns found in the scripts
-        sed -i 's|$src/../data/schemes|$HOME/.local/share/caelestia/schemes|g' "$file"
-        sed -i 's|(dirname (status filename))/data|$HOME/.local/share/caelestia|g' "$file"
-        sed -i 's|$src/data|$HOME/.local/share/caelestia|g' "$file"
-      done
-
-      # For Python files
-      find . -name "*.py" -type f | while read -r file; do
-        sed -i 's|os.path.join(os.path.dirname(__file__), "..", "data")|os.path.expanduser("~/.local/share/caelestia")|g' "$file"
-        sed -i 's|Path(__file__).parent.parent / "data"|Path.home() / ".local" / "share" / "caelestia"|g' "$file"
-      done
-    '';
-
-    installPhase = ''
-      mkdir -p $out/bin
-      mkdir -p $out/share/caelestia-scripts
-
-      # Copy all the scripts to share directory
-      cp -r * $out/share/caelestia-scripts/
-
-      # Fix Python shebangs for NixOS with the wrapped Python
-      find $out/share/caelestia-scripts -name "*.py" -type f -exec sed -i '1s|^#!/bin/python3|#!${pkgs.python3.withPackages (ps: with ps; [materialyoucolor pillow])}/bin/python3|' {} \;
-      find $out/share/caelestia-scripts -name "*.py" -type f -exec sed -i '1s|^#!/bin/python|#!${pkgs.python3.withPackages (ps: with ps; [materialyoucolor pillow])}/bin/python|' {} \;
-      find $out/share/caelestia-scripts -name "*.py" -type f -exec sed -i '1s|^#!/usr/bin/env python3|#!${pkgs.python3.withPackages (ps: with ps; [materialyoucolor pillow])}/bin/python3|' {} \;
-      find $out/share/caelestia-scripts -name "*.py" -type f -exec sed -i '1s|^#!/usr/bin/env python|#!${pkgs.python3.withPackages (ps: with ps; [materialyoucolor pillow])}/bin/python|' {} \;
-
-      # Make Python scripts executable
-      find $out/share/caelestia-scripts -name "*.py" -type f -exec chmod +x {} \;
-
-      # Create a setup script that ensures data directories exist
-      cat > $out/bin/caelestia-setup <<EOF
-      #!/bin/sh
-      DATA_HOME="\$HOME/.local/share/caelestia"
-      STATE_HOME="\$HOME/.local/state/caelestia"
-      CACHE_HOME="\$HOME/.cache/caelestia"
-
-      mkdir -p "\$DATA_HOME/schemes/dynamic"
-      mkdir -p "\$STATE_HOME/wallpaper"
-      mkdir -p "\$CACHE_HOME/schemes"
-
-      # Copy data files if they don't exist
-      if [ ! -d "\$DATA_HOME/schemes" ] && [ -d "$out/share/caelestia-scripts/data/schemes" ]; then
-        cp -r "$out/share/caelestia-scripts/data/schemes" "\$DATA_HOME/"
-      fi
-      if [ ! -f "\$DATA_HOME/config.json" ] && [ -f "$out/share/caelestia-scripts/data/config.json" ]; then
-        cp "$out/share/caelestia-scripts/data/config.json" "\$DATA_HOME/"
-      fi
-      if [ ! -f "\$DATA_HOME/emojis.txt" ] && [ -f "$out/share/caelestia-scripts/data/emojis.txt" ]; then
-        cp "$out/share/caelestia-scripts/data/emojis.txt" "\$DATA_HOME/"
-      fi
-      EOF
-      chmod +x $out/bin/caelestia-setup
-
-      # Create wrapper for main script with all required tools in PATH
-      makeWrapper ${pkgs.fish}/bin/fish $out/bin/caelestia \
-        --add-flags "$out/share/caelestia-scripts/main.fish" \
-        --run "$out/bin/caelestia-setup" \
-        --prefix PATH : ${lib.makeBinPath (with pkgs; [
-        imagemagick
-        wl-clipboard
-        fuzzel
-        socat
-        foot
-        jq
-        (python3.withPackages (ps: with ps; [materialyoucolor pillow]))
-        grim
-        wayfreeze
-        wl-screenrec
-        git
-        coreutils
-        findutils
-        gnugrep
-        xdg-user-dirs
-      ])}
-    '';
-
-    meta = with lib; {
-      description = "Caelestia dotfiles scripts";
-      license = licenses.mit;
-      platforms = platforms.linux;
+  options.programs.quickshell = {
+    finalPackage = mkOption {
+      type = types.package;
+      readOnly = true;
+      description = "The final quickshell package with wrapper";
     };
   };
-
-  # Wrap quickshell with Qt dependencies and required tools in PATH
-  quickshell-wrapped =
-    pkgs.runCommand "quickshell-wrapped" {
-      nativeBuildInputs = [pkgs.makeWrapper];
-    } ''
-      mkdir -p $out/bin
-      makeWrapper ${inputs.quickshell.packages.${pkgs.system}.default}/bin/qs $out/bin/qs \
-        --prefix QT_PLUGIN_PATH : "${pkgs.qt6.qtbase}/${pkgs.qt6.qtbase.qtPluginPrefix}" \
-        --prefix QT_PLUGIN_PATH : "${pkgs.qt6.qt5compat}/${pkgs.qt6.qtbase.qtPluginPrefix}" \
-        --prefix QML2_IMPORT_PATH : "${pkgs.qt6.qt5compat}/${pkgs.qt6.qtbase.qtQmlPrefix}" \
-        --prefix QML2_IMPORT_PATH : "${pkgs.qt6.qtdeclarative}/${pkgs.qt6.qtbase.qtQmlPrefix}" \
-        --prefix PATH : ${lib.makeBinPath [pkgs.fd pkgs.coreutils]}
-    '';
-in {
-  options.programs.quickshell = {
-    finalPackage = lib.mkOption {
-      type = lib.types.package;
-      default = quickshell-wrapped;
-      description = "The wrapped quickshell package with Qt dependencies";
-    };
-
-    caelestia-scripts = lib.mkOption {
-      type = lib.types.package;
-      default = caelestia-scripts;
-      description = "The caelestia scripts package";
+  
+  config = mkIf cfg.enable {
+    programs.quickshell.finalPackage = pkgs.symlinkJoin {
+      name = "quickshell-wrapped";
+      paths = [ quickshellWrapped cfg.package ];
+      
+      postBuild = ''
+        # Add development tools
+        ln -s ${quickshellDev}/bin/quickshell-dev $out/bin/
+        ln -s ${extractTheme}/bin/quickshell-extract-theme $out/bin/
+      '';
     };
   };
 }

@@ -5,19 +5,15 @@
   ...
 }: let
   inherit
-    (import ../../../hosts/${hostname}/options.nix)
+    (import ../../../../hosts/${hostname}/options.nix)
     theShell
     ;
 in
   lib.mkIf (theShell == "fish") {
-    imports = [
-      ../starship.nix
-    ];
-
     programs = {
       fish = {
         enable = true;
-        useBabelfish = true;
+        # useBabelfish = true;
 
         shellAliases = import ./aliases.nix;
 
@@ -76,7 +72,6 @@ in
     };
 
     home.packages = with pkgs; [
-      fishPlugins.fzf-fish
       fishPlugins.colored-man-pages
     ];
   }

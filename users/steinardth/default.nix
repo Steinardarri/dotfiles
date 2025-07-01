@@ -28,9 +28,11 @@ in {
     # System Modules and others
     ../../modules/system/desktop/hyprland
     # ../../modules/stylix
-    ../../modules/system/flatpak.nix
+    ../../modules/system/services/flatpak.nix
+    ../../modules/system/services/jellyfin.nix
     ../../modules/system/gaming.nix
     ../../modules/system/python.nix
+    ../../modules/system/programs/nano.nix
   ];
 
   programs = {

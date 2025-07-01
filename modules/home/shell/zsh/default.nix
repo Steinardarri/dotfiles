@@ -8,10 +8,6 @@
   inherit (import ../../../hosts/${hostname}/options.nix) theShell;
 in
   lib.mkIf (theShell == "zsh") {
-    imports = [
-      ../starship.nix
-    ];
-
     programs = {
       zsh = {
         enable = true;

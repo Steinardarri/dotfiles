@@ -1,4 +1,4 @@
-{...}: {
+{lib, ...}: {
   imports = [
     ./diskoboot.nix
     ./grub-gpt.nix
@@ -8,7 +8,7 @@
   boot = {
     loader = {
       grub = {
-        enable = true;
+        enable = lib.mkOptionDefault true;
         configurationLimit = 15;
         devices = ["nodev"];
       };
