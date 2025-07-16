@@ -9,7 +9,7 @@
     element-desktop
     logseq
 
-    kdePackages.krita
-    kdePackages.qalculate
+    krita
+    qalculate-qt
   ];
 }

@@ -5,7 +5,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../../../hosts/${hostname}/options.nix) theShell;
+  inherit (import ../../../../hosts/${hostname}/options.nix) theShell;
 in
   lib.mkIf (theShell == "zsh") {
     programs = {
@@ -187,5 +187,7 @@ in
       direnv.enable = true;
       direnv.enableZshIntegration = true;
       direnv.nix-direnv.enable = true;
+
+      starship.enableZshIntegration = true;
     };
   }

@@ -3,13 +3,10 @@
   pkgs,
   inputs,
   lib,
-  osConfig,
   ...
 }: let
   # Import the binds configuration with the current hostname
-  binds = import ./binds.nix {
-    hostname = osConfig.networking.hostName or "default";
-  };
+  binds = import ./binds.nix;
 
   # Import animations configuration
   animations = import ./animations.nix;
@@ -32,16 +29,15 @@ in {
     waybar # status bar
     wl-clipboard # clipboard utilities
     swww # wallpaper daemon
-    kdePackages.dolphin # file manager
   ];
 
   # Hyprland home configuration
   wayland.windowManager.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 
     xwayland.enable = false;
-    # xwayland.forceZeroScaling = true;
 
     # Import environment variables for systemd services
     systemd.variables = ["--all"];
@@ -54,7 +50,7 @@ in {
       ];
 
       # Variables
-      "$terminal" = "ghostty";
+      "$terminal" = "rio";
       "$menu" = "wofi --show drun";
 
       # Import bindings from binds.nix
@@ -120,22 +116,28 @@ in {
       };
 
       input = {
+        numlock_by_default = true;
         kb_layout = "${theKBDLayout}";
+        kb_options = ["caps:hyper" "fkeys:basic_13-24"];
+        repeat_rate = 35;
+        repeat_delay = 300;
+
         follow_mouse = 1;
+        float_switch_override_focus = 2;
         touchpad = {
           natural_scroll = true;
         };
         sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
+        accel_profile = "flat";
       };
 
       gestures = {
         workspace_swipe = true;
-        workspace_swipe_fingers = 3;
+        workspace_swipe_fingers = 4;
+        workspace_swipe_distance = 250;
+        workspace_swipe_min_speed_to_force = 15;
+        workspace_swipe_create_new = false;
       };
-
-      #      xwayland = {
-      #        force_zero_scaling = true;
-      #      };
 
       cursor = {
         inactive_timeout = 5;
@@ -144,12 +146,6 @@ in {
       windowrulev2 = [
         # Quickshell cyberpunk rules
         "noanim,class:^(quickshell)$"
-
-        #        "opacity 0.0 override,class:^(xwaylandvideobridge)$"
-        #        "noanim,class:^(xwaylandvideobridge)$"
-        #        "noinitialfocus,class:^(xwaylandvideobridge)$"
-        #        "maxsize 1 1,class:^(xwaylandvideobridge)$"
-        #        "noblur,class:^(xwaylandvideobridge)$"
 
         # Qalculate-gtk
         "float,class:(qalculate-gtk)"
@@ -168,12 +164,6 @@ in {
         # "move 26.5% 25%,class:(discord)"
         # "workspace special:discord, class:(discord)"
 
-        # # Telegram
-        # "float,class:(org.telegram.desktop)"
-        # "size 800 400,class:(org.telegram.desktop)"
-        # "center,class:(org.telegram.desktop)"
-        # "workspace special:telegram, class:(org.telegram.desktop)"
-
         # Zen browser
         "opacity 0.85 0.85,class:(zen)"
 
@@ -182,12 +172,6 @@ in {
         "size 1500 900,class:(vesktop)"
         "center,class:(vesktop)"
         "workspace special:vesktop, class:(vesktop)"
-
-        # # Slack
-        # "float,class:(Slack)"
-        # "size 1500 900,class:(Slack)"
-        # "center,class:(Slack)"
-        # "workspace special:slack, class:(Slack)"
       ];
 
       workspace = [

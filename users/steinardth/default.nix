@@ -4,7 +4,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../hosts/${hostname}/options.nix) gitUsername theShell;
+  inherit (import ../../hosts/${hostname}/options.nix) gitUsername theShell;
 in {
   # You can create your own hashedPassword with 'mkpasswd'
   # Needed when mutableUsers is false
@@ -26,13 +26,18 @@ in {
 
   imports = [
     # System Modules and others
+    ../../modules/system/desktop
+
     ../../modules/system/desktop/hyprland
-    # ../../modules/stylix
+
+    ../../modules/stylix
+
     ../../modules/system/services/flatpak.nix
     ../../modules/system/services/jellyfin.nix
     ../../modules/system/gaming.nix
     ../../modules/system/python.nix
     ../../modules/system/programs/nano.nix
+    ../../modules/system/programs/thunar.nix
   ];
 
   programs = {

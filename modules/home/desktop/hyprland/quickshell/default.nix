@@ -1,10 +1,13 @@
-{ config, lib, pkgs, inputs, ... }:
-
-with lib;
-let
-  cfg = config.programs.quickshell;
-in
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
+with lib; let
+  cfg = config.programs.quickshell;
+in {
   imports = [
     ./packages.nix
   ];
@@ -15,13 +18,13 @@ in
       default = false;
       description = "Enable Quickshell cyberpunk desktop shell";
     };
-    
+
     package = mkOption {
       type = types.package;
       default = inputs.quickshell.packages.${pkgs.system}.default;
       description = "The quickshell package to use";
     };
-    
+
     config = mkOption {
       type = types.path;
       default = ./shell;
@@ -33,44 +36,44 @@ in
     # Quickshell and dependencies
     home.packages = with pkgs; [
       cfg.finalPackage
-      
+
       # Qt dependencies
       qt6.qtdeclarative
       qt6.qt5compat
       qt6.qtwayland
       kdePackages.qt6ct
-      
+
       # System integration
       socat
       jq
       ripgrep
       fd
-      
+
       # Theming dependencies
       imagemagick
       python3
       python3Packages.pillow
       python3Packages.materialyoucolor
-      
+
       # Wayland/Display
       wl-clipboard
       grim
       slurp
       swww
-      
+
       # System info
       lm_sensors
       procps
       coreutils
-      
+
       # Audio
       pamixer
       playerctl
-      
+
       # Network/Bluetooth
       networkmanager
       bluez
-      
+
       # Fonts
       nerd-fonts.jetbrains-mono
       nerd-fonts.fira-code
@@ -95,25 +98,25 @@ in
     systemd.user.services.quickshell-cyberpunk = {
       Unit = {
         Description = "Quickshell Cyberpunk Desktop Shell";
-        PartOf = [ "graphical-session.target" ];
-        After = [ "graphical-session.target" ];
+        PartOf = ["graphical-session.target"];
+        After = ["graphical-session.target"];
       };
-      
+
       Service = {
         Type = "simple";
         ExecStart = "${cfg.finalPackage}/bin/quickshell -c cyberpunk";
         Restart = "on-failure";
         RestartSec = 1;
-        
+
         # Environment
         Environment = [
-          "PATH=${cfg.finalPackage}/bin:${lib.makeBinPath (with pkgs; [ 
-            coreutils 
-            procps 
-            gawk 
-            jq 
-            socat 
-            ripgrep 
+          "PATH=${cfg.finalPackage}/bin:${lib.makeBinPath (with pkgs; [
+            coreutils
+            procps
+            gawk
+            jq
+            socat
+            ripgrep
             fd
             pamixer
             playerctl
@@ -127,9 +130,9 @@ in
           ])}"
         ];
       };
-      
+
       Install = {
-        WantedBy = [ "graphical-session.target" ];
+        WantedBy = ["graphical-session.target"];
       };
     };
 

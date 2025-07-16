@@ -40,12 +40,10 @@ in
         '';
 
         interactiveShellInit = ''
-          starship init fish | source
-
           # Set up fzf key bindings if fzf is available
-          if command -v fzf >/dev/null
-            fzf_key_bindings
-          end
+          # if command -v fzf >/dev/null
+          #   fzf_key_bindings
+          # end
         '';
       };
 
@@ -64,11 +62,13 @@ in
       broot.enableFishIntegration = true;
 
       direnv.enable = true;
-      direnv.enableFishIntegration = true;
+      # direnv.enableFishIntegration = true; Automatically enabled
       direnv.nix-direnv.enable = true;
 
       atuin.enable = true;
       atuin.enableFishIntegration = true;
+
+      starship.enableFishIntegration = true;
     };
 
     home.packages = with pkgs; [

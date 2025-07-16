@@ -20,8 +20,8 @@
 
     fonts = rec {
       sansSerif = {
-        name = "Noto Sans";
-        package = pkgs.noto-fonts;
+        name = "Fira Sans";
+        package = pkgs.fira-sans;
       };
 
       serif = sansSerif;
@@ -33,7 +33,7 @@
 
       monospace = {
         name = "Hack Nerd Font";
-        package = pkgs.nerdfonts.override {fonts = ["Hack"];};
+        package = pkgs.nerd-fonts.hack;
       };
     };
   };

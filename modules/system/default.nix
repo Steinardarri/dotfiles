@@ -56,6 +56,7 @@
     fd
     findutils
     fx
+    fzf
     helix
     htop
     lm_sensors
@@ -91,7 +92,7 @@
   fonts = {
     packages = with pkgs; [
       dejavu_fonts
-      (nerdfonts.override {fonts = ["Hack" "FiraCode"];})
+      nerd-fonts.hack
     ];
     fontDir.enable = true;
   };

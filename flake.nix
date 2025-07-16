@@ -12,6 +12,11 @@
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
+    # sops-nix = {
+    #   url = "github:Mic92/sops-nix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -58,8 +63,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    rio = {
+      url = "github:raphamorim/rio/main";
     };
   };
 
@@ -75,7 +85,7 @@
     ############################################
     ## Define which host you want to use here ##
     ############################################
-    inherit (import ./hosts/heima/options.nix) username hostname system device hardware-list;
+    inherit (import ./hosts/vm/options.nix) username hostname system device hardware-list;
 
     hardware-import = list: map (item: nixos-hardware.nixosModules.${item}) list;
 
@@ -94,7 +104,7 @@
         };
       }
 
-      # stylix.nixosModules.stylix
+      stylix.nixosModules.stylix
 
       {
         # This fixes things that don't use Flakes, but do want to use NixPkgs.

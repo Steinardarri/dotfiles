@@ -5,7 +5,7 @@
   ...
 }: let
   inherit
-    (import ../hosts/${hostname}/options.nix)
+    (import ../../hosts/${hostname}/options.nix)
     gitUsername
     gitEmail
     ;
@@ -19,8 +19,14 @@ in {
     # Home Modules
     ../../modules/home
 
+    # Desktop
+    ../../modules/home/desktop/hyprland
+    ../../modules/home/terminal/rio.nix
+
     # Tui
-    ../../modules/home/tui/terminal/ghostty.nix
+    ../../modules/home/tui/helix.nix
+    ../../modules/home/tui/yazi
+
 
     # Gui
     ../../modules/home/gui/browsers/zen-browser
@@ -28,7 +34,8 @@ in {
     ../../modules/home/gui/internet/vesktop
   ];
 
-  programs.quickshell.enable = true;
+  xdg.enable = true;
+  # programs.quickshell.enable = true;
 
   home.packages = with pkgs; [
     protonvpn-gui
@@ -36,7 +43,7 @@ in {
     #protonmail-bridge
 
     kdePackages.ktorrent
-    kdePackages.haruna
+    haruna
   ];
 
   # Install & Configure Git

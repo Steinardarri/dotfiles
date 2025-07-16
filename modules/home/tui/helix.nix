@@ -21,6 +21,6 @@ in {
   };
 
   home.sessionVariables = {
-    EDITOR = "helix";
+    # EDITOR = "helix";
   };
 }

@@ -12,10 +12,10 @@
 
   stylix = {
     enable = true;
+    autoEnable = true;
     targets.plymouth = {
       logo = ./nix-snowflake-colours.png;
       logoAnimated = true;
     };
   };
-
 }
