@@ -13,7 +13,6 @@ in
     programs = {
       fish = {
         enable = true;
-        # useBabelfish = true;
 
         shellAliases = import ./aliases.nix;
 
@@ -34,12 +33,14 @@ in
           set -g fish_color_quote yellow
           set -g fish_color_autosuggestion brblack
           set -g fish_color_valid_path --underline
-
-          # Enable vi mode
-          # fish_vi_key_bindings
         '';
 
         interactiveShellInit = ''
+          atuin init fish | source
+          zoxide init fish --cmd cd | source
+          starship init fish | source
+          # pay-respects fish --alias | source
+
           # Set up fzf key bindings if fzf is available
           # if command -v fzf >/dev/null
           #   fzf_key_bindings

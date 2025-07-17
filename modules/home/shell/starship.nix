@@ -3,33 +3,43 @@
     enable = true;
     settings = {
       format = "$shell$all";
+      add_newline = true;
+      command_timeout = 10000;
 
       character = {
-        success_symbol = "[󱦗](bold purple)";
-        error_symbol = "[󰐼](bold red)";
+        success_symbol = "[󱢿](bold purple)";
+        error_symbol = "[󰯈](bold red)";
       };
 
       shell = {
-        fish_indicator = "Fish";
-        bash_indicator = "Bash";
-        zsh_indicator = "Zsh";
-        powershell_indicator = "PowerShell";
-        unknown_indicator = "Unknown shell";
-        format = "[ $indicator]($style) ";
-        style = "purple bold";
         disabled = false;
+        fish_indicator = " ";
+        bash_indicator = "";
+        zsh_indicator = "󰬡";
+        powershell_indicator = "";
+        unknown_indicator = "󰇥";
+        format = "[ $indicator]($style) ";
+        style = "bold purple";
+      };
+      shlvl = {
+        disabled = false;
+        format = "[$symbol]($style) ";
+        repeat = true;
+        symbol = "❯";
+        repeat_offset = 1;
+        threshold = 0;
       };
       username = {
+        disabled = false;
         style_user = "green bold";
         style_root = "red bold";
         format = "as [$user]($style)";
-        disabled = false;
         show_always = true;
       };
       hostname = {
+        disabled = false;
         ssh_only = false;
         format = "@[$hostname](bold green) ";
-        disabled = false;
       };
       directory = {
         read_only = " ";
@@ -40,17 +50,19 @@
         truncation_symbol = "../";
         home_symbol = " ~";
       };
-      cmd_duration = {format = " [$duration](bold blue) ";};
+      cmd_duration.format = " [$duration](bold blue) ";
 
       # Symbols
-      git_branch.style = "242";
+      git_branch = {
+        style = "242";
+        symbol = " ";
+      }; 
       aws.symbol = "  ";
       conda.symbol = " ";
       dart.symbol = " ";
       docker_context.symbol = " ";
       elixir.symbol = " ";
       elm.symbol = " ";
-      git_branch.symbol = " ";
       golang.symbol = " ";
       haskell.symbol = " ";
       java.symbol = " ";

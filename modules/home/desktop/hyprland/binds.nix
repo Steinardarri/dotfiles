@@ -1,51 +1,99 @@
-# Hyprland keybindings configuration
-{hostname, ...}: let
-
-  # Common bindings shared across all hosts
+# Hyprland keybindings configuration with dots-hyprland integration
+{...}: let
+  # Common bindings based on dots-hyprland
   commonBinds = {
-    # Terminal
-    "ALT, 36" = "exec, kitty"; # 36 = Return key
+    # CRITICAL: Submap configuration - must be first!
+    "Super, Super_L" = "exec, qs ipc call overview toggleReleaseInterrupt 2>/dev/null || pkill fuzzel || fuzzel";
 
-    # Browser
-    "SUPER, L" = "exec, zen"; # Launch Zen browser
+    # Overview and launcher toggles
+    "Super, 47" = "exec, qs ipc call overview toggle 2>/dev/null";
+    "Super, V" = "exec, qs ipc call overview toggle 2>/dev/null || pkill fuzzel || cliphist list | fuzzel --match-mode fzf --dmenu | cliphist decode | wl-copy";
+    "Super, Period" = "exec, qs ipc call overview toggle 2>/dev/null || pkill fuzzel || ~/.config/hypr/hyprland/scripts/fuzzel-emoji.sh copy";
 
-    # Dictation
-    ", F5" = "exec, ~/.local/bin/whisper-dictate"; # Voice dictation with whisper (F5 key)
-    ", mouse:274" = "exec, ~/.local/bin/whisper-dictate"; # Voice dictation with middle mouse button
+    # Sidebar toggles
+    "Super, A" = "exec, qs ipc call sidebarLeftToggle 2>/dev/null";
+    "Super, N" = "exec, qs ipc call sidebarRight toggle 2>/dev/null";
 
-    # Caelestia shell bindings
-    "SUPER, D" = "exec, caelestia shell toggle dashboard";
-    "SUPER, SPACE" = "exec, caelestia shell toggle launcher";
-    "SUPER, S" = "exec, caelestia shell toggle session";
+    # Widget toggles
+    "Super, Slash" = "exec, qs ipc call cheatsheetToggle 2>/dev/null";
+    "Super, K" = "exec, qs ipc call oskToggle 2>/dev/null";
+    "Super, M" = "exec, qs ipc call mediaControlsToggle 2>/dev/null";
+    "Ctrl+Alt, Delete" = "exec, qs ipc call sessionToggle 2>/dev/null || pkill wlogout || wlogout -p layer-shell";
 
-    # Window management
-    "ALT, 22" = "killactive,"; # 22 = Backspace
+    # Terminal (your existing)
+    "ALT, Return" = "exec, kitty";
+    "Super, Return" = "exec, kitty";
+
+    # Browser (your existing)
+    "SUPER, L" = "exec, zen";
+
+    # Screenshot and utilities from dots-hyprland
+    "Super+Shift, S" = "exec, qs -p ~/.config/quickshell/screenshot.qml 2>/dev/null || pidof slurp || hyprshot --freeze --clipboard-only --mode region --silent";
+    "Super+Shift, T" = "exec, grim -g \"$(slurp $SLURP_ARGS)\" \"tmp.png\" && tesseract \"tmp.png\" - | wl-copy && rm \"tmp.png\""; # OCR
+    "Super+Shift, C" = "exec, hyprpicker -a"; # Color picker
+    ", Print" = "exec, grim - | wl-copy"; # Fullscreen screenshot
+    "Ctrl, Print" = "exec, mkdir -p $(xdg-user-dir PICTURES)/Screenshots && grim $(xdg-user-dir PICTURES)/Screenshots/Screenshot_\"$(date '+%Y-%m-%d_%H.%M.%S')\".png";
+
+    # Recording
+    "Super+Alt, R" = "exec, ~/.config/hypr/hyprland/scripts/record.sh";
+    "Ctrl+Alt, R" = "exec, ~/.config/hypr/hyprland/scripts/record.sh --fullscreen";
+    "Super+Shift+Alt, R" = "exec, ~/.config/hypr/hyprland/scripts/record.sh --fullscreen-sound";
+
+    # Window management (keeping your existing + dots-hyprland)
+    "ALT, BackSpace" = "killactive,";
+    "Super, Q" = "killactive,";
+    "Alt, F4" = "killactive,";
+    "Super+Shift+Alt, Q" = "exec, hyprctl kill";
+
+    # Floating and fullscreen
     "ALT, F" = "togglefloating,";
-    "ALT, P" = "pseudo,"; # dwindle
+    "Super+Alt, Space" = "togglefloating,";
+    "Super, D" = "fullscreen, 1"; # Maximize
+    "Super, F" = "fullscreen, 0"; # Fullscreen
+    "Super+Alt, F" = "fullscreenstate, 0 3"; # Fullscreen spoof
+    "Super, P" = "pin"; # Pin window
 
-    # Focus movement (vim-style)
+    # Focus movement (dots-hyprland style)
     "ALT, h" = "movefocus, l";
     "ALT, l" = "movefocus, r";
-    "ALT, j" = "movefocus, d";
     "ALT, k" = "movefocus, u";
+    "ALT, j" = "movefocus, d";
+
+    # Window movement
+    "Super+Shift, Left" = "movewindow, l";
+    "Super+Shift, Right" = "movewindow, r";
+    "Super+Shift, Up" = "movewindow, u";
+    "Super+Shift, Down" = "movewindow, d";
 
     # Special workspaces
     "ALT, m" = "movetoworkspacesilent, special";
     "ALT, s" = "togglespecialworkspace,";
 
-    # Window movement
-    "ALT CTRL, h" = "movewindoworgroup, l";
-    "ALT CTRL, l" = "movewindoworgroup, r";
-    "ALT CTRL, j" = "movewindoworgroup, d";
-    "ALT CTRL, k" = "movewindoworgroup, u";
+    # Wallpaper and restart
+    "Ctrl+Super, T" = "exec, ~/.config/quickshell/scripts/colors/switchwall.sh";
+    "Ctrl+Super, R" = "exec, killall ags agsv1 gjs ydotool qs quickshell; qs &";
 
-    # Grouping
-    "ALT, G" = "togglegroup,";
-    "ALT, tab" = "changegroupactive,";
+    # Audio controls (mute)
+    "Super+Shift, M" = "exec, wpctl set-mute @DEFAULT_SINK@ toggle";
+    "Super+Alt, M" = "exec, wpctl set-mute @DEFAULT_SOURCE@ toggle";
 
-    # Mouse workspace navigation
-    "ALT, mouse_down" = "workspace, e+1";
-    "ALT, mouse_up" = "workspace, e-1";
+    # Monitor controls
+    "Super+Shift, bracketleft" = "exec, hyprctl dispatch movecurrentworkspacetomonitor -1";
+    "Super+Shift, bracketright" = "exec, hyprctl dispatch movecurrentworkspacetomonitor +1";
+    "Super+Alt, bracketleft" = "exec, hyprctl dispatch focusmonitor -1";
+    "Super+Alt, bracketright" = "exec, hyprctl dispatch focusmonitor +1";
+  };
+
+  # Hidden bindings for global submap system (critical!)
+  hiddenBinds = {
+    "Ctrl, Super_L" = "pass, ^(quickshell)$";
+    "Super, mouse:272" = "pass, ^(quickshell)$";
+    "Super, mouse:273" = "pass, ^(quickshell)$";
+    "Super, mouse:274" = "pass, ^(quickshell)$";
+    "Super, mouse:275" = "pass, ^(quickshell)$";
+    "Super, mouse:276" = "pass, ^(quickshell)$";
+    "Super, mouse_up" = "pass, ^(quickshell)$";
+    "Super, mouse_down" = "pass, ^(quickshell)$";
   };
 
   # Workspace switching binds
@@ -60,7 +108,11 @@
             value = "workspace, ${ws}";
           }
           {
-            name = "SUPER, ${toString (i + 1)}";
+            name = "Super, ${toString (i + 1)}";
+            value = "workspace, ${ws}";
+          }
+          {
+            name = "SUPER+Shift, ${toString (i + 1)}";
             value = "movetoworkspace, ${ws}";
           }
         ]
@@ -73,7 +125,11 @@
         value = "workspace, 10";
       }
       {
-        name = "SUPER, 0";
+        name = "Super, 0";
+        value = "workspace, 10";
+      }
+      {
+        name = "SUPER+Shift, 0";
         value = "movetoworkspace, 10";
       }
     ]
@@ -81,64 +137,49 @@
 
   # Mouse bindings (bindm)
   mouseBinds = {
+    "Super, mouse:272" = "movewindow";
+    "Super, mouse:273" = "resizewindow";
     "ALT, mouse:272" = "movewindow";
     "ALT, mouse:273" = "resizewindow";
   };
 
-  # Repeated bindings (binde)
+  # Repeating bindings (binde)
   repeatingBinds = {
-    "ALT CTRL, h" = "exec, hyprctl --batch 'dispatch movewindow l; dispatch moveactive -10 0'";
-    "ALT CTRL, l" = "exec, hyprctl --batch 'dispatch movewindow r; dispatch moveactive 10 0'";
-    "ALT CTRL, k" = "exec, hyprctl --batch 'dispatch movewindow u; dispatch moveactive 0 -10'";
-    "ALT CTRL, j" = "exec, hyprctl --batch 'dispatch movewindow d; dispatch moveactive 0 10'";
+    # Window split ratio
+    # "Super, Semicolon" = "splitratio, -0.1";
+    # "Super, Apostrophe" = "splitratio, +0.1";
 
-    # Window resizing (repeats when held)
+    # Volume controls
+    ", XF86AudioRaiseVolume" = "exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+";
+    ", XF86AudioLowerVolume" = "exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-";
+
+    # Brightness controls
+    ", XF86MonBrightnessUp" = "exec, qs ipc call brightness increment 2>/dev/null || brightnessctl s 5%+";
+    ", XF86MonBrightnessDown" = "exec, qs ipc call brightness decrement 2>/dev/null || brightnessctl s 5%-";
+
+    # Window resizing
     "ALT SHIFT, H" = "resizeactive, -40 0";
     "ALT SHIFT, L" = "resizeactive, 40 0";
     "ALT SHIFT, J" = "resizeactive, 0 40";
     "ALT SHIFT, K" = "resizeactive, 0 -40";
-
-    # Volume controls (keys 67, 68, 69)
-    ", 67" = "exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; # Mute toggle
-    ", 68" = "exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"; # Volume down (repeats when held)
-    ", 69" = "exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"; # Volume up (repeats when held)
-    ", 74" = "exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"; # Volume up (repeats when held)
-
-    # Brightness controls (keys 75, 76)
-    ", 75" = "exec, brightnessctl set 5%-"; # Brightness down (repeats when held)
-    ", 76" = "exec, brightnessctl set +5%"; # Brightness up (repeats when held)
   };
 
-  # Host-specific bindings
-  hostSpecificBinds = {
-    "my-nixos" = {
-      # Laptop-specific bindings
-      "SUPER, 47" = "exec, rofi -show drun"; # 47 = semicolon
-    };
-
-    "nixos-desktop" = {
-      # Desktop-specific bindings could go here
-      "SUPER, 47" = "exec, rofi -show drun"; # Different launcher for desktop
-    };
-  };
-
-  # Host-specific repeating bindings (binde)
-  hostSpecificRepeatingBinds = {
-    "my-nixos" = {
-      # Workspace increment/decrement for laptop
-      "ALT, 59" = "workspace, -1"; # 60 = period key
-      "ALT, 60" = "workspace, +1"; # 59 = comma key
-      # "SUPER, j" = "workspace, +1"; # 59 = comma key
-      # "SUPER, k" = "workspace, -1"; # 60 = period key
-    };
+  # Locked bindings (bindl) - work even when locked
+  lockedBinds = {
+    ", XF86AudioMute" = "exec, wpctl set-mute @DEFAULT_SINK@ toggle";
+    "Alt, XF86AudioMute" = "exec, wpctl set-mute @DEFAULT_SOURCE@ toggle";
+    ", XF86AudioMicMute" = "exec, wpctl set-mute @DEFAULT_SOURCE@ toggle";
   };
 in {
   # Regular bindings
-  bind = commonBinds // workspaceBinds // (hostSpecificBinds.${hostname} or {});
+  bind = commonBinds // workspaceBinds // hiddenBinds;
 
   # Mouse bindings
   bindm = mouseBinds;
 
   # Repeating bindings
-  binde = repeatingBinds // (hostSpecificRepeatingBinds.${hostname} or {});
+  binde = repeatingBinds;
+
+  # Locked bindings
+  bindl = lockedBinds;
 }

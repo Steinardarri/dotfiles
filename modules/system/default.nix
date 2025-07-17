@@ -106,6 +106,8 @@
         enableSSHSupport = true;
       };
     };
+    kdeconnect.enable = true;
+    partition-manager.enable = true;
   };
 
   # Regist appimage-run as the executor of appimages

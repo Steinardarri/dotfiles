@@ -21,42 +21,19 @@
         args = [];
       };
       fonts = {
+        family = "Hack NF FC Ligatured CCG";
         size = 18;
         features = [];
         use-drawable-chars = true;
         symbol-map = [];
         disable-warnings-not-found = false;
         additional-dirs = [];
-        regular = {
-          family = "HackNerdFontPropo";
-          style = "Normal";
-          width = "Normal";
-          weight = 400;
-        };
-        bold = {
-          family = "HackNerdFontPropo";
-          style = "Normal";
-          width = "Normal";
-          weight = 800;
-        };
-        italic = {
-          family = "HackNerdFontPropo";
-          style = "Italic";
-          width = "Normal";
-          weight = 400;
-        };
-        bold-italic = {
-          family = "HackNerdFontPropo";
-          style = "Italic";
-          width = "Normal";
-          weight = 800;
-        };
       };
       renderer = {
         target-fps = 144;
         filters = [
           # Loads built-in crt
-          "NewPixieCrt"
+          # "NewPixieCrt"
         ];
       };
       title = {

@@ -2,20 +2,20 @@
   description = "Steinardarri's NixOS Config";
 
   inputs = {
-    # System
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    ### System
+
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-
     # sops-nix = {
     #   url = "github:Mic92/sops-nix";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+    nixos-facter-modules.url = "github:nix-community/nixos-facter-modules";
 
     disko = {
       url = "github:nix-community/disko";
@@ -24,30 +24,29 @@
 
     flake-utils.url = "github:numtide/flake-utils";
 
-    # Desktop Environment
-    plasma-manager = {
-      url = "github:pjones/plasma-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
+    ### Desktop Environment
 
     stylix.url = "github:danth/stylix";
 
-    hyprland.url = "github:hyprwm/Hyprland";
-    ags = {
-      url = "github:aylur/ags";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    astal = {
-      url = "github:aylur/astal";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # ags = {
+    #   url = "github:aylur/ags";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # astal = {
+    #   url = "github:aylur/astal";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # quickshell = {
+    #   url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
-    # Misc Modules
+    ### Misc Modules
+
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -76,8 +75,7 @@
   outputs = inputs @ {
     nixpkgs,
     home-manager,
-    nixos-hardware,
-    # disko,
+    disko,
     stylix,
     nur,
     ...
@@ -85,9 +83,7 @@
     ############################################
     ## Define which host you want to use here ##
     ############################################
-    inherit (import ./hosts/vm/options.nix) username hostname system device hardware-list;
-
-    hardware-import = list: map (item: nixos-hardware.nixosModules.${item}) list;
+    inherit (import ./hosts/heima/options.nix) username hostname system device;
 
     genericModules = [
       home-manager.nixosModules.home-manager
@@ -104,7 +100,7 @@
         };
       }
 
-      stylix.nixosModules.stylix
+      # stylix.nixosModules.stylix
 
       {
         # This fixes things that don't use Flakes, but do want to use NixPkgs.
@@ -128,12 +124,15 @@
         modules =
           genericModules
           ++ [
-            (nixpkgs + "/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix")
-
-            # ./disko.nix
-            # disko.nixosModules.default
+            disko.nixosModules.default
+            ./disko-config.nix
 
             ./configuration.nix
+
+            inputs.nixos-facter-modules.nixosModules.facter
+            {
+              config.facter.reportPath = hosts/${hostname}/facter.json;
+            }
 
             {
               home-manager.users.${username} = import ./users/${username}/home.nix;
@@ -146,8 +145,7 @@
                 inputs.nix-vscode-extensions.overlays.default
               ];
             }
-          ]
-          ++ hardware-import hardware-list;
+          ];
       };
     };
   };

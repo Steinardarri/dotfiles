@@ -5,7 +5,7 @@
   hostname,
   ...
 }: let
-  inherit (import ../../../../hosts/${hostname}/options.nix) theShell;
+  inherit (import ../../../hosts/${hostname}/options.nix) theShell;
 in
   lib.mkIf (theShell == "zsh") {
     programs = {

@@ -34,21 +34,7 @@ in {
   cpuType = "amd"; # amd, intel, vm
   gpuType = "amd"; # amd, intel, nvidia, intel-nvidia
   laptop = false;
-  boot = "default"; # grub variants: default, disko or noefi
-
-  # Nvidia Hybrid Devices ONLY NEEDED FOR HYBRID SYSTEMS!
-  intel-bus-id = "PCI:1:0:0";
-  nvidia-bus-id = "PCI:0:2:0";
-
-  # Declare nixos-hardware modules to use here
-  hardware-list = [
-    "common-cpu-amd"
-    "common-cpu-amd-pstate"
-    "common-cpu-amd-zenpower"
-    "common-gpu-amd"
-    "common-pc"
-    "common-pc-ssd"
-  ];
+  boot = "disko"; # grub variants: default, disko or noefi
 
   logitech = true;
 

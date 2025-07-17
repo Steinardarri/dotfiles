@@ -3,9 +3,9 @@
     enable = true;
     initLua = ./yaziInit.lua;
     plugins = {
-      full-border = pkgs.yaziPlugins.full-border.yazi;
-      git = pkgs.yaziPlugins.git.yazi;
-      starship = pkgs.yaziPlugins.starship.yazi;
+      full-border = pkgs.yaziPlugins.full-border;
+      git = pkgs.yaziPlugins.git;
+      starship = pkgs.yaziPlugins.starship;
     };
     settings = {
       yazi = {

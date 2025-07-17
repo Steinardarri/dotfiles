@@ -35,7 +35,6 @@ in {
   ];
 
   xdg.enable = true;
-  # programs.quickshell.enable = true;
 
   home.packages = with pkgs; [
     protonvpn-gui

@@ -21,27 +21,18 @@ in {
     mutableUsers = false;
   };
 
-  # Whether you need to input password on sudo
-  security.sudo.wheelNeedsPassword = false;
-
   imports = [
     # System Modules and others
     ../../modules/system/desktop
 
     ../../modules/system/desktop/hyprland
 
-    ../../modules/stylix
+    # ../../modules/stylix
 
     ../../modules/system/services/flatpak.nix
     ../../modules/system/services/jellyfin.nix
     ../../modules/system/gaming.nix
     ../../modules/system/python.nix
     ../../modules/system/programs/nano.nix
-    ../../modules/system/programs/thunar.nix
   ];
-
-  programs = {
-    kdeconnect.enable = true;
-    partition-manager.enable = true;
-  };
 }
