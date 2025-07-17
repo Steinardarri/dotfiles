@@ -1,5 +1,5 @@
 # Hyprland keybindings configuration with dots-hyprland integration
-{...}: let
+let
   # Common bindings based on dots-hyprland
   commonBinds = {
     # CRITICAL: Submap configuration - must be first!

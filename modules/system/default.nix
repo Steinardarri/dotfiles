@@ -85,7 +85,6 @@
 
     # ui & looks
     fastfetch
-    symbola
     yad
   ];
 

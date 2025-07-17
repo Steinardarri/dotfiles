@@ -12,7 +12,7 @@
         configurationLimit = 15;
         devices = ["nodev"];
       };
-      timeout = lib.mkOptionDefault 3;
+      timeout = lib.mkDefault 3;
     };
     plymouth.enable = true;
   };

@@ -12,7 +12,7 @@
   animations = import ./animations.nix;
 
   inherit
-    (import ../../../hosts/${hostname}/options.nix)
+    (import ../../../../hosts/${hostname}/options.nix)
     theKBDLayout
     ;
 in {
