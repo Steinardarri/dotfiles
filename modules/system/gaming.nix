@@ -17,7 +17,10 @@
       localNetworkGameTransfers.openFirewall = true;
       protontricks.enable = true;
     };
-    programs.gamescope.enable = true;
+    programs.gamescope = {
+      enable = true;
+      capSysNice = true;
+    };
     hardware.steam-hardware.enable = true;
 
     programs.gamemode.enable = true;

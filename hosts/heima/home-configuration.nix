@@ -25,6 +25,9 @@
           # Nix-index-database - for comma and command-not-found
           inputs.nix-index-database.homeModules.nix-index
         ];
+
+        # Custom Modules From Import - to enable
+        _torrent.enable = true;
       };
     };
   };

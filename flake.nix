@@ -13,18 +13,46 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-vscode-extensions = {
+      url = "github:nix-community/nix-vscode-extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = {...} @ inputs: {
+  outputs = {nixpkgs, ...} @ inputs: let
+    genericModules = [
+      ./hosts # Default Configs, for every host
+
+      {
+        nixpkgs.overlays = [
+          inputs.nix-vscode-extensions.overlays.default
+        ];
+      }
+
+      {
+        # This fixes things that don't use Flakes, but do want to use NixPkgs.
+        nix.registry.nixos.flake = inputs.self;
+        environment.etc."nix/inputs/nixpkgs".source = nixpkgs.outPath;
+        nix.nixPath = ["nixpkgs=${nixpkgs.outPath}"];
+      }
+    ];
+  in {
     nixosConfigurations.heima = inputs.hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
       inherit (inputs.hydenix.lib) system;
       specialArgs = {
         inherit inputs;
       };
-      modules = [
-        ./hosts # Default Configs
-        ./hosts/heima
-      ];
+      modules =
+        genericModules
+        ++ [
+          ./hosts/heima
+        ];
     };
   };
 }

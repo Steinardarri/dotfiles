@@ -39,12 +39,14 @@ in {
 
   ### Custom Modules From Import - to enable
 
+  _amd_gpu.enable = true;
   _gaming.enable = true;
+  _jellyfin.enable = true;
+  _flatpak.enable = true;
 
-  hydenix = {
-    hostname = "heima";
-    gaming.enable = true;
-  };
+  ###
+
+  hydenix.hostname = "heima";
 
   users = {
     users.${username} = {
@@ -66,8 +68,16 @@ in {
 
   # Enable automatic login for the user.
   services.getty.autologinUser = "${username}";
+  console.enable = true;
   # Whether you need to input password on sudo
   security.sudo.wheelNeedsPassword = false;
+
+  systemd.services = {
+    NetworkManager-wait-online.enable = false;
+    plymouth-quit-wait.enable = false;
+  };
+
+  services.resolved.enable = true;
 
   system.stateVersion = "25.05";
 }
