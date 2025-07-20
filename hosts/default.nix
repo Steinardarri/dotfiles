@@ -1,7 +1,23 @@
-{...}: {
+{pkgs, ...}: {
   hydenix = {
+    enable = true;
+
     timezone = "Atlantic/Reykjavik";
     locale = "en_GB.UTF-8";
+
+    audio.enable = true; # enable audio module
+    boot = {
+      enable = true; # enable boot module
+      useSystemdBoot = false; # disable for GRUB
+      grubTheme = "Retroboot"; # or "Pochita"
+      grubExtraConfig = ""; # additional GRUB configuration
+      kernelPackages = pkgs.linuxPackages_zen;
+    };
+    hardware.enable = true;
+    network.enable = true;
+    nix.enable = true;
+    sddm.enable = false;
+    system.enable = true;
   };
 
   i18n.extraLocaleSettings = {
@@ -21,9 +37,14 @@
     settings = {
       auto-optimise-store = true;
       experimental-features = ["nix-command" "flakes"];
+      warn-dirty = false;
+      download-buffer-size = 524288000;
+      max-jobs = 4;
+      cores = 4;
+      show-trace = true;
     };
   };
-  
+
   programs = {
     nh = {
       enable = true;

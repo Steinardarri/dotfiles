@@ -1,8 +1,6 @@
-{ ... }:
-
-{
+{...}: {
   imports = [
-    # ./example.nix - add your modules here
+    ./gaming.nix
   ];
 
   environment.systemPackages = [

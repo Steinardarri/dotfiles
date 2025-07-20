@@ -1,5 +1,5 @@
 {
-  description = "template for hydenix";
+  description = "Steinardarri's Hydenix NixOS config";
 
   inputs = {
     # User's nixpkgs - for user packages
@@ -22,7 +22,8 @@
         inherit inputs;
       };
       modules = [
-        ./hosts/heima/configuration.nix
+        ./hosts # Default Configs
+        ./hosts/heima
       ];
     };
   };
