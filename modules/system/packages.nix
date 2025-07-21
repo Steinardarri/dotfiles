@@ -29,6 +29,9 @@
     shellcheck
     shfmt
 
+    # security
+    git-crypt
+
     # media
     imagemagick
     yt-dlg
