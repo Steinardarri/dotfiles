@@ -26,7 +26,10 @@
     hardware.enable = true;
     network.enable = true;
     nix.enable = true;
-    sddm.enable = false; # Using UWSM to skip DMs
+    sddm = {
+      enable = true;
+      theme = "Candy"; # Candy, Corners
+    };
     system.enable = true;
   };
 
@@ -39,12 +42,10 @@
     show-trace = false;
   };
 
-  # Hydenix.system overrides
-  programs = {
-    hyprland = {
-      withUWSM = lib.mkForce true;
-    };
-    zsh.enable = lib.mkForce false;
+  # Hydenix overrides
+  programs.zsh.enable = lib.mkForce false;
+  services.displayManager.sddm = {
+    autoNumlock = true;
   };
 
   # Catppuccin Mocha Color Scheme For TTY Console

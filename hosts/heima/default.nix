@@ -63,12 +63,14 @@ in {
       ];
       shell = pkgs.fish;
     };
-
     mutableUsers = false;
   };
 
-  # Enable automatic login for the user.
-  services.getty.autologinUser = "${username}";
+  services.displayManager = {
+    autoLogin.enable = true;
+    autoLogin.user = "${username}";
+  };
+
   # Whether you need to input password on sudo
   security.sudo.wheelNeedsPassword = false;
 
