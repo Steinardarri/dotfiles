@@ -1,4 +1,4 @@
-{inputs, ...}: let
+{inputs, secrets, ...}: let
   # Package declaration
   # ---------------------
   pkgs = import inputs.hydenix.inputs.hydenix-nixpkgs {
@@ -54,7 +54,8 @@ in {
     users.${username} = {
       isNormalUser = true;
       homeMode = "755";
-      hashedPasswordFile = "/etc/hashedUserPasssword";
+      # Secrets handled by git-crypt, from flake input
+      hashedPassword = "${secrets.hashed_user_password}";
       description = "Steinar Darri Þorgilsson";
       extraGroups = [
         "wheel"

@@ -30,6 +30,7 @@
   outputs = {
     nixpkgs,
     determinate,
+    self,
     ...
   } @ inputs: let
     genericModules = [
@@ -48,12 +49,16 @@
 
       determinate.nixosModules.default
     ];
+    
+    # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
+    secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
   in {
     nixosConfigurations = {
       heima = inputs.hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
         inherit (inputs.hydenix.lib) system;
         specialArgs = {
           inherit inputs;
+          inherit secrets;
         };
         modules =
           genericModules
