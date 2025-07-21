@@ -21,7 +21,13 @@
       };
       timeout = lib.mkDefault 3;
     };
+    
     plymouth.enable = true;
+
+    kernel.sysctl = {
+      "net.ipv4.tcp_congestion_control" = "bbr";
+      "net.core.default_qdisc" = "fq";
+    };
   };
 
   systemd.services.plymouth-quit-wait.enable = false;

@@ -44,6 +44,7 @@
 
   # Hydenix overrides
   programs.zsh.enable = lib.mkForce false;
+  networking.enableIPv6 = false;
   services.displayManager.sddm = {
     autoNumlock = true;
   };
@@ -74,7 +75,6 @@
 
   fonts = {
     packages = with pkgs; [
-      dejavu_fonts
       nerd-fonts.hack
     ];
     fontDir.enable = true;
