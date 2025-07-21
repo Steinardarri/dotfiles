@@ -1,9 +1,9 @@
 { ...}: {
   imports = [
+    ./cli
     ./gui
     ./hyprland
     ./services
-    ./shell
     ./tui
 
     ./git.nix
