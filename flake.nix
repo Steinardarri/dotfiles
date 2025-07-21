@@ -3,7 +3,9 @@
 
   inputs = {
     # User's nixpkgs - for user packages
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0";
+
+    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
 
     # Hydenix and its nixpkgs - kept separate to avoid conflicts
     hydenix.url = "github:richen604/hydenix";
@@ -25,7 +27,11 @@
     };
   };
 
-  outputs = {nixpkgs, ...} @ inputs: let
+  outputs = {
+    nixpkgs,
+    determinate,
+    ...
+  } @ inputs: let
     genericModules = [
       {
         nixpkgs.overlays = [
@@ -39,6 +45,8 @@
         environment.etc."nix/inputs/nixpkgs".source = nixpkgs.outPath;
         nix.nixPath = ["nixpkgs=${nixpkgs.outPath}"];
       }
+
+      determinate.nixosModules.default
     ];
   in {
     nixosConfigurations = {
