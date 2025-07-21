@@ -18,17 +18,12 @@
     fsType = "xfs";
   };
 
-  boot.initrd.luks.devices."luks-911a53b6-e547-4848-8f14-e84b6ce02cbb".device = "/dev/disk/by-uuid/911a53b6-e547-4848-8f14-e84b6ce02cbb";
+  boot.initrd.luks.devices."cryptNix".device = "/dev/disk/by-uuid/911a53b6-e547-4848-8f14-e84b6ce02cbb";
 
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/C1C8-6AEA";
     fsType = "vfat";
     options = ["fmask=0077" "dmask=0077"];
-  };
-
-  fileSystems."/home/steinardth/ssd" = {
-    device = "/dev/disk/by-uuid/5c98468a-b97b-42e3-a699-9e7829d36bf8";
-    fsType = "btrfs";
   };
 
   swapDevices = [];

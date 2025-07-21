@@ -27,8 +27,6 @@
 
   outputs = {nixpkgs, ...} @ inputs: let
     genericModules = [
-      ./hosts # Default Configs, for every host
-
       {
         nixpkgs.overlays = [
           inputs.nix-vscode-extensions.overlays.default
@@ -43,16 +41,18 @@
       }
     ];
   in {
-    nixosConfigurations.heima = inputs.hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
-      inherit (inputs.hydenix.lib) system;
-      specialArgs = {
-        inherit inputs;
+    nixosConfigurations = {
+      heima = inputs.hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
+        inherit (inputs.hydenix.lib) system;
+        specialArgs = {
+          inherit inputs;
+        };
+        modules =
+          genericModules
+          ++ [
+            ./hosts/heima
+          ];
       };
-      modules =
-        genericModules
-        ++ [
-          ./hosts/heima
-        ];
     };
   };
 }

@@ -1,92 +1,75 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ./boot
-    ./driver
+    ./drivers
+    ./gui
     ./services
 
     ./gaming.nix
+    ./locale.nix
+    ./packages.nix
   ];
 
-  # List System Programs
-  environment.systemPackages = with pkgs; [
-    # core languages
-    gcc
-    nodejs
-    zig
-    # rust stuff
-    cargo-cache
-    cargo-expand
-    cargo-leptos
-    rustup
-    trunk
+  hydenix = {
+    enable = true;
 
-    # dev stuf
-    cmake
-    httpie
-    ninja
-    tree-sitter
+    timezone = "Atlantic/Reykjavik";
+    locale = "en_GB.UTF-8";
 
-    # language servers
-    ccls # c / c++
-    nixd # nix
-    nodePackages.yaml-language-server
-    nodePackages.vscode-langservers-extracted # html, css, json, eslint
+    audio.enable = true;
+    # Imported gaming module overrides it, when enabled
+    gaming.enable = false;
+    hardware.enable = true;
+    network.enable = true;
+    nix.enable = true;
+    sddm.enable = false; # Using UWSM to skip DMs
+    system.enable = true;
+  };
 
-    # formatters & linters
-    alejandra # nix
-    nodePackages.prettier
-    shellcheck
-    shfmt
+  # Nix settings not in hydenix.nix
+  nix.settings = {
+    warn-dirty = false;
+    download-buffer-size = 524288000;
+    max-jobs = 4;
+    cores = 4;
+    show-trace = false;
+  };
 
-    # media
-    imagemagick
-    yt-dlg
-    ffmpeg
-    inkscape
+  # Hydenix.system overrides
+  programs = {
+    hyprland = {
+      withUWSM = lib.mkForce true;
+    };
+    zsh.enable = lib.mkForce false;
+  };
 
-    # system utils
-    bat
-    bottom
-    btop
-    clinfo
-    coreutils
-    curl
-    du-dust
-    eza
-    fd
-    findutils
-    fx
-    fzf
-    helix
-    htop
-    lm_sensors
-    lshw
-    mosh
-    nix-output-monitor
-    nvd
-    parallel
-    kdePackages.partitionmanager
-    pinentry-all
-    pkg-config
-    procs
-    ripgrep
-    sd
-    tmux
-    tree
-    wget
-    wormhole-william
-    p7zip
-
-    # for fun
-    cmatrix
-    cowsay
-    lolcat
-    notcurses
-
-    # ui & looks
-    fastfetch
-    yad
-  ];
+  # Catppuccin Mocha Color Scheme For TTY Console
+  console = {
+    colors = [
+      # 0-7 normal
+      "11111b"
+      "f38ba8"
+      "a6e3a1"
+      "f9e2af"
+      "89b4fa"
+      "f5c2e7"
+      "94e2d5"
+      "a6adc8"
+      # 8-15 bright
+      "6c7086"
+      "eba0ac"
+      "a6e3a1"
+      "fab387"
+      "74c7ec"
+      "cba6f7"
+      "89dceb"
+      "cdd6f4"
+    ];
+  };
 
   fonts = {
     packages = with pkgs; [
@@ -97,9 +80,15 @@
   };
 
   programs = {
+    nh = {
+      enable = true;
+      clean = {
+        enable = true;
+        dates = "weekly";
+        extraArgs = "--keep-since 14d --keep 15";
+      };
+    };
     fish.enable = true;
-    kdeconnect.enable = true;
-    partition-manager.enable = true;
     nano = {
       enable = true;
       nanorc = ''

@@ -28,6 +28,13 @@
 
         # Custom Modules From Import - to enable
         _torrent.enable = true;
+
+        hydenix.hm = {
+          git = {
+            name = "Steinar Darri Þorgilsson";
+            email = "steinar@steinardth.xyz";
+          };
+        };
       };
     };
   };

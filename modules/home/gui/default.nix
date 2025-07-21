@@ -1,8 +1,9 @@
 {pkgs, ...}: {
   imports = [
+    ./zen-browser
+    
     ./torrent.nix
     ./vscodium.nix
-    ./zen-browser
   ];
 
   home.packages = with pkgs; [
@@ -14,6 +15,5 @@
     krita
     qalculate-qt
     haruna
-
   ];
 }

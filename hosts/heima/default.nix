@@ -18,9 +18,12 @@ in {
   # Set pkgs for hydenix globally, any file that imports pkgs will use this
   nixpkgs.pkgs = pkgs;
 
+  hydenix.hostname = "heima";
+
   imports = [
     # Hardware Modules
     ./hardware-configuration.nix
+    ./extra-hardware.nix
     inputs.hydenix.inputs.nixos-hardware.nixosModules.common-gpu-amd
     inputs.hydenix.inputs.nixos-hardware.nixosModules.common-cpu-amd
     inputs.hydenix.inputs.nixos-hardware.nixosModules.common-pc
@@ -35,9 +38,10 @@ in {
     ./home-configuration.nix
   ];
 
+  _extraHardware.username = "${username}";
   _homeConfig.username = "${username}";
 
-  ### Custom Modules From Import - to enable
+  ### Custom System Modules From Import - to enable
 
   _amd_gpu.enable = true;
   _gaming.enable = true;
@@ -45,8 +49,6 @@ in {
   _flatpak.enable = true;
 
   ###
-
-  hydenix.hostname = "heima";
 
   users = {
     users.${username} = {
@@ -60,7 +62,6 @@ in {
         "video"
       ];
       shell = pkgs.fish;
-      # ignoreShellProgramCheck = true;
     };
 
     mutableUsers = false;
@@ -68,16 +69,8 @@ in {
 
   # Enable automatic login for the user.
   services.getty.autologinUser = "${username}";
-  console.enable = true;
   # Whether you need to input password on sudo
   security.sudo.wheelNeedsPassword = false;
-
-  systemd.services = {
-    NetworkManager-wait-online.enable = false;
-    plymouth-quit-wait.enable = false;
-  };
-
-  services.resolved.enable = true;
 
   system.stateVersion = "25.05";
 }
