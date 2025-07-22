@@ -16,17 +16,6 @@ in {
 
         shellAliases = myAliases;
         functions = myFunctions;
-
-        shellInit = ''
-          # Disable fish greeting
-          set -g fish_greeting
-        '';
-
-        interactiveShellInit = lib.mkAfter ''
-          starship init fish | source
-          atuin init fish | source
-          zoxide init fish --cmd cd | source
-        '';
       };
 
       # Companions
