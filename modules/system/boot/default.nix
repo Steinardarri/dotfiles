@@ -8,7 +8,7 @@
     useSystemdBoot = false; # disable for GRUB
     grubTheme = "Retroboot"; # or "Pochita"
     grubExtraConfig = ""; # additional GRUB configuration
-    kernelPackages = pkgs.linuxPackages_xanmod_latest;
+    kernelPackages = pkgs.linuxPackages_zen;
   };
 
   # Overrides
@@ -16,12 +16,12 @@
     loader = {
       grub = {
         enable = lib.mkOptionDefault true;
-        configurationLimit = 15;
+        configurationLimit = 10;
         devices = ["nodev"];
       };
       timeout = lib.mkDefault 3;
     };
-    
+
     plymouth.enable = true;
 
     kernel.sysctl = {
