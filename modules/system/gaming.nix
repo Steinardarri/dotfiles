@@ -16,6 +16,9 @@
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
       protontricks.enable = true;
+      extraCompatPackages = with pkgs; [
+        proton-ge-bin
+      ];
     };
     programs.gamescope = {
       enable = true;
@@ -33,7 +36,6 @@
       winetricks
       wineWowPackages.stable
       cabextract
-      protonup-qt
     ];
 
     environment.sessionVariables = {
