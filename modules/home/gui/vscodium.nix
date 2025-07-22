@@ -25,48 +25,60 @@
       enableUpdateCheck = false;
       enableExtensionUpdateCheck = false;
 
-      extensions = with pkgs.nix-vscode-extensions.open-vsx;
-        [
+      extensions =
+        with pkgs.nix-vscode-extensions.open-vsx; [
           # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/open-vsx-latest.json
 
           # Editor
-          eamodio.gitlens
+          kylinideteam.gitlens # Gitlens lower version for friendly license
           mhutchie.git-graph
           usernamehw.errorlens
+          jellydn.toggle-excluded-files
 
           # Aesthetics
+          gaplo917.gapstylevs
           esbenp.prettier-vscode
-          gruntfuggly.todo-tree
           jock.svg
           naumovs.color-highlight
           seatonjiang.gitmoji-vscode
           pkief.material-icon-theme
           pkief.material-product-icons
+          delgan.qml-format
 
           # Toolset
           christian-kohler.path-intellisense
           formulahendry.code-runner
-          continue.continue
           wix.vscode-import-cost
           firefox-devtools.vscode-firefox-debug
+          fill-labs.dependi
+          semanticdiff.semanticdiff
+
+          # AI
+          continue.continue
 
           # Language specific
           jnoortheen.nix-ide
           james-yu.latex-workshop
           tamasfe.even-better-toml
           yzhang.markdown-all-in-one
-          kamadorueda.alejandra
+          ewen-lbh.vscode-hyprls
+          detachhead.basedpyright
+          bmalehorn.vscode-fish
+          ndonfris.fish-lsp
+          cutetee.qml
+          charliermarsh.ruff
+          rust-lang.rust-analyzer
+          timonwong.shellcheck
+          svelte.svelte-vscode
 
           # Workflow
           alefragnani.bookmarks
           gruntfuggly.todo-tree
         ]
-        ++ (with pkgs.nix-vscode-extensions.vscode-marketplace; [
-          # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/vscode-marketplace-latest.json
-
-          amodio.toggle-excluded-files
-          gaplo917.gapstylevs
-        ]);
+        # ++ (with pkgs.nix-vscode-extensions.vscode-marketplace; [
+        #   # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/vscode-marketplace-latest.json
+        # ])
+        ;
 
       userSettings = {
         # General
