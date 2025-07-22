@@ -1,4 +1,4 @@
-{inputs, secrets, ...}: let
+{inputs, username, hostname, secrets, ...}: let
   # Package declaration
   # ---------------------
   pkgs = import inputs.hydenix.inputs.hydenix-nixpkgs {
@@ -13,12 +13,11 @@
       })
     ];
   };
-  username = "steinardth";
 in {
   # Set pkgs for hydenix globally, any file that imports pkgs will use this
   nixpkgs.pkgs = pkgs;
 
-  hydenix.hostname = "heima";
+  hydenix.hostname = "${hostname}";
 
   imports = [
     # Hardware Modules
@@ -37,9 +36,6 @@ in {
     inputs.hydenix.inputs.home-manager.nixosModules.home-manager
     ./home-configuration.nix
   ];
-
-  _extraHardware.username = "${username}";
-  _homeConfig.username = "${username}";
 
   ### Custom System Modules From Import - to enable
 
@@ -73,7 +69,7 @@ in {
   };
 
   # Whether you need to input password on sudo
-  security.sudo.wheelNeedsPassword = false;
+  security.sudo.wheelNeedsPassword = true;
 
   system.stateVersion = "25.05";
 }

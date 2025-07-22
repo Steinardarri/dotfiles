@@ -29,6 +29,8 @@
 
   outputs = {
     nixpkgs,
+    hydenix,
+    nix-vscode-extensions,
     determinate,
     self,
     ...
@@ -36,29 +38,31 @@
     genericModules = [
       {
         nixpkgs.overlays = [
-          inputs.nix-vscode-extensions.overlays.default
+          nix-vscode-extensions.overlays.default
         ];
       }
 
       {
         # This fixes things that don't use Flakes, but do want to use NixPkgs.
-        nix.registry.nixos.flake = inputs.self;
+        nix.registry.nixos.flake = self;
         environment.etc."nix/inputs/nixpkgs".source = nixpkgs.outPath;
         nix.nixPath = ["nixpkgs=${nixpkgs.outPath}"];
       }
 
       determinate.nixosModules.default
     ];
-    
+
     # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
     secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
   in {
     nixosConfigurations = {
-      heima = inputs.hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
-        inherit (inputs.hydenix.lib) system;
+      heima = hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
+        inherit (hydenix.lib) system;
         specialArgs = {
           inherit inputs;
           inherit secrets;
+          username = "steinardth";
+          hostname = "heima";
         };
         modules =
           genericModules

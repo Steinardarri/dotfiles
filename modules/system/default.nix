@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  username,
   ...
 }: {
   imports = [
@@ -86,8 +87,9 @@
       clean = {
         enable = true;
         dates = "weekly";
-        extraArgs = "--keep-since 14d --keep 15";
+        extraArgs = "--keep-since 14d --keep 10";
       };
+      flake = "/home/${username}/dotfiles";
     };
     fish.enable = true;
     nano = {
