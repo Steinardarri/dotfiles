@@ -14,8 +14,8 @@ xwayland {
 
 # https://wiki.hypr.land/Configuring/Variables/#misc
 misc {
-  vfr = 1
-  vrr = 1
+  vfr = 3
+  vrr = 3
   mouse_move_enables_dpms = true
   key_press_enables_dpms = true
 }
