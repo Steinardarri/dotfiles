@@ -11,7 +11,6 @@
 
   hydenix.hm = {
     enable = true;
-    dolphin.enable = true;
     firefox.enable = false; # using zen-browser instead
     gtk.enable = true;
     qt.enable = true;

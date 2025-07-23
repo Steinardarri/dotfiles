@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   imports = [
+    ./dolphin
     ./vscodium
     ./zen-browser
   ];
