@@ -2,8 +2,6 @@
   imports = [
     ./vscodium
     ./zen-browser
-
-    ./torrent.nix
   ];
 
   home.packages = with pkgs; [

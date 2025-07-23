@@ -5,11 +5,11 @@
   ...
 }: {
   options = {
-    _torrent.enable = lib.mkEnableOption "User-Defined Torrent Home Module";
+    _torrent.enable = lib.mkEnableOption "User-Defined Torrent Module";
   };
 
   config = lib.mkIf config._torrent.enable {
-    home.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
       kdePackages.ktorrent
     ];
   };

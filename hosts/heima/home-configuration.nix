@@ -24,7 +24,6 @@
       ];
 
       # Custom Modules From Import - to enable
-      _torrent.enable = true;
 
       programs.git = {
         userName = "Steinar Darri Þorgilsson";

@@ -43,6 +43,7 @@ in {
   _gaming.enable = true;
   _jellyfin.enable = true;
   _flatpak.enable = true;
+  _torrent.enable = true;
 
   ###
 

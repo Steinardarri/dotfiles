@@ -1,6 +1,8 @@
 {pkgs, ...}: {
   imports = [
     ./equibop
+
+    ./torrent.nix
   ];
 
   programs = {
