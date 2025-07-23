@@ -3,6 +3,8 @@
     ./dolphin
     ./vscodium
     ./zen-browser
+
+    ./kitty.nix
   ];
 
   home.packages = with pkgs; [

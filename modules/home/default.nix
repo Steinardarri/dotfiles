@@ -22,13 +22,6 @@
       vesktop.enable = false;
     };
     spotify.enable = true;
-    terminals = {
-      enable = true;
-      kitty = {
-        enable = true;
-        configText = "";
-      };
-    };
     xdg.enable = true;
   };
 }

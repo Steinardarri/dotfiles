@@ -5,14 +5,6 @@
 }: {
   programs.git = {
     enable = true;
-    delta = {
-      enable = true;
-      options = {
-        line-numbers = true;
-        side-by-side = true;
-        navigate = true;
-      };
-    };
     extraConfig = {
       init.defaultBranch = lib.mkForce "master";
       color.ui = "Auto";
