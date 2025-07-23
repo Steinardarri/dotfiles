@@ -1,9 +1,9 @@
 {pkgs, ...}: {
   imports = [
+    ./vscodium
     ./zen-browser
-    
+
     ./torrent.nix
-    ./vscodium.nix
   ];
 
   home.packages = with pkgs; [

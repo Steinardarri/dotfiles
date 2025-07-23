@@ -32,6 +32,11 @@
           email = "steinar@steinardth.xyz";
         };
       };
+
+      home.sessionVariables = {
+        EDITOR = "codium";
+        VISUAL = "codium";
+      };
     };
   };
 }

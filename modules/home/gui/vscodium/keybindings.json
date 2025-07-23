@@ -1,0 +1,67 @@
+[
+  {
+    "command": "editor.action.blockComment",
+    "key": "ctrl+shift+numpad_divide",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.blockComment",
+    "key": "shift+alt+a",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "editor.action.commentLine",
+    "key": "ctrl+numpad_divide",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "-editor.action.commentLine",
+    "key": "ctrl+oem_2",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+f6",
+    "command": "workbench.action.reloadWindow",
+    "when": "-"
+  },
+  {
+    "key": "alt+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "alt+f",
+    "command": "editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+f",
+    "command": "-editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-search.action.restrictSearchToFolder",
+    "when": "folderMatchWithResourceFocus && searchViewletVisible"
+  }
+]
