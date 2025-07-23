@@ -3,17 +3,6 @@
   lib,
   ...
 }: {
-  hydenix.hm.editors = {
-    enable = true;
-    neovim = false;
-    vscode = {
-      enable = false; # Overriden below
-      wallbash = true; # enable wallbash extension for vscode
-    };
-    vim = false;
-    default = "codium";
-  };
-
   # VSCode -> VSCodium overrides
   programs.vscode = {
     enable = true;

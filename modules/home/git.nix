@@ -3,8 +3,6 @@
   secrets,
   ...
 }: {
-  hydenix.hm.git.enable = true;
-
   programs.git = {
     enable = true;
     delta = {
