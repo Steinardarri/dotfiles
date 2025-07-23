@@ -19,7 +19,7 @@
         zsh_indicator = "󰬡";
         powershell_indicator = "";
         unknown_indicator = "󰇥";
-        format = "[ $indicator]($style) ";
+        format = "[$indicator]($style) ";
         style = "bold purple";
       };
       shlvl = {

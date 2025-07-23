@@ -11,9 +11,7 @@
 
   hydenix.hm = {
     enable = true;
-    comma.enable = true; # useful nix tool to run software without installing it first
     dolphin.enable = true;
-    fastfetch.enable = true;
     firefox.enable = false; # using zen-browser instead
     gtk.enable = true;
     qt.enable = true;
