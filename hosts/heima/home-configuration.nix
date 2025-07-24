@@ -16,14 +16,17 @@
 
     users."${username}" = {
       imports = [
-        inputs.hydenix.lib.homeModules
         ../../modules/home
 
         # Nix-index-database - for comma and command-not-found
         inputs.nix-index-database.homeModules.nix-index
       ];
+      
+      # let home-manager control itself
+      programs.home-manager.enable = true;
 
-      # Custom Modules From Import - to enable
+      ### Custom Modules From Import - to enable
+      ###
 
       programs.git = {
         userName = "Steinar Darri Þorgilsson";
@@ -34,6 +37,8 @@
         EDITOR = "codium";
         VISUAL = "codium";
       };
+
+      home.stateVersion = "25.05";
     };
   };
 }
