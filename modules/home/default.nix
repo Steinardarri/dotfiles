@@ -13,7 +13,6 @@
   hydenix.hm = {
     enable = true;
     firefox.enable = false; # using zen-browser instead
-    qt.enable = true;
     social = {
       # Installed equibop system-side
       enable = false;
