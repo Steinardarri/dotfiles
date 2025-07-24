@@ -21,7 +21,6 @@
       webcord.enable = false;
       vesktop.enable = false;
     };
-    spotify.enable = true;
     xdg.enable = true;
   };
 }

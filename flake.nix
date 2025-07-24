@@ -25,14 +25,17 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
   outputs = {
+    self,
     nixpkgs,
     hydenix,
     nix-vscode-extensions,
     determinate,
-    self,
+    spicetify-nix,
     ...
   } @ inputs: let
     genericModules = [
@@ -50,6 +53,8 @@
       }
 
       determinate.nixosModules.default
+
+      spicetify-nix.homeManagerModules.default
     ];
 
     # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
