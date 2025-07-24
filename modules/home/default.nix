@@ -7,6 +7,8 @@
     ./tui
 
     ./git.nix
+    ./gtk.nix
+    ./qt.nix
     ./xdg.nix
   ];
 
