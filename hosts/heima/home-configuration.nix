@@ -17,11 +17,8 @@
     users."${username}" = {
       imports = [
         ../../modules/home
-
-        # Nix-index-database - for comma and command-not-found
-        inputs.nix-index-database.homeModules.nix-index
       ];
-      
+
       # let home-manager control itself
       programs.home-manager.enable = true;
 

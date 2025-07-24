@@ -1,7 +1,15 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  inputs,
+  ...
+}: let
   myAliases = import ./aliases.nix;
   myFunctions = import ./functions.nix;
 in {
+  imports = [
+    inputs.nix-index-database.homeModules.nix-index
+  ];
+
   programs = {
     fish = {
       enable = true;

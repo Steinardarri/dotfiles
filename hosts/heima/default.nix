@@ -1,4 +1,10 @@
-{inputs, username, hostname, secrets, ...}: let
+{
+  inputs,
+  username,
+  hostname,
+  secrets,
+  ...
+}: let
   # Package declaration
   # ---------------------
   pkgs = import inputs.hydenix.inputs.hydenix-nixpkgs {
@@ -31,10 +37,6 @@ in {
     # System Modules
     inputs.hydenix.lib.nixOsModules
     ../../modules/system
-
-    # Home Manager Modules
-    inputs.hydenix.inputs.home-manager.nixosModules.home-manager
-    ./home-configuration.nix
   ];
 
   ### Custom System Modules From Import - to enable

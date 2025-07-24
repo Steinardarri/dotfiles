@@ -16,6 +16,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    ### Desktop Environment ###
+
+    stylix.url = "github:danth/stylix";
+
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    ### Misc Modules ###
+
     nix-vscode-extensions = {
       url = "github:nix-community/nix-vscode-extensions";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -27,18 +38,32 @@
     };
 
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     hydenix,
+    home-manager,
     nix-vscode-extensions,
     determinate,
-    spicetify-nix,
+    nur,
     ...
   } @ inputs: let
     genericModules = [
+      home-manager.nixosModules.home-manager
+      {
+        nix.registry.nixos.flake = inputs.self;
+        home-manager.useGlobalPkgs = true;
+        home-manager.useUserPackages = true;
+        home-manager.backupFileExtension = "hm-backup";
+      }
+
       {
         nixpkgs.overlays = [
           nix-vscode-extensions.overlays.default
@@ -54,27 +79,44 @@
 
       determinate.nixosModules.default
 
-      spicetify-nix.homeManagerModules.default
+      nur.modules.nixos.default
     ];
-
-    # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
-    secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
   in {
     nixosConfigurations = {
-      heima = hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
-        inherit (hydenix.lib) system;
-        specialArgs = {
-          inherit inputs;
-          inherit secrets;
-          username = "steinardth";
-          hostname = "heima";
+      heima = let
+        system = "x86_64-linux";
+        username = "steinardth";
+        hostname = "heima";
+
+        # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
+        secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/${hostname}.json");
+      in
+        hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
+          inherit system;
+
+          specialArgs = {
+            inherit inputs;
+            inherit secrets;
+            inherit username;
+            inherit hostname;
+          };
+
+          modules =
+            genericModules
+            ++ [
+              ./hosts/${hostname}
+
+              {
+                home-manager.extraSpecialArgs = {
+                  inherit system;
+                  inherit inputs;
+                  inherit username;
+                  inherit hostname;
+                };
+                home-manager.users.${username} = import ./hosts/${hostname}/home-configuration.nix;
+              }
+            ];
         };
-        modules =
-          genericModules
-          ++ [
-            ./hosts/heima
-          ];
-      };
     };
   };
 }
