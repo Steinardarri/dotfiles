@@ -1,4 +1,4 @@
-{ ...}: {
+{...}: {
   imports = [
     ./cli
     ./gui
@@ -7,6 +7,7 @@
     ./tui
 
     ./git.nix
+    ./xdg.nix
   ];
 
   hydenix.hm = {
@@ -21,6 +22,5 @@
       webcord.enable = false;
       vesktop.enable = false;
     };
-    xdg.enable = true;
   };
 }
