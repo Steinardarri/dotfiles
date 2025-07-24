@@ -100,39 +100,39 @@
 
   "gitmoji.addCustomEmoji": [
     {
-      "code": ":sparkles: NEW:",
+      "code": ":sparkles: ",
       "description": "... Add new code/feature",
-      "emoji": "✨ NEW:"
+      "emoji": "✨ "
     },
     {
-      "code": ":high_voltage: IMPROVE:",
+      "code": ":high_voltage: ",
       "description": "... Improve existing code/feature",
-      "emoji": "⚡ IMPROVE:"
+      "emoji": "⚡ "
     },
     {
-      "code": ":fire: REMOVE:",
+      "code": ":fire: ",
       "description": "... Remove existing code/feature",
       "emoji": "🔥 REMOVE:"
     },
     {
-      "code": ":bug: FIX:",
+      "code": ":bug: ",
       "description": "... Fix a bug",
-      "emoji": "🐛 FIX:"
+      "emoji": "🐛 "
     },
     {
-      "code": ":wrench: MAINT:",
+      "code": ":wrench: ",
       "description": "... Maintain dependencies and code",
-      "emoji": "🔧 MAINT:"
+      "emoji": "🔧 "
     },
     {
-      "code": ":bookmark_tabs: DOC:",
+      "code": ":bookmark_tabs: ",
       "description": "... Anything related to documentation",
-      "emoji": "📑 DOC:"
+      "emoji": "📑 "
     },
     {
-      "code": ":robot: TEST:",
+      "code": ":robot: ",
       "description": "... Anything realted to tests",
-      "emoji": "🤖 TEST:"
+      "emoji": "🤖 "
     }
   ],
   "gitmoji.onlyUseCustomEmoji": true,
