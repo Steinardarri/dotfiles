@@ -56,6 +56,13 @@
     ...
   } @ inputs: let
     genericModules = [
+      {
+        # This fixes things that don't use Flakes, but do want to use NixPkgs.
+        nix.registry.nixos.flake = self;
+        environment.etc."nix/inputs/nixpkgs".source = nixpkgs.outPath;
+        nix.nixPath = ["nixpkgs=${nixpkgs.outPath}"];
+      }
+
       home-manager.nixosModules.home-manager
       {
         nix.registry.nixos.flake = inputs.self;
@@ -70,13 +77,6 @@
         ];
       }
 
-      {
-        # This fixes things that don't use Flakes, but do want to use NixPkgs.
-        nix.registry.nixos.flake = self;
-        environment.etc."nix/inputs/nixpkgs".source = nixpkgs.outPath;
-        nix.nixPath = ["nixpkgs=${nixpkgs.outPath}"];
-      }
-
       determinate.nixosModules.default
 
       nur.modules.nixos.default
@@ -89,7 +89,7 @@
         hostname = "heima";
 
         # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
-        secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/${hostname}.json");
+        secrets = builtins.fromJSON (builtins.readFile "./hosts/${hostname}/secrets/keys.json");
       in
         hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
           inherit system;
