@@ -28,7 +28,7 @@
   };
 
   boot.kernelParams = [
-    "video=DP-1:1920x1080@144"
-    "video=DP-2:2560x1440@144"
+    "video=DP-1:2560x1440@144"
+    "video=DP-2:1920x1080@144"
   ];
 }
