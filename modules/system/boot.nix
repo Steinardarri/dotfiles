@@ -11,7 +11,6 @@
     kernelPackages = pkgs.linuxPackages_zen;
   };
 
-  # Overrides
   boot = {
     loader = {
       grub = {

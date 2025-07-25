@@ -2,6 +2,8 @@
   imports = [
     ./equibop
 
+    ./gaming.nix
+    ./nano.nix
     ./torrent.nix
   ];
 

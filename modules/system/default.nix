@@ -1,24 +1,21 @@
 {
   pkgs,
-  lib,
   username,
   ...
 }: {
   imports = [
     ./boot
     ./drivers
-    ./gui
+    ./programs
     ./services
 
-    ./gaming.nix
+    ./boot.nix
     ./locale.nix
     ./packages.nix
   ];
 
   hydenix = {
     audio.enable = true;
-    # Imported gaming module overrides it, when enabled
-    gaming.enable = false;
     hardware.enable = true;
     network.enable = true;
     sddm = {
@@ -68,66 +65,6 @@
       flake = "/home/${username}/dotfiles";
     };
     fish.enable = true;
-    nano = {
-      enable = true;
-      nanorc = ''
-        syntax "Nanorc" "\.?nanorc$"
-        comment "#"
-
-        ## Possible errors and parameters
-        icolor brightred "^[[:space:]]*((un)?set|include|syntax|i?color).*$"
-        ## Colors
-        icolor black " black"
-        icolor red " red"
-        icolor green " green"
-        icolor yellow " yellow"
-        icolor blue " blue"
-        icolor magenta " magenta"
-        icolor cyan " cyan"
-        icolor white " white"
-        icolor normal " normal"
-        icolor brightblack " brightblack"
-        icolor brightred " brightred"
-        icolor brightgreen " brightgreen"
-        icolor brightyellow " brightyellow"
-        icolor brightblue " brightblue"
-        icolor brightmagenta " brightmagenta"
-        icolor brightcyan " brightcyan"
-        icolor brightwhite " brightwhite"
-        icolor brightnormal " brightnormal"
-        icolor ,black ",black "
-        icolor ,red ",red "
-        icolor ,green ",green "
-        icolor ,yellow ",yellow "
-        icolor ,blue ",blue "
-        icolor ,magenta ",magenta "
-        icolor ,cyan ",cyan "
-        icolor ,white ",white "
-        icolor ,normal ",normal"
-        icolor magenta "^[[:space:]]*i?color\>" "\<(start|end)="
-        icolor yellow "^[[:space:]]*(set|unset)[[:space:]]+(errorcolor|functioncolor|keycolor|numbercolor|selectedcolor|statuscolor|stripecolor|titlecolor)[[:space:]]+(bright)?(white|black|red|blue|green|yellow|magenta|cyan|normal)?(,(white|black|red|blue|green|yellow|magenta|cyan|normal))?\>"
-
-        ## Keywords
-        icolor brightgreen "^[[:space:]]*(set|unset)[[:space:]]+(afterends|allow_insecure_backup|atblanks|autoindent|backup|backupdir|boldtext|brackets|breaklonglines|casesensitive|constantshow|cutfromcursor|emptyline|errorcolor|fill|functioncolor|guidestripe|historylog|jumpyscrolling|keycolor|linenumbers|locking|matchbrackets|morespace|mouse|multibuffer|noconvert|nohelp|nonewlines|nopauses|nowrap|numbercolor|operatingdir|positionlog|preserve|punct|quickblank|quotestr|rawsequences|rebinddelete|regexp|selectedcolor|showcursor|smarthome|smooth|softwrap|speller|statuscolor|stripecolor|suspend|tabsize|tabstospaces|tempfile|titlecolor|trimblanks|unix|view|whitespace|wordbounds|wordchars|zap)\>"
-        icolor green "^[[:space:]]*(bind|set|unset|syntax|header|include|magic)\>"
-        ## Strings
-        icolor white ""(\\.|[^"])*""
-        ## Comments
-        icolor brightblue "^[[:space:]]*#.*$"
-        icolor cyan "^[[:space:]]*##.*$"
-
-        ## Trailing whitespace
-        icolor ,green "[[:space:]]+$"
-
-        set linenumbers
-        set constantshow
-        set tabstospaces
-        set tabsize 2
-        set zap
-        set autoindent
-        set indicator
-      '';
-    };
   };
 
   environment.variables = {
