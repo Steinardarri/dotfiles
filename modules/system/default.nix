@@ -9,6 +9,7 @@
     ./programs
     ./services
 
+    ./audio.nix
     ./boot.nix
     ./locale.nix
     ./packages.nix
