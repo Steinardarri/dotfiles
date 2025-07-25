@@ -17,13 +17,11 @@
   ];
 
   hydenix = {
-    audio.enable = true;
     hardware.enable = true;
     sddm = {
       enable = true;
       theme = "Candy"; # Candy, Corners
     };
-    system.enable = true;
   };
 
   time.timeZone = "Atlantic/Reykjavik";
