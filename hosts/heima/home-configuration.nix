@@ -19,8 +19,10 @@
         ../../modules/home
       ];
 
-      # let home-manager control itself
+      # Let home-manager control itself
       programs.home-manager.enable = true;
+      home.username = "${username}";
+      home.homeDirectory = "/home/${username}";
 
       ### Custom Modules From Import - to enable
       ###
@@ -34,8 +36,6 @@
         EDITOR = "codium";
         VISUAL = "codium";
       };
-
-      home.stateVersion = "25.05";
     };
   };
 }
