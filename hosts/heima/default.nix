@@ -12,6 +12,7 @@
     # Hardware Modules
     ./hardware-configuration.nix
     ./extra-hardware.nix
+    ./network.nix
   ];
 
   ### Custom System Modules From Import - to enable
