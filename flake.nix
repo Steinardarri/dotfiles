@@ -16,6 +16,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixos-facter-modules.url = "github:nix-community/nixos-facter-modules";
+
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     ### Desktop Environment ###
 
     stylix.url = "github:danth/stylix";
@@ -53,6 +60,8 @@
     nix-vscode-extensions,
     determinate,
     nur,
+    disko,
+    nixos-facter-modules,
     ...
   } @ inputs: let
     genericModules = [
@@ -104,6 +113,14 @@
           modules =
             genericModules
             ++ [
+              disko.nixosModules.default
+              ./hosts/${hostname}/disko-config.nix
+
+              nixos-facter-modules.nixosModules.facter
+              {
+                config.facter.reportPath = ./hosts/${hostname}/secrets/facter.json;
+              }
+
               ./hosts/${hostname}
 
               {
