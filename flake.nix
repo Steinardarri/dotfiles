@@ -1,16 +1,13 @@
 {
-  description = "Steinardarri's Hydenix NixOS config";
+  description = "Steinardarri's NixOS Config";
 
   inputs = {
-    # User's nixpkgs - for user packages
+    ### System ###
+
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0";
 
     determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
 
-    # Hydenix and its nixpkgs - kept separate to avoid conflicts
-    hydenix.url = "github:richen604/hydenix";
-
-    # Nix-index-database - for comma and command-not-found
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -55,7 +52,6 @@
   outputs = {
     self,
     nixpkgs,
-    hydenix,
     home-manager,
     nix-vscode-extensions,
     determinate,
@@ -100,7 +96,7 @@
         # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
         secrets = builtins.fromJSON (builtins.readFile "./hosts/${hostname}/secrets/keys.json");
       in
-        hydenix.inputs.hydenix-nixpkgs.lib.nixosSystem {
+        nixpkgs.lib.nixosSystem {
           inherit system;
 
           specialArgs = {
