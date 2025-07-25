@@ -13,6 +13,7 @@
     ./boot.nix
     ./locale.nix
     ./packages.nix
+    ./system.nix
   ];
 
   hydenix = {
