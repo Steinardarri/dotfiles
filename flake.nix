@@ -8,6 +8,11 @@
 
     determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
 
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
