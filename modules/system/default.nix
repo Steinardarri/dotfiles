@@ -16,13 +16,6 @@
     ./system.nix
   ];
 
-  hydenix = {
-    sddm = {
-      enable = true;
-      theme = "Candy"; # Candy, Corners
-    };
-  };
-
   time.timeZone = "Atlantic/Reykjavik";
 
   nix = {
