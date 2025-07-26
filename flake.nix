@@ -22,7 +22,10 @@
 
     ### Desktop Environment ###
 
-    stylix.url = "github:danth/stylix";
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
@@ -58,6 +61,7 @@
     nur,
     disko,
     nixos-facter-modules,
+    stylix,
     ...
   } @ inputs: let
     genericModules = [
@@ -85,6 +89,8 @@
       determinate.nixosModules.default
 
       nur.modules.nixos.default
+
+      stylix.nixosModules.stylix
     ];
   in {
     nixosConfigurations = {
@@ -92,6 +98,7 @@
         system = "x86_64-linux";
         username = "steinardth";
         hostname = "heima";
+        stylixTheme = "dystopia";
 
         # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
         secrets = builtins.fromJSON (builtins.readFile "./hosts/${hostname}/secrets/keys.json");
@@ -104,6 +111,7 @@
             inherit secrets;
             inherit username;
             inherit hostname;
+            inherit stylixTheme;
           };
 
           modules =
@@ -118,6 +126,8 @@
               }
 
               ./hosts/${hostname}
+
+              ./modules/stylix
 
               {
                 home-manager.extraSpecialArgs = {

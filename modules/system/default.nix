@@ -72,30 +72,6 @@
     fontDir.enable = true;
   };
 
-  # Catppuccin Mocha Color Scheme For TTY Console
-  console = {
-    colors = [
-      # 0-7 normal
-      "11111b"
-      "f38ba8"
-      "a6e3a1"
-      "f9e2af"
-      "89b4fa"
-      "f5c2e7"
-      "94e2d5"
-      "a6adc8"
-      # 8-15 bright
-      "6c7086"
-      "eba0ac"
-      "a6e3a1"
-      "fab387"
-      "74c7ec"
-      "cba6f7"
-      "89dceb"
-      "cdd6f4"
-    ];
-  };
-
   # Regist appimage-run as the executor of appimages
   boot.binfmt.registrations.appimage = {
     wrapInterpreterInShell = false;
