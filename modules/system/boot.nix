@@ -3,18 +3,15 @@
   lib,
   ...
 }: {
-  hydenix.boot = {
-    enable = true; # enable boot module
-    useSystemdBoot = false; # disable for GRUB
-    grubTheme = "Retroboot"; # or "Pochita"
-    grubExtraConfig = ""; # additional GRUB configuration
-    kernelPackages = pkgs.linuxPackages_zen;
-  };
-
   boot = {
+    kernelPackages = pkgs.linuxPackages_zen;
     loader = {
+      efi.canTouchEfiVariables = true;
       grub = {
-        enable = lib.mkOptionDefault true;
+        enable = true;
+        efiSupport = true;
+        device = "nodev";
+        useOSProber = true;
         configurationLimit = 10;
         devices = ["nodev"];
       };
