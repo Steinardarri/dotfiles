@@ -10,10 +10,10 @@
   nvidiaPackage = config.boot.kernelPackages.nvidiaPackages.stable;
 in {
   options = {
-    _nvidia.enable = lib.mkEnableOption "User-Defined Nvidia Module";
+    _hardware_nvidia.enable = lib.mkEnableOption "User-Defined Nvidia Module";
   };
 
-  config = lib.mkIf config._nvidia.enable {
+  config = lib.mkIf config._hardware_nvidia.enable {
     # Enable NVIDIA driver
     services.xserver.videoDrivers = ["nvidia"];
 

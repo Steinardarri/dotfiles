@@ -17,7 +17,7 @@
 
   ### Custom System Modules From Import - to enable
 
-  _amd_gpu.enable = true;
+  _hardware_amd_gpu.enable = true;
   _gaming.enable = true;
   _jellyfin.enable = true;
   _flatpak.enable = true;

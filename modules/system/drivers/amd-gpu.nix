@@ -5,10 +5,10 @@
   ...
 }: {
   options = {
-    _amd_gpu.enable = lib.mkEnableOption "User-Defined AMD GPU Module";
+    _hardware_amd_gpu.enable = lib.mkEnableOption "User-Defined AMD GPU Module";
   };
 
-  config = lib.mkIf config._amd_gpu.enable {
+  config = lib.mkIf config._hardware_amd_gpu.enable {
     systemd.tmpfiles.rules = [
       "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
     ];

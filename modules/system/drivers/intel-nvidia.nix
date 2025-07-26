@@ -2,12 +2,12 @@
   pkgs,
   config,
   lib,
-  hostname,
   ...
-}: let
-  inherit (import ../../../hosts/${hostname}/options.nix) intel-bus-id nvidia-bus-id gpuType;
-in
-  lib.mkIf ("${gpuType}" == "intel-nvidia") {
+}: {
+  options = {
+    _hardware_intel_nvidia.enable = lib.mkEnableOption "User-Defined Intel CPU Nvidia GPU Module";
+  };
+  config = lib.mkIf config._hardware_intel_nvidia.enable {
     nixpkgs.config.packageOverrides = pkgs: {
       vaapiIntel = pkgs.vaapiIntel.override {
         enableHybridCodec = true;
@@ -53,8 +53,10 @@ in
           enableOffloadCmd = true;
         };
         # Make sure to use the correct Bus ID values for your system!
-        intelBusId = "${intel-bus-id}";
-        nvidiaBusId = "${nvidia-bus-id}";
+        # Not using this module, best to have this as inputs from host decleration
+        intelBusId = "PCI:1:0:0";
+        nvidiaBusId = "PCI:0:2:0";
       };
     };
-  }
+  };
+}

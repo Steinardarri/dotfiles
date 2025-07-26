@@ -4,10 +4,10 @@
   ...
 }: {
   options = {
-    _laptop.enable = lib.mkEnableOption "User-Defined Laptop Module";
+    _hardware_laptop.enable = lib.mkEnableOption "User-Defined Laptop Module";
   };
 
-  config = lib.mkIf config._laptop.enable {
+  config = lib.mkIf config._hardware_laptop.enable {
     powerManagement.enable = true;
     powerManagement.powertop.enable = true;
     services.thermald.enable = true;

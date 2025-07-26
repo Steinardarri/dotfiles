@@ -5,10 +5,10 @@
   ...
 }: {
   options = {
-    _intel_amd.enable = lib.mkEnableOption "User-Defined Intel CPU AMD GPU Module";
+    _hardware_intel_amd.enable = lib.mkEnableOption "User-Defined Intel CPU AMD GPU Module";
   };
 
-  config = lib.mkIf config._intel_amd.enable {
+  config = lib.mkIf config._hardware_intel_amd.enable {
     nixpkgs.config.packageOverrides = pkgs: {
       vaapiIntel = pkgs.vaapiIntel.override {
         enableHybridCodec = true;
