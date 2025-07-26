@@ -4,15 +4,6 @@
   ...
 }: {
   programs = {
-    nh = {
-      enable = true;
-      clean = {
-        enable = true;
-        dates = "weekly";
-        extraArgs = "--keep-since 14d --keep 10";
-      };
-      flake = "/home/${username}/dotfiles";
-    };
     fish.enable = true;
     hyprland = {
       enable = true;
@@ -26,18 +17,26 @@
     nix-ld.enable = true;
   };
 
-  environment.pathsToLink = [
-    "/share/icons"
-    "/share/themes"
-    "/share/fonts"
-    "/share/xdg-desktop-portal"
-    "/share/applications"
-    "/share/mime"
-    "/share/wayland-sessions"
-    "/share/zsh"
-    "/share/bash-completion"
-    "/share/fish"
-  ];
+  environment = {
+    variables = {
+      FLAKE = "/home/${username}/dotfiles";
+      SHELL = "/etc/profiles/per-user/${username}/bin/fish";
+      NIXOS_OZONE_WL = "1";
+    };
+
+    pathsToLink = [
+      "/share/icons"
+      "/share/themes"
+      "/share/fonts"
+      "/share/xdg-desktop-portal"
+      "/share/applications"
+      "/share/mime"
+      "/share/wayland-sessions"
+      "/share/zsh"
+      "/share/bash-completion"
+      "/share/fish"
+    ];
+  };
 
   hardware.bluetooth = {
     enable = true;
@@ -61,10 +60,19 @@
     };
   };
 
+  fonts = {
+    packages = with pkgs; [
+      nerd-fonts.hack
+    ];
+    fontDir.enable = true;
+  };
+
   # For polkit authentication
-  security.polkit.enable = true;
-  security.pam.services.swaylock = {};
-  security.rtkit.enable = true;
+  security = {
+    polkit.enable = true;
+    pam.services.swaylock = {};
+    rtkit.enable = true;
+  };
   systemd.user.services.polkit-gnome-authentication-agent-1 = {
     description = "polkit-gnome-authentication-agent-1";
     wantedBy = ["graphical-session.target"];
