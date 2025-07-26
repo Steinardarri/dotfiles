@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./drivers
+    ./hardware
     ./programs
     ./services
 
