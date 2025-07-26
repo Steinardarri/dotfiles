@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs.kdePackages; [
     dolphin # KDE file manager
+    dolphin-plugins
     qtimageformats # Image format support for Qt5
     ffmpegthumbs # Video thumbnail support
     kde-cli-tools # KDE command line utilities

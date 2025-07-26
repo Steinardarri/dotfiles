@@ -70,7 +70,6 @@
   # For polkit authentication
   security = {
     polkit.enable = true;
-    pam.services.swaylock = {};
     rtkit.enable = true;
   };
   systemd.user.services.polkit-gnome-authentication-agent-1 = {

@@ -22,7 +22,6 @@
   },
 
   "chat.commandCenter.enabled": false,
-  "color-highlight.markerType": "dot-before",
   "continue.enableTabAutocomplete": false,
   "continue.telemetryEnabled": false,
   "diffEditor.maxComputationTime": 0,

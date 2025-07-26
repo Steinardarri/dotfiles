@@ -31,7 +31,6 @@
           esbenp.prettier-vscode
           gaplo917.gapstylevs
           jock.svg
-          naumovs.color-highlight
           pkief.material-icon-theme
           pkief.material-product-icons
           seatonjiang.gitmoji-vscode
