@@ -17,7 +17,6 @@
   ];
 
   hydenix = {
-    hardware.enable = true;
     sddm = {
       enable = true;
       theme = "Candy"; # Candy, Corners
