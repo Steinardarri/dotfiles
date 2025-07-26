@@ -50,6 +50,12 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    rose-pine-hyprcursor = {
+      url = "github:ndom91/rose-pine-hyprcursor";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hyprlang.follows = "hyprland/hyprlang";
+    };
   };
 
   outputs = {
@@ -74,10 +80,11 @@
 
       home-manager.nixosModules.home-manager
       {
-        nix.registry.nixos.flake = inputs.self;
-        home-manager.useGlobalPkgs = true;
-        home-manager.useUserPackages = true;
-        home-manager.backupFileExtension = "hm-backup";
+        home-manager = {
+          useGlobalPkgs = true;
+          useUserPackages = true;
+          backupFileExtension = "hm-backup";
+        };
       }
 
       {
@@ -98,7 +105,21 @@
         system = "x86_64-linux";
         username = "steinardth";
         hostname = "heima";
+        KBDLayout = "is";
         stylixTheme = "dystopia";
+        hyprlandMonitors = [
+          "DP-1, 2560x1440@144, 0x0    , 1.0"
+          "DP-2, 1920x1080@144, -1920x0, 1.0"
+          "    , preferred    , auto   , 1.0"
+        ];
+        hyprlandWorkspaces = [
+          "1, monitor:DP-2"
+          "2, monitor:DP-2"
+          "3, monitor:DP-2"
+          "4, monitor:DP-1"
+          "5, monitor:DP-1"
+          "6, monitor:DP-1"
+        ];
 
         # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
         secrets = builtins.fromJSON (builtins.readFile "./hosts/${hostname}/secrets/keys.json");
@@ -108,7 +129,6 @@
 
           specialArgs = {
             inherit inputs;
-            inherit secrets;
             inherit username;
             inherit hostname;
             inherit stylixTheme;
@@ -126,17 +146,30 @@
               }
 
               ./hosts/${hostname}
-
+              ./modules/system
               ./modules/stylix
 
               {
-                home-manager.extraSpecialArgs = {
-                  inherit system;
-                  inherit inputs;
-                  inherit username;
-                  inherit hostname;
+                home-manager = {
+                  extraSpecialArgs = {
+                    inherit inputs;
+                    inherit system;
+                    inherit username;
+                    inherit hostname;
+                    inherit KBDLayout;
+                    inherit stylixTheme;
+                    inherit hyprlandMonitors;
+                    inherit hyprlandWorkspaces;
+                    inherit secrets;
+                  };
+                  users.${username} = {
+                    imports = [
+                      ./hosts/${hostname}/home-configuration.nix
+                      ./modules/home
+                      ./modules/stylix/home.nix
+                    ];
+                  };
                 };
-                home-manager.users.${username} = import ./hosts/${hostname}/home-configuration.nix;
               }
             ];
         };

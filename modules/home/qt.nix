@@ -10,7 +10,6 @@
     kdePackages.qtbase
     kdePackages.qtwayland
     kdePackages.qtstyleplugin-kvantum
-    kdePackages.breeze-icons
     kdePackages.qtimageformats
     kdePackages.qtsvg
     kdePackages.qtwayland

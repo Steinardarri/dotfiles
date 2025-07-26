@@ -8,7 +8,6 @@
     gnome-tweaks
     gnomeExtensions.window-gestures
     nwg-look
-    adwaita-icon-theme
     emote
   ];
 

@@ -5,17 +5,13 @@
   secrets,
   ...
 }: {
-
   imports = [
-    ../../modules/system
-
-    # Hardware Modules
     ./hardware-configuration.nix
     ./extra-hardware.nix
     ./network.nix
   ];
 
-  ### Custom System Modules From Import - to enable
+  ### Custom System Modules From modules/system - to enable
 
   _hardware_amd_gpu.enable = true;
   _gaming.enable = true;
@@ -25,7 +21,7 @@
 
   ###
 
-  networking.hostName = "${hostname}";
+  networking.hostName = hostname;
 
   users = {
     users.${username} = {

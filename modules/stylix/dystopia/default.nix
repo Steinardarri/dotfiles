@@ -1,16 +1,8 @@
-# Configuration for Stylix
-# https://github.com/danth/stylix
 {pkgs, ...}: {
   stylix = {
     #image = ./dystopia.png;
     image = ./vagabond.jpg;
     polarity = "dark";
-
-    cursor = {
-      package = pkgs.bibata-cursors-translucent;
-      name = "Bibata Spirit";
-      size = 24;
-    };
 
     fonts = rec {
       sansSerif = {

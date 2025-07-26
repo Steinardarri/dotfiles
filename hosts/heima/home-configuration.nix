@@ -1,41 +1,19 @@
-{
-  inputs,
-  secrets,
-  username,
-  ...
-}: {
-  home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    backupFileExtension = "hm-backup";
-    extraSpecialArgs = {
-      inherit inputs;
-      inherit secrets;
-      inherit username;
-    };
+{username, ...}: {
+  # Let home-manager control itself
+  programs.home-manager.enable = true;
+  home.username = username;
+  home.homeDirectory = "/home/${username}";
 
-    users."${username}" = {
-      imports = [
-        ../../modules/home
-      ];
+  ### Custom Modules From modules/home - to enable
+  ###
 
-      # Let home-manager control itself
-      programs.home-manager.enable = true;
-      home.username = "${username}";
-      home.homeDirectory = "/home/${username}";
+  programs.git = {
+    userName = "Steinar Darri Þorgilsson";
+    userEmail = "steinar@steinardth.xyz";
+  };
 
-      ### Custom Modules From Import - to enable
-      ###
-
-      programs.git = {
-        userName = "Steinar Darri Þorgilsson";
-        userEmail = "steinar@steinardth.xyz";
-      };
-
-      home.sessionVariables = {
-        EDITOR = "codium";
-        VISUAL = "codium";
-      };
-    };
+  home.sessionVariables = {
+    EDITOR = "codium";
+    VISUAL = "codium";
   };
 }
