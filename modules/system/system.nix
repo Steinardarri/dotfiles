@@ -1,5 +1,30 @@
-{pkgs, ...}: {
-  programs.nix-ld.enable = true;
+{
+  pkgs,
+  username,
+  ...
+}: {
+  programs = {
+    nh = {
+      enable = true;
+      clean = {
+        enable = true;
+        dates = "weekly";
+        extraArgs = "--keep-since 14d --keep 10";
+      };
+      flake = "/home/${username}/dotfiles";
+    };
+    fish.enable = true;
+    hyprland = {
+      enable = true;
+      withUWSM = false;
+    };
+    dconf.enable = true;
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
+    nix-ld.enable = true;
+  };
 
   environment.pathsToLink = [
     "/share/icons"
@@ -36,14 +61,6 @@
     };
   };
 
-  programs = {
-    dconf.enable = true;
-    gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-    };
-  };
-
   # For polkit authentication
   security.polkit.enable = true;
   security.pam.services.swaylock = {};
@@ -66,5 +83,15 @@
   xdg.portal = {
     enable = true;
     extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  };
+
+  # Regist appimage-run as the executor of appimages
+  boot.binfmt.registrations.appimage = {
+    wrapInterpreterInShell = false;
+    interpreter = "${pkgs.appimage-run}/bin/appimage-run";
+    recognitionType = "magic";
+    offset = 0;
+    mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
+    magicOrExtension = ''\x7fELF....AI\x02'';
   };
 }

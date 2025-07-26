@@ -46,19 +46,6 @@
   };
   nixpkgs.config.allowUnfree = true;
 
-  programs = {
-    nh = {
-      enable = true;
-      clean = {
-        enable = true;
-        dates = "weekly";
-        extraArgs = "--keep-since 14d --keep 10";
-      };
-      flake = "/home/${username}/dotfiles";
-    };
-    fish.enable = true;
-  };
-
   environment.variables = {
     FLAKE = "/home/${username}/dotfiles";
     SHELL = "/etc/profiles/per-user/${username}/bin/fish";
@@ -70,16 +57,6 @@
       nerd-fonts.hack
     ];
     fontDir.enable = true;
-  };
-
-  # Regist appimage-run as the executor of appimages
-  boot.binfmt.registrations.appimage = {
-    wrapInterpreterInShell = false;
-    interpreter = "${pkgs.appimage-run}/bin/appimage-run";
-    recognitionType = "magic";
-    offset = 0;
-    mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
-    magicOrExtension = ''\x7fELF....AI\x02'';
   };
 
   system.stateVersion = "25.05";
