@@ -133,6 +133,7 @@
             inherit inputs;
             inherit username;
             inherit hostname;
+            inherit secrets;
             inherit stylixTheme;
           };
 
