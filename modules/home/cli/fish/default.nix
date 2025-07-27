@@ -19,10 +19,6 @@ in {
         set -g fish_greeting
 
         fastfetch
-
-        # Color settings
-        set fish_pager_color_prefix cyan
-        set fish_color_autosuggestion brblack
       '';
 
       shellAliases = myAliases;
@@ -54,7 +50,8 @@ in {
     broot.enable = true;
     broot.enableFishIntegration = true;
 
-    direnv.enable = true; # Fish Integration Automatically Enabled
+    direnv.enable = true;
+    # Fish Integration Automatically Enabled
     direnv.nix-direnv.enable = true;
 
     atuin.enable = true;
@@ -63,5 +60,8 @@ in {
 
   home.packages = with pkgs; [
     fishPlugins.colored-man-pages
+    fishPlugins.done
+    fishPlugins.forgit
+    fishPlugins.grc
   ];
 }

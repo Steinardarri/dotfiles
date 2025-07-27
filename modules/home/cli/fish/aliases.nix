@@ -6,17 +6,6 @@
   ld = "eza -lhD --icons=auto";
   lt = "eza --icons=auto --tree";
 
-  # Git shortcuts
-  g = "git";
-  gs = "git status";
-  ga = "git add";
-  gc = "git commit -m";
-  gp = "git push";
-  gl = "git log --oneline";
-  gd = "git diff";
-  gb = "git branch";
-  gco = "git checkout";
-
   # System shortcuts
   c = "clear";
   e = "exit";
