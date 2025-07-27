@@ -154,6 +154,8 @@
         "git.pullBeforeCheckout" = true;
         "git.rebaseWhenSync" = true;
 
+        "gitlens.currentLine.enabled" = false;
+        
         "gitmoji.addCustomEmoji" = [
           {
             "code" = ":sparkles: ";
