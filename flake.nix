@@ -124,7 +124,7 @@
         ];
 
         # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
-        secrets = builtins.fromJSON (builtins.readFile "${self}/hosts/${hostname}/secrets/keys.json");
+        secrets = builtins.fromJSON (builtins.readFile ./hosts/${hostname}/secrets/keys.json);
       in
         nixpkgs.lib.nixosSystem {
           inherit system;

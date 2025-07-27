@@ -49,11 +49,7 @@
   };
 
   home.file = {
-    ".config/spotify-flags.conf" = {
-      source = "./spotify-flags.conf";
-    };
-    ".config/electron-flags.conf" = {
-      source = "./electron-flags.conf";
-    };
+    ".config/spotify-flags.conf".source = ./spotify-flags.conf;
+    ".config/electron-flags.conf".source = ./electron-flags.conf;
   };
 }

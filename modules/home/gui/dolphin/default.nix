@@ -21,9 +21,5 @@
     };
   };
 
-  home.file = {
-    ".config/dolphinrc" = {
-      source = "./dolphinrc";
-    };
-  };
+  home.file.".config/dolphinrc".source = ./dolphinrc;
 }
