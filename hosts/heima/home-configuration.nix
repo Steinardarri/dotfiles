@@ -12,6 +12,11 @@
   # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
   programs.zsh = {
     enable = true;
+    profileExtra = ''
+      if uwsm check may-start; then
+        exec uwsm start hyprland-uwsm.desktop
+      fi
+    '';
     initExtraFirst = ''
       if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z $ZSH_EXECUTION_STRING ]]
       then
