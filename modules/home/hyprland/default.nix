@@ -7,8 +7,8 @@
   hyprlandWorkspaces,
   ...
 }: let
-  animations = import ./animations.nix;
-  decoration = import ./decoration.nix;
+  animations = import ./hypr/animations.nix;
+  decoration = import ./hypr/decoration.nix;
 in {
   imports = [
     ./notifications.nix
