@@ -53,10 +53,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nur = {
+    #   url = "github:nix-community/NUR";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     rose-pine-hyprcursor = {
       url = "github:ndom91/rose-pine-hyprcursor";
@@ -70,7 +70,7 @@
     nixpkgs,
     home-manager,
     nix-vscode-extensions,
-    nur,
+    # nur,
     disko,
     nixos-facter-modules,
     stylix,
@@ -99,7 +99,7 @@
         ];
       }
 
-      nur.modules.nixos.default
+      # nur.modules.nixos.default
 
       stylix.nixosModules.stylix
     ];
