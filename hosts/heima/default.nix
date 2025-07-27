@@ -39,11 +39,14 @@
         "gamemode"
         "media"
       ];
-      shell = pkgs.fish;
+      # Zsh used as login shell then initializes fish
+      # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
+      shell = pkgs.zsh;
     };
     mutableUsers = false;
   };
+  services.getty.autologinUser = username;
 
   # Whether you need to input password on sudo
-  security.sudo.wheelNeedsPassword = true;
+  security.sudo.wheelNeedsPassword = false;
 }
