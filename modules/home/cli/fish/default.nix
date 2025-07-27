@@ -1,15 +1,7 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: let
+{pkgs, ...}: let
   myAliases = import ./aliases.nix;
   myFunctions = import ./functions.nix;
 in {
-  imports = [
-    inputs.nix-index-database.homeModules.nix-index
-  ];
-
   programs = {
     fish = {
       enable = true;
@@ -31,10 +23,28 @@ in {
         ".5" = "cd ../../../../..";
         mkdir = "mkdir -p";
       };
+
+      plugins = [
+        {
+          name = "colored-man-pages";
+          src = pkgs.fishPlugins.colored-man-pages.src;
+        }
+        {
+          name = "grc";
+          src = pkgs.fishPlugins.grc.src;
+        }
+        {
+          name = "done";
+          src = pkgs.fishPlugins.done.src;
+        }
+        {
+          name = "forgit";
+          src = pkgs.fishPlugins.forgit.src;
+        }
+      ];
     };
 
     # Companions
-    starship.enable = true;
     starship.enableFishIntegration = true;
 
     nix-index.enable = true;
@@ -57,11 +67,4 @@ in {
     atuin.enable = true;
     atuin.enableFishIntegration = true;
   };
-
-  home.packages = with pkgs; [
-    fishPlugins.colored-man-pages
-    fishPlugins.done
-    fishPlugins.forgit
-    fishPlugins.grc
-  ];
 }
