@@ -7,6 +7,7 @@
   programs = {
     fish.enable = true;
     zsh.enable = true;
+    # https://wiki.hypr.land/Nix/Hyprland-on-NixOS/
     hyprland = {
       enable = true;
       withUWSM = true;

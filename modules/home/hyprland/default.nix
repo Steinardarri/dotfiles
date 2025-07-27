@@ -1,4 +1,5 @@
 {
+  inputs,
   pkgs,
   lib,
   config,
@@ -62,13 +63,12 @@ in {
     ".config/hypr/keybindings.conf".source = lib.mkForce ./hypr/keybindings.conf;
   };
 
+  # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
   wayland.windowManager.hyprland = {
     enable = true;
 
-    # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/#using-the-home-manager-module-with-nixos
-    # set the Hyprland and XDPH packages to null to use the ones from the NixOS module
-    package = null;
-    portalPackage = null;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 
     xwayland.enable = false;
 
