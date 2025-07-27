@@ -3,10 +3,7 @@
 
   inputs = {
     ### System ###
-
-    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0";
-
-    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -49,7 +46,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nur = {
       url = "github:nix-community/NUR";
@@ -68,7 +68,6 @@
     nixpkgs,
     home-manager,
     nix-vscode-extensions,
-    determinate,
     nur,
     disko,
     nixos-facter-modules,
@@ -98,8 +97,6 @@
         ];
       }
 
-      determinate.nixosModules.default
-
       nur.modules.nixos.default
 
       stylix.nixosModules.stylix
@@ -127,7 +124,7 @@
         ];
 
         # https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/
-        secrets = builtins.fromJSON (builtins.readFile "./hosts/${hostname}/secrets/keys.json");
+        secrets = builtins.fromJSON (builtins.readFile "${self}/hosts/${hostname}/secrets/keys.json");
       in
         nixpkgs.lib.nixosSystem {
           inherit system;
