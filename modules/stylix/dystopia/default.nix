@@ -13,7 +13,7 @@
       serif = sansSerif;
 
       monospace = {
-        name = "Hack Nerd Font";
+        name = "Hack Nerd Font Mono";
         package = pkgs.nerd-fonts.hack;
       };
 

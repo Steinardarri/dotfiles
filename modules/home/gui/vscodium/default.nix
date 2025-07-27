@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   # VSCode -> VSCodium overrides
   programs.vscode = {
     enable = true;
@@ -87,7 +91,8 @@
 
         "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
-        # "editor.fontFamily" = lib.mkOptionDefault "'Hack Nerd Font', 'Hack', monospace";
+        "editor.fontFamily" = lib.mkDefault "'Hack Nerd Font Mono', 'Hack', monospace";
+        "editor.fontSize" = lib.mkDefault 16;
         "editor.fontLigatures" = false;
         "editor.formatOnPaste" = true;
         "editor.formatOnSave" = true;
@@ -155,7 +160,7 @@
         "git.rebaseWhenSync" = true;
 
         "gitlens.currentLine.enabled" = false;
-        
+
         "gitmoji.addCustomEmoji" = [
           {
             "code" = ":sparkles: ";
@@ -214,7 +219,7 @@
         "terminal.integrated.cursorWidth" = 2;
         "terminal.integrated.defaultProfile.linux" = "fish";
         "terminal.integrated.enableImages" = true;
-        # "terminal.integrated.fontSize" = 14;
+        "terminal.integrated.fontSize" = lib.mkDefault 14;
         "terminal.integrated.persistentSessionScrollback" = 5000;
         "terminal.integrated.profiles.linux.fish.path" = "/usr/bin/fish";
         "terminal.integrated.profiles.linux.fish.icon" = "star";
@@ -236,7 +241,7 @@
         "workbench.cloudChanges.autoResume" = "off";
         "workbench.cloudChanges.continueOn" = "off";
         "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
-        # "workbench.colorTheme" = lib.mkOptionDefault "GapStyle VS";
+        "workbench.colorTheme" = lib.mkDefault "GapStyle VS";
         "workbench.enableExperiments" = false;
         "workbench.iconTheme" = "material-icon-theme";
         "workbench.navigationControl.enabled" = false;

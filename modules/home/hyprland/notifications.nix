@@ -1,7 +1,18 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   # Enable dunst service through home-manager
   services.dunst = {
     enable = true;
+
+    # Icon theme for notifications
+    iconTheme = lib.mkDefault {
+      package = pkgs.nordzy-icon-theme;
+      name = "Nordzy";
+      size = "32x32";
+    };
 
     settings = {
       global = {
@@ -32,10 +43,13 @@
         horizontal_padding = 16;
         text_icon_padding = 16;
         frame_width = 3;
+        frame_color = lib.mkDefault "#ff9c64";
         gap_size = 8;
+        separator_color = lib.mkDefault "frame";
         sort = "yes";
 
         # === Text ===
+        font = lib.mkDefault "Hack Nerd Font Mono 11";
         line_height = 4;
         markup = "full";
         format = "<b>%s</b>\n%b";
@@ -74,7 +88,12 @@
         mouse_right_click = "close_all";
       };
 
+      # Holographic orange theme urgency levels
       urgency_low = {
+        background = lib.mkDefault "#1a0f0a";
+        foreground = lib.mkDefault "#ffd4b0";
+        frame_color = lib.mkDefault "#ff9c6466";
+        highlight = lib.mkDefault "#ff9c64";
         timeout = 5;
 
         # Subtle glow effect
@@ -82,6 +101,10 @@
       };
 
       urgency_normal = {
+        background = lib.mkDefault "#1a0f0a";
+        foreground = lib.mkDefault "#ffd4b0";
+        frame_color = lib.mkDefault "#ff9c64";
+        highlight = lib.mkDefault "#ffdc00";
         timeout = 10;
 
         # Medium glow
@@ -89,6 +112,10 @@
       };
 
       urgency_critical = {
+        background = lib.mkDefault "#2a1510";
+        foreground = lib.mkDefault "#ffdc00";
+        frame_color = lib.mkDefault "#ff4500";
+        highlight = lib.mkDefault "#ff1493";
         timeout = 0;
 
         # Intense glow
@@ -101,6 +128,7 @@
       volume = {
         appname = "volume";
         format = "<b>%s</b>";
+        highlight = lib.mkDefault "#ffdc00";
         history_ignore = true;
         timeout = 2;
       };
@@ -108,6 +136,7 @@
       brightness = {
         appname = "brightness";
         format = "<b>%s</b>";
+        highlight = lib.mkDefault "#ffdc00";
         history_ignore = true;
         timeout = 2;
       };
@@ -118,6 +147,9 @@
         format = "<b>%s</b>\n%b";
         icon_position = "left";
         max_icon_size = 80;
+        frame_color = lib.mkDefault "#ff9c64";
+        background = lib.mkDefault "#1a0f0a";
+        foreground = lib.mkDefault "#ffdc00";
         timeout = 5;
       };
 
@@ -125,6 +157,7 @@
       networkmanager = {
         appname = "NetworkManager";
         format = "<b>%s</b>\n%b";
+        frame_color = lib.mkDefault "#ff8c64";
         urgency = "normal";
       };
 
@@ -132,12 +165,17 @@
       git = {
         appname = "git*";
         format = "<b>%s</b>\n<i>%b</i>";
+        frame_color = lib.mkDefault "#ffdc00";
+        background = lib.mkDefault "#2a1510";
       };
 
       # Calendar/Schedule
       calendar = {
         appname = "calendar";
         format = "<b>%s</b>\n%b";
+        frame_color = lib.mkDefault "#ff64dc";
+        background = lib.mkDefault "#1a0f0a";
+        foreground = lib.mkDefault "#ffd4b0";
         timeout = 15;
       };
 
@@ -145,21 +183,23 @@
       download = {
         appname = "*download*";
         format = "<b>%s</b>\n%b";
+        frame_color = lib.mkDefault "#ffa500";
+        progress_bar_frame_color = lib.mkDefault "#ffa500";
       };
 
       # Screenshot notifications
       screenshot = {
         appname = "grimblast";
         format = "<b>Screenshot</b>\n%b";
+        frame_color = lib.mkDefault "#ff64dc";
+        background = lib.mkDefault "#2a1510";
         timeout = 3;
       };
     };
   };
 
-  # Additional packages for enhanced functionality
   home.packages = with pkgs; [
     libnotify # provides notify-send
-    dunst # ensures dunst binary is available
   ];
 
   # Create notification test scripts
