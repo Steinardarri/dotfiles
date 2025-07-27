@@ -1,7 +1,7 @@
 {
   pkgs,
-  inputs,
   lib,
+  config,
   KBDLayout,
   hyprlandMonitors,
   hyprlandWorkspaces,
@@ -64,8 +64,12 @@ in {
 
   wayland.windowManager.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+
+    # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/#using-the-home-manager-module-with-nixos
+    # set the Hyprland and XDPH packages to null to use the ones from the NixOS module
+    package = null;
+    portalPackage = null;
+
     xwayland.enable = false;
 
     # Import environment variables for systemd services
@@ -78,11 +82,6 @@ in {
       animations = animations;
       workspace = hyprlandWorkspaces;
 
-      # CRITICAL: Global submap for dots-hyprland compatibility
-      exec = "hyprctl dispatch submap global";
-      submap = "global";
-
-      # General appearance from dots-hyprland
       general = {
         gaps_in = 4;
         gaps_out = 5;
@@ -90,7 +89,7 @@ in {
         border_size = 1;
         resize_on_border = true;
         no_focus_fallback = true;
-        allow_tearing = true; # This just allows the immediate window rule to work
+        allow_tearing = true;
 
         snap = {
           enabled = true;
@@ -114,7 +113,7 @@ in {
         repeat_delay = 250;
 
         # Mouse
-        sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
+        sensitivity = 0;
         accel_profile = "flat";
         follow_mouse = 1;
         float_switch_override_focus = 2;
@@ -182,4 +181,7 @@ in {
       ];
     };
   };
+
+  # Make uwsm grab env variables from Home Manager
+  xdg.configFile."uwsm/env".source = "${config.home.sessionVariablesPackage}/etc/profile.d/hm-session-vars.sh";
 }
