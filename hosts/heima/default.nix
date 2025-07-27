@@ -33,7 +33,11 @@
       extraGroups = [
         "wheel"
         "networkmanager"
+        "audio"
+        "render"
         "video"
+        "gamemode"
+        "media"
       ];
       shell = pkgs.fish;
     };
