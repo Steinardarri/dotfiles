@@ -3,13 +3,6 @@
   services.dunst = {
     enable = true;
 
-    # Icon theme for notifications
-    iconTheme = {
-      package = pkgs.tela-circle-icon-theme;
-      name = "Tela-circle-dracula";
-      size = "32x32";
-    };
-
     settings = {
       global = {
         # === Display ===
@@ -40,11 +33,9 @@
         text_icon_padding = 16;
         frame_width = 3;
         gap_size = 8;
-        separator_color = "frame";
         sort = "yes";
 
         # === Text ===
-        font = "JetBrains Mono 11";
         line_height = 4;
         markup = "full";
         format = "<b>%s</b>\n%b";
@@ -69,7 +60,7 @@
         history_length = 20;
 
         # === Misc ===
-        dmenu = "${pkgs.wofi}/bin/wofi --dmenu -p dunst";
+        dmenu = "${pkgs.fuzzel}/bin/fuzzel --dmenu -p dunst";
         browser = "${pkgs.xdg-utils}/bin/xdg-open";
         always_run_script = true;
         title = "Dunst";
@@ -141,8 +132,6 @@
       git = {
         appname = "git*";
         format = "<b>%s</b>\n<i>%b</i>";
-        frame_color = "#ffdc00";
-        background = "#2a1510";
       };
 
       # Calendar/Schedule
