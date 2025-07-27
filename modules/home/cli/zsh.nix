@@ -68,7 +68,7 @@
         export PATH=$PATH:$HOME/.local/bin
       '';
 
-      initExtra = ''
+      initContent = ''
         HISTFILE=~/.histfile
         setopt autocd nomatch
         unsetopt beep extendedglob notify
