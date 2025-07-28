@@ -4,11 +4,13 @@
     image = ./vagabond.jpg;
     polarity = "dark";
 
-    fonts = rec {
+    fonts = let
       sansSerif = {
         name = "Fira Sans";
         package = pkgs.fira-sans;
       };
+    in {
+      sansSerif = sansSerif;
 
       serif = sansSerif;
 
