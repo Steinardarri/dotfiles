@@ -178,7 +178,7 @@
           {
             "code" = ":fire: ";
             "description" = "| Remove existing code/feature";
-            "emoji" = "🔥 REMOVE:";
+            "emoji" = "🔥 ";
           }
           {
             "code" = ":bug: ";
