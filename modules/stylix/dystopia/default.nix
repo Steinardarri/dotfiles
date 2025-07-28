@@ -6,8 +6,8 @@
 
     fonts = let
       sansSerif = {
-        name = "Fira Sans";
-        package = pkgs.fira-sans;
+        name = "Lato";
+        package = pkgs.lato;
       };
     in {
       sansSerif = sansSerif;
