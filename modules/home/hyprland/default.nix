@@ -12,6 +12,8 @@
   decoration = import ./hypr/decoration.nix;
 in {
   imports = [
+    ./walker
+
     ./fuzzel.nix
     ./notifications.nix
     ./packages.nix
