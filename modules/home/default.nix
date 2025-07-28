@@ -15,7 +15,7 @@
     ./qt.nix
     ./xdg.nix
   ];
-  
+
   # Let home-manager control itself
   programs.home-manager.enable = true;
 

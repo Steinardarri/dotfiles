@@ -12,50 +12,9 @@
   decoration = import ./hypr/decoration.nix;
 in {
   imports = [
+    ./fuzzel.nix
     ./notifications.nix
-  ];
-
-  home.packages = with pkgs; [
-    # Launchers
-    fuzzel # Primary launcher/picker
-
-    # Screenshot & recording
-    hyprshot # Advanced screenshot tool
-    grimblast # Backup screenshot tool
-    grim # Basic screenshot
-    slurp # Region selector
-    tesseract # OCR
-    satty # Screenshot annotation tool
-    swappy # Screenshot editor
-    wf-recorder # Screen recording
-
-    # Clipboard & color
-    cliphist # Clipboard history
-    wl-clipboard # Clipboard utilities
-    hyprpicker # Color picker
-
-    # Wallpaper & display
-    hyprpaper # Wallpaper daemon
-    gammastep # Color temperature
-    geoclue2 # Location for gammastep
-    brightnessctl # Brightness control
-    hyprsunset # blue-light filter
-
-    # Lock & idle
-    hypridle # Idle daemon
-    hyprlock # Lock screen
-
-    # Session
-    wlogout # Power menu
-
-    # Authentication
-    hyprpolkitagent
-
-    # Fonts and cursors
-    hyprcursor
-
-    # Utilities
-    hyprutils
+    ./packages.nix
   ];
 
   # Easier to manage keybindings in hyprlang conf file
@@ -71,9 +30,8 @@ in {
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 
     xwayland.enable = false;
-
-    # Import environment variables for systemd services
-    systemd.variables = ["--all"];
+    # https://wiki.hypr.land/Useful-Utilities/Systemd-start/#installation
+    systemd.enable = false;
 
     settings = {
       # Imports
@@ -165,12 +123,9 @@ in {
 
       # Autostart applications
       exec-once = [
-        # Wallpaper daemon and initial wallpaper
-        "swww-daemon --format xrgb --no-cache"
-
         # Core components
-        "gnome-keyring-daemon --start --components=secrets"
-        "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1"
+        # "gnome-keyring-daemon --start --components=secrets"
+        # "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1"
         "hypridle"
         "dbus-update-activation-environment --all"
         "sleep 1 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
