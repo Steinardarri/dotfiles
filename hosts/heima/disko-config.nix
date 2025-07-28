@@ -1,7 +1,6 @@
-{device, ...}: {
+{...}: {
   disko.devices = {
     disk.main = {
-      inherit device;
       type = "disk";
       content = {
         type = "gpt";
@@ -13,7 +12,7 @@
               type = "filesystem";
               format = "vfat";
               mountpoint = "/boot";
-              mountOptions = ["umask=0077"];
+              mountOptions = ["fmask=0137" "dmask=0027"];
             };
           };
           luks = {
@@ -21,12 +20,16 @@
             content = {
               type = "luks";
               name = "NixCrypt";
+              # Allow discards from SSD TRIM
               settings.allowDiscards = true;
-              passwordFile = "/tmp/secret.key";
+              # Set luks password during install
+              askPassword = true;
               content = {
                 type = "filesystem";
                 format = "xfs";
+                extraArgs = ["-L \"NixOS\""];
                 mountpoint = "/";
+                mountOptions = ["defaults" "noatime"];
               };
             };
           };

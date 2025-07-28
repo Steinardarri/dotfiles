@@ -8,22 +8,11 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  boot.initrd.availableKernelModules = ["nvme" "xhci_pci" "ahci" "usbhid" "uas" "usb_storage" "sd_mod"];
-  boot.initrd.kernelModules = [];
-  boot.kernelModules = ["kvm-amd"];
-  boot.extraModulePackages = [];
-
-  fileSystems."/" = lib.mkDefault {
-    device = "/dev/disk/by-uuid/6c07be92-6fad-4edb-abfb-f4f03a66a778";
-    fsType = "xfs";
-  };
-
-  boot.initrd.luks.devices."cryptNix".device = lib.mkDefault "/dev/disk/by-uuid/911a53b6-e547-4848-8f14-e84b6ce02cbb";
-
-  fileSystems."/boot" = lib.mkDefault {
-    device = "/dev/disk/by-uuid/C1C8-6AEA";
-    fsType = "vfat";
-    options = ["fmask=0077" "dmask=0077"];
+  boot = {
+    initrd.availableKernelModules = ["nvme" "xhci_pci" "ahci" "usbhid" "uas" "usb_storage" "sd_mod"];
+    initrd.kernelModules = [];
+    kernelModules = ["kvm-amd"];
+    extraModulePackages = [];
   };
 
   swapDevices = lib.mkForce [];
