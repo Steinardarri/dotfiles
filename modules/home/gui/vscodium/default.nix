@@ -159,7 +159,10 @@
         "git.pullBeforeCheckout" = true;
         "git.rebaseWhenSync" = true;
 
+        "gitlens.codeLens.enabled" = false;
         "gitlens.currentLine.enabled" = false;
+        "gitlens.hovers.enabled" = false;
+        "gitlens.showWelcomeOnInstall" = false;
 
         "gitmoji.addCustomEmoji" = [
           {
