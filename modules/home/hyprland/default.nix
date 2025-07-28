@@ -1,7 +1,6 @@
 {
   inputs,
   pkgs,
-  lib,
   config,
   KBDLayout,
   hyprlandMonitors,
@@ -10,6 +9,8 @@
 }: let
   animations = import ./hypr/animations.nix;
   decoration = import ./hypr/decoration.nix;
+
+  binds = import ./hypr/binds.nix;
 in {
   imports = [
     ./walker
@@ -18,11 +19,6 @@ in {
     ./notifications.nix
     ./packages.nix
   ];
-
-  # Easier to manage keybindings in hyprlang conf file
-  home.file = {
-    ".config/hypr/keybindings.conf".source = lib.mkForce ./hypr/keybindings.conf;
-  };
 
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
   wayland.windowManager.hyprland = {
@@ -41,6 +37,24 @@ in {
       decoration = decoration;
       animations = animations;
       workspace = hyprlandWorkspaces;
+
+      # Main modifier
+      "$mainMod" = "Super"; # super / meta / windows key
+
+      # Assign apps
+      "$launcher" = "walker";
+      "$term" = "kitty";
+      "$editor" = "codium";
+      "$file" = "dolphin";
+      "$browser" = "zen-browser";
+
+      # Import bindings from binds.nix
+      binddr = binds.binddr;
+      bindd = binds.bindd;
+      binddm = binds.binddm;
+      bindde = binds.bindde;
+      binddl = binds.binddl;
+      binddel = binds.binddel;
 
       general = {
         gaps_in = 4;
@@ -130,7 +144,7 @@ in {
         # "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1"
         "hypridle"
         "dbus-update-activation-environment --all"
-        "sleep 1 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        # "sleep 1 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 
         # Clipboard history
         "wl-paste --type text --watch cliphist store"
