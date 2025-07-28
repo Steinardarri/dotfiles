@@ -1,8 +1,4 @@
-{
-  lib,
-  secrets,
-  ...
-}: {
+{lib, ...}: {
   programs.git = {
     enable = true;
     extraConfig = {
@@ -34,12 +30,6 @@
       };
       fetch.prune = true;
       status.submoduleSummary = true;
-      # Secrets handled by git-crypt, from flake input
-      url = {
-        "https://oauth2:${secrets.github.oauth_token}@github.com" = {
-          insteadOf = "https://github.com";
-        };
-      };
     };
     aliases = {
       # List available aliases
