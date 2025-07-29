@@ -1,4 +1,8 @@
-{username, ...}: {
+{
+  lib,
+  username,
+  ...
+}: {
   fileSystems = {
     "/run/media/${username}/SSD_Kingston" = {
       label = "SSD_Kingston";
@@ -22,11 +26,23 @@
     };
   };
 
+  swapDevices = lib.mkForce [];
+  zramSwap.enable = true;
+
   boot.kernelParams = [
     "video=DP-1:2560x1440@144"
     "video=DP-2:1920x1080@144"
     # Performance Stuff
-    "rw nowatchdog nvme_load=YES rd.lvm=0 rd.dm=0 rd.md=0"
-    "no_timer_check noreplace-smp threadirqs mitigations=off kernel.split_lock_mitigate=0"
+    "rw"
+    "nowatchdog"
+    "nvme_load=YES"
+    "rd.lvm=0"
+    "rd.dm=0"
+    "rd.md=0"
+    "no_timer_check"
+    "noreplace-smp"
+    "threadirqs"
+    "mitigations=off"
+    "kernel.split_lock_mitigate=0"
   ];
 }

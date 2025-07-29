@@ -15,9 +15,6 @@
     extraModulePackages = [];
   };
 
-  swapDevices = lib.mkForce [];
-  zramSwap.enable = true;
-
   networking.useDHCP = lib.mkDefault true;
   networking.interfaces.enp6s0.useDHCP = lib.mkDefault true;
 

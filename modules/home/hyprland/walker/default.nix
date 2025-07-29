@@ -1,4 +1,4 @@
-{inputs, lib, ...}: {
+{inputs, ...}: {
   # https://github.com/abenz1267/walker/blob/master/nix/modules/home-manager.nix
   imports = [
     inputs.walker.homeManagerModules.default
@@ -7,11 +7,7 @@
   programs.walker = {
     enable = true;
     runAsService = true;
-    # config = {};
+    config = builtins.fromTOML (builtins.readFile ./config.toml);
     # theme = {};
-  };
-
-  home.file = {
-    ".config/walker/config.toml".source = lib.mkForce ./config.toml;
   };
 }

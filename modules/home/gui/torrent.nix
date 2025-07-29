@@ -9,7 +9,7 @@
   };
 
   config = lib.mkIf config._torrent.enable {
-    environment.systemPackages = with pkgs; [
+    home.packages = with pkgs; [
       kdePackages.ktorrent
     ];
   };
