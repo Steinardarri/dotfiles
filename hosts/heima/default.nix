@@ -17,7 +17,7 @@
   _gaming.enable = true;
   _jellyfin.enable = true;
   _flatpak.enable = true;
-  _torrent.enable = true;
+  _lact.enable = true;
 
   ###
 

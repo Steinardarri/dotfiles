@@ -12,9 +12,17 @@
     systemd.tmpfiles.rules = [
       "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
     ];
-    hardware.amdgpu.amdvlk = {
-      enable = false;
+
+    hardware.amdgpu = {
+      initrd.enable = true;
+      amdvlk.enable = false;
+      overdrive = {
+        enable = true;
+        ppfeaturemask = "0xfffd7fff";
+      };
+      opencl.enable = true;
     };
+
     environment.systemPackages = with pkgs; [
       vulkan-tools
     ];

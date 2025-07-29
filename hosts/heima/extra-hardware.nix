@@ -28,6 +28,5 @@
     # Performance Stuff
     "rw nowatchdog nvme_load=YES rd.lvm=0 rd.dm=0 rd.md=0"
     "no_timer_check noreplace-smp threadirqs mitigations=off kernel.split_lock_mitigate=0"
-    "amdgpu.ppfeaturemask=0xffffffff"
   ];
 }

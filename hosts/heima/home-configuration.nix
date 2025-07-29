@@ -3,6 +3,7 @@
   home.homeDirectory = "/home/${username}";
 
   ### Custom Modules From modules/home - to enable
+  _torrent.enable = true;
   ###
 
   programs.git = {

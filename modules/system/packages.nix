@@ -28,6 +28,7 @@
     nodePackages.prettier
     shellcheck
     shfmt
+    ruff # python
 
     # security
     git-crypt
@@ -52,11 +53,8 @@
     fx
     fzf
     helix
-    htop
-    lm_sensors
     lshw
     mosh
-    nix-output-monitor
     nvd
     parallel
     pinentry-all
@@ -64,7 +62,6 @@
     procs
     ripgrep
     sd
-    tmux
     tree
     wget
     wormhole-william
