@@ -1,5 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    bash
+    
     # core languages
     gcc
     nodejs

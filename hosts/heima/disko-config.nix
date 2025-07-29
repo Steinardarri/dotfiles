@@ -27,7 +27,7 @@
               content = {
                 type = "filesystem";
                 format = "xfs";
-                extraArgs = ["-L \"NixOS\""];
+                extraArgs = ["-L NixOS"];
                 mountpoint = "/";
                 mountOptions = ["defaults" "noatime"];
               };
