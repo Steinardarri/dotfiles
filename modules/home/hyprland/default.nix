@@ -18,6 +18,7 @@ in {
     ./fuzzel.nix
     ./notifications.nix
     ./packages.nix
+    ./services.nix
   ];
 
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
@@ -39,9 +40,10 @@ in {
       workspace = hyprlandWorkspaces;
 
       # Main modifier
-      "$mainMod" = "Super"; # super / meta / windows key
+      "$mainMod" = "Super"; # super / meta
 
       # Assign apps
+      # Not used if using .desktop with uwsm
       "$launcher" = "walker";
       "$term" = "kitty";
       "$editor" = "codium";
@@ -141,10 +143,8 @@ in {
       exec-once = [
         # Core components
         # "gnome-keyring-daemon --start --components=secrets"
-        # "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1"
-        "hypridle"
         "dbus-update-activation-environment --all"
-        # "sleep 1 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "sleep 1 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 
         # Clipboard history
         "wl-paste --type text --watch cliphist store"

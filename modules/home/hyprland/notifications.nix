@@ -3,7 +3,6 @@
   lib,
   ...
 }: {
-  # Enable dunst service through home-manager
   services.dunst = {
     enable = true;
 

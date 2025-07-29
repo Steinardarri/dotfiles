@@ -1,5 +1,4 @@
 # Not tested - I don't use Nvidia
-
 {
   pkgs,
   lib,
@@ -51,9 +50,6 @@ in {
       # Fix for hardware cursors on Wayland
       WLR_NO_HARDWARE_CURSORS = "1";
       WLR_RENDERER = "vulkan";
-
-      # Wayland support for Electron apps
-      NIXOS_OZONE_WL = "1";
 
       # Enable G-Sync and Variable Refresh Rate if available
       __GL_GSYNC_ALLOWED = "1";

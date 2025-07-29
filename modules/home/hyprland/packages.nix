@@ -1,14 +1,10 @@
 {pkgs, ...}: {
-
   # Extra packages not declared by a module
-
   home.packages = with pkgs; [
     # Screenshot & recording
     hyprshot # Advanced screenshot tool
-    grimblast # Backup screenshot tool
-    grim # Basic screenshot
     slurp # Region selector
-    tesseract # OCR
+    tesseract # OCR - image text to system text
     satty # Screenshot annotation tool
     swappy # Screenshot editor
     wf-recorder # Screen recording
@@ -23,20 +19,16 @@
     brightnessctl # Brightness control
     hyprsunset # blue-light filter
 
-    # Lock & idle
-    hypridle # Idle daemon
-    hyprlock # Lock screen
-
     # Session
     wlogout # Power menu
-
-    # Authentication
-    hyprpolkitagent
 
     # Fonts and cursors
     hyprcursor
 
     # Utilities
     hyprutils
+    hyprsysteminfo
+    hyprgraphics
+    hyprland-qtutils
   ];
 }
