@@ -2,7 +2,6 @@
   pkgs,
   username,
   hostname,
-  secrets,
   ...
 }: {
   imports = [
@@ -27,8 +26,6 @@
     users.${username} = {
       isNormalUser = true;
       homeMode = "755";
-      # Secrets handled by git-crypt, from flake input
-      hashedPassword = "${secrets.hashed_user_password}";
       description = "Steinar Darri Þorgilsson";
       extraGroups = [
         "wheel"
@@ -43,7 +40,7 @@
       # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
       shell = pkgs.zsh;
     };
-    mutableUsers = false;
+    mutableUsers = true;
   };
   services.getty.autologinUser = username;
 
