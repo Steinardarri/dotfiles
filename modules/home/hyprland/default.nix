@@ -13,7 +13,9 @@
   binds = import ./hypr/binds.nix;
 in {
   imports = [
-    ./walker
+    inputs.hyprland.homeManagerModules.default
+
+    # ./walker
 
     ./fuzzel.nix
     ./notifications.nix
@@ -30,6 +32,7 @@ in {
 
     xwayland.enable = false;
     # https://wiki.hypr.land/Useful-Utilities/Systemd-start/#installation
+    # Systemd setting conflicts with uwsm
     systemd.enable = false;
 
     settings = {

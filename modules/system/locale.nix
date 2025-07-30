@@ -13,11 +13,11 @@
       LC_TIME = "is_IS.UTF-8";
     };
   };
-  
+
   console = {
     keyMap = "is-latin1";
     # Font that supports all latin fonts better
-    font = "ter-v20b";
+    font = "Lat2-Terminus16";
     packages = [pkgs.terminus_font];
   };
 

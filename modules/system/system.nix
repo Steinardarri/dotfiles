@@ -4,6 +4,10 @@
   username,
   ...
 }: {
+  imports = [
+    inputs.hyprland.nixosModules.default
+  ];
+
   programs = {
     fish.enable = true;
     zsh.enable = true;
@@ -14,10 +18,11 @@
       package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
       portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
       xwayland.enable = false;
-      # systemd.setPath.enable = true; # Not sure if needed
+      systemd.setPath.enable = true;
     };
     dconf.enable = true;
     gnupg.agent = {
+      # Switch to home side at one point
       enable = true;
       enableSSHSupport = true;
     };
@@ -28,6 +33,7 @@
     variables = {
       FLAKE = "/home/${username}/dotfiles";
       SHELL = "/etc/profiles/per-user/${username}/bin/fish";
+
       # Wayland support for Electron apps
       NIXOS_OZONE_WL = "1";
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
@@ -50,15 +56,22 @@
     ];
   };
 
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = true;
-    settings = {
-      General = {
-        Enable = "Source,Sink,Media,Socket";
-        Experimental = true;
-      };
+  # Security
+  security = {
+    sudo.enable = false;
+    doas = {
+      enable = true;
+      extraRules = [
+        {
+          users = ["${username}"];
+          keepEnv = true;
+          persist = true;
+        }
+      ];
     };
+
+    # Extra security
+    protectKernelImage = true;
   };
 
   services = {

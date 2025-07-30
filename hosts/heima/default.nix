@@ -5,8 +5,8 @@
   ...
 }: {
   imports = [
-    ./hardware-configuration.nix
     ./extra-hardware.nix
+    ./hardware-configuration.nix
     ./network.nix
   ];
 
@@ -26,6 +26,7 @@
     users.${username} = {
       isNormalUser = true;
       homeMode = "755";
+      initialPassword = "nixos";
       description = "Steinar Darri Þorgilsson";
       extraGroups = [
         "wheel"

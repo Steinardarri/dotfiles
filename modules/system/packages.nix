@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     bash
-    
+
     # core languages
     gcc
     nodejs
@@ -78,6 +78,7 @@
     # ui & looks
     fastfetch
     yad
+    grc
 
     # hardware
     brightnessctl # screen brightness control

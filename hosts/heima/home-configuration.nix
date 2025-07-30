@@ -12,7 +12,7 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "codium";
+    EDITOR = "nano";
     VISUAL = "codium";
   };
 }

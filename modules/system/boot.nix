@@ -5,6 +5,7 @@
 }: {
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
+    cleanTmpDir = true;
     loader = {
       efi.canTouchEfiVariables = true;
       grub = {

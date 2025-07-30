@@ -11,12 +11,15 @@
       extraPortals = with pkgs; [
         xdg-desktop-portal-gtk
         xdg-desktop-portal
+        xdg-desktop-portal-wlr
       ];
       xdgOpenUsePortal = true;
       configPackages = with pkgs; [
         xdg-desktop-portal-gtk
         xdg-desktop-portal
+        xdg-desktop-portal-wlr
       ];
+      config.common.default = [ "hyprland" ];
     };
 
     mimeApps = {
@@ -47,6 +50,11 @@
 
   # Set environment variables
   home.sessionVariables = {
+    # Hyprland and Wayland specific
+    XDG_SESSION_TYPE = "wayland";
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_DESKTOP = "Hyprland";
+
     # Base XDG directories
     XDG_CACHE_HOME = config.xdg.cacheHome;
     XDG_CONFIG_HOME = config.xdg.configHome;

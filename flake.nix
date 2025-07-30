@@ -33,7 +33,7 @@
       url = "github:hyprwm/Hyprland";
       # Overriding the nixpkgs input may
       # disable Cachix
-      # inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     ### Misc Modules ###

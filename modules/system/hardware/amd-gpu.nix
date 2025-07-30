@@ -9,22 +9,29 @@
   };
 
   config = lib.mkIf config._hardware_amd_gpu.enable {
-    systemd.tmpfiles.rules = [
-      "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
-    ];
-
-    hardware.amdgpu = {
-      initrd.enable = true;
-      amdvlk.enable = false;
-      overdrive = {
-        enable = true;
-        ppfeaturemask = "0xfffd7fff";
+    hardware = {
+      amdgpu = {
+        initrd.enable = true;
+        amdvlk.enable = false;
+        overdrive = {
+          enable = true;
+          ppfeaturemask = "0xfffd7fff";
+        };
+        opencl.enable = true;
       };
-      opencl.enable = true;
+      graphics = {
+        extraPackages = with pkgs; [
+          rocmPackages.clr.icd
+        ];
+        enable32Bit = true;
+      };
     };
-
     environment.systemPackages = with pkgs; [
       vulkan-tools
+    ];
+    boot.kernelParams = [
+      # Fixes white flickering after resume/unlock
+      "amdgpu.sg_display=0"
     ];
   };
 }

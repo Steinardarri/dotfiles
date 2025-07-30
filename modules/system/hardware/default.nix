@@ -9,6 +9,23 @@
     ./nvidia.nix
   ];
 
-  # Enables proprietary firmware for enhanced hardware support
-  hardware.enableRedistributableFirmware = true;
+  hardware = {
+    # Enables proprietary firmware for enhanced hardware support
+    enableRedistributableFirmware = true;
+
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+      settings = {
+        General = {
+          Enable = "Source,Sink,Media,Socket";
+          Experimental = true;
+        };
+      };
+    };
+    
+    opengl = {
+      enable = true;
+    };
+  };
 }
