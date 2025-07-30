@@ -8,10 +8,10 @@ let
   appBinds = let
     d = "[Launcher|Apps]";
   in [
-    "Super, Return, ${d} terminal emulator, exec, $term"
-    "Super Shift, Return, ${d} dropdown terminal, exec, [float; move 20% 5%; size 60% 60%] $term"
+    "Super, Return, ${d} terminal emulator, exec, uwsm app -- kitty.desktop"
+    "Super Shift, Return, ${d} dropdown terminal, exec, [float; move 20% 5%; size 60% 60%] uwsm app -- kitty.desktop"
     "Super, E, ${d} file explorer, exec, uwsm app -- org.kde.dolphin.desktop"
-    "Super, N, ${d} text editor, exec, uwsm app -- codium-wayland.desktop"
+    "Super, N, ${d} text editor, exec, uwsm app -- codium.desktop"
     "Super, W, ${d} web browser, exec, uwsm app -- zen.desktop"
     # "Super, Escape, ${d} system monitor, exec, $scrPath/sysmonlaunch.sh"
   ];

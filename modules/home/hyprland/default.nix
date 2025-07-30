@@ -42,17 +42,6 @@ in {
       animations = animations;
       workspace = hyprlandWorkspaces;
 
-      # Main modifier
-      "$mainMod" = "Super"; # super / meta
-
-      # Assign apps
-      # Not used if using .desktop with uwsm
-      "$launcher" = "walker";
-      "$term" = "kitty";
-      "$editor" = "codium";
-      "$file" = "dolphin";
-      "$browser" = "zen-browser";
-
       # Import bindings from binds.nix
       binddr = binds.binddr;
       bindd = binds.bindd;
