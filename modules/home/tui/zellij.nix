@@ -2,8 +2,10 @@
   programs.zellij = {
     enable = true;
 
-    enableFishIntegration = true;
-    enableZshIntegration = true;
+    # Auto start
+    enableFishIntegration = false;
+    enableZshIntegration = false;
+    attachExistingSession = false;
 
     # Will add stuff later
   };
