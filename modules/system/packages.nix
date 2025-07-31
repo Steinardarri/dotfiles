@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     bash
 
@@ -91,5 +95,12 @@
     libinput # libinput library
     lm_sensors # system sensors
     pciutils # pci utils
+
+    # Quickshell needs to be installed system side
+    # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default.override
+    # (oldAttrs: {
+    #   withX11 = false;
+    #   withI3 = false;
+    # })
   ];
 }

@@ -15,6 +15,7 @@ in {
   imports = [
     inputs.hyprland.homeManagerModules.default
 
+    # ./quickshell
     # ./walker
 
     ./fuzzel.nix
@@ -142,6 +143,9 @@ in {
         # Clipboard history
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
+
+        # Start Quickshell
+        # "qs &"
       ];
     };
   };
