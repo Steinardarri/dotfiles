@@ -76,13 +76,27 @@
         ;
 
       userSettings = {
-        "[javascript].editor.defaultFormatter" = "esbenp.prettier-vscode";
-        "[nix].editor.defaultFormatter" = "jnoortheen.nix-ide";
-        "[python].editor.defaultFormatter" = "charliermarsh.ruff";
-        "[properties].editor.defaultFormatter" = "foxundermoon.shell-format";
-        "[qml].editor.defaultFormatter" = "Delgan.qml-format";
-        "[rust].editor.defaultFormatter" = "rust-lang.rust-analyzer";
-        "[shellscript].editor.defaultFormatter" = "mkhl.shfmt";
+        "[javascript]" = {
+          "editor.defaultFormatter" = "esbenp.prettier-vscode";
+        };
+        "[nix]" = {
+          "editor.defaultFormatter" = "jnoortheen.nix-ide";
+        };
+        "[python]" = {
+          "editor.defaultFormatter" = "charliermarsh.ruff";
+        };
+        "[properties]" = {
+          "editor.defaultFormatter" = "foxundermoon.shell-format";
+        };
+        "[qml]" = {
+          "editor.defaultFormatter" = "Delgan.qml-format";
+        };
+        "[rust]" = {
+          "editor.defaultFormatter" = "rust-lang.rust-analyzer";
+        };
+        "[shellscript]" = {
+          "editor.defaultFormatter" = "mkhl.shfmt";
+        };
 
         "chat.commandCenter.enabled" = false;
         "continue.enableTabAutocomplete" = false;
@@ -100,7 +114,11 @@
         "editor.inlineSuggest.enabled" = true;
         "editor.minimap.showSlider" = "always";
         "editor.minimap.side" = "right";
-        "editor.quickSuggestions.strings" = "on";
+        "editor.quickSuggestions" = {
+          "strings" = "on";
+          "comments" = "inline";
+          "other" = "on";
+        };
         "editor.scrollbar.vertical" = "hidden";
         "editor.scrollbar.verticalScrollbarSize" = 0;
         "editor.tabCompletion" = "onlySnippets";
@@ -204,8 +222,13 @@
         "gitmoji.onlyUseCustomEmoji" = true;
 
         "nix.enableLanguageServer" = true;
+        "nix.hiddenLanguageServerErrors" = [
+          "textDocument/definition"
+        ];
         "nix.serverPath" = "nixd";
-        "nix.serverSettings.nixd.formatting.command" = ["alejandra"];
+        "nix.serverSettings" = {
+          "nixd.formatting.command" = ["alejandra"];
+        };
 
         "ruff.nativeServer" = "on";
         "security.workspace.trust.enabled" = false;
@@ -220,12 +243,18 @@
         "terminal.integrated.cursorBlinking" = true;
         "terminal.integrated.cursorStyle" = "line";
         "terminal.integrated.cursorWidth" = 2;
-        "terminal.integrated.defaultProfile.linux" = "fish";
+        "terminal.integrated.defaultProfile.linux" = "fish (2)";
         "terminal.integrated.enableImages" = true;
         "terminal.integrated.fontSize" = lib.mkDefault 14;
         "terminal.integrated.persistentSessionScrollback" = 5000;
-        "terminal.integrated.profiles.linux.fish.path" = "/usr/bin/fish";
-        "terminal.integrated.profiles.linux.fish.icon" = "star";
+        "terminal.integrated.profiles.linux" = {
+          "fish" = {
+            "path" = "fish";
+            "args" = ["-i"];
+            "icon" = "star";
+          };
+          "bash" = null;
+        };
         "terminal.integrated.scrollback" = 50000;
         "terminal.integrated.smoothScrolling" = true;
         "terminal.integrated.shellIntegration.environmentReporting" = true;
@@ -244,7 +273,7 @@
         "workbench.cloudChanges.autoResume" = "off";
         "workbench.cloudChanges.continueOn" = "off";
         "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
-        "workbench.colorTheme" = lib.mkDefault "GapStyle VS";
+        "workbench.colorTheme" = lib.mkForce "GapStyle VS";
         "workbench.enableExperiments" = false;
         "workbench.iconTheme" = "material-icon-theme";
         "workbench.navigationControl.enabled" = false;
