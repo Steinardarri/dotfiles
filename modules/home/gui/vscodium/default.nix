@@ -63,6 +63,7 @@
             tamasfe.even-better-toml
             timonwong.shellcheck
             yzhang.markdown-all-in-one
+            redhat.vscode-yaml
 
             # Workflow
             alefragnani.bookmarks
