@@ -21,7 +21,7 @@
         monitor = "";
         dots_center = true;
         fade_on_empty = false;
-        font_color =  "rgb(202, 211, 245)";
+        font_color = "rgb(202, 211, 245)";
         inner_color = "rgb(91, 96, 120)";
         outer_color = "rgb(24, 25, 38)";
         outline_thickness = 5;
@@ -61,18 +61,18 @@
     hyprsunset = {
       enable = true;
       settings = {
-          profile = [
-            {
-              time = "7:00";
-              identity = true;
-            }
-            {
-              time = "22:00";
-              temperature = 3500;
-              gamma = 0.8;
-            }
-          ];
-        };
+        profile = [
+          {
+            time = "7:00";
+            identity = true;
+          }
+          {
+            time = "22:00";
+            temperature = 3500;
+            gamma = 0.8;
+          }
+        ];
+      };
     };
   };
 }

@@ -66,7 +66,7 @@
     # Extra security
     protectKernelImage = true;
 
-  # For polkit authentication
+    # For polkit authentication
     polkit.enable = true;
     rtkit.enable = true;
   };

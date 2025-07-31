@@ -1,7 +1,7 @@
 {...}: {
   disko.devices = {
     disk.main = {
-    # device = "/dev/<device>/"; # Declare main device here, only uncomment when going for install
+      # device = "/dev/<device>/"; # Declare main device here, only uncomment when going for install
       type = "disk";
       content = {
         type = "gpt";
