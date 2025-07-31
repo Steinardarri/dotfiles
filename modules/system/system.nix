@@ -80,7 +80,14 @@
     kdePackages.kleopatra
     kdePackages.kwallet
     kdePackages.kwalletmanager
+    kdePackages.ksshaskpass
+    pinentry-qt
   ];
+  environment.variables = {
+    PINENTRY = "pinentry-qt";
+    SSH_ASKPASS = "/run/current-system/sw/bin/ksshaskpass";
+    SSH_ASKPASS_REQUIRE = "prefer";
+  };
 
   services = {
     dbus.enable = true;
