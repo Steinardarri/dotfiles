@@ -26,7 +26,6 @@
             usernamehw.errorlens
 
             # Aesthetics
-            delgan.qml-format
             esbenp.prettier-vscode
             gaplo917.gapstylevs
             jock.svg
@@ -48,7 +47,11 @@
             # Language specific
             bmalehorn.vscode-fish
             charliermarsh.ruff
-            cutetee.qml
+            theqtcompany.qt
+            theqtcompany.qt-core
+            theqtcompany.qt-cpp
+            theqtcompany.qt-qml
+            theqtcompany.qt-ui
             detachhead.basedpyright
             ewen-lbh.vscode-hyprls
             foxundermoon.shell-format
@@ -228,15 +231,17 @@
         "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
           "nixd" = {
-            "formatting" = {"command" = ["alejandra"];};
-            "options" = {
-              "nixos" = {
-                "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options";
-              };
-              "home-manager" = {
-                "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options.home-manager.users.type.getSubOptions []";
-              };
+            "formatting" = {
+              "command" = ["alejandra"];
             };
+            # "options" = {
+            #   "nixos" = {
+            #     "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options";
+            #   };
+            #   "home-manager" = {
+            #     "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options.home-manager.users.type.getSubOptions []";
+            #   };
+            # };
           };
         };
 

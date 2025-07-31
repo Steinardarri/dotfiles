@@ -24,6 +24,7 @@
     nixd # nix
     # nodePackages.yaml-language-server
     # nodePackages.vscode-langservers-extracted # html, css, json, eslint
+    kdePackages.qtdeclarative
 
     # formatters & linters
     alejandra # nix
