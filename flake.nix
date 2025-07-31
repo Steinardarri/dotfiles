@@ -36,6 +36,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hyprutils = {
+      url = "github:hyprwm/hyprutils";
+    };
+
     ### Misc Modules ###
 
     nix-vscode-extensions = {
@@ -73,9 +77,18 @@
     disko,
     nixos-facter-modules,
     stylix,
+    hyprutils,
     ...
   } @ inputs: let
     genericModules = [
+      # Overlays
+      {
+        nixpkgs.overlays = [
+          nix-vscode-extensions.overlays.default
+          hyprutils.overlays.default
+        ];
+      }
+
       {
         # This fixes things that don't use Flakes, but do want to use NixPkgs.
         nix.registry.nixos.flake = self;
@@ -92,12 +105,6 @@
         };
       }
 
-      {
-        nixpkgs.overlays = [
-          nix-vscode-extensions.overlays.default
-        ];
-      }
-
       # nur.modules.nixos.default
 
       stylix.nixosModules.stylix
@@ -111,9 +118,9 @@
         KBDLayout = "is";
         stylixTheme = "dystopia";
         hyprlandMonitors = [
-          "DP-1, 2560x1440@144, 0x0    , 1.0"
-          "DP-2, 1920x1080@144, -1920x0, 1.0"
-          "    , preferred    , auto   , 1.0"
+          "DP-1, 2560x1440@144, 0x0       , 1.0"
+          "DP-2, 1920x1080@144, -1920x-360, 1.0"
+          "    , preferred    , auto      , 1.0"
         ];
         hyprlandWorkspaces = [
           "1, monitor:DP-2"
