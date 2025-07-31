@@ -18,6 +18,14 @@
     };
   };
 
+  xdg.mimeApps.defaultApplications = {
+    "text/html" = "zen.desktop";
+    "x-scheme-handler/http" = "zen.desktop";
+    "x-scheme-handler/https" = "zen.desktop";
+    "x-scheme-handler/about" = "zen.desktop";
+    "x-scheme-handler/unknown" = "zen.desktop";
+  };
+
   home.sessionVariables = {
     MOZ_ENABLE_WAYLAND = "1";
     MOZ_USE_XINPUT2 = "1";

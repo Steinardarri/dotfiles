@@ -13,13 +13,11 @@
     kwayland # KDE Wayland integration
   ];
 
-  xdg.mimeApps = {
-    defaultApplications = {
-      "inode/directory" = ["org.kde.dolphin.desktop"];
-      "x-scheme-handler/file" = ["org.kde.dolphin.desktop"];
-      "x-scheme-handler/about" = ["org.kde.dolphin.desktop"];
-    };
+  xdg.mimeApps.defaultApplications = {
+    "inode/directory" = ["org.kde.dolphin.desktop"];
+    "x-scheme-handler/file" = ["org.kde.dolphin.desktop"];
+    "x-scheme-handler/about" = ["org.kde.dolphin.desktop"];
   };
 
-  home.file.".config/dolphinrc".source = ./dolphinrc;
+  # home.file.".config/dolphinrc".source = ./dolphinrc;
 }
