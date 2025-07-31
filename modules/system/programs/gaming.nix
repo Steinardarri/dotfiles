@@ -27,13 +27,14 @@
     hardware.steam-hardware.enable = true;
 
     environment.systemPackages = with pkgs; [
-      bottles
+      # bottles
       mangohud
       lutris
       steam-run
       winetricks
       wineWowPackages.stable
       cabextract
+      vkbasalt
     ];
 
     programs.obs-studio.enable = true;
