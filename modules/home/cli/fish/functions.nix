@@ -53,4 +53,14 @@
     end
     ps aux | grep $argv[1] | grep -v grep | awk '{print $2}' | xargs -r kill
   '';
+
+  # yazi shell wrapper
+  y = ''
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+      builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
+  '';
 }
