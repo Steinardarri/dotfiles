@@ -20,10 +20,10 @@
     tree-sitter
 
     # language servers
-    ccls # c / c++
+    # ccls # c / c++
     nixd # nix
-    nodePackages.yaml-language-server
-    nodePackages.vscode-langservers-extracted # html, css, json, eslint
+    # nodePackages.yaml-language-server
+    # nodePackages.vscode-langservers-extracted # html, css, json, eslint
 
     # formatters & linters
     alejandra # nix
@@ -79,6 +79,7 @@
     fastfetch
     yad
     grc
+    nix-output-monitor
 
     # hardware
     brightnessctl # screen brightness control
