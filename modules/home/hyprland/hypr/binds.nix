@@ -21,7 +21,7 @@ let
   in [
     "Super, Q, ${d} close focused window, killactive,"
     "Alt, F4, ${d} close focused window, killactive,"
-    "Control Shift, Escape, ${d} Hard kill window, exec, hyprctl kill"
+    "Super Control, X, ${d} Kill clicked window, exec, hyprctl kill"
     "Super, V, ${d} Toggle floating, togglefloating"
     "Super, G, ${d} toggle group, togglegroup"
     "Shift, F11, ${d} toggle fullscreen, fullscreen"
