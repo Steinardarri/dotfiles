@@ -2,6 +2,7 @@
   stylix = {
     #image = ./dystopia.png;
     image = ./vagabond.jpg;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/vice.yaml";
     polarity = "dark";
 
     fonts = let
