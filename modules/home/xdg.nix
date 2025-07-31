@@ -10,14 +10,10 @@
       enable = true;
       extraPortals = with pkgs; [
         xdg-desktop-portal-gtk
-        xdg-desktop-portal
-        xdg-desktop-portal-wlr
       ];
       xdgOpenUsePortal = true;
       configPackages = with pkgs; [
         xdg-desktop-portal-gtk
-        xdg-desktop-portal
-        xdg-desktop-portal-wlr
       ];
       config.common.default = [ "hyprland" ];
     };
