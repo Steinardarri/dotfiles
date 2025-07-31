@@ -5,14 +5,15 @@
 }: {
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
-    cleanTmpDir = true;
+    tmp = {
+      cleanOnBoot = true;
+      useZram = true;
+    };
     loader = {
-      efi.canTouchEfiVariables = true;
       grub = {
         enable = true;
         efiSupport = true;
         device = "nodev";
-        useOSProber = true;
         configurationLimit = 10;
         devices = ["nodev"];
       };
@@ -20,6 +21,17 @@
     };
 
     plymouth.enable = true;
+
+    # Enable "Silent boot"
+    consoleLogLevel = 3;
+    initrd.verbose = false;
+    kernelParams = [
+      "quiet"
+      "splash"
+      "boot.shell_on_fail"
+      "udev.log_priority=3"
+      "rd.systemd.show_status=auto"
+    ];
 
     kernel.sysctl = {
       "net.ipv4.tcp_congestion_control" = "bbr";
