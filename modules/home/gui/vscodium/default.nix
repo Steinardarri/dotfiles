@@ -95,7 +95,7 @@
           "editor.defaultFormatter" = "rust-lang.rust-analyzer";
         };
         "[shellscript]" = {
-          "editor.defaultFormatter" = "mkhl.shfmt";
+          "editor.defaultFormatter" = "foxundermoon.shell-format";
         };
 
         "chat.commandCenter.enabled" = false;
@@ -184,39 +184,39 @@
 
         "gitmoji.addCustomEmoji" = [
           {
-            "code" = ":sparkles: ";
+            "code" = ":sparkles:";
             "description" = "| Add new code/feature";
-            "emoji" = "✨ ";
+            "emoji" = "✨";
           }
           {
-            "code" = ":high_voltage: ";
+            "code" = ":high_voltage:";
             "description" = "| Improve existing code/feature";
-            "emoji" = "⚡ ";
+            "emoji" = "⚡";
           }
           {
-            "code" = ":fire: ";
+            "code" = ":fire:";
             "description" = "| Remove existing code/feature";
-            "emoji" = "🔥 ";
+            "emoji" = "🔥";
           }
           {
-            "code" = ":bug: ";
+            "code" = ":bug:";
             "description" = "| Fix a bug";
-            "emoji" = "🐛 ";
+            "emoji" = "🐛";
           }
           {
-            "code" = ":wrench: ";
+            "code" = ":wrench:";
             "description" = "| Maintain dependencies and code";
-            "emoji" = "🔧 ";
+            "emoji" = "🔧";
           }
           {
-            "code" = ":bookmark_tabs: ";
+            "code" = ":bookmark_tabs:";
             "description" = "| Anything related to documentation";
-            "emoji" = "📑 ";
+            "emoji" = "📑";
           }
           {
-            "code" = ":robot: ";
+            "code" = ":robot:";
             "description" = "| Anything realted to tests";
-            "emoji" = "🤖 ";
+            "emoji" = "🤖";
           }
         ];
         "gitmoji.onlyUseCustomEmoji" = true;
@@ -227,7 +227,7 @@
         ];
         "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
-          "nixd.formatting.command" = ["alejandra"];
+          "nixd.formatting.command" = [ "alejandra" ];
         };
 
         "ruff.nativeServer" = "on";
@@ -254,9 +254,11 @@
             "icon" = "star";
           };
           "bash" = null;
+          "zsh" = null;
         };
         "terminal.integrated.scrollback" = 50000;
         "terminal.integrated.smoothScrolling" = true;
+        "terminal.integrated.shellIntegration.enabled" = true;
         "terminal.integrated.shellIntegration.environmentReporting" = true;
         "terminal.integrated.suggest.enabled" = true;
         "terminal.integrated.stickyScroll.enabled" = true;
@@ -264,8 +266,9 @@
 
         "update.mode" = "none";
         "update.showReleaseNotes" = false;
+        "window.customMenuBarAltFocus" = false;
         "window.customTitleBarVisibility" = "auto";
-        "window.menuBarVisibility" = "toggle";
+        "window.menuBarVisibility" = "visible";
         "window.titleBarStyle" = "custom";
         "window.zoomLevel" = 1;
 
