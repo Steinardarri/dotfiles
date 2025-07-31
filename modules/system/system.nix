@@ -58,20 +58,17 @@
 
   # Security
   security = {
-    sudo.enable = false;
-    doas = {
+    sudo-rs = {
       enable = true;
-      extraRules = [
-        {
-          users = ["${username}"];
-          keepEnv = true;
-          persist = true;
-        }
-      ];
+      execWheelOnly = true;
     };
 
     # Extra security
     protectKernelImage = true;
+
+  # For polkit authentication
+    polkit.enable = true;
+    rtkit.enable = true;
   };
 
   services = {
@@ -90,12 +87,6 @@
       nerd-fonts.hack
     ];
     fontDir.enable = true;
-  };
-
-  # For polkit authentication
-  security = {
-    polkit.enable = true;
-    rtkit.enable = true;
   };
 
   # For proper XDG desktop integration

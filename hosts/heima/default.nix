@@ -46,5 +46,5 @@
   services.getty.autologinUser = username;
 
   # Whether you need to input password on sudo
-  security.sudo.wheelNeedsPassword = false;
+  security.sudo-rs.wheelNeedsPassword = false;
 }
