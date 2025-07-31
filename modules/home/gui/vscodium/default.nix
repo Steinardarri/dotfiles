@@ -227,7 +227,17 @@
         ];
         "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
-          "nixd.formatting.command" = [ "alejandra" ];
+          "nixd" = {
+            "formatting" = {"command" = ["alejandra"];};
+            "options" = {
+              "nixos" = {
+                "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options";
+              };
+              "home-manager" = {
+                "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options.home-manager.users.type.getSubOptions []";
+              };
+            };
+          };
         };
 
         "ruff.nativeServer" = "on";
