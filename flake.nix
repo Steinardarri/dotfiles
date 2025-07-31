@@ -123,10 +123,10 @@
           "    , preferred    , auto      , 1.0"
         ];
         hyprlandWorkspaces = [
-          "1, monitor:DP-2"
+          "1, monitor:DP-2, default:true"
           "2, monitor:DP-2"
           "3, monitor:DP-2"
-          "4, monitor:DP-1"
+          "4, monitor:DP-1, default:true"
           "5, monitor:DP-1"
           "6, monitor:DP-1"
         ];

@@ -159,8 +159,6 @@
 
         # fixes duplication of commands when using tab-completion
         export LANG=C.UTF-8
-
-        eval "$(starship init zsh)"
       '';
     };
 
