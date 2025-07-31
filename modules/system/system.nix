@@ -17,7 +17,7 @@
       withUWSM = true;
       package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
       portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-# Disable XWayland when Steam finally gets a 64 bit wayland client
+      # Disable XWayland when Steam finally gets a 64 bit wayland client
       xwayland.enable = true;
       systemd.setPath.enable = true;
     };
@@ -70,7 +70,17 @@
     # For polkit authentication
     polkit.enable = true;
     rtkit.enable = true;
+    pam.services."kwallet" = {
+      enable = true;
+      kwallet.enable = true;
+    };
   };
+
+  environment.systemPackages = with pkgs; [
+    kdePackages.kleopatra
+    kdePackages.kwallet
+    kdePackages.kwalletmanager
+  ];
 
   services = {
     dbus.enable = true;

@@ -25,12 +25,7 @@
 
     kdePackages.filelight
     kdePackages.kdenlive
-    kdePackages.kgpg
     kdePackages.okular
-
-    # Add kwallet pam service later
-    kdePackages.kwallet
-    kdePackages.kwalletmanager
 
     # LibreOffice
     libreoffice-qt6-fresh
