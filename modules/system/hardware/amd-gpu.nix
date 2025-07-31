@@ -9,6 +9,7 @@
   };
 
   config = lib.mkIf config._hardware_amd_gpu.enable {
+    # Prefer radv over amdvlk
     hardware = {
       amdgpu = {
         initrd.enable = true;
@@ -26,9 +27,14 @@
         enable32Bit = true;
       };
     };
-    environment.systemPackages = with pkgs; [
-      vulkan-tools
-    ];
+    environment = {
+      systemPackages = with pkgs; [
+        vulkan-tools
+      ];
+      sessionVariables = {
+        AMD_VULKAN_ICD = "RADV";
+      };
+    };
     boot.kernelParams = [
       # Fixes white flickering after resume/unlock
       "amdgpu.sg_display=0"

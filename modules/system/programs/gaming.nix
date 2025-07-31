@@ -24,7 +24,7 @@
       enable = true;
       capSysNice = true;
     };
-    hardware.steam-hardware.enable = true;
+    hardware.steam-hardware.enable = lib.mkForce false;
 
     environment.systemPackages = with pkgs; [
       # bottles
@@ -64,6 +64,7 @@
 
     environment.sessionVariables = {
       STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
+      PROTON_ENABLE_WAYLAND = 1;
     };
 
     # Might need to sudo chmod 777 ~/.steam , for protontricks to work

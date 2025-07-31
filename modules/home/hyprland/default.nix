@@ -32,7 +32,8 @@ in {
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 
-    xwayland.enable = false;
+    # Disable XWayland when Steam finally gets a 64 bit wayland client
+    xwayland.enable = true;
     # https://wiki.hypr.land/Useful-Utilities/Systemd-start/#installation
     # Systemd setting conflicts with uwsm
     systemd.enable = false;

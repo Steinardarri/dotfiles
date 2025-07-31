@@ -17,7 +17,8 @@
       withUWSM = true;
       package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
       portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-      xwayland.enable = false;
+# Disable XWayland when Steam finally gets a 64 bit wayland client
+      xwayland.enable = true;
       systemd.setPath.enable = true;
     };
     dconf.enable = true;
