@@ -16,13 +16,19 @@
   # File viewing
   cat = "bat --style=auto";
   grep = "rg";
+  find = "fd";
 
   # System monitoring
   top = "btop";
   htop = "btop";
 
   # Safety nets
-  rm = "rm -i";
-  cp = "cp -i";
-  mv = "mv -i";
+  rm = "rm -I";
+  cp = "cp -I";
+  mv = "mv -I";
+
+  # 'scripts'
+  show_path = "echo $PATH | tr ':' '\n'";
+  lsblks = "lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid";
+  weather = "curl -s 'wttr.in/Reykjavik?MQ' | rg -v 'Follow'";
 }

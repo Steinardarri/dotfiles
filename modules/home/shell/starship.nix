@@ -14,10 +14,9 @@
 
       shell = {
         disabled = false;
-        fish_indicator = " ";
+        fish_indicator = "";
         bash_indicator = "";
         zsh_indicator = "󰬡";
-        powershell_indicator = "";
         unknown_indicator = "󰇥";
         format = "[$indicator]($style) ";
         style = "bold purple";
