@@ -91,6 +91,13 @@ in {
         };
       };
 
+      cursor = {
+        inactive_timeout = 5;
+        hide_on_key_press = false;
+        hide_on_touch = true;
+        default_monitor = "DP-2";
+      };
+
       gestures = {
         workspace_swipe = true;
         workspace_swipe_distance = 700;
@@ -122,13 +129,6 @@ in {
 
       binds = {
         scroll_event_delay = 0;
-      };
-
-      cursor = {
-        inactive_timeout = 5;
-        hide_on_key_press = true;
-        hide_on_touch = true;
-        default_monitor = "";
       };
 
       # Autostart applications
