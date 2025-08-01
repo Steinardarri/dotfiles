@@ -66,7 +66,7 @@
     # For polkit authentication
     polkit.enable = true;
     rtkit.enable = true;
-    pam.services."kwallet" = {
+    pam.services.kwallet = {
       enable = true;
       kwallet.enable = true;
     };
