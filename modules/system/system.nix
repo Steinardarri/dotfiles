@@ -39,7 +39,6 @@ in {
   environment = {
     variables = {
       FLAKE = "/home/${username}/dotfiles";
-      SHELL = "/etc/profiles/per-user/${username}/bin/fish";
 
       # Wayland support for Electron apps
       NIXOS_OZONE_WL = "1";
