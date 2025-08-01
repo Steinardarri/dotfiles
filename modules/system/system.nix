@@ -4,7 +4,9 @@
   lib,
   username,
   ...
-}: {
+}: let
+  hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
+in {
   imports = [
     inputs.hyprland.nixosModules.default
   ];
@@ -16,14 +18,19 @@
     hyprland = {
       enable = true;
       withUWSM = true;
-      package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-      portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+      package = hypr-pkgs.hyprland;
+      portalPackage = hypr-pkgs.xdg-desktop-portal-hyprland;
       # Disable XWayland when Steam finally gets a 64 bit wayland client
       xwayland.enable = true;
       systemd.setPath.enable = true;
     };
     dconf.enable = true;
     nix-ld.enable = true;
+  };
+
+  services.xserver = {
+    enable = true;
+    videoDrivers = ["amdgpu"];
   };
 
   environment = {

@@ -1,4 +1,10 @@
-{...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: let
+  nixpkgs-hypr = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+in {
   # Enable the hardware module in the host default nix
   imports = [
     ./amd-gpu.nix
@@ -24,6 +30,13 @@
       };
     };
 
-    graphics.enable = true;
+    graphics = {
+      enable = true;
+      package = nixpkgs-hypr.mesa;
+
+      # 32 bit for Steam
+      enable32Bit = true;
+      package32 = nixpkgs-hypr.pkgsi686Linux.mesa;
+    };
   };
 }

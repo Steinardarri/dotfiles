@@ -7,6 +7,8 @@
   hyprlandWorkspaces,
   ...
 }: let
+  hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
+
   animations = import ./hypr/animations.nix;
   decoration = import ./hypr/decoration.nix;
 
@@ -29,8 +31,8 @@ in {
   wayland.windowManager.hyprland = {
     enable = true;
 
-    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    package = hypr-pkgs.hyprland;
+    portalPackage = hypr-pkgs.xdg-desktop-portal-hyprland;
 
     # Disable XWayland when Steam finally gets a 64 bit wayland client
     xwayland.enable = true;
