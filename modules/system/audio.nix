@@ -19,8 +19,9 @@
     easyeffects
     pipewire
     wireplumber
-    pavucontrol
     pamixer
     playerctl
+    lxqt.pavucontrol-qt
+    pulseaudioFull
   ];
 }
