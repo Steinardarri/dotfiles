@@ -82,7 +82,6 @@
     notcurses
 
     # ui & looks
-    fastfetch
     yad
     grc
     nix-output-monitor

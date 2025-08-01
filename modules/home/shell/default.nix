@@ -4,6 +4,7 @@
 
     ./fish
 
+    ./fastfetch.nix
     ./starship.nix
     ./zsh.nix
   ];
