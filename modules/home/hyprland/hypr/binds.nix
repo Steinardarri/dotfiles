@@ -88,8 +88,6 @@ let
     ", XF86AudioPrev, ${d}  previous media, exec, playerctl previous"
   ];
 
-  lockedRepeatBinds = [];
-
   workspaceNavigation = let
     d = "[Workspaces|Navigation]";
   in [
@@ -162,10 +160,10 @@ in {
   # https://wiki.hypr.land/Configuring/Binds/#bind-flags
 
   # Bindings on key release
-  binddr = launcherBind;
+  binddr = [];
 
   # Regular bindings
-  bindd = appBinds ++ windowManagement ++ groupNavigation ++ changeFocus ++ workspaceNavigation ++ workspaceRelativeNavigation ++ moveWindowToWorkspace ++ moveSwitchSpecialWorkspace ++ moveWindowToWorkspaceSilent;
+  bindd = launcherBind ++ appBinds ++ windowManagement ++ groupNavigation ++ changeFocus ++ workspaceNavigation ++ workspaceRelativeNavigation ++ moveWindowToWorkspace ++ moveSwitchSpecialWorkspace ++ moveWindowToWorkspaceSilent;
 
   # Mouse bindings
   binddm = moveResizeWithMouse;
@@ -177,5 +175,5 @@ in {
   binddl = media;
 
   # Locked repeating bindings
-  binddel = lockedRepeatBinds;
+  binddel = [];
 }
