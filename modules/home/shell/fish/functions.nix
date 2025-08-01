@@ -54,7 +54,7 @@
     ps aux | grep $argv[1] | grep -v grep | awk '{print $2}' | xargs -r kill
   '';
 
-  # yazi shell wrappers
+  # yazi second shell wrapper
   y = ''
     # Check if any arguments were provided
     if test -n "$argv[1]"
@@ -73,25 +73,5 @@
 
     # Return the exit status of the last command
     return $status
-  '';
-  yy = ''
-    # Create a temporary file to store Yazi's working directory
-    set tmp (mktemp -t "yazi-cwd.XXXXXX")
-
-    # Run Yazi with all arguments passed to this script
-    # The --cwd-file flag tells Yazi to write its working directory to the temp file when it exits
-    yazi $argv --cwd-file="$tmp"
-
-    # After Yazi exits:
-    # 1. Read the contents of the temp file (z flag for null-terminated strings)
-    # 2. Check if the directory is not empty
-    # 3. Check if it's different from the current directory
-    if read -z cwd < "$tmp"; and test -n "$cwd"; and test "$cwd" != "$PWD"
-      # Change to the directory Yazi was in when it exited
-      builtin cd -- "$cwd"
-    end
-
-    # Clean up the temporary file
-    rm -f -- "$tmp"
   '';
 }

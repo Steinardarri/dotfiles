@@ -5,11 +5,9 @@ in {
   programs = {
     fish = {
       enable = true;
+      useBabelfish = true;
 
-      interactiveShellInit = ''
-        # Disable greeting
-        set -g fish_greeting
-
+      promptInit = ''
         fastfetch
       '';
 
