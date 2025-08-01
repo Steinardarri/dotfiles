@@ -12,7 +12,10 @@ in {
   ];
 
   programs = {
-    fish.enable = true;
+    fish = {
+      enable = true;
+      useBabelfish = true;
+    };
     zsh.enable = true;
     # https://wiki.hypr.land/Nix/Hyprland-on-NixOS/
     hyprland = {

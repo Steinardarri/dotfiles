@@ -5,10 +5,16 @@ in {
   programs = {
     fish = {
       enable = true;
-      useBabelfish = true;
 
-      promptInit = ''
+      interactiveShellInit = ''
+        # Disable greeting
+        set -g fish_greeting
+
         fastfetch
+
+        # Color settings
+        set fish_pager_color_prefix cyan
+        set fish_color_autosuggestion brblack
       '';
 
       shellAliases = myAliases;

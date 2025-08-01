@@ -31,4 +31,5 @@
   show_path = "echo $PATH | tr ':' '\n'";
   lsblks = "lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid";
   weather = "curl -s 'wttr.in/Reykjavik?MQ' | rg -v 'Follow'";
+  system-build = "readlink /nix/var/nix/profiles/system";
 }

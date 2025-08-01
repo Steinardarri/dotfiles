@@ -46,7 +46,7 @@
     ffmpeg
     inkscape
 
-    # system utils
+    # utils
     bat
     bottom
     btop
@@ -69,6 +69,7 @@
     procs
     ripgrep
     sd
+    tldr
     tree
     wget
     wormhole-william
