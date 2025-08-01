@@ -291,8 +291,8 @@
         "workbench.activityBar.location" = "top";
         "workbench.cloudChanges.autoResume" = "off";
         "workbench.cloudChanges.continueOn" = "off";
-        "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
-        "workbench.colorTheme" = lib.mkForce "GapStyle VS";
+        "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#444b6a";
+        "workbench.colorTheme" = lib.mkDefault "GapStyle VS";
         "workbench.enableExperiments" = false;
         "workbench.iconTheme" = "material-icon-theme";
         "workbench.navigationControl.enabled" = false;

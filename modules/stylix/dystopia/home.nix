@@ -6,6 +6,10 @@
       dark = "Nordzy";
       light = "Nordzy";
     };
+
+    targets = {
+      waybar.enable = false;
+    };
   };
 
   # Stylix doesn't handle hyprcursor for now

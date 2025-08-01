@@ -3,17 +3,17 @@
     enable = true;
     systemd.enable = true;
     style = ''
-      @define-color background  #151520;
-      @define-color warning     #f38ba8;
-      @define-color caution     #45475a;
-      @define-color performance #f5c2e7;
-      @define-color audio       #cba6f7;
-      @define-color misc        #94e2d5;
-      @define-color date        #a6e3a1;
-      @define-color work        #b4befe;
-      @define-color window      #b4befe;
-      @define-color resize      #eba0ac;
-      @define-color process     #89b4fa;
+      @define-color background  #1a1b26;
+      @define-color warning     #f7768e;
+      @define-color caution     #444b6a;
+      @define-color performance #d18616;
+      @define-color audio       #bb9af7;
+      @define-color misc        #41a6b5;
+      @define-color date        #7dcfff;
+      @define-color work        #7aa2f7;
+      @define-color window      #7aa2f7;
+      @define-color resize      #ff9e64;
+      @define-color process     #e0af68;
 
       * {
         border: none;
@@ -42,13 +42,11 @@
       /* Main bar defaults */ /* {{{ */
       #waybar.main {
         background: transparent;
-        font-family: "JetBrains Mono Nerd Font";
         font-size: 11pt;
         font-weight: 500;
       }
 
       #waybar.main button {
-        font-family: JetBrains Mono Nerd Font;
         font-size: 11pt;
         font-weight: 500;
         transition: all 0.15s ease-in-out;
@@ -214,7 +212,6 @@
         border: 3px solid @caution;
         border-radius: 8px;
         font-weight: 500;
-        font-family: "JetBrains Mono Nerd Font";
       }
 
       #waybar.main #tray menu {
@@ -228,8 +225,8 @@
       {
         "layer" = "top";
         "position" = "top";
-        "margin-left" = 16;
-        "margin-right" = 16;
+        "margin-left" = 0;
+        "margin-right" = 0;
 
         "modules-left" = [
           "tray"
@@ -253,19 +250,19 @@
 
         "clock" = {
           "interval" = 1;
-          "format" = " {=%H=%M=%S    %d.%m}";
-          "tooltip-format" = "{=%d.%m.%Y   Week %W}\n\n<tt><small>{calendar}</small></tt>";
+          "format" = " {:%H:%M:%S   %d.%m}";
+          "tooltip-format" = "{:%d.%m.%Y   Week %W}\n\n<tt><small>{calendar}</small></tt>";
           "calendar" = {
             "mode" = "month";
             "mode-mon-col" = 3;
             "weeks-pos" = "right";
             "on-scroll" = 1;
             "format" = {
-              "months" = "<span color='#cba6f7'><b>{}</b></span>";
-              "days" = "<span color='#cdd6f4'><b>{}</b></span>";
-              "weeks" = "<span color='#94e2d5'> W{}</span>";
-              "weekdays" = "<span color='#f9e2af'><b>{}</b></span>";
-              "today" = "<span color='#f5e0dc'><b><u>{}</u></b></span>";
+              "months" = "<span color='#bb9af7'><b>{}</b></span>";
+              "days" = "<span color='#cbccd1'><b>{}</b></span>";
+              "weeks" = "<span color='#7dcfff'> W{}</span>";
+              "weekdays" = "<span color='#e0af68'><b>{}</b></span>";
+              "today" = "<span color='#d5d6db'><b><u>{}</u></b></span>";
             };
           };
         };
@@ -340,7 +337,7 @@
         };
 
         "custom/spacer" = {
-          "format" = " \\\\ ";
+          "format" = " || ";
           "tooltip" = false;
         };
       }
