@@ -18,7 +18,7 @@ in {
     inputs.hyprland.homeManagerModules.default
 
     # ./quickshell
-    # ./walker
+    ./walker
 
     ./fuzzel.nix
     ./notifications.nix

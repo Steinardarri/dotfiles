@@ -2,7 +2,8 @@ let
   launcherBind = let
     d = "[Launcher]";
   in [
-    "Super, Space, ${d} launcher, exec, uwsm app -- fuzzel"
+    "Super, Space, ${d} Fuzzel launcher, exec, uwsm app -- fuzzel"
+    "Super Shift, Space, ${d} Walker launcher, exec, walker"
   ];
 
   appBinds = let
