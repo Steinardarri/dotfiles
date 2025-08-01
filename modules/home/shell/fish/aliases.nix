@@ -2,8 +2,8 @@
   # eza
   l = "eza -lh --icons=auto";
   ls = "eza -1 --icons=auto";
-  ll = "eza -lha --icons=auto --sort=name --group-directories-first";
-  ld = "eza -lhD --icons=auto";
+  ll = "eza -lhga --icons=auto --sort=name --group-directories-first";
+  ld = "eza -lhgD --icons=auto";
   lt = "eza --icons=auto --tree";
 
   # System shortcuts

@@ -50,7 +50,7 @@
       ## Trailing whitespace
       icolor ,green "[[:space:]]+$"
 
-      set linenumbers
+      # set linenumbers
       set constantshow
       set tabstospaces
       set tabsize 2

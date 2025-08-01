@@ -25,6 +25,7 @@ let
     "Super, V, ${d} Toggle floating, togglefloating"
     "Super, G, ${d} toggle group, togglegroup"
     "Shift, F11, ${d} toggle fullscreen, fullscreen"
+    "Super, F, ${d} toggle fullscreen, fullscreen"
     "Super, J, ${d} toggle split, togglesplit"
     "Super, L, ${d} lock screen, exec, hyprlock"
     # "Super Shift, F, ${d} toggle pin on focused window, exec, $scrPath/windowpin.sh"
