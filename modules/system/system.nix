@@ -1,6 +1,7 @@
 {
   inputs,
   pkgs,
+  lib,
   username,
   ...
 }: {
@@ -22,11 +23,6 @@
       systemd.setPath.enable = true;
     };
     dconf.enable = true;
-    gnupg.agent = {
-      # Switch to home side at one point
-      enable = true;
-      enableSSHSupport = true;
-    };
     nix-ld.enable = true;
   };
 
@@ -82,10 +78,11 @@
     kdePackages.kwalletmanager
     kdePackages.ksshaskpass
     pinentry-qt
+    gnupg
   ];
   environment.variables = {
     PINENTRY = "pinentry-qt";
-    SSH_ASKPASS = "/run/current-system/sw/bin/ksshaskpass";
+    SSH_ASKPASS = lib.mkForce "/run/current-system/sw/bin/ksshaskpass";
     SSH_ASKPASS_REQUIRE = "prefer";
   };
 
