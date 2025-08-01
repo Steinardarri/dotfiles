@@ -24,11 +24,6 @@
       fsType = "exfat";
       options = ["defaults" "nofail" "noatime" "users" "uid=1000" "gid=1001"];
     };
-    "/run/media/${username}/rEFInd" = {
-      label = "rEFInd";
-      fsType = "fat32";
-      options = ["fmask=0137" "dmask=0027"];
-    };
   };
 
   swapDevices = lib.mkForce [];
