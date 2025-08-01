@@ -4,8 +4,16 @@
     image = ./vagabond.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-terminal-dark.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/kanagawa.yaml";
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/vice.yaml";
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/vice.yaml"; # Override light green, reduce the blue
+
     polarity = "dark";
+
+    opacity = {
+      applications = 0.95;
+      desktop = 0.95;
+      popups = 0.95;
+      terminal = 0.95;
+    };
 
     fonts = let
       sansSerif = {
