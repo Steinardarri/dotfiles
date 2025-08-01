@@ -2,8 +2,8 @@ let
   launcherBind = let
     d = "[Launcher]";
   in [
-    "Super, Space, ${d} Fuzzel launcher, exec, uwsm app -- fuzzel"
-    "Super Shift, Space, ${d} Walker launcher, exec, walker"
+    "Super Control, Space, ${d} Fuzzel launcher, exec, uwsm app -- fuzzel"
+    "Super, Space, ${d} Walker launcher, exec, walker"
   ];
 
   appBinds = let
@@ -31,7 +31,6 @@ let
     "Super, L, ${d} lock screen, exec, hyprlock"
     # "Super Shift, F, ${d} toggle pin on focused window, exec, $scrPath/windowpin.sh"
     # "Control Alt, Delete, ${d} logout menu, exec, $scrPath/logoutlaunch.sh"
-    # "Alt_R, Control_R, ${d} toggle waybar and reload config, exec, hyde-shell waybar --hide"
   ];
 
   groupNavigation = let
