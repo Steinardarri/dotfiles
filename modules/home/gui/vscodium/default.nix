@@ -225,15 +225,15 @@
         ];
         gitmoji.onlyUseCustomEmoji = true;
 
-        nix.enableLanguageServer = true;
-        nix.hiddenLanguageServerErrors = [
+        "nix.enableLanguageServer" = true;
+        "nix.hiddenLanguageServerErrors" = [
           "textDocument/definition"
         ];
-        nix.serverPath = "nixd";
-        nix.serverSettings = {
-          nixd = {
-            formatting = {
-              command = ["alejandra"];
+        "nix.serverPath" = "nixd";
+        "nix.serverSettings" = {
+          "nixd" = {
+            "formatting" = {
+              "command" = ["alejandra"];
             };
             # options = {
             #   nixos = {
@@ -300,6 +300,12 @@
         workbench.sideBar.location = "left";
         workbench.startupEditor = "none";
         workbench.statusBar.visible = true;
+
+        "yaml.schemas" = {
+          "/home/steinardth/.vscode-oss/extensions/continue.continue/config-yaml-schema.json" = [
+            ".continue/**/*.yaml"
+          ];
+        };
       };
 
       keybindings = [
