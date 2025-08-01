@@ -7,8 +7,4 @@
     ./starship.nix
     ./zsh.nix
   ];
-
-  home.sessionVariables = {
-    HISTSIZE = 10000;
-  };
 }
