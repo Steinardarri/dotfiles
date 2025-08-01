@@ -81,149 +81,149 @@
 
       userSettings = {
         "[javascript]" = {
-          editor.defaultFormatter = "esbenp.prettier-vscode";
+          "editor.defaultFormatter" = "esbenp.prettier-vscode";
         };
         "[nix]" = {
-          editor.defaultFormatter = "jnoortheen.nix-ide";
+          "editor.defaultFormatter" = "jnoortheen.nix-ide";
         };
         "[python]" = {
-          editor.defaultFormatter = "charliermarsh.ruff";
+          "editor.defaultFormatter" = "charliermarsh.ruff";
         };
         "[properties]" = {
-          editor.defaultFormatter = "foxundermoon.shell-format";
+          "editor.defaultFormatter" = "foxundermoon.shell-format";
         };
         "[qml]" = {
-          editor.defaultFormatter = "Delgan.qml-format";
+          "editor.defaultFormatter" = "Delgan.qml-format";
         };
         "[rust]" = {
-          editor.defaultFormatter = "rust-lang.rust-analyzer";
+          "editor.defaultFormatter" = "rust-lang.rust-analyzer";
         };
         "[shellscript]" = {
-          editor.defaultFormatter = "foxundermoon.shell-format";
+          "editor.defaultFormatter" = "foxundermoon.shell-format";
         };
 
-        chat.commandCenter.enabled = false;
-        continue.enableTabAutocomplete = false;
-        continue.telemetryEnabled = false;
-        diffEditor.maxComputationTime = 0;
+        "chat.commandCenter.enabled" = false;
+        "continue.enableTabAutocomplete" = false;
+        "continue.telemetryEnabled" = false;
+        "diffEditor.maxComputationTime" = 0;
 
-        editor.bracketPairColorization.independentColorPoolPerBracketType = true;
-        editor.defaultFormatter = "esbenp.prettier-vscode";
-        editor.fontFamily = lib.mkDefault "'Hack Nerd Font Mono', 'Hack', monospace";
-        editor.fontSize = lib.mkDefault 16;
-        editor.fontLigatures = false;
-        editor.formatOnPaste = true;
-        editor.formatOnSave = true;
-        editor.guides.bracketPairs = "active";
-        editor.inlineSuggest.enabled = true;
-        editor.minimap.showSlider = "always";
-        editor.minimap.side = "right";
-        editor.quickSuggestions = {
-          strings = "on";
-          comments = "inline";
-          other = "on";
+        "editor.bracketPairColorization.independentColorPoolPerBracketType" = true;
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+        "editor.fontFamily" = lib.mkDefault "'Hack Nerd Font Mono', 'Hack', monospace";
+        "editor.fontSize" = lib.mkDefault 16;
+        "editor.fontLigatures" = false;
+        "editor.formatOnPaste" = true;
+        "editor.formatOnSave" = true;
+        "editor.guides.bracketPairs" = "active";
+        "editor.inlineSuggest.enabled" = true;
+        "editor.minimap.showSlider" = "always";
+        "editor.minimap.side" = "right";
+        "editor.quickSuggestions" = {
+          "strings" = "on";
+          "comments" = "inline";
+          "other" = "on";
         };
-        editor.scrollbar.vertical = "hidden";
-        editor.scrollbar.verticalScrollbarSize = 0;
-        editor.tabCompletion = "onlySnippets";
-        editor.tabSize = 2;
-        editor.wordWrap = "bounded";
-        editor.wordWrapColumn = 160;
-        editor.wrappingIndent = "deepIndent";
+        "editor.scrollbar.vertical" = "hidden";
+        "editor.scrollbar.verticalScrollbarSize" = 0;
+        "editor.tabCompletion" = "onlySnippets";
+        "editor.tabSize" = 2;
+        "editor.wordWrap" = "bounded";
+        "editor.wordWrapColumn" = 160;
+        "editor.wrappingIndent" = "deepIndent";
 
-        errorLens.codeLensEnabled = true;
-        errorLens.gutterIconsEnabled = true;
-        errorLens.gutterIconSet = "emoji";
-        errorLens.messageMaxChars = 0;
+        "errorLens.codeLensEnabled" = true;
+        "errorLens.gutterIconsEnabled" = true;
+        "errorLens.gutterIconSet" = "emoji";
+        "errorLens.messageMaxChars" = 0;
 
-        evenBetterToml.formatter.alignComments = true;
-        evenBetterToml.formatter.alignEntries = true;
-        evenBetterToml.formatter.allowedBlankLines = 2;
-        evenBetterToml.formatter.arrayAutoCollapse = true;
-        evenBetterToml.formatter.arrayAutoExpand = true;
-        evenBetterToml.formatter.arrayTrailingComma = true;
-        evenBetterToml.formatter.columnWidth = 80;
-        evenBetterToml.formatter.compactArrays = false;
-        evenBetterToml.formatter.indentEntries = true;
-        evenBetterToml.formatter.indentString = "  ";
-        evenBetterToml.formatter.reorderArrays = true;
-        evenBetterToml.formatter.trailingNewline = true;
+        "evenBetterToml.formatter.alignComments" = true;
+        "evenBetterToml.formatter.alignEntries" = true;
+        "evenBetterToml.formatter.allowedBlankLines" = 2;
+        "evenBetterToml.formatter.arrayAutoCollapse" = true;
+        "evenBetterToml.formatter.arrayAutoExpand" = true;
+        "evenBetterToml.formatter.arrayTrailingComma" = true;
+        "evenBetterToml.formatter.columnWidth" = 80;
+        "evenBetterToml.formatter.compactArrays" = false;
+        "evenBetterToml.formatter.indentEntries" = true;
+        "evenBetterToml.formatter.indentString" = "  ";
+        "evenBetterToml.formatter.reorderArrays" = true;
+        "evenBetterToml.formatter.trailingNewline" = true;
 
-        explorer.compactFolders = false;
-        explorer.confirmDragAndDrop = false;
-        explorer.confirmDelete = false;
-        explorer.confirmPasteNative = false;
-        extensions.autoCheckUpdates = false;
+        "explorer.compactFolders" = false;
+        "explorer.confirmDragAndDrop" = false;
+        "explorer.confirmDelete" = false;
+        "explorer.confirmPasteNative" = false;
+        "extensions.autoCheckUpdates" = false;
 
-        files.autoSave = "afterDelay";
-        files.encoding = "utf8";
-        files.insertFinalNewline = true;
-        files.trimFinalNewlines = true;
-        files.trimTrailingWhitespace = true;
+        "files.autoSave" = "afterDelay";
+        "files.encoding" = "utf8";
+        "files.insertFinalNewline" = true;
+        "files.trimFinalNewlines" = true;
+        "files.trimTrailingWhitespace" = true;
 
-        git-graph.repository.commits.fetchAvatars = true;
-        git-graph.repository.commits.showSignatureStatus = false;
-        git-graph.repository.sign.commits = false;
-        git-graph.repository.sign.tags = false;
+        "git-graph.repository.commits.fetchAvatars" = true;
+        "git-graph.repository.commits.showSignatureStatus" = false;
+        "git-graph.repository.sign.commits" = false;
+        "git-graph.repository.sign.tags" = false;
 
-        git.allowForcePush = true;
-        git.autofetch = true;
-        git.confirmForcePush = false;
-        git.confirmSync = false;
-        git.defaultBranchName = "master";
-        git.defaultCloneDirectory = "~/Verkefni";
-        git.enableCommitSigning = false;
-        git.enableSmartCommit = true;
-        git.fetchOnPull = true;
-        git.openAfterClone = "alwaysNewWindow";
-        git.openRepositoryInParentFolders = "never";
-        git.pruneOnFetch = true;
-        git.pullBeforeCheckout = true;
-        git.rebaseWhenSync = true;
+        "git.allowForcePush" = true;
+        "git.autofetch" = true;
+        "git.confirmForcePush" = false;
+        "git.confirmSync" = false;
+        "git.defaultBranchName" = "master";
+        "git.defaultCloneDirectory" = "~/Verkefni";
+        "git.enableCommitSigning" = false;
+        "git.enableSmartCommit" = true;
+        "git.fetchOnPull" = true;
+        "git.openAfterClone" = "alwaysNewWindow";
+        "git.openRepositoryInParentFolders" = "never";
+        "git.pruneOnFetch" = true;
+        "git.pullBeforeCheckout" = true;
+        "git.rebaseWhenSync" = true;
 
-        gitlens.codeLens.enabled = false;
-        gitlens.currentLine.enabled = false;
-        gitlens.hovers.enabled = false;
-        gitlens.showWelcomeOnInstall = false;
+        "gitlens.codeLens.enabled" = false;
+        "gitlens.currentLine.enabled" = false;
+        "gitlens.hovers.enabled" = false;
+        "gitlens.showWelcomeOnInstall" = false;
 
-        gitmoji.addCustomEmoji = [
+        "gitmoji.addCustomEmoji" = [
           {
-            code = ":sparkles:";
-            description = "| Add new code/feature";
-            emoji = "✨";
+            "code" = ":sparkles:";
+            "description" = "| Add new code/feature";
+            "emoji" = "✨";
           }
           {
-            code = ":high_voltage:";
-            description = "| Improve existing code/feature";
-            emoji = "⚡";
+            "code" = ":high_voltage:";
+            "description" = "| Improve existing code/feature";
+            "emoji" = "⚡";
           }
           {
-            code = ":fire:";
-            description = "| Remove existing code/feature";
-            emoji = "🔥";
+            "code" = ":fire:";
+            "description" = "| Remove existing code/feature";
+            "emoji" = "🔥";
           }
           {
-            code = ":bug:";
-            description = "| Fix a bug";
-            emoji = "🐛";
+            "code" = ":bug:";
+            "description" = "| Fix a bug";
+            "emoji" = "🐛";
           }
           {
-            code = ":wrench:";
-            description = "| Maintain dependencies and code";
-            emoji = "🔧";
+            "code" = ":wrench:";
+            "description" = "| Maintain dependencies and code";
+            "emoji" = "🔧";
           }
           {
-            code = ":bookmark_tabs:";
-            description = "| Anything related to documentation";
-            emoji = "📑";
+            "code" = ":bookmark_tabs:";
+            "description" = "| Anything related to documentation";
+            "emoji" = "📑";
           }
           {
-            code = ":robot:";
-            description = "| Anything realted to tests";
-            emoji = "🤖";
+            "code" = ":robot:";
+            "description" = "| Anything realted to tests";
+            "emoji" = "🤖";
           }
         ];
-        gitmoji.onlyUseCustomEmoji = true;
+        "gitmoji.onlyUseCustomEmoji" = true;
 
         "nix.enableLanguageServer" = true;
         "nix.hiddenLanguageServerErrors" = [
@@ -246,60 +246,60 @@
           };
         };
 
-        ruff.nativeServer = "on";
-        security.workspace.trust.enabled = false;
-        security.workspace.trust.startupPrompt = "never";
-        security.workspace.trust.untrustedFiles = "newWindow";
-        svelte.enable-ts-plugin = true;
-        telemetry.telemetryLevel = "off";
+        "ruff.nativeServer" = "on";
+        "security.workspace.trust.enabled" = false;
+        "security.workspace.trust.startupPrompt" = "never";
+        "security.workspace.trust.untrustedFiles" = "newWindow";
+        "svelte.enable-ts-plugin" = true;
+        "telemetry.telemetryLevel" = "off";
 
-        terminal.explorerKind = "both";
-        terminal.external.linuxExec = "kitty";
-        terminal.integrated.copyOnSelection = true;
-        terminal.integrated.cursorBlinking = true;
-        terminal.integrated.cursorStyle = "line";
-        terminal.integrated.cursorWidth = 2;
-        terminal.integrated.defaultProfile.linux = "fish (2)";
-        terminal.integrated.enableImages = true;
-        terminal.integrated.fontSize = lib.mkDefault 14;
-        terminal.integrated.persistentSessionScrollback = 5000;
-        terminal.integrated.profiles.linux = {
-          fish = {
-            path = "fish";
-            args = ["-i"];
-            icon = "star";
+        "terminal.explorerKind" = "both";
+        "terminal.external.linuxExec" = "kitty";
+        "terminal.integrated.copyOnSelection" = true;
+        "terminal.integrated.cursorBlinking" = true;
+        "terminal.integrated.cursorStyle" = "line";
+        "terminal.integrated.cursorWidth" = 2;
+        "terminal.integrated.defaultProfile.linux" = "fish (2)";
+        "terminal.integrated.enableImages" = true;
+        "terminal.integrated.fontSize" = lib.mkDefault 14;
+        "terminal.integrated.persistentSessionScrollback" = 5000;
+        "terminal.integrated.profiles.linux" = {
+          "fish" = {
+            "path" = "fish";
+            "args" = ["-i"];
+            "icon" = "star";
           };
-          bash = null;
-          zsh = null;
+          "bash" = null;
+          "zsh" = null;
         };
-        terminal.integrated.scrollback = 50000;
-        terminal.integrated.smoothScrolling = true;
-        terminal.integrated.shellIntegration.enabled = true;
-        terminal.integrated.shellIntegration.environmentReporting = true;
-        terminal.integrated.suggest.enabled = true;
-        terminal.integrated.stickyScroll.enabled = true;
-        terminal.sourceControlRepositoriesKind = "both";
+        "terminal.integrated.scrollback" = 50000;
+        "terminal.integrated.smoothScrolling" = true;
+        "terminal.integrated.shellIntegration.enabled" = true;
+        "terminal.integrated.shellIntegration.environmentReporting" = true;
+        "terminal.integrated.suggest.enabled" = true;
+        "terminal.integrated.stickyScroll.enabled" = true;
+        "terminal.sourceControlRepositoriesKind" = "both";
 
-        update.mode = "none";
-        update.showReleaseNotes = false;
-        window.customMenuBarAltFocus = false;
-        window.customTitleBarVisibility = "auto";
-        window.menuBarVisibility = "visible";
-        window.titleBarStyle = "custom";
-        window.zoomLevel = 1;
+        "update.mode" = "none";
+        "update.showReleaseNotes" = false;
+        "window.customMenuBarAltFocus" = false;
+        "window.customTitleBarVisibility" = "auto";
+        "window.menuBarVisibility" = "visible";
+        "window.titleBarStyle" = "custom";
+        "window.zoomLevel" = 1;
 
-        workbench.activityBar.location = "top";
-        workbench.cloudChanges.autoResume = "off";
-        workbench.cloudChanges.continueOn = "off";
-        workbench.colorCustomizations.editorInlayHint.typeBackground = "#2F3542";
-        workbench.colorTheme = lib.mkForce "GapStyle VS";
-        workbench.enableExperiments = false;
-        workbench.iconTheme = "material-icon-theme";
-        workbench.navigationControl.enabled = false;
-        workbench.productIconTheme = "material-product-icons";
-        workbench.sideBar.location = "left";
-        workbench.startupEditor = "none";
-        workbench.statusBar.visible = true;
+        "workbench.activityBar.location" = "top";
+        "workbench.cloudChanges.autoResume" = "off";
+        "workbench.cloudChanges.continueOn" = "off";
+        "workbench.colorCustomizations.editorInlayHint.typeBackground" = "#2F3542";
+        "workbench.colorTheme" = lib.mkForce "GapStyle VS";
+        "workbench.enableExperiments" = false;
+        "workbench.iconTheme" = "material-icon-theme";
+        "workbench.navigationControl.enabled" = false;
+        "workbench.productIconTheme" = "material-product-icons";
+        "workbench.sideBar.location" = "left";
+        "workbench.startupEditor" = "none";
+        "workbench.statusBar.visible" = true;
 
         "yaml.schemas" = {
           "/home/steinardth/.vscode-oss/extensions/continue.continue/config-yaml-schema.json" = [
