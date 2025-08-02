@@ -72,6 +72,7 @@ in {
       };
 
       dwindle = {
+        pseudotile = true;
         preserve_split = true;
         smart_split = false;
         smart_resizing = false;
@@ -90,6 +91,7 @@ in {
         accel_profile = "flat";
         follow_mouse = 1;
         float_switch_override_focus = 2;
+        scroll_method = "2fg";
 
         touchpad = {
           natural_scroll = true;
@@ -101,6 +103,8 @@ in {
         hide_on_key_press = false;
         hide_on_touch = true;
         default_monitor = "DP-2";
+        no_hardware_cursors = false;
+        use_cpu_buffer = true;
       };
 
       gestures = {
@@ -122,8 +126,8 @@ in {
         vrr = 3;
         mouse_move_enables_dpms = true;
         key_press_enables_dpms = true;
-        animate_manual_resizes = false;
-        animate_mouse_windowdragging = false;
+        animate_manual_resizes = true;
+        animate_mouse_windowdragging = true;
         enable_swallow = false;
         swallow_regex = "(kitty)";
         new_window_takes_over_fullscreen = 2;
@@ -144,8 +148,8 @@ in {
         "sleep 1 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 
         # Clipboard history
-        "wl-paste --type text --watch cliphist store"
-        "wl-paste --type image --watch cliphist store"
+        # "wl-paste --type text --watch cliphist store"
+        # "wl-paste --type image --watch cliphist store"
 
         # Start Quickshell
         # "qs &"

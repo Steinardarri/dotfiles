@@ -15,7 +15,7 @@
     hyprpicker # Color picker
 
     # Wallpaper & display
-    wpaperd # Wallpaper daemon
+    hyprpaper # Wallpaper daemon
     brightnessctl # Brightness control
     hyprsunset # blue-light filter
 

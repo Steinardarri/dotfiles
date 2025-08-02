@@ -1,5 +1,15 @@
 {
+  config,
+  lib,
+  ...
+}: {
   rounding = 18;
+
+  active_opacity = config.stylix.opacity.applications;
+  inactive_opacity = lib.mkIf (config.stylix.opacity.applications < 1) (
+    config.stylix.opacity.applications - 0.2
+  );
+  fullscreen_opacity = 1;
 
   blur = {
     enabled = true;
