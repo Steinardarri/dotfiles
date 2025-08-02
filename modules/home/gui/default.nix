@@ -2,12 +2,12 @@
   imports = [
     ./dolphin
     ./vscodium
-    ./zen-browser
 
     ./discord.nix
     ./kitty.nix
     ./lapce.nix
     ./torrent.nix
+    ./zen-browser.nix
   ];
 
   home.packages = with pkgs; [
