@@ -23,6 +23,7 @@
         padding: 0;
         box-shadow: none;
         text-shadow: none;
+        font-family: "Hack Nerd Font Mono";
       }
 
       /* Keyframes for main bar criticals */
