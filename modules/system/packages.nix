@@ -32,6 +32,7 @@
 
     # formatters & linters
     alejandra # nix
+    nixfmt
     nodePackages.prettier
     shellcheck
     shfmt
