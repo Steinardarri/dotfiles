@@ -72,6 +72,7 @@ in {
       # Network/Bluetooth
       networkmanager
       bluez
+      blueman
 
       # Fonts
       material-symbols

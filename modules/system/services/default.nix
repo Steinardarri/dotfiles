@@ -5,6 +5,15 @@
     ./lact.nix
   ];
 
+  # DNS resolver
+  services.resolved = {
+    enable = true;
+    dnsovertls = "true";
+    dnssec = "true";
+  };
+
+  # Slows down boot time
   systemd.services.NetworkManager-wait-online.enable = false;
-  services.resolved.enable = true;
+
+  services.dbusimplementation = "broker";
 }

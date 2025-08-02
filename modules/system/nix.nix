@@ -19,6 +19,10 @@
         "https://walker.cachix.org"
         "https://walker-git.cachix.org"
       ];
+      trusted-users = [
+        "root"
+        "@wheel"
+      ];
       trusted-substituters = [
         "https://cache.nixos.org"
         "https://nix-community.cachix.org"
@@ -35,6 +39,7 @@
         "walker.cachix.org-1:fG8q+uAaMqhsMxWjwvk0IMb4mFPFLqHjuvfwQxE4oJM="
         "walker-git.cachix.org-1:vmC0ocfPWh0S/vRAQGtChuiZBTAe4wiKDeyyXM0/7pM="
       ];
+      channel.enable = false;
     };
   };
   nixpkgs.config.allowUnfree = true;
