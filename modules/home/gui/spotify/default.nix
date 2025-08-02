@@ -5,11 +5,7 @@
 }: {
   # https://gerg-l.github.io/spicetify-nix/
   imports = [
-    inputs.spicetify-nix.homeManagerModules.default
-  ];
-
-  home.packages = [
-    pkgs.spotify
+    inputs.spicetify-nix.homeManagerModules.spicetify
   ];
 
   programs.spicetify = let
