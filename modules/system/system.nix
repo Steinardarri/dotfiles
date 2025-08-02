@@ -64,39 +64,6 @@ in {
     ];
   };
 
-  # Security
-  security = {
-    sudo-rs = {
-      enable = true;
-      execWheelOnly = true;
-    };
-
-    # Extra security
-    protectKernelImage = true;
-
-    # Realtime stuff for PipeWire, PulsAudio
-    rtkit.enable = true;
-
-    pam.services.kwallet = {
-      enable = true;
-      kwallet.enable = true;
-    };
-  };
-
-  environment.systemPackages = with pkgs; [
-    kdePackages.kleopatra
-    kdePackages.kwallet
-    kdePackages.kwalletmanager
-    kdePackages.ksshaskpass
-    pinentry-qt
-    gnupg
-  ];
-  environment.variables = {
-    PINENTRY = "pinentry-qt";
-    SSH_ASKPASS = lib.mkForce "/run/current-system/sw/bin/ksshaskpass";
-    SSH_ASKPASS_REQUIRE = "prefer";
-  };
-
   services = {
     dbus.enable = true;
     upower.enable = true;

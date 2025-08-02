@@ -9,6 +9,7 @@
     ./locale.nix
     ./nix.nix
     ./packages.nix
+    ./security.nix
     ./system.nix
   ];
 
