@@ -22,4 +22,8 @@
       tab_title_template = "{title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}";
     };
   };
+
+  home.sessionVariables = {
+    TERMINAL = "kitty";
+  };
 }
