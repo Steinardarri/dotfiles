@@ -9,6 +9,7 @@
     kimageformats # Additional image format support for KDE
     qtsvg # SVG support
     kio # KDE I/O framework
+    kio-admin
     kio-extras # Additional KDE I/O protocols
     kwayland # KDE Wayland integration
   ];
