@@ -26,6 +26,10 @@ in {
         ".4" = "cd ../../../..";
         ".5" = "cd ../../../../..";
         mkdir = "mkdir -p";
+        # Safety nets
+        rm = "rm -I";
+        cp = "cp -i";
+        mv = "mv -i";
       };
 
       plugins = [

@@ -22,11 +22,6 @@
   top = "btop";
   htop = "btop";
 
-  # Safety nets
-  rm = "rm -I";
-  cp = "cp -I";
-  mv = "mv -I";
-
   # 'scripts'
   show_path = "echo $PATH | tr ':' '\n'";
   lsblks = "lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid";
