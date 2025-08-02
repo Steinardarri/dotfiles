@@ -228,7 +228,7 @@
         "nix.enableLanguageServer" = true;
         "nix.hiddenLanguageServerErrors" = [
           "textDocument/definition"
-          # "formatDocument/format"
+          "formatDocument/formatting"
         ];
         "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
