@@ -7,7 +7,6 @@
   boot = {
     kernelPackages = pkgs.linuxPackages_zen;
     tmp = {
-      useTmpfs = lib.mkDefault true;
       useZram = true;
       cleanOnBoot = lib.mkDefault (!config.boot.tmp.useTmpfs);
     };
@@ -30,10 +29,11 @@
     initrd.verbose = false;
     kernelParams = [
       "quiet"
-      "splash"
       "boot.shell_on_fail"
       "udev.log_priority=3"
       "rd.systemd.show_status=auto"
+      "systemd.show_status=auto"
+      "preempt=full"
     ];
 
     kernel.sysctl = {
