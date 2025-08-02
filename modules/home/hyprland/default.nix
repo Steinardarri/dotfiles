@@ -10,12 +10,12 @@
   hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
 
   animations = import ./hypr/animations.nix;
-  decoration = import ./hypr/decoration.nix;
 
   binds = import ./hypr/binds.nix;
 in {
   imports = [
     inputs.hyprland.homeManagerModules.default
+    ./hypr/decoration.nix
 
     # ./quickshell
     ./walker
@@ -43,7 +43,6 @@ in {
     settings = {
       # Imports
       monitor = hyprlandMonitors;
-      decoration = decoration;
       animations = animations;
       workspace = hyprlandWorkspaces;
 
