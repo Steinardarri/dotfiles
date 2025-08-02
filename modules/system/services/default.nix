@@ -15,5 +15,5 @@
   # Slows down boot time
   systemd.services.NetworkManager-wait-online.enable = false;
 
-  services.dbusimplementation = "broker";
+  services.dbus.implementation = "broker";
 }
