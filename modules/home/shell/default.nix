@@ -3,8 +3,8 @@
     inputs.nix-index-database.homeModules.nix-index
 
     ./fish
+    ./fastfetch
 
-    ./fastfetch.nix
     ./starship.nix
     ./zsh.nix
   ];
