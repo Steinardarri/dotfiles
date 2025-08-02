@@ -74,9 +74,9 @@ in {
     # Extra security
     protectKernelImage = true;
 
-    # For polkit authentication
-    polkit.enable = true;
+    # Realtime stuff for PipeWire, PulsAudio
     rtkit.enable = true;
+
     pam.services.kwallet = {
       enable = true;
       kwallet.enable = true;
