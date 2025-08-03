@@ -2,6 +2,7 @@
   pkgs,
   lib,
   config,
+  username,
   ...
 }: {
   options = {
@@ -48,7 +49,7 @@
           reaper_freq = 5;
           desiredgov = "performance";
           desiredprof = "performance";
-          softrealtime = "off";
+          softrealtime = "auto";
           renice = 10;
           ioprio = 0;
           inhibit_screensaver = 1;
@@ -61,6 +62,8 @@
         };
       };
     };
+
+    users.users.${username}.extraGroups = ["gamemode"];
 
     environment.sessionVariables = {
       STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";

@@ -1,11 +1,10 @@
 {
   inputs,
   pkgs,
-  lib,
   username,
   ...
 }: let
-  hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
+  hypr-pkgs = inputs.hyprland.packages.${pkgs.system};
 in {
   imports = [
     inputs.hyprland.nixosModules.default
@@ -82,9 +81,17 @@ in {
     fontDir.enable = true;
   };
 
-  # For proper XDG desktop integration
   xdg.portal = {
     enable = true;
+    xdgOpenUsePortal = true;
+    config = {
+      common.default = ["gtk"];
+      hyprland.default = [
+        "gtk"
+        "hyprland"
+      ];
+    };
+
     extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
 

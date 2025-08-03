@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  nixpkgs-hypr = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+  nixpkgs-hypr = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.system};
 in {
   # Enable the hardware module in the host default nix
   imports = [
@@ -39,4 +39,9 @@ in {
       package32 = nixpkgs-hypr.pkgsi686Linux.mesa;
     };
   };
+  environment.systemPackages = with pkgs; [
+    bluez
+    bluez-tools
+    blueman
+  ];
 }

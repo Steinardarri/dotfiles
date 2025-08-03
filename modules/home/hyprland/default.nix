@@ -7,7 +7,7 @@
   hyprlandWorkspaces,
   ...
 }: let
-  hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
+  hypr-pkgs = inputs.hyprland.packages.${pkgs.system};
 
   animations = import ./hypr/animations.nix;
 
