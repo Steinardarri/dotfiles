@@ -17,7 +17,6 @@
       reload_style_on_change = true;
 
       modules-left = [
-        "custom/actions"
         "hyprland/workspaces"
         "hyprland/window"
       ];
@@ -35,12 +34,6 @@
         "group/hardware"
         "tray"
       ];
-
-      "custom/actions" = {
-        format = "";
-        tooltip-format = "System Actions";
-        on-click = "fuzzel-actions";
-      };
 
       "hyprland/workspaces" = {
         show-special = true;
