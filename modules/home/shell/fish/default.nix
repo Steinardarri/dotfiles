@@ -1,6 +1,7 @@
 {pkgs, ...}: let
   myAliases = import ./aliases.nix;
   myFunctions = import ./functions.nix;
+  myAbbreviations = import ./abbreviations.nix;
 in {
   programs = {
     fish = {
@@ -19,18 +20,7 @@ in {
 
       shellAliases = myAliases;
       functions = myFunctions;
-      shellAbbrs = {
-        ".." = "cd ..";
-        "..." = "cd ../..";
-        ".3" = "cd ../../..";
-        ".4" = "cd ../../../..";
-        ".5" = "cd ../../../../..";
-        mkdir = "mkdir -p";
-        # Safety nets
-        rm = "rm -I";
-        cp = "cp -i";
-        mv = "mv -i";
-      };
+      shellAbbrs = myAbbreviations;
 
       plugins = [
         {

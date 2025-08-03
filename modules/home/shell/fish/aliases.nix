@@ -9,6 +9,7 @@
   # System shortcuts
   c = "clear";
   e = "exit";
+  reboot = "shutdown -r now";
 
   # Networking
   ping = "ping -c 5";
