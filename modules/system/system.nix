@@ -36,7 +36,7 @@ in {
   };
 
   environment = {
-    variables = {
+    sessionVariables = {
       FLAKE = "/home/${username}/dotfiles";
 
       # Wayland support for Electron apps
