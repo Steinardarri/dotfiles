@@ -1,5 +1,6 @@
 {
   inputs,
+  pkgs,
   config,
   KBDLayout,
   hyprlandMonitors,
@@ -25,11 +26,13 @@ in {
   ];
 
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
-  wayland.windowManager.hyprland = {
+  wayland.windowManager.hyprland = let
+    hypr-pkgs = inputs.hyprland.packages.${pkgs.system};
+  in {
     enable = true;
 
-    package = null;
-    portalPackage = null;
+    package = hypr-pkgs.hyprland;
+    portalPackage = hypr-pkgs.xdg-desktop-portal-hyprland;
 
     # Disable XWayland when Steam finally gets a 64 bit wayland client
     xwayland.enable = true;
