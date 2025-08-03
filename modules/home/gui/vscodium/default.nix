@@ -47,11 +47,6 @@
             # Language specific
             bmalehorn.vscode-fish
             charliermarsh.ruff
-            theqtcompany.qt
-            theqtcompany.qt-core
-            theqtcompany.qt-cpp
-            theqtcompany.qt-qml
-            theqtcompany.qt-ui
             detachhead.basedpyright
             ewen-lbh.vscode-hyprls
             foxundermoon.shell-format
