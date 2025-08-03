@@ -72,7 +72,8 @@
         background: transparent;
       }
 
-      #waybar.main #tray {
+      #waybar.main #tray,
+      #waybar.main #cpu {
         padding-right: 6pt;
       }
 
@@ -250,8 +251,8 @@
         ];
 
         "clock" = {
-          "interval" = 1;
-          "format" = " {:%H:%M:%S   %d.%m}";
+          "interval" = 60;
+          "format" = " {:%H:%M   %d.%m}";
           "tooltip-format" = "{:%d.%m.%Y   Week %W}\n\n<tt><small>{calendar}</small></tt>";
           "calendar" = {
             "mode" = "month";
