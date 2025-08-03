@@ -17,6 +17,7 @@
       isDefault = true;
 
       settings = {
+        "extensions.autoDisableScopes" = 0;
         "browser.download.start_downloads_in_tmp_dir" = true;
         "browser.ml.linkPreview.enabled" = true;
         "browser.tabs.groups.enabled" = true;
@@ -24,13 +25,21 @@
         "cookiebanners.service.mode" = 2;
         "cookiebanners.service.mode.privateBrowsing" = 2;
         "cookiebanners.ui.desktop.enabled" = 2;
-        "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = true;
+        "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
+        "distribution.searchplugins.defaultLocale" = "en-GB";
+        "general.useragent.locale" = "en-GB";
+        "browser.search.isUS" = false;
       };
 
       search = {
         force = true;
-        default = "searxng";
+        default = "ddg";
         engines = {
+          "ddg" = {
+            urls = [{template = "https://duckduckgo.com/?q={searchTerms}&ia=web";}];
+            icon = "https://duckduckgo.com/favicon.ico";
+            definedAliases = ["@ddg"];
+          };
           "protondb" = {
             urls = [{template = "https://protondb.com/search?q={searchTerms}";}];
             icon = "https://protondb.com/favicon.ico";
@@ -84,12 +93,28 @@
             icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = ["@np"];
           };
-          "subreddit" = {
-            urls = [{template = "https://reddit.com/r/{searchTerms}";}];
-            icon = "https://reddit.com/favicon.png";
-            definedAliases = ["r/"];
-          };
         };
+      };
+
+      extensions = {
+        packages = with pkgs.nur.repos.rycee.firefox-addons; [
+          ublock-origin
+          darkreader
+          privacy-badger
+          proton-pass
+          augmented-steam
+          re-enable-right-click
+          behind-the-overlay-revival
+          betterttv
+          github-file-icons
+          flagfox
+          imagus
+          indie-wiki-buddy
+          protondb-for-steam
+          return-youtube-dislikes
+          search-by-image
+          translate-web-pages
+        ];
       };
 
       userChrome = lib.mkDefault ''
@@ -138,7 +163,7 @@
   };
 
   home.sessionVariables = {
-    BROWSER = "zen";
+    BROWSER = "zen-beta";
     MOZ_ENABLE_WAYLAND = "1";
     MOZ_USE_XINPUT2 = "1";
   };

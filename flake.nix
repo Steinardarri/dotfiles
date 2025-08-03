@@ -6,7 +6,7 @@
     nixpkgs,
     home-manager,
     nix-vscode-extensions,
-    # nur,
+    nur,
     disko,
     nixos-facter-modules,
     stylix,
@@ -14,7 +14,6 @@
     ...
   } @ inputs: let
     genericModules = [
-      # Overlays
       {
         nixpkgs.overlays = [
           nix-vscode-extensions.overlays.default
@@ -38,7 +37,7 @@
         };
       }
 
-      # nur.modules.nixos.default
+      nur.modules.nixos.default
 
       stylix.nixosModules.stylix
     ];
@@ -143,10 +142,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # nur = {
-    #   url = "github:nix-community/NUR";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     ### Desktop Environment ###
 
