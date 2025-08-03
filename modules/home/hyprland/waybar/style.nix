@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.waybar.style = let
-    borderRadius = 7;
-    borderSize = 2;
+    borderRadius = "7";
+    borderSize = "2";
   in ''
     * {
       padding: 0;

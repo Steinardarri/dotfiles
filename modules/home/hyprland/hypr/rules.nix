@@ -1,8 +1,4 @@
-{
-  lib,
-  config,
-  ...
-}: {
+{...}: {
   wayland.windowManager.hyprland.settings = {
     "$floatingSize" = "600 400";
     "$pwvucontrol" = "com.saivert.pwvucontrol";
@@ -48,22 +44,19 @@
       "immediate, class:^(steam_app_.*)$"
     ];
 
-    layerrule =
-      [
-        "animation slide, launcher"
-        "dimaround, launcher"
-      ]
-      # only blur if not fully opaque
-      ++ lib.optional (config.stylix.opacity.desktop != 1.0) [
-        # waybar
-        "blur, waybar"
-        "ignorezero, waybar"
+    layerrule = [
+      "animation slide, launcher"
+      "dimaround, launcher"
 
-        "blur, launcher"
-        "ignorezero, launcher"
+      # Blur translucency
+      "blur, waybar"
+      "ignorezero, waybar"
 
-        "blur, notifications"
-        "ignorezero, notifications"
-      ];
+      "blur, launcher"
+      "ignorezero, launcher"
+
+      "blur, notifications"
+      "ignorezero, notifications"
+    ];
   };
 }
