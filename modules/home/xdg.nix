@@ -1,22 +1,9 @@
 {
   config,
-  pkgs,
   ...
 }: {
   xdg = {
     enable = true;
-
-    portal = {
-      enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-gtk
-      ];
-      xdgOpenUsePortal = true;
-      configPackages = with pkgs; [
-        xdg-desktop-portal-gtk
-      ];
-      config.common.default = ["hyprland"];
-    };
 
     mime.enable = true;
     mimeApps.enable = true;
