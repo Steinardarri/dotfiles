@@ -14,6 +14,7 @@ let
     "Super, E, ${d} Nemo file explorer, exec, uwsm app -- nemo.desktop"
     "Super, N, ${d} Codium text editor, exec, uwsm app -- codium.desktop"
     "Super, W, ${d} Zen web browser, exec, uwsm app -- zen-beta.desktop"
+    "Super Shift, W, ${d} Zen web browser - private, exec, uwsm app -- zen-beta.desktop:new-private-window"
     "Super, p, ${d} hyprpicker, exec, hyprpicker"
     # "Super, Escape, ${d} system monitor, exec, $scrPath/sysmonlaunch.sh"
   ];
