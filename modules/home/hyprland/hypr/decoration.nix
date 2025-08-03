@@ -8,7 +8,7 @@
 
     active_opacity = config.stylix.opacity.applications;
     inactive_opacity = lib.mkIf (config.stylix.opacity.applications < 1) (
-      config.stylix.opacity.applications - 0.2
+      config.stylix.opacity.applications - 0.1
     );
     fullscreen_opacity = 1;
 
