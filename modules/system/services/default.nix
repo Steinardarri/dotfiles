@@ -15,5 +15,12 @@
   # Slows down boot time
   systemd.services.NetworkManager-wait-online.enable = false;
 
-  services.dbus.implementation = "broker";
+  services = {
+    dbus.implementation = "broker";
+
+    # Power
+    logind.powerKey = "suspend";
+    power-profiles-daemon.enable = true;
+    upower.enable = true;
+  };
 }
