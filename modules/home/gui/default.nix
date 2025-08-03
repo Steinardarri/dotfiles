@@ -1,11 +1,12 @@
 {pkgs, ...}: {
   imports = [
-    ./dolphin
+    # ./dolphin
     ./vscodium
 
     ./discord.nix
     ./kitty.nix
     ./lapce.nix
+    ./nemo.nix
     ./torrent.nix
     ./zen-browser.nix
   ];
@@ -31,15 +32,5 @@
     libreoffice-qt6-fresh
     hunspell
     hunspellDicts.en_GB-large
-
-    # Nemo
-    (nemo-with-extensions.override {
-      extensions = [
-        nemo-preview
-        nemo-emblems
-        nemo-python
-        nemo-qml-plugin-dbus
-      ];
-    })
   ];
 }

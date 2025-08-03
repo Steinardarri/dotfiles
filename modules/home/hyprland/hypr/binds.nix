@@ -11,7 +11,7 @@ let
   in [
     "Super, Return, ${d} Kitty terminal emulator, exec, uwsm app -- kitty.desktop"
     "Super Shift, Return, ${d} dropdown Kitty terminal, exec, [float; move 20% 5%; size 60% 60%] uwsm app -- kitty.desktop"
-    "Super, E, ${d} Dolphin file explorer, exec, uwsm app -- org.kde.dolphin.desktop"
+    "Super, E, ${d} Nemo file explorer, exec, uwsm app -- nemo.desktop"
     "Super, N, ${d} Codium text editor, exec, uwsm app -- codium.desktop"
     "Super, W, ${d} Zen web browser, exec, uwsm app -- zen-beta.desktop"
     "Super, p, ${d} hyprpicker, exec, hyprpicker"
