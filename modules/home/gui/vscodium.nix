@@ -373,5 +373,5 @@
     };
   };
 
-  home.file.".config/codium-flags.conf".source = ./codium-flags.conf;
+  home.file.".config/codium-flags.conf" = "--ozone-platform=wayland";
 }

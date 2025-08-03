@@ -1,13 +1,11 @@
 {pkgs, ...}: {
   imports = [
-    # ./dolphin
-    ./vscodium
-
     ./discord.nix
     ./kitty.nix
     ./lapce.nix
     ./nemo.nix
     ./torrent.nix
+    ./vscodium.nix
     ./zen-browser.nix
   ];
 
