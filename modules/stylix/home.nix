@@ -7,6 +7,12 @@
     enable = true;
     autoEnable = true;
 
-    targets.zen-browser.profileNames = ["default"];
+    targets = {
+      zen-browser.profileNames = ["default"];
+      waybar = {
+        addCss = false;
+        font = "sansSerif";
+      };
+    };
   };
 }

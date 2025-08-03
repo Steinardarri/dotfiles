@@ -26,7 +26,7 @@
     wireplumber
     pamixer
     playerctl
-    lxqt.pavucontrol-qt
+    pwvucontrol
     pulseaudioFull
   ];
 }

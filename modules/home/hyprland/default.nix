@@ -16,12 +16,12 @@ in {
     ./hypr/rules.nix
 
     ./walker
+    ./waybar
 
     ./fuzzel.nix
     ./notifications.nix
     ./packages.nix
     ./services.nix
-    ./waybar.nix
   ];
 
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
