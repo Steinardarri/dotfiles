@@ -13,7 +13,7 @@
         logo = ./nix-snowflake-colours.png;
         logoAnimated = true;
       };
-      grub.useImage = true;
+      grub.useWallpaper = true;
     };
   };
 }
