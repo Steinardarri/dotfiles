@@ -9,8 +9,8 @@
       ];
       warn-dirty = false;
       download-buffer-size = 524288000;
-      max-jobs = 4;
-      cores = 4;
+      max-jobs = 6;
+      cores = 6;
       show-trace = false;
       substituters = [
         "https://cache.nixos.org"

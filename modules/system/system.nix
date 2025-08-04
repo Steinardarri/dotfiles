@@ -37,8 +37,6 @@ in {
 
   environment = {
     sessionVariables = {
-      FLAKE = "/home/${username}/dotfiles";
-
       # Wayland support for Electron apps
       NIXOS_OZONE_WL = "1";
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
