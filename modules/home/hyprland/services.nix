@@ -1,4 +1,8 @@
-{lib, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   programs.hyprlock = {
     enable = true;
 
@@ -78,4 +82,7 @@
     network-manager-applet.enable = true;
     blueman-applet.enable = true;
   };
+  home.packages = with pkgs; [
+    networkmanagerapplet
+  ];
 }
