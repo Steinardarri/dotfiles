@@ -45,4 +45,8 @@
     "mitigations=off"
     "kernel.split_lock_mitigate=0"
   ];
+
+  hardware = {
+    xone.enable = true;
+  };
 }
