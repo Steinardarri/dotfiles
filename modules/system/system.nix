@@ -4,7 +4,7 @@
   username,
   ...
 }: let
-  hypr-pkgs = inputs.hyprland.packages.${pkgs.system};
+  hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
 in {
   imports = [
     inputs.hyprland.nixosModules.default
