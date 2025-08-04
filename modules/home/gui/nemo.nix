@@ -13,8 +13,8 @@
 
     # cinnamon-desktop-editor
     # Metadata
-    tracker
-    tracker-miners
+    tinysparql
+    localsearch
     # For MTP support (Android devices)
     simple-mtpfs
     libmtp
