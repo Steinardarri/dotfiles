@@ -46,10 +46,12 @@
     # utils
     bat
     bottom
+    broot
     btop
     clinfo
     coreutils
     curl
+    deadnix
     du-dust
     eza
     fd
@@ -60,6 +62,7 @@
     lshw
     mosh
     nvd
+    p7zip
     parallel
     pinentry-all
     pkg-config
@@ -70,19 +73,22 @@
     tree
     wget
     wormhole-william
-    p7zip
-    deadnix
+    yazi
+    zoxide
 
     # for fun
     cmatrix
     cowsay
     lolcat
     notcurses
+    fastfetch
 
     # ui & looks
     yad
     grc
     nix-output-monitor
+    atuin
+    starship
 
     # hardware
     brightnessctl # screen brightness control
