@@ -5,6 +5,7 @@
     ./discord.nix
     ./kitty.nix
     ./lapce.nix
+    ./mpv.nix
     ./torrent.nix
     ./vscodium.nix
     ./zen-browser.nix
@@ -18,7 +19,6 @@
     ungoogled-chromium
     grsync
     baobab
-    vlc
     evince
 
     # KDE stuff

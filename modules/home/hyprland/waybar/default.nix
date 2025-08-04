@@ -199,9 +199,8 @@
         };
 
         modules = [
-          "custom/monitor"
-          "disk"
           "cpu"
+          "disk"
           "temperature"
           "memory"
         ];
@@ -235,11 +234,4 @@
   };
 
   systemd.user.services.waybar.Unit.After = lib.mkForce "graphical-session.target";
-
-  # xdg.configFile."waybar/config" = {
-  #   source = "$XDG_CONFIG_HOME/waybar/config";
-  #   onChange = ''
-  #     ${pkgs.procps}/bin/pkill -u $USER waybar || true
-  #   '';
-  # };
 }
