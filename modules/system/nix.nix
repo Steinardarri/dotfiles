@@ -2,9 +2,11 @@
   nix = {
     settings = {
       auto-optimise-store = true;
+      builders-use-substitutes = true;
       experimental-features = [
         "nix-command"
         "flakes"
+        "repl-flake"
       ];
       warn-dirty = false;
       download-buffer-size = 524288000;
