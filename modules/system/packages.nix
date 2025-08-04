@@ -1,7 +1,4 @@
-{
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     bash
 
@@ -27,11 +24,11 @@
     nixd # nix
     # nodePackages.yaml-language-server
     # nodePackages.vscode-langservers-extracted # html, css, json, eslint
-    statix
 
     # formatters & linters
-    alejandra # nix
-    nixfmt
+    alejandra # nix formatter
+    nixfmt # nix formatter
+    statix # nix linter
     nodePackages.prettier
     shellcheck
     shfmt
