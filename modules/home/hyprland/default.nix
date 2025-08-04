@@ -118,11 +118,19 @@ in {
         workspace_swipe_create_new = true;
       };
 
-      render.new_render_scheduling = true;
+      render = {
+        new_render_scheduling = true;
+        direct_scanout = true;
+        # Fixes some apps stuttering (xournalpp, hyprlock). Possibly an amdgpu bug
+        explicit_sync = 0;
+        explicit_sync_kms = 0;
+      };
 
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
+        # disable auto polling for config file changes
+        disable_autoreload = true;
         vfr = 3;
         vrr = 3;
         mouse_move_enables_dpms = true;
@@ -143,6 +151,9 @@ in {
 
       # Autostart applications
       exec-once = [
+        # finalize startup
+        "uwsm finalize"
+
         # Core components
         # "gnome-keyring-daemon --start --components=secrets"
         "dbus-update-activation-environment --all"
