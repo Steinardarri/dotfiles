@@ -33,12 +33,12 @@ _: {
       "pin, title:^(Picture-in-Picture)$" # firefox
 
       # Calculator
-      "float, class:^(Qalculate-qt)$"
-      "size > >, class:^(Qalculate-qt)$"
+      "float, class:^(io.github.Qalculate.qalculate-qt)$"
+      "size > >, class:^(io.github.Qalculate.qalculate-qt)$"
 
       # Dim some programs
       "dimaround, class:^(xdg-desktop-portal-gtk)$"
-      # "dimaround, class:^(polkit-gnome-authentication-agent-1)$"
+      "dimaround, title:^(Hyprland Polkit Agent)$"
 
       # Games
       "immediate, class:^(steam_app_.*)$"
