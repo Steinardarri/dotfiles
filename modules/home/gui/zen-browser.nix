@@ -17,18 +17,20 @@
       isDefault = true;
 
       settings = {
-        "extensions.autoDisableScopes" = 0;
+        "apz.overscroll.enabled" = true;
+        "browser.aboutConfig.showWarning" = false;
         "browser.download.start_downloads_in_tmp_dir" = true;
         "browser.ml.linkPreview.enabled" = true;
+        "browser.search.isUS" = false;
         "browser.tabs.groups.enabled" = true;
         "browser.tabs.groups.smart.enabled" = true;
-        "cookiebanners.service.mode" = 2;
         "cookiebanners.service.mode.privateBrowsing" = 2;
+        "cookiebanners.service.mode" = 2;
         "cookiebanners.ui.desktop.enabled" = 2;
-        "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
         "distribution.searchplugins.defaultLocale" = "en-GB";
+        "extensions.autoDisableScopes" = 0;
         "general.useragent.locale" = "en-GB";
-        "browser.search.isUS" = false;
+        "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
       };
 
       search = {
