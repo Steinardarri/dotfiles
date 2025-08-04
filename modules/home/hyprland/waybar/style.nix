@@ -213,22 +213,6 @@
       -gtk-icon-effect: highlight;
       background-color: @base0A;
     }
-
-    #custom-fnott.dnd-on {
-      color: @base00;
-      background: @base0A;
-    }
-
-    #custom-swaync.dnd-notification,
-    #custom-swaync.dnd-inhibited-notification {
-      background: @base02;
-    }
-
-    #custom-swaync.notification,
-    #custom-swaync.inhibited-notification {
-      color: @base00;
-      background: @base0A;
-    }
   '';
 
   xdg.configFile."waybar/style.css" = {

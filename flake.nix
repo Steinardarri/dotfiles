@@ -169,6 +169,16 @@
       url = "github:hyprwm/hyprutils";
     };
 
+    hyprpanel = {
+      url = "github:Jas-SinghFSU/HyprPanel";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    walker = {
+      url = "github:abenz1267/walker/v0.13.13";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     ### Program Modules ###
 
     nix-vscode-extensions = {
@@ -186,11 +196,6 @@
 
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    walker = {
-      url = "github:abenz1267/walker/v0.13.13";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

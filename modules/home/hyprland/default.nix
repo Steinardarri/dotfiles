@@ -17,10 +17,11 @@ in {
     ./hypr/rules.nix
 
     ./walker
-    ./waybar
+    # ./waybar
 
     ./fuzzel.nix
-    ./notifications.nix
+    ./hyprpanel.nix
+    # ./notifications.nix
     ./packages.nix
     ./services.nix
   ];
