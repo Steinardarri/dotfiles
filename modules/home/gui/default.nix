@@ -17,13 +17,12 @@
     protonvpn-gui
     ungoogled-chromium
     grsync
+    baobab
 
     # KDE stuff
     krita
     qalculate-qt
     haruna
-
-    kdePackages.filelight
     kdePackages.kdenlive
     kdePackages.okular
 
