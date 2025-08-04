@@ -10,11 +10,13 @@
       autocd = true;
       autosuggestion.enable = true;
       enableCompletion = true;
-      history.size = 10000;
-      history.save = 10000;
-      history.expireDuplicatesFirst = true;
-      history.ignoreDups = true;
-      history.ignoreSpace = true;
+      history = {
+        size = 10000;
+        save = 10000;
+        expireDuplicatesFirst = true;
+        ignoreDups = true;
+        ignoreSpace = true;
+      };
       historySubstringSearch.enable = true;
 
       plugins = [
@@ -163,22 +165,32 @@
     };
 
     # zsh companions
-    nix-index.enable = true;
-    nix-index.enableZshIntegration = true;
+    nix-index = {
+      enable = true;
+      enableZshIntegration = true;
+    };
     nix-index-database.comma.enable = true;
 
-    fzf.enable = true;
-    fzf.enableZshIntegration = true;
+    fzf = {
+      enable = true;
+      enableZshIntegration = true;
+    };
 
-    zoxide.enable = true;
-    zoxide.enableZshIntegration = true;
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
 
-    broot.enable = true;
-    broot.enableZshIntegration = true;
+    broot = {
+      enable = true;
+      enableZshIntegration = true;
+    };
 
-    direnv.enable = true;
-    direnv.enableZshIntegration = true;
-    direnv.nix-direnv.enable = true;
+    direnv = {
+      enable = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
+    };
 
     starship.enableZshIntegration = true;
   };

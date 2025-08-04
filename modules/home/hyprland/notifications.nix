@@ -197,98 +197,100 @@
     };
   };
 
-  home.packages = with pkgs; [
-    libnotify # provides notify-send
-  ];
+  home = {
+    packages = with pkgs; [
+      libnotify # provides notify-send
+    ];
 
-  # Create notification test scripts
-  home.file.".local/bin/test-notifications" = {
-    executable = true;
-    text = ''
-      #!/usr/bin/env bash
+    # Create notification test scripts
+    file.".local/bin/test-notifications" = {
+      executable = true;
+      text = ''
+        #!/usr/bin/env bash
 
-      echo "Testing Dunst Orange Holographic Theme..."
+        echo "Testing Dunst Orange Holographic Theme..."
 
-      # Low urgency
-      notify-send -u low "System Update" "5 packages can be upgraded"
-      sleep 1
+        # Low urgency
+        notify-send -u low "System Update" "5 packages can be upgraded"
+        sleep 1
 
-      # Normal urgency
-      notify-send -u normal "New Message" "You have received a message from John Doe"
-      sleep 1
+        # Normal urgency
+        notify-send -u normal "New Message" "You have received a message from John Doe"
+        sleep 1
 
-      # Critical urgency
-      notify-send -u critical "Battery Low" "10% remaining - Connect charger"
-      sleep 1
+        # Critical urgency
+        notify-send -u critical "Battery Low" "10% remaining - Connect charger"
+        sleep 1
 
-      # With icon
-      notify-send -i firefox "Firefox" "Download completed: document.pdf"
-      sleep 1
+        # With icon
+        notify-send -i firefox "Firefox" "Download completed: document.pdf"
+        sleep 1
 
-      # Long text
-      notify-send "Long Notification" "This is a very long notification message that should wrap properly and display multiple lines of text in the notification window. It demonstrates how dunst handles longer content."
-      sleep 1
+        # Long text
+        notify-send "Long Notification" "This is a very long notification message that should wrap properly and display multiple lines of text in the notification window. It demonstrates how dunst handles longer content."
+        sleep 1
 
-      # Progress bar simulation (volume)
-      notify-send -h string:x-dunst-stack-tag:volume -h int:value:50 "Volume" "50%"
-      sleep 0.5
-      notify-send -h string:x-dunst-stack-tag:volume -h int:value:75 "Volume" "75%"
-      sleep 0.5
-      notify-send -h string:x-dunst-stack-tag:volume -h int:value:100 "Volume" "100%"
-
-      echo "All tests completed!"
-    '';
-  };
-
-  # Create advanced notification demos
-  home.file.".local/bin/demo-notifications" = {
-    executable = true;
-    text = ''
-      #!/usr/bin/env bash
-
-      # Music player simulation
-      notify-send -i spotify \
-        -a "Spotify" \
-        "Now Playing" \
-        "Holographic Dreams - Synthwave Artist\nAlbum: Neon Nights"
-
-      sleep 2
-
-      # Git commit notification
-      notify-send -i git \
-        -a "git" \
-        "Commit Success" \
-        "feat: Add orange holographic theme\n\n3 files changed, 127 insertions(+)"
-
-      sleep 2
-
-      # Calendar reminder
-      notify-send -i calendar \
-        -a "calendar" \
-        -u critical \
-        "Meeting in 15 minutes" \
-        "Team Standup - Zoom Room 3\nClick to join meeting"
-
-      sleep 2
-
-      # Download progress
-      for i in 25 50 75 100; do
-        notify-send \
-          -h string:x-dunst-stack-tag:download \
-          -h int:value:$i \
-          -a "download-manager" \
-          "Downloading update.tar.gz" \
-          "$i% - $(($i * 12)) MB / 1.2 GB"
+        # Progress bar simulation (volume)
+        notify-send -h string:x-dunst-stack-tag:volume -h int:value:50 "Volume" "50%"
         sleep 0.5
-      done
+        notify-send -h string:x-dunst-stack-tag:volume -h int:value:75 "Volume" "75%"
+        sleep 0.5
+        notify-send -h string:x-dunst-stack-tag:volume -h int:value:100 "Volume" "100%"
 
-      sleep 1
+        echo "All tests completed!"
+      '';
+    };
 
-      # Screenshot
-      notify-send -i camera \
-        -a "grimblast" \
-        "Screenshot captured" \
-        "Saved to ~/Pictures/screenshot-2024.png"
-    '';
+    # Create advanced notification demos
+    file.".local/bin/demo-notifications" = {
+      executable = true;
+      text = ''
+        #!/usr/bin/env bash
+
+        # Music player simulation
+        notify-send -i spotify \
+          -a "Spotify" \
+          "Now Playing" \
+          "Holographic Dreams - Synthwave Artist\nAlbum: Neon Nights"
+
+        sleep 2
+
+        # Git commit notification
+        notify-send -i git \
+          -a "git" \
+          "Commit Success" \
+          "feat: Add orange holographic theme\n\n3 files changed, 127 insertions(+)"
+
+        sleep 2
+
+        # Calendar reminder
+        notify-send -i calendar \
+          -a "calendar" \
+          -u critical \
+          "Meeting in 15 minutes" \
+          "Team Standup - Zoom Room 3\nClick to join meeting"
+
+        sleep 2
+
+        # Download progress
+        for i in 25 50 75 100; do
+          notify-send \
+            -h string:x-dunst-stack-tag:download \
+            -h int:value:$i \
+            -a "download-manager" \
+            "Downloading update.tar.gz" \
+            "$i% - $(($i * 12)) MB / 1.2 GB"
+          sleep 0.5
+        done
+
+        sleep 1
+
+        # Screenshot
+        notify-send -i camera \
+          -a "grimblast" \
+          "Screenshot captured" \
+          "Saved to ~/Pictures/screenshot-2024.png"
+      '';
+    };
   };
 }

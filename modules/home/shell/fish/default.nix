@@ -45,25 +45,37 @@ in {
     # Companions
     starship.enableFishIntegration = true;
 
-    nix-index.enable = true;
-    nix-index.enableFishIntegration = true;
+    nix-index = {
+      enable = true;
+      enableFishIntegration = true;
+    };
     nix-index-database.comma.enable = true;
 
-    fzf.enable = true;
-    fzf.enableFishIntegration = true;
+    fzf = {
+      enable = true;
+      enableFishIntegration = true;
+    };
 
-    zoxide.enable = true;
-    zoxide.enableFishIntegration = true;
-    zoxide.options = ["--cmd cd"];
+    zoxide = {
+      enable = true;
+      enableFishIntegration = true;
+      options = ["--cmd cd"];
+    };
 
-    broot.enable = true;
-    broot.enableFishIntegration = true;
+    broot = {
+      enable = true;
+      enableFishIntegration = true;
+    };
 
-    direnv.enable = true;
     # Fish Integration Automatically Enabled
-    direnv.nix-direnv.enable = true;
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
 
-    atuin.enable = true;
-    atuin.enableFishIntegration = true;
+    atuin = {
+      enable = true;
+      enableFishIntegration = true;
+    };
   };
 }
