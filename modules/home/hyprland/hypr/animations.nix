@@ -23,8 +23,8 @@
     "layersOut, 1, 2.4, menu_accel, popin 94%"
 
     # Fade
-    "fadeLayersIn, 1, 0.5, menu_decel"
-    "fadeLayersOut, 1, 2.7, menu_accel"
+    # "fadeLayersIn, 1, 0.5, menu_decel"
+    # "fadeLayersOut, 1, 2.7, menu_accel"
 
     # Workspaces
     "workspaces, 1, 7, menu_decel, slide"
