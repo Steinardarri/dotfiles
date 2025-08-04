@@ -9,8 +9,8 @@
     enableFishIntegration = true;
     shellWrapperName = "yy";
     plugins = {
-      full-border = pkgs.yaziPlugins.full-border;
-      starship = pkgs.yaziPlugins.starship;
+      inherit (pkgs.yaziPlugins) full-border;
+      inherit (pkgs.yaziPlugins) starship;
     };
     settings = {
       mgr = {

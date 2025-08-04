@@ -21,7 +21,7 @@
         package = pkgs.lato;
       };
     in {
-      sansSerif = sansSerif;
+      inherit sansSerif;
 
       serif = sansSerif;
 

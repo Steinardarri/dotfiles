@@ -43,16 +43,16 @@ in {
     settings = {
       # Imports
       monitor = hyprlandMonitors;
-      animations = animations;
+      inherit animations;
       workspace = hyprlandWorkspaces;
 
       # Import bindings from binds.nix
-      binddr = binds.binddr;
-      bindd = binds.bindd;
-      binddm = binds.binddm;
-      bindde = binds.bindde;
-      binddl = binds.binddl;
-      binddel = binds.binddel;
+      inherit (binds) binddr;
+      inherit (binds) bindd;
+      inherit (binds) binddm;
+      inherit (binds) bindde;
+      inherit (binds) binddl;
+      inherit (binds) binddel;
 
       general = {
         gaps_in = 4;

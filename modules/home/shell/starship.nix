@@ -1,4 +1,4 @@
-{...}: {
+_: {
   # Starship overrides
   programs.starship = {
     enable = true;

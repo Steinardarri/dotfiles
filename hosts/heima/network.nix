@@ -1,4 +1,4 @@
-{...}: {
+_: {
   # Host specific network module
 
   networking = {

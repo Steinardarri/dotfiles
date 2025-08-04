@@ -25,19 +25,19 @@ in {
       plugins = [
         {
           name = "colored-man-pages";
-          src = pkgs.fishPlugins.colored-man-pages.src;
+          inherit (pkgs.fishPlugins.colored-man-pages) src;
         }
         {
           name = "grc";
-          src = pkgs.fishPlugins.grc.src;
+          inherit (pkgs.fishPlugins.grc) src;
         }
         {
           name = "done";
-          src = pkgs.fishPlugins.done.src;
+          inherit (pkgs.fishPlugins.done) src;
         }
         {
           name = "forgit";
-          src = pkgs.fishPlugins.forgit.src;
+          inherit (pkgs.fishPlugins.forgit) src;
         }
       ];
     };

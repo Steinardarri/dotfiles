@@ -1,4 +1,4 @@
-{...}: {
+_: {
   wayland.windowManager.hyprland.settings = {
     "$floatingSize" = "600 400";
     "$pwvucontrol" = "com.saivert.pwvucontrol";
