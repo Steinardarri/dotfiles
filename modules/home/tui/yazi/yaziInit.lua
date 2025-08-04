@@ -5,8 +5,6 @@ require("full-border"):setup {
 	type = ui.Border.ROUNDED,
 }
 
-require("git"):setup()
-
 require("starship"):setup()
 
 -- Functions

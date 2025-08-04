@@ -13,19 +13,21 @@
       starship = pkgs.yaziPlugins.starship;
     };
     settings = {
-      manager = {
+      mgr = {
         ratio = [1 3 3];
         sort_by = "natural";
-        sort_sensitive = true;
+        sort_sensitive = false;
         sort_reverse = false;
         sort_dir_first = true;
         show_hidden = true;
         show_symlink = true;
         linemode = "size_and_mtime";
+        scrolloff = 150;
       };
 
       preview = {
-        tab_size = 3;
+        wrap = "yes";
+        tab_size = 2;
         image_filter = "lanczos3";
         max_width = 600;
         max_height = 900;
