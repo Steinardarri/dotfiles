@@ -13,6 +13,7 @@
         addCss = false;
         font = "sansSerif";
       };
+      spicetify.enable = false;
     };
   };
 }
