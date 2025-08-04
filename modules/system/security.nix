@@ -14,14 +14,12 @@
     rtkit.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    gnupg
-    pinentry-gnome3
-  ];
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+    pinentryPackage = pkgs.pinentry-gnome3;
+  };
+
   services.gnome.gnome-keyring.enable = true;
   programs.seahorse.enable = true;
-  environment.variables = {
-    PINENTRY = "pinentry-gnome3";
-    SSH_ASKPASS_REQUIRE = "prefer";
-  };
 }
