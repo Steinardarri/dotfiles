@@ -66,7 +66,16 @@ in {
   services = {
     dbus.enable = true;
     upower.enable = true;
-    openssh.enable = true;
+    openssh = {
+      enable = true;
+      ports = [5445];
+      settings = {
+        PasswordAuthentication = false;
+        KbdInteractiveAuthentication = false;
+        PermitRootLogin = "no";
+        AllowUsers = ["${username}"];
+      };
+    };
     libinput.enable = true;
     udisks2 = {
       enable = true;

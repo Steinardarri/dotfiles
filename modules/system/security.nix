@@ -1,6 +1,6 @@
 {
-  lib,
   pkgs,
+  lib,
   ...
 }: {
   security = {
@@ -10,27 +10,18 @@
     };
     protectKernelImage = true;
 
-    # Realtime stuff for PipeWire, PulsAudio
+    # Realtime stuff for PipeWire, PulseAudio
     rtkit.enable = true;
-
-    # Not working
-    # pam.services.kwallet = {
-    #   enable = true;
-    #   kwallet.enable = true;
-    # };
   };
 
   environment.systemPackages = with pkgs; [
-    kdePackages.kleopatra
-    kdePackages.kwallet
-    kdePackages.kwalletmanager
-    kdePackages.ksshaskpass
-    pinentry-qt
     gnupg
+    pinentry-gnome3
   ];
+  services.gnome.gnome-keyring.enable = true;
+  programs.seahorse.enable = true;
   environment.variables = {
-    PINENTRY = "pinentry-qt";
-    SSH_ASKPASS = lib.mkForce "/run/current-system/sw/bin/ksshaskpass";
+    PINENTRY = "pinentry-gnome3";
     SSH_ASKPASS_REQUIRE = "prefer";
   };
 }
