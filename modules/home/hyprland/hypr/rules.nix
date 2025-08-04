@@ -1,6 +1,6 @@
 _: {
   wayland.windowManager.hyprland.settings = {
-    "$floatingSize" = "600 400";
+    "$floatingSize" = "1200 800";
     "$pwvucontrol" = "com.saivert.pwvucontrol";
 
     windowrule = [
@@ -34,7 +34,12 @@ _: {
 
       # Calculator
       "float, class:^(io.github.Qalculate.qalculate-qt)$"
-      "size > >, class:^(io.github.Qalculate.qalculate-qt)$"
+      "size 600 800, class:^(io.github.Qalculate.qalculate-qt)$"
+
+      # GUI Editor
+      "float, title:^(Lapce)$"
+      "size $floatingSize, title:^(Lapce$"
+      "center, title:^(Lapce)$"
 
       # Dim some programs
       "dimaround, class:^(xdg-desktop-portal-gtk)$"
