@@ -18,13 +18,13 @@
     ungoogled-chromium
     grsync
     baobab
+    vlc
+    evince
 
     # KDE stuff
     krita
     qalculate-qt
-    haruna
     kdePackages.kdenlive
-    kdePackages.okular
 
     # LibreOffice
     libreoffice-qt6-fresh
