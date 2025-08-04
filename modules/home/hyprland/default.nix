@@ -121,9 +121,6 @@ in {
       render = {
         new_render_scheduling = true;
         direct_scanout = true;
-        # Fixes some apps stuttering (xournalpp, hyprlock). Possibly an amdgpu bug
-        explicit_sync = 0;
-        explicit_sync_kms = 0;
       };
 
       misc = {
