@@ -242,9 +242,9 @@
         };
 
         "ruff.nativeServer" = "on";
-        "security.workspace.trust.enabled" = false;
+        "security.workspace.trust.enabled" = true;
         "security.workspace.trust.startupPrompt" = "never";
-        "security.workspace.trust.untrustedFiles" = "newWindow";
+        "security.workspace.trust.untrustedFiles" = "open";
         "svelte.enable-ts-plugin" = true;
         "telemetry.telemetryLevel" = "off";
 
