@@ -12,6 +12,10 @@ _: {
         4070
         57621
       ];
+      allowedUDPPorts = [
+        # Spotify
+        5353
+      ];
     };
   };
 }

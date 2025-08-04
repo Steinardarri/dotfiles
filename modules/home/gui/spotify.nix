@@ -6,7 +6,7 @@
 }: {
   # https://gerg-l.github.io/spicetify-nix/
   imports = [
-    inputs.spicetify-nix.homeManagerModules.default
+    inputs.spicetify-nix.homeManagerModules.spicetify
   ];
 
   programs.spicetify = let

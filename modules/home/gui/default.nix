@@ -6,6 +6,7 @@
     ./kitty.nix
     ./lapce.nix
     ./mpv.nix
+    ./spotify.nix
     ./torrent.nix
     ./vscodium.nix
     ./zen-browser.nix
