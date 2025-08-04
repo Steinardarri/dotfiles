@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  lib,
+  ...
+}: let
   myAliases = import ./aliases.nix;
   myFunctions = import ./functions.nix;
   myAbbreviations = import ./abbreviations.nix;
@@ -7,7 +11,7 @@ in {
     fish = {
       enable = true;
 
-      interactiveShellInit = ''
+      interactiveShellInit = lib.mkBefore ''
         # Disable greeting
         set -g fish_greeting
 
@@ -16,6 +20,9 @@ in {
         # Color settings
         set fish_pager_color_prefix cyan
         set fish_color_autosuggestion brblack
+
+        # Hard set atuni binding
+        bind up _atuin_bind_up
       '';
 
       shellAliases = myAliases;
@@ -76,6 +83,11 @@ in {
     atuin = {
       enable = true;
       enableFishIntegration = true;
+      settings = {
+        dialect = "uk";
+        auto_sync = false;
+        update_check = false;
+      };
     };
   };
 }
