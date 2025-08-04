@@ -13,7 +13,6 @@
       createDirectories = true;
 
       # Define standard XDG user directories
-      desktop = "${config.home.homeDirectory}/Desktop";
       documents = "${config.home.homeDirectory}/Documents";
       download = "${config.home.homeDirectory}/Downloads";
       music = "${config.home.homeDirectory}/Music";
@@ -45,7 +44,6 @@
     XDG_RUNTIME_DIR = "/run/user/$(id -u)";
 
     # User directories
-    XDG_DESKTOP_DIR = config.xdg.userDirs.desktop;
     XDG_DOCUMENTS_DIR = config.xdg.userDirs.documents;
     XDG_DOWNLOAD_DIR = config.xdg.userDirs.download;
     XDG_MUSIC_DIR = config.xdg.userDirs.music;
