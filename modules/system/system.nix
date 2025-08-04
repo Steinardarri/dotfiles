@@ -50,6 +50,9 @@ in {
       SDL_VIDEODRIVER = "wayland"; # Run SDL2 applications on Wayland. Remove or set to x11 if games that provide older versions of SDL cause compatibility issues
       CLUTTER_BACKEND = "wayland"; # Clutter package already has wayland enabled, this variable will force Clutter applications to try and use the Wayland backend
 
+      ECORE_EVAS_ENGINE = "wayland_egl";
+      ELM_ENGINE = "wayland_egl";
+
       PAGER = "bat";
     };
 

@@ -26,7 +26,7 @@
     };
 
     sessionVariables = {
-      GDK_BACKEND = "wayland,x11,*"; # Use wayland if available. If not: try x11, then any other GDK backend.
+      GDK_BACKEND = "wayland"; # Use wayland if available
       GDK_SCALE = "1"; # Set GDK scale to 1 // For Xwayland on HiDPI
     };
   };
