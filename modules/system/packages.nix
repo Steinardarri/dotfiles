@@ -27,7 +27,7 @@
     nixd # nix
     # nodePackages.yaml-language-server
     # nodePackages.vscode-langservers-extracted # html, css, json, eslint
-    kdePackages.qtdeclarative
+    statix
 
     # formatters & linters
     alejandra # nix
@@ -74,6 +74,7 @@
     wget
     wormhole-william
     p7zip
+    deadnix
 
     # for fun
     cmatrix
