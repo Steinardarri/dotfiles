@@ -4,10 +4,20 @@
       extensions = [
         nemo-preview
         nemo-emblems
+        nemo-fileroller
+        nemo-seahorse
         nemo-python
         nemo-qml-plugin-dbus
       ];
     })
+
+    # cinnamon-desktop-editor
+    # Metadata
+    tracker
+    tracker-miners
+    # For MTP support (Android devices)
+    simple-mtpfs
+    libmtp
   ];
 
   xdg.desktopEntries.nemo = {
@@ -24,10 +34,14 @@
 
   dconf = {
     settings = {
-        "org/cinnamon/desktop/applications/terminal" = {
-            exec = "kitty";
-            # exec-arg = ""; # argument
-        };
+      "org/cinnamon/desktop/applications/terminal" = {
+        exec = "kitty";
+        # exec-arg = ""; # argument
+      };
     };
-};
+  };
+
+  dbus.packages = with pkgs; [
+    libcryptui
+  ];
 }

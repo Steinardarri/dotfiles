@@ -3,6 +3,7 @@
     ./flatpak.nix
     ./jellyfin.nix
     ./lact.nix
+    ./nemo.nix
   ];
 
   # DNS resolver
