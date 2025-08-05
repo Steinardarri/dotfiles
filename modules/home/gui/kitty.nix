@@ -35,6 +35,6 @@ _: {
   };
 
   home.sessionVariables = {
-    TERMINAL = "kitty";
+    TERM = "kitty";
   };
 }
