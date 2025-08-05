@@ -221,9 +221,7 @@
         "gitmoji.onlyUseCustomEmoji" = true;
 
         "nix.enableLanguageServer" = true;
-        "nix.hiddenLanguageServerErrors" = [
-          "textDocument/definition"
-        ];
+        "nix.hiddenLanguageServerErrors" = ["textDocument/definition"];
         "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
           "nixd" = {
@@ -254,7 +252,7 @@
         "terminal.integrated.cursorBlinking" = true;
         "terminal.integrated.cursorStyle" = "line";
         "terminal.integrated.cursorWidth" = 2;
-        "terminal.integrated.defaultProfile.linux" = "fish (2)";
+        "terminal.integrated.defaultProfile.linux" = "fish";
         "terminal.integrated.enableImages" = true;
         "terminal.integrated.fontSize" = lib.mkDefault 14;
         "terminal.integrated.persistentSessionScrollback" = 5000;
