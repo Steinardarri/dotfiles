@@ -12,11 +12,12 @@ let
     "Super, Return, ${d} Kitty terminal emulator, exec, uwsm app -- kitty.desktop"
     "Super Shift, Return, ${d} dropdown Kitty terminal, exec, [float; move 20% 5%; size 60% 60%] uwsm app -- kitty.desktop"
     "Super, E, ${d} Nemo file explorer, exec, uwsm app -- nemo.desktop"
+    "Super Shift, E, ${d} dropdown Nemo file explorer, exec, [float; move 5% 5%; size 60% 60%] uwsm app -- nemo.desktop"
     "Super, N, ${d} Codium text editor, exec, uwsm app -- codium.desktop"
     "Super, W, ${d} Zen web browser, exec, uwsm app -- zen-beta.desktop"
     "Super Shift, W, ${d} Zen web browser - private, exec, uwsm app -- zen-beta.desktop:new-private-window"
-    "Super, p, ${d} hyprpicker, exec, hyprpicker"
-    "Super, ., ${d} Emoji picker, exec, uwsm app -- emote"
+    "Super, P, ${d} hyprpicker, exec, hyprpicker"
+    "Super, ., ${d} Emoji picker, exec, [float; center; size 60% 60%] uwsm app -- emote"
     # "Super, Escape, ${d} system monitor, exec, $scrPath/sysmonlaunch.sh"
   ];
 
