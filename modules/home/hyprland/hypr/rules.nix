@@ -38,7 +38,7 @@ _: {
 
       # GUI Editor
       "float, title:^(Lapce)$"
-      "size $floatingSize, title:^(Lapce$"
+      "size $floatingSize, title:^(Lapce)$"
       "center, title:^(Lapce)$"
 
       # Dim some programs
@@ -47,6 +47,11 @@ _: {
 
       # Games
       "immediate, class:^(steam_app_.*)$"
+
+      # General Popups
+      "float, title:Properties$"
+      "size $floatingSize, title:Properties$"
+      "center, title:Properties$"
     ];
 
     layerrule = [
