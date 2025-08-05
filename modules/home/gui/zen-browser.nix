@@ -35,9 +35,9 @@
 
       search = {
         force = true;
-        default = "ddg";
+        default = "duckuckgo";
         engines = {
-          "ddg" = {
+          "duckuckgo" = {
             urls = [{template = "https://duckduckgo.com/?q={searchTerms}&ia=web";}];
             icon = "https://duckduckgo.com/favicon.ico";
             definedAliases = ["@ddg"];
@@ -119,7 +119,7 @@
         ];
       };
 
-      userChrome = lib.mkDefault ''
+      userChrome = lib.mkBefore ''
         :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
           & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
             & browser[transparent="true"] {
