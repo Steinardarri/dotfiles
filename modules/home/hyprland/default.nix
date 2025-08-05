@@ -32,8 +32,8 @@ in {
   in {
     enable = true;
 
-    package = hypr-pkgs.hyprland;
-    portalPackage = hypr-pkgs.xdg-desktop-portal-hyprland;
+    package = null;
+    portalPackage = null;
 
     # Disable XWayland when Steam finally gets a 64 bit wayland client
     xwayland.enable = true;
@@ -149,17 +149,6 @@ in {
 
       # Autostart applications
       exec-once = [
-        # finalize startup
-        "uwsm finalize"
-
-        # Core components
-        # "gnome-keyring-daemon --start --components=secrets"
-        "dbus-update-activation-environment --all"
-        "sleep 1 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-
-        # Clipboard history
-        # "wl-paste --type text --watch cliphist store"
-        # "wl-paste --type image --watch cliphist store"
       ];
     };
   };
