@@ -65,11 +65,12 @@ _: {
       "application/x-sharedlib" = "lapce.desktop"; # Dynamic libraries (for viewing)
       "application/x-executable" = "lapce.desktop"; # Binary executables (for viewing)
     };
+
     desktopEntries = {
       lapce = {
         name = "Lapce";
         comment = "Lightning-fast and powerful code editor written in Rust";
-        categories = ["Development" "IDE" "Text Editor"];
+        categories = ["Development" "IDE" "X-TextEditor"];
         genericName = "Code Editor";
 
         icon = "dev.lapce.lapce";
@@ -77,7 +78,7 @@ _: {
         mimeType = ["text/plain" "inode/directory"];
 
         actions = {
-          "New Window" = {
+          New-Window = {
             exec = "GTK_USE_PORTAL=1 lapce --new %F";
           };
         };
