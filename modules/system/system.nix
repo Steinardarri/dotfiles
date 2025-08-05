@@ -2,6 +2,7 @@
   inputs,
   pkgs,
   username,
+  lib,
   ...
 }: let
   hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
@@ -10,18 +11,30 @@ in {
     inputs.hyprland.nixosModules.default
   ];
 
-  users.users.root = {
-    # Zsh used as login shell then initializes fish
-    # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
-    shell = pkgs.zsh;
-  };
+  users.users.root.shell = pkgs.zsh;
 
   programs = {
     fish = {
       enable = true;
       useBabelfish = true;
     };
-    zsh.enable = true;
+    # Zsh used as the login shell, to launch hyprland and switch over to fish
+    # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
+    programs.zsh = {
+      enable = true;
+      profileExtra = ''
+        if uwsm check may-start; then
+          exec uwsm start hyprland-uwsm.desktop
+        fi
+      '';
+      initContent = lib.mkBefore ''
+        if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z $ZSH_EXECUTION_STRING ]]
+        then
+          if [[ -o login ]]; then LOGIN_OPTION='--login'; else LOGIN_OPTION=""; fi
+          exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
+        fi
+      '';
+    };
     # https://wiki.hypr.land/Nix/Hyprland-on-NixOS/
     hyprland = {
       enable = true;
@@ -34,11 +47,6 @@ in {
     };
     dconf.enable = true;
     nix-ld.enable = true;
-  };
-
-  services.xserver = {
-    enable = false;
-    videoDrivers = ["amdgpu"];
   };
 
   environment = {
@@ -88,13 +96,6 @@ in {
       enable = true;
       mountOnMedia = true;
     };
-  };
-
-  fonts = {
-    packages = with pkgs; [
-      nerd-fonts.hack
-    ];
-    fontDir.enable = true;
   };
 
   xdg.portal = {
