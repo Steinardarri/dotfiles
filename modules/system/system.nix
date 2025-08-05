@@ -20,7 +20,7 @@ in {
     };
     # Zsh used as the login shell, to launch hyprland and switch over to fish
     # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
-    programs.zsh = {
+    zsh = {
       enable = true;
       profileExtra = ''
         if uwsm check may-start; then
