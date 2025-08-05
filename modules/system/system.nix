@@ -22,12 +22,12 @@ in {
     # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
     zsh = {
       enable = true;
-      profileExtra = ''
+      loginShellInit = ''
         if uwsm check may-start; then
           exec uwsm start hyprland-uwsm.desktop
         fi
       '';
-      initContent = lib.mkBefore ''
+      interactiveShellInit = lib.mkBefore ''
         if [[ $(ps --no-header --pid=$PPID --format=comm) != "fish" && -z $ZSH_EXECUTION_STRING ]]
         then
           if [[ -o login ]]; then LOGIN_OPTION='--login'; else LOGIN_OPTION=""; fi
