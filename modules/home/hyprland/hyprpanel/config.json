@@ -78,19 +78,20 @@
   "bar.workspaces.showWsIcons": true,
   "bar.workspaces.showApplicationIcons": true,
   "bar.workspaces.numbered_active_indicator": "highlight",
-  "theme.bar.buttons.workspaces.numbered_active_highlight_padding": "0.3em",
+  "theme.bar.buttons.workspaces.numbered_active_highlight_padding": "0.3333em",
   "bar.workspaces.applicationIconMap": {
     "title:YouTube": "",
     "class:codium": "",
     "class:gjs": ""
   },
   "bar.workspaces.applicationIconEmptyWorkspace": "󰆢",
-  "bar.workspaces.workspaces": 3,
+  "bar.workspaces.workspaces": 6,
   "bar.workspaces.workspaceIconMap": {},
   "bar.windowtitle.title_map": [
     ["codium", "", "Codium"],
     ["gjs", "", "HyprPanel Settings"]
   ],
+  "bar.system_tray.ignore_list": ["blueman", "nm-applet"],
   "bar.clock.format": "  %R | %a %d. %b",
   "bar.media.show_active_only": true,
   "bar.notifications.show_total": true,
@@ -115,6 +116,9 @@
   "menus.dashboard.directories.right.directory1.command": "zsh -c \"xdg-open $HOME/Documents/\"",
   "menus.dashboard.directories.right.directory2.command": "zsh -c \"xdg-open $HOME/Pictures/\"",
   "menus.dashboard.directories.right.directory3.command": "zsh -c \"xdg-open $HOME/\"",
+
+  // Theme //
+
   "theme.bar.menus.menu.notifications.scrollbar.color": "#1abc9c",
   "theme.bar.menus.menu.notifications.pager.label": "#565f89",
   "theme.bar.menus.menu.notifications.pager.button": "#1abc9c",
