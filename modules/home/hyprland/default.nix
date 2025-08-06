@@ -1,6 +1,5 @@
 {
   inputs,
-  pkgs,
   config,
   KBDLayout,
   hyprlandMonitors,
@@ -27,9 +26,7 @@ in {
   ];
 
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
-  wayland.windowManager.hyprland = let
-    hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
-  in {
+  wayland.windowManager.hyprland = {
     enable = true;
 
     package = null;

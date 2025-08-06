@@ -51,7 +51,7 @@ _: {
 
       # General Popups
       "float, title:Properties$"
-      "size $floatingSize, title:Properties$"
+      "size $floatingSize, title:^(.*Properties)$"
       "center, title:Properties$"
     ];
 
