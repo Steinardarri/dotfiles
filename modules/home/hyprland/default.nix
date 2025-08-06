@@ -16,11 +16,11 @@ in {
     ./hypr/decoration.nix
     ./hypr/rules.nix
 
+    ./hyprpanel
     ./walker
     # ./waybar
 
     ./fuzzel.nix
-    ./hyprpanel.nix
     # ./notifications.nix
     ./packages.nix
     ./services.nix
