@@ -5,17 +5,11 @@
         "isActiveCommand": "systemctl --user status hypridle.service | grep -q 'Active: active (running)' && echo 'yes' || echo 'no'",
         "startCommand": "systemctl --user start hypridle.service",
         "stopCommand": "systemctl --user stop hypridle.service"
-      }
+      },
+      "storage.paths": ["/"]
     },
     "launcher": {
       "autoDetectIcon": true
-    },
-    "layouts": {
-      "0": {
-        "left": ["dashboard", "workspaces"],
-        "middle": ["media"],
-        "right": ["volume", "systray", "notifications"]
-      }
     },
     "workspaces": {
       "show_icons": true
@@ -40,15 +34,8 @@
       }
     }
   },
-  "theme": {
-    "bar": {
-      "transparent": true
-    },
-    "font": {
-      "name": "Hack Nerd Font Mono",
-      "size": "16px"
-    }
-  },
+  "theme.bar.transparent": true,
+  "theme.font.size": "16px",
   "theme.font.name": "Sans",
   "theme.font.label": "Sans",
   "tear": true,
@@ -82,6 +69,7 @@
   "bar.workspaces.applicationIconMap": {
     "title:YouTube": "",
     "class:codium": "",
+    "class:equibop": "",
     "class:gjs": ""
   },
   "bar.workspaces.applicationIconEmptyWorkspace": "󰆢",
@@ -89,9 +77,10 @@
   "bar.workspaces.workspaceIconMap": {},
   "bar.windowtitle.title_map": [
     ["codium", "", "Codium"],
-    ["gjs", "", "HyprPanel Settings"]
+    ["gjs", "", "HyprPanel Settings"],
+    ["equibop", "", "Equibop"]
   ],
-  "bar.system_tray.ignore_list": ["blueman", "nm-applet"],
+  "bar.systray.ignore": ["blueman", "nm-applet"],
   "bar.clock.format": "  %R | %a %d. %b",
   "bar.media.show_active_only": true,
   "bar.notifications.show_total": true,
@@ -104,20 +93,28 @@
   "menus.dashboard.controls.enabled": true,
   "menus.dashboard.stats.enabled": true,
   "menus.dashboard.shortcuts.enabled": true,
-  "menus.dashboard.directories.right.directory3.label": "󱂵  Home",
-  "menus.dashboard.directories.right.directory2.label": "󰉏  Pictures",
+  "menus.dashboard.directories.left.directory1.label": "󱂵  Home",
+  "menus.dashboard.directories.left.directory1.command": "zsh -c \"xdg-open $HOME/\"",
+  "menus.dashboard.directories.left.directory2.command": "zsh -c \"xdg-open $HOME/Downloads/\"",
+  "menus.dashboard.directories.left.directory2.label": "󰉍  Downloads",
+  "menus.dashboard.directories.left.directory3.label": "󰉏  Videos",
+  "menus.dashboard.directories.left.directory3.command": "zsh -c \"xdg-open $HOME/Videos/\"",
   "menus.dashboard.directories.right.directory1.label": "󱧶  Documents",
-  "menus.dashboard.directories.left.directory3.label": "󰚝  Projects",
-  "menus.dashboard.directories.left.directory2.label": "󰉏  Videos",
-  "menus.dashboard.directories.left.directory1.label": "󰉍  Downloads",
-  "menus.dashboard.directories.left.directory1.command": "zsh -c \"xdg-open $HOME/Downloads/\"",
-  "menus.dashboard.directories.left.directory2.command": "zsh -c \"xdg-open $HOME/Videos/\"",
-  "menus.dashboard.directories.left.directory3.command": "zsh -c \"xdg-open $HOME/Projects/\"",
   "menus.dashboard.directories.right.directory1.command": "zsh -c \"xdg-open $HOME/Documents/\"",
+  "menus.dashboard.directories.right.directory2.label": "󰉏  Pictures",
   "menus.dashboard.directories.right.directory2.command": "zsh -c \"xdg-open $HOME/Pictures/\"",
-  "menus.dashboard.directories.right.directory3.command": "zsh -c \"xdg-open $HOME/\"",
-
-  // Theme //
+  "menus.dashboard.directories.right.directory3.label": "󰚝  Projects",
+  "menus.dashboard.directories.right.directory3.command": "zsh -c \"xdg-open $HOME/Projects/\"",
+  "bar.customModules.storage.paths": ["/"],
+  "menus.dashboard.shortcuts.right.shortcut3.command": "zsh -c \"/nix/store/g1zza01wq14valbnzsr38i1psq7slhwq-hyprpanel-0-unstable-dev/share/scripts/snapshot.sh\"",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "uwsm app -- steam.desktop",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Steam",
+  "menus.dashboard.shortcuts.left.shortcut2.command": "uwsm app -- spotify.desktop",
+  "menus.dashboard.shortcuts.left.shortcut3.command": "uwsm app -- equibop.desktop",
+  "menus.dashboard.shortcuts.left.shortcut4.command": "uwsm app -- io.github.Qalculate.qalculate-qt.desktop",
+  "menus.dashboard.shortcuts.left.shortcut4.tooltip": "Qalculate!",
+  "menus.dashboard.shortcuts.left.shortcut4.icon": "",
 
   "theme.bar.menus.menu.notifications.scrollbar.color": "#1abc9c",
   "theme.bar.menus.menu.notifications.pager.label": "#565f89",
@@ -514,15 +511,5 @@
   "theme.bar.buttons.modules.worldclock.background": "#272a3d",
   "theme.bar.buttons.modules.worldclock.icon": "#272a3d",
   "theme.bar.buttons.modules.worldclock.icon_background": "#9d7cd8",
-  "theme.bar.buttons.modules.worldclock.border": "#9d7cd8",
-  "bar.customModules.storage.paths": ["/"],
-  "menus.dashboard.shortcuts.right.shortcut3.command": "zsh -c \"/nix/store/g1zza01wq14valbnzsr38i1psq7slhwq-hyprpanel-0-unstable-dev/share/scripts/snapshot.sh\"",
-  "menus.dashboard.shortcuts.left.shortcut1.command": "uwsm app -- steam.desktop",
-  "menus.dashboard.shortcuts.left.shortcut1.icon": "",
-  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Steam",
-  "menus.dashboard.shortcuts.left.shortcut2.command": "uwsm app -- spotify.desktop",
-  "menus.dashboard.shortcuts.left.shortcut3.command": "uwsm app -- equibop.desktop",
-  "menus.dashboard.shortcuts.left.shortcut4.command": "uwsm app -- io.github.Qalculate.qalculate-qt.desktop",
-  "menus.dashboard.shortcuts.left.shortcut4.tooltip": "Qalculate!",
-  "menus.dashboard.shortcuts.left.shortcut4.icon": ""
+  "theme.bar.buttons.modules.worldclock.border": "#9d7cd8"
 }
