@@ -99,6 +99,11 @@
         };
 
         "chat.commandCenter.enabled" = false;
+        "color-highlight.markerType" = "dot-before";
+        "color-highlight.markRuler" = false;
+        "color-highlight.matchHslWithNoFunction" = true;
+        "color-highlight.matchRgbWithNoFunction" = true;
+        "color-highlight.matchWords" = false;
         "continue.enableTabAutocomplete" = false;
         "continue.telemetryEnabled" = false;
         "diffEditor.maxComputationTime" = 0;
