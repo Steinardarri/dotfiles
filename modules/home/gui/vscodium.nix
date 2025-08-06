@@ -163,9 +163,9 @@
         "files.trimTrailingWhitespace" = true;
 
         "git-graph.repository.commits.fetchAvatars" = true;
-        "git-graph.repository.commits.showSignatureStatus" = false;
-        "git-graph.repository.sign.commits" = false;
-        "git-graph.repository.sign.tags" = false;
+        "git-graph.repository.commits.showSignatureStatus" = true;
+        "git-graph.repository.sign.commits" = true;
+        "git-graph.repository.sign.tags" = true;
 
         "git.allowForcePush" = true;
         "git.autofetch" = true;
@@ -173,7 +173,7 @@
         "git.confirmSync" = false;
         "git.defaultBranchName" = "master";
         "git.defaultCloneDirectory" = "~/Verkefni";
-        "git.enableCommitSigning" = false;
+        "git.enableCommitSigning" = true;
         "git.enableSmartCommit" = true;
         "git.fetchOnPull" = true;
         "git.openAfterClone" = "alwaysNewWindow";
