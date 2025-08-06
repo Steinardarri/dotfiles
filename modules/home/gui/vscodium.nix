@@ -32,6 +32,7 @@
             pkief.material-icon-theme
             pkief.material-product-icons
             seatonjiang.gitmoji-vscode
+            naumovs.color-highlight
 
             # Toolset
             christian-kohler.path-intellisense
