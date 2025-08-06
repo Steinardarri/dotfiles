@@ -17,10 +17,8 @@ in {
 
     ./hyprpanel
     ./walker
-    # ./waybar
 
     ./fuzzel.nix
-    # ./notifications.nix
     ./packages.nix
     ./services.nix
   ];
