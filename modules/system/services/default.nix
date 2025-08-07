@@ -3,7 +3,6 @@
     ./flatpak.nix
     ./jellyfin.nix
     ./lact.nix
-    ./nemo.nix
   ];
 
   # Slows down boot time
@@ -19,11 +18,11 @@
 
     dbus.implementation = "broker";
 
+    atuin.enable = true;
+
     # Power
     logind.powerKey = "suspend";
     power-profiles-daemon.enable = true;
     upower.enable = true;
-
-    atuin.enable = true;
   };
 }

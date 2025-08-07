@@ -1,7 +1,5 @@
 {pkgs, ...}: {
   imports = [
-    ./nemo
-
     ./discord.nix
     ./kitty.nix
     ./lapce.nix

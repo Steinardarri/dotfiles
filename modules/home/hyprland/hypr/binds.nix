@@ -11,8 +11,8 @@ let
   in [
     "Super, Return, ${d} Kitty terminal emulator, exec, uwsm app -- kitty.desktop"
     "Super Shift, Return, ${d} dropdown Kitty terminal, exec, [float; move 20% 5%; size 60% 60%] uwsm app -- kitty.desktop"
-    "Super, E, ${d} Nemo file explorer, exec, uwsm app -- nemo.desktop"
-    "Super Shift, E, ${d} dropdown Nemo file explorer, exec, [float; move 5% 5%; size 60% 60%] uwsm app -- nemo.desktop"
+    "Super, E, ${d} Thunar file explorer, exec, uwsm app -- thunar.desktop"
+    "Super Shift, E, ${d} dropdown Thunar file explorer, exec, [float; move 5% 5%; size 60% 60%] uwsm app -- thunar.desktop"
     "Super, N, ${d} Codium text editor, exec, uwsm app -- codium.desktop"
     "Super, W, ${d} Zen web browser, exec, uwsm app -- zen-beta.desktop"
     "Super Shift, W, ${d} Zen web browser - private, exec, uwsm app -- zen-beta.desktop:new-private-window"
