@@ -65,6 +65,7 @@
             # Workflow
             alefragnani.bookmarks
             gruntfuggly.todo-tree
+            mkhl.direnv
           ]
           ++ [
             # Complications with name starting with digit
@@ -302,7 +303,7 @@
         "workbench.statusBar.visible" = true;
 
         "yaml.schemas" = {
-          "/home/steinardth/.vscode-oss/extensions/continue.continue/config-yaml-schema.json" = [
+          "file:///home/steinardth/.vscode-oss/extensions/continue.continue/config-yaml-schema.json" = [
             ".continue/**/*.yaml"
           ];
         };

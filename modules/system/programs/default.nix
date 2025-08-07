@@ -7,5 +7,10 @@
 
   programs = {
     partition-manager.enable = true;
+    direnv = {
+      enable = true;
+      enableFishIntegration = true;
+      enableZshIntegration = true;
+    };
   };
 }
