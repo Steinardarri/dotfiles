@@ -27,4 +27,5 @@
   lsblks = "lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid";
   weather = "curl -s 'wttr.in/Reykjavik?MQ' | rg -v 'Follow'";
   sbv = "readlink /nix/var/nix/profiles/system"; # system build version
+  hindber = "TERM=xterm-256color ssh hindber";
 }

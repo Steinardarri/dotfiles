@@ -34,6 +34,7 @@
         "audio"
         "render"
         "video"
+        "pihole"
       ];
       # Zsh used as login shell then initializes fish
       # https://nixos.wiki/wiki/Fish#Setting_fish_as_your_shell
