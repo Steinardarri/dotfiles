@@ -24,6 +24,7 @@
             kylinideteam.gitlens # Gitlens lower version for friendly license
             mhutchie.git-graph
             usernamehw.errorlens
+            editorconfig.editorconfig
 
             # Aesthetics
             esbenp.prettier-vscode
