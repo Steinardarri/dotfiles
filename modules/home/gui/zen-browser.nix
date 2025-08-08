@@ -31,6 +31,8 @@
         "extensions.autoDisableScopes" = 0;
         "general.useragent.locale" = "en-GB";
         "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = false;
+        "devtools.debugger.remote-enabled" = true;
+        "devtools.chrome.enabled" = true;
       };
 
       search = {
@@ -99,11 +101,13 @@
       };
 
       extensions = {
+        # https://gitlab.com/rycee/nur-expressions/-/raw/master/pkgs/firefox-addons/addons.json
         packages = with pkgs.nur.repos.rycee.firefox-addons; [
           ublock-origin
           darkreader
           privacy-badger
           proton-pass
+          sponsorblock
           augmented-steam
           re-enable-right-click
           behind-the-overlay-revival
@@ -119,7 +123,7 @@
         ];
       };
 
-      userChrome = lib.mkDefault ''
+      userChrome = lib.mkAfter ''
         :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
           & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
             & browser[transparent="true"] {
