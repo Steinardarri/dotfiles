@@ -26,4 +26,4 @@
 
 ##
 
-Feel free to clone & copy code from this repository. Make sure to change flake inputs first if you decide to build it as a system. 
+Feel free to clone & copy code from this repository. Make sure to create a new host and change the flake inputs first if you decide to build it as a system.
