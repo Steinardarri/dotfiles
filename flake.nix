@@ -150,7 +150,7 @@
     ### Desktop Environment ###
 
     stylix = {
-      url = "github:danth/stylix";
+      url = "github:nix-community/stylix";
       inputs = {
         # flake-parts.follows = "flake-parts";
         nixpkgs.follows = "nixpkgs";
