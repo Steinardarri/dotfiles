@@ -16,6 +16,8 @@
 
 🐚 **Shell**: Fish
 
+🔐 **Secrets**: git-crypt (Will probably change, not using it right now)
+
 ✏️ **Editor**: VSCodium
 
 🌐 **Browser**: Zen-Browser
