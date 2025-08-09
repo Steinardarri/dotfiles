@@ -19,6 +19,7 @@ in {
         set -l height (tput lines)
         if test $height -ge 25
           fastfetch
+        end
 
         # Color settings
         set fish_pager_color_prefix cyan
