@@ -65,6 +65,7 @@
   "bar.workspaces.showApplicationIcons": true,
   "bar.workspaces.numbered_active_indicator": "highlight",
   "theme.bar.buttons.workspaces.numbered_active_highlight_padding": "0.3333em",
+  "theme.bar.buttons.workspaces.numbered_inactive_padding": "0.3333em",
   "bar.workspaces.applicationIconMap": {
     "title:YouTube": "",
     "class:codium": "",
