@@ -79,7 +79,7 @@
     ["codium", "", "Codium"],
     ["gjs", "", "HyprPanel Settings"],
     ["equibop", "", "Equibop"],
-    ["org.gnome.seahorse.Application", "", "Passwords andKeys"]
+    ["Org.gnome.seahorse.Application", "", "Passwords and Keys"]
   ],
   "bar.systray.ignore": ["blueman", "nm-applet"],
   "bar.clock.format": "  %R | %a %d. %b",
