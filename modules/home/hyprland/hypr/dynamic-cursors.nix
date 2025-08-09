@@ -18,7 +18,7 @@
     # controls how much the cursor is stretched
     # this value controls at which speed (px/s) the full stretch is reached
     # the full stretch being twice the original length
-    limit = 5000;
+    limit = 3000;
 
     # relationship between speed and stretch amount, supports these values:
     # linear             - a linear function is used
@@ -30,41 +30,6 @@
     # time window (ms) over which the speed is calculated
     # higher values will make slow motions smoother but more delayed
     window = 100;
-  };
-
-  # configure shake to find
-  # magnifies the cursor if its is being shaken
-  shake = {
-    # enables shake to find
-    enabled = true;
-
-    # use nearest-neighbour (pixelated) scaling when shaking
-    # may look weird when effects are enabled
-    nearest = true;
-
-    # controls how soon a shake is detected
-    # lower values mean sooner
-    threshold = 10.0;
-
-    # magnification level immediately after shake start
-    base = 4.0;
-    # magnification increase per second when continuing to shake
-    speed = 2.0;
-    # how much the speed is influenced by the current shake intensitiy
-    influence = 0.0;
-
-    # maximal magnification the cursor can reach
-    # values below 1 disable the limit (e.g. 0)
-    limit = 10.0;
-
-    # time in millseconds the cursor will stay magnified after a shake has ended
-    timeout = 2000;
-
-    # show cursor behaviour `tilt`, `rotate`, etc. while shaking
-    effects = true;
-
-    # enable ipc events for shake
-    ipc = false;
   };
 
   # use hyprcursor to get a higher resolution texture when the cursor is magnified
