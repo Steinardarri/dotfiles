@@ -1,36 +1,40 @@
 {
   enabled = true;
+
   bezier = [
-    # Material Design inspired curves from dots-hyprland
-    "expressiveFastSpatial, 0.42, 1.67, 0.21, 0.90"
-    "expressiveSlowSpatial, 0.39, 1.29, 0.35, 0.98"
-    "expressiveDefaultSpatial, 0.38, 1.21, 0.22, 1.00"
-    "emphasizedDecel, 0.05, 0.7, 0.1, 1"
-    "emphasizedAccel, 0.3, 0, 0.8, 0.15"
-    "standardDecel, 0, 0, 0, 1"
-    "menu_decel, 0.1, 1, 0, 1"
-    "menu_accel, 0.52, 0.03, 0.72, 0.08"
+    "wind, 0.05, 0.85, 0.03, 0.97"
+    "winIn, 0.07, 0.88, 0.04, 0.99"
+    "winOut, 0.20, -0.15, 0, 1"
+    "liner, 1, 1, 1, 1"
+    "md3_standard, 0.12, 0, 0, 1"
+    "md3_decel, 0.05, 0.80, 0.10, 0.97"
+    "md3_accel, 0.20, 0, 0.80, 0.08"
+    "overshot, 0.05, 0.85, 0.07, 1.04"
+    "crazyshot, 0.1, 1.22, 0.68, 0.98"
+    "hyprnostretch, 0.05, 0.82, 0.03, 0.94"
+    "menu_decel, 0.05, 0.82, 0, 1"
+    "menu_accel, 0.20, 0, 0.82, 0.10"
+    "easeInOutCirc, 0.75, 0, 0.15, 1"
+    "easeOutCirc, 0, 0.48, 0.38, 1"
+    "easeOutExpo, 0.10, 0.94, 0.23, 0.98"
+    "softAcDecel, 0.20, 0.20, 0.15, 1"
+    "md2, 0.30, 0, 0.15, 1"
+    "OutBack, 0.28, 1.40, 0.58, 1"
+    "easeInOutCirc, 0.78, 0, 0.15, 1"
   ];
+
   animation = [
-    # Windows
-    "windowsIn, 1, 3, emphasizedDecel, popin 80%"
-    "windowsOut, 1, 2, emphasizedDecel, popin 90%"
-    "windowsMove, 1, 3, emphasizedDecel, slide"
-    "border, 1, 10, emphasizedDecel"
-
-    # Layers
-    "layersIn, 1, 2.7, emphasizedDecel, popin 93%"
-    "layersOut, 1, 2.4, menu_accel, popin 94%"
-
-    # Fade
-    # "fadeLayersIn, 1, 0.5, menu_decel"
-    # "fadeLayersOut, 1, 2.7, menu_accel"
-
-    # Workspaces
-    "workspaces, 1, 7, menu_decel, slide"
-
-    # Special workspace
-    "specialWorkspaceIn, 1, 2.8, emphasizedDecel, slidevert"
-    "specialWorkspaceOut, 1, 1.2, emphasizedAccel, slidevert"
+    "border, 1, 1.6, liner"
+    "borderangle, 1, 82, liner, loop"
+    "windowsIn, 1, 3.2, winIn, slide"
+    "windowsOut, 1, 2.8, easeOutCirc"
+    "windowsMove, 1, 3.0, wind, slide"
+    "fade, 1, 1.8, md3_decel"
+    "layersIn, 1, 1.8, menu_decel, slide"
+    "layersOut, 1, 1.5, menu_accel"
+    "fadeLayersIn, 1, 1.6, menu_decel"
+    "fadeLayersOut, 1, 1.8, menu_accel"
+    "workspaces, 1, 4.0, menu_decel, slide"
+    "specialWorkspace, 1, 2.3, md3_decel, slidefadevert 15%"
   ];
 }

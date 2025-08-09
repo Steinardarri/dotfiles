@@ -2,17 +2,13 @@
   inputs,
   pkgs,
   config,
+  lib,
   KBDLayout,
   hyprlandMonitors,
   hyprlandWorkspaces,
   ...
-}: let
-  animations = import ./hypr/animations.nix;
-
-  binds = import ./hypr/binds.nix;
-in {
+}: {
   imports = [
-    ./hypr/decoration.nix
     ./hypr/rules.nix
 
     ./hyprpanel
@@ -37,11 +33,20 @@ in {
     # Systemd setting conflicts with uwsm
     systemd.enable = false;
 
-    settings = {
+    settings = let
+      binds = import ./hypr/binds.nix;
+    in {
       # Imports
+      animations = import ./hypr/animations.nix;
+      decoration = import ./hypr/decoration.nix {
+        inherit config;
+        inherit lib;
+      };
       monitor = hyprlandMonitors;
-      inherit animations;
       workspace = hyprlandWorkspaces;
+      "plugin:dynamic-cursors" =
+        import
+        ./hypr/dynamic-cursors.nix;
 
       # Import bindings from binds.nix
       inherit (binds) binddr;
@@ -127,12 +132,12 @@ in {
         disable_autoreload = true;
         vfr = 3;
         vrr = 3;
-        mouse_move_enables_dpms = true;
+        mouse_move_enables_dpms = false;
         key_press_enables_dpms = true;
         animate_manual_resizes = true;
         animate_mouse_windowdragging = true;
         enable_swallow = false;
-        swallow_regex = "(kitty)";
+        swallow_regex = "([Kk]itty)";
         new_window_takes_over_fullscreen = 2;
         allow_session_lock_restore = true;
         initial_workspace_tracking = false;
@@ -147,6 +152,8 @@ in {
       exec-once = [
       ];
     };
+
+    plugins = [inputs.hypr-dynamic-cursors.packages.${pkgs.stdenv.hostPlatform.system}.hypr-dynamic-cursors];
   };
 
   # Make uwsm grab env variables from Home Manager
