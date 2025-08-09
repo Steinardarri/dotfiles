@@ -1,16 +1,8 @@
 {
-  inputs,
   pkgs,
-  username,
   lib,
   ...
-}: let
-  hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
-in {
-  imports = [
-    inputs.hyprland.nixosModules.default
-  ];
-
+}: {
   users.users.root.shell = pkgs.zsh;
 
   programs = {
@@ -35,18 +27,6 @@ in {
         fi
       '';
     };
-    # https://wiki.hypr.land/Nix/Hyprland-on-NixOS/
-    hyprland = {
-      enable = true;
-      withUWSM = true;
-      package = hypr-pkgs.hyprland;
-      portalPackage = hypr-pkgs.xdg-desktop-portal-hyprland;
-      # Disable XWayland when Steam finally gets a 64 bit wayland client
-      xwayland.enable = true;
-      systemd.setPath.enable = true;
-    };
-    dconf.enable = true;
-    nix-ld.enable = true;
   };
 
   environment = {
@@ -78,37 +58,8 @@ in {
     ];
   };
 
-  services = {
-    dbus.enable = true;
-    upower.enable = true;
-    openssh = {
-      enable = true;
-      ports = [5445];
-      settings = {
-        PasswordAuthentication = false;
-        KbdInteractiveAuthentication = false;
-        PermitRootLogin = "no";
-        AllowUsers = ["${username}"];
-      };
-    };
-    libinput.enable = true;
-    udisks2 = {
-      enable = true;
-      mountOnMedia = true;
-    };
-  };
-
   xdg.portal = {
     enable = true;
-    xdgOpenUsePortal = true;
-    config = {
-      common.default = ["gtk"];
-      hyprland.default = [
-        "gtk"
-        "hyprland"
-      ];
-    };
-
     extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
 

@@ -1,5 +1,6 @@
 {
   inputs,
+  pkgs,
   config,
   KBDLayout,
   hyprlandMonitors,
@@ -11,7 +12,6 @@
   binds = import ./hypr/binds.nix;
 in {
   imports = [
-    inputs.hyprland.homeManagerModules.default
     ./hypr/decoration.nix
     ./hypr/rules.nix
 
@@ -24,11 +24,12 @@ in {
   ];
 
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/
-  wayland.windowManager.hyprland = {
+  wayland.windowManager.hyprland = let
+    hypr-pkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
+  in {
     enable = true;
-
-    package = null;
-    portalPackage = null;
+    package = hypr-pkgs.hyprland;
+    portalPackage = hypr-pkgs.xdg-desktop-portal-hyprland;
 
     # Disable XWayland when Steam finally gets a 64 bit wayland client
     xwayland.enable = true;

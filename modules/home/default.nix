@@ -1,9 +1,7 @@
-{
-  pkgs,
-  lib,
-  ...
-}: {
+{inputs,...}: {
   imports = [
+    inputs.hyprland.homeManagerModules.default
+
     ./gui
     ./hyprland
     ./services
