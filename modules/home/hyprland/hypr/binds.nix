@@ -1,3 +1,6 @@
+# https://wiki.hypr.land/Configuring/Binds/
+# https://raw.githubusercontent.com/xkbcommon/libxkbcommon/refs/heads/master/include/xkbcommon/xkbcommon-keysyms.h
+# https://wiki.hypr.land/Configuring/Dispatchers/
 let
   launcherBind = let
     d = "[Launcher]";
@@ -17,7 +20,7 @@ let
     "Super, W, ${d} Zen web browser, exec, uwsm app -- zen-beta.desktop"
     "Super Shift, W, ${d} Zen web browser - private, exec, uwsm app -- zen-beta.desktop:new-private-window"
     "Super, P, ${d} hyprpicker, exec, hyprpicker"
-    "Super, ., ${d} Emoji picker, exec, [float; center; size 60% 60%] uwsm app -- emote"
+    "Super, period, ${d} Emoji picker, exec, [float; center; size 60% 60%] uwsm app -- emote"
     # "Super, Escape, ${d} system monitor, exec, $scrPath/sysmonlaunch.sh"
   ];
 
