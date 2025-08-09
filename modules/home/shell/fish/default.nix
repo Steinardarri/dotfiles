@@ -15,7 +15,10 @@ in {
         # Disable greeting
         set -g fish_greeting
 
-        fastfetch
+        # Don't show fastfetch if terminal is low
+        set -l height (tput lines)
+        if test $height -ge 25
+          fastfetch
 
         # Color settings
         set fish_pager_color_prefix cyan
