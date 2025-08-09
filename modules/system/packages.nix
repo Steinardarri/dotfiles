@@ -45,6 +45,7 @@
 
     # utils
     bat
+    bat-extras.batman
     bottom
     broot
     btop

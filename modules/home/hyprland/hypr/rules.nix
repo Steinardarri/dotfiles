@@ -13,6 +13,11 @@ _: {
       # Fix some dragging issues with XWayland
       "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 
+      # Games
+      "immediate, class:^(steam_app_.*)$"
+
+      ### Floating Apps
+
       # NetworkManager applet
       "float, class:^(nm-connection-editor)$"
       "size $floatingSize, class:^(nm-connection-editor)$"
@@ -45,9 +50,13 @@ _: {
       # Dim some programs
       "dimaround, class:^(xdg-desktop-portal-gtk)$"
       "dimaround, title:^(Hyprland Polkit Agent)$"
+      "float, class:^(xdg-desktop-portal-gtk)$"
+      "size $floatingSize, class:^(xdg-desktop-portal-gtk)$"
+      "center, class:^(xdg-desktop-portal-gtk)$"
 
-      # Games
-      "immediate, class:^(steam_app_.*)$"
+      "float, class:^(exo-desktop-item-edit)$"
+      "size $floatingSize, class:^(exo-desktop-item-edit)$"
+      "center, class:^(exo-desktop-item-edit)$"
 
       # General Popups
       "float, title:Properties$"

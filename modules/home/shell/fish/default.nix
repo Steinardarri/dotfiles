@@ -23,6 +23,8 @@ in {
 
         # Hard set atuni binding
         bind up _atuin_bind_up
+
+        batman --export-env | source
       '';
 
       shellAliases = myAliases;
@@ -30,10 +32,6 @@ in {
       shellAbbrs = myAbbreviations;
 
       plugins = [
-        {
-          name = "colored-man-pages";
-          inherit (pkgs.fishPlugins.colored-man-pages) src;
-        }
         {
           name = "grc";
           inherit (pkgs.fishPlugins.grc) src;

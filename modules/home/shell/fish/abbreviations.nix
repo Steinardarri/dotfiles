@@ -12,5 +12,8 @@
   cp = "cp -i";
   mv = "mv -i";
 
-  shutdown = "shutdown now";
+  shutdown = "systemctl poweroff";
+  reboot = "systemctl reboot";
+  man = "batman";
+  fd = "fd -E 'nix/store' -E 'nix/var/log'";
 }
