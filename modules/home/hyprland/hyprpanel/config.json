@@ -69,7 +69,8 @@
     "title:YouTube": "",
     "class:codium": "",
     "class:equibop": "",
-    "class:gjs": ""
+    "class:gjs": "",
+    "class:org.gnome.seahorse.Application": ""
   },
   "bar.workspaces.applicationIconEmptyWorkspace": "󰆢",
   "bar.workspaces.workspaces": 6,
@@ -77,7 +78,8 @@
   "bar.windowtitle.title_map": [
     ["codium", "", "Codium"],
     ["gjs", "", "HyprPanel Settings"],
-    ["equibop", "", "Equibop"]
+    ["equibop", "", "Equibop"],
+    ["org.gnome.seahorse.Application", "", "Passwords andKeys"]
   ],
   "bar.systray.ignore": ["blueman", "nm-applet"],
   "bar.clock.format": "  %R | %a %d. %b",
