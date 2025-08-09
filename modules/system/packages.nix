@@ -1,102 +1,111 @@
-{pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    bash
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  environment.systemPackages = let
+    systemd_tui =
+      inputs.systemd-manager-tui.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  in
+    with pkgs; [
+      bash
 
-    # core languages
-    gcc
-    nodejs
-    zig
-    # rust stuff
-    cargo-cache
-    cargo-expand
-    cargo-leptos
-    rustup
-    trunk
+      # core languages
+      gcc
+      nodejs
+      zig
+      # rust stuff
+      cargo-cache
+      cargo-expand
+      cargo-leptos
+      rustup
+      trunk
 
-    # dev stuf
-    cmake
-    httpie
-    ninja
-    tree-sitter
+      # dev stuf
+      cmake
+      httpie
+      ninja
+      tree-sitter
 
-    # language servers
-    # ccls # c / c++
-    nixd # nix
-    # nodePackages.yaml-language-server
-    # nodePackages.vscode-langservers-extracted # html, css, json, eslint
+      # language servers
+      # ccls # c / c++
+      nixd # nix
+      # nodePackages.yaml-language-server
+      # nodePackages.vscode-langservers-extracted # html, css, json, eslint
 
-    # formatters & linters
-    alejandra # nix formatter
-    nixfmt # nix formatter
-    statix # nix linter
-    nodePackages.prettier
-    shellcheck
-    shfmt
-    ruff # python
+      # formatters & linters
+      alejandra # nix formatter
+      nixfmt # nix formatter
+      statix # nix linter
+      nodePackages.prettier
+      shellcheck
+      shfmt
+      ruff # python
 
-    # security
-    git-crypt
+      # security
+      git-crypt
 
-    # media
-    imagemagick
-    yt-dlg
-    ffmpeg
-    inkscape
+      # media
+      imagemagick
+      yt-dlg
+      ffmpeg
+      inkscape
 
-    # utils
-    bat
-    bat-extras.batman
-    bottom
-    broot
-    btop
-    clinfo
-    coreutils
-    curl
-    deadnix
-    du-dust
-    eza
-    fd
-    findutils
-    fx
-    fzf
-    helix
-    lshw
-    mosh
-    nvd
-    p7zip
-    parallel
-    pinentry-all
-    pkg-config
-    procs
-    ripgrep
-    sd
-    tldr
-    tree
-    wget
-    wormhole-william
-    yazi
-    zoxide
+      # utils
+      bat
+      bat-extras.batman
+      bottom
+      broot
+      btop
+      clinfo
+      coreutils
+      curl
+      deadnix
+      du-dust
+      eza
+      fd
+      findutils
+      fx
+      fzf
+      helix
+      lshw
+      mosh
+      nvd
+      p7zip
+      parallel
+      pinentry-all
+      pkg-config
+      procs
+      ripgrep
+      sd
+      tldr
+      tree
+      wget
+      wormhole-william
+      yazi
+      zoxide
+      systemd_tui
 
-    # for fun
-    cmatrix
-    cowsay
-    lolcat
-    notcurses
-    fastfetch
+      # for fun
+      cmatrix
+      cowsay
+      lolcat
+      notcurses
+      fastfetch
 
-    # ui & looks
-    yad
-    grc
-    nix-output-monitor
-    atuin
-    starship
+      # ui & looks
+      yad
+      grc
+      nix-output-monitor
+      atuin
+      starship
 
-    # hardware
-    brightnessctl # screen brightness control
-    udiskie # manage removable media
-    ntfs3g # ntfs support
-    exfat # exFAT support
-    lm_sensors # system sensors
-    pciutils # pci utils
-  ];
+      # hardware
+      brightnessctl # screen brightness control
+      udiskie # manage removable media
+      ntfs3g # ntfs support
+      exfat # exFAT support
+      lm_sensors # system sensors
+      pciutils # pci utils
+    ];
 }

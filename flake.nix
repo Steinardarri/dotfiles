@@ -198,5 +198,10 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    systemd-manager-tui = {
+      url = "github:matheus-git/systemd-manager-tui";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }
