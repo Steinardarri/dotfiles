@@ -5,7 +5,7 @@ _: {
       main = {
         placeholder = "Type to search...";
         prompt = "'❯ '";
-        launch-prefix = "uwsm app --";
+        launch-prefix = "uwsm-app --";
         match-counter = true;
         terminal = "kitty -e";
         horizontal-pad = 40;
