@@ -9,6 +9,7 @@
   options = {
     _gaming.enable = lib.mkEnableOption "User-Defined Gaming Module";
     _simracing.enable = lib.mkEnableOption "User-Defined Sim Racing Module";
+    _rgb.enable = lib.mkEnableOption "User-Defined RGB Module";
   };
 
   config = lib.mkIf config._gaming.enable {
@@ -30,10 +31,6 @@
         extraCompatPackages = with pkgs; [
           proton-ge-bin
         ];
-      };
-      gamescope = {
-        enable = true;
-        capSysNice = true;
       };
       obs-studio.enable = true;
       gamemode = {
@@ -57,6 +54,16 @@
           };
         };
       };
+      zsh = {
+        loginShellInit = lib.mkBefore ''
+          # For gamescope
+          sudo chown -R ${username} /tmp/.X11-unix
+
+          ${lib.optionalString config._rgb.enable ''
+            openrgb -P Orange
+          ''}
+        '';
+      };
     };
     hardware.steam-hardware.enable = lib.mkForce false;
 
@@ -75,7 +82,7 @@
         inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.assettocorsa
       ];
 
-    services.hardware.openrgb.enable = true;
+    services.hardware.openrgb.enable = config._rgb.enable;
 
     users.users.${username}.extraGroups = ["gamemode"];
 
