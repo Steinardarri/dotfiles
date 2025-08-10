@@ -23,6 +23,7 @@
 
       # dev stuf
       cmake
+      gnumake
       httpie
       ninja
       tree-sitter

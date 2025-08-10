@@ -6,6 +6,7 @@
       experimental-features = [
         "nix-command"
         "flakes"
+        "pipe-operators"
       ];
       warn-dirty = false;
       download-buffer-size = 524288000;
