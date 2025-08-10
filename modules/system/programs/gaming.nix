@@ -8,6 +8,7 @@
 }: {
   options = {
     _gaming.enable = lib.mkEnableOption "User-Defined Gaming Module";
+    _simracing.enable = lib.mkEnableOption "User-Defined Sim Racing Module";
   };
 
   config = lib.mkIf config._gaming.enable {
@@ -50,7 +51,7 @@
             disable_splitlock = 1;
           };
           custom = {
-            start = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode started' ; pkill codium ; pkill ktorrent"; 
+            start = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode started' ; pkill codium ; pkill ktorrent";
             end = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode ended'";
             script_timeout = 10;
           };
@@ -59,18 +60,20 @@
     };
     hardware.steam-hardware.enable = lib.mkForce false;
 
-    environment.systemPackages = with pkgs; [
-      # bottles
-      mangohud
-      lutris
-      steam-run
-      winetricks
-      wineWowPackages.stable
-      cabextract
-      vkbasalt
-
-      inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
-    ];
+    environment.systemPackages =
+      [
+        pkgs.mangohud
+        pkgs.lutris
+        pkgs.steam-run
+        pkgs.winetricks
+        pkgs.wineWowPackages.stable
+        pkgs.cabextract
+        pkgs.vkbasalt
+      ]
+      ++ lib.optionals config._simracing.enable [
+        inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
+        inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.assettocorsa
+      ];
 
     services.hardware.openrgb.enable = true;
 
