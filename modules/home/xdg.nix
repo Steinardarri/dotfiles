@@ -28,6 +28,7 @@
     mimeApps = {
       enable = true;
       defaultApplications = {
+        # Text Files
         "text/plain" = "org.xfce.mousepad.desktop";
         "text/x-shellscript" = "org.xfce.mousepad.desktop";
         "text/x-csrc" = "org.xfce.mousepad.desktop";
@@ -70,6 +71,17 @@
         "application/x-msdos-program" = "org.xfce.mousepad.desktop"; # Batch files
         "application/x-sharedlib" = "org.xfce.mousepad.desktop"; # Dynamic libraries (for viewing)
         "application/x-executable" = "org.xfce.mousepad.desktop"; # Binary executables (for viewing)
+
+        # Image files
+        "image/png" = "org.xfce.ristretto.desktop";
+        "image/gif" = "org.xfce.ristretto.desktop";
+        "image/jpeg" = "org.xfce.ristretto.desktop";
+        "image/bmp" = "org.xfce.ristretto.desktop";
+        "image/x-pixmap" = "org.xfce.ristretto.desktop";
+        "image/tiff" = "org.xfce.ristretto.desktop";
+        "image/svg+xml" = "org.xfce.ristretto.desktop";
+        "image/x-xpixmap" = "org.xfce.ristretto.desktop";
+        "image/webp" = "org.xfce.ristretto.desktop";
       };
     };
 

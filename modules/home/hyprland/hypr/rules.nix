@@ -42,6 +42,11 @@
       "size $floatingSize, class:^(mousepad)$"
       "center, class:^(mousepad)$"
 
+      # Image viewer
+      "float, class:^(ristretto)$"
+      "size $floatingSize, class:^(ristretto)$"
+      "center, class:^(ristretto)$"
+
       # Desktop portal
       "float, class:^(xdg-desktop-portal.*)$"
       "size $floatingSize, class:^(xdg-desktop-portal.*)$"
@@ -56,9 +61,9 @@
       "immediate, class:^(steam_app_.*)$"
 
       # General Popups
-      "float, title:Properties$"
-      "size $floatingSize, title:^(.*Properties)$"
-      "center, title:Properties$"
+      "float, title:^(.*[Pp]roperties)$"
+      "size $floatingSize, title:^(.*[Pp]roperties)$"
+      "center, title:^(.*[Pp]roperties)$"
     ];
 
     layerrule = [

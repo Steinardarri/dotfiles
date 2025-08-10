@@ -72,7 +72,8 @@
     "class:equibop": "",
     "class:gjs": "",
     "class:org.gnome.seahorse.Application": "",
-    "class:Element": "󰘨"
+    "class:Element": "󰘨",
+    "class:mousepad": "󱇧"
   },
   "bar.workspaces.applicationIconEmptyWorkspace": "󰆢",
   "bar.workspaces.workspaces": 6,
@@ -81,8 +82,9 @@
     ["codium", "", "Codium"],
     ["gjs", "", "HyprPanel Settings"],
     ["equibop", "", "Equibop"],
-    ["Org.gnome.seahorse.Application", "", "Passwords and Keys"],
-    ["Element", "󰘨", "Element"]
+    ["org.gnome.seahorse.application", "", "Passwords and Keys"],
+    ["element", "󰘨", "Element"],
+    ["mousepad", "󱇧", "Mousepad"]
   ],
   "bar.systray.ignore": ["blueman", "nm-applet"],
   "bar.clock.format": "  %R | %a %d. %b",
