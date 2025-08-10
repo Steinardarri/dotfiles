@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  username,
   ...
 }: {
   users.users.root.shell = pkgs.zsh;
@@ -15,6 +16,11 @@
     zsh = {
       enable = true;
       loginShellInit = ''
+        openrgb -p Orange
+        
+        # For gamescope
+        sudo chown -R ${username} /tmp/.X11-unix
+
         if uwsm check may-start; then
           exec uwsm start hyprland-uwsm.desktop
         fi

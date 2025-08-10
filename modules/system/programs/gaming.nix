@@ -14,6 +14,13 @@
     programs = {
       steam = {
         enable = true;
+        package = pkgs.steam.override {
+          extraPkgs = pkgs:
+            with pkgs; [
+              libkrb5
+              keyutils
+            ];
+        };
         gamescopeSession.enable = true;
         remotePlay.openFirewall = true;
         dedicatedServer.openFirewall = true;
@@ -43,7 +50,7 @@
             disable_splitlock = 1;
           };
           custom = {
-            start = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode started'; pkill codium; pkill ktorrent";
+            start = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode started' ; pkill codium ; pkill ktorrent"; 
             end = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode ended'";
             script_timeout = 10;
           };
