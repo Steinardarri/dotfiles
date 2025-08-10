@@ -38,9 +38,9 @@
       "move 20% 5%, class:^(io.github.Qalculate.qalculate-qt)$"
 
       # GUI Editor
-      "float, title:^(Lapce)$"
-      "size $floatingSize, title:^(Lapce)$"
-      "center, title:^(Lapce)$"
+      "float, class:^(mousepad)$"
+      "size $floatingSize, class:^(mousepad)$"
+      "center, class:^(mousepad)$"
 
       # Desktop portal
       "float, class:^(xdg-desktop-portal.*)$"

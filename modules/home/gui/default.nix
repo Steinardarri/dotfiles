@@ -2,7 +2,6 @@
   imports = [
     ./discord.nix
     ./kitty.nix
-    ./lapce.nix
     ./mpv.nix
     ./spotify.nix
     ./torrent.nix
