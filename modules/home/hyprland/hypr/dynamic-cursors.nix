@@ -18,7 +18,7 @@
     # controls how much the cursor is stretched
     # this value controls at which speed (px/s) the full stretch is reached
     # the full stretch being twice the original length
-    limit = 3000;
+    limit = 2000;
 
     # relationship between speed and stretch amount, supports these values:
     # linear             - a linear function is used
@@ -29,7 +29,7 @@
 
     # time window (ms) over which the speed is calculated
     # higher values will make slow motions smoother but more delayed
-    window = 100;
+    window = 50;
   };
 
   # use hyprcursor to get a higher resolution texture when the cursor is magnified
