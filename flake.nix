@@ -208,5 +208,9 @@
       url = "github:matheus-git/systemd-manager-tui";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Sim Racing Stuff #
+
+    jstest-gtk.url = "github:Grumbel/jstest-gtk";
   };
 }

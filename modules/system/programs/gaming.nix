@@ -2,6 +2,7 @@
   pkgs,
   lib,
   config,
+  inputs,
   username,
   ...
 }: {
@@ -60,6 +61,8 @@
       wineWowPackages.stable
       cabextract
       vkbasalt
+
+      inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
     ];
 
     services.hardware.openrgb.enable = true;
