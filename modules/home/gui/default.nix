@@ -17,8 +17,14 @@
     protonvpn-gui
     ungoogled-chromium
     grsync
+
+    # GNOME
     baobab
     evince
+
+    # xfce
+    xfce.ristretto
+    xfce.mousepad
 
     # KDE stuff
     krita
