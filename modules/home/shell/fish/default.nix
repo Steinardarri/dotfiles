@@ -17,7 +17,8 @@ in {
 
         # Don't show fastfetch if terminal is low
         set -l height (tput lines)
-        if test $height -ge 25
+        set -l width (tput cols)
+        if test $width -ge 80 -a $height -ge 25
           fastfetch
         end
 
