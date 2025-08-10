@@ -37,9 +37,9 @@
 
       search = {
         force = true;
-        default = "duckuckgo";
+        default = "duckduckgo";
         engines = {
-          "duckuckgo" = {
+          "duckduckgo" = {
             urls = [{template = "https://duckduckgo.com/?q={searchTerms}&ia=web";}];
             icon = "https://duckduckgo.com/favicon.ico";
             definedAliases = ["@ddg"];
