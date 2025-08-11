@@ -79,7 +79,6 @@
       ]
       ++ lib.optionals config._simracing.enable [
         inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
-        inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.assettocorsa
       ];
 
     services.hardware.openrgb.enable = config._rgb.enable;

@@ -212,9 +212,5 @@
     # Sim Racing Stuff #
 
     jstest-gtk.url = "github:Grumbel/jstest-gtk";
-    simshmbridge = {
-      url = "github:Spacefreak18/simshmbridge?dir=tools/distro/nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 }
