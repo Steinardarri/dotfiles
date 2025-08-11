@@ -21,6 +21,7 @@
   # System monitoring
   top = "btop";
   htop = "btop";
+  sysman = "systemd-manager-tui";
 
   # 'scripts'
   show_path = "echo $PATH | tr ':' '\n'";

@@ -3,6 +3,7 @@ _: {
     enable = true;
     enableGitIntegration = true; # Kitty diff integration
     shellIntegration.enableFishIntegration = true;
+    shellIntegration.enableZshIntegration = true;
 
     settings = {
       enable_audio_bell = "no";
@@ -20,6 +21,11 @@ _: {
       tab_bar_style = "powerline";
       tab_powerline_style = "slanted";
       tab_title_template = "{title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}";
+    };
+
+    actionAliases = {
+      "launch_tab" = "launch --cwd=current --type=tab";
+      "launch_window" = "launch --cwd=current --type=os-window";
     };
   };
 
