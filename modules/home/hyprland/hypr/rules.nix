@@ -69,8 +69,6 @@
     layerrule = [
       "animation slide, launcher"
       "dimaround, launcher"
-      "animation slide, walker"
-      "dimaround, walker"
 
       "blur, notifications-window"
       "ignorezero, notifications"

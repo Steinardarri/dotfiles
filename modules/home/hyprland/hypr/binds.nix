@@ -5,8 +5,7 @@ let
   launcherBind = let
     d = "[Launcher]";
   in [
-    "Super Control, Space, ${d} Fuzzel launcher, exec, uwsm-app -- fuzzel"
-    "Super, Space, ${d} Walker launcher, exec, walker" # Walker has a daemon
+    "Super, Space, ${d} Fuzzel launcher, exec, uwsm-app -- fuzzel"
   ];
 
   appBinds = let

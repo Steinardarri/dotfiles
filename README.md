@@ -12,7 +12,7 @@
 
 🚟 **Bar**: Hyprpanel
 
-🏹 **Launcher**: Walker
+🏹 **Launcher**: Fuzzel
 
 🧑‍💻 **Terminal**: Kitty
 

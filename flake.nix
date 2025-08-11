@@ -179,11 +179,6 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    walker = {
-      url = "github:abenz1267/walker/v0.13.13";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     ### Program Modules ###
 
     nix-vscode-extensions = {

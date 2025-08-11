@@ -15,5 +15,8 @@
       };
       grub.useWallpaper = true;
     };
+    fonts.sizes = {
+      popups = 14;
+    };
   };
 }

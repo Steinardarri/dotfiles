@@ -12,7 +12,6 @@
     ./hypr/rules.nix
 
     ./hyprpanel
-    ./walker
 
     ./fuzzel.nix
     ./packages.nix
