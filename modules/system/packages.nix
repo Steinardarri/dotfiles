@@ -27,9 +27,14 @@
       httpie
       ninja
       tree-sitter
+      valgrind
 
-      # language servers
-      # ccls # c / c++
+      # language servers / debuggers
+      lldb
+      ccls # c / c++
+      gdb
+      clang
+      clang-tools
       nixd # nix
       # nodePackages.yaml-language-server
       # nodePackages.vscode-langservers-extracted # html, css, json, eslint

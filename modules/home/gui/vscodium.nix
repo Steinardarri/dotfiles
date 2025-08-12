@@ -61,6 +61,11 @@
             timonwong.shellcheck
             yzhang.markdown-all-in-one
             redhat.vscode-yaml
+            ccls-project.ccls
+            kylinideteam.kylin-debug
+            kylinideteam.kylin-clangd
+            kylinideteam.kylin-cmake-tools
+            sr-tream.clang-tidy
 
             # Workflow
             alefragnani.bookmarks
