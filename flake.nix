@@ -209,12 +209,12 @@
     jstest-gtk.url = "github:Grumbel/jstest-gtk";
 
     simshmbridge = {
-      url = "git+file:/home/steinardth/Forrit/git_verkefni/simshmbridge?shallow=1&dir=tools/distro/nix";
+      url = "git+file:/home/steinardth/Forrit/git_verkefni/simshmbridge?shallow=1&dir=tools/distro/nix&submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    simracing-nix = {
-      url = "git+file:/home/steinardth/Forrit/git_verkefni/simracing-nix?shallow=1";
+    monocoque = {
+      url = "git+file:/home/steinardth/Forrit/git_verkefni/monocoque?shallow=1&dir=tools/distro/nix&submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

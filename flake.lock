@@ -684,6 +684,32 @@
         "type": "github"
       }
     },
+    "monocoque": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "tools/distro/nix",
+        "lastModified": 1755010901,
+        "narHash": "sha256-+ckcNgThu0+f/PuZy+A6ghxCricqeH56zEwrIY0tgMk=",
+        "ref": "refs/heads/master",
+        "rev": "2222bb4642bd1d2c956574ee28cbace8b769c5e1",
+        "revCount": 301,
+        "shallow": true,
+        "submodules": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/monocoque"
+      },
+      "original": {
+        "dir": "tools/distro/nix",
+        "shallow": true,
+        "submodules": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/monocoque"
+      }
+    },
     "nix-index-database": {
       "inputs": {
         "nixpkgs": [
@@ -727,11 +753,11 @@
     },
     "nixos-facter-modules": {
       "locked": {
-        "lastModified": 1750412875,
-        "narHash": "sha256-uP9Xxw5XcFwjX9lNoYRpybOnIIe1BHfZu5vJnnPg3Jc=",
+        "lastModified": 1755011698,
+        "narHash": "sha256-yDpjtMvQD6H5xk23eCnE6rqZ0QXFh+/8vY7lK0NRR24=",
         "owner": "nix-community",
         "repo": "nixos-facter-modules",
-        "rev": "14df13c84552a7d1f33c1cd18336128fbc43f920",
+        "rev": "ff8e2cc94425e0e747acd54266f76f95055609c3",
         "type": "github"
       },
       "original": {
@@ -758,11 +784,11 @@
     },
     "nixpkgs-stable": {
       "locked": {
-        "lastModified": 1754767907,
-        "narHash": "sha256-8OnUzRQZkqtUol9vuUuQC30hzpMreKptNyET2T9lB6g=",
+        "lastModified": 1754937576,
+        "narHash": "sha256-3sWA5WJybUE16kIMZ3+uxcxKZY/JRR4DFBqLdSLBo7w=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c5f08b62ed75415439d48152c2a784e36909b1bc",
+        "rev": "ddae11e58c0c345bf66efbddbf2192ed0e58f896",
         "type": "github"
       },
       "original": {
@@ -842,11 +868,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1754994424,
-        "narHash": "sha256-MhhNrO0ZQrPoOhdgGjCMfQoOAPJEItQclmxw+MCx1GE=",
+        "lastModified": 1755021910,
+        "narHash": "sha256-CgJQTT/7TxftdovnE4MgDy0pD25Qdxxx31WNlk4g0zE=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "e213e2dd4275403f53643742974488890daa62b3",
+        "rev": "4b88d3e2d10698b8b29acc266fdb6c8de1d487d3",
         "type": "github"
       },
       "original": {
@@ -912,41 +938,19 @@
         "hyprpanel": "hyprpanel",
         "hyprutils": "hyprutils_2",
         "jstest-gtk": "jstest-gtk",
+        "monocoque": "monocoque",
         "nix-index-database": "nix-index-database",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixos-facter-modules": "nixos-facter-modules",
         "nixpkgs": "nixpkgs_5",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
-        "simracing-nix": "simracing-nix",
         "simshmbridge": "simshmbridge",
         "spicetify-nix": "spicetify-nix",
         "stylix": "stylix",
         "systemd-manager-tui": "systemd-manager-tui",
         "systems": "systems_7",
         "zen-browser": "zen-browser"
-      }
-    },
-    "simracing-nix": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1754996367,
-        "narHash": "sha256-Sk7tB6cfAuXU8w+sJbIupwDdzz4UOX6eBry8SCqLGgQ=",
-        "ref": "refs/heads/main",
-        "rev": "09431f3160f73a04cb50be6a806d00260a538012",
-        "revCount": 5,
-        "shallow": true,
-        "type": "git",
-        "url": "file:/home/steinardth/Forrit/git_verkefni/simracing-nix"
-      },
-      "original": {
-        "shallow": true,
-        "type": "git",
-        "url": "file:/home/steinardth/Forrit/git_verkefni/simracing-nix"
       }
     },
     "simshmbridge": {
@@ -957,11 +961,11 @@
       },
       "locked": {
         "dir": "tools/distro/nix",
-        "lastModified": 1754931167,
-        "narHash": "sha256-LjjRLDHGC+5WlyYCURHb/cu+pt41HV80cnCM1vv7ZRA=",
+        "lastModified": 1755016480,
+        "narHash": "sha256-Kn9snwwIwGt0zKi3EQWA/zttErinT8xY7EpQ72tLY1M=",
         "ref": "refs/heads/master",
-        "rev": "c544e2ab14d0f7b9db0735eecbd29ab225a3554f",
-        "revCount": 47,
+        "rev": "1afe3e39285a4f96f69ede9bc25777a581a24319",
+        "revCount": 48,
         "shallow": true,
         "submodules": true,
         "type": "git",
@@ -970,6 +974,7 @@
       "original": {
         "dir": "tools/distro/nix",
         "shallow": true,
+        "submodules": true,
         "type": "git",
         "url": "file:/home/steinardth/Forrit/git_verkefni/simshmbridge"
       }

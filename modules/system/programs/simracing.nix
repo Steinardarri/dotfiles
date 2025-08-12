@@ -13,14 +13,15 @@
     && config._gaming.enable) {
     environment.systemPackages = [
       inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
-      inputs.simracing-nix.packages.${pkgs.stdenv.hostPlatform.system}.monocoque
+
+      inputs.monocoque.packages.${pkgs.stdenv.hostPlatform.system}.default
+
       inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.all
-      # inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.simshmbridge-assettocorsa.overrideAttrs      (old: {
-      #   # Rename exe for Crew Chief
-      #   postInstall = ''
-      #     mv $out/acbridge.exe $out/AC2-Win64-Shipping.exe
-      #   '';
-      # })
     ];
+    # Cammus C5 Wheel Device
+    services.udev.extraRules = ''
+      SUBSYSTEM=="usb", ATTRS{idVendor}=="3416", ATTRS{idProduct}=="1021", MODE="0666"
+      SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3416", ATTRS{idProduct}=="1021", MODE="0666"
+    '';
   };
 }
