@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   ...
 }: {
   services = {
@@ -17,13 +16,10 @@
       # https://www.reddit.com/r/linux/comments/1em8biv/psa_pipewire_has_been_halving_your_battery_life/
       wireplumber.extraConfig."wireplumber.profiles".main."monitor.libcamera" = "disabled";
     };
-    pulseaudio.enable = false;
   };
 
   environment.systemPackages = with pkgs; [
     easyeffects
-    pipewire
-    wireplumber
     pamixer
     playerctl
     pwvucontrol
