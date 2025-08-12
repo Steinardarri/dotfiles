@@ -2,13 +2,11 @@
   pkgs,
   lib,
   config,
-  inputs,
   username,
   ...
 }: {
   options = {
     _gaming.enable = lib.mkEnableOption "User-Defined Gaming Module";
-    _simracing.enable = lib.mkEnableOption "User-Defined Sim Racing Module";
     _rgb.enable = lib.mkEnableOption "User-Defined RGB Module";
   };
 
@@ -67,19 +65,15 @@
     };
     hardware.steam-hardware.enable = lib.mkForce false;
 
-    environment.systemPackages =
-      [
-        pkgs.mangohud
-        pkgs.lutris
-        pkgs.steam-run
-        pkgs.winetricks
-        pkgs.wineWowPackages.stable
-        pkgs.cabextract
-        pkgs.vkbasalt
-      ]
-      ++ lib.optionals config._simracing.enable [
-        inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
-      ];
+    environment.systemPackages = with pkgs; [
+      mangohud
+      lutris
+      steam-run
+      winetricks
+      wineWowPackages.waylandFull
+      cabextract
+      vkbasalt
+    ];
 
     services.hardware.openrgb.enable = config._rgb.enable;
 
@@ -88,6 +82,7 @@
     environment.sessionVariables = {
       STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
       PROTON_ENABLE_WAYLAND = 1;
+      WINEDEBUG = "-all";
     };
 
     # Might need to sudo chmod 777 ~/.steam , for protontricks to work

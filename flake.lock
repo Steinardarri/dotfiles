@@ -918,11 +918,60 @@
         "nixpkgs": "nixpkgs_5",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
+        "simracing-nix": "simracing-nix",
+        "simshmbridge": "simshmbridge",
         "spicetify-nix": "spicetify-nix",
         "stylix": "stylix",
         "systemd-manager-tui": "systemd-manager-tui",
         "systems": "systems_7",
         "zen-browser": "zen-browser"
+      }
+    },
+    "simracing-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1754957008,
+        "narHash": "sha256-Bd8/PXTbab4djgRfCyNUc3QDU77iaws1JJMGfssaSh8=",
+        "ref": "refs/heads/main",
+        "rev": "9d4d7342d8884bc182890ce7a7f313a7fd5f5c70",
+        "revCount": 4,
+        "shallow": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/simracing-nix"
+      },
+      "original": {
+        "shallow": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/simracing-nix"
+      }
+    },
+    "simshmbridge": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "tools/distro/nix",
+        "lastModified": 1754931167,
+        "narHash": "sha256-LjjRLDHGC+5WlyYCURHb/cu+pt41HV80cnCM1vv7ZRA=",
+        "ref": "refs/heads/master",
+        "rev": "c544e2ab14d0f7b9db0735eecbd29ab225a3554f",
+        "revCount": 47,
+        "shallow": true,
+        "submodules": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/simshmbridge"
+      },
+      "original": {
+        "dir": "tools/distro/nix",
+        "shallow": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/simshmbridge"
       }
     },
     "spicetify-nix": {

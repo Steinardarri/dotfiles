@@ -8,6 +8,7 @@
 
     ./gaming.nix
     ./nano.nix
+    ./simracing.nix
     ./thunar.nix
   ];
 
