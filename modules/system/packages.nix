@@ -86,9 +86,9 @@
       sd
       tldr
       tree
-      toybox
       wget
       wormhole-william
+      usbutils
       yazi
       zoxide
       systemd_tui
