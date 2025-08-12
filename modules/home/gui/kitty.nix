@@ -11,6 +11,8 @@ _: {
       window_padding_width = "25";
       scrollback_lines = 10000;
 
+      allow_remote_control = "yes";
+
       cursor_shape = "beam";
       cursor_shape_unfocused = "hollow";
       cursor_blink_interval = "0.5 ease-in-out";
