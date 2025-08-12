@@ -76,7 +76,7 @@
       "net.ipv4.tcp_congestion_control" = "bbr";
       "net.core.default_qdisc" = "cake";
     };
-    kernelModules = [ "tcp_bbr" ];
+    kernelModules = ["tcp_bbr"];
   };
 
   systemd.services.plymouth-quit-wait.enable = false;

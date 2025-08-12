@@ -52,7 +52,6 @@
       "size $floatingSize, class:^(xdg-desktop-portal.*)$"
       "center, class:^(xdg-desktop-portal.*)$"
 
-
       # Dim some programs
       "dimaround, class:^(xdg-desktop-portal-gtk)$"
       "dimaround, title:^(Hyprland Polkit Agent)$"
