@@ -81,6 +81,7 @@
       sd
       tldr
       tree
+      toybox
       wget
       wormhole-william
       yazi
