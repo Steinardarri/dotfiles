@@ -24,7 +24,7 @@
     after = ["graphical-session.target"];
     serviceConfig = {
       Type = "simple";
-      ExecStart = "thunar --daemon";
+      ExecStart = "${pkgs.xfce.thunar}/bin/thunar --daemon";
     };
   };
 
