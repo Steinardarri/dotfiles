@@ -1,6 +1,6 @@
 {
   wayland.windowManager.hyprland.settings = {
-    "$floatingSize" = "60% 60%";
+    "$floatingSize" = "45% 80%";
     "$pwvucontrol" = "com.saivert.pwvucontrol";
 
     windowrule = [
