@@ -1,6 +1,8 @@
 {
   pkgs,
   lib,
+  username,
+  hostname,
   ...
 }: {
   # VSCode -> VSCodium overrides
@@ -241,14 +243,14 @@
             "formatting" = {
               "command" = ["alejandra"];
             };
-            # options = {
-            #   nixos = {
-            #     expr = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options";
-            #   };
-            #   home-manager = {
-            #     expr = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.<name>.options.home-manager.users.type.getSubOptions []";
-            #   };
-            # };
+            "options" = {
+              "nixos" = {
+                "expr" = "(builtins.getFlake \"/home/${username}/dotfiles\").nixosConfigurations.${hostname}.options";
+              };
+              "home_manager" = {
+                "expr" = "(builtins.getFlake \"/home/${username}/dotfiles\").homeConfigurations.${hostname}.options";
+              };
+            };
           };
         };
 
