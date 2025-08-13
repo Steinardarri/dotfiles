@@ -16,6 +16,7 @@
     ./fuzzel.nix
     ./packages.nix
     ./services.nix
+    ./sherlock.nix
   ];
 
   # https://wiki.hypr.land/Nix/Hyprland-on-Home-Manager/

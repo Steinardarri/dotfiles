@@ -6,6 +6,7 @@ let
     d = "[Launcher]";
   in [
     "Super, Space, ${d} Fuzzel launcher, exec, uwsm-app -- fuzzel"
+    "Super Control, Space, ${d} Sherlock launcher, exec, sherlock" # Sherlock has a daemon
   ];
 
   appBinds = let
