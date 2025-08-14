@@ -25,6 +25,13 @@ _: {
       tab_title_template = "{title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}";
     };
 
+    keybindings = {
+      "ctrl+alt+t" = "goto_layout tall";
+      "ctrl+alt+z" = "toggle_layout stack";
+      "ctrl+alt+right" = "next_window";
+      "ctrl+alt+left" = "previous_window";
+    };
+
     actionAliases = {
       "launch_tab" = "launch --cwd=current --type=tab";
       "launch_window" = "launch --cwd=current --type=os-window";
