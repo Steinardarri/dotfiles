@@ -11,6 +11,7 @@
     nixos-facter-modules,
     stylix,
     hyprutils,
+    chaotic,
     ...
   } @ inputs: let
     genericModules = [
@@ -40,6 +41,8 @@
       nur.modules.nixos.default
 
       stylix.nixosModules.stylix
+
+      chaotic.nixosModules.default
     ];
   in {
     nixosConfigurations = {
@@ -123,7 +126,7 @@
     ### System ###
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "nixpkgs/nixos-25.05";
-    systems.url = "github:nix-systems/default-linux";
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -151,11 +154,7 @@
 
     stylix = {
       url = "github:nix-community/stylix";
-      inputs = {
-        # flake-parts.follows = "flake-parts";
-        nixpkgs.follows = "nixpkgs";
-        systems.follows = "systems";
-      };
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     hyprland = {

@@ -5,7 +5,7 @@
   ...
 }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_cachyos; # Chaotic
     tmp = {
       useZram = true;
       cleanOnBoot = lib.mkDefault (!config.boot.tmp.useTmpfs);
@@ -84,6 +84,14 @@
       "net.core.default_qdisc" = "cake";
     };
     kernelModules = ["tcp_bbr"];
+  };
+
+  # Scheduler
+  services.scx = {
+    # Chaotic
+    enable = true;
+    package = pkgs.scx_git.full;
+    scheduler = "scx_rustland";
   };
 
   systemd.services.plymouth-quit-wait.enable = false;
