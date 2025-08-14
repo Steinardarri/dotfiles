@@ -70,7 +70,7 @@
       lutris
       steam-run
       winetricks
-      wineWowPackages.waylandFull
+      wineWowPackages.unstableFull
       cabextract
       vkbasalt
     ];
