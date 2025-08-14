@@ -24,67 +24,6 @@
       ];
     };
 
-    mime.enable = true;
-    mimeApps = {
-      enable = true;
-      defaultApplications = {
-        # Text Files
-        "text/plain" = "org.xfce.mousepad.desktop";
-        "text/x-shellscript" = "org.xfce.mousepad.desktop";
-        "text/x-csrc" = "org.xfce.mousepad.desktop";
-        "text/x-c++src" = "org.xfce.mousepad.desktop";
-        "text/x-java" = "org.xfce.mousepad.desktop";
-        "text/x-python" = "org.xfce.mousepad.desktop";
-        "text/x-javascript" = "org.xfce.mousepad.desktop";
-        "text/x-typescript" = "org.xfce.mousepad.desktop";
-        "text/x-php" = "org.xfce.mousepad.desktop";
-        "text/x-ruby" = "org.xfce.mousepad.desktop";
-        "text/x-perl" = "org.xfce.mousepad.desktop";
-        "text/x-go" = "org.xfce.mousepad.desktop";
-        "text/x-rust" = "org.xfce.mousepad.desktop";
-        "text/x-csharp" = "org.xfce.mousepad.desktop";
-        "text/x-shader" = "org.xfce.mousepad.desktop";
-        "text/x-markdown" = "org.xfce.mousepad.desktop";
-        "text/x-tex" = "org.xfce.mousepad.desktop";
-        "text/x-toml" = "org.xfce.mousepad.desktop";
-        "text/x-yaml" = "org.xfce.mousepad.desktop";
-        "text/x-json" = "org.xfce.mousepad.desktop";
-        "text/xml" = "org.xfce.mousepad.desktop";
-        "text/html" = "org.xfce.mousepad.desktop";
-        "text/css" = "org.xfce.mousepad.desktop";
-        "text/x-diff" = "org.xfce.mousepad.desktop";
-        "text/x-patch" = "org.xfce.mousepad.desktop";
-        "text/x-log" = "org.xfce.mousepad.desktop";
-        "application/x-shellscript" = "org.xfce.mousepad.desktop";
-        "application/json" = "org.xfce.mousepad.desktop";
-        "application/xml" = "org.xfce.mousepad.desktop";
-        "application/xhtml+xml" = "org.xfce.mousepad.desktop";
-        "application/x-ruby" = "org.xfce.mousepad.desktop";
-        "application/x-python" = "org.xfce.mousepad.desktop";
-        "application/x-javascript" = "org.xfce.mousepad.desktop";
-        "application/x-perl" = "org.xfce.mousepad.desktop";
-        "application/x-php" = "org.xfce.mousepad.desktop";
-        "application/x-tex" = "org.xfce.mousepad.desktop";
-        "application/x-texinfo" = "org.xfce.mousepad.desktop";
-        "application/x-troff" = "org.xfce.mousepad.desktop";
-        "application/x-rpm" = "org.xfce.mousepad.desktop";
-        "application/x-msdos-program" = "org.xfce.mousepad.desktop"; # Batch files
-        "application/x-sharedlib" = "org.xfce.mousepad.desktop"; # Dynamic libraries (for viewing)
-        "application/x-executable" = "org.xfce.mousepad.desktop"; # Binary executables (for viewing)
-
-        # Image files
-        "image/png" = "org.xfce.ristretto.desktop";
-        "image/gif" = "org.xfce.ristretto.desktop";
-        "image/jpeg" = "org.xfce.ristretto.desktop";
-        "image/bmp" = "org.xfce.ristretto.desktop";
-        "image/x-pixmap" = "org.xfce.ristretto.desktop";
-        "image/tiff" = "org.xfce.ristretto.desktop";
-        "image/svg+xml" = "org.xfce.ristretto.desktop";
-        "image/x-xpixmap" = "org.xfce.ristretto.desktop";
-        "image/webp" = "org.xfce.ristretto.desktop";
-      };
-    };
-
     userDirs = {
       enable = true;
       createDirectories = true;

@@ -38,17 +38,6 @@ _: {
     };
   };
 
-  xdg.mimeApps.defaultApplications = {
-    # Terminal URL protocols
-    "x-scheme-handler/terminal" = "kitty.desktop";
-    "x-scheme-handler/x-terminal-emulator" = "kitty.desktop";
-
-    # Optional: Handle terminal-based protocols
-    "x-scheme-handler/ssh" = "kitty.desktop";
-    "x-scheme-handler/telnet" = "kitty.desktop";
-    "x-scheme-handler/rlogin" = "kitty.desktop";
-  };
-
   home.sessionVariables = {
     TERM = "kitty";
   };
