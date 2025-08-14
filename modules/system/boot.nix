@@ -22,7 +22,14 @@
       timeout = lib.mkDefault 2;
     };
 
-    plymouth.enable = true;
+    plymouth = {
+      enable = true;
+      themePackages = with pkgs; [
+        adi1090x-plymouth-themes.override
+        {selected_themes = ["glitch"];}
+      ];
+      theme = "glitch";
+    };
 
     # Enable "Silent boot"
     consoleLogLevel = 3;

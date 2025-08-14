@@ -10,6 +10,7 @@
     autoEnable = true;
     targets = {
       plymouth = {
+        enable = false;
         logo = ./nix-snowflake-colours.png;
         logoAnimated = true;
       };
