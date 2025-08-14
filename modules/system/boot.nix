@@ -19,7 +19,7 @@
         devices = ["nodev"];
       };
       systemd-boot.editor = lib.mkDefault false;
-      timeout = lib.mkDefault 3;
+      timeout = lib.mkDefault 2;
     };
 
     plymouth.enable = true;

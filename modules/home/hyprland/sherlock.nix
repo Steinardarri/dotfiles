@@ -1,10 +1,7 @@
-{
-  inputs,
-  ...
-}: {
+{inputs, ...}: {
   # Disable the Home Manager module for now
   # It's not fresh
-  disabledModules = [ "programs/sherlock.nix" ];
+  disabledModules = ["programs/sherlock.nix"];
 
   imports = [
     inputs.sherlock.homeManagerModules.default
