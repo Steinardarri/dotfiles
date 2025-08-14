@@ -10,7 +10,7 @@
     with pkgs; [
       bash
 
-      # core languages
+      # languages
       gcc
       nodejs
       zig
@@ -20,6 +20,7 @@
       cargo-leptos
       rustup
       trunk
+      jq
 
       # dev stuf
       cmake
@@ -56,6 +57,8 @@
       yt-dlg
       ffmpeg
       inkscape
+      poppler
+      resvg
 
       # utils
       bat
@@ -84,14 +87,15 @@
       procs
       ripgrep
       sd
+      systemd_tui
       tldr
       tree
       wget
       wormhole-william
       usbutils
+      wl-clipboard
       yazi
       zoxide
-      systemd_tui
 
       # for fun
       cmatrix

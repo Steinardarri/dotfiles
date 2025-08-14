@@ -11,6 +11,7 @@
     plugins = {
       inherit (pkgs.yaziPlugins) full-border;
       inherit (pkgs.yaziPlugins) starship;
+      inherit (pkgs.yaziPlugins) toggle-pane;
     };
     settings = {
       mgr = {
@@ -35,22 +36,29 @@
         cache_dir = config.xdg.cacheHome;
       };
 
-      # opener = {
-      #   edit = [
-      #     {
-      #       run = "$EDITOR '$@'";
-      #       desc = "$EDITOR";
-      #       block = true;
-      #       for = "unix";
-      #     }
-      #     {
-      #       run = "sudo $EDITOR '$@'";
-      #       desc = "sudo $EDITOR";
-      #       block = true;
-      #       for = "unix";
-      #     }
-      #   ];
-      # };
+      opener = {
+        edit = [
+          {
+            run = "$EDITOR '$@'";
+            desc = "$EDITOR";
+            block = true;
+            for = "unix";
+          }
+          {
+            run = "sudo $EDITOR '$@'";
+            desc = "sudo $EDITOR";
+            block = true;
+            for = "unix";
+          }
+        ];
+        play = [
+          {
+            run = "mpv '$@'";
+            orphan = true;
+            for = "unix";
+          }
+        ];
+      };
 
       input = {
         cursor_blink = true;
@@ -63,6 +71,13 @@
           on = "<Esc>";
           run = "close";
           desc = "Cancel input";
+        }
+      ];
+      mgr.prepend_keymap = [
+        {
+          on = "T";
+          run = "plugin toggle-pane max-preview";
+          desc = "Maximize or restore the preview pane";
         }
       ];
     };
