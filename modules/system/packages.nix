@@ -78,6 +78,7 @@
       fzf
       helix
       lshw
+      manix
       mosh
       nvd
       p7zip
