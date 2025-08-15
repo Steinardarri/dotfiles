@@ -80,8 +80,7 @@
     users.users.${username}.extraGroups = ["gamemode"];
 
     environment.sessionVariables = {
-      STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
-      PROTON_ENABLE_WAYLAND = 1;
+      # PROTON_ENABLE_WAYLAND = 1;
       WINEDEBUG = "-all";
     };
 
