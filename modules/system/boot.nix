@@ -5,7 +5,7 @@
   ...
 }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_cachyos; # Chaotic
+    kernelPackages = pkgs.linuxPackages_cachyos.cachyOverride {mArch = "GENERIC_V3";}; # Chaotic - x86-64 microarchitecture for 5800X3D
     tmp = {
       useZram = true;
       cleanOnBoot = lib.mkDefault (!config.boot.tmp.useTmpfs);
