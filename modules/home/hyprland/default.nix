@@ -148,8 +148,8 @@
         scroll_event_delay = 0;
       };
 
-      # Autostart applications
       exec-once = [
+        "uwsm finalize"
       ];
     };
 
