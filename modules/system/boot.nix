@@ -22,12 +22,13 @@
       timeout = lib.mkDefault 2;
     };
 
-    plymouth = {
+    plymouth = let
+      glitch = pkgs.adi1090x-plymouth-themes.override {
+        selected_themes = ["glitch"];
+      };
+    in {
       enable = true;
-      themePackages = with pkgs; [
-        adi1090x-plymouth-themes.override
-        {selected_themes = ["glitch"];}
-      ];
+      themePackages = [glitch];
       theme = "glitch";
     };
 
