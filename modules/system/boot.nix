@@ -5,7 +5,8 @@
   ...
 }: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_cachyos.cachyOverride {mArch = "GENERIC_V3";}; # Chaotic - x86-64 microarchitecture for 5800X3D
+    #kernelPackages = pkgs.linuxPackages_cachyos.cachyOverride {mArch = "GENERIC_V3";}; # Chaotic - x86-64 microarchitecture for 5800X3D
+    kernelPackages = pkgs.linuxPackages_zen;
     tmp = {
       useZram = true;
       cleanOnBoot = lib.mkDefault (!config.boot.tmp.useTmpfs);
@@ -88,12 +89,12 @@
   };
 
   # Scheduler
-  services.scx = {
-    # Chaotic
-    enable = true;
-    package = pkgs.scx_git.full;
-    scheduler = "scx_rustland";
-  };
+  # services.scx = {
+  #   # Chaotic
+  #   enable = true;
+  #   package = pkgs.scx_git.full;
+  #   scheduler = "scx_rustland";
+  # };
 
   systemd.services.plymouth-quit-wait.enable = false;
 }
