@@ -218,7 +218,7 @@
     };
 
     monocoque = {
-      url = "git+file:/home/steinardth/Forrit/git_verkefni/monocoque?shallow=1&dir=tools/distro/nix&submodules=1";
+      url = "git+file:/home/steinardth/Forrit/git_verkefni/monocoque?ref=nix&shallow=1&dir=tools/distro/nix&submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
