@@ -19,8 +19,7 @@
 
   console = {
     keyMap = "is-latin1";
-    # Font that supports all latin fonts better
-    font = "Lat2-Terminus16";
+    font = "${pkgs.terminus_font}/share/consolefonts/ter-118b.psf.gz";
     packages = [pkgs.terminus_font];
   };
 
