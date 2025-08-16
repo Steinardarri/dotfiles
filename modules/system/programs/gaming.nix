@@ -70,7 +70,7 @@
       lutris
       steam-run
       winetricks
-      wineWowPackages.unstableFull
+      wineWowPackages.stagingFull
       cabextract
       vkbasalt
     ];
@@ -80,7 +80,7 @@
     users.users.${username}.extraGroups = ["gamemode"];
 
     environment.sessionVariables = {
-      # PROTON_ENABLE_WAYLAND = 1;
+      PROTON_ENABLE_WAYLAND = 1;
       WINEDEBUG = "-all";
     };
 

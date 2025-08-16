@@ -42,6 +42,9 @@
       ELM_ENGINE = "wayland_egl";
 
       PAGER = "bat";
+
+      # Some X11 shit we don't care about
+      DISPLAY = "";
     };
 
     pathsToLink = [
