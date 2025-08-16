@@ -14,6 +14,7 @@
 
   _hardware_amd_gpu.enable = true;
   _gaming.enable = true;
+  _rgb.enable = true;
   _simracing.enable = true;
   _jellyfin.enable = true;
   _flatpak.enable = true;
