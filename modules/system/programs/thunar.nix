@@ -13,20 +13,7 @@
     file-roller.enable = true;
   };
 
-  services = {
-    tumbler.enable = true; # Thumbnail support for images
-  };
-
-  systemd.user.services.thunar-daemon = {
-    description = "Thunar Daemon";
-    enable = true;
-    wantedBy = ["graphical-session.target"];
-    after = ["graphical-session.target"];
-    serviceConfig = {
-      Type = "simple";
-      ExecStart = "${pkgs.xfce.thunar}/bin/thunar --daemon";
-    };
-  };
+  services.tumbler.enable = true; # Thumbnail support for images
 
   # Extra thumbnailer support
   environment.systemPackages = with pkgs; [

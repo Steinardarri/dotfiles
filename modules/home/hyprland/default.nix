@@ -149,7 +149,6 @@
       };
 
       exec-once = [
-        "uwsm finalize"
       ];
     };
 
