@@ -77,11 +77,7 @@ in {
       enableFishIntegration = true;
     };
 
-    # Fish Integration Automatically Enabled
-    direnv = {
-      enable = true;
-      nix-direnv.enable = true;
-    };
+    # Direnv Fish Integration Automatically Enabled
 
     atuin = {
       enable = true;
