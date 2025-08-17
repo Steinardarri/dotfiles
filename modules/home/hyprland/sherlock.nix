@@ -1,18 +1,13 @@
-{inputs, ...}: {
-  # Disable the Home Manager module for now
-  # It's not fresh
-  disabledModules = ["programs/sherlock.nix"];
-
-  imports = [
-    inputs.sherlock.homeManagerModules.default
-  ];
-
+_: {
   programs.sherlock = {
-    enable = true;
-    runAsService = true;
+    enable = false;
+    systemd.enable = false;
 
     settings = {
       config = {
+        theme = "dark";
+        width = 500;
+        max_results = 10;
       };
 
       # fallback.json

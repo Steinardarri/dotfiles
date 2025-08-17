@@ -178,11 +178,6 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    sherlock = {
-      url = "github:Skxxtz/sherlock";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     ### Program Modules ###
 
     nix-vscode-extensions = {
