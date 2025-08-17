@@ -2,11 +2,8 @@
   pkgs,
   lib,
   config,
-  inputs,
   ...
-}: let
-  nixpkgs-hypr = inputs.hyprland.inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system};
-in {
+}: {
   options = {
     _hardware_amd_gpu.enable = lib.mkEnableOption "User-Defined AMD GPU Module";
   };
@@ -24,26 +21,35 @@ in {
         opencl.enable = true;
       };
       graphics = {
-        package = nixpkgs-hypr.mesa;
-        package32 = nixpkgs-hypr.pkgsi686Linux.mesa;
+        enable = true;
+        enable32Bit = true;
         extraPackages = with pkgs; [
-          rocmPackages.clr.icd
+          vulkan-loader
+          vulkan-validation-layers
+          vulkan-extension-layer
         ];
       };
     };
+
+    boot.kernelParams = [
+      # Fixes white flickering after resume/unlock
+      "amdgpu.sg_display=0"
+    ];
+
+    services.xserver.videoDrivers = ["amdgpu"];
+
     environment = {
       systemPackages = with pkgs; [
-        vulkan-loader
-        vulkan-validation-layers
+        clinfo
         vulkan-tools
       ];
       sessionVariables = {
         AMD_VULKAN_ICD = "RADV";
       };
     };
-    boot.kernelParams = [
-      # Fixes white flickering after resume/unlock
-      "amdgpu.sg_display=0"
+
+    systemd.tmpfiles.rules = [
+      "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
     ];
   };
 }

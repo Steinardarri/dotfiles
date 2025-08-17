@@ -15,9 +15,8 @@
       inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
 
       inputs.monocoque.packages.${pkgs.stdenv.hostPlatform.system}.default
-
-      inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.all
     ];
+
     # Cammus C5 Wheel Device
     services.udev.extraRules = ''
       SUBSYSTEM=="usb", ATTRS{idVendor}=="3416", ATTRS{idProduct}=="1021", MODE="0666"

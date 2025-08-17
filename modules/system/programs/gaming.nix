@@ -11,26 +11,37 @@
   };
 
   config = lib.mkIf config._gaming.enable {
+    nixpkgs.config.packageOverrides = pkgs: {
+      steam = pkgs.steam.override {
+        extraLibraries = pkgs: [ pkgs.xorg.libxcb ];
+        extraPkgs = pkgs:
+          with pkgs; [
+            xorg.libXcursor
+            xorg.libXi
+            xorg.libXinerama
+            xorg.libXScrnSaver
+            libpng
+            libpulseaudio
+            libvorbis
+            stdenv.cc.cc.lib
+            libkrb5
+            keyutils
+          ];
+      };
+    };
     programs = {
       steam = {
         enable = true;
-        package = pkgs.steam.override {
-          extraPkgs = pkgs:
-            with pkgs; [
-              libkrb5
-              keyutils
-            ];
-        };
-        gamescopeSession.enable = true;
         remotePlay.openFirewall = true;
         dedicatedServer.openFirewall = true;
         localNetworkGameTransfers.openFirewall = true;
         protontricks.enable = true;
-        extraCompatPackages = with pkgs; [
-          proton-ge-bin
-        ];
       };
-      obs-studio.enable = true;
+      gamescope = {
+        enable = true;
+        capSysNice = true;
+      };
+      obs-studio.enable = false;
       gamemode = {
         enable = true;
         # LACT handles gpu stuff
@@ -53,12 +64,12 @@
         };
       };
       zsh = {
-        loginShellInit = lib.mkBefore ''
+        loginShellInit = lib.mkAfter ''
           # For gamescope
           sudo chown -R ${username} /tmp/.X11-unix
 
           ${lib.optionalString config._rgb.enable ''
-            openrgb -P Orange
+            openrgb -p Orange
           ''}
         '';
       };
@@ -66,13 +77,11 @@
     hardware.steam-hardware.enable = lib.mkForce false;
 
     environment.systemPackages = with pkgs; [
-      mangohud
       lutris
       steam-run
       winetricks
-      wineWowPackages.stagingFull
+      wineWowPackages.staging
       cabextract
-      vkbasalt
     ];
 
     services.hardware.openrgb.enable = config._rgb.enable;

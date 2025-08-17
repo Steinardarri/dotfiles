@@ -159,9 +159,8 @@
 
     hyprland = {
       url = "github:hyprwm/Hyprland";
-      # Overriding the nixpkgs input may
-      # disable Cachix
-      # inputs.nixpkgs.follows = "nixpkgs";
+      # Overriding the nixpkgs input may cause a cache miss
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     hyprutils = {
@@ -207,13 +206,8 @@
 
     jstest-gtk.url = "github:Grumbel/jstest-gtk";
 
-    simshmbridge = {
-      url = "git+file:/home/steinardth/Forrit/git_verkefni/simshmbridge?shallow=1&dir=tools/distro/nix&submodules=1";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     monocoque = {
-      url = "git+file:/home/steinardth/Forrit/git_verkefni/monocoque?ref=nix&shallow=1&dir=tools/distro/nix&submodules=1";
+      url = "git+file:/home/steinardth/Forrit/git_verkefni/-SimRacing/monocoque?ref=nix&shallow=1&dir=tools/distro/nix&submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
