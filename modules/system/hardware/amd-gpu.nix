@@ -39,7 +39,6 @@ in {
       ];
       sessionVariables = {
         AMD_VULKAN_ICD = "RADV";
-        VK_ICD_FILENAMES = "${nixpkgs-hypr.mesa}/share/vulkan/icd.d/radeon_icd.x86_64.json";
       };
     };
     boot.kernelParams = [

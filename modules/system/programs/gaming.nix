@@ -80,8 +80,7 @@
     users.users.${username}.extraGroups = ["gamemode"];
 
     environment.sessionVariables = {
-      PROTON_ENABLE_WAYLAND = 1;
-      WINEDEBUG = "-all";
+      STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/${username}/.steam/root/compatibilitytools.d";
     };
 
     # Might need to sudo chmod 777 ~/.steam , for protontricks to work

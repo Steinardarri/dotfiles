@@ -23,6 +23,11 @@
     packages = [pkgs.terminus_font];
   };
 
+  fonts = {
+    enableDefaultPackages = true;
+    enableGhostscriptFonts = true;
+  };
+
   environment.variables = {
     LANG = "en_GB.UTF-8";
   };
