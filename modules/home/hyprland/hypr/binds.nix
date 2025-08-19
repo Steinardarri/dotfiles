@@ -19,9 +19,17 @@ let
     "Super, N, ${d} Codium text editor, exec, uwsm-app -- codium.desktop"
     "Super, W, ${d} Zen web browser, exec, uwsm-app -- zen-beta.desktop"
     "Super Shift, W, ${d} Zen web browser - private, exec, uwsm-app -- zen-beta.desktop:new-private-window"
-    "Super, P, ${d} hyprpicker, exec, hyprpicker"
     "Super, period, ${d} Emoji picker, exec, [float; center; size 60% 60%] uwsm-app -- emote"
     "Super, Escape, ${d} system monitor, exec, uwsm-app -- kitty @ launch btop"
+  ];
+
+  captureBinds = let
+    d = "[Launcher|Apps]";
+  in [
+    "Super, P, ${d} hyprpicker, exec, hyprpicker"
+    ", PRINT, ${d} Screenshot a monitor, exec, hyprshot -m output"
+    "Super, PRINT, ${d} Screenshot a window, exec, hyprshot -m window"
+    "Super Shift, PRINT, ${d} Screenshot a region, exec, hyprshot -m region"
   ];
 
   windowManagement = let
@@ -171,7 +179,7 @@ in {
   binddr = [];
 
   # Regular bindings
-  bindd = launcherBind ++ appBinds ++ windowManagement ++ groupNavigation ++ changeFocus ++ workspaceNavigation ++ workspaceRelativeNavigation ++ moveWindowToWorkspace ++ moveSwitchSpecialWorkspace ++ moveWindowToWorkspaceSilent;
+  bindd = launcherBind ++ appBinds ++ captureBinds ++ windowManagement ++ groupNavigation ++ changeFocus ++ workspaceNavigation ++ workspaceRelativeNavigation ++ moveWindowToWorkspace ++ moveSwitchSpecialWorkspace ++ moveWindowToWorkspaceSilent;
 
   # Mouse bindings
   binddm = moveResizeWithMouse;

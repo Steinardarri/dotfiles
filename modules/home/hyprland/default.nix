@@ -155,6 +155,10 @@
     plugins = [inputs.hypr-dynamic-cursors.packages.${pkgs.stdenv.hostPlatform.system}.hypr-dynamic-cursors];
   };
 
+  home.sessionVariables = {
+    HYPRSHOT_DIR = "${config.home.homeDirectory}/Pictures/Screenshots";
+  };
+
   # Make uwsm grab env variables from Home Manager
   xdg.configFile."uwsm/env".source = "${config.home.sessionVariablesPackage}/etc/profile.d/hm-session-vars.sh";
 }
