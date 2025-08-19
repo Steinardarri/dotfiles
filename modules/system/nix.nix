@@ -13,6 +13,7 @@
       max-jobs = 6;
       cores = 6;
       show-trace = false;
+      build-dir = "/var/tmp";
       substituters = [
         "https://cache.nixos.org"
         "https://nix-community.cachix.org"

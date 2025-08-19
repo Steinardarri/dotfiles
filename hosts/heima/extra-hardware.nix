@@ -1,8 +1,18 @@
 {
   lib,
   username,
+  pkgs,
   ...
 }: {
+  # x86-64 microarchitecture for 5800X3D - Chaotic
+  boot.kernelPackages = pkgs.linuxPackages_cachyos.cachyOverride {mArch = "GENERIC_V3";};
+  # Scheduler - Chaotic
+  services.scx = {
+    enable = true;
+    package = pkgs.scx_git.full;
+    scheduler = "scx_rustland";
+  };
+
   fileSystems = {
     "/run/media/${username}/SSD_Kingston" = {
       label = "SSD_Kingston";
