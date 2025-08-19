@@ -39,13 +39,13 @@
       opener = {
         edit = [
           {
-            run = "$EDITOR '$@'";
+            run = "$EDITOR \"$@\"";
             desc = "$EDITOR";
             block = true;
             for = "unix";
           }
           {
-            run = "sudo $EDITOR '$@'";
+            run = "sudo $EDITOR \"$@\"";
             desc = "sudo $EDITOR";
             block = true;
             for = "unix";
@@ -53,7 +53,7 @@
         ];
         play = [
           {
-            run = "mpv '$@'";
+            run = "mpv \"$@\"";
             orphan = true;
             for = "unix";
           }
