@@ -21,7 +21,7 @@ let
     "Super Shift, W, ${d} Zen web browser - private, exec, uwsm-app -- zen-beta.desktop:new-private-window"
     "Super, P, ${d} hyprpicker, exec, hyprpicker"
     "Super, period, ${d} Emoji picker, exec, [float; center; size 60% 60%] uwsm-app -- emote"
-    # "Super, Escape, ${d} system monitor, exec, $scrPath/sysmonlaunch.sh"
+    "Super, Escape, ${d} system monitor, exec, uwsm-app -- kitty @ launch btop"
   ];
 
   windowManagement = let

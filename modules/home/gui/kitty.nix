@@ -26,7 +26,9 @@ _: {
     };
 
     keybindings = {
+      "ctrl+shift+enter" = "new_window_with_cwd";
       "ctrl+alt+t" = "goto_layout tall";
+      "ctrl+alt+g" = "goto_layout grid";
       "ctrl+alt+z" = "toggle_layout stack";
       "ctrl+alt+right" = "next_window";
       "ctrl+alt+left" = "previous_window";
