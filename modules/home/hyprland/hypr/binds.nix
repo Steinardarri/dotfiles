@@ -20,7 +20,7 @@ let
     "Super, W, ${d} Zen web browser, exec, uwsm-app -- zen-beta.desktop"
     "Super Shift, W, ${d} Zen web browser - private, exec, uwsm-app -- zen-beta.desktop:new-private-window"
     "Super, period, ${d} Emoji picker, exec, [float; center; size 60% 60%] uwsm-app -- emote"
-    "Super, Escape, ${d} system monitor, exec, uwsm-app -- kitty @ launch btop"
+    "Super, Escape, ${d} system monitor, exec, uwsm-app -- kitty btop"
   ];
 
   captureBinds = let
