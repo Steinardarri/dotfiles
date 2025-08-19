@@ -1,9 +1,10 @@
-_: {
+{lib, ...}: {
   networking = {
     networkmanager = {
-      enable = true;
+      enable = lib.mkDefault true;
       dns = "systemd-resolved";
     };
+    nftables.enable = true;
     firewall = {
       enable = true;
 

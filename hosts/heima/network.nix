@@ -2,6 +2,7 @@ _: {
   # Host specific network module
 
   networking = {
+    networkmanager.enable = false;
     domain = "steinardth.xyz";
 
     interfaces.enp6s0 = {
