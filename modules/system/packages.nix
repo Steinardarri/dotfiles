@@ -66,15 +66,11 @@
       bottom
       broot
       btop
-      clinfo
-      coreutils
       curl
       deadnix
       du-dust
       eza
       fd
-      findutils
-      fx
       fzf
       helix
       lshw
@@ -93,8 +89,6 @@
       tree
       wget
       wormhole-william
-      usbutils
-      wl-clipboard
       yazi
       zoxide
 
@@ -119,5 +113,6 @@
       exfat # exFAT support
       lm_sensors # system sensors
       pciutils # pci utils
+      usbutils
     ];
 }

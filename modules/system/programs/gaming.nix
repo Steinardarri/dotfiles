@@ -75,6 +75,7 @@
       };
     };
     hardware.steam-hardware.enable = lib.mkForce false;
+    users.users.${username}.extraGroups = ["gamemode"];
 
     environment.systemPackages = with pkgs; [
       lutris
@@ -85,12 +86,6 @@
     ];
 
     services.hardware.openrgb.enable = config._rgb.enable;
-
-    users.users.${username}.extraGroups = ["gamemode"];
-
-    environment.sessionVariables = {
-      STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/${username}/.steam/root/compatibilitytools.d";
-    };
 
     # Might need to sudo chmod 777 ~/.steam , for protontricks to work
   };
