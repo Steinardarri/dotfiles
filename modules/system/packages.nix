@@ -74,6 +74,7 @@
       fzf
       helix
       lshw
+      lsof
       manix
       mosh
       nvd

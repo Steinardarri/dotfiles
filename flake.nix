@@ -210,5 +210,10 @@
       url = "git+file:/home/steinardth/Forrit/git_verkefni/-SimRacing/monocoque?ref=nix&shallow=1&dir=tools/distro/nix&submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    simshmbridge = {
+      url = "github:srounce/run-crewchief";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }

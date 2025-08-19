@@ -11,24 +11,6 @@
   };
 
   config = lib.mkIf config._gaming.enable {
-    nixpkgs.config.packageOverrides = pkgs: {
-      steam = pkgs.steam.override {
-        extraLibraries = pkgs: [ pkgs.xorg.libxcb ];
-        extraPkgs = pkgs:
-          with pkgs; [
-            xorg.libXcursor
-            xorg.libXi
-            xorg.libXinerama
-            xorg.libXScrnSaver
-            libpng
-            libpulseaudio
-            libvorbis
-            stdenv.cc.cc.lib
-            libkrb5
-            keyutils
-          ];
-      };
-    };
     programs = {
       steam = {
         enable = true;
@@ -57,17 +39,14 @@
             disable_splitlock = 1;
           };
           custom = {
-            start = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode started' ; pkill codium ; pkill ktorrent";
+            start = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode started'";
             end = "${pkgs.libnotify}/bin/notify-send -t 2000 'GameMode ended'";
-            script_timeout = 10;
+            script_timeout = 3;
           };
         };
       };
       zsh = {
         loginShellInit = lib.mkAfter ''
-          # For gamescope
-          sudo chown -R ${username} /tmp/.X11-unix
-
           ${lib.optionalString config._rgb.enable ''
             openrgb -p Orange
           ''}
@@ -79,10 +58,10 @@
 
     environment.systemPackages = with pkgs; [
       lutris
-      steam-run
       winetricks
-      wineWowPackages.staging
+      wineWowPackages.unstable
       cabextract
+      protonup-qt
     ];
 
     services.hardware.openrgb.enable = config._rgb.enable;

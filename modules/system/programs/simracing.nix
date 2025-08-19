@@ -15,6 +15,8 @@
       inputs.jstest-gtk.packages.${pkgs.stdenv.hostPlatform.system}.jstest-gtk
 
       inputs.monocoque.packages.${pkgs.stdenv.hostPlatform.system}.default
+
+      inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.simshmbridge
     ];
 
     # Cammus C5 Wheel Device
@@ -22,5 +24,12 @@
       SUBSYSTEM=="usb", ATTRS{idVendor}=="3416", ATTRS{idProduct}=="1021", MODE="0666"
       SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3416", ATTRS{idProduct}=="1021", MODE="0666"
     '';
+
+    networking.firewall = {
+      allowedUDPPorts = [
+        # ACC
+        9000
+      ];
+    };
   };
 }
