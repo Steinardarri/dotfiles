@@ -17,6 +17,10 @@
       inputs.monocoque.packages.${pkgs.stdenv.hostPlatform.system}.default
 
       inputs.simshmbridge.packages.${pkgs.stdenv.hostPlatform.system}.simshmbridge
+
+      inputs.simmonitor.packages.${pkgs.stdenv.hostPlatform.system}.default
+      pkgs.postgresql
+      pkgs.gnuplot
     ];
 
     # Cammus C5 Wheel Device

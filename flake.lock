@@ -1073,6 +1073,7 @@
         "nixpkgs": "nixpkgs_5",
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
+        "simmonitor": "simmonitor",
         "simshmbridge": "simshmbridge",
         "spicetify-nix": "spicetify-nix",
         "stylix": "stylix",
@@ -1099,6 +1100,32 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "type": "github"
+      }
+    },
+    "simmonitor": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "dir": "tools/distro/nix",
+        "lastModified": 1755656313,
+        "narHash": "sha256-a6ztwg4QD3O+8py7lvnqocN+FJX65pKwvZRldCYQ86g=",
+        "ref": "mkflake",
+        "rev": "afd948abe792f763f8a275f217006ffdaa2cbcff",
+        "shallow": true,
+        "submodules": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/-SimRacing/simmonitor"
+      },
+      "original": {
+        "dir": "tools/distro/nix",
+        "ref": "mkflake",
+        "shallow": true,
+        "submodules": true,
+        "type": "git",
+        "url": "file:/home/steinardth/Forrit/git_verkefni/-SimRacing/simmonitor"
       }
     },
     "simshmbridge": {
