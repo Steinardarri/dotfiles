@@ -16,6 +16,7 @@
     protonvpn-gui
     ungoogled-chromium
     grsync
+    dbeaver-bin
 
     # GNOME
     baobab
@@ -29,6 +30,7 @@
     krita
     qalculate-qt
     kdePackages.kdenlive
+    okteta
 
     # LibreOffice
     libreoffice-qt6-fresh
