@@ -28,7 +28,7 @@
   protontricks-launch = "flatpak run --command=protontricks-launch com.github.Matoking.protontricks";
 
   # 'scripts'
-  show_path = "echo $PATH | tr ':' '\n'";
+  show_path = "printf '%s\n' $PATH";
   lsblks = "lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid";
   weather = "curl -s 'wttr.in/Reykjavik?MQ' | rg -v 'Follow'";
   sbv = "readlink /nix/var/nix/profiles/system"; # system build version

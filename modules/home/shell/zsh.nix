@@ -67,7 +67,6 @@
       };
 
       envExtra = ''
-        export PATH=$PATH:$HOME/.local/bin
       '';
 
       initContent = ''
