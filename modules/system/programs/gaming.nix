@@ -17,7 +17,7 @@
         remotePlay.openFirewall = true;
         dedicatedServer.openFirewall = true;
         localNetworkGameTransfers.openFirewall = true;
-        protontricks.enable = true;
+        protontricks.enable = false;
         extraCompatPackages = with pkgs; [
           steamtinkerlaunch
         ];
