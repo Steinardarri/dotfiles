@@ -220,5 +220,10 @@
       url = "git+file:/home/steinardth/Forrit/git_verkefni/-SimRacing/simmonitor?ref=mkflake&shallow=1&dir=tools/distro/nix&submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    simapi = {
+      url = "git+file:/home/steinardth/Forrit/git_verkefni/-SimRacing/simapi?ref=nix&shallow=1&dir=tools/distro/nix&submodules=1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }

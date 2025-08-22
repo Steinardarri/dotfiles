@@ -21,6 +21,8 @@
       inputs.simmonitor.packages.${pkgs.stdenv.hostPlatform.system}.default
       pkgs.postgresql
       pkgs.gnuplot
+
+      inputs.simapi.packages.${pkgs.stdenv.hostPlatform.system}.simd
     ];
 
     # Cammus C5 Wheel Device
