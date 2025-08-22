@@ -142,6 +142,8 @@
         allow_session_lock_restore = true;
         initial_workspace_tracking = false;
         focus_on_activate = true;
+        # No 'application not responding' prompt
+        enable_anr_dialog = false;
       };
 
       binds = {
