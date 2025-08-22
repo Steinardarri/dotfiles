@@ -23,6 +23,10 @@
   htop = "btop";
   sysman = "systemd-manager-tui";
 
+  # Flatpak Replacements
+  protontricks = "flatpak run com.github.Matoking.protontricks";
+  protontricks-launch = "flatpak run --command=protontricks-launch com.github.Matoking.protontricks";
+
   # 'scripts'
   show_path = "echo $PATH | tr ':' '\n'";
   lsblks = "lsblk -o name,mountpoint,label,partlabel,size,fstype,uuid";
