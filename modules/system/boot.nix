@@ -33,7 +33,11 @@
     };
 
     initrd = {
-      systemd.enable = false;
+      systemd = {
+        # TODO: Enable when stable
+        enable = false;
+        network.wait-online.enable = false;
+      };
       verbose = false;
     };
     consoleLogLevel = 3;

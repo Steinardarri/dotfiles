@@ -5,6 +5,8 @@ _: {
     networkmanager.enable = false;
     domain = "steinardth.xyz";
 
+    useNetworkd = false;
+
     interfaces.enp6s0 = {
       ipv4.addresses = [
         {
