@@ -3,9 +3,9 @@ _: {
 
   networking = {
     networkmanager.enable = false;
-    domain = "steinardth.xyz";
 
-    useNetworkd = false;
+    dhcpcd.enable = false;
+    useNetworkd = true;
 
     interfaces.enp6s0 = {
       ipv4.addresses = [
@@ -21,12 +21,10 @@ _: {
     };
 
     nameservers = [
-      "9.9.9.9#dns.quad9.net"
-      "149.112.112.112#dns.quad9.net"
-      "2620:fe::fe#dns.quad9.net"
-      "2620:fe::9#dns.quad9.net"
+      "192.168.31.43"
     ];
 
     enableIPv6 = false;
   };
+  services.resolved.enable = true;
 }
