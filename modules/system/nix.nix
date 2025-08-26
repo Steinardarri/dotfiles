@@ -49,7 +49,7 @@
     clean = {
       enable = true;
       dates = "weekly";
-      extraArgs = "--keep-since 14d --keep 10";
+      extraArgs = "--keep-since 14d --keep 15";
     };
     flake = "/home/${username}/dotfiles";
   };

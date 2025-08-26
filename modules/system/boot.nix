@@ -15,7 +15,7 @@
         enable = true;
         efiSupport = true;
         device = "nodev";
-        configurationLimit = 10;
+        configurationLimit = 15;
         devices = ["nodev"];
       };
       systemd-boot.editor = lib.mkDefault false;
