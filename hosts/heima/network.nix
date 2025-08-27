@@ -5,6 +5,7 @@ _: {
     networkmanager.enable = false;
 
     dhcpcd.enable = false;
+    useDHCP = false;
     useNetworkd = true;
 
     interfaces.enp6s0 = {
