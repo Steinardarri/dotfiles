@@ -47,7 +47,6 @@
     gvfs.enable = true;
     atuin.enable = true;
     # Power
-    logind.powerKey = "suspend";
     power-profiles-daemon.enable = true;
     upower.enable = true;
   };
