@@ -1,7 +1,7 @@
-{lib, ...}: {
+{pkgs, ...}: {
   networking = {
     networkmanager = {
-      enable = lib.mkDefault true;
+      enable = true;
       dns = "systemd-resolved";
     };
     nftables.enable = true;
@@ -19,4 +19,10 @@
       ];
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    networkmanagerapplet
+  ];
+
+  services.resolved.enable = true;
 }
