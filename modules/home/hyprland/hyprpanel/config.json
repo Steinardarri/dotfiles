@@ -46,6 +46,7 @@
       "right": [
         "volume",
         "microphone",
+        "network",
         "bluetooth",
         "systray",
         "clock",
