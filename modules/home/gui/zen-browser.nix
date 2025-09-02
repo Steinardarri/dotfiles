@@ -123,7 +123,7 @@
         ];
       };
 
-      userChrome = lib.mkDefault ''
+      userChrome = lib.mkAfter ''
         :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
           & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
             & browser[transparent="true"] {
