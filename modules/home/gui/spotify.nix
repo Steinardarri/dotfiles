@@ -14,12 +14,8 @@
     enable = true;
 
     enabledExtensions = with spicePkgs.extensions; [
-      allOfArtist
-      betterGenres
-      featureShuffle
-      fullAppDisplayMod
+      fullAppDisplay
       playlistIcons
-      powerBar
       shuffle
       skipStats
       trashbin
@@ -28,7 +24,6 @@
       lyricsPlus
       marketplace
       newReleases
-      ncsVisualizer
     ];
     enabledSnippets = with spicePkgs.snippets; [
       betterLyricsStyle
