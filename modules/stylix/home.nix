@@ -9,10 +9,6 @@
 
     targets = {
       zen-browser.profileNames = ["default"];
-      waybar = {
-        addCss = false;
-        font = "sansSerif";
-      };
       spicetify.enable = false;
     };
   };
