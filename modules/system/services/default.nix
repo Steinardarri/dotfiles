@@ -10,10 +10,10 @@
   ];
 
   # Slows down boot time
-  systemd = {
-    services.NetworkManager-wait-online.enable = false;
-    network.wait-online.enable = false;
-  };
+  # systemd = {
+  #   services.NetworkManager-wait-online.enable = false;
+  #   network.wait-online.enable = false;
+  # };
 
   services = {
     dbus = {
@@ -37,12 +37,6 @@
     udisks2 = {
       enable = true;
       mountOnMedia = true;
-    };
-    # DNS resolver
-    resolved = {
-      enable = true;
-      dnsovertls = "true";
-      dnssec = "true";
     };
     gvfs.enable = true;
     atuin.enable = true;

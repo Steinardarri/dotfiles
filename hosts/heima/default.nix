@@ -7,7 +7,7 @@
   imports = [
     ./extra-hardware.nix
     ./hardware-configuration.nix
-    ./network.nix
+    # ./network.nix
   ];
 
   ### Custom System Modules From modules/system - to enable

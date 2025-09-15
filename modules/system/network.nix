@@ -2,9 +2,9 @@
   networking = {
     networkmanager = {
       enable = true;
-      dns = "systemd-resolved";
+      # dns = "systemd-resolved";
     };
-    nftables.enable = true;
+    # nftables.enable = true;
     firewall = {
       enable = true;
 
@@ -21,8 +21,14 @@
   };
 
   environment.systemPackages = with pkgs; [
+    networkmanager
     networkmanagerapplet
   ];
 
-  services.resolved.enable = true;
+  # DNS resolver
+  # services.resolved = {
+  #   enable = true;
+  #   dnsovertls = "true";
+  #   dnssec = "true";
+  # };
 }
