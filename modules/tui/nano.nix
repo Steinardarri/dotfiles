@@ -1,5 +1,5 @@
 _: {
-  ".config/nano/nanorc".text =  = ''
+  home.file.".config/nano/nanorc".text = ''
       include /usr/share/nano-syntax-highlighting/*.nanorc
 
       syntax "Nanorc" "\.?nanorc$"
@@ -57,5 +57,5 @@ _: {
       set zap
       set autoindent
       set indicator
-    '';
+  '';
 }
