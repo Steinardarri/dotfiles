@@ -29,8 +29,6 @@
             inherit hostname;
           };
 
-          backupFileExtension = "hm-backup";
-
           modules = [
             {
               ### Custom Modules From modules/home - to enable

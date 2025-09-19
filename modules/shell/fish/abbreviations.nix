@@ -11,6 +11,7 @@
   rm = "rm -I";
   cp = "cp -i";
   mv = "mv -i";
+  home-manager = "home-manager -b hm-backup";
 
   shutdown = "systemctl poweroff";
   reboot = "systemctl reboot";
