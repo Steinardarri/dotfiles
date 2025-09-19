@@ -56,7 +56,7 @@
       sw = "switch"; # modern checkout replacement
     };
     signing = {
-      format = "gpg";
+      format = "openpgp";
       signByDefault = true;
     };
   };
