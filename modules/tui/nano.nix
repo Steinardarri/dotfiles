@@ -1,5 +1,7 @@
 _: {
   ".config/nano/nanorc".text =  = ''
+      include /usr/share/nano-syntax-highlighting/*.nanorc
+
       syntax "Nanorc" "\.?nanorc$"
       comment "#"
 
