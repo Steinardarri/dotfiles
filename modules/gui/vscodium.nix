@@ -240,14 +240,6 @@
             "formatting" = {
               "command" = ["alejandra"];
             };
-            "options" = {
-              "nixos" = {
-                "expr" = "(builtins.getFlake \"/home/${username}/dotfiles\").nixosConfigurations.${hostname}.options";
-              };
-              "home_manager" = {
-                "expr" = "(builtins.getFlake \"/home/${username}/dotfiles\").homeConfigurations.${hostname}.options";
-              };
-            };
           };
         };
 

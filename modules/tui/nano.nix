@@ -1,6 +1,7 @@
-_: {
+{pkgs, ...}: {
   home.file.".config/nano/nanorc".text = ''
-      include /usr/share/nano-syntax-highlighting/*.nanorc
+      include "${pkgs.nano}/share/nano/*.nanorc"
+      include "${pkgs.nano}/share/nano/extra/*.nanorc"
 
       syntax "Nanorc" "\.?nanorc$"
       comment "#"

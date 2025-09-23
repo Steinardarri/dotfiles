@@ -9,11 +9,11 @@
   } @ inputs: {
     homeConfigurations = let
       system = "x86_64-linux";
-      pkgs = import inputs.nixpkgs {
+      pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
-        overlays = [ inputs.nix-vscode-extensions.overlays.default ];
-      };    
+        overlays = [ nix-vscode-extensions.overlays.default ];
+      };
     in {
       "steinardth" = let
         username = "steinardth";
