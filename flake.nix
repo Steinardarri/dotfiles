@@ -12,7 +12,7 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
-        overlays = [ nix-vscode-extensions.overlays.default ];
+        overlays = [nix-vscode-extensions.overlays.default];
       };
     in {
       "steinardth" = let
@@ -38,6 +38,7 @@
                 inherit username;
                 homeDirectory = "/home/${username}";
                 sessionVariables = {
+                  NH_HOME_FLAKE = "/home/${username}/dotfiles/";
                   EDITOR = "nano";
                   VISUAL = "codium";
                 };
