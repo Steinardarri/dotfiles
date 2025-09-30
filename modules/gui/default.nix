@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ./spotify.nix
+    # ./spotify.nix borked for now
     ./vscodium.nix
   ];
 
