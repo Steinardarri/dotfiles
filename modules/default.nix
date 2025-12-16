@@ -1,12 +1,10 @@
-{}: {
+_: {
   imports = [
     ./gui
+    ./programs
     # ./services
     ./shell
     ./tui
-
-    ./git.nix
-    ./python.nix
   ];
 
   # Let home-manager control itself

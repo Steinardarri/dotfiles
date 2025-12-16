@@ -80,9 +80,7 @@
     fastfetch
 
     # ui & looks
-    nh
     grc
-    nix-output-monitor
     atuin
     starship
   ];

@@ -36,7 +36,6 @@
                 inherit username;
                 homeDirectory = "/home/${username}";
                 sessionVariables = {
-                  NH_HOME_FLAKE = "/home/${username}/dotfiles/";
                   EDITOR = "nano";
                   VISUAL = "codium";
                 };
