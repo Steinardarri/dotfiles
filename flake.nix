@@ -44,9 +44,9 @@
                 };
               };
 
-              programs.git = {
-                userName = "Steinar Darri Þorgilsson";
-                userEmail = "steinar@steinardth.xyz";
+              programs.git.settings.user = {
+                name = "Steinar Darri Þorgilsson";
+                email = "steinar@steinardth.xyz";
               };
             }
 

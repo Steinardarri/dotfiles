@@ -27,6 +27,8 @@
     ninja
     tree-sitter
     valgrind
+    kdePackages.qtbase
+    freetype
 
     # language servers / debuggers
     nixd # nix
@@ -48,7 +50,7 @@
     btop
     curl
     deadnix
-    du-dust
+    dust
     eza
     fd
     fzf

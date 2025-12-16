@@ -1,7 +1,7 @@
 {lib, ...}: {
   programs.git = {
     enable = true;
-    extraConfig = {
+    settings = {
       init.defaultBranch = lib.mkForce "master";
       color.ui = "Auto";
       core = {
@@ -30,30 +30,30 @@
       };
       fetch.prune = true;
       status.submoduleSummary = true;
-    };
-    aliases = {
-      # List available aliases
-      aliases = "!git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'";
-      # Display tree-like log, because default log is a pain…
-      lg = "log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'";
-      # Ammend last commit, either changes or just message
-      ammend = "commit --amend";
-      # Undo last commit but keep changed files in stage
-      uncommit = "reset --soft HEAD~1";
-      # See recent changes
-      last = "log -1 HEAD";
-      diffLast = "diff HEAD^ HEAD";
-      diffDev = "diff development..HEAD";
-      # Branch management
-      rebDev = "!git pull --all && git rebase --interactive development";
-      coDev = "checkout development";
-      coFea = "checkout feature";
+      alias = {
+        # List available aliases
+        aliases = "!git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'";
+        # Display tree-like log, because default log is a pain…
+        lg = "log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'";
+        # Ammend last commit, either changes or just message
+        ammend = "commit --amend";
+        # Undo last commit but keep changed files in stage
+        uncommit = "reset --soft HEAD~1";
+        # See recent changes
+        last = "log -1 HEAD";
+        diffLast = "diff HEAD^ HEAD";
+        diffDev = "diff development..HEAD";
+        # Branch management
+        rebDev = "!git pull --all && git rebase --interactive development";
+        coDev = "checkout development";
+        coFea = "checkout feature";
 
-      # Extra
-      pf = "push --force-with-lease"; # safer than --force
-      wip = "!git add -A && git commit -m 'WIP'"; # quick checkpoint
-      s = "status --short --branch";
-      sw = "switch"; # modern checkout replacement
+        # Extra
+        pf = "push --force-with-lease"; # safer than --force
+        wip = "!git add -A && git commit -m 'WIP'"; # quick checkpoint
+        s = "status --short --branch";
+        sw = "switch"; # modern checkout replacement
+      };
     };
     signing = {
       format = "openpgp";
