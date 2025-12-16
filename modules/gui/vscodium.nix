@@ -193,39 +193,39 @@
 
         "gitmoji.addCustomEmoji" = [
           {
-            "code" = ":sparkles:";
+            "code" = ":sparkles: ";
             "description" = "| Add new code/feature";
-            "emoji" = "✨";
+            "emoji" = "✨ ";
           }
           {
-            "code" = ":high_voltage:";
+            "code" = ":high_voltage: ";
             "description" = "| Improve existing code/feature";
-            "emoji" = "⚡";
+            "emoji" = "⚡ ";
           }
           {
-            "code" = ":fire:";
+            "code" = ":fire: ";
             "description" = "| Remove existing code/feature";
-            "emoji" = "🔥";
+            "emoji" = "🔥 ";
           }
           {
-            "code" = ":bug:";
+            "code" = ":bug: ";
             "description" = "| Fix a bug";
-            "emoji" = "🐛";
+            "emoji" = "🐛 ";
           }
           {
-            "code" = ":wrench:";
+            "code" = ":wrench: ";
             "description" = "| Maintain dependencies and code";
-            "emoji" = "🔧";
+            "emoji" = "🔧 ";
           }
           {
-            "code" = ":bookmark_tabs:";
+            "code" = ":bookmark_tabs: ";
             "description" = "| Anything related to documentation";
-            "emoji" = "📑";
+            "emoji" = "📑 ";
           }
           {
-            "code" = ":robot:";
+            "code" = ":robot: ";
             "description" = "| Anything realted to tests";
-            "emoji" = "🤖";
+            "emoji" = "🤖 ";
           }
         ];
         "gitmoji.onlyUseCustomEmoji" = true;
