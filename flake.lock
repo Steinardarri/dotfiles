@@ -76,12 +76,29 @@
         "type": "github"
       }
     },
+    "nixpkgs-codiumpin": {
+      "locked": {
+        "lastModified": 1765457389,
+        "narHash": "sha256-ddhDtNYvleZeYF7g7TRFSmuQuZh7HCgqstg5YBGwo5s=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f997fa0f94fb1ce55bccb97f60d41412ae8fde4c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f997fa0f94fb1ce55bccb97f60d41412ae8fde4c",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nix-index-database": "nix-index-database",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-codiumpin": "nixpkgs-codiumpin",
         "spicetify-nix": "spicetify-nix"
       }
     },

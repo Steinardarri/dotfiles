@@ -3,6 +3,7 @@
 
   outputs = {
     nixpkgs,
+    nixpkgs-codiumpin,
     home-manager,
     nix-vscode-extensions,
     ...
@@ -12,7 +13,13 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
-        overlays = [nix-vscode-extensions.overlays.default];
+      };
+      pkgs'' = import nixpkgs-codiumpin {
+        inherit system;
+        config.allowUnfree = true;
+        overlays = [
+          nix-vscode-extensions.overlays.default
+        ];
       };
     in {
       "steinardth" = let
@@ -31,6 +38,12 @@
             {
               ### Custom Modules From modules/home - to enable
               ###
+
+              nixpkgs.overlays = [
+                (final: prev: {
+                  nix-vscode-extensions = pkgs''.nix-vscode-extensions;
+                })
+              ];
 
               home = {
                 inherit username;
@@ -56,6 +69,7 @@
   inputs = {
     ### System ###
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-codiumpin.url = "github:NixOS/nixpkgs/f997fa0f94fb1ce55bccb97f60d41412ae8fde4c";
 
     home-manager = {
       url = "github:nix-community/home-manager";
