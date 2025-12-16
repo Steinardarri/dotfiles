@@ -17,7 +17,6 @@
     in {
       "steinardth" = let
         username = "steinardth";
-        hostname = "heima";
       in
         home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
@@ -26,7 +25,6 @@
             inherit inputs;
             inherit system;
             inherit username;
-            inherit hostname;
           };
 
           modules = [
