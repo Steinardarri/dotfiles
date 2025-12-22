@@ -22,24 +22,25 @@
 
   home.packages = with pkgs; [
     # languages
-    gcc
-    nodejs
-    zig
-    # rust stuff
-    cargo-cache
-    cargo-expand
-    cargo-leptos
-    rustup
-    trunk
-    jq
+    # gcc
+    # nodejs
+    # zig
+    # # rust stuff
+    # cargo-cache
+    # cargo-expand
+    # cargo-leptos
+    # rustup
+    # trunk
+    # jq
 
     # dev stuf
-    cmake
-    gnumake
-    httpie
-    ninja
-    tree-sitter
-    valgrind
+    # cmake
+    # gnumake
+    # httpie
+    # ninja
+    # tree-sitter
+    # valgrind
+    # glib
 
     # language servers / debuggers
     nixd # nix
@@ -73,7 +74,6 @@
     nvd
     p7zip
     parallel
-    pkg-config
     procs
     ripgrep
     sd

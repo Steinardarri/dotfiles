@@ -17,4 +17,5 @@
   reboot = "systemctl reboot";
   man = "batman";
   fd = "fd -E 'nix/store' -E 'nix/var/log'";
+  rg = "rg -.";
 }
